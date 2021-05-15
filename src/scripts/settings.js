@@ -14,8 +14,7 @@ function selectBackgroundType(cat) {
 
 function displayCustomThumbnails() {
 	chrome.storage.local.get("customThumbnails", (data) => {
-
-		if (data !== undefined) {
+		if (data !== undefined && cl("thumbnail").length === 0) {
 
 			let cleanData
 			let thumbs = data.customThumbnails

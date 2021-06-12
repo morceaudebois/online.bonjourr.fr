@@ -26,7 +26,7 @@ const randomseed = Math.floor(Math.random() * 30) + 1,
 
 const offlineStorage = {
 	get: (useless, callback) => {
-		const data = localStorage.data ? JSON.parse(atob(localStorage.data)) : {}
+		const data = localStorage.bonjourr ? JSON.parse(localStorage.bonjourr) : {}
 		callback(data)
 	},
 	set: (prop) => {
@@ -35,11 +35,10 @@ const offlineStorage = {
 				const [key, val] = Object.entries(prop)[0]
 
 				if (key === 'import') {
-					console.log(true)
 					data = val
 				} else data[key] = val
 
-				localStorage.data = btoa(JSON.stringify(data))
+				localStorage.bonjourr = JSON.stringify(data)
 			}
 		})
 	},
@@ -2454,6 +2453,13 @@ document.onkeydown = function (e) {
 }
 
 window.onload = function () {
+	//
+	// moved localStorage to prevent conflit with other local apps
+	if (localStorage.data && !localStorage.bonjourr) {
+		localStorage.bonjourr = localStorage.data
+		localStorage.removeItem('data')
+	}
+
 	offlineStorage.get(null, (data) => {
 		//1.8.3 -> 1.9 data transfer
 		if (localStorage.lang) {

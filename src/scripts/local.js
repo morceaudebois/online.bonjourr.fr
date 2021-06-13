@@ -1322,9 +1322,12 @@ function unsplash(data, event, startup) {
 	function req(which, dynamic, weather, init) {
 		function chooseCollection() {
 			// If collection isnt ''
-			if (dynamic.collection.length > 0) {
-				return dynamic.collection
+			if (dynamic.collection) {
+				if (dynamic.collection.length > 0) {
+					return dynamic.collection
+				}
 			}
+
 			// Transition day and night with noon & evening collections
 			// if clock is + /- 60 min around sunrise/set
 			if (weather) {
@@ -2456,63 +2459,70 @@ window.onload = function () {
 	//
 	// moved localStorage to prevent conflit with other local apps
 	if (localStorage.data && !localStorage.bonjourr) {
-		localStorage.bonjourr = localStorage.data
+		localStorage.bonjourr = atob(localStorage.data)
 		localStorage.removeItem('data')
 	}
 
-	offlineStorage.get(null, (data) => {
-		//1.8.3 -> 1.9 data transfer
-		if (localStorage.lang) {
-			data.lang = localStorage.lang
-			offlineStorage.set({ lang: localStorage.lang })
-			localStorage.removeItem('lang')
-		}
+	try {
+		offlineStorage.get(null, (data) => {
+			//1.8.3 -> 1.9 data transfer
+			if (localStorage.lang) {
+				data.lang = localStorage.lang
+				offlineStorage.set({ lang: localStorage.lang })
+				localStorage.removeItem('lang')
+			}
 
-		//pour que les settings y accede plus facilement
-		disposableData = localEnc(JSON.stringify(data))
+			//pour que les settings y accede plus facilement
+			disposableData = localEnc(JSON.stringify(data))
 
-		traduction(null, data.lang)
-		greetings()
-		date(null, data.usdate)
-		newClock(null, data.clock)
-		darkmode(null, data)
-		initBackground(data)
-		weather(null, null, data)
-		quickLinks(null, null, data)
-		searchbar(null, null, data)
-		showPopup(data.reviewPopup)
+			traduction(null, data.lang)
+			greetings()
+			date(null, data.usdate)
+			newClock(null, data.clock)
+			darkmode(null, data)
+			initBackground(data)
+			weather(null, null, data)
+			quickLinks(null, null, data)
+			searchbar(null, null, data)
+			showPopup(data.reviewPopup)
 
-		//init profunctions
-		proFunctions({ which: 'hide', data: data.hide })
-		proFunctions({ which: 'font', data: data.font })
-		proFunctions({ which: 'css', data: data.css })
-		proFunctions({ which: 'row', data: data.linksrow })
-		proFunctions({ which: 'greet', data: data.greeting })
+			//init profunctions
+			proFunctions({ which: 'hide', data: data.hide })
+			proFunctions({ which: 'font', data: data.font })
+			proFunctions({ which: 'css', data: data.css })
+			proFunctions({ which: 'row', data: data.linksrow })
+			proFunctions({ which: 'greet', data: data.greeting })
 
-		const dominterface = id('interface')
-		const domshowsettings = id('showSettings')
+			const dominterface = id('interface')
+			const domshowsettings = id('showSettings')
 
-		// New way to show interface
-		dominterface.style.opacity = '1'
-		domshowsettings.style.opacity = '1'
+			// New way to show interface
+			dominterface.style.opacity = '1'
+			domshowsettings.style.opacity = '1'
 
-		// Old compatibility
-		clas(dominterface, '')
-		clas(domshowsettings, '')
+			// Old compatibility
+			clas(dominterface, '')
+			clas(domshowsettings, '')
 
-		//safe font for different alphabet
-		if (data.lang === 'ru' || data.lang === 'sk') {
-			const safeFont = () =>
-				(id('styles').innerText = `
+			//safe font for different alphabet
+			if (data.lang === 'ru' || data.lang === 'sk') {
+				const safeFont = () =>
+					(id('styles').innerText = `
 			body, #settings, #settings h5 {font-family: Helvetica, Calibri}`)
 
-			if (!data.font) safeFont()
-			else if (data.font.family === '') safeFont()
-		}
+				if (!data.font) safeFont()
+				else if (data.font.family === '') safeFont()
+			}
 
-		if (mobilecheck) {
-			dominterface.style.minHeight = '90vh'
-			dominterface.style.padding = '0 0 10vh 0'
-		}
-	})
+			if (mobilecheck) {
+				dominterface.style.minHeight = '90vh'
+				dominterface.style.padding = '0 0 10vh 0'
+			}
+		})
+	} catch (e) {
+		// 1.9.3 data corruption fix
+		// can be removed for next version
+		localStorage.bonjourr = atob(localStorage.bonjourr)
+		window.location.reload()
+	}
 }

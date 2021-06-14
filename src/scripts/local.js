@@ -1068,10 +1068,10 @@ function initBackground(storage) {
 		unsplash(null, null, true)
 	}
 
-	let blur = Number.isInteger(storage.background_blur) ? storage.background_blur : 15
-	let bright = !isNaN(storage.background_bright) ? storage.background_bright : 0.7
+	const blur = storage.background_blur !== undefined ? storage.background_blur : 15
+	const bright = storage.background_bright !== undefined ? storage.background_bright : 0.7
 
-	filter('init', [blur, bright])
+	filter('init', [parseFloat(blur), parseFloat(bright)])
 }
 
 function setblob(donnee, reader) {
@@ -2352,7 +2352,7 @@ function importExport(select, isEvent) {
 			input.innerText = 'Are you sure ?'
 			input.setAttribute('sure', '')
 		} else {
-			deleteBrowserStorage()
+			offlineStorage.del()
 			setTimeout(function () {
 				location.reload()
 			}, 20)

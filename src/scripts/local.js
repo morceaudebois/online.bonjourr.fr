@@ -24,13 +24,16 @@ const randomseed = Math.floor(Math.random() * 30) + 1,
 	domclock = id('clock'),
 	mobilecheck = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? true : false
 
+const errorMessage = (e) => prompt(`Bonjourr messed up 😭😭 Copy this message and contact us !`, e.stack, e.line)
+
 const offlineStorage = {
-	get: (useless, callback) => {
-		const data = localStorage.bonjourr ? JSON.parse(localStorage.bonjourr) : {}
+	get: (which, callback) => {
+		const key = which === 'backgrounds' ? 'bonjourrBackgrounds' : 'bonjourr'
+		const data = localStorage[key] ? JSON.parse(localStorage[key]) : {}
 		callback(data)
 	},
-	set: (prop) => {
-		offlineStorage.get(null, (data) => {
+	set: (prop, which) => {
+		offlineStorage.get(which, (data) => {
 			if (typeof prop === 'object') {
 				const [key, val] = Object.entries(prop)[0]
 
@@ -38,11 +41,12 @@ const offlineStorage = {
 					data = val
 				} else data[key] = val
 
-				localStorage.bonjourr = JSON.stringify(data)
+				if (which === 'backgrounds') localStorage.bonjourrBackgrounds = JSON.stringify(data)
+				else localStorage.bonjourr = JSON.stringify(data)
 			}
 		})
 	},
-	log: () => offlineStorage.get(null, (data) => console.log(data)),
+	log: (isbg) => offlineStorage.get(isbg, (data) => console.log(data)),
 	del: () => localStorage.clear(),
 }
 
@@ -1033,28 +1037,11 @@ function initBackground(storage) {
 	let type = storage.background_type || 'dynamic'
 
 	if (type === 'custom') {
-		//reste local !!!!
-		chrome.storage.local.get(null, (localChrome) => {
-			//1.8.3 -> 1.9 data transfer
-			if (localChrome.background_blob !== undefined) {
-				const blob = localChrome.background_blob
-				const old = [blob[0] + ',' + blob[1]]
-
-				loadCustom({
-					custom: old,
-					customIndex: 0,
-				})
-
-				chrome.storage.local.set({ custom: old })
-				chrome.storage.local.set({ customIndex: 0 })
-				chrome.storage.local.set({ customThumbnails: old })
-
-				chrome.storage.local.remove('background_blob')
-			} else if (Object.entries(localChrome).length > 0) {
-				//apply chosen custom background
-				loadCustom(localChrome)
+		//
+		offlineStorage.get('backgrounds', (backgrounds) => {
+			if (Object.entries(backgrounds).length > 0) {
+				if (backgrounds.custom.length > 0) loadCustom(backgrounds)
 			} else {
-				//if no custom background available: dynamic
 				unsplash(storage)
 				offlineStorage.set({ background_type: 'dynamic' })
 			}
@@ -1135,7 +1122,7 @@ function renderImage(file, is) {
 
 		if (is === 'change') {
 			fullImage.push(result)
-			chrome.storage.local.set({ custom: fullImage })
+			offlineStorage.set({ custom: fullImage }, 'backgrounds')
 
 			compress(result, 'thumbnail')
 			compress(result, 'new')
@@ -1176,13 +1163,13 @@ function compress(e, state) {
 			addThumbnails(cleanData, fullImage.length - 1)
 
 			fullThumbnails.push(cleanData)
-			chrome.storage.local.set({ customThumbnails: fullThumbnails })
+			offlineStorage.set({ customThumbnails: fullThumbnails }, 'backgrounds')
 		} else {
 			//new image loaded from filereader sets image index
 			if (state === 'new') {
 				changeImgIndex(fullImage.length - 1)
 				//save l'index
-				chrome.storage.local.set({ customIndex: fullImage.length - 1 })
+				offlineStorage.set({ customIndex: fullImage.length - 1 }, 'backgrounds')
 			}
 
 			//affiche l'image
@@ -1234,7 +1221,7 @@ function addThumbnails(data, index) {
 
 		compress(fullImage[index])
 		changeImgIndex(index)
-		chrome.storage.local.set({ customIndex: index })
+		offlineStorage.set({ customIndex: index }, 'backgrounds')
 	}
 
 	//7
@@ -1255,13 +1242,13 @@ function addThumbnails(data, index) {
 		const deleteArrItem = (arr) => arr.slice(null, index).concat(arr.slice(index + 1))
 
 		fullImage = deleteArrItem(fullImage)
-		chrome.storage.local.set({ custom: fullImage })
+		offlineStorage.set({ custom: fullImage }, 'backgrounds')
 
 		fullThumbnails = deleteArrItem(fullThumbnails)
-		chrome.storage.local.set({ customThumbnails: fullThumbnails })
+		offlineStorage.set({ customThumbnails: fullThumbnails }, 'backgrounds')
 
 		//celui a suppr plus petit que l'actuel, baisse son index
-		if (index <= currentIndex) chrome.storage.local.set({ customIndex: currentIndex - 1 })
+		if (index <= currentIndex) offlineStorage.set({ customIndex: currentIndex - 1 }, 'backgrounds')
 	}
 }
 
@@ -1993,7 +1980,7 @@ function selectBackgroundType(cat) {
 }
 
 function displayCustomThumbnails() {
-	chrome.storage.local.get('customThumbnails', (data) => {
+	offlineStorage.get('backgrounds', (data) => {
 		if (data.customThumbnails.length > 0) {
 			let cleanData
 			let thumbs = data.customThumbnails
@@ -2006,7 +1993,7 @@ function displayCustomThumbnails() {
 			fullThumbnails = data.customThumbnails
 
 			setTimeout(function () {
-				chrome.storage.local.get('custom', (data) => {
+				offlineStorage.get('backgrounds', (data) => {
 					fullImage = data.custom
 				})
 			}, 200)
@@ -2525,9 +2512,17 @@ window.onload = function () {
 			}
 		})
 	} catch (e) {
-		// 1.9.3 data corruption fix
-		// can be removed for next version
-		localStorage.bonjourr = atob(localStorage.bonjourr)
+		errorMessage(e)
+
+		try {
+			// 1.9.3 data corruption fix
+			// can be removed for next version
+			localStorage.bonjourr = atob(localStorage.bonjourr)
+		} catch (e) {
+			errorMessage(e)
+		}
+
+		localStorage.removeItem('bonjourrBackgrounds')
 		window.location.reload()
 	}
 }

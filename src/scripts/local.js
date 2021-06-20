@@ -1324,7 +1324,12 @@ function unsplash(data, event, startup) {
 			// If collection isnt ''
 			if (dynamic.collection) {
 				if (dynamic.collection.length > 0) {
-					return dynamic.collection
+					const list = dynamic.collection.split(',')
+
+					// Split text, take random element
+					if (list.length > 1) return list[Math.floor(Math.random() * list.length)].trim()
+					// Return single collection
+					else return dynamic.collection
 				}
 			}
 

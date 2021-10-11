@@ -1,5 +1,5 @@
 //
-const version = '1.10.0a'
+const version = '1.10.0'
 const bonjourrCache = 'bonjourr-v' + version
 const backgroundCache = 'background-v' + version
 

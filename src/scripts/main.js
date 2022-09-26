@@ -1,1 +1,7356 @@
-const dict={"New tab":{fr:"Nouvel onglet",sv:"Ny flik",nl:"Nieuw tabblad",pl:"Nowa Karta",pt_BR:"Nova Aba",ru:"Новая вкладка",zh_CN:"新标签页",sk:"Nová karta",de:"Neuer Tab",it:"Nuova scheda",es:"Nueva Pestaña",tr:"Yeni Sekme",uk:"Нова вкладка",id:"Tab Baru",da:"Nyt faneblad"},Consider:{fr:"N'hésitez pas",sv:"Överväga",nl:"Overweeg te",pl:"Rozważ",pt_BR:"Considere",ru:"Рассмотрите возможность",zh_CN:"您可以考虑",sk:"Zvážte",de:"Erwägen Sie eine",it:"Considera di",es:"Considera",tr:"İstersen",uk:"Подумайте про те,",id:"Mempertimbangkan",da:"Overvej"},donating:{fr:"faire un don",sv:"donera",nl:"doneren",pl:"przekazanie darowizny",pt_BR:"fazer uma doação",ru:"пожертвования",zh_CN:"向我们捐款",sk:"darovanie",de:"Spende",it:"fare una donazione",es:"hacer una donación",tr:"bağış yap",uk:"щоб зробити пожертвування,",id:"menyumbang",da:"at donere"},"if you love Bonjourr":{fr:"si vous aimez Bonjourr",sv:"om du älskar Bonjourr",nl:"als je van Bonjourr houdt",pl:"jeśli kochasz Bonjourr",pt_BR:"se você ama o Bonjourr",ru:"если вам нравится Bonjourr",zh_CN:"来支持 Bonjourr",sk:"Ak miluješ Bonjourra",de:"wenn Sie Bonjourr lieben",it:"se ami Bonjourr",es:"si amas Bonjourr",tr:"tabi Bonjourr'u seviyorsan",uk:"якщо Вам подобається Bonjourr",id:"jika Anda menyukai Bonjourr",da:"hvis du elsker Bonjourr"},"Love using Bonjourr? Consider giving us a review or donating, that would help a lot! 😇":{fr:"Vous aimez utiliser Bonjourr ? Pensez à nous noter ou faire un don, ça serait super ! 😇",sv:"Älskar du att använda Bonjourr? Överväg att ge oss en recension eller donera, det skulle hjälpa mycket! 😇",nl:"Ben je dol op het gebruik van Bonjourr? Overweeg om ons een recensie te geven of te doneren, dat zou veel helpen! 😇",pl:"Uwielbiasz korzystać z Bonjourr? Zastanów się nad wystawieniem nam recenzji lub darowizny, co bardzo by pomogło! 😇",pt_BR:"Gosta de usar o Bonjourr? Considere nos avaliar ou faça uma doação, isso ajudaria muito! 😇",ru:"Нравится Bonjourr? Подумайте о том, чтобы оставить отзыв или сделать нам пожертвование, это очень поможет! 😇",zh_CN:"喜欢使用 Bonjourr？ 考虑给我们一个评论或捐赠，这会很有帮助！ 😇",sk:"Máte radi používanie Bonjourru? Skúste nám dať recenziu alebo darovať, to by veľmi pomohlo! 😇",de:"Lieben Sie es, Bonjourr zu nutzen? Erwägen Sie, uns eine Bewertung zu geben oder zu spenden, das würde viel helfen! 😇",it:"Ti piace usare Bonjourr? Considera di darci una recensione o di fare una donazione, sarebbe di grande aiuto! ?",es:"¿Te encanta usar Bonjourr? Considera darnos una reseña o hacer una donación, ¡eso nos ayudaría mucho! 😇",tr:"Bonjourr'u kullanmayı seviyor musunuz? Bize bir inceleme yapmayı veya bağış yapmayı düşünün, bu çok yardımcı olacaktır! 😇",uk:"Подобається Bonjourr? Залиште відгук або пожертвуйте, це дуже нам допоможе! 😇",id:"Suka menggunakan Bonjourr? Pertimbangkan untuk memberi kami ulasan atau donasi, itu akan sangat membantu! ",da:"Elsker du at bruge Bonjourr? Overvej at give os en anmeldelse eller en donation, det vil hjælpe meget 😇"},Review:{fr:"Noter",sv:"Recension",nl:"Beoordeling",pl:"Przejrzeć",pt_BR:"Avalie",ru:"Оставить отзыв",zh_CN:"审查",sk:"Preskúmanie",de:"Rezension",it:"Recensione",es:"Revisar",tr:"İnceleme",uk:"Залишити відгук",id:"Ulasan",da:"Anmeldelse"},Donate:{fr:"Faire un don",sv:"Donera",nl:"Doneer",pl:"Podarować",pt_BR:"Doe",ru:"Пожертвовать",zh_CN:"捐",sk:"Darovať",de:"Spenden",it:"Donare",es:"Donar",tr:"Bağış",uk:"Пожертвувати",id:"Donasi",da:"Donere"},Cancel:{fr:"Annuler",sv:"Avbryt",nl:"Annuleren",pl:"Anulować",pt_BR:"Cancelar",ru:"Отмена",zh_CN:"取消",sk:"Zrušiť",de:"Abbrechen",it:"Annulla",es:"Cancelar",tr:"İptal",uk:"Скасувати",id:"Batal",da:"Afbryd"},Delete:{fr:"Supprimer",sv:"Radera",nl:"Verwijderen",pl:"Kasować",pt_BR:"Deletar",ru:"Удалить",zh_CN:"删除快速链接",sk:"Odstrániť",de:"Löschen",it:"Elimina",es:"Eliminar",tr:"Sil",uk:"Видалити",id:"Hapus",da:"Slet"},"Apply changes":{fr:"Enregistrer",sv:"Applicera förändringar",nl:"Wijzigingen toepassen",pl:"Zatwierdź zmiany",pt_BR:"Aplicar mudanças",ru:"Применить изменения",zh_CN:"保存更改",sk:"Aplikovať zmeny",de:"Änderungen übernehmen",it:"Applica modifiche",es:"Aplicar cambios",tr:"Değişiklikleri uygula",uk:"Зберегти зміни",id:"Terapkan Perubahan",da:"Anvend ændringer"},Monday:{fr:"Lundi",sv:"Måndag",nl:"Maandag",pl:"Poniedziałek",pt_BR:"Segunda",ru:"Понедельник",zh_CN:"星期一",sk:"Pondelok",de:"Montag",it:"Lunedì",es:"Lunes",tr:"Pazartesi",uk:"Понеділок",id:"Senin",da:"Mandag"},Tuesday:{fr:"Mardi",sv:"Tisdag",nl:"Dinsdag",pl:"Wtorek",pt_BR:"Terça",ru:"Вторник",zh_CN:"星期二",sk:"Utorok",de:"Dienstag",it:"Martedì",es:"Martes",tr:"Salı",uk:"Вівторок",id:"Selasa",da:"Tirsdag"},Wednesday:{fr:"Mercredi",sv:"Onsdag",nl:"Woensdag",pl:"Środa",pt_BR:"Quarta",ru:"Среда",zh_CN:"星期三",sk:"Streda",de:"Mittwoch",it:"Mercoledì",es:"Miércoles",tr:"Çarşamba",uk:"Середа",id:"Rabu",da:"Onsdag"},Thursday:{fr:"Jeudi",sv:"Torsdag",nl:"Donderdag",pl:"Czwartek",pt_BR:"Quinta",ru:"Четверг",zh_CN:"星期四",sk:"Štvrtok",de:"Donnerstag",it:"Giovedì",es:"Jueves",tr:"Perşembe",uk:"Четвер",id:"Kamis",da:"Torsdag"},Friday:{fr:"Vendredi",sv:"Fredag",nl:"Vrijdag",pl:"Piątek",pt_BR:"Sexta",ru:"Пятница",zh_CN:"星期五",sk:"Piatok",de:"Freitag",it:"Venerdì",es:"Viernes",tr:"Cuma",uk:"П'ятниця",id:"Jumat",da:"Fredag"},Saturday:{fr:"Samedi",sv:"Lördag",nl:"Zaterdag",pl:"Sobota",pt_BR:"Sábado",ru:"Суббота",zh_CN:"星期六",sk:"Sobota",de:"Samstag",it:"Sabato",es:"Sábado",tr:"Cumartesi",uk:"Суббота",id:"Sabtu",da:"Lørdag"},Sunday:{fr:"Dimanche",sv:"Söndag",nl:"Zondag",pl:"Niedziela",pt_BR:"Domingo",ru:"Воскресенье",zh_CN:"星期日",sk:"Nedeľa",de:"Sonntag",it:"Domenica",es:"Domingo",tr:"Pazar",uk:"Неділя",id:"Minggu",da:"Søndag"},January:{fr:"Janvier",sv:"Januari",nl:"Januari",pl:"Styczeń",pt_BR:"Janeiro",ru:"января",zh_CN:"1月",sk:"Január",de:"Januar",it:"Gennaio",es:"Enero",tr:"Ocak",uk:"січня",id:"Januari",da:"januar"},February:{fr:"Février",sv:"Februari",nl:"Februari",pl:"Luty",pt_BR:"Fevereiro",ru:"февраля",zh_CN:"2月",sk:"Február",de:"Februar",it:"Febbraio",es:"Febrero",tr:"Şubat",uk:"люте",id:"Februari",da:"februar"},March:{fr:"Mars",sv:"Mars",nl:"Maart",pl:"Marzec",pt_BR:"Março",ru:"марта",zh_CN:"3月",sk:"Marec",de:"März",it:"Marzo",es:"Marzo",tr:"Mart",uk:"березня",id:"Maret",da:"marts"},April:{fr:"Avril",sv:"April",nl:"April",pl:"Kwiecień",pt_BR:"Abril",ru:"апреля",zh_CN:"4月",sk:"Apríl",de:"April",it:"Aprile",es:"Abril",tr:"Nisan",uk:"квітня",id:"April",da:"april"},May:{fr:"Mai",sv:"Maj",nl:"Mei",pl:"Maj",pt_BR:"Maio",ru:"мая",zh_CN:"5月",sk:"Máj",de:"Mai",it:"Maggio",es:"Mayo",tr:"Mayıs",uk:"травня",id:"Mei",da:"maj"},June:{fr:"Juin",sv:"Juni",nl:"Juni",pl:"Czerwiec",pt_BR:"Junho",ru:"июня",zh_CN:"6月",sk:"Jún",de:"Juni",it:"Giugno",es:"Junio",tr:"Haziran",uk:"червня",id:"Juni",da:"juni"},July:{fr:"Juillet",sv:"Juli",nl:"Juli",pl:"Lipiec",pt_BR:"Julho",ru:"июля",zh_CN:"7月",sk:"Júl",de:"Juli",it:"Luglio",es:"Julio",tr:"Temmuz",uk:"липня",id:"Juli",da:"juli"},August:{fr:"Août",sv:"Augusti",nl:"Augustus",pl:"Sierpień",pt_BR:"Agosto",ru:"августа",zh_CN:"8月",sk:"August",de:"August",it:"Agosto",es:"Agosto",tr:"Ağustos",uk:"серпня",id:"Agustus",da:"august"},September:{fr:"Septembre",sv:"September",nl:"September",pl:"Wrzesień",pt_BR:"Setembro",ru:"сентября",zh_CN:"9月",sk:"Spetember",de:"September",it:"Settembre",es:"Septiembre",tr:"Eylül",uk:"вересня",id:"September",da:"september"},October:{fr:"Octobre",sv:"Oktober",nl:"Oktober",pl:"Październik",pt_BR:"Outubro",ru:"октября",zh_CN:"10月",sk:"Október",de:"Oktober",it:"Ottobre",es:"Octubre",tr:"Ekim",uk:"жовтня",id:"Oktober",da:"oktober"},November:{fr:"Novembre",sv:"November",nl:"november",pl:"Listopad",pt_BR:"Novembro",ru:"ноября",zh_CN:"11月",sk:"November",de:"November",it:"Novembre",es:"Noviembre",tr:"Kasım",uk:"листопада",id:"November",da:"november"},December:{fr:"Décembre",sv:"December",nl:"December",pl:"Grudzień",pt_BR:"Dezembro",ru:"декабря",zh_CN:"12月",sk:"December",de:"Dezember",it:"Dicembre",es:"Diciembre",tr:"Aralık",uk:"грудня",id:"Desember",da:"december"},"Good morning":{fr:"Bonjour",sv:"Godmorgon",nl:"Goedemorgen",pl:"Dzień dobry",pt_BR:"Bom dia",ru:"Доброе утро!",zh_CN:"早上好",sk:"Dobré ráno",de:"Guten Morgen",it:"Buongiorno",es:"Buenos días",tr:"Günaydın",uk:"Доброго ранку",id:"Selamat pagi",da:"Godmorgen"},"Good afternoon":{fr:"Bonjour",sv:"Goddag",nl:"Goedemiddag",pl:"Miłego popołudia",pt_BR:"Boa tarde",ru:"Добрый день!",zh_CN:"下午好",sk:"Dobrý deň",de:"Guten Tag",it:"Buon pomeriggio",es:"Buenas tardes",tr:"Tünaydın",uk:"Добрий день",id:"Selamat siang",da:"God eftermiddag"},"Good evening":{fr:"Bonsoir",sv:"God kväll",nl:"Goedenavond",pl:"Dobry wieczór",pt_BR:"Boa noite",ru:"Добрый вечер!",zh_CN:"晚上好",sk:"Dobrý večer",de:"Guten Abend",it:"Buonasera",es:"Buenas noches",tr:"İyi akşamlar",uk:"Добрий вечір",id:"Selamat sore",da:"Godaften"},"Good night":{fr:"Bonne nuit",sv:"God natt",nl:"Goedennacht",pl:"Dobrej nocy",pt_BR:"Boa noite",ru:"Доброй ночи!",zh_CN:"晚安",sk:"Dobrú noc",de:"Gute Nacht",it:"Buonanotte",es:"Buenas noches",tr:"İyi geceler",uk:"Доброї ночі",id:"Selamat malam",da:"God nat"},"It is currently":{fr:"Il fait actuellement",sv:"Det är just nu",nl:"Het is nu",pl:"Jest obecnie",pt_BR:"Atualmente faz",ru:"Сейчас",zh_CN:"现在气温",sk:"Momentálne je",de:"Es ist derzeit",it:"Ci sono",es:"Actualmente está",tr:"Şu anda",uk:"Зараз",id:"Saat ini",da:"Det er lige nu"},"It currently feels like":{fr:"Il y a actuellement un ressenti de",sv:"Just nu känns det som",nl:"Het voelt nu als",pl:"Obecnie czuję się jak",pt_BR:"A Sensação térmica é de",ru:"Сейчас ощущается как",zh_CN:"目前感觉像",sk:"Aktuálne je pocitovo",de:"Es fühlt sich aktuell an wie",it:"Attualmente sembra",es:"Actualmente se siente como",tr:"Şu anda gibi hissettiriyor",uk:"Відчувається як",id:"Saat ini terasa seperti",da:"Lige nu føles det som"},"feels like":{fr:"avec un ressenti de",sv:"Känns som",nl:"voelt als",pl:"Czuje się jak",pt_BR:"com sensação de",ru:"По ощущениям",zh_CN:"感觉像",sk:"pocitovo",de:"es fühlt sich an wie",it:"sembrano",es:"se siente como",tr:"gibi hissettiriyor",uk:"відчувається як",id:"terasa seperti",da:"føles som"},"with a high of":{fr:"avec une maximale de",sv:"med högsta",nl:"Met maximaal",pl:"z maksymalnie",pt_BR:"a máxima é de",ru:"максимальная температура воздуха сегодня",zh_CN:"最高气温",sk:"z maximálnych",de:"mit maximal",it:"con una massima di",es:"con un máximo de",tr:"maksimum ile",uk:"з максимальною температурою",id:"dengan tinggi",da:"med op til"},today:{fr:"aujourd'hui",sv:"idag",nl:"vandaag",pl:"dzisiaj",pt_BR:"hoje",ru:"сегодня",zh_CN:", 以上是今日天气",sk:"dnes",de:"heute",it:"oggi",es:"hoy",tr:"bugün",uk:"сьогодні",id:"hari ini",da:"i dag"},tomorrow:{fr:"demain",sv:"jutri",nl:"morgen",pl:"jutro",pt_BR:"amanhã",ru:"завтра",zh_CN:", 以上是明天的天气",sk:"zajtra",de:"morgen",it:"domani",es:"mañana",tr:"yarın",uk:"завтра",id:"besok",da:"i morgen"},Title:{fr:"Titre",sv:"Titel",nl:"Titel",pl:"Tytuł",pt_BR:"Título",ru:"Название",zh_CN:"标题",sk:"Názov",de:"Titel",it:"Titolo",es:"Título",tr:"Başlık",uk:"Назва",id:"Judul",da:"Titel"},Link:{fr:"Lien",sv:"Länk",nl:"Koppeling",pl:"Połączyć",pt_BR:"Link",ru:"Ссылка",zh_CN:"关联",sk:"Odkaz",de:"Link",it:"Link",es:"Link",tr:"Bağlantı",uk:"Посилання",id:"Tautan",da:"Link"},"on Unsplash":{fr:"sur Unsplash",sv:"på Unsplash",nl:"op Unsplash",pl:"na Unsplash",pt_BR:"no Unsplash",ru:"на Unsplash",zh_CN:"在 Unsplash",sk:"na Unsplash",de:"auf Unsplash",it:"su Unsplash",es:"en Unsplash",tr:"Unsplash'ta",uk:"на Unsplash",id:"di Unsplash",da:"på Unsplash"},"Photo by ":{fr:"Photo par ",sv:"Foto av ",nl:"Foto door ",pl:"Zdjęcie z ",pt_BR:"Foto por ",ru:"Фото ",zh_CN:"拍摄者 ",sk:"Fotka od ",de:"Foto von ",it:"Fotografato da ",es:"Foto por ",tr:"Fotoğrafı çeken ",uk:"Фото від ",id:"Foto oleh ",da:"Foto af "},"Icon must be < 8kB":{fr:"L'icone doit etre < 8kB",sv:"Ikonen måste vara <8kB",nl:"Icoon moet < 8kB zijn",pl:"Ikona musi być < 8kB",pt_BR:"O ícone deve ser < 8kB",ru:"Иконка должна весить < 8 КБ",zh_CN:"图标必须< 8kB",sk:"Ikona musí byť <8 kB",de:"Das Symbol muss < 8kB sein",it:"L'icona deve essere < 8 kB",es:"El icono debe ser <8 kB",tr:"Simge <8kB olmalı",uk:"Іконка повинна бути менше 8 КБ",id:"Ikon harus <8kB",da:"Ikonet skal være < 8kB"},General:{fr:"Général",sv:"Allmän",nl:"Algemeen",pl:"Ogólne",pt_BR:"Geral",ru:"Основные",zh_CN:"通用",sk:"Generál",de:"Allgemein",it:"Generale",es:"General",tr:"Genel",uk:"Загальні",id:"Umum",da:"Generelt"},"Show all settings":{fr:"Afficher tous les réglages",sv:"Visa alla inställningar",nl:"Toon alle instellingen",pl:"Pokaż wszystkie ustawienia",pt_BR:"Mostrar todas configurações",ru:"Показать все настройки",zh_CN:"显示所有设置",sk:"Zobraziť všetky nastavenia",de:"Alle Einstellungen anzeigen",it:"Mostra tutte le impostazioni",es:"Mostrar todos los ajustes",tr:"Tüm ayarları göster",uk:"Показувати всі налаштування",id:"Tampilkan semua pengaturan",da:"Vis alle indstillingerne"},"Tab appearance":{fr:"Apparence de l'onglet",sv:"Flikens utseende",nl:"Tabbladweergave",pl:"Wygląd karty",pt_BR:"Aparência da guia",ru:"Внешний вид вкладки",zh_CN:"选项卡外观",sk:"Vzhľad karty",de:"Tab-Erscheinungsbild",it:"Aspetto della scheda",es:"Aspecto de la pestaña",tr:"Sekme görünümü",uk:"Зовнішній вигляд вкладки",id:"Tampilan tab",da:"Faneudseende"},"The icon and title that appear on your tab. You can put any emoji.":{fr:"L'icône et le titre qui apparaissent sur votre onglet. Vous pouvez mettre un emoji de votre choix.",sv:"Ikonen och titeln som visas på din flik. Du kan lägga in vilken emoji som helst.",nl:"Het pictogram en de titel die op uw tabblad verschijnen. Je kunt elke emoji plaatsen.",pl:"Ikona i tytuł, które pojawiają się na Twojej karcie. Możesz umieścić dowolny emotikon.",pt_BR:"O ícone e o título que aparecem na sua guia. Você pode colocar qualquer emoji.",ru:"Значок и заголовок, которые появляются на вашей вкладке. Вы можете поставить любой смайлик.",zh_CN:"标签上显示的图标和标题。 你可以放任何表情符号。",sk:"Ikona a názov, ktoré sa zobrazujú na vašej karte. Môžete vložiť akékoľvek emotikony.",de:"Das Symbol und der Titel, die auf Ihrem Tab angezeigt werden. Sie können jedes Emoji einfügen.",it:"L'icona e il titolo che appaiono nella tua scheda. Puoi mettere qualsiasi emoji.",es:"El icono y el título que aparecen en tu ficha. Puedes poner cualquier emoji.",tr:"Sekmenizde görünen simge ve başlık. Herhangi bir emoji koyabilirsiniz.",uk:"Значок і назва, які відображаються на вашій вкладці. Ви можете поставити будь-який емодзі.",id:"Ikon dan judul yang muncul di tab Anda. Anda dapat menempatkan emoji apa pun.",da:"Ikonet og titlen, der vises på din fane. Du kan sætte enhver emoji."},"More info":{fr:"En savoir plus",sv:"Mer information",nl:"Meer informatie",pl:"Więcej informacji",pt_BR:"Mais informações",ru:"Больше информации",zh_CN:"更多信息",sk:"Viac informácií",de:"Weitere Infos",it:"Ulteriori informazioni",es:"Más información",tr:"Daha fazla bilgi",uk:"Більше",id:"Info Selengkapnya",da:"Mere information"},"These are Bonjourr's bookmarks. ":{fr:"",sv:"Det här är Bonjourrs bokmärken. ",nl:"Dit zijn de bladwijzers van Bonjourr. ",pl:"To są zakładki Bonjourr. ",pt_BR:"Esses são os favoritos do Bonjourr. ",ru:"Это закладки Bonjourr. ",zh_CN:"这些是 Bonjourr 的书签。",sk:"Toto sú záložky Bonjourru. ",de:"Dies sind Bonjourrs Lesezeichen. ",it:"Questi sono i segnalibri di Bonjourr. ",es:"Estos son los marcadores de Bonjourr. ",tr:"Bunlar Bonjourr'un hızlı bağlantıları. ",uk:"Швидкі посилання Bonjourr. ",id:"Ini adalah bookmark Bonjourr. ",da:"De her er Bonjourrs bogmærker. "},"Edit your Quick Links by right clicking the icon.":{fr:"Éditez un lien favori en faisant un clic droit sur l'icône.",sv:"Redigera dina snabblänkar genom att högerklicka på deras ikon.",nl:"Bewerk uw snelkoppelingen door met de rechtermuisknop op hun pictogram te klikken.",pl:"Edytuj swoje szybkie linki, kliknutie pravým tlačidlom myši na ikonu.",pt_BR:"Altere seus Links Rápidos clicando com o botão direito do mouse em seu ícone.",ru:" Отредактируйте Быстрые ссылки, щелкнув по ним правой кнопкой мыши.",zh_CN:"通过右键单击它们的图标来编辑您的快速链接。",sk:"Upravte svoje Quick Links kliknutím pravým tlačidlom na ikone.",de:"Bearbeiten Sie Ihre Schnelllinks, indem Sie mit der rechten Maustaste auf das Symbol klicken.",it:"Modifica i tuoi collegamenti Quick Links clic con il pulsante destro del mouse sull'icona.",es:"Edita tus Links Favoritos dándole clic derecho a un ícono.",tr:"Simgeye sağ tıklayarak Hızlı Bağlantılarınızı düzenleyin.",uk:"Редагуйте ваші швидкі посилання натиснувши правою кнопкою миші на піктограмі.",id:"Edit Tautan Cepat Anda dengan mengeklik kanan ikon.",da:"Rediger dine Hurtig Links ved at højreklikke på ikonet."},"Edit your Quick Links by long-pressing the icon.":{fr:"Éditez un lien favori en appuyant longtemps sur l'icône.",sv:"Redigera dina snabblänkar genom att trycka länge på ikonen i 300 ms.",nl:"Bewerk uw snelkoppelingen door 300 ms lang op het pictogram te drukken.",pl:"Edytuj swoje szybkie łącza, przytrzymując ikonę przez 300 ms.",pt_BR:"Altere seus Links Rápidos pressionando o ícone por 300ms.",ru:"Отредактируйте быстрые ссылки, нажав и удерживая значок в течение 300 мс.",zh_CN:"长按图标 300 毫秒来编辑您的快速链接。",sk:"Upravte svoje Quick Links dlhým podržaním ikony po dobu 300 ms.",de:"Bearbeiten Sie Ihre Schnelllinks, indem Sie das Symbol 300 ms lang gedrückt halten.",it:"Modifica i tuoi collegamenti rapidi premendo a lungo per 300 ms l'icona.",es:"Edita tus Links Favoritos dejando un ícono presionado por 300 ms.",tr:"Simgeye 300ms uzun süre basarak Hızlı Bağlantılarınızı düzenleyin.",uk:"Редагуйте ваші швидкі посилання утримуючи піктограму протягом 300 мс",id:"Edit Tautan Cepat Anda dengan menekan lama ikon selama 300 md.",da:"Rediger dine Hurtig Links ved at trykke længe på ikonet."},"Type the collection ID from its URL, add more by separating them with a comma.":{fr:"Entrez l'ID de l'URL de la collection. Ajoutez en plusieurs en les séparant par une virgule.",sv:"Skriv samlings ID från dess URL. Lägg till mer genom att separera dem med ett komma.",nl:"Typ de collectie ID van de URL. Voeg meer toe door ze te scheiden met een komma.",pl:"Wpisz identyfikator kolekcji z adresu URL. Dodaj więcej oddzielając je przecinkiem.",pt_BR:"Digite a identificação da coleção através da URL, adicione mais separando-os com uma vírgula.",ru:"Введите идентификатор коллекции из ее URL-адреса. Добавьте другие, разделив их запятыми.",zh_CN:"从其 URL 中输入集合 ID。通过用逗号分隔它们来添加更多。",sk:"Zadajte ID zbierky z jej adresy URL. Pridajte ďalšie ich oddelením čiarkou.",de:"Geben Sie die Sammlungs ID aus ihrer URL ein. Fügen Sie weitere hinzu, indem Sie diese durch ein Komma trennen.",it:"Digita l'ID della raccolta dal relativo URL. Aggiungine altri separandoli con una virgola.",es:"Escribe el ID de la colección de tu URL. Agrega más separándolos con una coma.",tr:"Koleksiyon kimliğini URL'sinden yazın, virgülle ayırarak daha fazlasını ekleyin.",uk:"Введіть ідентифікатор колекції з URL-адреси або вкажіть декілька через кому",id:"Ketik ID koleksi dari URL-nya, tambahkan lebih banyak dengan memisahkannya dengan koma.",da:"Skriv samlingsid'et fra dens URL, tilføj flere ved at adskille dem med komma."},Name:{fr:"Nom",sv:"Namn",nl:"Naam",pl:"Nazwa",pt_BR:"Nome",ru:"Название",zh_CN:"名称",sk:"názov",de:"Name",it:"nome",es:"Nombre",tr:"İsim",uk:"Назва",id:"Nama",da:"Navn"},Add:{fr:"Ajouter",sv:"Lägg till",nl:"Voeg toe",pl:"Dodaj",pt_BR:"Adicionar",ru:"Добавить",zh_CN:"添加",sk:"Pridať",de:"Hinzufügen",it:"Aggiungere",es:"Añadir",tr:"Ekle",uk:"Додати",id:"Tambah",da:"Tilføj"},"No bookmarks found":{fr:"Aucun favori trouvé",sv:"Inga bokmärken hittades",nl:"Geen bladwijzers gevonden",pl:"Nie znaleziono zakładek",pt_BR:"Nenhum favorito encontrado",ru:"Закладок не найдено",zh_CN:"未找到书签",sk:"Nenašli sa žiadne záložky",de:"Keine Lesezeichen gefunden",it:"Nessun segnalibro trovato",es:"No se encontraron marcadores",tr:"Yer işareti bulunamadı",uk:"Закладок не знайдено",id:"Tidak ada bookmark yang ditemukan",da:"Ingen bogmærker fundet"},"Select bookmarks to import":{fr:"Sélectionnez les favoris à importer",sv:"Välj de bokmärken som ska importeras",nl:"Selecteer de bladwijzers om te importeren",pl:"Wybierz zakładki do zaimportowania",pt_BR:"Selecione os favoritos para importar",ru:"Выберите закладки для импорта",zh_CN:"选择要导入的书签",sk:"Vyberte záložky, ktoré chcete importovať",de:"Wählen Sie die zu importierenden Lesezeichen aus",it:"Seleziona i segnalibri da importare",es:"Selecciona marcadores para importar",tr:"İçe aktarılacak yer imlerini seçin",uk:"Оберіть закладки для імпорту",id:"Pilih bookmark untuk diimpor",da:"Vælg bogmærker som skal importeres"},"Import this bookmark":{fr:"Importer ce favori",sv:"Importera detta bokmärke",nl:"Deze bladwijzer importeren",pl:"Importuj tę zakładkę",pt_BR:"Importar este favorito",ru:"Импортировать эту закладку",zh_CN:"导入此书签",sk:"Importovať túto záložku",de:"Dieses Lesezeichen importieren",it:"Importa questo segnalibro",es:"Importar este marcador",tr:"Bu yer işaretini içe aktar",uk:"Імпортувати цю закладку",id:"Impor bookmark ini",da:"Importer dette bogmærke"},"Import these bookmarks":{fr:"Importer ces favoris",sv:"Importera dessa bokmärken",nl:"Importeer deze bladwijzers",pl:"Importuj te zakładki",pt_BR:"Importar esses favoritos",ru:"Импортировать эти закладки",zh_CN:"导入这些书签",sk:"Importujte tieto záložky",de:"Diese Lesezeichen importieren",it:"Importa questi segnalibri",es:"Importar estos marcadores",tr:"Bu yer işaretlerini içe aktar",uk:"Імпортувати ці закладки",id:"Import these bookmarks",da:"Importer disse bogmærker"},"Links per row":{fr:"Liens par ligne",sv:"Länkar per rad",nl:"Links per rij",pl:"Linki na wiersz",pt_BR:"Links por linha",ru:"Ссылок в строке",zh_CN:"每行链接",sk:"Odkazy na riadok",de:"Links pro Zeile",it:"Link per riga",es:"Links por fila",tr:"Her satır bir bağlantı",uk:"Посилань в рядку",id:"Tautan per baris",da:"Links per række"},Background:{fr:"Arrière-plan",sv:"Bakgrund",nl:"Achtergrond",pl:"Tło",pt_BR:"Fundo",ru:"Фон",zh_CN:"通用",sk:"Pozadie",de:"Hintergrund",it:"Sfondo",es:"Fondo",tr:"Arka plan",uk:"тла",id:"Latar belakang",da:"Baggrund"},"Background type":{fr:"Type d'arrière-plan",sv:"Bakgrundstyp",nl:"Achtergrondtype",pl:"Rodzaj tła",pt_BR:"Tipo de background",ru:"Тип фона",zh_CN:"背景类型",sk:"Pozadie",de:"Hintergrund Typ",it:"Tipo di sfondo",es:"Tipo de fondo",tr:"Arka plan türü",uk:"Тип тла",id:"Jenis latar belakang",da:"Baggrundstype"},Default:{fr:"Par défaut",sv:"Standard",nl:"Standaard",pl:"Domyślne",pt_BR:"Padrão",ru:"По умолчанию",zh_CN:"默认",sk:"Predvolené",de:"Standard",it:"Predefinito",es:"Por Defecto",tr:"Varsayılan",uk:"За замовчуванням",id:"Bawaan",da:"Standard"},Dynamic:{fr:"Dynamique",sv:"Dynamisk",nl:"Dynamisch",pl:"Dynamiczne",pt_BR:"Dinâmico",ru:"Динамический",zh_CN:"动态",sk:"Dynamický",de:"Dynamisch",it:"Dinamico",es:"Dinámico",tr:"Dinamik",uk:"Динамічний",id:"Dinamis",da:"Dynamisk"},Custom:{fr:"Personnalisé",sv:"Beställnings",nl:"Aangepast",pl:"Użytkownika",pt_BR:"Personalizado",ru:"Персонализированный",zh_CN:"自定义",sk:"Vlastné",de:"Benutzerdefiniert",it:"Personalizzato",es:"Personalizado",tr:"Özel",uk:"Власний",id:"Personalisasi",da:"Brugerdefineret"},Frequency:{fr:"Fréquence",sv:"Frekvens",nl:"Frequentie",pl:"Częstotliwość",pt_BR:"Frequência de atualização",ru:"Частота обновления",zh_CN:"背景切换频率",sk:"Frekvencia",de:"Häufigkeit",it:"Frequenza",es:"Frecuencia",tr:"Frekans",uk:"Частота",id:"Frekuensi",da:"Hyppighed"},Daylight:{fr:"Lumière du jour",sv:"Dagsljus",nl:"Daglicht",pl:"Światło dzienne",pt_BR:"Luz do dia",ru:"Дневное время",zh_CN:"白天",sk:"Denné svetlo",de:"Tageslicht",it:"Luce del giorno",es:"Luz diario",tr:"Gün ışığı",uk:"денне світло",id:"Siang hari",da:"Dagslys"},"Every tab":{fr:"Chaque onglet",sv:"Varje flik",nl:"Elk tabblad",pl:"Co zakładkę",pt_BR:"A cada aba",ru:"Каждая вкладка",zh_CN:"每次新建标签页",sk:"Každá karta",de:"Jeden Tab",it:"Ogni scheda",es:"Cada Pestaña",tr:"Sekmede bir",uk:"Кожну вкладку",id:"Setiap tab",da:"Hvert faneblad"},"Every hour":{fr:"Chaque heure",sv:"Varje timme",nl:"Elk uur",pl:"Co godzinę",pt_BR:"A cada hora",ru:"Каждый час",zh_CN:"每小时",sk:"Každú hodinu",de:"Jede Stunde",it:"Ogni ora",es:"Cada hora",tr:"Saatte bir",uk:"Кожну годину",id:"Setiap jam",da:"Hver time"},"Every day":{fr:"Chaque jour",sv:"Varje dag",nl:"Elke dag",pl:"Codziennie",pt_BR:"Diariamente",ru:"Каждый день",zh_CN:"每天",sk:"Každý deň",de:"Jeden Tag",it:"Ogni giorno",es:"Cada día",tr:"Günde bir",uk:"Кожного дня",id:"Setiap hari",da:"Hver dag"},Pause:{fr:"Pause",sv:"Paus",nl:"Pauze",pl:"Pauza",pt_BR:"Pausar",ru:"Пауза",zh_CN:"不切换",sk:"Pauza",de:"Pause",it:"Pausa",es:"Pausa",tr:"Durdur",uk:"Пауза",id:"Jeda",da:"Pause"},"Unsplash collection":{fr:"Collection Unsplash",sv:"Unsplash samling",nl:"Unsplash verzameling",pl:"Kolekcja Unsplash",pt_BR:"Coleção do Unsplash",ru:"Коллекция Unsplash",zh_CN:"Unsplash 收藏",sk:"Unsplash collection",de:"Unsplash Kollektion",it:"Raccolta Unsplash",es:"Colección Unsplash",tr:"Unsplash koleksiyonu",uk:"Колекція Unsplash",id:"Koleksi Unsplash",da:"Unsplash samling"},"Blur intensity":{fr:"Intensité du flou",sv:"Oskärpans intensitet",nl:"Intensiviteit van het vervagingseffect",pl:"Intensywnośc rozmycia",pt_BR:"Intensidade do desfoque",ru:"Степень размытия фона",zh_CN:"模糊度",sk:"Intenzita rozmazania",de:"Weichzeichner Stärke",it:"Intensità della sfocatura",es:"Intensidad de desenfoque",tr:"Bulanıklık yoğunluğu",uk:"Інтенсивність розмиття",id:"Intensitas kabur",da:"Sløringsintensitet"},Brightness:{fr:"Luminosité",sv:"Ljusstyrka",nl:"Helderheid",pl:"Jasność",pt_BR:"Brilho",ru:"Яркость",zh_CN:"亮度",sk:"Jas",de:"Helligkeit",it:"Luminosità",es:"Brillo",tr:"Parlaklık",uk:"Яскравість",id:"Kecerahan",da:"Lysstyrke"},"Dark mode":{fr:"Mode sombre",sv:"Mörkt läge",nl:"Nacht modus",pl:"Tryb ciemny",pt_BR:"Modo noturno",ru:"Тёмная тема",zh_CN:"深色模式",sk:"Tmavý režim",de:"Dunkelmodus",it:"Modalità notturna",es:"Modo Oscuro",tr:"Karanlık mod",uk:"Темний режим",id:"Mode Gelap",da:"Mørk tilstand"},"At night":{fr:"La nuit",sv:"På natten",nl:"Nachts",pl:"W nocy",pt_BR:"Apenas à noite",ru:"Ночью",zh_CN:"只在夜间",sk:"V noci",de:"Nachts",it:"Di notte",es:"De noche",tr:"Geceleyin",uk:"Вночі",id:"Di malam hari",da:"Om natten"},System:{fr:"Système",sv:"Systemet",nl:"Systeem",pl:"Systemem",pt_BR:"Seguir sistema",ru:"Задаётся системой",zh_CN:"系统设置",sk:"Systému",de:"System",it:"Sistema",es:"Sistema",tr:"Sistem",uk:"Система",id:"Sistem",da:"System"},Enabled:{fr:"Activé",sv:"Aktiverad",nl:"Ingeschakeld",pl:"Włączony",pt_BR:"Ativado",ru:"Включена",zh_CN:"开启",sk:"Zapnuté",de:"Aktiviert",it:"Abilitato",es:"Activado",tr:"Etkinleştirildi",uk:"Ввімкнено",id:"Diaktifkan",da:"Aktiveret"},Disabled:{fr:"Désactivé",sv:"Inaktiverad",nl:"Uitgeschakeld",pl:"Wyłączony",pt_BR:"Desativado",ru:"Выключена",zh_CN:"关闭",sk:"Vypnuté",de:"Deaktiviert",it:"Disabilitato",es:"Desactivado",tr:"Devre dışı",uk:"Вимкнено",id:"Dinonaktifkan",da:"Deaktiveret"},"New tab icon":{fr:"Icône nouvel onglet",sv:"Ikon för ny flik",nl:"Nieuw tabbladpictogram",pl:"Ikona nowej karty",pt_BR:"Ícone de nova aba",ru:"Значок новой вкладки",zh_CN:"新标签图标",sk:"Ikona novej karty",de:"Neues Tab-Symbol",it:"Icona Nuova scheda",es:"Icono para la nueva pestaña",tr:"Yeni sekme simgesi",uk:"Піктограма нової вкладки",id:"Ikon tab baru",da:"Fanebladsikon"},"Any emoji":{fr:"N'importe quel emoji",sv:"Vilken emoji som helst",nl:"Elke emoji",pl:"Dowolny emotikon",pt_BR:"Qualquer emoji",ru:"Любые эмодзи",zh_CN:"任何表情符号",sk:"Akékoľvek emoji",de:"Beliebiger Emoji",it:"Qualsiasi emoji",es:"Cualquier emoji",tr:"Herhangi bir emoji",uk:"Будь-який емоджі",id:"Apa saja emojo",da:"Hvilken som helst emoji"},"New tab title":{fr:"Titre du nouvel onglet",sv:"New tab title",nl:"New tab title",pl:"New tab title",pt_BR:"New tab title",ru:"Название новой вкладки",zh_CN:"New tab title",sk:"New tab title",de:"New tab title",it:"New tab title",es:"New tab title",tr:"New tab title",uk:"New tab title",id:"New tab title",da:"Fanebladstitel"},"Hide elements":{fr:"Cacher des éléments",sv:"Dölj element",nl:"Verberg elementen",pl:"Ukryj elementy",pt_BR:"Esconder elementos",ru:"Скрыть элементы",zh_CN:"隐藏元素",sk:"Skryť prvky",de:"Elemente ausblenden",it:"Nascondi elementi",es:"Esconder elementos",tr:"Öğerleri gizle",uk:"Сховати елементи",id:"Sembunyikan elements",da:"Skjul elementer"},Clock:{fr:"Horloge",sv:"Klocka",nl:"Klok",pl:"Zegar",pt_BR:"Relógio",ru:"Часы",zh_CN:"时钟",sk:"Hodiny",de:"Uhr",it:"Orologio",es:"Reloj",tr:"Saat",uk:"Годинник",id:"Jam",da:"Ur"},"Clock face":{fr:"Style d'horloge",sv:"Klockansikte",nl:"Wijzerplaat",pl:"Tarcza zegara",pt_BR:"Estilo do relógio",ru:"Циферблат",zh_CN:"钟面",sk:"Ciferník",de:"Ziffernblatt",it:"Quadrante",es:"Estilo del reloj",tr:"Saat stili",uk:"Циферблат",id:"Antarmuka Jam",da:"Urskive"},None:{fr:"Simple",sv:"Ingen",nl:"Geen",pl:"Nic",pt_BR:"Nenhum",ru:"Пусто",zh_CN:"没有任何",sk:"Žiadne",de:"Keiner",it:"Nessuno",es:"Ninguno",tr:"Hiçbiri",uk:"Нічого",id:"Tidak ada",da:"Intet"},Numbers:{fr:"Chiffres",sv:"Tal",nl:"Nummers",pl:"Liczby",pt_BR:"Números",ru:"Арабские цифры",zh_CN:"数字",sk:"Čísla",de:"Zahlen",it:"Numeri",es:"Números",tr:"Sayılar",uk:"Числа",id:"Nomor",da:"Tal"},Romans:{fr:"Chiffres romains",sv:"Romarna",nl:"Romeinen",pl:"Rzymianie",pt_BR:"Algarismos Romanos",ru:"Римские цифры",zh_CN:"罗马书",sk:"Rimania",de:"Römer",it:"Romani",es:"Romanos",tr:"Roma",uk:"Римський",id:"Roman",da:"Romertal"},Marks:{fr:"Graduations",sv:"Markera",nl:"Markering",pl:"Znakowanie",pt_BR:"Marcações",ru:"Маркировка",zh_CN:"打标",sk:"Značenie",de:"Markierung",it:"Marcatura",es:"Marcado",tr:"İşaretler",uk:"Мітки",id:"Tandai",da:"Mærker"},Date:{fr:"Date",sv:"Datum",nl:"Datum",pl:"Data",pt_BR:"Data",ru:"Дата",zh_CN:"日期",sk:"Dátum",de:"Datum",it:"Data",es:"Fecha",tr:"Tarih",uk:"Дата",id:"Tanggal",da:"Dato"},Greetings:{fr:"Bienvenue",sv:"Hälsningar",nl:"De groeten",pl:"Pozdrowienia",pt_BR:"Saudações",ru:"Привет",zh_CN:"你好",sk:"Pozdravom",de:"Grüße",it:"Saluti",es:"Saludos",tr:"Selamlama",uk:"Вітання",id:"Salam",da:"Velkomst"},Weather:{fr:"Météo",sv:"Väder",nl:"Het weer",pl:"Pogoda",pt_BR:"Tempo",ru:"Погода",zh_CN:"天气",sk:"Počasie",de:"Wetter",it:"Tempo",es:"Clima",tr:"Hava durumu",uk:"Погода",id:"Cuaca",da:"Vejr"},Icon:{fr:"Icône",sv:"Ikon",nl:"Icoon",pl:"Ikona",pt_BR:"Ícone",ru:"Иконка",zh_CN:"图标",sk:"Ikona",de:"Symbol",it:"Icona",es:"Icono",tr:"Simge",uk:"Іконка",id:"Icon",da:"Ikon"},Style:{fr:"Apparence",sv:"Stil",nl:"Stijl",pl:"Styl",pt_BR:"Estilo",ru:"Стиль",zh_CN:"风格",sk:"Štýl",de:"Stil",it:"Aspetto",es:"Apariencia",tr:"Görünüm",uk:"Стиль",id:"Gaya",da:"Udseende"},Large:{fr:"Grands",sv:"Stor",nl:"Groot",pl:"Wielki",pt_BR:"Grande",ru:"Большой",zh_CN:"大的",sk:"Veľký",de:"Groß",it:"Largo",es:"Largo",tr:"Büyük",uk:"Великий",id:"Besar",da:"Stor"},Medium:{fr:"Moyens",sv:"Medium",nl:"Gemiddeld",pl:"Średnia",pt_BR:"Médio",ru:"Средний",zh_CN:"中等",sk:"Stredný",de:"Mittel",it:"Medio",es:"Medio",tr:"Orta",uk:"Середній",id:"Sedang",da:"Medium"},Small:{fr:"Petits",sv:"Liten",nl:"Klein",pl:"Mały",pt_BR:"Pequeno",ru:"Большой",zh_CN:"小的",sk:"Malý",de:"Klein",it:"Piccolo",es:"Pequeña",tr:"Küçük",uk:"Маленький",id:"Kecil",da:"Lille"},Text:{fr:"Texte",sv:"Text",nl:"Tekst",pl:"Tekst",pt_BR:"Texto",ru:"Текст",zh_CN:"文本",sk:"Text",de:"Text",it:"Testo",es:"Texto",tr:"Metin",uk:"Текст",id:"Teks",da:"Tekst"},"Quick Links":{fr:"Liens favoris",sv:"Snabblänkar",nl:"Snelle links",pl:"Szybkie linki",pt_BR:"Links Rápidos",ru:"Быстрые ссылки",zh_CN:"快速链接",sk:"Rýchle odkazy",de:"Schnelllinks",it:"Link veloci",es:"Links Favoritos",tr:"Hızlı Linkler",uk:"Швидкі посилання",id:"Tautan Singkat",da:"Hurtig links"},"Settings icon":{fr:"Icône réglages",sv:"Inställningsikon",nl:"Instellingen icoon",pl:"Ikona ustawień",pt_BR:"Ícone de configuração",ru:"Значок настроек",zh_CN:"设置图标",sk:"Ikona nastavení",de:"Einstellungssymbol",it:"Icona Impostazioni",es:"Ícono de la configuración",tr:"Ayarlar simgesi",uk:"Іконка налаштувань",id:"Pengaturan icon",da:"Indstillingsikon"},"Upload background here":{fr:"Ajoutez votre arrière-plan",sv:"Ladda upp bakgrunden här",nl:"Upload hier achtergrond",pl:"Prześlij tło tutaj",pt_BR:"Suba o seu background aqui",ru:"Загрузите фон здесь",zh_CN:"上传背景",sk:"Nahrať pozadie tu",de:"Hier Hintergrund hochladen",it:"Carica lo sfondo qui",es:"Sube el fondo aquí",tr:"Arka planı buraya yükleyin",uk:"Завантажити зображення",id:"Unggah latar belakan disini",da:"Upload baggrund her"},"Analog clock":{fr:"Horloge analogue",sv:"Analog klocka",nl:"Analoge klok",pl:"Zegar analogowy",pt_BR:"Relógio Analógico",ru:"Аналоговые часы",zh_CN:"模拟时钟",sk:"Analógové hodiny",de:"Analoge Uhr",it:"Orologio analogico",es:"Reloj Analógico",tr:"Analog saat",uk:"Аналоговий годинник",id:"Jam Analog",da:"Analog ur"},"Display Seconds":{fr:"Afficher les secondes",sv:"Visa sekunder",nl:"Weergave seconden",pl:"Wyświetl sekundy",pt_BR:"Mostrar segundos",ru:"Показывать секунды",zh_CN:"显示秒",sk:"Zobraziť sekundy",de:"Sekunden anzeigen",it:"Visualizza secondi",es:"Mostrar los segundos",tr:"Saniyeyi göster",uk:"Показувати секунди",id:"Tampilkan keduanya",da:"Vis sekunder"},Automatic:{fr:"Automatique",sv:"Automatiskt",nl:"Automatisch ",pl:"Automatycznie",pt_BR:"Automático",ru:"Автоматически",zh_CN:"自动设置",sk:"Automatické",de:"Automatisch",it:"Automatico",es:"Automático",tr:"Otomatik",uk:"Автоматично",id:"Otomatis",da:"Automatisk"},Geolocation:{fr:"Géolocalisation",sv:"Geolokalisering",nl:"Locatie",pl:"Geolokalizacja",pt_BR:"Geolocalização",ru:"Геолокация",zh_CN:"使用我的位置",sk:"Geolokácia",de:"Geolokalisierung",it:"Geolocalizzazione",es:"Geolocalización",tr:"Coğrafi konum",uk:"Геолокація",id:"Geo-lokasi",da:"Geolokalisering"},"City not found":{fr:"Ville inconnue",sv:"Staden hittades inte",nl:"Stad niet gevonden",pl:"Zmień miasto",pt_BR:"Cidade não encontrada",ru:"Город не найден",zh_CN:"找不到城市",sk:"Mesto nenájdené",de:"Stadt nicht gefunden",it:"Città non trovata",es:"Ciudad no encontrada",tr:"Şehir bulunamadı",uk:"Місто не знайдено",id:"Kota Ditemukan",da:"By ikke fundet"},"Change city":{fr:"Changer la ville",sv:"Byt stad",nl:"Verander locatie",pl:"Zmień miasto",pt_BR:"Mudar cidade",ru:"Сменить город",zh_CN:"更改城市",sk:"Zmeniť mesto",de:"Stadt ändern",it:"Cambia città",es:"Cambiar ciudad",tr:"Şehri değiştir",uk:"Змінити місто",id:"Ubah kota",da:"Ændre by"},"There was a problem":{fr:"Il y a eu un problème",sv:"Ett fel uppstod",nl:"Er is een probleem",pl:"Wystąpił problem",pt_BR:"Houve um problema",ru:"Возникла проблема",zh_CN:"出现错误",sk:"Nastal problém",de:"Ein Problem ist aufgetreten",it:"C'è stato un problema",es:"Hubo un problema",tr:"Bir problem vardı",uk:"Виникла проблема",id:"Ada masalah",da:"Der opstod en fejl"},"Imperial units":{fr:"Unités impériales",sv:"Imperial enheter",nl:"Empirische eenheden",pl:"Jednostki Imperialne",pt_BR:"Unidades imperiais",ru:"Использовать Фаренгейты",zh_CN:"英制单位",sk:"Imperiálne jednotky",de:"Imperiale Maßeinheiten",it:"Sistema imperiale",es:"Sistema imperial",tr:"Emperyal birimler",uk:"Використовувати шкалу Фаренгейта",tr:"Emperyal birimler",id:"Kisaran Unit",da:"Engelske enheder"},Forecast:{fr:"Prévisions",sv:"Prognos",nl:"Voorspelling",pl:"Prognoza",pt_BR:"Previsão",ru:"Прогноз",zh_CN:"预报",sk:"Predpoveď",de:"Vorhersage",it:"Previsione",es:"Pronóstico",tr:"Hava Durumu",uk:"Прогноз",id:"Ramalan Cuaca",da:"Prognose"},"Every mornings":{fr:"Les matins",sv:"Varje morgon",nl:"Elke ochtend",pl:"Każdego poranka",pt_BR:"Toda manhã",ru:"Каждое утро",zh_CN:"每天早上",sk:"Každé ráno",de:"Jeden Morgen",it:"Ogni mattina",es:"Cada mañana",tr:"Her sabah",uk:"Щоранку",id:"Setiap pagi",da:"Hver morgen"},"Always show":{fr:"Toujours",sv:"Alltid",nl:"Altijd",pl:"Zawsze",pt_BR:"Mostrar",ru:"Всегда показывать",zh_CN:"总是",sk:"Vždy",de:"Immer anzeigen",it:"Sempre",es:"Siempre",tr:"Her zaman göster",uk:"Завжди",id:"Selalu tampilkan",da:"Vis altid"},"Never show":{fr:"Jamais",sv:"Aldrig",nl:"Nooit",pl:"Nigdy",pt_BR:"Ocultar",ru:"Никогда не показывать",zh_CN:"绝不",sk:"Nikdy",de:"Nie anzeigen",it:"Mai",es:"Nunca",tr:"Gösterme",uk:"Ніколи",id:"Belum pernah upload",da:"Vis aldrig"},Temperature:{fr:"Température",sv:"Temperatur",nl:"Temperatuur",pl:"Temperatura",pt_BR:"Temperatura",ru:"Температура",zh_CN:"温度",sk:"Teplota",de:"Temperatur",it:"Temperatura",es:"Temperatura",tr:"Sıcaklık",uk:"Температура",id:"tempratur",da:"Temperatur"},Actual:{fr:"Réelle",sv:"Faktisk",nl:"Werkelijke",pl:"Rzeczywisty",pt_BR:"Real",ru:"Действительный",zh_CN:"实际的",sk:"Reálny",de:"Tatsächlich",it:"Real",es:"Real",tr:"Gerçek",uk:"Дійсна",id:"Aktual",da:"Aktuel"},"Feels like":{fr:"Ressenti",sv:"Känsla",nl:"Gevoelsmatige",pl:"Uczucie",pt_BR:"Sensação térmica",ru:"Ощущается как",zh_CN:"感覺像",sk:"Pocit",de:"Fühlt Sich An Wie",it:"Si Sente Come",es:"Se Siente Como",tr:"Gibi hissettiriyor",uk:"Відчуття",id:"Terasa seperti",da:"Føles som"},Both:{fr:"Les deux",sv:"Både",nl:"Beide",pl:"Obydwa",pt_BR:"Ambos",ru:"Оба",zh_CN:"两个都",sk:"Obaja",de:"Beide",it:"Entrambi",es:"Ambos",tr:"İkisi birden",uk:"Обидві",id:"Keduanya",da:"Begge"},"Search bar":{fr:"Barre de recherche",sv:"Sökruta",nl:"Zoekbalk",pl:"Pasek wyszukiwania",pt_BR:"Barra de pesquisa",ru:"Строка поиска",zh_CN:"搜索框",sk:"VYHĽADÁVACÍ PANEL",de:"Suchleiste",it:"Barra di ricerca",es:"Barra de búsqueda",tr:"Arama çubuğu",uk:"Панель пошуку",id:"Bilah pencarian",da:"Søgefelt"},"Search engine":{fr:"Moteur de recherche",sv:"Sökmotor",nl:"Zoekmachine",pl:"Wyszukiwarka",pt_BR:"Buscadores",ru:"Поисковая система",zh_CN:"搜索引擎",sk:"Vyhľadávač",de:"Suchmaschine",it:"Motore di ricerca",es:"Motor de búsqueda",tr:"Arama motoru",uk:"Пошукова система",id:"Mesin pencari",da:"Søgemaskine"},Enable:{fr:"Activer",sv:"Aktivera",nl:"Activeren",pl:"Aktywować",pt_BR:"Ativar",ru:"Включить",zh_CN:"启用",sk:"Aktivovať",de:"Aktivieren",it:"Abilita",es:"Activar",tr:"Aktif Et",uk:"Активовано",id:"Aktif",da:"Aktiver"},"Open in new tab":{fr:"Ouvrir dans un nouvel onglet",zh_CN:"在新标签页打开链接",sv:"Öppna i ny flik",nl:"Openen in nieuw tabblad",pl:"Otwieraj w nowej karcie",pt_BR:"Abrir em nova aba",ru:"Открыть в новой вкладке",sk:"Otvoriť v novej karte",de:"In einem neuen Tab öffnen",it:"Apri in una nuova scheda",es:"Abrir en una nueva pestaña",tr:"Yeni sekmede aç",uk:"Відкрити в новій вкладці",id:"Buka di tab baru",da:"Åben i et nyt faneblad"},"URL request":{fr:"URL de requête",sv:"URL begäran",nl:"URL verzoek",pl:"Żądanie adresu URL",pt_BR:"URL de pesquisa",ru:"URL-запрос",zh_CN:"网址请求",sk:"Žiadosť o adresu URL",de:"URL Anfrage",it:"Richiesta URL",es:"Solicitud de URL",tr:"URL isteği",uk:"URL запит",id:"URL permintaan",da:"URL-anmodning"},"%s Not found":{fr:"%s Pas trouvé",sv:"%s Hittades inte",nl:"%s Niet gevonden",pl:"Nie znaleziono %s",pt_BR:"% s Não encontrado",ru:"% s не найдено",zh_CN:"%s 未找到",sk:"%s nebol nájdený",de:"%s nicht gefunden",it:"%s non trovato",es:"% s no encontrado",tr:"%s Bulunamadı",uk:"%s не знайдено",id:"%s tidak ditemukan",da:"%s ikke fundet"},"Search query: %s":{fr:"Requête: %s",sv:"Sökfråga: %s",nl:"Zoekopdracht: %s",pl:"Wyszukiwane hasło: %s",pt_BR:"Buscador:% s",ru:"Поисковый запрос: %s",zh_CN:"搜索查询：%s",sk:"Vyhľadávací dopyt: %s",de:"Suchanfrage: %s",it:"Ricerca di ricerca: %s",es:"Consulta de búsqueda:% s",tr:"Arama sorgusu: %s",uk:"Пошуковий запит: %s",id:"Pencarian kata kunci %s",da:"Søgeterm: %s"},Opacity:{fr:"Opacité",sv:"Opacitet",nl:"Dekking",pl:"Nieprzezroczystość",pt_BR:"Opacidade",ru:"Непрозрачность",zh_CN:"不透明度",sk:"Nepriehľadnosť",de:"Deckkraft",it:"Opacità",es:"Opacidad",tr:"Opaklık",uk:"Непрозорість",id:"Transparansi",da:"Uigennemsigtighed"},"Time & Date":{fr:"Date & heure",sv:"Tid och datum",nl:"Datum en tijd",pl:"Data i godzina",pt_BR:"Data & Hora",ru:"Время и дата",zh_CN:"时间和日期",sk:"Čas a dátum",de:"Zeit und Datum",it:"Ora dell'appuntamento",es:"Fecha & hora",tr:"Saat ve Tarih",uk:"Час & Дата",id:"Waktu & Tanggal",da:"Tid og dato"},"Custom Style":{fr:"Style personnalisé",sv:"Anpassad stil",nl:"Aangepaste stijl",pl:"Niestandardowy styl",pt_BR:"Estilo Personalizado",ru:"Пользовательский стиль",zh_CN:"自定义样式",sk:"Vlastný štýl",de:"Benutzerdefinierter Stil",it:"Stile personalizzato",es:"Estilo personalizado",tr:"Özel Stil",uk:"Власні стилі",id:"Personalisasi Gaya",da:"Tilpasset stil"},"Type in your custom CSS":{fr:"Entrez votre CSS personnalisé",sv:"Skriv in din anpassade CSS",nl:"Typ uw aangepaste CSS in",pl:"Wpisz swój niestandardowy CSS",pt_BR:"Insira seu CSS personalizado",ru:"Введите свой собственный CSS",zh_CN:"输入您的自定义 CSS",sk:"Zadajte svoj vlastný CSS",de:"Geben Sie Ihr benutzerdefiniertes CSS ein",it:"Digita il tuo CSS personalizzato",es:"Escribe aquí tu CSS personalizado",tr:"Özel CSS'nizi yazın",uk:"Скопіюйте власний CSS",id:"Ketik CSS khusus Anda",da:"Skriv dit tilpassede CSS"},"Make cool things happen with CSS. ":{fr:"Tentez de jolies choses en CSS. ",sv:"Få coola saker att hända med CSS. ",nl:"Laat coole dingen gebeuren met CSS. ",pl:"Twórz fajne rzeczy dzięki CSS. ",pt_BR:"Faça coisas legais acontecerem com CSS. ",ru:"Творите с помощью CSS. ",zh_CN:"用 CSS 让很酷的事情发生。 ",sk:"Urobte skvelé veci pomocou CSS. ",de:"Machen Sie mit CSS coole Dinge möglich. ",it:"Fai accadere cose interessanti con i CSS. ",es:"Haz que sucedan cosas geniales con CSS. ",tr:"CSS ile harika şeyler yapın. ",uk:"Зробіть круті речі за допомогою CSS. ",id:"Wujudkan hal-hal mewah dengan CSS. ",da:"Få smarte ting til at ske med CSS. "},"Check out our ":{fr:"Jetez un oeil à nos ",sv:"Kolla in vår ",nl:"Bekijk onze ",pl:"Sprawdź nasze ",pt_BR:"Confira nosso ",ru:"Посмотрите наши ",zh_CN:"看看我们的 ",sk:"Pozrite si naše ",de:"Schauen Sie sich unsere an ",it:"Dai un'occhiata al nostro ",es:"Echa un vistazo a nuestro ",tr:"Göz atın ",uk:"Check out our ",id:"Lihat kami ",da:"Tjek vores "},"CSS snippets.":{fr:"extraits de CSS.",sv:"CSS-utdrag.",nl:"CSS-fragmenten.",pl:"Fragmenty kodu CSS.",pt_BR:"trechos de CSS.",ru:"CSS-сниппеты.",zh_CN:"CSS 片段。",sk:"úryvky CSS.",de:"CSS-Schnipsel.",it:"frammenti CSS.",es:"Fragmentos de CSS.",tr:"Özel CSS'nizi yazın",uk:"CSS snippets.",id:"Cuplikan CSS.",da:"CSS uddrag."},"US Date Format":{fr:"Date américaine",sv:"Amerikansk dejt",nl:"Amerikaanse datumnotatie",pl:"Format daty w USA",pt_BR:"Formato de data dos EUA",ru:"Формат даты США",zh_CN:"美国日期格式",sk:"Formát dátumu v USA",de:"US-Datumsformat",it:"Formato data USA",es:"Formato de fecha americano",tr:"Amerikan formatı",uk:"Формат дати США",id:"Format Tanggal US",da:"Amerikansk datoformat"},"12-Hour Time":{fr:"Affichage 12h",sv:"12-timmars klocka",nl:"12 uur tijd",pl:"Czas 12-godzinny",pt_BR:"Formato de 12 horas",ru:"12-часовой формат времени",zh_CN:"12小时制",sk:"12-hodinový čas",de:"12-Stunden Uhrzeit",it:"Sistema orario a 12 ore",es:"Sistema horario de 12 horas",tr:"12 Saatlik Zaman",uk:"12-годинний формат часу",id:"Waktu 12-Jam",da:"12-timers ur"},"Time zone":{fr:"Fuseau horaire",sv:"Tidszon",nl:"Tijdzone",pl:"Strefa czasowa",pt_BR:"Fuso Horário",ru:"Часовой пояс",zh_CN:"时区",sk:"Časové pásmo",de:"Zeitzone",it:"Fuso orario",es:"Uso horario",tr:"Saat dilimi",uk:"Часовий пояс",id:"Zona Waktu",da:"Tidszone"},Language:{fr:"Langue",sv:"Välj språk",nl:"Kies een taal",pl:"Wybierz Język",pt_BR:"Idioma",ru:"Язык",zh_CN:"选择语言",sk:"Vybrať jazyk",de:"Sprache",it:"Lingua",es:"Lenguaje o idioma",tr:"Dil",uk:"Мова",id:"Bahasa",da:"Sprog"},Greeting:{fr:"Bienvenue",sv:"Hälsning",nl:"Groet",pl:"Powitanie",pt_BR:"Saudação",ru:"Приветствие",zh_CN:"问候",sk:"S pozdravom",de:"Gruß",it:"Saluto",es:"Saludo",tr:"Selamlama",uk:"Привітання",id:"Salam",da:"Velkomst"},Quotes:{fr:"Citations",sv:"Citat",nl:"Citaten",pl:"Cytaty",pt_BR:"Citações",ru:"Цитаты",zh_CN:"引号",sk:"Citácie",de:"Zitate",it:"Citazioni",es:"Cotizaciones",tr:"alıntılar",uk:"Цитати",id:"Kutipan",da:"Citater"},"Always show author":{fr:"Toujours afficher l'auteur",sv:"Visa alltid författaren",nl:"Altijd auteur weergeven",pl:"Zawsze pokazuj autora",pt_BR:"Sempre mostrar autor",ru:"Всегда показывать автора",zh_CN:"始终显示作者",sk:"Vždy zobraziť autora",de:"Autor immer anzeigen",it:"Mostra sempre l'autore",es:"Mostrar siempre el autor",tr:"Yazarı her zaman göster",uk:"Показувати автора",id:"Selalu tunjukkan penulis",da:"Vis altid forfatteren"},"Quote type":{fr:"Type de citations",sv:"Typ av citat",nl:"Soort citaten",pl:"Rodzaj cytatu",pt_BR:"Tipo de citação",ru:"Вид цитаты",zh_CN:"一种报价",sk:"Druh citátu",de:"Art Zitat",it:"Tipo di citazione",es:"Tipo de cotización",tr:"alıntı türü",uk:"вид цитати",id:"Tipe kutipan",da:"Type af citat"},Classic:{fr:"Classique",sv:"Klassisk",nl:"Klassiek",pl:"Klasyczny",pt_BR:"Clássico",ru:"Классический",zh_CN:"经典的",sk:"klasické",de:"Klassisch",it:"Classico",es:"Clásico",tr:"Klasik",uk:"Класичний",id:"Klasik",da:"Klassisk"},Fonts:{fr:"Polices",sv:"Anpassat teckensnitt",nl:"Aangepast lettertype",pl:"Czcionka Niestandardowa",pt_BR:"Fonte Personalizada",ru:"Пользовательский шрифт",zh_CN:"自定义字体",sk:"Vlastné písmo",de:"Benutzerdefinierte Schriftart",it:"Carattere personalizzato",es:"Tipografía personalizada",tr:"Özel Yazı Tipi",uk:"Власний шрифт",id:"Pernolasasi Font",da:"Skrifttyper"},"Font family":{fr:"Police",sv:"Typsnittsfamilj",nl:"Lettertypefamilie",pl:"Rodzina czcionek",pt_BR:"Família de fontes",ru:"Семейство шрифтов",zh_CN:"字体系列",sk:"Rodina písem",de:"Schriftfamilie",it:"Famiglia di font",es:"Tipografía",tr:"Yazı tipi ailesi",uk:"Шрифт",id:"Font family",da:"Skrifttype familie"},Weight:{fr:"Épaisseur",sv:"Vikt",nl:"Gewicht",pl:"Waga",pt_BR:"Peso",ru:"Масса",zh_CN:"重量",sk:"Hmotnosť",de:"Gewicht",it:"Il peso",es:"Peso",tr:"Önem",uk:"Насиченість",id:"Bobot",da:"Vægt"},Size:{fr:"Taille",sv:"Storlek",nl:"Grootte",pl:"Rozmiar",pt_BR:"Tamanho",ru:"Размер",zh_CN:"尺寸",sk:"Veľkosť",de:"Größe",it:"Taglia",es:"Tamaño",tr:"Boyut",uk:"Розмір",id:"Ukuran",da:"størrelse"},Shadow:{fr:"Ombres",sv:"Shadow",nl:"Shadow",pl:"Shadow",pt_BR:"Shadow",ru:"Тень",zh_CN:"Shadow",sk:"Shadow",de:"Shadow",it:"Shadow",es:"Shadow",tr:"Shadow",uk:"Shadow",id:"Shadow",da:"Skygge"},"Custom CSS":{fr:"CSS personnalisé",sv:"Anpassad CSS",nl:"Aangepaste CSS",pl:"Niestandardowe CSS",pt_BR:"CSS Personalizado",ru:"Пользовательский CSS",zh_CN:"自定义 CSS",sk:"Vlastný CSS",de:"Benutzerdefinierte CSS",it:"CSS personalizzato",es:"CSS personalizado",tr:"Özel CSS",uk:"Власний CSS",id:"Personalisasi CSS",da:"Tilpasset CSS"},Settings:{fr:"Réglages",sv:"Inställningar",nl:"Instellingen",pl:"Ustawienia",pt_BR:"Configurações",ru:"Настройки",zh_CN:"设置",sk:"Nastavenia",de:"Einstellungen",it:"Impostazioni",es:"Configuración",tr:"Ayarlar",uk:"Налаштування",id:"Pengaturan",da:"Indstillinger"},Import:{fr:"Importer",sv:"Importera",nl:"Importeren",pl:"Import",pt_BR:"Importar",ru:"Импорт",zh_CN:"导入设置",sk:"Importovať",de:"Importieren",it:"Importare",es:"Importar",tr:"İçe Aktar",uk:"Імпортувати",id:"Impor",da:"Importér"},Export:{fr:"Exporter",sv:"Exportera",nl:"Exporteren",pl:"Eksport",pt_BR:"Exportar",ru:"Экспорт",zh_CN:"导出设置",sk:"Export",de:"Exportieren",it:"Esportare",es:"Exportar",tr:"Dışa Aktar",uk:"Експортувати",id:"Ekspor",da:"Eksportér"},Copied:{fr:"Copié",sv:"Kopierat",nl:"Gekopieerd",pl:"Skopiowano",pt_BR:"Copiado",ru:"Скопировано",zh_CN:"已复制",sk:"Skopírované",de:"Kopiert",it:"Copiato",es:"Copiado",tr:"Kopyalandı",uk:"Скопійовано",id:"Disalin",da:"Kopieret"},"Import code":{fr:"Importer le code",sv:"Importera kod",nl:"Code importeren",pl:"Kod importu",pt_BR:"Importar código",ru:"Код импорта",zh_CN:"导入代码",sk:"Importovať kód",de:"Code importieren",it:"Codice di importazione",es:"Importar código",tr:"Kodu içe aktar",uk:"Налаштування",id:"Impor kode",da:"Importér kode"},"Error in import code":{fr:"Erreur dans le code d'importation",sv:"Fel i importkoden",nl:"Fout in importcode",pl:"Błąd w kodzie importu",pt_BR:"Erro ao importar código",ru:"Ошибка в коде импорта",zh_CN:"导入代码错误",sk:"Chyba v kóde importu",de:"Fehler im importierten Code",it:"Errore nel codice di importazione",es:"Error en el código de importación",tr:"İçe aktarma kodunda hata",uk:"Помилка при імпортуванні налаштувань",id:"Kesalahan ketika impor kode",da:"Fejl i importkode"},"Export code":{fr:"Code d'exportation",sv:"exportkod",nl:"exportcode",pl:"kod eksportowy",pt_BR:"Exportar código",ru:"Код экспорта",zh_CN:"导入代码",sk:"vývozný kód",de:"Code Exportieren",it:"codice di esportazione",es:"Exportar código",tr:"Kodu dışa aktar",uk:"Експортувати налаштування",id:"Ekspor kode",da:"Eksportér kode"},"Click again to confirm":{fr:"Cliquez encore une fois pour confirmer",sv:"Klicka igen för att bekräfta",nl:"Klik nogmaals om te bevestigen",pl:"Kliknij ponownie, aby potwierdzić",pt_BR:"Clique novamente para confirmar",ru:"Щелкните еще раз для подтверждения",zh_CN:"再次点击确认",sk:"Opätovným kliknutím potvrďte",de:"Erneut klicken, um zu bestätigen",it:"Fai nuovamente clic per confermare",es:"Haga clic de nuevo para confirmar",tr:"Onaylamak için tekrar tıklayın",uk:"Натисніть ще раз для підтвердження",id:"Klik lagi untuk konfirmasi",da:"Klik igen for at bekræfte"},"Reset settings":{fr:"Réinitialiser les réglages",sv:"Återställ inställningar",nl:"Reset instellingen",pl:"Przywróć ustawienia domyślne",pt_BR:"Redefinir configurações",ru:"Сбросить настройки",zh_CN:"重新设置",sk:"Obnoviť nastavenia",de:"Einstellungen zurücksetzen",it:"Impostazioni iniziali",es:"Restablecer configuración",tr:"Ayarları sıfırla",uk:"Скинути налаштування",id:"Setel ulang pengaturan",da:"Nulstil indstillingerne"},"Are you sure ?":{fr:"Etes vous sûr ?",sv:"Är du säker ?",nl:"Weet je zeker dat ?",pl:"Czy jesteś pewien ?",pt_BR:"Você tem certeza?",ru:"Вы уверены ?",zh_CN:"确定还原设置吗?",sk:"Si si istý ?",de:"Bist du sicher ?",it:"Sei sicuro ?",es:"¿Estás seguro?",tr:"Emin misin ?",uk:"Ви впевнені ?",id:"Apakah anda yakin ?",da:"Er du sikker?"},"Made in France with ❤️":{fr:"Fabriqué en France avec ❤️",sv:"Tillverkad i frankrike med ❤️",nl:"Gemaakt in Frankrijk met ❤️",pl:"Stworzone we Francji z ❤️",pt_BR:"Feito na França com ❤️",ru:"Сделано во Франции с ❤️",zh_CN:"源自法国 匠❤️打造",sk:"Spravené vo Francúzsku s ❤️",de:"Gemacht in Frankreich mit ❤️",it:"Fatto in Francia con ❤️",es:"Hecho en Francia con ❤️",tr:"❤️ ile Fransa'da üretilmiştir",uk:"Створено в Франції з ❤️",id:"Dibuat di Prancis dengan ❤️",da:"Lavet i Frankrig med ❤️"},by:{fr:"par",sv:"av",nl:"Door",pl:"przez",pt_BR:"por",ru:"Разработчики:",zh_CN:"由",sk:"od",de:"von",it:"Da",es:"por",tr:"tarafından",uk:"Розробники:",id:"oleh",da:"af"},Visit:{fr:"Rendez-vous sur",sv:"Besök",nl:"Bezoek",pl:"Do zobaczenia na",pt_BR:"Veja",ru:"Посетите",zh_CN:"访问",sk:"Navštívte",de:"Besuche",it:"Visita",es:"Visita",tr:"Ziyaret Et",uk:"Відвідайте",id:"Kunjungi",da:"Besøg"},"our website":{fr:"notre site Internet",sv:"vår hemsida",nl:"onze website",pl:"nasza strona",pt_BR:"nosso site",ru:"наш сайт",zh_CN:"我们的网站",sk:"našu webstránku",de:"unsere Website",it:"il nostro sito internet",es:"nuestro sitio web",tr:"websitemiz",uk:"наш сайт",id:"Website kami",da:"vores hjemmeside"},"for infos and donations":{fr:"pour en savoir plus ou faire un don",sv:"för mera information och donationer",nl:"Voor informatie en donaties",pl:"aby dowiedzieć się więcej lub przekazać darowiznę",pt_BR:"para mais informações e doações",ru:"чтобы узнать больше или поддержать разработчиков",zh_CN:"以获取更多资讯，或向我们捐款",sk:"pre informácie a dary",de:"für Informationen und Spenden",it:"per info e donazioni",es:"para más info y donaciones",tr:"bilgi ve bağış için",uk:"для отримання додаткової інформації або пожертвування",id:"untuk info dan donasi",da:"for at lære mere eller donere"}},days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],months=["January","February","March","April","May","June","July","August","September","October","November","December"],engineLocales={google:{base:"https://www.google%l/search?q=%s",fr:".fr",en:".com",ru:".ru",pl:".pl",pt_BR:".com.br",sv:".se",sl:".sl",nl:".nl",zh_CN:".tw",sk:".sk",de:".de",it:".it",es:".es",no:".no",tr:".com.tr",uk:".com.ua",id:".co.id",da:".dk"},ddg:{base:"https://duckduckgo.com/?q=%s&kl=%l",fr:"fr-fr",en:"en-US",ru:"ru-ru",pl:"pl-pl",pt_BR:"br-pt",sv:"se-se",sl:"sl-sl",nl:"nl-nl",zh_CN:"cn-zh",sk:"sk-sk",de:"de-de",it:"it-it",es:"es-es",no:"no-no",tr:"tr-tr",uk:"uk-UA",id:"id-ID",da:"dk-da"},startpage:{base:"https://www.startpage.com/do/search?query=%s&language=%l",fr:"francais",en:"english",ru:"russian",pl:"polski",pt_BR:"br-pt",sv:"svenska",sl:"sl-sl",nl:"nl-nl",zh_CN:"cn-zh",sk:"sk-sk",de:"de-de",it:"italiano",es:"es-es",no:"norsk",tr:"tr-tr",uk:"",id:"",da:"dansk"},qwant:{base:"https://www.qwant.com/?q=%s&r=%l",fr:"FR&sr=fr",en:"US&sr=en",ru:"RU&sr=ru",pl:"PL&sr=pl",pt_BR:"BR&sr=pt",sv:"SE&sr=sv",sl:"SL&sr=sl",nl:"NL&sr=nl",zh_CN:"SG&sr=en",sk:"en&sr=en",de:"DE&sr=de",it:"IT&sr=it",es:"ES&sr=es",no:"NO&sr=nb",tr:"",da:"DK&sr=da"},yahoo:{base:"https://%lsearch.yahoo.com/search?q=%s",fr:"fr.",en:"",ru:"ru.",pl:"pl.",pt_BR:"br.",sv:"se.",sl:"sl.",nl:"nl.",zh_CN:"",sk:"",de:"de.",it:"it.",es:"es.",no:"no.",tr:"tr.",uk:"ua.",id:"id.",da:"dk."},bing:{base:"https://www.bing.com/search?q=%s&cc=%l",fr:"fr",en:"",ru:"ru",pl:"pl",pt_BR:"br",sv:"se",sl:"sl",nl:"nl",zh_CN:"",sk:"sk",de:"de",it:"it",es:"es",no:"no",tr:"tr",uk:"",id:"id",da:"da"},brave:{base:"https://search.brave.com/search?q=%s"},ecosia:{base:"https://www.ecosia.org/search?q=%s"},lilo:{base:"https://search.lilo.org/?q=%s"}},id=e=>document.getElementById(e),cl=e=>document.getElementsByClassName(e),has=(e,t)=>!!(e&&e.classList&&e.classList.length>0)&&e.classList.contains(t),clas=(e,t,n)=>{t?e.classList.add(n):e.classList.remove(n)};let stillActive=!1,rangeActive=!1;const mobilecheck=()=>navigator.userAgentData?navigator.userAgentData.mobile:/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),stringMaxSize=(e,t)=>e.length>t?e.slice(0,t):e,minutator=e=>60*e.getHours()+e.getMinutes(),randomString=e=>{const t="abcdefghijklmnopqr";return Array.from({length:e},(()=>t[Math.floor(Math.random()*t.length)])).join("")};function detectPlatform(){const e=window.location.protocol;return"moz-extension:"===e?"firefox":"chrome-extension:"===e?"chrome":"safari-web-extension:"===e?"safari":"online"}const getBrowser=(e=window.navigator.userAgent.toLowerCase())=>e.indexOf("edg/")>-1?"edge":e.indexOf("chrome")>-1?"chrome":e.indexOf("firefox")>-1?"firefox":e.indexOf("safari")>-1?"safari":"other",getFavicon=()=>"edge"===getBrowser()?"monochrome.png":"favicon-128x128.png";function periodOfDay(e,t){const{rise:n,set:a,now:i}=e;return(t=t?minutator(new Date(t)):i)>=0&&t<=n-60?"night":t<=n+60?"noon":t<=a-60?"day":t<=a+60?"evening":t>=a+60?"night":"day"}function validateHideElem(e){let t=!0;return Array.isArray(e)&&e.length>0?e.forEach((e=>{Array.isArray(e)?e.forEach((e=>{"number"!=typeof e&&(t=!1)})):t=!1})):t=!1,t}function localDataMigration(e){if(!e.custom)return e;let t=[];return Object.values(e.custom).forEach(((n,a)=>{const i=randomString(6);t.push(i),e={...e,idsList:t,selectedId:i,["custom_"+i]:n,["customThumb_"+i]:e.customThumbnails[a]}})),delete e.custom,delete e.customIndex,delete e.customThumbnails,e}function bundleLinks(e){let t=[];return Object.entries(e).map((([e,n])=>{11===e.length&&e.startsWith("links")&&t.push(n)})),t.sort(((e,t)=>e.order-t.order)),t}function slowRange(e,t=400){clearTimeout(rangeActive),rangeActive=setTimeout((function(){lsOnlineStorage.set(e)}),t)}function slow(e,t=400){e.setAttribute("disabled",""),stillActive=setTimeout((()=>{e.removeAttribute("disabled"),clearTimeout(stillActive),stillActive=!1}),t)}function turnRefreshButton(e,t){e.animate(t?[{transform:"rotate(360deg)"}]:[{transform:"rotate(0deg)"},{transform:"rotate(90deg)"},{transform:"rotate(0deg)"}],{duration:600,easing:"ease-out"})}function closeEditLink(){const e=document.querySelector("#editlink");clas(e,!0,"hiding"),document.querySelectorAll(".l_icon_wrap").forEach((e=>e.className="l_icon_wrap")),setTimeout((()=>{e.setAttribute("class","")}),200)}const lsOnlineStorage={get:(e,t,n)=>{const a=e?"bonjourrBackgrounds":"bonjourr";n(localStorage[a]?JSON.parse(localStorage[a]):{})},set:(e,t)=>{lsOnlineStorage.get(null,null,(t=>{if("object"==typeof e){const[n,a]=Object.entries(e)[0];"import"===n?t=a:t[n]=a;try{localStorage.bonjourr=JSON.stringify(t)}catch(e){console.warn(e),console.warn("Bonjourr couldn't save this setting 😅\nMemory might be full")}window.dispatchEvent(new Event("storage"))}}))},clear:()=>{localStorage.removeItem("bonjourr")},setLocal:(e,t)=>{lsOnlineStorage.get(!0,null,(t=>{if("object"==typeof e){t={...t,...e};try{localStorage.bonjourrBackgrounds=JSON.stringify(t)}catch(e){console.log(e),console.log(console.warn("Bonjourr couldn't save this setting 😅\nMemory might be full"))}}}))},remove:(e,t)=>{lsOnlineStorage.get(e,null,(n=>{delete n[t],e?localStorage.bonjourrBackgrounds=JSON.stringify(n):localStorage.bonjourr=JSON.stringify(n)}))},log:e=>lsOnlineStorage.get(e,null,(e=>console.log(e))),del:()=>localStorage.clear()},getBrowserStorage=()=>{lsOnlineStorage.get(!0,null,(e=>{lsOnlineStorage.get(!1,null,(t=>console.log("local: ",e,"sync: ",t)))}))},logsync=()=>lsOnlineStorage.get(!1,null,(e=>Object.entries(e).forEach((e=>console.log(e[0],e[1]))))),loglocal=()=>lsOnlineStorage.get(!0,null,(e=>Object.entries(e).forEach((e=>console.log(e[0],e[1])))));function deleteBrowserStorage(){isExtension&&(lsOnlineStorage.clear(),lsOnlineStorage.local.clear()),localStorage.clear(),setTimeout((()=>{location.reload()}),400)}function errorMessage(e,t){function n(t){const n=document.createElement("div"),a=document.createElement("h1"),i=document.createElement("p"),o=document.createElement("textarea"),r=document.createElement("p"),s=document.createElement("button"),l=document.createElement("button"),c=document.createElement("div");a.textContent=e+" 😖",i.textContent="Copy your settings below and contact us !",r.textContent="Sharing your settings with us helps a lot in debugging. You can also reset Bonjourr, or close this window for now if you think it is a false alert.",r.className="error-explain",o.textContent=t,o.setAttribute("spellcheck","false"),s.textContent="Reset Bonjourr",s.addEventListener("click",(()=>{n.style.opacity=0,deleteBrowserStorage()})),l.className="error-buttons-close",l.textContent="Close this window",l.addEventListener("click",(()=>{sessionStorage.errorMessage="removed",n.style.opacity=0,setTimeout((()=>n.style.display="none"),400)})),c.className="error-buttons",c.appendChild(s),c.appendChild(l),n.appendChild(a),n.appendChild(i),n.appendChild(o),n.appendChild(r),n.appendChild(c),n.id="error",document.body.prepend(n),dominterface.style.opacity="1",setTimeout((()=>n.style.opacity=1),20)}if(console.log(t),"removed"===sessionStorage.errorMessage)return dominterface.style.opacity="1",!1;lsOnlineStorage.get(!1,null,(e=>{try{n(JSON.stringify(e,null,4))}catch(e){n("")}}))}const testOS={mac:window.navigator.appVersion.includes("Macintosh"),windows:window.navigator.appVersion.includes("Windows"),android:window.navigator.userAgent.includes("Android"),ios:["iPad Simulator","iPhone Simulator","iPod Simulator","iPad","iPhone","iPod"].includes(navigator.platform)||navigator.userAgent.includes("Mac")&&"ontouchend"in document},safeFontList={fallback:{placeholder:"Arial",weights:[500,600,800]},windows:{placeholder:"Segoe UI",weights:[300,400,600,700,800]},android:{placeholder:"Roboto",weights:[100,300,400,500,700,900]},linux:{placeholder:"Fira Sans",weights:[100,200,300,400,500,600,700,800,900]},apple:{placeholder:"SF Pro Display",weights:[100,200,300,400,500,600,700,800,900]}},langList={en:"English",fr:"Français",sk:"Slovenský",sv:"Svenska",pl:"Polski",pt_BR:"Português (Brasil)",nl:"Nederlandse",ru:"Русский",zh_CN:"简体中文",de:"Deutsch",it:"Italiano",es:"Español",tr:"Türkçe",uk:"Українська",id:"Indonesia",da:"Dansk"},defaultLang=(e=navigator.language.replace("-","_"))=>{for(const[t]of Object.entries(langList))if(e===t||e.startsWith(t.substring(0,2)))return t;return"en"};function tradThis(e){const t=document.documentElement.getAttribute("lang");return"en"===t?e:dict[e][t]}const syncDefaults={usdate:!1,showall:!1,linksrow:6,linkstyle:"large",cssHeight:80,reviewPopup:0,background_blur:15,background_bright:.8,css:"",lang:defaultLang(),favicon:"",tabtitle:"",greeting:"",dark:"system",custom_every:"pause",background_type:"dynamic",clock:{ampm:!1,analog:!1,seconds:!1,face:"none",timezone:"auto"},dynamic:{every:"hour",collection:"",lastCollec:"",time:Date.now()},weather:{ccode:"FR",city:"Paris",unit:"metric",location:[],forecast:"auto",temperature:"actual"},searchbar:{on:!1,opacity:.1,newtab:!1,engine:"google",request:""},quotes:{on:!1,author:!1,type:"classic",frequency:"day",last:1650516688},font:{url:"",family:"",size:"14",availWeights:[],weight:testOS.windows?"400":"300"},textShadow:.2,hide:[[0,0],[0,0,0],[0],[0]],about:{browser:detectPlatform(),version:"1.14.2"}},localDefaults={selectedId:"",idsList:[],quotesCache:[],dynamicCache:{noon:[],day:[],evening:[],night:[],user:[]}};function traduction(e,t="en"){if("en"===t)return;document.documentElement.setAttribute("lang",t);const n=(e||document).querySelectorAll(".trn");n.forEach((e=>{return n=e,a=e.textContent,dict[a]?n.textContent=dict[a][t]:"";var n,a}))}function favicon(e,t){function n(e){const t=`data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="85">${e}</text></svg>`;document.querySelector("link[rel~='icon']").href=e?t:"src/assets/"+("edge"===getBrowser()?"monochrome.png":"favicon-128x128.png")}if(void 0!==e&&n(e),t){const e=t.value,a=e.match(/\p{Emoji}/gu)&&!e.match(/[0-9a-z]/g);a?n(e):t.value="",slowRange({favicon:a?e:""})}}function tabTitle(e,t){const n=e||(t?stringMaxSize(t.value,80):tradThis("New tab"));t&&slowRange({tabtitle:n}),document.title=n}function clock(e,t){function n(e){const t=new Date;if("auto"===e||NaN===e)return t;{const n=parseInt(t.getTimezoneOffset()/60),a=t.getHours()+n;return t.setHours(a+parseInt(e)),t}}function a(e,t){const n=tradThis(days[e.getDay()]),a=tradThis(months[e.getMonth()]),i=e.getDate();id("date").textContent=t?`${n}, ${a} ${i}`:`${n} ${i} ${a}`}function i(e,t){const n=id("greetings"),a=[["Good night",7],["Good morning",12],["Good afternoon",18],["Good evening",24]].filter((t=>e.getHours()<t[1]))[0];n.style.textTransform=t?"none":"capitalize",n.textContent=tradThis(a[0])+(t?`, ${t}`:"")}function o(e="none"){const t={none:["","","",""],number:["12","3","6","9"],roman:["XII","III","VI","IX"],marks:["│","─","│","─"]};document.querySelectorAll("#analogClock .numbers").forEach(((n,a)=>n.textContent=t[e][a]))}function r(e,t,o){function r(){const r=n(e.timezone);e.analog?function(t){function n(e,t){e.style.transform=`rotate(${parseInt(t)}deg)`}let a=6*t.getSeconds(),i=6*t.getMinutes(),o=30*t.getHours();n(id("minutes"),i),n(id("hours"),o),e.seconds&&n(id("analogSeconds"),a)}(r):function(t){function n(e){return(e=e<10?"0"+e:e).toString()}let a=e.ampm?((r=t.getHours())>12?r-=12:0===r&&(r=12),r):t.getHours(),i=n(t.getMinutes()),o=n(t.getSeconds());var r;id("clock").textContent=`${a}:${i}${e.seconds?":"+o:""}`}(r),0===r.getHours()&&0===r.getMinutes()&&a(r,o),0===r.getMinutes()&&i(r,t)}clearInterval(lazyClockInterval),function(){const t=id("clock"),n=id("analogClock"),a=id("analogSeconds");clas(t,e.analog,"hidden"),clas(n,!e.analog,"hidden"),clas(a,!e.seconds&&e.analog,"hidden")}(),r(),lazyClockInterval=setInterval(r,1e3)}if(e)lsOnlineStorage.get(!1,["clock","usdate","greeting"],(t=>{const[s,l]=Object.entries(e)[0];switch(s){case"usdate":a(n(t.clock.timezone),l),slowRange({usdate:l},500);break;case"greeting":i(n(t.clock.timezone),l),slowRange({greeting:l},500);break;default:{let e={analog:!1,seconds:!1,ampm:!1,timezone:"auto",face:"none"};e={...t.clock},e[s]=l,lsOnlineStorage.set({clock:e}),"timezone"===s&&(a(n(l),t.usdate),i(n(l),t.greeting)),r(e,t.greeting,t.usdate),o(e.face);break}}}));else{let e={analog:!1,seconds:!1,ampm:!1,timezone:"auto",face:"none"};t.clock&&(e={...e,...t.clock});try{r(e,t.greeting,t.usdate),a(n(e.timezone),t.usdate),i(n(e.timezone),t.greeting),o(e.face),canDisplayInterface("clock")}catch(e){errorMessage("Clock or greetings failed at init",e)}}}function quickLinks(e,t,n){const a=id("linkblocks_inner");let i={parent:void 0,link:{},index:0};async function o(e){if(e.length>0)try{const t=e.map((e=>function(e){let t=stringMaxSize(e.title,64),n=stringMaxSize(e.url,512);const i=document.createElement("img"),o=document.createElement("div"),r=document.createElement("span"),s=document.createElement("div"),l=document.createElement("div");return i.loading="lazy",i.className="l_icon",o.className="l_icon_wrap",o.appendChild(i),s.className="block",s.setAttribute("source",n),s.appendChild(o),s.appendChild(r),l.setAttribute("class","block_parent"),l.setAttribute("draggable","true"),l.appendChild(s),d(s,t,"text"===a.className),a.appendChild(l),{icon:i,parent:l}}(e)));t.forEach((({parent:e})=>function(e){function t(e,t){const n=e.children[0].getAttribute("source"),a=id("hiddenlink");lsOnlineStorage.get(!1,"linknewtab",(e=>{const i=2===t.which||t.ctrlKey||e.linknewtab;a.setAttribute("href",n),a.setAttribute("target",i?"_blank":"_self"),a.click()}))}function n(t,n){lsOnlineStorage.get(!1,null,(a=>{const o=c(n),r=bundleLinks(a)[o];if("enter"!==t){if("end"===t){if(i.index===o)return;const t={parent:e},n=i.parent.children[0],s=t.parent.children[0];i.parent.children[0].remove(),t.parent.children[0].remove(),i.parent.appendChild(s),t.parent.appendChild(n);const l=r.order;a[r._id].order=i.link.order,a[i.link._id].order=l,lsOnlineStorage.set(a)}}else i={parent:e,link:r,index:o}}))}e.ondragstart=function(e){e.stopPropagation(),e.dataTransfer.setData("text/plain",e.target.id),n("start",this)},e.ondragenter=function(e){e.preventDefault(),n("enter",this)},e.ondragend=function(e){e.preventDefault(),n("end",this)},e.oncontextmenu=function(e){e.preventDefault(),r(),l(this,e)},e.onmouseup=function(e){3!==e.which&&(has(id("settings"),"shown")||mobilecheck()||t(this,e))},mobilecheck()&&function(){let n=0,a=setTimeout((()=>{}),0);const i=t=>{n=performance.now(),a=setTimeout((()=>{l(e,t)}),600)},o=i=>{const o=performance.now()-n,r=!has(id("editlink"),"shown");o<600&&(clearTimeout(a),r&&t(e,i))};e.addEventListener("touchstart",i,{passive:!0}),e.addEventListener("touchend",o,{passive:!0})}()}(e))),canDisplayInterface("links"),e.map((async(e,n)=>{const a=t[n].icon;["api.faviconkit.com","loading.svg"].some((t=>e.icon.includes(t)))?(e.icon=await async function(e,t){e.src="src/assets/interface/loading.svg";const n=new Image,a=document.createElement("a");a.href=t;let i=`https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://${a.hostname}&size=128`;const o=await fetch(`https://favicon.bonjourr.fr/api/${a.hostname}`),r=await o.text();r.length>0&&(i=r);return n.onload=()=>e.src=i,n.src=i,n.remove(),i}(a,e.url),lsOnlineStorage.set({[e._id]:e})):a.src=e.icon}))}catch(e){errorMessage("Failed to load links",e)}else canDisplayInterface("links")}function r(){a.querySelectorAll(".l_icon_wrap").forEach((function(e){clas(e,!1,"selected")}))}function s(){function e(){return function(e){const t=id("e_title"),n=id("e_url"),i=id("e_iconurl");if(7500===i.value.length)return i.value="",i.setAttribute("placeholder",tradThis("Icon must be < 8kB")),!1;return lsOnlineStorage.get(!1,null,(o=>{const r=a.children[e+1],s=r.querySelector(".block");let l=bundleLinks(o).filter((t=>t.order===e))[0];l={...l,title:stringMaxSize(t.value,64),url:stringMaxSize(n.value,512),icon:stringMaxSize(i.value,7500)},d(s,l.title,"text"===a.className),s.setAttribute("source",l.url),r.querySelector("img").src=l.icon,lsOnlineStorage.set({[l._id]:l})})),!0}(parseInt(id("editlink").getAttribute("index")))}function t(t){"Enter"===t.code&&(e(),t.target.blur())}id("e_delete").onclick=function(){var e;r(),e=parseInt(id("editlink").getAttribute("index")),lsOnlineStorage.get(!1,null,(t=>{const n=bundleLinks(t);let i=n.filter((t=>t.order===e))[0];const o=a.children[e+1],r=o.getBoundingClientRect().height;o.style.height=r+"px",clas(o,!0,"removed"),setTimeout((function(){a.removeChild(o),0===n.length&&(a.style.visibility="hidden")}),600),n.map((n=>{n.order>e&&(n.order-=1),t[n._id]=n})),lsOnlineStorage.set(t),lsOnlineStorage.remove(!1,i._id)})),clas(id("editlink"),!1,"shown")},id("e_submit").onclick=function(t){e()&&(closeEditLink(),r())},id("e_title").addEventListener("keyup",t),id("e_url").addEventListener("keyup",t),id("e_iconurl").addEventListener("keyup",t)}function l(e,t){const n=c(e),a=e.querySelector(".l_icon_wrap"),i=document.querySelector("#editlink"),o=has(id("settings"),"shown");lsOnlineStorage.get(!1,null,(e=>{const s=bundleLinks(e).filter((e=>e.order===n))[0],{title:l,url:c,icon:d}=s;id("e_title").setAttribute("placeholder",tradThis("Title")),id("e_url").setAttribute("placeholder",tradThis("Link")),id("e_iconurl").setAttribute("placeholder",tradThis("Icon")),id("e_title").value=l,id("e_url").value=c,id("e_iconurl").value=d,function(e){const{innerHeight:t,innerWidth:n}=e.view;let{x:a,y:i}=e;r(),e.touches?.length>0&&(a=e.touches[0].clientX,i=e.touches[0].clientY),a+250>n&&(a-=a+250-n),i+200>t&&(i-=200),document.querySelector("#editlink").style.transform=`translate(${a+3}px, ${i+3}px)`}(t),clas(a,!0,"selected"),clas(i,!0,"shown"),clas(i,o,"pushed"),i.setAttribute("index",n)}))}function c(e){const t=a.children;for(let n=0;n<t.length;n++)if(e===t[n])return n-1}function d(e,t,n){const a=e.querySelector("span");let i=e.getAttribute("source");if(n&&""===t)return i=i.replace(/(^\w+:|^)\/\//,""),i=i.split("?")[0],void(a.textContent=i);a.textContent=t}if(e){const n="button"===e,i="linknewtab"===e,r="linkstyle"===e;return("input"===e||n)&&function(e){function t(e,t){t=stringMaxSize(t,512);const n=e=>t.startsWith(e),a=n("http://")||n("https://"),i=n("about:")||n("chrome://");return{_id:"links"+randomString(6),order:0,title:stringMaxSize(e,64),icon:"src/assets/interface/loading.svg",url:a?t:!i&&"https://"+t}}function n(e,t){id("i_title").value="",id("i_url").value="",e.order=t,o([e]),lsOnlineStorage.set({[e._id]:e}),a.style.visibility="visible"}lsOnlineStorage.get(!1,null,(a=>{const i=bundleLinks(a),o=id("i_url").value,r=id("i_title").value;e?.length>0&&e.forEach((({title:e,url:a},o)=>{a&&n(t(e,a),i.length+o)})),o.length>2&&!stillActive&&n(t(r,o),i.length)}))}(t),i&&(lsOnlineStorage.set({linknewtab:t}),id("hiddenlink").setAttribute("target","_blank")),void(r&&lsOnlineStorage.get(!1,null,(e=>{linksrow(e.linksrow,t);const n=bundleLinks(e),i=document.querySelectorAll(".block");n.forEach((({title:e},n)=>d(i[n],e,"text"===t))),a.className=t,lsOnlineStorage.set({linkstyle:t})})))}a.className=n.linkstyle,linksrow(n.linksrow,n.linkstyle),o(bundleLinks(n)),setTimeout((()=>s()),150),window.addEventListener("resize",closeEditLink)}async function linksImport(){const e=e=>{e.classList.add("hiding"),setTimeout((()=>e.setAttribute("class","")),400)};chrome.permissions.request({permissions:["bookmarks"]},(t=>{t&&lsOnlineStorage.get(!1,null,(t=>{("moz-extension:"===window.location.protocol?browser:chrome).bookmarks.getTree().then((n=>{clas(id("bookmarks_container"),!0,"shown"),function(t,n){const a=document.createElement("form"),i=[...n[0].children];let o=t.length||0,r=[],s=[];i.forEach((e=>r.push(...e.children))),r.forEach(((e,n)=>{const i=document.createElement("div"),r=document.createElement("h5"),l=document.createElement("pre");r.textContent=e.title,l.textContent=e.url,i.setAttribute("index",n),i.appendChild(r),i.appendChild(l),i.onclick=()=>{const e=i.classList.toggle("selected");e?s.push(i.getAttribute("index")):s.pop(),e?o++:o-=1;const n=o-t.length;id("applybookmarks").textContent=tradThis(0===n?"Select bookmarks to import":1===n?"Import this bookmark":"Import these bookmarks"),clas(id("applybookmarks"),0===n,"none")},"string"==typeof e.url&&0===t.filter((t=>t.url===stringMaxSize(e.url,512))).length&&a.appendChild(i)}));const l=document.querySelector("#bookmarks form");l&&l.remove(),id("bookmarks").insertBefore(a,document.querySelector("#bookmarks .bookmarkOptions"));const c=0===r.length;if(id("applybookmarks").style.display=c?"none":"",c){const e=document.createElement("h5");return e.textContent=tradThis("No bookmarks found"),void a.appendChild(e)}id("applybookmarks").onclick=function(){const t=s.map((e=>({title:r[e].title,url:r[e].url})));t.length>0&&(e(id("bookmarks_container")),quickLinks("button",t,null))}}(bundleLinks(t),n)}))}))})),document.querySelector("#bookmarks #e_close").onclick=()=>e(id("bookmarks_container")),id("bookmarks_container").addEventListener("click",(function(t){"bookmarks_container"===t.target.id&&e(this)}))}function linksrow(e,t="large",n){function a(e,t){const{width:n,gap:a}={large:{width:4.8,gap:2.3},medium:{width:3.5,gap:2},small:{width:2.5,gap:2},text:{width:5,gap:2}}[t];id("linkblocks_inner").style.width=(n+a)*e+"em"}if(n){let e=document.querySelector("#linkblocks_inner").className;return e="undefined"===e?"large":e,a(n,e),void slowRange({linksrow:parseInt(n)})}a(e,t)}function weather(e,t,n){let a={};const i=new Date,o=id("i_city"),r=id("i_ccode"),s=id("sett_city"),l=id("current"),c=id("forecast"),d=id("widget"),u=e=>Math.round(1.8*e+32),m=(e,t)=>{return e?u(t):(n=t,Math.round(5/9*(n-32)));var n},p=["YTU0ZjkxOThkODY4YTJhNjk4ZDQ1MGRlN2NiODBiNDU=","Y2U1M2Y3MDdhZWMyZDk1NjEwZjIwYjk4Y2VjYzA1NzE=","N2M1NDFjYWVmNWZjNzQ2N2ZjNzI2N2UyZjc1NjQ5YTk="];async function h(e){const t=t=>{g(e,!0),g(e,!1),id("settings")&&(id("i_ccode").value=e.ccode,id("i_city").setAttribute("placeholder",e.city),t&&(clas(id("sett_city"),!0,"hidden"),id("i_geol").checked=!0))};try{const t=await fetch("https://ipapi.co/json");if(t.ok){const n=await t.json();n.error||(e={...e,city:n.city,ccode:n.country})}}catch(e){console.warn(e)}navigator.geolocation.getCurrentPosition((n=>{e.location=[n.coords.latitude,n.coords.longitude],t(!0)}),(()=>t(!1)))}async function g(e,t){if(!navigator.onLine)return;const n=t?"forecast":"weather",i=document.documentElement.getAttribute("lang"),o=window.atob(p[t?0:1]),[r,s]=e.location||[0,0],l=2===e.location.length,c=`&lat=${r}&lon=${s}`,d=`&q=${encodeURI(e.city)},${e.ccode}`,m=`https://api.openweathermap.org/data/2.5/${n}?appid=${o}${l?c:d}&units=metric&lang=${i}`;0===Object.keys(a).length&&(a=e);try{const n=await fetch(m);if(n.ok){const i=await n.json();t?function(t){const n=new Date,i=n.getHours();let o=n.getDate(),r=-273.15;if(i>18){const e=n.setDate(n.getDate()+1);o=new Date(e).getDate()}t.list.forEach((e=>{new Date(1e3*e.dt).getDate()===o&&r<e.main.temp_max&&(r=e.main.temp_max)}));const s="imperial"===e.unit;a.fcHigh=Math.floor(s?u(r):r),lsOnlineStorage.set({weather:a}),f(a)}(i):function(t){const n="imperial"===e.unit,{temp:i,feels_like:o,temp_max:r}=t.main;a={...a,lastCall:Math.floor((new Date).getTime()/1e3),lastState:{temp:n?u(i):i,feels_like:n?u(o):o,temp_max:n?u(r):r,sunrise:t.sys.sunrise,sunset:t.sys.sunset,description:t.weather[0].description,icon_id:t.weather[0].id}},lsOnlineStorage.set({weather:a}),k(a)}(i)}return n.ok}catch(e){return}}function k(e){const t=e.lastState;void 0===e.temperature&&(e.temperature="actual",t.temp=t.feels_like),function(){let e="lightrain";[[[200,201,202,210,211,212,221,230,231,232],"thunderstorm"],[[300,301,302,310],"lightdrizzle"],[[312,313,314,321],"showerdrizzle"],[[500,501,502,503],"lightrain"],[[504,520,521,522],"showerrain"],[[511,600,601,602,611,612,613,615,616,620,621,622],"snow"],[[701,711,721,731,741,751,761,762,771,781],"mist"],[[800],"clearsky"],[[801],"fewclouds"],[[802],"brokenclouds"],[[803,804],"overcastclouds"]].forEach((n=>{n[0].includes(t.icon_id)&&(e=n[1])}));const n=d.querySelector("img"),{now:a,rise:i,set:o}=sunTime(),r=`src/assets/weather/${a<i||a>o?"night":"day"}/${e}.png`;if(n)n.getAttribute("src")!==r&&n.setAttribute("src",r);else{const e=document.createElement("img");e.src=r,e.setAttribute("draggable","false"),d.prepend(e),setTimeout((()=>d.style.transition="opacity .4s"),400)}}(),function(){const n=t.description,a=Math.floor(t.feels_like),i=Math.floor(t.temp);let o="";switch(e.temperature){case"feelslike":o=`${tradThis("It currently feels like")} ${a}°`;break;case"both":o=`${tradThis("It is currently")} ${i}°, ${tradThis("feels like")} ${a}°`;break;default:o=`${tradThis("It is currently")} ${i}°`}l.textContent=`${n[0].toUpperCase()+n.slice(1)}. ${o}`,d.querySelector("p").textContent=i+"°"}(),clas(l,!1,"wait"),clas(d,!1,"wait")}function f(e){c.textContent=`${tradThis("with a high of")} ${e.fcHigh}° ${tradThis(i.getHours()>21?"tomorrow":"today")}.`,clas(c,!1,"wait")}function y(e){let t=!1;t="auto"===e?i.getHours()<12||i.getHours()>21:"always"===e,clas(c,t,"shown")}if(e)!async function(){async function n(e){const t=await g(e,!1),n=await g(e,!0);return t&&n}lsOnlineStorage.get(!1,"weather",(async a=>{switch(e){case"units":if(a.weather.unit=t.checked?"imperial":"metric",a.weather.lastState){const{feels_like:e,temp:n}=a.weather.lastState;a.weather.lastState.temp=m(t.checked,n),a.weather.lastState.feels_like=m(t.checked,e),a.weather.fcHigh=m(t.checked,a.weather.fcHigh)}k(a.weather),f(a.weather),lsOnlineStorage.set({weather:a.weather}),slow(t);break;case"city":if(slow(t),o.value.length<3)return!1;if(navigator.onLine){a.weather.ccode=r.value,a.weather.city=stringMaxSize(o.value,64);const e=o.animate([{opacity:1},{opacity:.6}],{direction:"alternate",easing:"linear",duration:800,iterations:1/0}),t=await n(a.weather);t&&o.blur(),o.setAttribute("placeholder",t?a.weather.city:tradThis("City not found")),o.value="",e.cancel()}break;case"geol":a.weather.location=[],t.setAttribute("disabled",""),t.checked?navigator.geolocation.getCurrentPosition((e=>{clas(s,t.checked,"hidden"),a.weather.location.push(e.coords.latitude,e.coords.longitude),n(a.weather)}),(e=>{setTimeout((()=>t.checked=!1),400),a.weather.city||h(),console.log(e)})):(o.setAttribute("placeholder",a.weather.city),r.value=a.weather.ccode,clas(s,t.checked,"hidden"),a.weather.location=[],n(a.weather)),slow(t);break;case"forecast":a.weather.forecast=t.value,lsOnlineStorage.set({weather:a.weather}),y(t.value);break;case"temp":a.weather.temperature=t.value,lsOnlineStorage.set({weather:a.weather}),k(a.weather)}}))}();else{try{if(validateHideElem(n.hide)&&n.hide[1][1]+n.hide[1][2]===2)return!1}catch(e){errorMessage("Could not validate Hide in Weather",e)}try{y(n.weather.forecast||"mornings"),function(e){const t=Math.floor(i.getTime()/1e3);let n=!1;"number"==typeof e.lastCall?(navigator.onLine&&(t>e.lastCall+1800||sessionStorage.lang)?(n=!0,sessionStorage.removeItem("lang"),g(e,!1)):k(e),navigator.onLine&&n?g(e,!0):f(e)):h(e)}(n.weather)}catch(e){errorMessage("Weather init did not work",e)}}}function initBackground(e){const t=e.background_type||"dynamic",n=void 0!==e.background_blur?e.background_blur:15,a=void 0!==e.background_bright?e.background_bright:.8;filter("init",[parseFloat(n),parseFloat(a)]),"custom"!==t?unsplash(e):localBackgrounds({every:e.custom_every,time:e.custom_time})}function imgBackground(e,t,n){let a=new Image;a.onload=()=>{if(t){const e=t>1e3?1400:t+400,n=e=>id("background_overlay").style.transition=`transform .4s, opacity ${e}ms`;n(e),setTimeout((()=>n(400)),e)}const a=()=>{id("background_overlay").style.opacity="1",id("background").style.backgroundImage=`url(${e})`,localIsLoading=!1};n?a():setTimeout(a,400)},a.src=e,a.remove()}function freqControl(e,t,n){const a=new Date;if("set"===e)return a.getTime();const i=new Date(n),o={date:a.getDate()!==i.getDate(),hour:a.getHours()!==i.getHours()};return"day"===t?o.date:"hour"===t?o.date||o.hour:"tabs"===t||("pause"===t?0===n:"period"===t?periodOfDay(sunTime())!==periodOfDay(sunTime(),i):void 0)}function localBackgrounds(e,t){function n(e,t){fetch(`data:image/jpeg;base64,${e}`).then((e=>{e.blob().then((e=>t(URL.createObjectURL(e))))}))}function a(e){document.querySelectorAll(".thumbnail").forEach((e=>clas(e,!1,"selected"))),clas(document.querySelector(".thumbnail#"+e),!0,"selected")}function i(e,t,a){"thumbnail"!==t&&(clas(id("credit"),!1,"shown"),id("background_overlay").style.opacity="0");const i=performance.now(),r=new Image;r.onload=()=>{const e=document.createElement("canvas"),s=e.getContext("2d"),l="thumbnail"===t?140*window.devicePixelRatio:r.height,c=l/r.height;e.width=r.width*c,e.height=l,s.drawImage(r,0,0,r.width*c,l);const d=s.canvas.toDataURL(r),u=d.slice(d.indexOf(",")+1,d.length);if("thumbnail"===t)return lsOnlineStorage.setLocal({["customThumb_"+a]:u}),void o(u,a,null,!0);n(u,(e=>{const t=performance.now()-i;setTimeout((()=>imgBackground(e,t)),400-t)}))},r.src=e}function o(e,t,o,r){const s=o||id("settings"),l=document.createElement("div"),c=document.createElement("img"),d=document.createElement("button"),u=s.querySelector("#fileContainer");l.id=t,l.setAttribute("class","thumbnail"+(r?" selected":"")),mobilecheck()||d.setAttribute("class","hidden");let m=document.createElement("img");m.setAttribute("src","src/assets/interface/close.svg"),d.appendChild(m),n(e,(e=>c.src=e)),l.appendChild(c),l.appendChild(d),u.prepend(l),c.onmouseup=e=>{if(0!==e.button||localIsLoading)return;const t=e.target.parentElement.id,n="custom_"+t;lsOnlineStorage.get(!0,"selectedId",(e=>{t!==e.selectedId&&(a(t),id("background_overlay").style.opacity="0",localIsLoading=!0,lsOnlineStorage.setLocal({selectedId:t}),lsOnlineStorage.get(!0,[n],(e=>i(e[n]))))}))},d.onmouseup=e=>{const t=e.composedPath();0!==e.button||localIsLoading||lsOnlineStorage.get(!0,["idsList","selectedId"],(e=>{const n=t.find((e=>e.className.includes("thumbnail"))),o=n.id;let{idsList:r,selectedId:s}=e,l=r.filter((e=>!e.includes(o)));if(n.remove(),lsOnlineStorage.remove(!0,"custom_"+o),lsOnlineStorage.remove(!0,["customThumb_"+o]),lsOnlineStorage.setLocal({idsList:l}),o===s){if(l.length>0){s=l[0],a(s);const e="custom_"+l[0];lsOnlineStorage.get(!0,[e],(t=>i(t[e])))}else id("background_overlay").style.opacity=0,lsOnlineStorage.set({background_type:"dynamic"}),setTimeout((()=>lsOnlineStorage.get(!1,"dynamic",(e=>unsplash(e)))),400),s="";lsOnlineStorage.setLocal({selectedId:s})}}))}}if(t)return"thumbnail"===t.is&&function(e){const t=e.querySelectorAll("#bg_tn_wrap .thumbnail");lsOnlineStorage.get(!0,["idsList","selectedId"],(n=>{const{idsList:a,selectedId:i}=n;if(a.length>0&&t.length<a.length){const t=a.map((e=>"customThumb_"+e));lsOnlineStorage.get(!0,t,(t=>{Object.entries(t).forEach((([t,n])=>{if(!t.startsWith("customThumb_"))return;const a=t.replace("customThumb_","");o(n.replace("data:image/jpeg;base64,",""),a,e,a===i)}))}))}}))}(t.settings),"newfile"===t.is&&function(e){e=[...e];let t=[],n="";e.forEach((()=>{const e=randomString(6);n=e,t.push(e)})),e.forEach(((e,n)=>{let a=new FileReader;a.onload=function(e){const a=e.target.result;if(function(e){if("online"===detectPlatform()){const t=localStorage.bonjourrBackgrounds,n=JSON.parse(t).googleFonts?0:76e4,a=t.length+n+1e5;if(a+e.length>5e6)return alert(`Image size exceeds storage: ${parseInt(Math.abs(a-5e6)/1e3)}ko left`),id("background_overlay").style.opacity="1",!0}return!1}(a))return console.warn("Uploaded image was not saved");i(a,"thumbnail",t[n]),i(a),lsOnlineStorage.setLocal({["custom_"+t[n]]:a})},localIsLoading=!0,id("background_overlay").style.opacity="0",a.readAsDataURL(e)})),lsOnlineStorage.get(!0,["idsList"],(e=>{let i=[...e.idsList];i.push(...t),0===e.idsList.length&&lsOnlineStorage.set({background_type:"custom"}),setTimeout((()=>a(n)),400),lsOnlineStorage.setLocal({...e,idsList:i,selectedId:n})}))}(t.file),void("refresh"===t.is&&(r=t.button,lsOnlineStorage.get(!1,"custom_every",(e=>{id("background_overlay").style.opacity=0,turnRefreshButton(r,!0),localIsLoading=!0,setTimeout((()=>localBackgrounds({every:e.custom_every,time:0})),400)}))));var r;function s(t){lsOnlineStorage.get(!0,["custom_"+t],(a=>{const i=performance.now(),o=a["custom_"+t];n(o.slice(o.indexOf(",")+1,o.length),(t=>{imgBackground(t,i,!!e)}))}))}lsOnlineStorage.get(!0,["selectedId","idsList"],(t=>{try{let{selectedId:n,idsList:i}=t;const{every:o,time:r}=e,l=freqControl("get",o,r||0);if(i||(i=[],n="",lsOnlineStorage.get(!0,null,(e=>{const t=Object.keys(e).filter((e=>e.startsWith("custom_"))).map((e=>e.replace("custom_","")));lsOnlineStorage.setLocal({idsList:t,selectedId:t[0]||""}),lsOnlineStorage.get(!1,null,(e=>initBackground(e)))}))),0===i.length)return void lsOnlineStorage.get(!1,"dynamic",(e=>unsplash(e)));if(o&&l)return i.length>1&&(i=i.filter((e=>!e.includes(n))),n=i[Math.floor(Math.random()*i.length)]),s(n),lsOnlineStorage.set({custom_time:freqControl("set")}),lsOnlineStorage.setLocal({selectedId:n}),void(id("settings")&&a(n));s(n)}catch(e){errorMessage("Could not init local backgrounds",e)}}))}async function unsplash(e,t){async function n(e){const t=new Image;t.src=e,await t.decode(),t.remove()}function a(t,n){imgBackground(t.url,n,!!e),function(e){const t=id("credit");let n=!1,a="",i="",o="";const r="?utm_source=Bonjourr&utm_medium=referral",{city:s,country:l,name:c,username:d,link:u,exif:m}=e;s||l?(s&&(i=s+", "),l&&(i+=l,n=!0)):i=tradThis("Photo by "),m&&[{key:"model",format:"%val% - "},{key:"aperture",format:"f/%val% "},{key:"exposure_time",format:"%val%s "},{key:"iso",format:"ISO %val% "},{key:"focal_length",format:"%val%mm"}].forEach((({key:e,format:t})=>{m[e]&&(o+=t.replace("%val%",m[e]))}));a=c.split(" ").map((e=>e.charAt(0).toUpperCase()+e.slice(1).toLocaleLowerCase())).join(" ");const p=document.createElement("a"),h=document.createElement("span"),g=document.createElement("a"),k=document.createElement("p");k.className="exif",k.textContent=o,p.textContent=i,g.textContent=a,h.textContent=" - ",p.href=u+r,g.href="https://unsplash.com/@"+d+r,t.textContent="",t.appendChild(k),t.appendChild(p),n&&t.appendChild(h),t.appendChild(g),clas(t,!0,"shown")}(t),document.querySelector('meta[name="theme-color"]').setAttribute("content",t.color)}async function i(e){const t=new Headers,n=`https://api.unsplash.com/photos/random?collections=${c[e]||c.day}&count=8`;t.append("Authorization","Client-ID 3686c12221d29ca8f7947c94542025d760a8e0d49007ec70fa2c4b9f9d377b1d"),t.append("Accept-Version","v1");const a=await fetch(n,{headers:t}),i=await a.json();if(404===a.status||1===i.length)return console.log(i?.errors),!1;const o=[],{width:r,height:s}=screen,l=r>s?r:s;return i.forEach((e=>{o.push({url:e.urls.raw+"&w="+l+"&dpr="+window.devicePixelRatio,link:e.links.html,username:e.user.username,name:e.user.name,city:e.location.city,country:e.location.country,color:e.color,exif:e.exif,desc:e.description})})),o}function o(e){return e?(e=e.replaceAll(" ",""),c.user=e,"user"):periodOfDay(sunTime())}function r(e){const{every:t,lastCollec:n,collection:a}=e;if(("pause"===t||"day"===t)&&n)return n;const i=o(a);return e.lastCollec=i,lsOnlineStorage.set({dynamic:e}),i}async function s(e,t,o,r){const s=freqControl("get",e.every,e.time);let l=t[o];if(r)return a(l[0]),await n(l[1].url),void lsOnlineStorage.remove(!0,"waitingForPreload");if(s)if(e.lastCollec=o,e.time=freqControl("set"),l.length>1&&l.shift(),a(l[0]),1===l.length&&navigator.onLine){const e=await i(o);e&&(t[o]=l.concat(e),await n(e[0].url),lsOnlineStorage.setLocal({dynamicCache:t}),lsOnlineStorage.remove(!0,"waitingForPreload"))}else l.length>1&&await n(l[1].url),lsOnlineStorage.set({dynamic:e}),lsOnlineStorage.setLocal({dynamicCache:t}),lsOnlineStorage.remove(!0,"waitingForPreload");else a(l[0])}async function l(e,t,r,s){s&&(e=o(e));const l=await i(e),c=performance.now();l&&(await n(l[0].url),a(l[0],performance.now()-c),t.dynamicCache[e]=l,lsOnlineStorage.setLocal({dynamicCache:t.dynamicCache}),lsOnlineStorage.setLocal({waitingForPreload:!0}),await n(l[1].url),lsOnlineStorage.remove(!0,"waitingForPreload"))}const c={noon:"GD4aOSg4yQE",day:"o8uX55RbBPs",evening:"3M2rKTckZaQ",night:"bHDh4Ae7O8o",user:""};t?lsOnlineStorage.get(!1,"dynamic",(e=>lsOnlineStorage.get(!0,["dynamicCache","waitingForPreload"],(n=>{!function(e,t,n){switch(Object.keys(e)[0]){case"refresh":if(void 0===n.waitingForPreload){turnRefreshButton(Object.values(e)[0],!0),id("background_overlay").style.opacity=0;const a={...t.dynamic,time:0};return lsOnlineStorage.set({dynamic:a}),lsOnlineStorage.setLocal({waitingForPreload:!0}),void setTimeout((()=>s(a,n.dynamicCache,r(a),!1)),400)}turnRefreshButton(Object.values(e)[0],!1);break;case"every":t.dynamic.every=e.every,t.dynamic.time=freqControl("set"),lsOnlineStorage.set({dynamic:t.dynamic});break;case"removedCustom":lsOnlineStorage.set({background_type:"dynamic"}),a(n.dynamicCache[r(t.dynamic)][0]);break;case"collection":if(!navigator.onLine)return;if(id("background_overlay").style.opacity="0",""===e.collection){const e=o();return n.dynamicCache.user=[],t.dynamic.collection="",t.dynamic.lastCollec=e,lsOnlineStorage.set({dynamic:t.dynamic}),lsOnlineStorage.setLocal({dynamicCache:n.dynamicCache}),void unsplash(t)}t.dynamic.collection=e.collection,t.dynamic.lastCollec="user",t.dynamic.time=freqControl("set"),lsOnlineStorage.set({dynamic:t.dynamic}),l(e.collection,n,t.dynamic,!0)}}(t,e,n)})))):lsOnlineStorage.get(!0,["dynamicCache","waitingForPreload"],(t=>{try{const n=r(e.dynamic),a=t.dynamicCache||localDefaults.dynamicCache;if(0===a[n].length)return void l(n,t,e.dynamic,!1);s(e.dynamic,a,n,t.waitingForPreload)}catch(e){errorMessage("Dynamic errored on init",e)}}))}function filter(e,t){let n="";switch(e){case"init":n=`blur(${t[0]}px) brightness(${t[1]})`;break;case"blur":n=`blur(${t}px) brightness(${id("i_bright").value})`;break;case"bright":n=`blur(${id("i_blur").value}px) brightness(${t})`}id("background").style.filter=n}function darkmode(e,t){function n(e){const t=sunTime(),n={auto:t.now<=t.rise||t.now>t.set?"dark":"",system:"autodark",enable:"dark",disable:""};document.body.setAttribute("class",n[e])}if(t)return n(t),void lsOnlineStorage.set({dark:t});try{n(e)}catch(e){errorMessage("Dark mode somehow messed up",e)}}function searchbar(e,t,n){const a=id("searchbar"),i=id("sb_empty"),o=id("sb_submit"),r=e=>id("sb_container").setAttribute("class",e?"shown":"hidden"),s=e=>a.setAttribute("engine",e),l=e=>a.setAttribute("request",stringMaxSize(e,512)),c=e=>a.setAttribute("newtab",e),d=e=>{a.setAttribute("style",`background: rgba(255, 255, 255, ${e}); color: ${e>.4?"#222":"#fff"}`),e>.4?id("sb_container").classList.add("opaque"):id("sb_container").classList.remove("opaque")};function u(){let e="";const t="true"===a.getAttribute("newtab"),n=a.getAttribute("engine"),i=a.getAttribute("request"),o=document.documentElement.getAttribute("lang");e="custom"===n?i:engineLocales[n].base.replace("%l",engineLocales[n][o]),e=e.replace("%s",encodeURIComponent(a.value)),t?window.open(e,"_blank"):window.location=e}a.onkeyup=function(e){"Enter"===e.key&&this.value.length>0&&u()},a.oninput=function(){clas(i,this.value.length>0,"shown"),clas(o,this.value.length>0,"shown")},i.onclick=function(){a.value="",a.focus(),clas(this,!1,"shown"),clas(o,!1,"shown")},o.onclick=function(){u()},e?lsOnlineStorage.get(!1,"searchbar",(n=>{switch(e){case"searchbar":n.searchbar.on=t.checked,r(t.checked);break;case"engine":n.searchbar.engine=t.value,clas(id("searchbar_request"),"custom"===t.value,"shown"),s(t.value);break;case"opacity":n.searchbar.opacity=parseFloat(t.value),d(parseFloat(t.value));break;case"request":{let e=t.value;-1!==e.indexOf("%s")?(n.searchbar.request=stringMaxSize(e,512),t.blur()):e.length>0&&(e="",t.setAttribute("placeholder",tradThis("%s Not found")),setTimeout((()=>t.setAttribute("placeholder",tradThis("Search query: %s"))),2e3)),l(e);break}case"newtab":n.searchbar.newtab=t.checked,c(t.checked)}"opacity"===e?slowRange({searchbar:n.searchbar}):lsOnlineStorage.set({searchbar:n.searchbar})})):function(){const{on:e,engine:t,request:a,newtab:i,opacity:o}=n||syncDefaults.searchbar;try{r(e),s(t),l(a),c(i),d(o)}catch(e){errorMessage("Error in searchbar initialization",e)}}()}async function quotes(e,t,n){function a(e){clas(id("linkblocks"),e,"withQuotes"),id("quotes_container").setAttribute("class",e?"shown":"hidden")}async function i(e,t){try{if(!navigator.onLine)return[];const n=t+="classic"===t?`/${e}`:"",a=await fetch("https://quotes.bonjourr.fr/"+n),i=await a.json();if(a.ok)return i}catch(e){return console.warn(e),[]}}function o(e){e&&(id("quote").textContent=e.content,id("author").textContent=e.author)}function r(e,t,n){return e.shift(),lsOnlineStorage.setLocal({quotesCache:e}),e.length<2&&i(t,n).then((e=>{lsOnlineStorage.setLocal({quotesCache:e})})),e}e?lsOnlineStorage.get(!1,["lang","quotes"],(async n=>{const s={...n.quotes},{lang:l,quotes:c}=n;switch(e){case"toggle":{const e=t.checked;s.on=e,lsOnlineStorage.get(!0,"quotesCache",(t=>{o(t.quotesCache[0]),a(e)}));break}case"author":id("author").classList.toggle("alwaysVisible"),s.author=t.checked;break;case"frequency":s.frequency=t.value;break;case"type":{s.type=t.value;const e=await i(l,t.value);lsOnlineStorage.setLocal({quotesCache:e}),o(e[0]);break}case"refresh":s.last=freqControl("set"),lsOnlineStorage.get(!0,"quotesCache",(async e=>{o(r(e.quotesCache,l,c.type)[0])}))}lsOnlineStorage.set({quotes:s})})):lsOnlineStorage.get(!0,"quotesCache",(async e=>{canDisplayInterface("quotes");const{lang:t,quotes:s}=n;let l=freqControl("get",s.frequency,s.last),c=e.quotesCache,d={};c&&0!==c?.length||(c=await i(t,s.type),lsOnlineStorage.setLocal({quotesCache:c}),d=c[0]),l&&(s.last=freqControl("set"),lsOnlineStorage.set({quotes:s}),d=r(c,t,s.type)[0]),!1!==n?.quotes?.on&&(d=c[0],s.author&&id("author").classList.add("alwaysVisible"),o(d),a(!0))}))}function showPopup(e){e>30?function(){const e={wrap:document.createElement("div"),btnwrap:document.createElement("div"),desc:document.createElement("p"),review:document.createElement("a"),donate:document.createElement("a")},t=e=>{e&&(id("popup").classList.remove("shown"),setTimeout((()=>{id("popup").remove(),setTimeout((()=>id("credit").style=""),400)}),200)),lsOnlineStorage.set({reviewPopup:"removed"})};e.wrap.id="popup",e.desc.id="popup_text",e.desc.textContent=tradThis("Love using Bonjourr? Consider giving us a review or donating, that would help a lot! 😇"),e.review.href="chrome"===getBrowser()?"https://chrome.google.com/webstore/detail/bonjourr-%C2%B7-minimalist-lig/dlnejlppicbjfcfcedcflplfjajinajd/reviews":"firefox"===getBrowser()?"https://addons.mozilla.org/en-US/firefox/addon/bonjourr-startpage/":"safari"===getBrowser()?"https://apps.apple.com/fr/app/bonjourr-startpage/id1615431236":"edge"===getBrowser()?"https://microsoftedge.microsoft.com/addons/detail/bonjourr/dehmmlejmefjphdeoagelkpaoolicmid":"https://bonjourr.fr/help#%EF%B8%8F-reviews",e.donate.href="https://ko-fi.com/bonjourr",e.review.textContent=tradThis("Review"),e.donate.textContent=tradThis("Donate"),e.btnwrap.id="popup_buttons",e.btnwrap.appendChild(e.review),e.btnwrap.appendChild(e.donate),e.wrap.appendChild(e.desc),e.wrap.appendChild(e.btnwrap),document.body.appendChild(e.wrap),id("credit").style.opacity=0,setTimeout((()=>e.wrap.classList.add("shown")),200),e.review.addEventListener("mousedown",(()=>t(!1))),e.donate.addEventListener("mousedown",(()=>t(!1))),e.desc.addEventListener("click",(()=>t(!0)),{passive:!0})}():"number"==typeof e?lsOnlineStorage.set({reviewPopup:e+1}):"removed"!==e&&lsOnlineStorage.set({reviewPopup:0})}function modifyWeightOptions(e,t){const n=(t||id("settings")).querySelector("#i_weight").querySelectorAll("option");if(!e||0===e.length)return n.forEach((e=>e.style.display="block")),!0;e.includes("regular")&&(e[e.indexOf("regular")]="400"),e=e.map((e=>parseInt(e))),n&&n.forEach((t=>t.style.display=-1!==e.indexOf(parseInt(t.value))?"block":"none"))}function safeFont(e){const t=safeFontList;let n=t.fallback;const a=document.fonts.check("16px Ubuntu");return testOS.windows?n=t.windows:testOS.android?n=t.android:testOS.mac||testOS.ios?n=t.apple:!testOS.mac&&!testOS.windows&&!testOS.ios&&a&&(n=t.linux),e&&(e.querySelector("#i_customfont").setAttribute("placeholder",n.placeholder),modifyWeightOptions(n.weights,e)),n}function customFont(e,t){function n(e){dominterface.style.fontSize=e/16+"em"}function a(e,t){id("fontstyle").textContent=t,id("clock").style.fontFamily='"'+e+'"',id("credit").style.fontFamily='"'+e+'"',dominterface.style.fontFamily='"'+e+'"',canDisplayInterface("fonts")}function i(e,t){if(t=parseInt(t)){const n=safeFont().weights;dominterface.style.fontWeight=t,id("searchbar").style.fontWeight=t;const a=t>100?n[n.indexOf(t)-1]:t;id("clock").style.fontWeight=e?t:a}}async function o(e){const t=await fetch(e),n=(await t.text()).replace(/(\r\n|\n|\r|  )/gm,"");return lsOnlineStorage.setLocal({fontface:n}),n}if(t)!function(e){function t(e){lsOnlineStorage.get(!0,"googleFonts",(async t=>{if(!t.googleFonts||t.googleFonts?.error){if(navigator.onLine){const t="QUl6YVN5QWt5M0pZYzJyQ09MMWpJc3NHQmdMcjFQVDR5VzE1ak9r",n="https://www.googleapis.com/webfonts/v1/webfonts?sort=popularity&key="+window.atob(t),a=await fetch(n);if(!a.ok)return;const i=await a.json();lsOnlineStorage.setLocal({googleFonts:i}),e(i)}}else e(t.googleFonts)}))}function r(){id("fontstyle").textContent="",id("clock").style.fontFamily="",id("credit").style.fontFamily="",dominterface.style.fontFamily="";const e=testOS.windows?"400":"300";return dominterface.style.fontWeight=e,id("searchbar").style.fontWeight=e,id("clock").style.fontWeight="",id("i_weight").value=e,{url:"",family:"",availWeights:[],weight:e}}async function s(e,t){const n=id("i_customfont"),r=e.items.filter((e=>e.family.toUpperCase()===t.toUpperCase()));if(r.length>0){const e=r[0].variants.filter((e=>!e.includes("italic"))),t=e.includes("regular")?400:e[0],s=encodeURI(`https://fonts.googleapis.com/css?family=${r[0].family}:${t}`),l=await o(s);return a(r[0].family,l),i(r[0].family,400),modifyWeightOptions(e,null,!0),id("i_weight").value="400",n&&n.blur(),{url:s,family:r[0].family,availWeights:e,weight:400}}return n.value="",safeFont(id("settings")),{url:"",family:"",availWeights:[],weight:testOS.windows?"400":"300"}}e.autocomplete?t((function(t){if(!t)return;const n=new DocumentFragment;t.items.forEach((function(e){const t=document.createElement("option");t.textContent=e.family,t.setAttribute("value",e.family),n.appendChild(t)})),e.settingsDom.querySelector("#dl_fontfamily").appendChild(n)})):lsOnlineStorage.get(!1,"font",(async l=>{let c=l.font;return e.size?(c.size=e.size,n(e.size),void slowRange({font:c},200)):e.weight?(c.url?(c.url=c.url.slice(0,c.url.lastIndexOf(":")+1),c.url+=e.weight,a(c.family,await o(c.url))):c.weight=e.weight,i(c.family,e.weight),void slowRange({font:c},200)):""===e.family?(safeFont(id("settings")),slowRange({font:{size:c.size,...r()}},200),void lsOnlineStorage.remove(!0,"fontface")):void(e.family&&t((async t=>{slowRange({font:{size:c.size,...await s(t,e.family)}},200)})))}))}(t);else try{if(n(e.size),i(e.family,e.weight),""===e.family)return;lsOnlineStorage.get(!0,"fontface",(async({fontface:t})=>{a(e.family,t||await o(e.url))}))}catch(e){errorMessage("Custom fonts failed to start",e)}}function textShadow(e,t){const n=e||t;id("interface").style.textShadow=`1px 2px 6px rgba(0, 0, 0, ${n})`,t&&slowRange({textShadow:n})}function customCss(e,t){const n=id("styles");if(e&&(n.textContent=e),t)switch(t.is){case"styling":{const e=stringMaxSize(t.val,8080);n.textContent=e,slowRange({css:e},500);break}case"resize":slowRange({cssHeight:t.val},500)}}function hideElem(e,t,n){const a=[["time",["time-container","date"]],["main",["greetings","description","widget"]],["linkblocks",["linkblocks"]],["showSettings",["showSettings"]]],i=e=>({row:parseInt(e.getAttribute("he_row")),col:parseInt(e.getAttribute("he_col"))});function o(e,t){t?id(e).classList.add("he_hidden"):id(e).classList.remove("he_hidden")}function r(e,t){return e[t].filter((e=>1===e)).length===e[t].length}if(n||t||!validateHideElem(e))t?lsOnlineStorage.get(!1,"hide",(e=>{try{e.hide=validateHideElem(e.hide)?e.hide:[[0,0],[0,0,0],[0],[0]],t.forEach((t=>{const n=i(t);1===e.hide[n.row][n.col]&&t.classList.toggle("clicked")}))}catch(e){errorMessage("Hide buttons failed",e)}})):lsOnlineStorage.get(!1,["weather","hide"],(e=>{e.hide=validateHideElem(e.hide)?e.hide:[[0,0],[0,0,0],[0],[0]];const t=i(n),s=n.classList.contains("clicked"),l=a[t.row][1][t.col],c=a[t.row][0];e.hide[t.row][t.col]=s?1:0,lsOnlineStorage.set({hide:e.hide}),!s&&1===t.row&&t.col>0&&weather(null,null,e),o(l,s),o(c,r(e.hide,t.row))}));else try{(s=e).forEach(((e,t)=>{const n=a[t][0];r(s,t)&&o(n,!0),e.forEach(((e,n)=>{const i=a[t][1][n];e&&o(i,!0)}))}))}catch(e){errorMessage("Hide failed on init",e)}var s}function canDisplayInterface(e,t){if(t)t.font?.family&&t.font?.url&&(funcsOk.fonts=!1),t.quotes?.on&&(funcsOk.quotes=!1);else{funcsOk[e]=!0;const t=Object.entries(funcsOk);t.filter((e=>!0===e[1])).length===t.length&&function(){const e=id("showSettings");let t=performance.now()-loadtimeStart;t>400&&(t=400),t=t<33?0:400,e.style.transition=`opacity ${t}ms`,dominterface.style.transition=`opacity ${t}ms, transform .4s`,dominterface.style.opacity="1",clas(e,!0,"enabled"),setTimeout((()=>{dominterface.classList.remove("init"),e.classList.remove("init"),e.style.transition=""}),t+100)}()}}function sunTime(e){if(!e||!e.lastState)return 0===sunset?{now:minutator(new Date),rise:420,set:1320}:{now:minutator(new Date),rise:minutator(new Date(1e3*sunrise)),set:minutator(new Date(1e3*sunset))};sunrise=e.lastState.sunrise,sunset=e.lastState.sunset}function onlineMobilePageUpdate(){lsOnlineStorage.get(!1,["dynamic","waitingForPreload","weather","background_type","hide"],(e=>{const{dynamic:t,background_type:n}=e;"dynamic"===n&&freqControl("get",t.every,t.time)&&(id("background_overlay").style.opacity=0,unsplash(e,!1)),clock(null,e),sunTime(e.weather),weather(null,null,e)}))}function filterImports(e){const t={lang:e=>void 0===e?"en":e,background_blur:e=>"string"==typeof e?parseFloat(e):e,dynamic:e=>e&&!e.collection?{...e,collection:""}:e,hide:e=>{if(validateHideElem(e)){const t=e.indexOf("weather_desc"),n=e.indexOf("w_icon");t>=0&&(e[t]="description"),n>=0&&(e[n]="widget")}else e=[[0,0],[0,0,0],[0],[0]];return e},weather:e=>{if(e){if(!1===e.location&&(n.weather.location=[]),e.lastState&&void 0===e.lastState.sunset){const t=e.lastState;e.lastState={temp:t.main.temp,feels_like:t.main.feels_like,temp_max:t.main.temp_max,sunrise:t.sys.sunrise,sunset:t.sys.sunset,description:t.weather[0].description,icon_id:t.weather[0].id}}e.lastCall&&(e.lastCall=0),e.forecastLastCall&&delete e.forecastLastCall,void 0===e.forecast&&(e.forecast="auto")}return e},font:e=>(e&&(delete e.availableWeights,delete e.supportedWeights),void 0===e.availWeights&&(e.availWeights=[]),e),searchbar:t=>{let n=syncDefaults.searchbar;return"boolean"==typeof t&&(n.on=t,n.newtab=e.searchbar_newtab||!1,n.engine=e.searchbar_engine?e.searchbar_engine.replace("s_",""):"google"),n={...n,...t},n}};let n={...syncDefaults};n={...e},delete n?.searchbar_engine,delete n?.searchbar_newtab,localStorage.removeItem("currentQuote"),localStorage.removeItem("nextQuote");try{Object.entries(n).forEach((([e,a])=>t[e]?n[e]=t[e](a):"")),n=function(e){const t=Object.keys(e).filter((e=>e.match("alias:")));return e.links?.forEach((({title:t,url:n,icon:a},i)=>{const o="links"+randomString(6),r=a.startsWith("alias:")?e[a]:a;e[o]={_id:o,order:i,title:t,icon:r,url:n}})),t.forEach((t=>delete e[t])),delete e.links,e}(n)}catch(e){errorMessage("Messed up in filter imports",e)}return n}function startup(e){traduction(null,e.lang),canDisplayInterface(null,e),sunTime(e.weather),weather(null,null,e),customFont(e.font),textShadow(e.textShadow),favicon(e.favicon),tabTitle(e.tabtitle),clock(null,e),darkmode(e.dark,null),searchbar(null,null,e.searchbar),quotes(null,null,e),showPopup(e.reviewPopup),customCss(e.css),hideElem(e.hide),initBackground(e),quickLinks(null,null,e),setTimeout((()=>settingsInit(e)),200)}const dominterface=id("interface"),isExtension="online"!==detectPlatform(),funcsOk={clock:!1,links:!1};let lazyClockInterval=setTimeout((()=>{}),0),localIsLoading=!1,loadtimeStart=performance.now(),sunset=0,sunrise=0;function initParams(e,t){const n=e=>t.querySelector("#"+e),a=(e,t,a)=>n(e).value=void 0!==t?t:a,i=(e,t)=>n(e).checked=!!t,o=(t,n)=>e[t]?e[t][n]:void 0;function r(e,t){e.classList.remove(t?"digital":"analog"),e.classList.add(t?"analog":"digital")}const s="custom"===e.background_type?e.custom_every:o("dynamic","every"),l="custom"===e.background_type?"pause":"hour";if(a("cssEditor",e.css,""),a("i_row",e.linksrow,8),a("i_linkstyle",e.linkstyle,"default"),a("i_type",e.background_type,"dynamic"),a("i_freq",s,l),a("i_blur",e.background_blur,15),a("i_bright",e.background_bright,.8),a("i_dark",e.dark,"system"),a("i_favicon",e.favicon,""),a("i_tabtitle",e.tabtitle,""),a("i_greeting",e.greeting,""),a("i_sbengine",o("searchbar","engine"),"google"),a("i_sbopacity",o("searchbar","opacity"),.1),a("i_sbrequest",o("searchbar","request"),""),a("i_qtfreq",o("quotes","frequency")),a("i_qttype",o("quotes","type")),a("i_clockface",o("clock","face"),"none"),a("i_timezone",o("clock","timezone"),"auto"),a("i_collection",o("dynamic","collection"),""),a("i_ccode",o("weather","ccode"),"US"),a("i_forecast",o("weather","forecast"),"auto"),a("i_temp",o("weather","temperature"),"actual"),a("i_customfont",o("font","family"),""),a("i_weight",o("font","weight"),300),a("i_size",o("font","size"),mobilecheck()?11:14),a("i_textshadow",e.textShadow),i("i_showall",e.showall),i("i_linknewtab",e.linknewtab),i("i_usdate",e.usdate),i("i_geol",o("weather","location")),i("i_units","imperial"===o("weather","unit")),i("i_sb",o("searchbar","on")),i("i_sbnewtab",o("searchbar","newtab")),i("i_quotes",o("quotes","on")),i("i_qtauthor",o("quotes","author")),i("i_ampm",o("clock","ampm")),i("i_seconds",o("clock","seconds")),i("i_analog",o("clock","analog")),n("i_title").setAttribute("placeholder",tradThis("Name")),n("i_greeting").setAttribute("placeholder",tradThis("Name")),n("i_tabtitle").setAttribute("placeholder",tradThis("New tab")),n("i_sbrequest").setAttribute("placeholder",tradThis("Search query: %s")),n("cssEditor").setAttribute("placeholder",tradThis("Type in your custom CSS")),n("i_import").setAttribute("placeholder",tradThis("Import code")),n("i_export").setAttribute("title",tradThis("Export code")),mobilecheck()&&(t.querySelector(".tooltiptext .instructions").textContent=tradThis("Edit your Quick Links by long-pressing the icon.")),Object.entries(langList).forEach((([e,t])=>{let a=document.createElement("option");a.value=e,a.text=t,n("i_lang").appendChild(a)})),"true"===localStorage.hasUpdated&&changelogControl(t),("safari-web-extension:"===window.location.protocol||window.location.protocol.match(/https?:/gim))&&(n("b_importbookmarks").style.display="none"),hideElem(null,t.querySelectorAll("#hideelem button"),null),safeFont(t),""!==o("font","family")&&customFont(null,{autocomplete:!0,settingsDom:t}),e.font&&e.font.availWeights.length>0&&modifyWeightOptions(e.font.availWeights,t,!0),e.clock&&r(n("clockoptions"),e.clock.analog),"custom"===e.background_type&&(n("custom").style.display="block",t.querySelector(".as_collection").style.display="none",localBackgrounds(null,{is:"thumbnail",settings:t})),e.weather&&Object.keys(e.weather).length>0){const t=e.weather.location.length>0;let a=e.weather.city?e.weather.city:"City";n("i_city").setAttribute("placeholder",a),clas(n("sett_city"),t,"hidden"),n("i_geol").checked=t}else clas(n("sett_city"),!0,"hidden"),n("i_geol").checked=!0;clas(n("searchbar_options"),e.searchbar?.on,"shown"),clas(n("searchbar_request"),"custom"===e.searchbar?.engine,"shown"),e.cssHeight&&(n("cssEditor").style.height=e.cssHeight+"px"),clas(n("quotes_options"),e.quotes?.on,"shown"),n("i_lang").value=e.lang||"en",importExport("exp",!1,t);const c=e=>e.addEventListener("keypress",(e=>"Enter"===e.key?e.target.blur():""));c(n("i_favicon")),c(n("i_tabtitle")),c(n("i_greeting"));const d=n("i_bgfile"),u=n("uploadContainer");if(d.addEventListener("dragenter",(()=>u.classList.add("dragover"))),d.addEventListener("dragleave",(()=>u.classList.remove("dragover"))),d.addEventListener("drop",(()=>u.classList.remove("dragover"))),t.querySelectorAll(".tooltip").forEach((e=>{e.onclick=function(){const n=[...e.classList].filter((e=>e.startsWith("tt")))[0];t.querySelector(".tooltiptext."+n).classList.toggle("shown")}})),mobilecheck()){const e=e=>id("settings").style.opacity=e?.2:1;t.querySelectorAll("input[type='range'").forEach((function(t){t.addEventListener("touchstart",(()=>e(!0)),{passive:!0}),t.addEventListener("touchend",(()=>e(!1)),{passive:!0})}))}n("i_showall").onchange=function(){showall(this.checked,!0)},n("i_lang").onchange=function(){switchLangs(this.value)},n("i_greeting").onkeyup=function(){clock({greeting:stringMaxSize(this.value,32)})},n("i_favicon").oninput=function(){favicon(null,this)},n("i_tabtitle").oninput=function(){tabTitle(null,this)},n("i_dark").onchange=function(){darkmode(null,this.value)},n("hideelem").querySelectorAll("button").forEach((e=>{e.onmouseup=function(){e.classList.toggle("clicked"),hideElem(null,null,this)}})),n("i_title").onkeyup=function(e){"Enter"===e.code&&quickLinks("input",e)},n("i_url").onkeyup=function(e){"Enter"===e.code&&quickLinks("input",e)},n("submitlink").onmouseup=function(){quickLinks("button",this)},n("b_importbookmarks").onmouseup=function(){linksImport()},n("i_linknewtab").onchange=function(){quickLinks("linknewtab",this.checked)},n("i_linkstyle").onchange=function(){quickLinks("linkstyle",this.value)},n("i_row").oninput=function(){linksrow(null,null,this.value)},n("i_type").onchange=function(){selectBackgroundType(this.value)},n("i_freq").onchange=function(){"custom"===n("i_type").value?lsOnlineStorage.set({custom_every:this.value}):unsplash(null,{every:this.value})},n("i_refresh").onclick=function(e){"custom"===n("i_type").value?slow(this,localBackgrounds(null,{is:"refresh",button:this.children[0]})):slow(this,unsplash(null,{refresh:this.children[0]}))},n("i_collection").onchange=function(){unsplash(null,{collection:stringMaxSize(this.value,256)}),this.blur()},n("i_bgfile").onchange=function(){localBackgrounds(null,{is:"newfile",file:this.files})},n("i_blur").oninput=function(){filter("blur",this.value),slowRange({background_blur:parseFloat(this.value)})},n("i_bright").oninput=function(){filter("bright",this.value),slowRange({background_bright:parseFloat(this.value)})},n("i_analog").onchange=function(){clock({analog:this.checked}),r(n("clockoptions"),this.checked)},n("i_seconds").onchange=function(){clock({seconds:this.checked})},n("i_clockface").onchange=function(){clock({face:this.value})},n("i_ampm").onchange=function(){clock({ampm:this.checked})},n("i_timezone").onchange=function(){clock({timezone:this.value})},n("i_usdate").onchange=function(){clock({usdate:this.checked})},n("i_city").onkeyup=function(e){if("Enter"===e.code)clearTimeout(rangeActive),stillActive||weather("city",this);else{const e=this;clearTimeout(rangeActive),rangeActive=setTimeout((()=>weather("city",e)),2e3)}},n("i_units").onchange=function(){stillActive||weather("units",this)},n("i_geol").onchange=function(){stillActive||weather("geol",this)},n("i_forecast").onchange=function(){weather("forecast",this)},n("i_temp").onchange=function(){weather("temp",this)},n("i_sb").onchange=function(){n("searchbar_options").classList.toggle("shown"),stillActive||searchbar("searchbar",this),slow(this)},n("i_sbengine").onchange=function(){searchbar("engine",this)},n("i_sbopacity").oninput=function(){searchbar("opacity",this)},n("i_sbrequest").onchange=function(){searchbar("request",this)},n("i_sbnewtab").onchange=function(){searchbar("newtab",this)},n("i_quotes").onchange=function(){n("quotes_options").classList.toggle("shown"),quotes("toggle",this)},n("i_qtfreq").onchange=function(){quotes("frequency",this)},n("i_qttype").onchange=function(){quotes("type",this)},n("i_qtrefresh").onclick=function(){stillActive||quotes("refresh",this),turnRefreshButton(this.children[0],!0),slow(this,600)},n("i_qtauthor").onchange=function(){quotes("author",this)},n("i_customfont").onfocus=function(){0===t.querySelector("#dl_fontfamily").childElementCount&&customFont(null,{autocomplete:!0,settingsDom:t})},n("i_customfont").onchange=function(){customFont(null,{family:this.value})},n("i_weight").oninput=function(){customFont(null,{weight:this.value})},n("i_size").oninput=function(){customFont(null,{size:this.value})},n("i_textshadow").oninput=function(){textShadow(null,this.value)},n("cssEditor").addEventListener("keyup",(function(e){customCss(null,{is:"styling",val:e.target.value})})),cssInputSize(n("cssEditor")),n("submitReset").onclick=function(){importExport("reset")},n("submitImport").onclick=function(){importExport("imp",!0)},n("i_import").onkeypress=function(e){"Enter"===e.code&&importExport("imp",!0)}}function cssInputSize(e){setTimeout((()=>{new ResizeObserver((e=>{const t=e[0].contentRect;customCss(null,{is:"resize",val:t.height+2*t.top})})).observe(e)}),400)}function changelogControl(e){const t=document.querySelector("#showSettings"),n=e.querySelector("#changelogContainer");function a(){clas(t,!1,"hasUpdated"),n.className="dismissed",localStorage.removeItem("hasUpdated")}clas(n,!0,"shown"),clas(t,!0,"hasUpdated"),e.querySelector("#link").onclick=()=>a(),e.querySelector("#log_dismiss").onclick=()=>a()}function switchLangs(e){function t(e){const t=e=>"en"===e?Object.keys(dict):Object.values(dict).map((t=>t[e])),{current:n,next:a}=e,i=t(a),o=t(n);let r={};o.forEach(((e,t)=>r[e]=i[t]));document.querySelectorAll(".trn").forEach((e=>{return t=e,n=e.textContent,t.textContent=r[n];var t,n}))}const n={current:document.documentElement.getAttribute("lang"),next:e};sessionStorage.lang=e,lsOnlineStorage.set({lang:e}),document.documentElement.setAttribute("lang",e),lsOnlineStorage.get(!1,null,(a=>{a.lang=e,t(n),weather(null,null,a),clock(null,a),"classic"===a.quotes?.type&&(localStorage.removeItem("nextQuote"),localStorage.removeItem("currentQuote"),quotes(null,null,a))}))}function showall(e,t,n){t&&lsOnlineStorage.set({showall:e}),clas(t?id("settings"):n,e,"all")}function selectBackgroundType(e){lsOnlineStorage.get(!0,"selectedId",(t=>{lsOnlineStorage.get(!1,["custom_every","custom_time","dynamic"],(n=>function(t,n){id("custom").style.display="custom"===e?"block":"none",document.querySelector(".as_collection").style.display="custom"===e?"none":"block","custom"===e&&""!==n.selectedId&&(id("background_overlay").style.opacity="0",localBackgrounds(null,{is:"thumbnail",settings:id("settings")}),setTimeout((()=>localBackgrounds({every:t.custom_every,time:t.custom_time})),400)),"dynamic"===e&&(clas(id("credit"),!0,"shown"),""!==n.selectedId&&(id("background_overlay").style.opacity="0",setTimeout((()=>unsplash(t)),400)));const a=t.custom_every||"pause",i=t.dynamic.every||"hour";id("i_freq").value="custom"===e?a:i,lsOnlineStorage.set({background_type:e})}(n,t)))}))}function importExport(e,t,n){function a(){const e=id("interface");e.click(),e.style.transition="opacity .4s",e.style.opacity="0",setTimeout((()=>location.reload()),400)}({exp:function(){if(!id("settings")&&!n)return!1;const e=n?n.querySelector("#i_export"):id("i_export");lsOnlineStorage.get(!1,null,(t=>{t.weather&&t.weather.lastCall&&delete t.weather.lastCall,t.weather&&t.weather.forecastLastCall&&delete t.weather.forecastLastCall,t.about.browser=detectPlatform(),e.textContent=JSON.stringify(t)}))},imp:function(){const e=id("i_import"),n=t=>e.setAttribute("placeholder",tradThis(t));if(t&&0!==e?.value?.length)try{const t=JSON.parse(e.value);lsOnlineStorage.get(!1,null,(e=>lsOnlineStorage.get(!0,"dynamicCache",(n=>function(e,t,n){e.dynamic&&n.dynamic&&e.dynamic.collection!==n.dynamic.collection&&(t.dynamicCache.user=[]),(n.links?.length>0||bundleLinks(n)?.length>0)&&bundleLinks(e).forEach((t=>{delete e[t._id]})),e={...e,...n},e="online"===detectPlatform()?{import:e}:e,lsOnlineStorage.clear(),lsOnlineStorage.set(e,lsOnlineStorage.setLocal(t)),sessionStorage.isImport=!0,a()}(e,n,t)))))}catch(t){e.value="",n("Error in import code"),setTimeout((()=>n("Import code")),2e3),console.error(t)}},reset:function(){let e=id("submitReset");e.hasAttribute("sure")?("online"===detectPlatform()?lsOnlineStorage.del():deleteBrowserStorage(),a()):(e.textContent=tradThis("Click again to confirm"),e.setAttribute("sure",""))}})[e]()}function signature(e){const t=e.querySelectorAll("#rand span"),n=e.querySelectorAll("#rand a"),a=[{href:"https://victr.me/",name:"Victor Azevedo"},{href:"https://tahoe.be/",name:"Tahoe Beetschen"}];Math.random()>.5&&a.reverse(),t[0].textContent=`${tradThis("by")} `,t[1].textContent=" & ",n.forEach(((e,t)=>{e.href=a[t].href,e.textContent=a[t].name}))}function settingsInit(e){function t(t){const n=id("showSettings"),a=id("interface"),i=id("editlink"),o=new DOMParser,r=document.createElement("div"),s=[...o.parseFromString(t,"text/html").body.childNodes];function l(e){const t=!has(e,"shown");clas(e,!1,"init"),clas(e,t,"shown"),clas(n,t,"shown"),clas(i,t,"pushed"),mobilecheck()||clas(a,t,"pushed")}r.id="settings",r.setAttribute("class","init"),s.forEach((e=>r.appendChild(e))),traduction(r,e.lang),signature(r),initParams(e,r),showall(e.showall,!1,r),document.body.prepend(r),n.onclick=function(){l(r)},document.onkeydown=function(e){if("Escape"===e.code)return void l(r);if("Tab"===e.code)return void clas(document.body,!0,"tabbing");if(id("error")&&e.ctrlKey)return;[["sb_container",!0],["settings",!1],["editlink",!1]].every((([e,t])=>has(id(e),"shown")===t))&&id("searchbar").focus()},a.onclick=function(e){e.composedPath().includes("linkblocks")||(has(id("editlink"),"shown")&&closeEditLink(),document.body.classList.contains("tabbing")&&clas(document.body,!1,"tabbing"),has(r,"shown")&&(clas(r,!1,"shown"),clas(n,!1,"shown"),clas(a,!1,"pushed")))}}fetch("settings.html").then((e=>e.text().then(t)))}window.onload=function(){if(isExtension?lsOnlineStorage.onChanged.addListener((()=>importExport("exp"))):window.onstorage=()=>importExport("exp"),setInterval((()=>{navigator.onLine&&lsOnlineStorage.get(!1,["weather","hide"],(e=>weather(null,null,e)))}),3e5),mobilecheck()&&document.addEventListener("visibilitychange",(()=>onlineMobilePageUpdate())),"online"===detectPlatform()){let e;"serviceWorker"in navigator&&navigator.serviceWorker.register("/service-worker.js"),window.addEventListener("beforeinstallprompt",(function(t){e=t}));const t=()=>document.documentElement.style.setProperty("--app-height",`${window.innerHeight}px`);if(window.addEventListener("resize",t),testOS.ios&&navigator.userAgent.includes("Firefox")){let e;window.requestAnimationFrame((function n(){t(),e=requestAnimationFrame(n)})),setTimeout((function(){cancelAnimationFrame(e)}),500)}}try{lsOnlineStorage.get(!1,null,(e=>{const t="true"===sessionStorage.isImport,n=e?.about?.version!==syncDefaults.about.version;0===Object.keys(e).length&&(e=syncDefaults,document.documentElement.setAttribute("lang",defaultLang()),lsOnlineStorage.setLocal(localDefaults),lsOnlineStorage.set(isExtension?e:{import:e})),t?lsOnlineStorage.get(!0,null,(t=>{t=localDataMigration(t),e=filterImports(e),sessionStorage.removeItem("isImport"),e.about={browser:detectPlatform(),version:syncDefaults.about.version},lsOnlineStorage.clear(),lsOnlineStorage.set(isExtension?e:{import:e}),isExtension?(lsOnlineStorage.local.clear(),lsOnlineStorage.setLocal({...t},(()=>startup(e)))):(localStorage.bonjourrBackgrounds=JSON.stringify(t),startup(e))})):(n&&lsOnlineStorage.set({about:{browser:detectPlatform(),version:syncDefaults.about.version}}),startup(e))}))}catch(e){errorMessage("Could not load chrome storage on startup",e)}};
+"use strict";
+(() => {
+  var __create = Object.create;
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __getProtoOf = Object.getPrototypeOf;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __commonJS = (cb, mod) => function __require() {
+    return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+  };
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    mod
+  ));
+
+  // node_modules/.pnpm/lodash.debounce@4.0.8/node_modules/lodash.debounce/index.js
+  var require_lodash = __commonJS({
+    "node_modules/.pnpm/lodash.debounce@4.0.8/node_modules/lodash.debounce/index.js"(exports, module) {
+      var FUNC_ERROR_TEXT = "Expected a function";
+      var NAN = 0 / 0;
+      var symbolTag = "[object Symbol]";
+      var reTrim = /^\s+|\s+$/g;
+      var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
+      var reIsBinary = /^0b[01]+$/i;
+      var reIsOctal = /^0o[0-7]+$/i;
+      var freeParseInt = parseInt;
+      var freeGlobal = typeof global == "object" && global && global.Object === Object && global;
+      var freeSelf = typeof self == "object" && self && self.Object === Object && self;
+      var root = freeGlobal || freeSelf || Function("return this")();
+      var objectProto = Object.prototype;
+      var objectToString = objectProto.toString;
+      var nativeMax = Math.max;
+      var nativeMin = Math.min;
+      var now = function() {
+        return root.Date.now();
+      };
+      function debounce3(func, wait, options) {
+        var lastArgs, lastThis, maxWait, result, timerId, lastCallTime, lastInvokeTime = 0, leading = false, maxing = false, trailing = true;
+        if (typeof func != "function") {
+          throw new TypeError(FUNC_ERROR_TEXT);
+        }
+        wait = toNumber(wait) || 0;
+        if (isObject(options)) {
+          leading = !!options.leading;
+          maxing = "maxWait" in options;
+          maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;
+          trailing = "trailing" in options ? !!options.trailing : trailing;
+        }
+        function invokeFunc(time) {
+          var args = lastArgs, thisArg = lastThis;
+          lastArgs = lastThis = void 0;
+          lastInvokeTime = time;
+          result = func.apply(thisArg, args);
+          return result;
+        }
+        function leadingEdge(time) {
+          lastInvokeTime = time;
+          timerId = setTimeout(timerExpired, wait);
+          return leading ? invokeFunc(time) : result;
+        }
+        function remainingWait(time) {
+          var timeSinceLastCall = time - lastCallTime, timeSinceLastInvoke = time - lastInvokeTime, result2 = wait - timeSinceLastCall;
+          return maxing ? nativeMin(result2, maxWait - timeSinceLastInvoke) : result2;
+        }
+        function shouldInvoke(time) {
+          var timeSinceLastCall = time - lastCallTime, timeSinceLastInvoke = time - lastInvokeTime;
+          return lastCallTime === void 0 || timeSinceLastCall >= wait || timeSinceLastCall < 0 || maxing && timeSinceLastInvoke >= maxWait;
+        }
+        function timerExpired() {
+          var time = now();
+          if (shouldInvoke(time)) {
+            return trailingEdge(time);
+          }
+          timerId = setTimeout(timerExpired, remainingWait(time));
+        }
+        function trailingEdge(time) {
+          timerId = void 0;
+          if (trailing && lastArgs) {
+            return invokeFunc(time);
+          }
+          lastArgs = lastThis = void 0;
+          return result;
+        }
+        function cancel() {
+          if (timerId !== void 0) {
+            clearTimeout(timerId);
+          }
+          lastInvokeTime = 0;
+          lastArgs = lastCallTime = lastThis = timerId = void 0;
+        }
+        function flush() {
+          return timerId === void 0 ? result : trailingEdge(now());
+        }
+        function debounced() {
+          var time = now(), isInvoking = shouldInvoke(time);
+          lastArgs = arguments;
+          lastThis = this;
+          lastCallTime = time;
+          if (isInvoking) {
+            if (timerId === void 0) {
+              return leadingEdge(lastCallTime);
+            }
+            if (maxing) {
+              timerId = setTimeout(timerExpired, wait);
+              return invokeFunc(lastCallTime);
+            }
+          }
+          if (timerId === void 0) {
+            timerId = setTimeout(timerExpired, wait);
+          }
+          return result;
+        }
+        debounced.cancel = cancel;
+        debounced.flush = flush;
+        return debounced;
+      }
+      function isObject(value) {
+        var type = typeof value;
+        return !!value && (type == "object" || type == "function");
+      }
+      function isObjectLike(value) {
+        return !!value && typeof value == "object";
+      }
+      function isSymbol(value) {
+        return typeof value == "symbol" || isObjectLike(value) && objectToString.call(value) == symbolTag;
+      }
+      function toNumber(value) {
+        if (typeof value == "number") {
+          return value;
+        }
+        if (isSymbol(value)) {
+          return NAN;
+        }
+        if (isObject(value)) {
+          var other = typeof value.valueOf == "function" ? value.valueOf() : value;
+          value = isObject(other) ? other + "" : other;
+        }
+        if (typeof value != "string") {
+          return value === 0 ? value : +value;
+        }
+        value = value.replace(reTrim, "");
+        var isBinary = reIsBinary.test(value);
+        return isBinary || reIsOctal.test(value) ? freeParseInt(value.slice(2), isBinary ? 2 : 8) : reIsBadHex.test(value) ? NAN : +value;
+      }
+      module.exports = debounce3;
+    }
+  });
+
+  // node_modules/.pnpm/lodash.throttle@4.1.1/node_modules/lodash.throttle/index.js
+  var require_lodash2 = __commonJS({
+    "node_modules/.pnpm/lodash.throttle@4.1.1/node_modules/lodash.throttle/index.js"(exports, module) {
+      var FUNC_ERROR_TEXT = "Expected a function";
+      var NAN = 0 / 0;
+      var symbolTag = "[object Symbol]";
+      var reTrim = /^\s+|\s+$/g;
+      var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
+      var reIsBinary = /^0b[01]+$/i;
+      var reIsOctal = /^0o[0-7]+$/i;
+      var freeParseInt = parseInt;
+      var freeGlobal = typeof global == "object" && global && global.Object === Object && global;
+      var freeSelf = typeof self == "object" && self && self.Object === Object && self;
+      var root = freeGlobal || freeSelf || Function("return this")();
+      var objectProto = Object.prototype;
+      var objectToString = objectProto.toString;
+      var nativeMax = Math.max;
+      var nativeMin = Math.min;
+      var now = function() {
+        return root.Date.now();
+      };
+      function debounce3(func, wait, options) {
+        var lastArgs, lastThis, maxWait, result, timerId, lastCallTime, lastInvokeTime = 0, leading = false, maxing = false, trailing = true;
+        if (typeof func != "function") {
+          throw new TypeError(FUNC_ERROR_TEXT);
+        }
+        wait = toNumber(wait) || 0;
+        if (isObject(options)) {
+          leading = !!options.leading;
+          maxing = "maxWait" in options;
+          maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;
+          trailing = "trailing" in options ? !!options.trailing : trailing;
+        }
+        function invokeFunc(time) {
+          var args = lastArgs, thisArg = lastThis;
+          lastArgs = lastThis = void 0;
+          lastInvokeTime = time;
+          result = func.apply(thisArg, args);
+          return result;
+        }
+        function leadingEdge(time) {
+          lastInvokeTime = time;
+          timerId = setTimeout(timerExpired, wait);
+          return leading ? invokeFunc(time) : result;
+        }
+        function remainingWait(time) {
+          var timeSinceLastCall = time - lastCallTime, timeSinceLastInvoke = time - lastInvokeTime, result2 = wait - timeSinceLastCall;
+          return maxing ? nativeMin(result2, maxWait - timeSinceLastInvoke) : result2;
+        }
+        function shouldInvoke(time) {
+          var timeSinceLastCall = time - lastCallTime, timeSinceLastInvoke = time - lastInvokeTime;
+          return lastCallTime === void 0 || timeSinceLastCall >= wait || timeSinceLastCall < 0 || maxing && timeSinceLastInvoke >= maxWait;
+        }
+        function timerExpired() {
+          var time = now();
+          if (shouldInvoke(time)) {
+            return trailingEdge(time);
+          }
+          timerId = setTimeout(timerExpired, remainingWait(time));
+        }
+        function trailingEdge(time) {
+          timerId = void 0;
+          if (trailing && lastArgs) {
+            return invokeFunc(time);
+          }
+          lastArgs = lastThis = void 0;
+          return result;
+        }
+        function cancel() {
+          if (timerId !== void 0) {
+            clearTimeout(timerId);
+          }
+          lastInvokeTime = 0;
+          lastArgs = lastCallTime = lastThis = timerId = void 0;
+        }
+        function flush() {
+          return timerId === void 0 ? result : trailingEdge(now());
+        }
+        function debounced() {
+          var time = now(), isInvoking = shouldInvoke(time);
+          lastArgs = arguments;
+          lastThis = this;
+          lastCallTime = time;
+          if (isInvoking) {
+            if (timerId === void 0) {
+              return leadingEdge(lastCallTime);
+            }
+            if (maxing) {
+              timerId = setTimeout(timerExpired, wait);
+              return invokeFunc(lastCallTime);
+            }
+          }
+          if (timerId === void 0) {
+            timerId = setTimeout(timerExpired, wait);
+          }
+          return result;
+        }
+        debounced.cancel = cancel;
+        debounced.flush = flush;
+        return debounced;
+      }
+      function throttle2(func, wait, options) {
+        var leading = true, trailing = true;
+        if (typeof func != "function") {
+          throw new TypeError(FUNC_ERROR_TEXT);
+        }
+        if (isObject(options)) {
+          leading = "leading" in options ? !!options.leading : leading;
+          trailing = "trailing" in options ? !!options.trailing : trailing;
+        }
+        return debounce3(func, wait, {
+          "leading": leading,
+          "maxWait": wait,
+          "trailing": trailing
+        });
+      }
+      function isObject(value) {
+        var type = typeof value;
+        return !!value && (type == "object" || type == "function");
+      }
+      function isObjectLike(value) {
+        return !!value && typeof value == "object";
+      }
+      function isSymbol(value) {
+        return typeof value == "symbol" || isObjectLike(value) && objectToString.call(value) == symbolTag;
+      }
+      function toNumber(value) {
+        if (typeof value == "number") {
+          return value;
+        }
+        if (isSymbol(value)) {
+          return NAN;
+        }
+        if (isObject(value)) {
+          var other = typeof value.valueOf == "function" ? value.valueOf() : value;
+          value = isObject(other) ? other + "" : other;
+        }
+        if (typeof value != "string") {
+          return value === 0 ? value : +value;
+        }
+        value = value.replace(reTrim, "");
+        var isBinary = reIsBinary.test(value);
+        return isBinary || reIsOctal.test(value) ? freeParseInt(value.slice(2), isBinary ? 2 : 8) : reIsBadHex.test(value) ? NAN : +value;
+      }
+      module.exports = throttle2;
+    }
+  });
+
+  // src/scripts/index.ts
+  var import_lodash3 = __toESM(require_lodash());
+
+  // node_modules/.pnpm/snarkdown@2.0.0/node_modules/snarkdown/dist/snarkdown.es.js
+  var e = { "": ["<em>", "</em>"], _: ["<strong>", "</strong>"], "*": ["<strong>", "</strong>"], "~": ["<s>", "</s>"], "\n": ["<br />"], " ": ["<br />"], "-": ["<hr />"] };
+  function n(e2) {
+    return e2.replace(RegExp("^" + (e2.match(/^(\t| )+/) || "")[0], "gm"), "");
+  }
+  function r(e2) {
+    return (e2 + "").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+  function t(a, c) {
+    var o, l, g, s, p, u = /((?:^|\n+)(?:\n---+|\* \*(?: \*)+)\n)|(?:^``` *(\w*)\n([\s\S]*?)\n```$)|((?:(?:^|\n+)(?:\t|  {2,}).+)+\n*)|((?:(?:^|\n)([>*+-]|\d+\.)\s+.*)+)|(?:!\[([^\]]*?)\]\(([^)]+?)\))|(\[)|(\](?:\(([^)]+?)\))?)|(?:(?:^|\n+)([^\s].*)\n(-{3,}|={3,})(?:\n+|$))|(?:(?:^|\n+)(#{1,6})\s*(.+)(?:\n+|$))|(?:`([^`].*?)`)|(  \n\n*|\n{2,}|__|\*\*|[_*]|~~)/gm, m = [], h = "", i = c || {}, d = 0;
+    function f(n2) {
+      var r2 = e[n2[1] || ""], t2 = m[m.length - 1] == n2;
+      return r2 ? r2[1] ? (t2 ? m.pop() : m.push(n2), r2[0 | t2]) : r2[0] : n2;
+    }
+    function $2() {
+      for (var e2 = ""; m.length; )
+        e2 += f(m[m.length - 1]);
+      return e2;
+    }
+    for (a = a.replace(/^\[(.+?)\]:\s*(.+)$/gm, function(e2, n2, r2) {
+      return i[n2.toLowerCase()] = r2, "";
+    }).replace(/^\n+|\n+$/g, ""); g = u.exec(a); )
+      l = a.substring(d, g.index), d = u.lastIndex, o = g[0], l.match(/[^\\](\\\\)*\\$/) || ((p = g[3] || g[4]) ? o = '<pre class="code ' + (g[4] ? "poetry" : g[2].toLowerCase()) + '"><code' + (g[2] ? ' class="language-' + g[2].toLowerCase() + '"' : "") + ">" + n(r(p).replace(/^\n+|\n+$/g, "")) + "</code></pre>" : (p = g[6]) ? (p.match(/\./) && (g[5] = g[5].replace(/^\d+/gm, "")), s = t(n(g[5].replace(/^\s*[>*+.-]/gm, ""))), ">" == p ? p = "blockquote" : (p = p.match(/\./) ? "ol" : "ul", s = s.replace(/^(.*)(\n|$)/gm, "<li>$1</li>")), o = "<" + p + ">" + s + "</" + p + ">") : g[8] ? o = '<img src="' + r(g[8]) + '" alt="' + r(g[7]) + '">' : g[10] ? (h = h.replace("<a>", '<a href="' + r(g[11] || i[l.toLowerCase()]) + '">'), o = $2() + "</a>") : g[9] ? o = "<a>" : g[12] || g[14] ? o = "<" + (p = "h" + (g[14] ? g[14].length : g[13] > "=" ? 1 : 2)) + ">" + t(g[12] || g[15], i) + "</" + p + ">" : g[16] ? o = "<code>" + r(g[16]) + "</code>" : (g[17] || g[1]) && (o = f(g[17] || "--"))), h += l, h += o;
+    return (h + a.substring(d) + $2()).replace(/^\n+|\n+$/g, "");
+  }
+
+  // src/scripts/lang.ts
+  var dict = {
+    "New tab": {
+      fr: "Nouvel onglet",
+      sv: "Ny flik",
+      nl: "Nieuw tabblad",
+      pl: "Nowa karta",
+      pt_BR: "Nova Aba",
+      ru: "\u041D\u043E\u0432\u0430\u044F \u0432\u043A\u043B\u0430\u0434\u043A\u0430",
+      zh_CN: "\u65B0\u6807\u7B7E\u9875",
+      sk: "Nov\xE1 karta",
+      de: "Neuer Tab",
+      it: "Nuova scheda",
+      es: "Nueva Pesta\xF1a",
+      tr: "Yeni Sekme",
+      uk: "\u041D\u043E\u0432\u0430 \u0432\u043A\u043B\u0430\u0434\u043A\u0430",
+      id: "Tab Baru",
+      da: "Nyt faneblad"
+    },
+    Consider: {
+      fr: "N'h\xE9sitez pas \xE0",
+      sv: "\xD6verv\xE4ga",
+      nl: "Overweeg te",
+      pl: "Rozwa\u017C",
+      pt_BR: "Considere",
+      ru: "\u0420\u0430\u0441\u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C",
+      zh_CN: "\u60A8\u53EF\u4EE5\u8003\u8651",
+      sk: "Zv\xE1\u017Ete",
+      de: "Erw\xE4gen Sie eine",
+      it: "Considera di",
+      es: "Considera",
+      tr: "\u0130stersen",
+      uk: "\u041F\u043E\u0434\u0443\u043C\u0430\u0439\u0442\u0435 \u043F\u0440\u043E \u0442\u0435,",
+      id: "Mempertimbangkan",
+      da: "Overvej"
+    },
+    donating: {
+      fr: "faire un don",
+      sv: "donera",
+      nl: "doneren",
+      pl: "przekazanie darowizny",
+      pt_BR: "fazer uma doa\xE7\xE3o",
+      ru: "\u043F\u043E\u0436\u0435\u0440\u0442\u0432\u043E\u0432\u0430\u043D\u0438\u044F",
+      zh_CN: "\u5411\u6211\u4EEC\u6350\u6B3E",
+      sk: "darovanie",
+      de: "Spende",
+      it: "fare una donazione",
+      es: "hacer una donaci\xF3n",
+      tr: "ba\u011F\u0131\u015F yap",
+      uk: "\u0449\u043E\u0431 \u0437\u0440\u043E\u0431\u0438\u0442\u0438 \u043F\u043E\u0436\u0435\u0440\u0442\u0432\u0443\u0432\u0430\u043D\u043D\u044F,",
+      id: "menyumbang",
+      da: "at donere"
+    },
+    "if you love Bonjourr": {
+      fr: "si vous aimez Bonjourr",
+      sv: "om du \xE4lskar Bonjourr",
+      nl: "als je van Bonjourr houdt",
+      pl: "je\u015Bli kochasz Bonjourr",
+      pt_BR: "se voc\xEA ama o Bonjourr",
+      ru: "\u0435\u0441\u043B\u0438 \u0432\u0430\u043C \u043D\u0440\u0430\u0432\u0438\u0442\u0441\u044F Bonjourr",
+      zh_CN: "\u6765\u652F\u6301 Bonjourr",
+      sk: "Ak miluje\u0161 Bonjourra",
+      de: "wenn Sie Bonjourr lieben",
+      it: "se ami Bonjourr",
+      es: "si amas Bonjourr",
+      tr: "tabi Bonjourr'u seviyorsan",
+      uk: "\u044F\u043A\u0449\u043E \u0412\u0430\u043C \u043F\u043E\u0434\u043E\u0431\u0430\u0454\u0442\u044C\u0441\u044F Bonjourr",
+      id: "jika Anda menyukai Bonjourr",
+      da: "hvis du elsker Bonjourr"
+    },
+    "Love using Bonjourr? Consider giving us a review or donating, that would help a lot! \u{1F607}": {
+      fr: "Vous aimez utiliser Bonjourr ? Pensez \xE0 nous noter ou faire un don, \xE7a serait super ! \u{1F607}",
+      sv: "\xC4lskar du att anv\xE4nda Bonjourr? \xD6verv\xE4g att ge oss en recension eller donera, det skulle hj\xE4lpa mycket! \u{1F607}",
+      nl: "Ben je dol op het gebruik van Bonjourr? Overweeg om ons een recensie te geven of te doneren, dat zou veel helpen! \u{1F607}",
+      pl: "Uwielbiasz korzysta\u0107 z Bonjourr? Zastan\xF3w si\u0119 nad wystawieniem nam recenzji lub darowizny, bardzo nam to pomo\u017Ce! \u{1F607}",
+      pt_BR: "Gosta de usar o Bonjourr? Considere nos avaliar ou fa\xE7a uma doa\xE7\xE3o, isso ajudaria muito! \u{1F607}",
+      ru: "\u041D\u0440\u0430\u0432\u0438\u0442\u0441\u044F Bonjourr? \u041F\u043E\u0434\u0443\u043C\u0430\u0439\u0442\u0435 \u043E \u0442\u043E\u043C, \u0447\u0442\u043E\u0431\u044B \u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u043E\u0442\u0437\u044B\u0432 \u0438\u043B\u0438 \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u043D\u0430\u043C \u043F\u043E\u0436\u0435\u0440\u0442\u0432\u043E\u0432\u0430\u043D\u0438\u0435, \u044D\u0442\u043E \u043E\u0447\u0435\u043D\u044C \u043F\u043E\u043C\u043E\u0436\u0435\u0442! \u{1F607}",
+      zh_CN: "\u559C\u6B22\u4F7F\u7528 Bonjourr\uFF1F \u8003\u8651\u7ED9\u6211\u4EEC\u4E00\u4E2A\u8BC4\u8BBA\u6216\u6350\u8D60\uFF0C\u8FD9\u4F1A\u5F88\u6709\u5E2E\u52A9\uFF01 \u{1F607}",
+      sk: "M\xE1te radi pou\u017E\xEDvanie Bonjourru? Sk\xFAste n\xE1m da\u0165 recenziu alebo darova\u0165, to by ve\u013Emi pomohlo! \u{1F607}",
+      de: "Lieben Sie es, Bonjourr zu nutzen? Erw\xE4gen Sie, uns eine Bewertung zu geben oder zu spenden, das w\xFCrde viel helfen! \u{1F607}",
+      it: "Ti piace usare Bonjourr? Considera di darci una recensione o di fare una donazione, sarebbe di grande aiuto! ?",
+      es: "\xBFTe encanta usar Bonjourr? Considera darnos una rese\xF1a o hacer una donaci\xF3n, \xA1eso nos ayudar\xEDa mucho! \u{1F607}",
+      tr: "Bonjourr'u kullanmay\u0131 seviyor musunuz? Bize bir inceleme yazmay\u0131 veya ba\u011F\u0131\u015F yapmay\u0131 d\xFC\u015F\xFCn\xFCn, bu \xE7ok yard\u0131mc\u0131 olacakt\u0131r! \u{1F607}",
+      uk: "\u041F\u043E\u0434\u043E\u0431\u0430\u0454\u0442\u044C\u0441\u044F Bonjourr? \u0417\u0430\u043B\u0438\u0448\u0442\u0435 \u0432\u0456\u0434\u0433\u0443\u043A \u0430\u0431\u043E \u043F\u043E\u0436\u0435\u0440\u0442\u0432\u0443\u0439\u0442\u0435, \u0446\u0435 \u0434\u0443\u0436\u0435 \u043D\u0430\u043C \u0434\u043E\u043F\u043E\u043C\u043E\u0436\u0435! \u{1F607}",
+      id: "Suka menggunakan Bonjourr? Pertimbangkan untuk memberi kami ulasan atau donasi, itu akan sangat membantu! ",
+      da: "Elsker du at bruge Bonjourr? Overvej at give os en anmeldelse eller en donation, det vil hj\xE6lpe meget \u{1F607}"
+    },
+    Review: {
+      fr: "Noter",
+      sv: "Recension",
+      nl: "Beoordeling",
+      pl: "Przejrzyj",
+      pt_BR: "Avalie",
+      ru: "\u041E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u043E\u0442\u0437\u044B\u0432",
+      zh_CN: "\u5BA1\u67E5",
+      sk: "Presk\xFAmanie",
+      de: "Rezension",
+      it: "Recensione",
+      es: "Revisar",
+      tr: "\u0130nceleme",
+      uk: "\u0417\u0430\u043B\u0438\u0448\u0438\u0442\u0438 \u0432\u0456\u0434\u0433\u0443\u043A",
+      id: "Ulasan",
+      da: "Anmeldelse"
+    },
+    Donate: {
+      fr: "Faire un don",
+      sv: "Donera",
+      nl: "Doneer",
+      pl: "Podarowa\u0107",
+      pt_BR: "Doe",
+      ru: "\u041F\u043E\u0436\u0435\u0440\u0442\u0432\u043E\u0432\u0430\u0442\u044C",
+      zh_CN: "\u6350",
+      sk: "Darova\u0165",
+      de: "Spenden",
+      it: "Donare",
+      es: "Donar",
+      tr: "Ba\u011F\u0131\u015F",
+      uk: "\u041F\u043E\u0436\u0435\u0440\u0442\u0432\u0443\u0432\u0430\u0442\u0438",
+      id: "Donasi",
+      da: "Donere"
+    },
+    Cancel: {
+      fr: "Annuler",
+      sv: "Avbryt",
+      nl: "Annuleren",
+      pl: "Anuluj",
+      pt_BR: "Cancelar",
+      ru: "\u041E\u0442\u043C\u0435\u043D\u0430",
+      zh_CN: "\u53D6\u6D88",
+      sk: "Zru\u0161i\u0165",
+      de: "Abbrechen",
+      it: "Annulla",
+      es: "Cancelar",
+      tr: "\u0130ptal",
+      uk: "\u0421\u043A\u0430\u0441\u0443\u0432\u0430\u0442\u0438",
+      id: "Batal",
+      da: "Afbryd"
+    },
+    Delete: {
+      fr: "Supprimer",
+      sv: "Radera",
+      nl: "Verwijderen",
+      pl: "Usu\u0144",
+      pt_BR: "Deletar",
+      ru: "\u0423\u0434\u0430\u043B\u0438\u0442\u044C",
+      zh_CN: "\u5220\u9664\u5FEB\u901F\u94FE\u63A5",
+      sk: "Odstr\xE1ni\u0165",
+      de: "L\xF6schen",
+      it: "Elimina",
+      es: "Eliminar",
+      tr: "Sil",
+      uk: "\u0412\u0438\u0434\u0430\u043B\u0438\u0442\u0438",
+      id: "Hapus",
+      da: "Slet"
+    },
+    "Apply changes": {
+      fr: "Enregistrer",
+      sv: "Applicera f\xF6r\xE4ndringar",
+      nl: "Wijzigingen toepassen",
+      pl: "Zatwierd\u017A zmiany",
+      pt_BR: "Aplicar mudan\xE7as",
+      ru: "\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F",
+      zh_CN: "\u4FDD\u5B58\u66F4\u6539",
+      sk: "Aplikova\u0165 zmeny",
+      de: "\xC4nderungen \xFCbernehmen",
+      it: "Applica modifiche",
+      es: "Aplicar cambios",
+      tr: "De\u011Fi\u015Fiklikleri uygula",
+      uk: "\u0417\u0431\u0435\u0440\u0435\u0433\u0442\u0438 \u0437\u043C\u0456\u043D\u0438",
+      id: "Terapkan Perubahan",
+      da: "Anvend \xE6ndringer"
+    },
+    Monday: {
+      fr: "Lundi",
+      sv: "M\xE5ndag",
+      nl: "Maandag",
+      pl: "poniedzia\u0142ek",
+      pt_BR: "Segunda",
+      ru: "\u041F\u043E\u043D\u0435\u0434\u0435\u043B\u044C\u043D\u0438\u043A",
+      zh_CN: "\u661F\u671F\u4E00",
+      sk: "Pondelok",
+      de: "Montag",
+      it: "Luned\xEC",
+      es: "Lunes",
+      tr: "Pazartesi",
+      uk: "\u041F\u043E\u043D\u0435\u0434\u0456\u043B\u043E\u043A",
+      id: "Senin",
+      da: "Mandag"
+    },
+    Tuesday: {
+      fr: "Mardi",
+      sv: "Tisdag",
+      nl: "Dinsdag",
+      pl: "wtorek",
+      pt_BR: "Ter\xE7a",
+      ru: "\u0412\u0442\u043E\u0440\u043D\u0438\u043A",
+      zh_CN: "\u661F\u671F\u4E8C",
+      sk: "Utorok",
+      de: "Dienstag",
+      it: "Marted\xEC",
+      es: "Martes",
+      tr: "Sal\u0131",
+      uk: "\u0412\u0456\u0432\u0442\u043E\u0440\u043E\u043A",
+      id: "Selasa",
+      da: "Tirsdag"
+    },
+    Wednesday: {
+      fr: "Mercredi",
+      sv: "Onsdag",
+      nl: "Woensdag",
+      pl: "\u015Broda",
+      pt_BR: "Quarta",
+      ru: "\u0421\u0440\u0435\u0434\u0430",
+      zh_CN: "\u661F\u671F\u4E09",
+      sk: "Streda",
+      de: "Mittwoch",
+      it: "Mercoled\xEC",
+      es: "Mi\xE9rcoles",
+      tr: "\xC7ar\u015Famba",
+      uk: "\u0421\u0435\u0440\u0435\u0434\u0430",
+      id: "Rabu",
+      da: "Onsdag"
+    },
+    Thursday: {
+      fr: "Jeudi",
+      sv: "Torsdag",
+      nl: "Donderdag",
+      pl: "czwartek",
+      pt_BR: "Quinta",
+      ru: "\u0427\u0435\u0442\u0432\u0435\u0440\u0433",
+      zh_CN: "\u661F\u671F\u56DB",
+      sk: "\u0160tvrtok",
+      de: "Donnerstag",
+      it: "Gioved\xEC",
+      es: "Jueves",
+      tr: "Per\u015Fembe",
+      uk: "\u0427\u0435\u0442\u0432\u0435\u0440",
+      id: "Kamis",
+      da: "Torsdag"
+    },
+    Friday: {
+      fr: "Vendredi",
+      sv: "Fredag",
+      nl: "Vrijdag",
+      pl: "pi\u0105tek",
+      pt_BR: "Sexta",
+      ru: "\u041F\u044F\u0442\u043D\u0438\u0446\u0430",
+      zh_CN: "\u661F\u671F\u4E94",
+      sk: "Piatok",
+      de: "Freitag",
+      it: "Venerd\xEC",
+      es: "Viernes",
+      tr: "Cuma",
+      uk: "\u041F'\u044F\u0442\u043D\u0438\u0446\u044F",
+      id: "Jumat",
+      da: "Fredag"
+    },
+    Saturday: {
+      fr: "Samedi",
+      sv: "L\xF6rdag",
+      nl: "Zaterdag",
+      pl: "sobota",
+      pt_BR: "S\xE1bado",
+      ru: "\u0421\u0443\u0431\u0431\u043E\u0442\u0430",
+      zh_CN: "\u661F\u671F\u516D",
+      sk: "Sobota",
+      de: "Samstag",
+      it: "Sabato",
+      es: "S\xE1bado",
+      tr: "Cumartesi",
+      uk: "\u0421\u0443\u0431\u0431\u043E\u0442\u0430",
+      id: "Sabtu",
+      da: "L\xF8rdag"
+    },
+    Sunday: {
+      fr: "Dimanche",
+      sv: "S\xF6ndag",
+      nl: "Zondag",
+      pl: "niedziela",
+      pt_BR: "Domingo",
+      ru: "\u0412\u043E\u0441\u043A\u0440\u0435\u0441\u0435\u043D\u044C\u0435",
+      zh_CN: "\u661F\u671F\u65E5",
+      sk: "Nede\u013Ea",
+      de: "Sonntag",
+      it: "Domenica",
+      es: "Domingo",
+      tr: "Pazar",
+      uk: "\u041D\u0435\u0434\u0456\u043B\u044F",
+      id: "Minggu",
+      da: "S\xF8ndag"
+    },
+    January: {
+      fr: "Janvier",
+      sv: "Januari",
+      nl: "Januari",
+      pl: "stycze\u0144",
+      pt_BR: "Janeiro",
+      ru: "\u044F\u043D\u0432\u0430\u0440\u044F",
+      zh_CN: "1\u6708",
+      sk: "Janu\xE1r",
+      de: "Januar",
+      it: "Gennaio",
+      es: "Enero",
+      tr: "Ocak",
+      uk: "\u0441\u0456\u0447\u043D\u044F",
+      id: "Januari",
+      da: "januar"
+    },
+    February: {
+      fr: "F\xE9vrier",
+      sv: "Februari",
+      nl: "Februari",
+      pl: "luty",
+      pt_BR: "Fevereiro",
+      ru: "\u0444\u0435\u0432\u0440\u0430\u043B\u044F",
+      zh_CN: "2\u6708",
+      sk: "Febru\xE1r",
+      de: "Februar",
+      it: "Febbraio",
+      es: "Febrero",
+      tr: "\u015Eubat",
+      uk: "\u043B\u044E\u0442\u0435",
+      id: "Februari",
+      da: "februar"
+    },
+    March: {
+      fr: "Mars",
+      sv: "Mars",
+      nl: "Maart",
+      pl: "marzec",
+      pt_BR: "Mar\xE7o",
+      ru: "\u043C\u0430\u0440\u0442\u0430",
+      zh_CN: "3\u6708",
+      sk: "Marec",
+      de: "M\xE4rz",
+      it: "Marzo",
+      es: "Marzo",
+      tr: "Mart",
+      uk: "\u0431\u0435\u0440\u0435\u0437\u043D\u044F",
+      id: "Maret",
+      da: "marts"
+    },
+    April: {
+      fr: "Avril",
+      sv: "April",
+      nl: "April",
+      pl: "kwiecie\u0144",
+      pt_BR: "Abril",
+      ru: "\u0430\u043F\u0440\u0435\u043B\u044F",
+      zh_CN: "4\u6708",
+      sk: "Apr\xEDl",
+      de: "April",
+      it: "Aprile",
+      es: "Abril",
+      tr: "Nisan",
+      uk: "\u043A\u0432\u0456\u0442\u043D\u044F",
+      id: "April",
+      da: "april"
+    },
+    May: {
+      fr: "Mai",
+      sv: "Maj",
+      nl: "Mei",
+      pl: "maj",
+      pt_BR: "Maio",
+      ru: "\u043C\u0430\u044F",
+      zh_CN: "5\u6708",
+      sk: "M\xE1j",
+      de: "Mai",
+      it: "Maggio",
+      es: "Mayo",
+      tr: "May\u0131s",
+      uk: "\u0442\u0440\u0430\u0432\u043D\u044F",
+      id: "Mei",
+      da: "maj"
+    },
+    June: {
+      fr: "Juin",
+      sv: "Juni",
+      nl: "Juni",
+      pl: "czerwiec",
+      pt_BR: "Junho",
+      ru: "\u0438\u044E\u043D\u044F",
+      zh_CN: "6\u6708",
+      sk: "J\xFAn",
+      de: "Juni",
+      it: "Giugno",
+      es: "Junio",
+      tr: "Haziran",
+      uk: "\u0447\u0435\u0440\u0432\u043D\u044F",
+      id: "Juni",
+      da: "juni"
+    },
+    July: {
+      fr: "Juillet",
+      sv: "Juli",
+      nl: "Juli",
+      pl: "lipiec",
+      pt_BR: "Julho",
+      ru: "\u0438\u044E\u043B\u044F",
+      zh_CN: "7\u6708",
+      sk: "J\xFAl",
+      de: "Juli",
+      it: "Luglio",
+      es: "Julio",
+      tr: "Temmuz",
+      uk: "\u043B\u0438\u043F\u043D\u044F",
+      id: "Juli",
+      da: "juli"
+    },
+    August: {
+      fr: "Ao\xFBt",
+      sv: "Augusti",
+      nl: "Augustus",
+      pl: "sierpie\u0144",
+      pt_BR: "Agosto",
+      ru: "\u0430\u0432\u0433\u0443\u0441\u0442\u0430",
+      zh_CN: "8\u6708",
+      sk: "August",
+      de: "August",
+      it: "Agosto",
+      es: "Agosto",
+      tr: "A\u011Fustos",
+      uk: "\u0441\u0435\u0440\u043F\u043D\u044F",
+      id: "Agustus",
+      da: "august"
+    },
+    September: {
+      fr: "Septembre",
+      sv: "September",
+      nl: "September",
+      pl: "wrzesie\u0144",
+      pt_BR: "Setembro",
+      ru: "\u0441\u0435\u043D\u0442\u044F\u0431\u0440\u044F",
+      zh_CN: "9\u6708",
+      sk: "Spetember",
+      de: "September",
+      it: "Settembre",
+      es: "Septiembre",
+      tr: "Eyl\xFCl",
+      uk: "\u0432\u0435\u0440\u0435\u0441\u043D\u044F",
+      id: "September",
+      da: "september"
+    },
+    October: {
+      fr: "Octobre",
+      sv: "Oktober",
+      nl: "Oktober",
+      pl: "pa\u017Adziernik",
+      pt_BR: "Outubro",
+      ru: "\u043E\u043A\u0442\u044F\u0431\u0440\u044F",
+      zh_CN: "10\u6708",
+      sk: "Okt\xF3ber",
+      de: "Oktober",
+      it: "Ottobre",
+      es: "Octubre",
+      tr: "Ekim",
+      uk: "\u0436\u043E\u0432\u0442\u043D\u044F",
+      id: "Oktober",
+      da: "oktober"
+    },
+    November: {
+      fr: "Novembre",
+      sv: "November",
+      nl: "november",
+      pl: "listopad",
+      pt_BR: "Novembro",
+      ru: "\u043D\u043E\u044F\u0431\u0440\u044F",
+      zh_CN: "11\u6708",
+      sk: "November",
+      de: "November",
+      it: "Novembre",
+      es: "Noviembre",
+      tr: "Kas\u0131m",
+      uk: "\u043B\u0438\u0441\u0442\u043E\u043F\u0430\u0434\u0430",
+      id: "November",
+      da: "november"
+    },
+    December: {
+      fr: "D\xE9cembre",
+      sv: "December",
+      nl: "December",
+      pl: "grudzie\u0144",
+      pt_BR: "Dezembro",
+      ru: "\u0434\u0435\u043A\u0430\u0431\u0440\u044F",
+      zh_CN: "12\u6708",
+      sk: "December",
+      de: "Dezember",
+      it: "Dicembre",
+      es: "Diciembre",
+      tr: "Aral\u0131k",
+      uk: "\u0433\u0440\u0443\u0434\u043D\u044F",
+      id: "Desember",
+      da: "december"
+    },
+    "Good morning": {
+      fr: "Bonjour",
+      sv: "Godmorgon",
+      nl: "Goedemorgen",
+      pl: "Dzie\u0144 dobry",
+      pt_BR: "Bom dia",
+      ru: "\u0414\u043E\u0431\u0440\u043E\u0435 \u0443\u0442\u0440\u043E!",
+      zh_CN: "\u65E9\u4E0A\u597D",
+      sk: "Dobr\xE9 r\xE1no",
+      de: "Guten Morgen",
+      it: "Buongiorno",
+      es: "Buenos d\xEDas",
+      tr: "G\xFCnayd\u0131n",
+      uk: "\u0414\u043E\u0431\u0440\u043E\u0433\u043E \u0440\u0430\u043D\u043A\u0443",
+      id: "Selamat pagi",
+      da: "Godmorgen"
+    },
+    "Good afternoon": {
+      fr: "Bonjour",
+      sv: "Goddag",
+      nl: "Goedemiddag",
+      pl: "Mi\u0142ego popo\u0142udia",
+      pt_BR: "Boa tarde",
+      ru: "\u0414\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C!",
+      zh_CN: "\u4E0B\u5348\u597D",
+      sk: "Dobr\xFD de\u0148",
+      de: "Guten Tag",
+      it: "Buon pomeriggio",
+      es: "Buenas tardes",
+      tr: "T\xFCnayd\u0131n",
+      uk: "\u0414\u043E\u0431\u0440\u0438\u0439 \u0434\u0435\u043D\u044C",
+      id: "Selamat siang",
+      da: "God eftermiddag"
+    },
+    "Good evening": {
+      fr: "Bonsoir",
+      sv: "God kv\xE4ll",
+      nl: "Goedenavond",
+      pl: "Dobry wiecz\xF3r",
+      pt_BR: "Boa noite",
+      ru: "\u0414\u043E\u0431\u0440\u044B\u0439 \u0432\u0435\u0447\u0435\u0440!",
+      zh_CN: "\u665A\u4E0A\u597D",
+      sk: "Dobr\xFD ve\u010Der",
+      de: "Guten Abend",
+      it: "Buonasera",
+      es: "Buenas noches",
+      tr: "\u0130yi ak\u015Famlar",
+      uk: "\u0414\u043E\u0431\u0440\u0438\u0439 \u0432\u0435\u0447\u0456\u0440",
+      id: "Selamat sore",
+      da: "Godaften"
+    },
+    "Good night": {
+      fr: "Bonne nuit",
+      sv: "God natt",
+      nl: "Goedennacht",
+      pl: "Dobranoc",
+      pt_BR: "Boa noite",
+      ru: "\u0414\u043E\u0431\u0440\u043E\u0439 \u043D\u043E\u0447\u0438!",
+      zh_CN: "\u665A\u5B89",
+      sk: "Dobr\xFA noc",
+      de: "Gute Nacht",
+      it: "Buonanotte",
+      es: "Buenas noches",
+      tr: "\u0130yi geceler",
+      uk: "\u0414\u043E\u0431\u0440\u043E\u0457 \u043D\u043E\u0447\u0456",
+      id: "Selamat malam",
+      da: "God nat"
+    },
+    "It is currently": {
+      fr: "Il fait actuellement",
+      sv: "Det \xE4r just nu",
+      nl: "Het is nu",
+      pl: "Obecnie jest",
+      pt_BR: "Atualmente faz",
+      ru: "\u0421\u0435\u0439\u0447\u0430\u0441",
+      zh_CN: "\u73B0\u5728\u6C14\u6E29",
+      sk: "Moment\xE1lne je",
+      de: "Es ist derzeit",
+      it: "Ci sono",
+      es: "Actualmente est\xE1",
+      tr: "\u015Eu anda",
+      uk: "\u0417\u0430\u0440\u0430\u0437",
+      id: "Saat ini",
+      da: "Det er lige nu"
+    },
+    "It currently feels like": {
+      fr: "Il y a actuellement un ressenti de",
+      sv: "Just nu k\xE4nns det som",
+      nl: "Het voelt nu als",
+      pl: "Obecnie odczuwalna jest",
+      pt_BR: "A Sensa\xE7\xE3o t\xE9rmica \xE9 de",
+      ru: "\u0421\u0435\u0439\u0447\u0430\u0441 \u043E\u0449\u0443\u0449\u0430\u0435\u0442\u0441\u044F \u043A\u0430\u043A",
+      zh_CN: "\u76EE\u524D\u611F\u89C9\u50CF",
+      sk: "Aktu\xE1lne je pocitovo",
+      de: "Es f\xFChlt sich aktuell an wie",
+      it: "Attualmente sembra",
+      es: "Actualmente se siente como",
+      tr: "\u015Eu anda hissedilen",
+      uk: "\u0412\u0456\u0434\u0447\u0443\u0432\u0430\u0454\u0442\u044C\u0441\u044F \u044F\u043A",
+      id: "Saat ini terasa seperti",
+      da: "Lige nu f\xF8les det som"
+    },
+    "feels like": {
+      fr: "avec un ressenti de",
+      sv: "K\xE4nns som",
+      nl: "voelt als",
+      pl: "odczuwalna",
+      pt_BR: "com sensa\xE7\xE3o de",
+      ru: "\u041F\u043E \u043E\u0449\u0443\u0449\u0435\u043D\u0438\u044F\u043C",
+      zh_CN: "\u611F\u89C9\u50CF",
+      sk: "pocitovo",
+      de: "es f\xFChlt sich an wie",
+      it: "sembrano",
+      es: "se siente como",
+      tr: "hissedilen",
+      uk: "\u0432\u0456\u0434\u0447\u0443\u0432\u0430\u0454\u0442\u044C\u0441\u044F \u044F\u043A",
+      id: "terasa seperti",
+      da: "f\xF8les som"
+    },
+    "with a high of": {
+      fr: "avec une maximale de",
+      sv: "med h\xF6gsta",
+      nl: "Met maximaal",
+      pl: "maksymalnie",
+      pt_BR: "a m\xE1xima \xE9 de",
+      ru: "\u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u0430\u044F \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430 \u0432\u043E\u0437\u0434\u0443\u0445\u0430 \u0441\u0435\u0433\u043E\u0434\u043D\u044F",
+      zh_CN: "\u6700\u9AD8\u6C14\u6E29",
+      sk: "z maxim\xE1lnych",
+      de: "mit maximal",
+      it: "con una massima di",
+      es: "con un m\xE1ximo de",
+      tr: "maksimum ile",
+      uk: "\u0437 \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u044E \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u043E\u044E",
+      id: "dengan tinggi",
+      da: "med op til"
+    },
+    today: {
+      fr: "aujourd'hui",
+      sv: "idag",
+      nl: "vandaag",
+      pl: "dzisiaj",
+      pt_BR: "hoje",
+      ru: "\u0441\u0435\u0433\u043E\u0434\u043D\u044F",
+      zh_CN: ", \u4EE5\u4E0A\u662F\u4ECA\u65E5\u5929\u6C14",
+      sk: "dnes",
+      de: "heute",
+      it: "oggi",
+      es: "hoy",
+      tr: "bug\xFCn",
+      uk: "\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456",
+      id: "hari ini",
+      da: "i dag"
+    },
+    tomorrow: {
+      fr: "demain",
+      sv: "jutri",
+      nl: "morgen",
+      pl: "jutro",
+      pt_BR: "amanh\xE3",
+      ru: "\u0437\u0430\u0432\u0442\u0440\u0430",
+      zh_CN: ", \u4EE5\u4E0A\u662F\u660E\u5929\u7684\u5929\u6C14",
+      sk: "zajtra",
+      de: "morgen",
+      it: "domani",
+      es: "ma\xF1ana",
+      tr: "yar\u0131n",
+      uk: "\u0437\u0430\u0432\u0442\u0440\u0430",
+      id: "besok",
+      da: "i morgen"
+    },
+    Title: {
+      fr: "Titre",
+      sv: "Titel",
+      nl: "Titel",
+      pl: "Tytu\u0142",
+      pt_BR: "T\xEDtulo",
+      ru: "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435",
+      zh_CN: "\u6807\u9898",
+      sk: "N\xE1zov",
+      de: "Titel",
+      it: "Titolo",
+      es: "T\xEDtulo",
+      tr: "Ba\u015Fl\u0131k",
+      uk: "\u041D\u0430\u0437\u0432\u0430",
+      id: "Judul",
+      da: "Titel"
+    },
+    Link: {
+      fr: "Lien",
+      sv: "L\xE4nk",
+      nl: "Koppeling",
+      pl: "Po\u0142\u0105cz",
+      pt_BR: "Link",
+      ru: "\u0421\u0441\u044B\u043B\u043A\u0430",
+      zh_CN: "\u5173\u8054",
+      sk: "Odkaz",
+      de: "Link",
+      it: "Link",
+      es: "Link",
+      tr: "Ba\u011Flant\u0131",
+      uk: "\u041F\u043E\u0441\u0438\u043B\u0430\u043D\u043D\u044F",
+      id: "Tautan",
+      da: "Link"
+    },
+    "on Unsplash": {
+      fr: "sur Unsplash",
+      sv: "p\xE5 Unsplash",
+      nl: "op Unsplash",
+      pl: "na Unsplash",
+      pt_BR: "no Unsplash",
+      ru: "\u043D\u0430 Unsplash",
+      zh_CN: "\u5728 Unsplash",
+      sk: "na Unsplash",
+      de: "auf Unsplash",
+      it: "su Unsplash",
+      es: "en Unsplash",
+      tr: "Unsplash'ta",
+      uk: "\u043D\u0430 Unsplash",
+      id: "di Unsplash",
+      da: "p\xE5 Unsplash"
+    },
+    "Photo by ": {
+      fr: "Photo par ",
+      sv: "Foto av ",
+      nl: "Foto door ",
+      pl: "Zdj\u0119cie wykonane przez ",
+      pt_BR: "Foto por ",
+      ru: "\u0424\u043E\u0442\u043E ",
+      zh_CN: "\u62CD\u6444\u8005 ",
+      sk: "Fotka od ",
+      de: "Foto von ",
+      it: "Fotografato da ",
+      es: "Foto por ",
+      tr: "Foto\u011Fraf\u0131 \xE7eken ",
+      uk: "\u0424\u043E\u0442\u043E \u0432\u0456\u0434 ",
+      id: "Foto oleh ",
+      da: "Foto af "
+    },
+    "Icon must be < 8kB": {
+      fr: "L'icone doit etre < 8kB",
+      sv: "Ikonen m\xE5ste vara <8kB",
+      nl: "Icoon moet < 8kB zijn",
+      pl: "Ikona musi by\u0107 mniejsza ni\u017C 8 kB",
+      pt_BR: "O \xEDcone deve ser < 8kB",
+      ru: "\u0418\u043A\u043E\u043D\u043A\u0430 \u0434\u043E\u043B\u0436\u043D\u0430 \u0432\u0435\u0441\u0438\u0442\u044C < 8 \u041A\u0411",
+      zh_CN: "\u56FE\u6807\u5FC5\u987B< 8kB",
+      sk: "Ikona mus\xED by\u0165 <8 kB",
+      de: "Das Symbol muss < 8kB sein",
+      it: "L'icona deve essere < 8 kB",
+      es: "El icono debe ser <8 kB",
+      tr: "Simge 8kB boyutundan k\xFC\xE7\xFCk olmal\u0131",
+      uk: "\u0406\u043A\u043E\u043D\u043A\u0430 \u043F\u043E\u0432\u0438\u043D\u043D\u0430 \u0431\u0443\u0442\u0438 \u043C\u0435\u043D\u0448\u0435 8 \u041A\u0411",
+      id: "Ikon harus <8kB",
+      da: "Ikonet skal v\xE6re < 8kB"
+    },
+    General: {
+      fr: "G\xE9n\xE9ral",
+      sv: "Allm\xE4n",
+      nl: "Algemeen",
+      pl: "Og\xF3lne",
+      pt_BR: "Geral",
+      ru: "\u041E\u0441\u043D\u043E\u0432\u043D\u044B\u0435",
+      zh_CN: "\u901A\u7528",
+      sk: "Gener\xE1l",
+      de: "Allgemein",
+      it: "Generale",
+      es: "General",
+      tr: "Genel",
+      uk: "\u0417\u0430\u0433\u0430\u043B\u044C\u043D\u0456",
+      id: "Umum",
+      da: "Generelt"
+    },
+    "Show all settings": {
+      fr: "Afficher tous les r\xE9glages",
+      sv: "Visa alla inst\xE4llningar",
+      nl: "Toon alle instellingen",
+      pl: "Poka\u017C wszystkie ustawienia",
+      pt_BR: "Mostrar todas configura\xE7\xF5es",
+      ru: "\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438",
+      zh_CN: "\u663E\u793A\u6240\u6709\u8BBE\u7F6E",
+      sk: "Zobrazi\u0165 v\u0161etky nastavenia",
+      de: "Alle Einstellungen anzeigen",
+      it: "Mostra tutte le impostazioni",
+      es: "Mostrar todos los ajustes",
+      tr: "T\xFCm ayarlar\u0131 g\xF6ster",
+      uk: "\u041F\u043E\u043A\u0430\u0437\u0443\u0432\u0430\u0442\u0438 \u0432\u0441\u0456 \u043D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F",
+      id: "Tampilkan semua pengaturan",
+      da: "Vis alle indstillingerne"
+    },
+    "Tab appearance": {
+      fr: "Onglet",
+      sv: "Flikens utseende",
+      nl: "Tabbladweergave",
+      pl: "Wygl\u0105d karty",
+      pt_BR: "Apar\xEAncia da guia",
+      ru: "\u0412\u043D\u0435\u0448\u043D\u0438\u0439 \u0432\u0438\u0434 \u0432\u043A\u043B\u0430\u0434\u043A\u0438",
+      zh_CN: "\u9009\u9879\u5361\u5916\u89C2",
+      sk: "Vzh\u013Ead karty",
+      de: "Tab-Erscheinungsbild",
+      it: "Aspetto della scheda",
+      es: "Aspecto de la pesta\xF1a",
+      tr: "Sekme g\xF6r\xFCn\xFCm\xFC",
+      uk: "\u0417\u043E\u0432\u043D\u0456\u0448\u043D\u0456\u0439 \u0432\u0438\u0433\u043B\u044F\u0434 \u0432\u043A\u043B\u0430\u0434\u043A\u0438",
+      id: "Tampilan tab",
+      da: "Faneudseende"
+    },
+    "Learn more": {
+      fr: "En savoir plus",
+      sv: "L\xE4s mer",
+      nl: "Leer meer",
+      pl: "Ucz si\u0119 wi\u0119cej",
+      pt_BR: "Saber mais",
+      ru: "\u0423\u0447\u0438\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435",
+      zh_CN: "\u5B66\u5230\u66F4\u591A",
+      sk: "U\u010D sa viac",
+      de: "Mehr erfahren",
+      it: "Scopri di pi\xF9",
+      es: "Aprende m\xE1s",
+      tr: "En iyi art\u0131",
+      uk: "\u0412\u0438\u0432\u0447\u0430\u0439\u0442\u0435 \u0431\u0456\u043B\u044C\u0448\u0435",
+      id: "Belajarlah lagi",
+      da: "L\xE6r mere"
+    },
+    "The icon and title that appear on your tab. You can put any emoji.": {
+      fr: "L'ic\xF4ne et le titre qui apparaissent sur votre onglet. Vous pouvez mettre un emoji de votre choix.",
+      sv: "Ikonen och titeln som visas p\xE5 din flik. Du kan l\xE4gga in vilken emoji som helst.",
+      nl: "Het pictogram en de titel die op uw tabblad verschijnen. Je kunt elke emoji plaatsen.",
+      pl: "Tytu\u0142 oraz ikona, kt\xF3ra pojawi si\u0119 na Twojej karcie. Mo\u017Cesz umie\u015Bci\u0107 dowolny emotikon.",
+      pt_BR: "O \xEDcone e o t\xEDtulo que aparecem na sua guia. Voc\xEA pode colocar qualquer emoji.",
+      ru: "\u0417\u043D\u0430\u0447\u043E\u043A \u0438 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u043E\u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u043D\u0430 \u0432\u0430\u0448\u0435\u0439 \u0432\u043A\u043B\u0430\u0434\u043A\u0435. \u0412\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u043B\u044E\u0431\u043E\u0439 \u0441\u043C\u0430\u0439\u043B\u0438\u043A.",
+      zh_CN: "\u6807\u7B7E\u4E0A\u663E\u793A\u7684\u56FE\u6807\u548C\u6807\u9898\u3002 \u4F60\u53EF\u4EE5\u653E\u4EFB\u4F55\u8868\u60C5\u7B26\u53F7\u3002",
+      sk: "Ikona a n\xE1zov, ktor\xE9 sa zobrazuj\xFA na va\u0161ej karte. M\xF4\u017Eete vlo\u017Ei\u0165 ak\xE9ko\u013Evek emotikony.",
+      de: "Das Symbol und der Titel, die auf Ihrem Tab angezeigt werden. Sie k\xF6nnen jedes Emoji einf\xFCgen.",
+      it: "L'icona e il titolo che appaiono nella tua scheda. Puoi mettere qualsiasi emoji.",
+      es: "El icono y el t\xEDtulo que aparecen en tu ficha. Puedes poner cualquier emoji.",
+      tr: "Sekmenizde g\xF6r\xFCnen simge ve ba\u015Fl\u0131k. Herhangi bir emoji koyabilirsiniz.",
+      uk: "\u0417\u043D\u0430\u0447\u043E\u043A \u0456 \u043D\u0430\u0437\u0432\u0430, \u044F\u043A\u0456 \u0432\u0456\u0434\u043E\u0431\u0440\u0430\u0436\u0430\u044E\u0442\u044C\u0441\u044F \u043D\u0430 \u0432\u0430\u0448\u0456\u0439 \u0432\u043A\u043B\u0430\u0434\u0446\u0456. \u0412\u0438 \u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u0438 \u0431\u0443\u0434\u044C-\u044F\u043A\u0438\u0439 \u0435\u043C\u043E\u0434\u0437\u0456.",
+      id: "Ikon dan judul yang muncul di tab Anda. Anda dapat menempatkan emoji apa pun.",
+      da: "Ikonet og titlen, der vises p\xE5 din fane. Du kan s\xE6tte enhver emoji."
+    },
+    "More info": {
+      fr: "En savoir plus",
+      sv: "Mer information",
+      nl: "Meer informatie",
+      pl: "Wi\u0119cej informacji",
+      pt_BR: "Mais informa\xE7\xF5es",
+      ru: "\u0411\u043E\u043B\u044C\u0448\u0435 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438",
+      zh_CN: "\u66F4\u591A\u4FE1\u606F",
+      sk: "Viac inform\xE1ci\xED",
+      de: "Weitere Infos",
+      it: "Ulteriori informazioni",
+      es: "M\xE1s informaci\xF3n",
+      tr: "Daha fazla bilgi",
+      uk: "\u0411\u0456\u043B\u044C\u0448\u0435",
+      id: "Info Selengkapnya",
+      da: "Mere information"
+    },
+    "These are Bonjourr's bookmarks. ": {
+      fr: "",
+      sv: "Det h\xE4r \xE4r Bonjourrs bokm\xE4rken. ",
+      nl: "Dit zijn de bladwijzers van Bonjourr. ",
+      pl: "To s\u0105 zak\u0142adki Bonjourr. ",
+      pt_BR: "Esses s\xE3o os favoritos do Bonjourr. ",
+      ru: "\u042D\u0442\u043E \u0437\u0430\u043A\u043B\u0430\u0434\u043A\u0438 Bonjourr. ",
+      zh_CN: "\u8FD9\u4E9B\u662F Bonjourr \u7684\u4E66\u7B7E\u3002",
+      sk: "Toto s\xFA z\xE1lo\u017Eky Bonjourru. ",
+      de: "Dies sind Bonjourrs Lesezeichen. ",
+      it: "Questi sono i segnalibri di Bonjourr. ",
+      es: "Estos son los marcadores de Bonjourr. ",
+      tr: "Bunlar Bonjourr'un h\u0131zl\u0131 ba\u011Flant\u0131lar\u0131. ",
+      uk: "\u0428\u0432\u0438\u0434\u043A\u0456 \u043F\u043E\u0441\u0438\u043B\u0430\u043D\u043D\u044F Bonjourr. ",
+      id: "Ini adalah bookmark Bonjourr. ",
+      da: "De her er Bonjourrs bogm\xE6rker. "
+    },
+    "Edit your Quick Links by right clicking the icon.": {
+      fr: "\xC9ditez un lien favori en faisant un clic droit sur l'ic\xF4ne.",
+      sv: "Redigera dina snabbl\xE4nkar genom att h\xF6gerklicka p\xE5 deras ikon.",
+      nl: "Bewerk uw snelkoppelingen door met de rechtermuisknop op hun pictogram te klikken.",
+      pl: "Edytuj swoje szybkie linki, klikaj\u0105c prawym przyciskiem na ikon\u0119.",
+      pt_BR: "Altere seus Links R\xE1pidos clicando com o bot\xE3o direito do mouse em seu \xEDcone.",
+      ru: " \u041E\u0442\u0440\u0435\u0434\u0430\u043A\u0442\u0438\u0440\u0443\u0439\u0442\u0435 \u0411\u044B\u0441\u0442\u0440\u044B\u0435 \u0441\u0441\u044B\u043B\u043A\u0438, \u0449\u0435\u043B\u043A\u043D\u0443\u0432 \u043F\u043E \u043D\u0438\u043C \u043F\u0440\u0430\u0432\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u043E\u0439 \u043C\u044B\u0448\u0438.",
+      zh_CN: "\u901A\u8FC7\u53F3\u952E\u5355\u51FB\u5B83\u4EEC\u7684\u56FE\u6807\u6765\u7F16\u8F91\u60A8\u7684\u5FEB\u901F\u94FE\u63A5\u3002",
+      sk: "Upravte svoje Quick Links kliknut\xEDm prav\xFDm tla\u010Didlom na ikone.",
+      de: "Bearbeiten Sie Ihre Schnelllinks, indem Sie mit der rechten Maustaste auf das Symbol klicken.",
+      it: "Modifica i tuoi collegamenti Quick Links clic con il pulsante destro del mouse sull'icona.",
+      es: "Edita tus Links Favoritos d\xE1ndole clic derecho a un \xEDcono.",
+      tr: "Simgeye sa\u011F t\u0131klayarak H\u0131zl\u0131 Ba\u011Flant\u0131lar\u0131n\u0131z\u0131 d\xFCzenleyin.",
+      uk: "\u0420\u0435\u0434\u0430\u0433\u0443\u0439\u0442\u0435 \u0432\u0430\u0448\u0456 \u0448\u0432\u0438\u0434\u043A\u0456 \u043F\u043E\u0441\u0438\u043B\u0430\u043D\u043D\u044F \u043D\u0430\u0442\u0438\u0441\u043D\u0443\u0432\u0448\u0438 \u043F\u0440\u0430\u0432\u043E\u044E \u043A\u043D\u043E\u043F\u043A\u043E\u044E \u043C\u0438\u0448\u0456 \u043D\u0430 \u043F\u0456\u043A\u0442\u043E\u0433\u0440\u0430\u043C\u0456.",
+      id: "Edit Tautan Cepat Anda dengan mengeklik kanan ikon.",
+      da: "Rediger dine Hurtig Links ved at h\xF8jreklikke p\xE5 ikonet."
+    },
+    "Edit your Quick Links by long-pressing the icon.": {
+      fr: "\xC9ditez un lien favori en appuyant longtemps sur l'ic\xF4ne.",
+      sv: "Redigera dina snabbl\xE4nkar genom att trycka l\xE4nge p\xE5 ikonen i 300 ms.",
+      nl: "Bewerk uw snelkoppelingen door 300 ms lang op het pictogram te drukken.",
+      pl: "Edytuj swoje szybkie linki poprzez d\u0142u\u017Csze przytrzymanie ikony.",
+      pt_BR: "Altere seus Links R\xE1pidos pressionando o \xEDcone por 300ms.",
+      ru: "\u041E\u0442\u0440\u0435\u0434\u0430\u043A\u0442\u0438\u0440\u0443\u0439\u0442\u0435 \u0431\u044B\u0441\u0442\u0440\u044B\u0435 \u0441\u0441\u044B\u043B\u043A\u0438, \u043D\u0430\u0436\u0430\u0432 \u0438 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044F \u0437\u043D\u0430\u0447\u043E\u043A \u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0435 300 \u043C\u0441.",
+      zh_CN: "\u957F\u6309\u56FE\u6807 300 \u6BEB\u79D2\u6765\u7F16\u8F91\u60A8\u7684\u5FEB\u901F\u94FE\u63A5\u3002",
+      sk: "Upravte svoje Quick Links dlh\xFDm podr\u017Ean\xEDm ikony po dobu 300 ms.",
+      de: "Bearbeiten Sie Ihre Schnelllinks, indem Sie das Symbol 300 ms lang gedr\xFCckt halten.",
+      it: "Modifica i tuoi collegamenti rapidi premendo a lungo per 300 ms l'icona.",
+      es: "Edita tus Links Favoritos dejando un \xEDcono presionado por 300 ms.",
+      tr: "Simgeye uzun s\xFCre basarak H\u0131zl\u0131 Ba\u011Flant\u0131lar\u0131n\u0131z\u0131 d\xFCzenleyin.",
+      uk: "\u0420\u0435\u0434\u0430\u0433\u0443\u0439\u0442\u0435 \u0432\u0430\u0448\u0456 \u0448\u0432\u0438\u0434\u043A\u0456 \u043F\u043E\u0441\u0438\u043B\u0430\u043D\u043D\u044F \u0443\u0442\u0440\u0438\u043C\u0443\u044E\u0447\u0438 \u043F\u0456\u043A\u0442\u043E\u0433\u0440\u0430\u043C\u0443 \u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C 300 \u043C\u0441",
+      id: "Edit Tautan Cepat Anda dengan menekan lama ikon selama 300 md.",
+      da: "Rediger dine Hurtig Links ved at trykke l\xE6nge p\xE5 ikonet."
+    },
+    "Type the collection ID from its URL, add more by separating them with a comma.": {
+      fr: "Entrez l'ID de l'URL de la collection. Ajoutez en plusieurs en les s\xE9parant par une virgule.",
+      sv: "Skriv samlings ID fr\xE5n dess URL. L\xE4gg till mer genom att separera dem med ett komma.",
+      nl: "Typ de collectie ID van de URL. Voeg meer toe door ze te scheiden met een komma.",
+      pl: "Wpisz identyfikator kolekcji z adresu URL. Dodaj wi\u0119cej, oddzielaj\u0105c je przecinkiem.",
+      pt_BR: "Digite a identifica\xE7\xE3o da cole\xE7\xE3o atrav\xE9s da URL, adicione mais separando-os com uma v\xEDrgula.",
+      ru: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440 \u043A\u043E\u043B\u043B\u0435\u043A\u0446\u0438\u0438 \u0438\u0437 \u0435\u0435 URL-\u0430\u0434\u0440\u0435\u0441\u0430. \u0414\u043E\u0431\u0430\u0432\u044C\u0442\u0435 \u0434\u0440\u0443\u0433\u0438\u0435, \u0440\u0430\u0437\u0434\u0435\u043B\u0438\u0432 \u0438\u0445 \u0437\u0430\u043F\u044F\u0442\u044B\u043C\u0438.",
+      zh_CN: "\u4ECE\u5176 URL \u4E2D\u8F93\u5165\u96C6\u5408 ID\u3002\u901A\u8FC7\u7528\u9017\u53F7\u5206\u9694\u5B83\u4EEC\u6765\u6DFB\u52A0\u66F4\u591A\u3002",
+      sk: "Zadajte ID zbierky z jej adresy URL. Pridajte \u010Fal\u0161ie ich oddelen\xEDm \u010Diarkou.",
+      de: "Geben Sie die Sammlungs ID aus ihrer URL ein. F\xFCgen Sie weitere hinzu, indem Sie diese durch ein Komma trennen.",
+      it: "Digita l'ID della raccolta dal relativo URL. Aggiungine altri separandoli con una virgola.",
+      es: "Escribe el ID de la colecci\xF3n de tu URL. Agrega m\xE1s separ\xE1ndolos con una coma.",
+      tr: "Koleksiyon kimli\u011Fini URL'den kopyalay\u0131n, virg\xFClle ay\u0131rarak daha fazlas\u0131n\u0131 ekleyin.",
+      uk: "\u0412\u0432\u0435\u0434\u0456\u0442\u044C \u0456\u0434\u0435\u043D\u0442\u0438\u0444\u0456\u043A\u0430\u0442\u043E\u0440 \u043A\u043E\u043B\u0435\u043A\u0446\u0456\u0457 \u0437 URL-\u0430\u0434\u0440\u0435\u0441\u0438 \u0430\u0431\u043E \u0432\u043A\u0430\u0436\u0456\u0442\u044C \u0434\u0435\u043A\u0456\u043B\u044C\u043A\u0430 \u0447\u0435\u0440\u0435\u0437 \u043A\u043E\u043C\u0443",
+      id: "Ketik ID koleksi dari URL-nya, tambahkan lebih banyak dengan memisahkannya dengan koma.",
+      da: "Skriv samlingsid'et fra dens URL, tilf\xF8j flere ved at adskille dem med komma."
+    },
+    Name: {
+      fr: "Nom",
+      sv: "Namn",
+      nl: "Naam",
+      pl: "Nazwa",
+      pt_BR: "Nome",
+      ru: "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435",
+      zh_CN: "\u540D\u79F0",
+      sk: "n\xE1zov",
+      de: "Name",
+      it: "nome",
+      es: "Nombre",
+      tr: "\u0130sim",
+      uk: "\u041D\u0430\u0437\u0432\u0430",
+      id: "Nama",
+      da: "Navn"
+    },
+    Add: {
+      fr: "Ajouter",
+      sv: "L\xE4gg till",
+      nl: "Voeg toe",
+      pl: "Dodaj",
+      pt_BR: "Adicionar",
+      ru: "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C",
+      zh_CN: "\u6DFB\u52A0",
+      sk: "Prida\u0165",
+      de: "Hinzuf\xFCgen",
+      it: "Aggiungere",
+      es: "A\xF1adir",
+      tr: "Ekle",
+      uk: "\u0414\u043E\u0434\u0430\u0442\u0438",
+      id: "Tambah",
+      da: "Tilf\xF8j"
+    },
+    "No bookmarks found": {
+      fr: "Aucun favori trouv\xE9",
+      sv: "Inga bokm\xE4rken hittades",
+      nl: "Geen bladwijzers gevonden",
+      pl: "Nie znaleziono zak\u0142adek",
+      pt_BR: "Nenhum favorito encontrado",
+      ru: "\u0417\u0430\u043A\u043B\u0430\u0434\u043E\u043A \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E",
+      zh_CN: "\u672A\u627E\u5230\u4E66\u7B7E",
+      sk: "Nena\u0161li sa \u017Eiadne z\xE1lo\u017Eky",
+      de: "Keine Lesezeichen gefunden",
+      it: "Nessun segnalibro trovato",
+      es: "No se encontraron marcadores",
+      tr: "Yer i\u015Fareti bulunamad\u0131",
+      uk: "\u0417\u0430\u043A\u043B\u0430\u0434\u043E\u043A \u043D\u0435 \u0437\u043D\u0430\u0439\u0434\u0435\u043D\u043E",
+      id: "Tidak ada bookmark yang ditemukan",
+      da: "Ingen bogm\xE6rker fundet"
+    },
+    "Select bookmarks to import": {
+      fr: "S\xE9lectionnez les favoris \xE0 importer",
+      sv: "V\xE4lj de bokm\xE4rken som ska importeras",
+      nl: "Selecteer de bladwijzers om te importeren",
+      pl: "Wybierz zak\u0142adki do zaimportowania",
+      pt_BR: "Selecione os favoritos para importar",
+      ru: "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u0437\u0430\u043A\u043B\u0430\u0434\u043A\u0438 \u0434\u043B\u044F \u0438\u043C\u043F\u043E\u0440\u0442\u0430",
+      zh_CN: "\u9009\u62E9\u8981\u5BFC\u5165\u7684\u4E66\u7B7E",
+      sk: "Vyberte z\xE1lo\u017Eky, ktor\xE9 chcete importova\u0165",
+      de: "W\xE4hlen Sie die zu importierenden Lesezeichen aus",
+      it: "Seleziona i segnalibri da importare",
+      es: "Selecciona marcadores para importar",
+      tr: "\u0130\xE7e aktar\u0131lacak yer i\u015Faretlerini se\xE7in",
+      uk: "\u041E\u0431\u0435\u0440\u0456\u0442\u044C \u0437\u0430\u043A\u043B\u0430\u0434\u043A\u0438 \u0434\u043B\u044F \u0456\u043C\u043F\u043E\u0440\u0442\u0443",
+      id: "Pilih bookmark untuk diimpor",
+      da: "V\xE6lg bogm\xE6rker som skal importeres"
+    },
+    "Import this bookmark": {
+      fr: "Importer ce favori",
+      sv: "Importera detta bokm\xE4rke",
+      nl: "Deze bladwijzer importeren",
+      pl: "Importuj t\u0119 zak\u0142adk\u0119",
+      pt_BR: "Importar este favorito",
+      ru: "\u0418\u043C\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u044D\u0442\u0443 \u0437\u0430\u043A\u043B\u0430\u0434\u043A\u0443",
+      zh_CN: "\u5BFC\u5165\u6B64\u4E66\u7B7E",
+      sk: "Importova\u0165 t\xFAto z\xE1lo\u017Eku",
+      de: "Dieses Lesezeichen importieren",
+      it: "Importa questo segnalibro",
+      es: "Importar este marcador",
+      tr: "Bu yer i\u015Faretini i\xE7e aktar",
+      uk: "\u0406\u043C\u043F\u043E\u0440\u0442\u0443\u0432\u0430\u0442\u0438 \u0446\u044E \u0437\u0430\u043A\u043B\u0430\u0434\u043A\u0443",
+      id: "Impor bookmark ini",
+      da: "Importer dette bogm\xE6rke"
+    },
+    "Import these bookmarks": {
+      fr: "Importer ces favoris",
+      sv: "Importera dessa bokm\xE4rken",
+      nl: "Importeer deze bladwijzers",
+      pl: "Importuj te zak\u0142adki",
+      pt_BR: "Importar esses favoritos",
+      ru: "\u0418\u043C\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u044D\u0442\u0438 \u0437\u0430\u043A\u043B\u0430\u0434\u043A\u0438",
+      zh_CN: "\u5BFC\u5165\u8FD9\u4E9B\u4E66\u7B7E",
+      sk: "Importujte tieto z\xE1lo\u017Eky",
+      de: "Diese Lesezeichen importieren",
+      it: "Importa questi segnalibri",
+      es: "Importar estos marcadores",
+      tr: "Bu yer i\u015Faretlerini i\xE7e aktar",
+      uk: "\u0406\u043C\u043F\u043E\u0440\u0442\u0443\u0432\u0430\u0442\u0438 \u0446\u0456 \u0437\u0430\u043A\u043B\u0430\u0434\u043A\u0438",
+      id: "Import these bookmarks",
+      da: "Importer disse bogm\xE6rker"
+    },
+    "Links per row": {
+      fr: "Liens par ligne",
+      sv: "L\xE4nkar per rad",
+      nl: "Links per rij",
+      pl: "Linki na wiersz",
+      pt_BR: "Links por linha",
+      ru: "\u0421\u0441\u044B\u043B\u043E\u043A \u0432 \u0441\u0442\u0440\u043E\u043A\u0435",
+      zh_CN: "\u6BCF\u884C\u94FE\u63A5",
+      sk: "Odkazy na riadok",
+      de: "Links pro Zeile",
+      it: "Link per riga",
+      es: "Links por fila",
+      tr: "Her sat\u0131r bir ba\u011Flant\u0131",
+      uk: "\u041F\u043E\u0441\u0438\u043B\u0430\u043D\u044C \u0432 \u0440\u044F\u0434\u043A\u0443",
+      id: "Tautan per baris",
+      da: "Links per r\xE6kke"
+    },
+    Background: {
+      fr: "Arri\xE8re-plan",
+      sv: "Bakgrund",
+      nl: "Achtergrond",
+      pl: "T\u0142o",
+      pt_BR: "Fundo",
+      ru: "\u0424\u043E\u043D",
+      zh_CN: "\u901A\u7528",
+      sk: "Pozadie",
+      de: "Hintergrund",
+      it: "Sfondo",
+      es: "Fondo",
+      tr: "Arka plan",
+      uk: "\u0442\u043B\u0430",
+      id: "Latar belakang",
+      da: "Baggrund"
+    },
+    "Background type": {
+      fr: "Type d'arri\xE8re-plan",
+      sv: "Bakgrundstyp",
+      nl: "Achtergrondtype",
+      pl: "Rodzaj t\u0142a",
+      pt_BR: "Tipo de background",
+      ru: "\u0422\u0438\u043F \u0444\u043E\u043D\u0430",
+      zh_CN: "\u80CC\u666F\u7C7B\u578B",
+      sk: "Pozadie",
+      de: "Hintergrund Typ",
+      it: "Tipo di sfondo",
+      es: "Tipo de fondo",
+      tr: "Arka plan t\xFCr\xFC",
+      uk: "\u0422\u0438\u043F \u0442\u043B\u0430",
+      id: "Jenis latar belakang",
+      da: "Baggrundstype"
+    },
+    Default: {
+      fr: "Par d\xE9faut",
+      sv: "Standard",
+      nl: "Standaard",
+      pl: "Domy\u015Blne",
+      pt_BR: "Padr\xE3o",
+      ru: "\u041F\u043E \u0443\u043C\u043E\u043B\u0447\u0430\u043D\u0438\u044E",
+      zh_CN: "\u9ED8\u8BA4",
+      sk: "Predvolen\xE9",
+      de: "Standard",
+      it: "Predefinito",
+      es: "Por Defecto",
+      tr: "Varsay\u0131lan",
+      uk: "\u0417\u0430 \u0437\u0430\u043C\u043E\u0432\u0447\u0443\u0432\u0430\u043D\u043D\u044F\u043C",
+      id: "Bawaan",
+      da: "Standard"
+    },
+    Dynamic: {
+      fr: "Dynamique",
+      sv: "Dynamisk",
+      nl: "Dynamisch",
+      pl: "Dynamiczne",
+      pt_BR: "Din\xE2mico",
+      ru: "\u0414\u0438\u043D\u0430\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0439",
+      zh_CN: "\u52A8\u6001",
+      sk: "Dynamick\xFD",
+      de: "Dynamisch",
+      it: "Dinamico",
+      es: "Din\xE1mico",
+      tr: "Dinamik",
+      uk: "\u0414\u0438\u043D\u0430\u043C\u0456\u0447\u043D\u0438\u0439",
+      id: "Dinamis",
+      da: "Dynamisk"
+    },
+    Custom: {
+      fr: "Personnalis\xE9",
+      sv: "Best\xE4llnings",
+      nl: "Aangepast",
+      pl: "W\u0142asne",
+      pt_BR: "Personalizado",
+      ru: "\u041F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439",
+      zh_CN: "\u81EA\u5B9A\u4E49",
+      sk: "Vlastn\xE9",
+      de: "Benutzerdefiniert",
+      it: "Personalizzato",
+      es: "Personalizado",
+      tr: "\xD6zel",
+      uk: "\u0412\u043B\u0430\u0441\u043D\u0438\u0439",
+      id: "Personalisasi",
+      da: "Brugerdefineret"
+    },
+    Frequency: {
+      fr: "Fr\xE9quence",
+      sv: "Frekvens",
+      nl: "Frequentie",
+      pl: "Cz\u0119stotliwo\u015B\u0107",
+      pt_BR: "Frequ\xEAncia de atualiza\xE7\xE3o",
+      ru: "\u0427\u0430\u0441\u0442\u043E\u0442\u0430 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F",
+      zh_CN: "\u80CC\u666F\u5207\u6362\u9891\u7387",
+      sk: "Frekvencia",
+      de: "H\xE4ufigkeit",
+      it: "Frequenza",
+      es: "Frecuencia",
+      tr: "Frekans",
+      uk: "\u0427\u0430\u0441\u0442\u043E\u0442\u0430",
+      id: "Frekuensi",
+      da: "Hyppighed"
+    },
+    Daylight: {
+      fr: "Lumi\xE8re du jour",
+      sv: "Dagsljus",
+      nl: "Daglicht",
+      pl: "Ka\u017Cdego poranka",
+      pt_BR: "Luz do dia",
+      ru: "\u0414\u043D\u0435\u0432\u043D\u043E\u0435 \u0432\u0440\u0435\u043C\u044F",
+      zh_CN: "\u767D\u5929",
+      sk: "Denn\xE9 svetlo",
+      de: "Tageslicht",
+      it: "Luce del giorno",
+      es: "Luz diario",
+      tr: "G\xFCn \u0131\u015F\u0131\u011F\u0131",
+      uk: "\u0434\u0435\u043D\u043D\u0435 \u0441\u0432\u0456\u0442\u043B\u043E",
+      id: "Siang hari",
+      da: "Dagslys"
+    },
+    "Every tab": {
+      fr: "Chaque onglet",
+      sv: "Varje flik",
+      nl: "Elk tabblad",
+      pl: "Co zak\u0142adk\u0119",
+      pt_BR: "A cada aba",
+      ru: "\u041A\u0430\u0436\u0434\u0430\u044F \u0432\u043A\u043B\u0430\u0434\u043A\u0430",
+      zh_CN: "\u6BCF\u6B21\u65B0\u5EFA\u6807\u7B7E\u9875",
+      sk: "Ka\u017Ed\xE1 karta",
+      de: "Jeden Tab",
+      it: "Ogni scheda",
+      es: "Cada Pesta\xF1a",
+      tr: "Sekmede bir",
+      uk: "\u041A\u043E\u0436\u043D\u0443 \u0432\u043A\u043B\u0430\u0434\u043A\u0443",
+      id: "Setiap tab",
+      da: "Hvert faneblad"
+    },
+    "Every hour": {
+      fr: "Chaque heure",
+      sv: "Varje timme",
+      nl: "Elk uur",
+      pl: "Co godzin\u0119",
+      pt_BR: "A cada hora",
+      ru: "\u041A\u0430\u0436\u0434\u044B\u0439 \u0447\u0430\u0441",
+      zh_CN: "\u6BCF\u5C0F\u65F6",
+      sk: "Ka\u017Ed\xFA hodinu",
+      de: "Jede Stunde",
+      it: "Ogni ora",
+      es: "Cada hora",
+      tr: "Saatte bir",
+      uk: "\u041A\u043E\u0436\u043D\u0443 \u0433\u043E\u0434\u0438\u043D\u0443",
+      id: "Setiap jam",
+      da: "Hver time"
+    },
+    "Every day": {
+      fr: "Chaque jour",
+      sv: "Varje dag",
+      nl: "Elke dag",
+      pl: "Codziennie",
+      pt_BR: "Diariamente",
+      ru: "\u041A\u0430\u0436\u0434\u044B\u0439 \u0434\u0435\u043D\u044C",
+      zh_CN: "\u6BCF\u5929",
+      sk: "Ka\u017Ed\xFD de\u0148",
+      de: "Jeden Tag",
+      it: "Ogni giorno",
+      es: "Cada d\xEDa",
+      tr: "G\xFCnde bir",
+      uk: "\u041A\u043E\u0436\u043D\u043E\u0433\u043E \u0434\u043D\u044F",
+      id: "Setiap hari",
+      da: "Hver dag"
+    },
+    Pause: {
+      fr: "Pause",
+      sv: "Paus",
+      nl: "Pauze",
+      pl: "Wstrzymaj",
+      pt_BR: "Pausar",
+      ru: "\u041F\u0430\u0443\u0437\u0430",
+      zh_CN: "\u4E0D\u5207\u6362",
+      sk: "Pauza",
+      de: "Pause",
+      it: "Pausa",
+      es: "Pausa",
+      tr: "Durdur",
+      uk: "\u041F\u0430\u0443\u0437\u0430",
+      id: "Jeda",
+      da: "Pause"
+    },
+    "Unsplash collection": {
+      fr: "Collection Unsplash",
+      sv: "Unsplash samling",
+      nl: "Unsplash verzameling",
+      pl: "Kolekcja Unsplash",
+      pt_BR: "Cole\xE7\xE3o do Unsplash",
+      ru: "\u041A\u043E\u043B\u043B\u0435\u043A\u0446\u0438\u044F Unsplash",
+      zh_CN: "Unsplash \u6536\u85CF",
+      sk: "Unsplash collection",
+      de: "Unsplash Kollektion",
+      it: "Raccolta Unsplash",
+      es: "Colecci\xF3n Unsplash",
+      tr: "Unsplash koleksiyonu",
+      uk: "\u041A\u043E\u043B\u0435\u043A\u0446\u0456\u044F Unsplash",
+      id: "Koleksi Unsplash",
+      da: "Unsplash samling"
+    },
+    "Blur intensity": {
+      fr: "Intensit\xE9 du flou",
+      sv: "Osk\xE4rpans intensitet",
+      nl: "Intensiviteit van het vervagingseffect",
+      pl: "Intensywno\u015Bc rozmycia",
+      pt_BR: "Intensidade do desfoque",
+      ru: "\u0421\u0442\u0435\u043F\u0435\u043D\u044C \u0440\u0430\u0437\u043C\u044B\u0442\u0438\u044F \u0444\u043E\u043D\u0430",
+      zh_CN: "\u6A21\u7CCA\u5EA6",
+      sk: "Intenzita rozmazania",
+      de: "Weichzeichner St\xE4rke",
+      it: "Intensit\xE0 della sfocatura",
+      es: "Intensidad de desenfoque",
+      tr: "Bulan\u0131kl\u0131k yo\u011Funlu\u011Fu",
+      uk: "\u0406\u043D\u0442\u0435\u043D\u0441\u0438\u0432\u043D\u0456\u0441\u0442\u044C \u0440\u043E\u0437\u043C\u0438\u0442\u0442\u044F",
+      id: "Intensitas kabur",
+      da: "Sl\xF8ringsintensitet"
+    },
+    Brightness: {
+      fr: "Luminosit\xE9",
+      sv: "Ljusstyrka",
+      nl: "Helderheid",
+      pl: "Jasno\u015B\u0107",
+      pt_BR: "Brilho",
+      ru: "\u042F\u0440\u043A\u043E\u0441\u0442\u044C",
+      zh_CN: "\u4EAE\u5EA6",
+      sk: "Jas",
+      de: "Helligkeit",
+      it: "Luminosit\xE0",
+      es: "Brillo",
+      tr: "Parlakl\u0131k",
+      uk: "\u042F\u0441\u043A\u0440\u0430\u0432\u0456\u0441\u0442\u044C",
+      id: "Kecerahan",
+      da: "Lysstyrke"
+    },
+    "Dark mode": {
+      fr: "Mode sombre",
+      sv: "M\xF6rkt l\xE4ge",
+      nl: "Nacht modus",
+      pl: "Tryb ciemny",
+      pt_BR: "Modo noturno",
+      ru: "\u0422\u0451\u043C\u043D\u0430\u044F \u0442\u0435\u043C\u0430",
+      zh_CN: "\u6DF1\u8272\u6A21\u5F0F",
+      sk: "Tmav\xFD re\u017Eim",
+      de: "Dunkelmodus",
+      it: "Modalit\xE0 notturna",
+      es: "Modo Oscuro",
+      tr: "Karanl\u0131k mod",
+      uk: "\u0422\u0435\u043C\u043D\u0438\u0439 \u0440\u0435\u0436\u0438\u043C",
+      id: "Mode Gelap",
+      da: "M\xF8rk tilstand"
+    },
+    "At night": {
+      fr: "La nuit",
+      sv: "P\xE5 natten",
+      nl: "Nachts",
+      pl: "W nocy",
+      pt_BR: "Apenas \xE0 noite",
+      ru: "\u041D\u043E\u0447\u044C\u044E",
+      zh_CN: "\u53EA\u5728\u591C\u95F4",
+      sk: "V noci",
+      de: "Nachts",
+      it: "Di notte",
+      es: "De noche",
+      tr: "Geceleyin",
+      uk: "\u0412\u043D\u043E\u0447\u0456",
+      id: "Di malam hari",
+      da: "Om natten"
+    },
+    System: {
+      fr: "Syst\xE8me",
+      sv: "Systemet",
+      nl: "Systeem",
+      pl: "System",
+      pt_BR: "Seguir sistema",
+      ru: "\u0417\u0430\u0434\u0430\u0451\u0442\u0441\u044F \u0441\u0438\u0441\u0442\u0435\u043C\u043E\u0439",
+      zh_CN: "\u7CFB\u7EDF\u8BBE\u7F6E",
+      sk: "Syst\xE9mu",
+      de: "System",
+      it: "Sistema",
+      es: "Sistema",
+      tr: "Sistem",
+      uk: "\u0421\u0438\u0441\u0442\u0435\u043C\u0430",
+      id: "Sistem",
+      da: "System"
+    },
+    Enabled: {
+      fr: "Activ\xE9",
+      sv: "Aktiverad",
+      nl: "Ingeschakeld",
+      pl: "W\u0142\u0105czony",
+      pt_BR: "Ativado",
+      ru: "\u0412\u043A\u043B\u044E\u0447\u0435\u043D\u0430",
+      zh_CN: "\u5F00\u542F",
+      sk: "Zapnut\xE9",
+      de: "Aktiviert",
+      it: "Abilitato",
+      es: "Activado",
+      tr: "Etkinle\u015Ftirildi",
+      uk: "\u0412\u0432\u0456\u043C\u043A\u043D\u0435\u043D\u043E",
+      id: "Diaktifkan",
+      da: "Aktiveret"
+    },
+    Disabled: {
+      fr: "D\xE9sactiv\xE9",
+      sv: "Inaktiverad",
+      nl: "Uitgeschakeld",
+      pl: "Wy\u0142\u0105czony",
+      pt_BR: "Desativado",
+      ru: "\u0412\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0430",
+      zh_CN: "\u5173\u95ED",
+      sk: "Vypnut\xE9",
+      de: "Deaktiviert",
+      it: "Disabilitato",
+      es: "Desactivado",
+      tr: "Devre d\u0131\u015F\u0131",
+      uk: "\u0412\u0438\u043C\u043A\u043D\u0435\u043D\u043E",
+      id: "Dinonaktifkan",
+      da: "Deaktiveret"
+    },
+    "New tab icon": {
+      fr: "Ic\xF4ne nouvel onglet",
+      sv: "Ikon f\xF6r ny flik",
+      nl: "Nieuw tabbladpictogram",
+      pl: "Ikona nowej karty",
+      pt_BR: "\xCDcone de nova aba",
+      ru: "\u0417\u043D\u0430\u0447\u043E\u043A \u043D\u043E\u0432\u043E\u0439 \u0432\u043A\u043B\u0430\u0434\u043A\u0438",
+      zh_CN: "\u65B0\u6807\u7B7E\u56FE\u6807",
+      sk: "Ikona novej karty",
+      de: "Neues Tab-Symbol",
+      it: "Icona Nuova scheda",
+      es: "Icono para la nueva pesta\xF1a",
+      tr: "Yeni sekme simgesi",
+      uk: "\u041F\u0456\u043A\u0442\u043E\u0433\u0440\u0430\u043C\u0430 \u043D\u043E\u0432\u043E\u0457 \u0432\u043A\u043B\u0430\u0434\u043A\u0438",
+      id: "Ikon tab baru",
+      da: "Fanebladsikon"
+    },
+    "Any emoji": {
+      fr: "N'importe quel emoji",
+      sv: "Vilken emoji som helst",
+      nl: "Elke emoji",
+      pl: "Dowolny emotikon",
+      pt_BR: "Qualquer emoji",
+      ru: "\u041B\u044E\u0431\u044B\u0435 \u044D\u043C\u043E\u0434\u0437\u0438",
+      zh_CN: "\u4EFB\u4F55\u8868\u60C5\u7B26\u53F7",
+      sk: "Ak\xE9ko\u013Evek emoji",
+      de: "Beliebiger Emoji",
+      it: "Qualsiasi emoji",
+      es: "Cualquier emoji",
+      tr: "Herhangi bir emoji",
+      uk: "\u0411\u0443\u0434\u044C-\u044F\u043A\u0438\u0439 \u0435\u043C\u043E\u0434\u0436\u0456",
+      id: "Apa saja emojo",
+      da: "Hvilken som helst emoji"
+    },
+    "New tab title": {
+      fr: "Titre du nouvel onglet",
+      sv: "New tab title",
+      nl: "New tab title",
+      pl: "Nowy tytu\u0142 karty",
+      pt_BR: "New tab title",
+      ru: "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u043D\u043E\u0432\u043E\u0439 \u0432\u043A\u043B\u0430\u0434\u043A\u0438",
+      zh_CN: "New tab title",
+      sk: "New tab title",
+      de: "New tab title",
+      it: "New tab title",
+      es: "New tab title",
+      tr: "New tab title",
+      uk: "New tab title",
+      id: "New tab title",
+      da: "Fanebladstitel"
+    },
+    "Hide elements": {
+      fr: "Cacher des \xE9l\xE9ments",
+      sv: "D\xF6lj element",
+      nl: "Verberg elementen",
+      pl: "Ukryj elementy",
+      pt_BR: "Esconder elementos",
+      ru: "\u0421\u043A\u0440\u044B\u0442\u044C \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B",
+      zh_CN: "\u9690\u85CF\u5143\u7D20",
+      sk: "Skry\u0165 prvky",
+      de: "Elemente ausblenden",
+      it: "Nascondi elementi",
+      es: "Esconder elementos",
+      tr: "\xD6\u011Ferleri gizle",
+      uk: "\u0421\u0445\u043E\u0432\u0430\u0442\u0438 \u0435\u043B\u0435\u043C\u0435\u043D\u0442\u0438",
+      id: "Sembunyikan elements",
+      da: "Skjul elementer"
+    },
+    Clock: {
+      fr: "Horloge",
+      sv: "Klocka",
+      nl: "Klok",
+      pl: "Zegar",
+      pt_BR: "Rel\xF3gio",
+      ru: "\u0427\u0430\u0441\u044B",
+      zh_CN: "\u65F6\u949F",
+      sk: "Hodiny",
+      de: "Uhr",
+      it: "Orologio",
+      es: "Reloj",
+      tr: "Saat",
+      uk: "\u0413\u043E\u0434\u0438\u043D\u043D\u0438\u043A",
+      id: "Jam",
+      da: "Ur"
+    },
+    "Clock face": {
+      fr: "Style d'horloge",
+      sv: "Klockansikte",
+      nl: "Wijzerplaat",
+      pl: "Tarcza zegara",
+      pt_BR: "Estilo do rel\xF3gio",
+      ru: "\u0426\u0438\u0444\u0435\u0440\u0431\u043B\u0430\u0442",
+      zh_CN: "\u949F\u9762",
+      sk: "Cifern\xEDk",
+      de: "Ziffernblatt",
+      it: "Quadrante",
+      es: "Estilo del reloj",
+      tr: "Saat stili",
+      uk: "\u0426\u0438\u0444\u0435\u0440\u0431\u043B\u0430\u0442",
+      id: "Antarmuka Jam",
+      da: "Urskive"
+    },
+    None: {
+      fr: "Simple",
+      sv: "Ingen",
+      nl: "Geen",
+      pl: "Nic",
+      pt_BR: "Nenhum",
+      ru: "\u041F\u0443\u0441\u0442\u043E",
+      zh_CN: "\u6CA1\u6709\u4EFB\u4F55",
+      sk: "\u017Diadne",
+      de: "Keiner",
+      it: "Nessuno",
+      es: "Ninguno",
+      tr: "Hi\xE7biri",
+      uk: "\u041D\u0456\u0447\u043E\u0433\u043E",
+      id: "Tidak ada",
+      da: "Intet"
+    },
+    Numbers: {
+      fr: "Chiffres",
+      sv: "Tal",
+      nl: "Nummers",
+      pl: "Liczby",
+      pt_BR: "N\xFAmeros",
+      ru: "\u0410\u0440\u0430\u0431\u0441\u043A\u0438\u0435 \u0446\u0438\u0444\u0440\u044B",
+      zh_CN: "\u6570\u5B57",
+      sk: "\u010C\xEDsla",
+      de: "Zahlen",
+      it: "Numeri",
+      es: "N\xFAmeros",
+      tr: "Say\u0131lar",
+      uk: "\u0427\u0438\u0441\u043B\u0430",
+      id: "Nomor",
+      da: "Tal"
+    },
+    Romans: {
+      fr: "Chiffres romains",
+      sv: "Romarna",
+      nl: "Romeinen",
+      pl: "Rzymianie",
+      pt_BR: "Algarismos Romanos",
+      ru: "\u0420\u0438\u043C\u0441\u043A\u0438\u0435 \u0446\u0438\u0444\u0440\u044B",
+      zh_CN: "\u7F57\u9A6C\u4E66",
+      sk: "Rimania",
+      de: "R\xF6mer",
+      it: "Romani",
+      es: "Romanos",
+      tr: "Roma",
+      uk: "\u0420\u0438\u043C\u0441\u044C\u043A\u0438\u0439",
+      id: "Roman",
+      da: "Romertal"
+    },
+    Marks: {
+      fr: "Graduations",
+      sv: "Markera",
+      nl: "Markering",
+      pl: "Znakowanie",
+      pt_BR: "Marca\xE7\xF5es",
+      ru: "\u041C\u0430\u0440\u043A\u0438\u0440\u043E\u0432\u043A\u0430",
+      zh_CN: "\u6253\u6807",
+      sk: "Zna\u010Denie",
+      de: "Markierung",
+      it: "Marcatura",
+      es: "Marcado",
+      tr: "\u0130\u015Faretler",
+      uk: "\u041C\u0456\u0442\u043A\u0438",
+      id: "Tandai",
+      da: "M\xE6rker"
+    },
+    Date: {
+      fr: "Date",
+      sv: "Datum",
+      nl: "Datum",
+      pl: "Data",
+      pt_BR: "Data",
+      ru: "\u0414\u0430\u0442\u0430",
+      zh_CN: "\u65E5\u671F",
+      sk: "D\xE1tum",
+      de: "Datum",
+      it: "Data",
+      es: "Fecha",
+      tr: "Tarih",
+      uk: "\u0414\u0430\u0442\u0430",
+      id: "Tanggal",
+      da: "Dato"
+    },
+    Greetings: {
+      fr: "Bienvenue",
+      sv: "H\xE4lsningar",
+      nl: "De groeten",
+      pl: "Przywitanie",
+      pt_BR: "Sauda\xE7\xF5es",
+      ru: "\u041F\u0440\u0438\u0432\u0435\u0442",
+      zh_CN: "\u4F60\u597D",
+      sk: "Pozdravom",
+      de: "Gr\xFC\xDFe",
+      it: "Saluti",
+      es: "Saludos",
+      tr: "Selamlama",
+      uk: "\u0412\u0456\u0442\u0430\u043D\u043D\u044F",
+      id: "Salam",
+      da: "Velkomst"
+    },
+    Weather: {
+      fr: "M\xE9t\xE9o",
+      sv: "V\xE4der",
+      nl: "Het weer",
+      pl: "Pogoda",
+      pt_BR: "Tempo",
+      ru: "\u041F\u043E\u0433\u043E\u0434\u0430",
+      zh_CN: "\u5929\u6C14",
+      sk: "Po\u010Dasie",
+      de: "Wetter",
+      it: "Tempo",
+      es: "Clima",
+      tr: "Hava durumu",
+      uk: "\u041F\u043E\u0433\u043E\u0434\u0430",
+      id: "Cuaca",
+      da: "Vejr"
+    },
+    Icon: {
+      fr: "Ic\xF4ne",
+      sv: "Ikon",
+      nl: "Icoon",
+      pl: "Ikona",
+      pt_BR: "\xCDcone",
+      ru: "\u0418\u043A\u043E\u043D\u043A\u0430",
+      zh_CN: "\u56FE\u6807",
+      sk: "Ikona",
+      de: "Symbol",
+      it: "Icona",
+      es: "Icono",
+      tr: "Simge",
+      uk: "\u0406\u043A\u043E\u043D\u043A\u0430",
+      id: "Icon",
+      da: "Ikon"
+    },
+    Style: {
+      fr: "Apparence",
+      sv: "Stil",
+      nl: "Stijl",
+      pl: "Styl",
+      pt_BR: "Estilo",
+      ru: "\u0421\u0442\u0438\u043B\u044C",
+      zh_CN: "\u98CE\u683C",
+      sk: "\u0160t\xFDl",
+      de: "Stil",
+      it: "Aspetto",
+      es: "Apariencia",
+      tr: "G\xF6r\xFCn\xFCm",
+      uk: "\u0421\u0442\u0438\u043B\u044C",
+      id: "Gaya",
+      da: "Udseende"
+    },
+    Large: {
+      fr: "Grands",
+      sv: "Stor",
+      nl: "Groot",
+      pl: "Du\u017Cy",
+      pt_BR: "Grande",
+      ru: "\u0411\u043E\u043B\u044C\u0448\u043E\u0439",
+      zh_CN: "\u5927\u7684",
+      sk: "Ve\u013Ek\xFD",
+      de: "Gro\xDF",
+      it: "Largo",
+      es: "Largo",
+      tr: "B\xFCy\xFCk",
+      uk: "\u0412\u0435\u043B\u0438\u043A\u0438\u0439",
+      id: "Besar",
+      da: "Stor"
+    },
+    Medium: {
+      fr: "Moyens",
+      sv: "Medium",
+      nl: "Gemiddeld",
+      pl: "\u015Aredni",
+      pt_BR: "M\xE9dio",
+      ru: "\u0421\u0440\u0435\u0434\u043D\u0438\u0439",
+      zh_CN: "\u4E2D\u7B49",
+      sk: "Stredn\xFD",
+      de: "Mittel",
+      it: "Medio",
+      es: "Medio",
+      tr: "Orta",
+      uk: "\u0421\u0435\u0440\u0435\u0434\u043D\u0456\u0439",
+      id: "Sedang",
+      da: "Medium"
+    },
+    Small: {
+      fr: "Petits",
+      sv: "Liten",
+      nl: "Klein",
+      pl: "Ma\u0142y",
+      pt_BR: "Pequeno",
+      ru: "\u0411\u043E\u043B\u044C\u0448\u043E\u0439",
+      zh_CN: "\u5C0F\u7684",
+      sk: "Mal\xFD",
+      de: "Klein",
+      it: "Piccolo",
+      es: "Peque\xF1a",
+      tr: "K\xFC\xE7\xFCk",
+      uk: "\u041C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0439",
+      id: "Kecil",
+      da: "Lille"
+    },
+    Text: {
+      fr: "Texte",
+      sv: "Text",
+      nl: "Tekst",
+      pl: "Tekst",
+      pt_BR: "Texto",
+      ru: "\u0422\u0435\u043A\u0441\u0442",
+      zh_CN: "\u6587\u672C",
+      sk: "Text",
+      de: "Text",
+      it: "Testo",
+      es: "Texto",
+      tr: "Metin",
+      uk: "\u0422\u0435\u043A\u0441\u0442",
+      id: "Teks",
+      da: "Tekst"
+    },
+    "Quick Links": {
+      fr: "Liens favoris",
+      sv: "Snabbl\xE4nkar",
+      nl: "Snelle links",
+      pl: "Szybkie linki",
+      pt_BR: "Links R\xE1pidos",
+      ru: "\u0411\u044B\u0441\u0442\u0440\u044B\u0435 \u0441\u0441\u044B\u043B\u043A\u0438",
+      zh_CN: "\u5FEB\u901F\u94FE\u63A5",
+      sk: "R\xFDchle odkazy",
+      de: "Schnelllinks",
+      it: "Link veloci",
+      es: "Links Favoritos",
+      tr: "H\u0131zl\u0131 Linkler",
+      uk: "\u0428\u0432\u0438\u0434\u043A\u0456 \u043F\u043E\u0441\u0438\u043B\u0430\u043D\u043D\u044F",
+      id: "Tautan Singkat",
+      da: "Hurtig links"
+    },
+    "Settings icon": {
+      fr: "Ic\xF4ne r\xE9glages",
+      sv: "Inst\xE4llningsikon",
+      nl: "Instellingen icoon",
+      pl: "Ikona ustawie\u0144",
+      pt_BR: "\xCDcone de configura\xE7\xE3o",
+      ru: "\u0417\u043D\u0430\u0447\u043E\u043A \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A",
+      zh_CN: "\u8BBE\u7F6E\u56FE\u6807",
+      sk: "Ikona nastaven\xED",
+      de: "Einstellungssymbol",
+      it: "Icona Impostazioni",
+      es: "\xCDcono de la configuraci\xF3n",
+      tr: "Ayarlar simgesi",
+      uk: "\u0406\u043A\u043E\u043D\u043A\u0430 \u043D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u044C",
+      id: "Pengaturan icon",
+      da: "Indstillingsikon"
+    },
+    "Upload background here": {
+      fr: "Ajoutez votre arri\xE8re-plan",
+      sv: "Ladda upp bakgrunden h\xE4r",
+      nl: "Upload hier achtergrond",
+      pl: "Prze\u015Blij t\u0142o tutaj",
+      pt_BR: "Suba o seu background aqui",
+      ru: "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u0435 \u0444\u043E\u043D \u0437\u0434\u0435\u0441\u044C",
+      zh_CN: "\u4E0A\u4F20\u80CC\u666F",
+      sk: "Nahra\u0165 pozadie tu",
+      de: "Hier Hintergrund hochladen",
+      it: "Carica lo sfondo qui",
+      es: "Sube el fondo aqu\xED",
+      tr: "Arka plan\u0131 buraya y\xFCkleyin",
+      uk: "\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0438\u0442\u0438 \u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u043D\u044F",
+      id: "Unggah latar belakan disini",
+      da: "Upload baggrund her"
+    },
+    "Analog clock": {
+      fr: "Horloge analogue",
+      sv: "Analog klocka",
+      nl: "Analoge klok",
+      pl: "Zegar analogowy",
+      pt_BR: "Rel\xF3gio Anal\xF3gico",
+      ru: "\u0410\u043D\u0430\u043B\u043E\u0433\u043E\u0432\u044B\u0435 \u0447\u0430\u0441\u044B",
+      zh_CN: "\u6A21\u62DF\u65F6\u949F",
+      sk: "Anal\xF3gov\xE9 hodiny",
+      de: "Analoge Uhr",
+      it: "Orologio analogico",
+      es: "Reloj Anal\xF3gico",
+      tr: "Analog saat",
+      uk: "\u0410\u043D\u0430\u043B\u043E\u0433\u043E\u0432\u0438\u0439 \u0433\u043E\u0434\u0438\u043D\u043D\u0438\u043A",
+      id: "Jam Analog",
+      da: "Analog ur"
+    },
+    "Display Seconds": {
+      fr: "Afficher les secondes",
+      sv: "Visa sekunder",
+      nl: "Weergave seconden",
+      pl: "Wy\u015Bwietl sekundy",
+      pt_BR: "Mostrar segundos",
+      ru: "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u0441\u0435\u043A\u0443\u043D\u0434\u044B",
+      zh_CN: "\u663E\u793A\u79D2",
+      sk: "Zobrazi\u0165 sekundy",
+      de: "Sekunden anzeigen",
+      it: "Visualizza secondi",
+      es: "Mostrar los segundos",
+      tr: "Saniyeyi g\xF6ster",
+      uk: "\u041F\u043E\u043A\u0430\u0437\u0443\u0432\u0430\u0442\u0438 \u0441\u0435\u043A\u0443\u043D\u0434\u0438",
+      id: "Tampilkan keduanya",
+      da: "Vis sekunder"
+    },
+    Automatic: {
+      fr: "Automatique",
+      sv: "Automatiskt",
+      nl: "Automatisch ",
+      pl: "Automatycznie",
+      pt_BR: "Autom\xE1tico",
+      ru: "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438",
+      zh_CN: "\u81EA\u52A8\u8BBE\u7F6E",
+      sk: "Automatick\xE9",
+      de: "Automatisch",
+      it: "Automatico",
+      es: "Autom\xE1tico",
+      tr: "Otomatik",
+      uk: "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u043D\u043E",
+      id: "Otomatis",
+      da: "Automatisk"
+    },
+    Geolocation: {
+      fr: "G\xE9olocalisation",
+      sv: "Geolokalisering",
+      nl: "Locatie",
+      pl: "Lokalizacja",
+      pt_BR: "Geolocaliza\xE7\xE3o",
+      ru: "\u0413\u0435\u043E\u043B\u043E\u043A\u0430\u0446\u0438\u044F",
+      zh_CN: "\u4F7F\u7528\u6211\u7684\u4F4D\u7F6E",
+      sk: "Geolok\xE1cia",
+      de: "Geolokalisierung",
+      it: "Geolocalizzazione",
+      es: "Geolocalizaci\xF3n",
+      tr: "Co\u011Frafi konum",
+      uk: "\u0413\u0435\u043E\u043B\u043E\u043A\u0430\u0446\u0456\u044F",
+      id: "Geo-lokasi",
+      da: "Geolokalisering"
+    },
+    "City not found": {
+      fr: "Ville inconnue",
+      sv: "Staden hittades inte",
+      nl: "Stad niet gevonden",
+      pl: "Nie znaleziono miasta",
+      pt_BR: "Cidade n\xE3o encontrada",
+      ru: "\u0413\u043E\u0440\u043E\u0434 \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D",
+      zh_CN: "\u627E\u4E0D\u5230\u57CE\u5E02",
+      sk: "Mesto nen\xE1jden\xE9",
+      de: "Stadt nicht gefunden",
+      it: "Citt\xE0 non trovata",
+      es: "Ciudad no encontrada",
+      tr: "\u015Eehir bulunamad\u0131",
+      uk: "\u041C\u0456\u0441\u0442\u043E \u043D\u0435 \u0437\u043D\u0430\u0439\u0434\u0435\u043D\u043E",
+      id: "Kota Ditemukan",
+      da: "By ikke fundet"
+    },
+    "Change city": {
+      fr: "Changer la ville",
+      sv: "Byt stad",
+      nl: "Verander locatie",
+      pl: "Zmie\u0144 miasto",
+      pt_BR: "Mudar cidade",
+      ru: "\u0421\u043C\u0435\u043D\u0438\u0442\u044C \u0433\u043E\u0440\u043E\u0434",
+      zh_CN: "\u66F4\u6539\u57CE\u5E02",
+      sk: "Zmeni\u0165 mesto",
+      de: "Stadt \xE4ndern",
+      it: "Cambia citt\xE0",
+      es: "Cambiar ciudad",
+      tr: "\u015Eehri de\u011Fi\u015Ftir",
+      uk: "\u0417\u043C\u0456\u043D\u0438\u0442\u0438 \u043C\u0456\u0441\u0442\u043E",
+      id: "Ubah kota",
+      da: "\xC6ndre by"
+    },
+    "There was a problem": {
+      fr: "Il y a eu un probl\xE8me",
+      sv: "Ett fel uppstod",
+      nl: "Er is een probleem",
+      pl: "Wyst\u0105pi\u0142 problem",
+      pt_BR: "Houve um problema",
+      ru: "\u0412\u043E\u0437\u043D\u0438\u043A\u043B\u0430 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0430",
+      zh_CN: "\u51FA\u73B0\u9519\u8BEF",
+      sk: "Nastal probl\xE9m",
+      de: "Ein Problem ist aufgetreten",
+      it: "C'\xE8 stato un problema",
+      es: "Hubo un problema",
+      tr: "Bir problem vard\u0131",
+      uk: "\u0412\u0438\u043D\u0438\u043A\u043B\u0430 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0430",
+      id: "Ada masalah",
+      da: "Der opstod en fejl"
+    },
+    "Imperial units": {
+      fr: "Unit\xE9s imp\xE9riales",
+      sv: "Imperial enheter",
+      nl: "Empirische eenheden",
+      pl: "Jednostki imperialne",
+      pt_BR: "Unidades imperiais",
+      ru: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0424\u0430\u0440\u0435\u043D\u0433\u0435\u0439\u0442\u044B",
+      zh_CN: "\u82F1\u5236\u5355\u4F4D",
+      sk: "Imperi\xE1lne jednotky",
+      de: "Imperiale Ma\xDFeinheiten",
+      it: "Sistema imperiale",
+      es: "Sistema imperial",
+      uk: "\u0412\u0438\u043A\u043E\u0440\u0438\u0441\u0442\u043E\u0432\u0443\u0432\u0430\u0442\u0438 \u0448\u043A\u0430\u043B\u0443 \u0424\u0430\u0440\u0435\u043D\u0433\u0435\u0439\u0442\u0430",
+      tr: "Emperyal birimler",
+      id: "Kisaran Unit",
+      da: "Engelske enheder"
+    },
+    Forecast: {
+      fr: "Pr\xE9visions",
+      sv: "Prognos",
+      nl: "Voorspelling",
+      pl: "Prognoza",
+      pt_BR: "Previs\xE3o",
+      ru: "\u041F\u0440\u043E\u0433\u043D\u043E\u0437",
+      zh_CN: "\u9884\u62A5",
+      sk: "Predpove\u010F",
+      de: "Vorhersage",
+      it: "Previsione",
+      es: "Pron\xF3stico",
+      tr: "Hava Durumu",
+      uk: "\u041F\u0440\u043E\u0433\u043D\u043E\u0437",
+      id: "Ramalan Cuaca",
+      da: "Prognose"
+    },
+    "Every mornings": {
+      fr: "Les matins",
+      sv: "Varje morgon",
+      nl: "Elke ochtend",
+      pl: "Ka\u017Cdego poranka",
+      pt_BR: "Toda manh\xE3",
+      ru: "\u041A\u0430\u0436\u0434\u043E\u0435 \u0443\u0442\u0440\u043E",
+      zh_CN: "\u6BCF\u5929\u65E9\u4E0A",
+      sk: "Ka\u017Ed\xE9 r\xE1no",
+      de: "Jeden Morgen",
+      it: "Ogni mattina",
+      es: "Cada ma\xF1ana",
+      tr: "Her sabah",
+      uk: "\u0429\u043E\u0440\u0430\u043D\u043A\u0443",
+      id: "Setiap pagi",
+      da: "Hver morgen"
+    },
+    "Always show": {
+      fr: "Toujours",
+      sv: "Alltid",
+      nl: "Altijd",
+      pl: "Zawsze pokazuj",
+      pt_BR: "Mostrar",
+      ru: "\u0412\u0441\u0435\u0433\u0434\u0430 \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C",
+      zh_CN: "\u603B\u662F",
+      sk: "V\u017Edy",
+      de: "Immer anzeigen",
+      it: "Sempre",
+      es: "Siempre",
+      tr: "Her zaman g\xF6ster",
+      uk: "\u0417\u0430\u0432\u0436\u0434\u0438",
+      id: "Selalu tampilkan",
+      da: "Vis altid"
+    },
+    "Never show": {
+      fr: "Jamais",
+      sv: "Aldrig",
+      nl: "Nooit",
+      pl: "Nigdy nie pokazuj",
+      pt_BR: "Ocultar",
+      ru: "\u041D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C",
+      zh_CN: "\u7EDD\u4E0D",
+      sk: "Nikdy",
+      de: "Nie anzeigen",
+      it: "Mai",
+      es: "Nunca",
+      tr: "Asla g\xF6sterme",
+      uk: "\u041D\u0456\u043A\u043E\u043B\u0438",
+      id: "Belum pernah upload",
+      da: "Vis aldrig"
+    },
+    Temperature: {
+      fr: "Temp\xE9rature",
+      sv: "Temperatur",
+      nl: "Temperatuur",
+      pl: "Temperatura",
+      pt_BR: "Temperatura",
+      ru: "\u0422\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430",
+      zh_CN: "\u6E29\u5EA6",
+      sk: "Teplota",
+      de: "Temperatur",
+      it: "Temperatura",
+      es: "Temperatura",
+      tr: "S\u0131cakl\u0131k",
+      uk: "\u0422\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430",
+      id: "tempratur",
+      da: "Temperatur"
+    },
+    Actual: {
+      fr: "R\xE9elle",
+      sv: "Faktisk",
+      nl: "Werkelijke",
+      pl: "Rzeczywista",
+      pt_BR: "Real",
+      ru: "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439",
+      zh_CN: "\u5B9E\u9645\u7684",
+      sk: "Re\xE1lny",
+      de: "Tats\xE4chlich",
+      it: "Real",
+      es: "Real",
+      tr: "Asl\u0131nda olan",
+      uk: "\u0414\u0456\u0439\u0441\u043D\u0430",
+      id: "Aktual",
+      da: "Aktuel"
+    },
+    "Feels like": {
+      fr: "Ressenti",
+      sv: "K\xE4nsla",
+      nl: "Gevoelsmatige",
+      pl: "Odczuwalna",
+      pt_BR: "Sensa\xE7\xE3o t\xE9rmica",
+      ru: "\u041E\u0449\u0443\u0449\u0430\u0435\u0442\u0441\u044F \u043A\u0430\u043A",
+      zh_CN: "\u611F\u89BA\u50CF",
+      sk: "Pocit",
+      de: "F\xFChlt Sich An Wie",
+      it: "Si Sente Come",
+      es: "Se Siente Como",
+      tr: "Hissedilen",
+      uk: "\u0412\u0456\u0434\u0447\u0443\u0442\u0442\u044F",
+      id: "Terasa seperti",
+      da: "F\xF8les som"
+    },
+    Both: {
+      fr: "Les deux",
+      sv: "B\xE5de",
+      nl: "Beide",
+      pl: "Obydwie",
+      pt_BR: "Ambos",
+      ru: "\u041E\u0431\u0430",
+      zh_CN: "\u4E24\u4E2A\u90FD",
+      sk: "Obaja",
+      de: "Beide",
+      it: "Entrambi",
+      es: "Ambos",
+      tr: "\u0130kisi birden",
+      uk: "\u041E\u0431\u0438\u0434\u0432\u0456",
+      id: "Keduanya",
+      da: "Begge"
+    },
+    Notes: {
+      fr: "Notes",
+      sv: "Anteckningar",
+      nl: "Opmerkingen",
+      pl: "Uwagi",
+      pt_BR: "Notas",
+      ru: "\u041F\u0440\u0438\u043C\u0435\u0447\u0430\u043D\u0438\u044F",
+      zh_CN: "\u7B14\u8BB0",
+      sk: "Pozn\xE1mky",
+      de: "Anmerkungen",
+      it: "Note",
+      es: "Notas",
+      tr: "Notlar",
+      uk: "\u041F\u0440\u0438\u043C\u0456\u0442\u043A\u0438",
+      id: "Catatan",
+      da: "Noter"
+    },
+    "Double click to edit": {
+      fr: "Double-cliquez pour modifier",
+      sv: "Dubbelklicka f\xF6r att redigera",
+      nl: "Dubbelklik om te bewerken",
+      pl: "Kliknij dwukrotnie, aby edytowa\u0107",
+      pt_BR: "Clique duas vezes para editar",
+      ru: "\u0414\u0432\u0430\u0436\u0434\u044B \u0449\u0435\u043B\u043A\u043D\u0438\u0442\u0435, \u0447\u0442\u043E\u0431\u044B \u0438\u0437\u043C\u0435\u043D\u0438\u0442\u044C",
+      zh_CN: "\u53CC\u51FB\u7F16\u8F91",
+      sk: "Ak chcete upravi\u0165, dvakr\xE1t kliknite",
+      de: "Doppelklick zum bearbeiten",
+      it: "Fare doppio clic per modificare",
+      es: "Doble click para editar",
+      tr: "D\xFCzenlemek i\xE7in \xE7ift t\u0131kla",
+      uk: "\u0414\u0432\u0456\u0447\u0456 \u043A\u043B\u0430\u0446\u043D\u0456\u0442\u044C, \u0449\u043E\u0431 \u0440\u0435\u0434\u0430\u0433\u0443\u0432\u0430\u0442\u0438",
+      id: "Klik dua kali untuk mengedit",
+      da: "Dobbeltklik for at redigere"
+    },
+    "Supports Markdown and clickable checkboxes": {
+      fr: "Compatible Markdown et cases \xE0 cocher cliquables",
+      sv: "St\xF6der Markdown och klickbara kryssrutor",
+      nl: "Ondersteunt Markdown en aanklikbare selectievakjes",
+      pl: "Obs\u0142uguje Markdown i klikalne pola wyboru",
+      pt_BR: "Suporta Markdown e caixas de sele\xE7\xE3o clic\xE1veis",
+      ru: "\u041F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442 Markdown \u0438 \u0438\u043D\u0442\u0435\u0440\u0430\u043A\u0442\u0438\u0432\u043D\u044B\u0435 \u0444\u043B\u0430\u0436\u043A\u0438",
+      zh_CN: "\u652F\u6301 Markdown \u548C\u53EF\u70B9\u51FB\u7684\u590D\u9009\u6846",
+      sk: "Podporuje Markdown a klikacie za\u010Diarkavacie pol\xED\u010Dka",
+      de: "Unterst\xFCtzt Markdown und anklickbare Kontrollk\xE4stchen",
+      it: "Supporta Markdown e caselle di controllo selezionabili",
+      es: "Admite Markdown y casillas de verificaci\xF3n en las que se puede hacer clic",
+      tr: "Markdown ve t\u0131klanabilir onay kutular\u0131n\u0131 destekler",
+      uk: "\u041F\u0456\u0434\u0442\u0440\u0438\u043C\u0443\u0454 Markdown \u0456 \u043A\u043B\u0456\u043A\u0430\u0431\u0435\u043B\u044C\u043D\u0456 \u043F\u0440\u0430\u043F\u043E\u0440\u0446\u0456",
+      id: "Mendukung penurunan harga dan kotak centang yang dapat diklik",
+      da: "Underst\xF8tter Markdown og klikbare afkrydsningsfelter"
+    },
+    "With keyboard shortcuts": {
+      fr: "Avec des raccourcis clavier",
+      sv: "Med kortkommandon",
+      nl: "Met sneltoetsen",
+      pl: "Za pomoc\u0105 skr\xF3t\xF3w klawiaturowych",
+      pt_BR: "Com atalhos de teclado",
+      ru: "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0441\u043E\u0447\u0435\u0442\u0430\u043D\u0438\u0439 \u043A\u043B\u0430\u0432\u0438\u0448",
+      zh_CN: "\u4F7F\u7528\u952E\u76D8\u5FEB\u6377\u952E",
+      sk: "S kl\xE1vesov\xFDmi skratkami",
+      de: "Mit Tastaturk\xFCrzeln",
+      it: "Con scorciatoie da tastiera",
+      es: "Con atajos de teclado",
+      tr: "Klavye k\u0131sayollar\u0131 ile",
+      uk: "\u0417\u0430 \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u043E\u044E \u043A\u043E\u043C\u0431\u0456\u043D\u0430\u0446\u0456\u0439 \u043A\u043B\u0430\u0432\u0456\u0448",
+      id: "Dengan pintasan keyboard",
+      da: "Med tastaturgenveje"
+    },
+    "see documentation": {
+      fr: "voir la documentation",
+      sv: "se i dokumentationen",
+      nl: "zie in documentatie",
+      pl: "patrz w dokumentacji",
+      pt_BR: "veja na documenta\xE7\xE3o",
+      ru: "\u0441\u043C. \u0432 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u0446\u0438\u0438",
+      zh_CN: "\u89C1\u6587\u6863\u3002",
+      sk: "pozri v dokument\xE1cii",
+      de: "siehe Dokumentation",
+      it: "vedere nella documentazione",
+      es: "ver en la documentaci\xF3n",
+      tr: "belgelere bak\u0131n",
+      uk: "\u0434\u0438\u0432\u0456\u0442\u044C\u0441\u044F \u0432 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u0446\u0456\u0457",
+      id: "lihat di dokumentasi",
+      da: "se i dokumentationen"
+    },
+    "Text alignment": {
+      fr: "Alignement du texte",
+      sv: "Anpassning av text",
+      nl: "Tekst uitlijnen",
+      pl: "Wyr\xF3wnanie tekstu",
+      pt_BR: "Alinhamento do texto",
+      ru: "\u0412\u044B\u0440\u0430\u0432\u043D\u0438\u0432\u0430\u043D\u0438\u0435 \u0442\u0435\u043A\u0441\u0442\u0430",
+      zh_CN: "\u6587\u672C\u5BF9\u9F50",
+      sk: "Zarovnanie textu",
+      de: "Text ausrichten",
+      it: "Allineamento del testo",
+      es: "Alineaci\xF3n del texto",
+      tr: "Metin hizalama",
+      uk: "\u0412\u0438\u0440\u0456\u0432\u043D\u044E\u0432\u0430\u043D\u043D\u044F \u0442\u0435\u043A\u0441\u0442\u0443",
+      id: "Perataan teks",
+      da: "Justering af tekst"
+    },
+    Left: {
+      fr: "Gauche",
+      sv: "V\xE4nster",
+      nl: "Links",
+      pl: "Lewa",
+      pt_BR: "\xC0 esquerda",
+      ru: "\u0421\u043B\u0435\u0432\u0430",
+      zh_CN: "\u5DE6\u8FB9",
+      sk: "V\u013Eavo",
+      de: "Links",
+      it: "A sinistra",
+      es: "Izquierda",
+      tr: "Sol",
+      uk: "\u041B\u0456\u0432\u043E\u0440\u0443\u0447",
+      id: "Kiri",
+      da: "Venstre"
+    },
+    Center: {
+      fr: "Centr\xE9",
+      sv: "Centralt",
+      nl: "Midden",
+      pl: "\u015Arodek",
+      pt_BR: "Centro",
+      ru: "\u0426\u0435\u043D\u0442\u0440",
+      zh_CN: "\u4E2D\u95F4",
+      sk: "Stred",
+      de: "Mitte",
+      it: "Centro",
+      es: "Centro",
+      tr: "Merkez",
+      uk: "\u0426\u0435\u043D\u0442\u0440",
+      id: "Tengah",
+      da: "Midt"
+    },
+    Right: {
+      fr: "Droite",
+      sv: "H\xF6ger",
+      nl: "Rechts",
+      pl: "Prawa",
+      pt_BR: "Certo",
+      ru: "\u041F\u0440\u0430\u0432\u044B\u0439",
+      zh_CN: "\u53F3\u8FB9",
+      sk: "Vpravo",
+      de: "Rechts",
+      it: "A destra",
+      es: "Derecha",
+      tr: "Do\u011Fru",
+      uk: "\u041F\u0440\u0430\u0432\u043E\u0440\u0443\u0447",
+      id: "Kanan",
+      da: "H\xF8jre"
+    },
+    "Settings management": {
+      fr: "Gestion des r\xE9glages",
+      sv: "Settings management",
+      nl: "Settings management",
+      pl: "Settings management",
+      pt_BR: "Settings management",
+      ru: "Settings management",
+      zh_CN: "Settings management",
+      sk: "Settings management",
+      de: "Settings management",
+      it: "Settings management",
+      es: "Settings management",
+      tr: "Settings management",
+      uk: "Settings management",
+      id: "Settings management",
+      da: "Settings management"
+    },
+    "Transfer your settings between multiple instances of Bonjourr.": {
+      fr: "Transf\xE9rez vos r\xE9glages d'une instance de Bonjourr \xE0 une autre.",
+      sv: "Transfer your settings between multiple instances of Bonjourr.",
+      nl: "Transfer your settings between multiple instances of Bonjourr.",
+      pl: "Transfer your settings between multiple instances of Bonjourr.",
+      pt_BR: "Transfer your settings between multiple instances of Bonjourr.",
+      ru: "Transfer your settings between multiple instances of Bonjourr.",
+      zh_CN: "Transfer your settings between multiple instances of Bonjourr.",
+      sk: "Transfer your settings between multiple instances of Bonjourr.",
+      de: "Transfer your settings between multiple instances of Bonjourr.",
+      it: "Transfer your settings between multiple instances of Bonjourr.",
+      es: "Transfer your settings between multiple instances of Bonjourr.",
+      tr: "Transfer your settings between multiple instances of Bonjourr.",
+      uk: "Transfer your settings between multiple instances of Bonjourr.",
+      id: "Transfer your settings between multiple instances of Bonjourr.",
+      da: "Transfer your settings between multiple instances of Bonjourr."
+    },
+    "Search bar": {
+      fr: "Barre de recherche",
+      sv: "S\xF6kruta",
+      nl: "Zoekbalk",
+      pl: "Pasek wyszukiwania",
+      pt_BR: "Barra de pesquisa",
+      ru: "\u0421\u0442\u0440\u043E\u043A\u0430 \u043F\u043E\u0438\u0441\u043A\u0430",
+      zh_CN: "\u641C\u7D22\u6846",
+      sk: "VYH\u013DAD\xC1VAC\xCD PANEL",
+      de: "Suchleiste",
+      it: "Barra di ricerca",
+      es: "Barra de b\xFAsqueda",
+      tr: "Arama \xE7ubu\u011Fu",
+      uk: "\u041F\u0430\u043D\u0435\u043B\u044C \u043F\u043E\u0448\u0443\u043A\u0443",
+      id: "Bilah pencarian",
+      da: "S\xF8gefelt"
+    },
+    "Search engine": {
+      fr: "Moteur de recherche",
+      sv: "S\xF6kmotor",
+      nl: "Zoekmachine",
+      pl: "Wyszukiwarka",
+      pt_BR: "Buscadores",
+      ru: "\u041F\u043E\u0438\u0441\u043A\u043E\u0432\u0430\u044F \u0441\u0438\u0441\u0442\u0435\u043C\u0430",
+      zh_CN: "\u641C\u7D22\u5F15\u64CE",
+      sk: "Vyh\u013Ead\xE1va\u010D",
+      de: "Suchmaschine",
+      it: "Motore di ricerca",
+      es: "Motor de b\xFAsqueda",
+      tr: "Arama motoru",
+      uk: "\u041F\u043E\u0448\u0443\u043A\u043E\u0432\u0430 \u0441\u0438\u0441\u0442\u0435\u043C\u0430",
+      id: "Mesin pencari",
+      da: "S\xF8gemaskine"
+    },
+    Enable: {
+      fr: "Activer",
+      sv: "Aktivera",
+      nl: "Activeren",
+      pl: "Aktywuj",
+      pt_BR: "Ativar",
+      ru: "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C",
+      zh_CN: "\u542F\u7528",
+      sk: "Aktivova\u0165",
+      de: "Aktivieren",
+      it: "Abilita",
+      es: "Activar",
+      tr: "Aktif Et",
+      uk: "\u0410\u043A\u0442\u0438\u0432\u043E\u0432\u0430\u043D\u043E",
+      id: "Aktif",
+      da: "Aktiver"
+    },
+    "Open in new tab": {
+      fr: "Ouvrir dans un nouvel onglet",
+      zh_CN: "\u5728\u65B0\u6807\u7B7E\u9875\u6253\u5F00\u94FE\u63A5",
+      sv: "\xD6ppna i ny flik",
+      nl: "Openen in nieuw tabblad",
+      pl: "Otwieraj w nowej karcie",
+      pt_BR: "Abrir em nova aba",
+      ru: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u0432 \u043D\u043E\u0432\u043E\u0439 \u0432\u043A\u043B\u0430\u0434\u043A\u0435",
+      sk: "Otvori\u0165 v novej karte",
+      de: "In einem neuen Tab \xF6ffnen",
+      it: "Apri in una nuova scheda",
+      es: "Abrir en una nueva pesta\xF1a",
+      tr: "Yeni sekmede a\xE7",
+      uk: "\u0412\u0456\u0434\u043A\u0440\u0438\u0442\u0438 \u0432 \u043D\u043E\u0432\u0456\u0439 \u0432\u043A\u043B\u0430\u0434\u0446\u0456",
+      id: "Buka di tab baru",
+      da: "\xC5ben i et nyt faneblad"
+    },
+    "URL request": {
+      fr: "URL de requ\xEAte",
+      sv: "URL beg\xE4ran",
+      nl: "URL verzoek",
+      pl: "\u017B\u0105danie adresu URL",
+      pt_BR: "URL de pesquisa",
+      ru: "URL-\u0437\u0430\u043F\u0440\u043E\u0441",
+      zh_CN: "\u7F51\u5740\u8BF7\u6C42",
+      sk: "\u017Diados\u0165 o adresu URL",
+      de: "URL Anfrage",
+      it: "Richiesta URL",
+      es: "Solicitud de URL",
+      tr: "URL iste\u011Fi",
+      uk: "URL \u0437\u0430\u043F\u0438\u0442",
+      id: "URL permintaan",
+      da: "URL-anmodning"
+    },
+    "%s Not found": {
+      fr: "%s Pas trouv\xE9",
+      sv: "%s Hittades inte",
+      nl: "%s Niet gevonden",
+      pl: "Nie znaleziono %s",
+      pt_BR: "% s N\xE3o encontrado",
+      ru: "% s \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E",
+      zh_CN: "%s \u672A\u627E\u5230",
+      sk: "%s nebol n\xE1jden\xFD",
+      de: "%s nicht gefunden",
+      it: "%s non trovato",
+      es: "% s no encontrado",
+      tr: "%s bulunamad\u0131",
+      uk: "%s \u043D\u0435 \u0437\u043D\u0430\u0439\u0434\u0435\u043D\u043E",
+      id: "%s tidak ditemukan",
+      da: "%s ikke fundet"
+    },
+    "Search query: %s": {
+      fr: "Requ\xEAte: %s",
+      sv: "S\xF6kfr\xE5ga: %s",
+      nl: "Zoekopdracht: %s",
+      pl: "Wyszukiwane has\u0142o: %s",
+      pt_BR: "Buscador:% s",
+      ru: "\u041F\u043E\u0438\u0441\u043A\u043E\u0432\u044B\u0439 \u0437\u0430\u043F\u0440\u043E\u0441: %s",
+      zh_CN: "\u641C\u7D22\u67E5\u8BE2\uFF1A%s",
+      sk: "Vyh\u013Ead\xE1vac\xED dopyt: %s",
+      de: "Suchanfrage: %s",
+      it: "Ricerca di ricerca: %s",
+      es: "Consulta de b\xFAsqueda:% s",
+      tr: "Arama sorgusu: %s",
+      uk: "\u041F\u043E\u0448\u0443\u043A\u043E\u0432\u0438\u0439 \u0437\u0430\u043F\u0438\u0442: %s",
+      id: "Pencarian kata kunci %s",
+      da: "S\xF8geterm: %s"
+    },
+    Opacity: {
+      fr: "Opacit\xE9",
+      sv: "Opacitet",
+      nl: "Dekking",
+      pl: "Przezroczysto\u015B\u0107",
+      pt_BR: "Opacidade",
+      ru: "\u041D\u0435\u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u043E\u0441\u0442\u044C",
+      zh_CN: "\u4E0D\u900F\u660E\u5EA6",
+      sk: "Neprieh\u013Eadnos\u0165",
+      de: "Deckkraft",
+      it: "Opacit\xE0",
+      es: "Opacidad",
+      tr: "Opakl\u0131k",
+      uk: "\u041D\u0435\u043F\u0440\u043E\u0437\u043E\u0440\u0456\u0441\u0442\u044C",
+      id: "Transparansi",
+      da: "Uigennemsigtighed"
+    },
+    "Time & Date": {
+      fr: "Date & heure",
+      sv: "Tid och datum",
+      nl: "Datum en tijd",
+      pl: "Data i godzina",
+      pt_BR: "Data & Hora",
+      ru: "\u0412\u0440\u0435\u043C\u044F \u0438 \u0434\u0430\u0442\u0430",
+      zh_CN: "\u65F6\u95F4\u548C\u65E5\u671F",
+      sk: "\u010Cas a d\xE1tum",
+      de: "Zeit und Datum",
+      it: "Ora dell'appuntamento",
+      es: "Fecha & hora",
+      tr: "Saat ve Tarih",
+      uk: "\u0427\u0430\u0441 & \u0414\u0430\u0442\u0430",
+      id: "Waktu & Tanggal",
+      da: "Tid og dato"
+    },
+    "Custom Style": {
+      fr: "Style personnalis\xE9",
+      sv: "Anpassad stil",
+      nl: "Aangepaste stijl",
+      pl: "Niestandardowy styl",
+      pt_BR: "Estilo Personalizado",
+      ru: "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u0441\u0442\u0438\u043B\u044C",
+      zh_CN: "\u81EA\u5B9A\u4E49\u6837\u5F0F",
+      sk: "Vlastn\xFD \u0161t\xFDl",
+      de: "Benutzerdefinierter Stil",
+      it: "Stile personalizzato",
+      es: "Estilo personalizado",
+      tr: "\xD6zel Stil",
+      uk: "\u0412\u043B\u0430\u0441\u043D\u0456 \u0441\u0442\u0438\u043B\u0456",
+      id: "Personalisasi Gaya",
+      da: "Tilpasset stil"
+    },
+    "Type in your custom CSS": {
+      fr: "Entrez votre CSS personnalis\xE9",
+      sv: "Skriv in din anpassade CSS",
+      nl: "Typ uw aangepaste CSS in",
+      pl: "Wprowad\u017A sw\xF3j niestandardowy kod CSS",
+      pt_BR: "Insira seu CSS personalizado",
+      ru: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u0432\u043E\u0439 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439 CSS",
+      zh_CN: "\u8F93\u5165\u60A8\u7684\u81EA\u5B9A\u4E49 CSS",
+      sk: "Zadajte svoj vlastn\xFD CSS",
+      de: "Geben Sie Ihr benutzerdefiniertes CSS ein",
+      it: "Digita il tuo CSS personalizzato",
+      es: "Escribe aqu\xED tu CSS personalizado",
+      tr: "\xD6zel CSS kodunuzu yaz\u0131n",
+      uk: "\u0421\u043A\u043E\u043F\u0456\u044E\u0439\u0442\u0435 \u0432\u043B\u0430\u0441\u043D\u0438\u0439 CSS",
+      id: "Ketik CSS khusus Anda",
+      da: "Skriv dit tilpassede CSS"
+    },
+    "Make cool things happen with CSS. ": {
+      fr: "Tentez de jolies choses en CSS. ",
+      sv: "F\xE5 coola saker att h\xE4nda med CSS. ",
+      nl: "Laat coole dingen gebeuren met CSS. ",
+      pl: "Tw\xF3rz fajne rzeczy dzi\u0119ki CSS. ",
+      pt_BR: "Fa\xE7a coisas legais acontecerem com CSS. ",
+      ru: "\u0422\u0432\u043E\u0440\u0438\u0442\u0435 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E CSS. ",
+      zh_CN: "\u7528 CSS \u8BA9\u5F88\u9177\u7684\u4E8B\u60C5\u53D1\u751F\u3002 ",
+      sk: "Urobte skvel\xE9 veci pomocou CSS. ",
+      de: "Machen Sie mit CSS coole Dinge m\xF6glich. ",
+      it: "Fai accadere cose interessanti con i CSS. ",
+      es: "Haz que sucedan cosas geniales con CSS. ",
+      tr: "CSS ile harika \u015Feyler yap\u0131n. ",
+      uk: "\u0417\u0440\u043E\u0431\u0456\u0442\u044C \u043A\u0440\u0443\u0442\u0456 \u0440\u0435\u0447\u0456 \u0437\u0430 \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u043E\u044E CSS. ",
+      id: "Wujudkan hal-hal mewah dengan CSS. ",
+      da: "F\xE5 smarte ting til at ske med CSS. "
+    },
+    "Check out our ": {
+      fr: "Jetez un oeil \xE0 nos ",
+      sv: "Kolla in v\xE5r ",
+      nl: "Bekijk onze ",
+      pl: "Sprawd\u017A nasze ",
+      pt_BR: "Confira nosso ",
+      ru: "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435 \u043D\u0430\u0448\u0438 ",
+      zh_CN: "\u770B\u770B\u6211\u4EEC\u7684 ",
+      sk: "Pozrite si na\u0161e ",
+      de: "Schauen Sie sich unsere an ",
+      it: "Dai un'occhiata al nostro ",
+      es: "Echa un vistazo a nuestro ",
+      tr: "G\xF6z at\u0131n ",
+      uk: "Check out our ",
+      id: "Lihat kami ",
+      da: "Tjek vores "
+    },
+    "CSS snippets.": {
+      fr: "extraits de CSS.",
+      sv: "CSS-utdrag.",
+      nl: "CSS-fragmenten.",
+      pl: "Fragmenty kodu CSS.",
+      pt_BR: "trechos de CSS.",
+      ru: "CSS-\u0441\u043D\u0438\u043F\u043F\u0435\u0442\u044B.",
+      zh_CN: "CSS \u7247\u6BB5\u3002",
+      sk: "\xFAryvky CSS.",
+      de: "CSS-Schnipsel.",
+      it: "frammenti CSS.",
+      es: "Fragmentos de CSS.",
+      tr: "CSS snippet'lar\u0131",
+      uk: "CSS snippets.",
+      id: "Cuplikan CSS.",
+      da: "CSS uddrag."
+    },
+    "US Date Format": {
+      fr: "Date am\xE9ricaine",
+      sv: "Amerikansk dejt",
+      nl: "Amerikaanse datumnotatie",
+      pl: "Ameryka\u0144ski format daty",
+      pt_BR: "Formato de data dos EUA",
+      ru: "\u0424\u043E\u0440\u043C\u0430\u0442 \u0434\u0430\u0442\u044B \u0421\u0428\u0410",
+      zh_CN: "\u7F8E\u56FD\u65E5\u671F\u683C\u5F0F",
+      sk: "Form\xE1t d\xE1tumu v USA",
+      de: "US-Datumsformat",
+      it: "Formato data USA",
+      es: "Formato de fecha americano",
+      tr: "Amerikan tarih format\u0131",
+      uk: "\u0424\u043E\u0440\u043C\u0430\u0442 \u0434\u0430\u0442\u0438 \u0421\u0428\u0410",
+      id: "Format Tanggal US",
+      da: "Amerikansk datoformat"
+    },
+    "12-Hour Time": {
+      fr: "Affichage 12h",
+      sv: "12-timmars klocka",
+      nl: "12 uur tijd",
+      pl: "Czas 12-godzinny",
+      pt_BR: "Formato de 12 horas",
+      ru: "12-\u0447\u0430\u0441\u043E\u0432\u043E\u0439 \u0444\u043E\u0440\u043C\u0430\u0442 \u0432\u0440\u0435\u043C\u0435\u043D\u0438",
+      zh_CN: "12\u5C0F\u65F6\u5236",
+      sk: "12-hodinov\xFD \u010Das",
+      de: "12-Stunden Uhrzeit",
+      it: "Sistema orario a 12 ore",
+      es: "Sistema horario de 12 horas",
+      tr: "12 Saatlik zaman",
+      uk: "12-\u0433\u043E\u0434\u0438\u043D\u043D\u0438\u0439 \u0444\u043E\u0440\u043C\u0430\u0442 \u0447\u0430\u0441\u0443",
+      id: "Waktu 12-Jam",
+      da: "12-timers ur"
+    },
+    "Time zone": {
+      fr: "Fuseau horaire",
+      sv: "Tidszon",
+      nl: "Tijdzone",
+      pl: "Strefa czasowa",
+      pt_BR: "Fuso Hor\xE1rio",
+      ru: "\u0427\u0430\u0441\u043E\u0432\u043E\u0439 \u043F\u043E\u044F\u0441",
+      zh_CN: "\u65F6\u533A",
+      sk: "\u010Casov\xE9 p\xE1smo",
+      de: "Zeitzone",
+      it: "Fuso orario",
+      es: "Uso horario",
+      tr: "Saat dilimi",
+      uk: "\u0427\u0430\u0441\u043E\u0432\u0438\u0439 \u043F\u043E\u044F\u0441",
+      id: "Zona Waktu",
+      da: "Tidszone"
+    },
+    Language: {
+      fr: "Langue",
+      sv: "V\xE4lj spr\xE5k",
+      nl: "Kies een taal",
+      pl: "J\u0119zyk",
+      pt_BR: "Idioma",
+      ru: "\u042F\u0437\u044B\u043A",
+      zh_CN: "\u9009\u62E9\u8BED\u8A00",
+      sk: "Vybra\u0165 jazyk",
+      de: "Sprache",
+      it: "Lingua",
+      es: "Lenguaje o idioma",
+      tr: "Dil",
+      uk: "\u041C\u043E\u0432\u0430",
+      id: "Bahasa",
+      da: "Sprog"
+    },
+    Greeting: {
+      fr: "Bienvenue",
+      sv: "H\xE4lsning",
+      nl: "Groet",
+      pl: "Powitanie",
+      pt_BR: "Sauda\xE7\xE3o",
+      ru: "\u041F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0435",
+      zh_CN: "\u95EE\u5019",
+      sk: "S pozdravom",
+      de: "Gru\xDF",
+      it: "Saluto",
+      es: "Saludo",
+      tr: "Selamlama",
+      uk: "\u041F\u0440\u0438\u0432\u0456\u0442\u0430\u043D\u043D\u044F",
+      id: "Salam",
+      da: "Velkomst"
+    },
+    Quotes: {
+      fr: "Citations",
+      sv: "Citat",
+      nl: "Citaten",
+      pl: "Cytaty",
+      pt_BR: "Cita\xE7\xF5es",
+      ru: "\u0426\u0438\u0442\u0430\u0442\u044B",
+      zh_CN: "\u5F15\u53F7",
+      sk: "Cit\xE1cie",
+      de: "Zitate",
+      it: "Citazioni",
+      es: "Cotizaciones",
+      tr: "Al\u0131nt\u0131lar",
+      uk: "\u0426\u0438\u0442\u0430\u0442\u0438",
+      id: "Kutipan",
+      da: "Citater"
+    },
+    "Always show author": {
+      fr: "Toujours afficher l'auteur",
+      sv: "Visa alltid f\xF6rfattaren",
+      nl: "Altijd auteur weergeven",
+      pl: "Zawsze pokazuj autora",
+      pt_BR: "Sempre mostrar autor",
+      ru: "\u0412\u0441\u0435\u0433\u0434\u0430 \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u0430\u0432\u0442\u043E\u0440\u0430",
+      zh_CN: "\u59CB\u7EC8\u663E\u793A\u4F5C\u8005",
+      sk: "V\u017Edy zobrazi\u0165 autora",
+      de: "Autor immer anzeigen",
+      it: "Mostra sempre l'autore",
+      es: "Mostrar siempre el autor",
+      tr: "Yazar\u0131 her zaman g\xF6ster",
+      uk: "\u041F\u043E\u043A\u0430\u0437\u0443\u0432\u0430\u0442\u0438 \u0430\u0432\u0442\u043E\u0440\u0430",
+      id: "Selalu tunjukkan penulis",
+      da: "Vis altid forfatteren"
+    },
+    "Quote type": {
+      fr: "Type de citations",
+      sv: "Typ av citat",
+      nl: "Soort citaten",
+      pl: "Rodzaj cytatu",
+      pt_BR: "Tipo de cita\xE7\xE3o",
+      ru: "\u0412\u0438\u0434 \u0446\u0438\u0442\u0430\u0442\u044B",
+      zh_CN: "\u4E00\u79CD\u62A5\u4EF7",
+      sk: "Druh cit\xE1tu",
+      de: "Art Zitat",
+      it: "Tipo di citazione",
+      es: "Tipo de cotizaci\xF3n",
+      tr: "Al\u0131nt\u0131 t\xFCr\xFC",
+      uk: "\u0432\u0438\u0434 \u0446\u0438\u0442\u0430\u0442\u0438",
+      id: "Tipe kutipan",
+      da: "Type af citat"
+    },
+    Classic: {
+      fr: "Classique",
+      sv: "Klassisk",
+      nl: "Klassiek",
+      pl: "Klasyczny",
+      pt_BR: "Cl\xE1ssico",
+      ru: "\u041A\u043B\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043A\u0438\u0439",
+      zh_CN: "\u7ECF\u5178\u7684",
+      sk: "klasick\xE9",
+      de: "Klassisch",
+      it: "Classico",
+      es: "Cl\xE1sico",
+      tr: "Klasik",
+      uk: "\u041A\u043B\u0430\u0441\u0438\u0447\u043D\u0438\u0439",
+      id: "Klasik",
+      da: "Klassisk"
+    },
+    Fonts: {
+      fr: "Polices",
+      sv: "Anpassat teckensnitt",
+      nl: "Aangepast lettertype",
+      pl: "Czcionka",
+      pt_BR: "Fonte Personalizada",
+      ru: "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u0448\u0440\u0438\u0444\u0442",
+      zh_CN: "\u81EA\u5B9A\u4E49\u5B57\u4F53",
+      sk: "Vlastn\xE9 p\xEDsmo",
+      de: "Benutzerdefinierte Schriftart",
+      it: "Carattere personalizzato",
+      es: "Tipograf\xEDa personalizada",
+      tr: "Yaz\u0131 tipleri",
+      uk: "\u0412\u043B\u0430\u0441\u043D\u0438\u0439 \u0448\u0440\u0438\u0444\u0442",
+      id: "Pernolasasi Font",
+      da: "Skrifttyper"
+    },
+    "Font family": {
+      fr: "Police",
+      sv: "Typsnittsfamilj",
+      nl: "Lettertypefamilie",
+      pl: "Typ czcionki",
+      pt_BR: "Fam\xEDlia de fontes",
+      ru: "\u0421\u0435\u043C\u0435\u0439\u0441\u0442\u0432\u043E \u0448\u0440\u0438\u0444\u0442\u043E\u0432",
+      zh_CN: "\u5B57\u4F53\u7CFB\u5217",
+      sk: "Rodina p\xEDsem",
+      de: "Schriftfamilie",
+      it: "Famiglia di font",
+      es: "Tipograf\xEDa",
+      tr: "Yaz\u0131 tipi ailesi",
+      uk: "\u0428\u0440\u0438\u0444\u0442",
+      id: "Font family",
+      da: "Skrifttype familie"
+    },
+    Weight: {
+      fr: "\xC9paisseur",
+      sv: "Vikt",
+      nl: "Gewicht",
+      pl: "Pogrubienie",
+      pt_BR: "Peso",
+      ru: "\u041C\u0430\u0441\u0441\u0430",
+      zh_CN: "\u91CD\u91CF",
+      sk: "Hmotnos\u0165",
+      de: "Gewicht",
+      it: "Il peso",
+      es: "Peso",
+      tr: "A\u011F\u0131rl\u0131k",
+      uk: "\u041D\u0430\u0441\u0438\u0447\u0435\u043D\u0456\u0441\u0442\u044C",
+      id: "Bobot",
+      da: "V\xE6gt"
+    },
+    Size: {
+      fr: "Taille",
+      sv: "Storlek",
+      nl: "Grootte",
+      pl: "Rozmiar",
+      pt_BR: "Tamanho",
+      ru: "\u0420\u0430\u0437\u043C\u0435\u0440",
+      zh_CN: "\u5C3A\u5BF8",
+      sk: "Ve\u013Ekos\u0165",
+      de: "Gr\xF6\xDFe",
+      it: "Taglia",
+      es: "Tama\xF1o",
+      tr: "Boyut",
+      uk: "\u0420\u043E\u0437\u043C\u0456\u0440",
+      id: "Ukuran",
+      da: "st\xF8rrelse"
+    },
+    Shadow: {
+      fr: "Ombres",
+      sv: "Shadow",
+      nl: "Shadow",
+      pl: "Cie\u0144",
+      pt_BR: "Shadow",
+      ru: "\u0422\u0435\u043D\u044C",
+      zh_CN: "Shadow",
+      sk: "Shadow",
+      de: "Shadow",
+      it: "Shadow",
+      es: "Shadow",
+      tr: "G\xF6lge",
+      uk: "Shadow",
+      id: "Shadow",
+      da: "Skygge"
+    },
+    "Custom CSS": {
+      fr: "CSS personnalis\xE9",
+      sv: "Anpassad CSS",
+      nl: "Aangepaste CSS",
+      pl: "Niestandardowy kod CSS",
+      pt_BR: "CSS Personalizado",
+      ru: "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 CSS",
+      zh_CN: "\u81EA\u5B9A\u4E49 CSS",
+      sk: "Vlastn\xFD CSS",
+      de: "Benutzerdefinierte CSS",
+      it: "CSS personalizzato",
+      es: "CSS personalizado",
+      tr: "\xD6zel CSS",
+      uk: "\u0412\u043B\u0430\u0441\u043D\u0438\u0439 CSS",
+      id: "Personalisasi CSS",
+      da: "Tilpasset CSS"
+    },
+    Settings: {
+      fr: "R\xE9glages",
+      sv: "Inst\xE4llningar",
+      nl: "Instellingen",
+      pl: "Ustawienia",
+      pt_BR: "Configura\xE7\xF5es",
+      ru: "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438",
+      zh_CN: "\u8BBE\u7F6E",
+      sk: "Nastavenia",
+      de: "Einstellungen",
+      it: "Impostazioni",
+      es: "Configuraci\xF3n",
+      tr: "Ayarlar",
+      uk: "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F",
+      id: "Pengaturan",
+      da: "Indstillinger"
+    },
+    Import: {
+      fr: "Importer",
+      sv: "Importera",
+      nl: "Importeren",
+      pl: "Importuj",
+      pt_BR: "Importar",
+      ru: "\u0418\u043C\u043F\u043E\u0440\u0442",
+      zh_CN: "\u5BFC\u5165\u8BBE\u7F6E",
+      sk: "Importova\u0165",
+      de: "Importieren",
+      it: "Importare",
+      es: "Importar",
+      tr: "\u0130\xE7e aktar",
+      uk: "\u0406\u043C\u043F\u043E\u0440\u0442\u0443\u0432\u0430\u0442\u0438",
+      id: "Impor",
+      da: "Import\xE9r"
+    },
+    Export: {
+      fr: "Exporter",
+      sv: "Exportera",
+      nl: "Exporteren",
+      pl: "Eksport",
+      pt_BR: "Exportar",
+      ru: "\u042D\u043A\u0441\u043F\u043E\u0440\u0442",
+      zh_CN: "\u5BFC\u51FA\u8BBE\u7F6E",
+      sk: "Export",
+      de: "Exportieren",
+      it: "Esportare",
+      es: "Exportar",
+      tr: "D\u0131\u015Fa aktar",
+      uk: "\u0415\u043A\u0441\u043F\u043E\u0440\u0442\u0443\u0432\u0430\u0442\u0438",
+      id: "Ekspor",
+      da: "Eksport\xE9r"
+    },
+    Copied: {
+      fr: "Copi\xE9",
+      sv: "Kopierat",
+      nl: "Gekopieerd",
+      pl: "Skopiowano",
+      pt_BR: "Copiado",
+      ru: "\u0421\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u043E",
+      zh_CN: "\u5DF2\u590D\u5236",
+      sk: "Skop\xEDrovan\xE9",
+      de: "Kopiert",
+      it: "Copiato",
+      es: "Copiado",
+      tr: "Kopyaland\u0131",
+      uk: "\u0421\u043A\u043E\u043F\u0456\u0439\u043E\u0432\u0430\u043D\u043E",
+      id: "Disalin",
+      da: "Kopieret"
+    },
+    "Copy text": {
+      fr: "Copier texte",
+      sv: "Kopiera text",
+      nl: "Tekst kopi\xEBren",
+      pl: "Kopiowanie tekstu",
+      pt_BR: "Copiar texto",
+      ru: "\u041A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0442\u0435\u043A\u0441\u0442\u0430",
+      zh_CN: "\u590D\u5236\u6587\u672C",
+      sk: "Kop\xEDrovanie textu",
+      de: "Text kopieren",
+      it: "Copiare il testo",
+      es: "Copiar texto",
+      tr: "Metni kopyala",
+      uk: "\u041A\u043E\u043F\u0456\u044E\u0432\u0430\u0442\u0438 \u0442\u0435\u043A\u0441\u0442",
+      id: "Salin teks",
+      da: "Kopiering af tekst"
+    },
+    "Export as file": {
+      fr: "Exporter comme fichier",
+      sv: "Exportera som fil",
+      nl: "Exporteer als bestand",
+      pl: "Eksportuj jako plik",
+      pt_BR: "Exportar como arquivo",
+      ru: "\u042D\u043A\u0441\u043F\u043E\u0440\u0442 \u0432 \u0444\u0430\u0439\u043B",
+      zh_CN: "\u5BFC\u51FA\u4E3A\u6587\u4EF6",
+      sk: "Exportova\u0165 ako s\xFAbor",
+      de: "Als Datei exportieren",
+      it: "Esportazione come file",
+      es: "Exportar como archivo",
+      tr: "Dosya olarak d\u0131\u015Fa aktar",
+      uk: "\u0415\u043A\u0441\u043F\u043E\u0440\u0442\u0443\u0432\u0430\u0442\u0438 \u0443 \u0444\u0430\u0439\u043B",
+      id: "Ekspor sebagai file",
+      da: "Eksport som fil"
+    },
+    "Drop file to import settings": {
+      fr: "D\xE9poser le fichier pour importer les param\xE8tres",
+      sv: "Sl\xE4pp fil f\xF6r att importera inst\xE4llningar",
+      nl: "Drop bestand om instellingen te importeren",
+      pl: "Upu\u015B\u0107 plik, aby zaimportowa\u0107 ustawienia",
+      pt_BR: "Arquivo drop to import settings",
+      ru: "\u0421\u043A\u0438\u043D\u044C\u0442\u0435 \u0444\u0430\u0439\u043B \u0434\u043B\u044F \u0438\u043C\u043F\u043E\u0440\u0442\u0430 \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A",
+      zh_CN: "\u5220\u9664\u6587\u4EF6\u4EE5\u5BFC\u5165\u8BBE\u7F6E",
+      sk: "Spustenie s\xFAboru na import nastaven\xED",
+      de: "Datei ablegen, um Einstellungen zu importieren",
+      it: "Rilasciare il file per importare le impostazioni",
+      es: "Soltar el archivo para importar la configuraci\xF3n",
+      tr: "Ayarlar\u0131 i\xE7e aktarmak i\xE7in dosya b\u0131rak\u0131n",
+      uk: "\u0421\u043A\u0438\u043D\u044C\u0442\u0435 \u0444\u0430\u0439\u043B \u0434\u043B\u044F \u0456\u043C\u043F\u043E\u0440\u0442\u0443 \u043D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u044C",
+      id: "Jatuhkan file untuk mengimpor pengaturan",
+      da: "Drop fil for at importere indstillinger"
+    },
+    "or paste as text": {
+      fr: "ou coller en tant que texte",
+      sv: "eller klistra in som text",
+      nl: "of plakken als tekst",
+      pl: "lub wklej jako tekst",
+      pt_BR: "ou colar como texto",
+      ru: "\u0438\u043B\u0438 \u0432\u0441\u0442\u0430\u0432\u044C\u0442\u0435 \u043A\u0430\u043A \u0442\u0435\u043A\u0441\u0442",
+      zh_CN: "\u6216\u4F5C\u4E3A\u6587\u672C\u7C98\u8D34",
+      sk: "alebo vlo\u017Ete ako text",
+      de: "oder als Text einf\xFCgen",
+      it: "o incollare come testo",
+      es: "o pegar como texto",
+      tr: "veya metin olarak yap\u0131\u015Ft\u0131r\u0131n",
+      uk: "\u0430\u0431\u043E \u0432\u0441\u0442\u0430\u0432\u0438\u0442\u0438 \u044F\u043A \u0442\u0435\u043A\u0441\u0442",
+      id: "atau tempelkan sebagai teks",
+      da: "of plakken als tekst"
+    },
+    "Reset settings": {
+      fr: "R\xE9initialiser les r\xE9glages",
+      sv: "\xC5terst\xE4ll inst\xE4llningar",
+      nl: "Reset instellingen",
+      pl: "Przywr\xF3\u0107 ustawienia domy\u015Blne",
+      pt_BR: "Redefinir configura\xE7\xF5es",
+      ru: "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438",
+      zh_CN: "\u91CD\u65B0\u8BBE\u7F6E",
+      sk: "Obnovi\u0165 nastavenia",
+      de: "Einstellungen zur\xFCcksetzen",
+      it: "Impostazioni iniziali",
+      es: "Restablecer configuraci\xF3n",
+      tr: "Ayarlar\u0131 s\u0131f\u0131rla",
+      uk: "\u0421\u043A\u0438\u043D\u0443\u0442\u0438 \u043D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F",
+      id: "Setel ulang pengaturan",
+      da: "Nulstil indstillingerne"
+    },
+    "Are you sure ?": {
+      fr: "Vous \xEAtes s\xFBr ?",
+      sv: "\xC4r du s\xE4ker?",
+      nl: "Weet u het zeker ?",
+      pl: "Czy jeste\u015B pewien?",
+      pt_BR: "Voc\xEA tem certeza?",
+      ru: "\u0412\u044B \u0443\u0432\u0435\u0440\u0435\u043D\u044B?",
+      zh_CN: "\u4F60\u786E\u5B9A\u5417\uFF1F",
+      sk: "Ste si ist\xED ?",
+      de: "Sind Sie sicher?",
+      it: "Sei sicuro?",
+      es: "\xBFEst\xE1 seguro?",
+      tr: "Emin misin?",
+      uk: "\u0412\u0438 \u0432\u043F\u0435\u0432\u043D\u0435\u043D\u0456?",
+      id: "Apakah Anda yakin?",
+      da: "Er du sikker?"
+    },
+    "I am sure": {
+      fr: "Je suis s\xFBr",
+      sv: "Jag \xE4r s\xE4ker",
+      nl: "Ik ben zeker",
+      pl: "Jestem pewien.",
+      pt_BR: "Sim",
+      ru: "\u0423\u0432\u0435\u0440\u0435\u043D",
+      zh_CN: "\u6211\u786E\u5B9A",
+      sk: "Som si ist\xFD",
+      de: "Ich bin sicher",
+      it: "Sono sicuro",
+      es: "Estoy seguro",
+      tr: "Eminim.",
+      uk: "\u0422\u0430\u043A",
+      id: "Saya yakin",
+      da: "Jeg er sikker"
+    },
+    "No, go back": {
+      fr: "Finalement non",
+      sv: "Nej, g\xE5 tillbaka",
+      nl: "Nee, ga terug",
+      pl: "Nie, wr\xF3\u0107",
+      pt_BR: "N\xE3o, voltar",
+      ru: "\u041D\u0435\u0442, \u0432\u0435\u0440\u043D\u0438\u0442\u0435\u0441\u044C \u043D\u0430\u0437\u0430\u0434",
+      zh_CN: "\u4E0D\u786E\u5B9A\uFF0C\u56DE\u53BB\u5427",
+      sk: "Nie, vr\xE1\u0165te sa sp\xE4\u0165",
+      de: "Nein, zur\xFCckgehen",
+      it: "No, torna indietro",
+      es: "No, vuelva atr\xE1s",
+      tr: "Hay\u0131r, geri d\xF6n.",
+      uk: "\u041D\u0456, \u043F\u043E\u0432\u0435\u0440\u043D\u0456\u0442\u044C\u0441\u044F \u043D\u0430\u0437\u0430\u0434",
+      id: "Tidak, kembali",
+      da: "Nej, g\xE5 tilbage"
+    },
+    "Made in France with \u2764\uFE0F": {
+      fr: "Fabriqu\xE9 en France avec \u2764\uFE0F",
+      sv: "Tillverkad i frankrike med \u2764\uFE0F",
+      nl: "Gemaakt in Frankrijk met \u2764\uFE0F",
+      pl: "Stworzone we Francji z \u2764\uFE0F",
+      pt_BR: "Feito na Fran\xE7a com \u2764\uFE0F",
+      ru: "\u0421\u0434\u0435\u043B\u0430\u043D\u043E \u0432\u043E \u0424\u0440\u0430\u043D\u0446\u0438\u0438 \u0441 \u2764\uFE0F",
+      zh_CN: "\u6E90\u81EA\u6CD5\u56FD \u5320\u2764\uFE0F\u6253\u9020",
+      sk: "Spraven\xE9 vo Franc\xFAzsku s \u2764\uFE0F",
+      de: "Gemacht in Frankreich mit \u2764\uFE0F",
+      it: "Fatto in Francia con \u2764\uFE0F",
+      es: "Hecho en Francia con \u2764\uFE0F",
+      tr: "\u2764\uFE0F ile Fransa'da \xFCretilmi\u015Ftir",
+      uk: "\u0421\u0442\u0432\u043E\u0440\u0435\u043D\u043E \u0432 \u0424\u0440\u0430\u043D\u0446\u0456\u0457 \u0437 \u2764\uFE0F",
+      id: "Dibuat di Prancis dengan \u2764\uFE0F",
+      da: "Lavet i Frankrig med \u2764\uFE0F"
+    },
+    by: {
+      fr: "par",
+      sv: "av",
+      nl: "Door",
+      pl: "przez",
+      pt_BR: "por",
+      ru: "\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u0438:",
+      zh_CN: "\u7531",
+      sk: "od",
+      de: "von",
+      it: "Da",
+      es: "por",
+      tr: "taraf\u0131ndan",
+      uk: "\u0420\u043E\u0437\u0440\u043E\u0431\u043D\u0438\u043A\u0438:",
+      id: "oleh",
+      da: "af"
+    },
+    Visit: {
+      fr: "Rendez-vous sur",
+      sv: "Bes\xF6k",
+      nl: "Bezoek",
+      pl: "Do zobaczenia na",
+      pt_BR: "Veja",
+      ru: "\u041F\u043E\u0441\u0435\u0442\u0438\u0442\u0435",
+      zh_CN: "\u8BBF\u95EE",
+      sk: "Nav\u0161t\xEDvte",
+      de: "Besuche",
+      it: "Visita",
+      es: "Visita",
+      tr: "Ziyaret Et",
+      uk: "\u0412\u0456\u0434\u0432\u0456\u0434\u0430\u0439\u0442\u0435",
+      id: "Kunjungi",
+      da: "Bes\xF8g"
+    },
+    "our website": {
+      fr: "notre site Internet",
+      sv: "v\xE5r hemsida",
+      nl: "onze website",
+      pl: "nasza strona",
+      pt_BR: "nosso site",
+      ru: "\u043D\u0430\u0448 \u0441\u0430\u0439\u0442",
+      zh_CN: "\u6211\u4EEC\u7684\u7F51\u7AD9",
+      sk: "na\u0161u webstr\xE1nku",
+      de: "unsere Website",
+      it: "il nostro sito internet",
+      es: "nuestro sitio web",
+      tr: "websitemiz",
+      uk: "\u043D\u0430\u0448 \u0441\u0430\u0439\u0442",
+      id: "Website kami",
+      da: "vores hjemmeside"
+    },
+    "for infos and donations": {
+      fr: "pour en savoir plus ou faire un don",
+      sv: "f\xF6r mera information och donationer",
+      nl: "Voor informatie en donaties",
+      pl: "aby dowiedzie\u0107 si\u0119 wi\u0119cej lub przekaza\u0107 darowizn\u0119",
+      pt_BR: "para mais informa\xE7\xF5es e doa\xE7\xF5es",
+      ru: "\u0447\u0442\u043E\u0431\u044B \u0443\u0437\u043D\u0430\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435 \u0438\u043B\u0438 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0430\u0442\u044C \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u043E\u0432",
+      zh_CN: "\u4EE5\u83B7\u53D6\u66F4\u591A\u8D44\u8BAF\uFF0C\u6216\u5411\u6211\u4EEC\u6350\u6B3E",
+      sk: "pre inform\xE1cie a dary",
+      de: "f\xFCr Informationen und Spenden",
+      it: "per info e donazioni",
+      es: "para m\xE1s info y donaciones",
+      tr: "bilgi ve ba\u011F\u0131\u015F i\xE7in",
+      uk: "\u0434\u043B\u044F \u043E\u0442\u0440\u0438\u043C\u0430\u043D\u043D\u044F \u0434\u043E\u0434\u0430\u0442\u043A\u043E\u0432\u043E\u0457 \u0456\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0456\u0457 \u0430\u0431\u043E \u043F\u043E\u0436\u0435\u0440\u0442\u0432\u0443\u0432\u0430\u043D\u043D\u044F",
+      id: "untuk info dan donasi",
+      da: "for at l\xE6re mere eller donere"
+    }
+  };
+  var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+  var enginesUrls = {
+    google: "https://www.google%l/search?q=%s",
+    ddg: "https://duckduckgo.com/?q=%s&kl=%l",
+    startpage: "https://www.startpage.com/do/search?query=%s&language=%l",
+    qwant: "https://www.qwant.com/?q=%s&r=%l",
+    yahoo: "https://%lsearch.yahoo.com/search?q=%s",
+    bing: "https://www.bing.com/search?q=%s&cc=%l",
+    brave: "https://search.brave.com/search?q=%s",
+    ecosia: "https://www.ecosia.org/search?q=%s",
+    lilo: "https://search.lilo.org/?q=%s"
+  };
+  var enginesLocales = {
+    google: {
+      fr: ".fr",
+      en: ".com",
+      ru: ".ru",
+      pl: ".pl",
+      pt_BR: ".com.br",
+      sv: ".se",
+      sl: ".sl",
+      nl: ".nl",
+      zh_CN: ".tw",
+      sk: ".sk",
+      de: ".de",
+      it: ".it",
+      es: ".es",
+      no: ".no",
+      tr: ".com.tr",
+      uk: ".com.ua",
+      id: ".co.id",
+      da: ".dk"
+    },
+    ddg: {
+      fr: "fr-fr",
+      en: "en-US",
+      ru: "ru-ru",
+      pl: "pl-pl",
+      pt_BR: "br-pt",
+      sv: "se-se",
+      sl: "sl-sl",
+      nl: "nl-nl",
+      zh_CN: "cn-zh",
+      sk: "sk-sk",
+      de: "de-de",
+      it: "it-it",
+      es: "es-es",
+      no: "no-no",
+      tr: "tr-tr",
+      uk: "uk-UA",
+      id: "id-ID",
+      da: "dk-da"
+    },
+    startpage: {
+      fr: "francais",
+      en: "english",
+      ru: "russian",
+      pl: "polski",
+      pt_BR: "br-pt",
+      sv: "svenska",
+      sl: "sl-sl",
+      nl: "nl-nl",
+      zh_CN: "cn-zh",
+      sk: "sk-sk",
+      de: "de-de",
+      it: "italiano",
+      es: "es-es",
+      no: "norsk",
+      tr: "tr-tr",
+      uk: "ukrainian",
+      id: "interlingua",
+      da: "dansk"
+    },
+    qwant: {
+      fr: "FR&sr=fr",
+      en: "US&sr=en",
+      ru: "RU&sr=ru",
+      pl: "PL&sr=pl",
+      pt_BR: "BR&sr=pt",
+      sv: "SE&sr=sv",
+      sl: "SL&sr=sl",
+      nl: "NL&sr=nl",
+      zh_CN: "SG&sr=en",
+      sk: "en&sr=en",
+      de: "DE&sr=de",
+      it: "IT&sr=it",
+      es: "ES&sr=es",
+      no: "NO&sr=nb",
+      tr: "US&sr=en",
+      uk: "US&sr=en",
+      id: "US&sr=en",
+      da: "DK&sr=da"
+    },
+    yahoo: {
+      fr: "fr.",
+      en: "",
+      ru: "ru.",
+      pl: "pl.",
+      pt_BR: "br.",
+      sv: "se.",
+      sl: "sl.",
+      nl: "nl.",
+      zh_CN: "",
+      sk: "",
+      de: "de.",
+      it: "it.",
+      es: "es.",
+      no: "no.",
+      tr: "tr.",
+      uk: "ua.",
+      id: "id.",
+      da: "dk."
+    },
+    bing: {
+      fr: "fr",
+      en: "",
+      ru: "ru",
+      pl: "pl",
+      pt_BR: "br",
+      sv: "se",
+      sl: "sl",
+      nl: "nl",
+      zh_CN: "",
+      sk: "sk",
+      de: "de",
+      it: "it",
+      es: "es",
+      no: "no",
+      tr: "tr",
+      uk: "uk",
+      id: "id",
+      da: "da"
+    }
+  };
+
+  // src/scripts/settings.ts
+  var import_lodash = __toESM(require_lodash());
+  var import_lodash2 = __toESM(require_lodash2());
+
+  // src/scripts/utils.ts
+  var $ = (name) => document.getElementById(name);
+  var has = (dom, val) => {
+    if (!dom)
+      return false;
+    else
+      return dom.classList.length > 0 ? dom.classList.contains(val) : false;
+  };
+  var clas = (dom, add, str) => {
+    if (dom === null)
+      return;
+    else
+      add ? dom.classList.add(str) : dom.classList.remove(str);
+  };
+  var mobilecheck = () => navigator.userAgentData ? navigator.userAgentData.mobile : /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  var stringMaxSize = (str, size) => str.length > size ? str.slice(0, size) : str;
+  var minutator = (date) => date.getHours() * 60 + date.getMinutes();
+  var extractDomain = (url) => {
+    url.replace(/(^\w+:|^)\/\//, "");
+    url.split("?")[0];
+    return url;
+  };
+  var extractHostname = (url) => {
+    const a = document.createElement("a");
+    let res = "";
+    a.href = url;
+    res = a.hostname;
+    a.remove();
+    return res;
+  };
+  var randomString = (len) => {
+    const chars = "abcdefghijklmnopqr";
+    return Array.from({ length: len }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
+  };
+  function detectPlatform() {
+    const p = window.location.protocol;
+    return p === "moz-extension:" ? "firefox" : p === "chrome-extension:" ? "chrome" : p === "safari-web-extension:" ? "safari" : "online";
+  }
+  var getBrowser = (agent = window.navigator.userAgent.toLowerCase()) => {
+    return agent.indexOf("edg/") > -1 ? "edge" : agent.indexOf("chrome") > -1 ? "chrome" : agent.indexOf("firefox") > -1 ? "firefox" : agent.indexOf("safari") > -1 ? "safari" : "other";
+  };
+  var getFavicon = () => {
+    return getBrowser() === "edge" ? "monochrome.png" : "favicon-128x128.png";
+  };
+  function periodOfDay(sunTime2, time) {
+    const { rise, set, now } = sunTime2;
+    if (!time)
+      time = now;
+    else
+      time = minutator(new Date(time));
+    if (time >= 0 && time <= rise - 60)
+      return "night";
+    if (time <= rise + 60)
+      return "noon";
+    if (time <= set - 60)
+      return "day";
+    if (time <= set + 60)
+      return "evening";
+    if (time >= set + 60)
+      return "night";
+    return "day";
+  }
+  function validateHideElem(hide) {
+    let res = true;
+    Array.isArray(hide) && hide.length > 0 ? hide.forEach((parent) => {
+      Array.isArray(parent) ? parent.forEach((child) => {
+        typeof child === "number" ? "" : res = false;
+      }) : res = false;
+    }) : res = false;
+    return res;
+  }
+  function bundleLinks(storage) {
+    let res = [];
+    Object.entries(storage).map(([key, val]) => {
+      if (key.length === 11 && key.startsWith("links"))
+        res.push(val);
+    });
+    res.sort((a, b) => a.order - b.order);
+    return res;
+  }
+  var inputThrottle = (elem, time = 800) => {
+    let isThrottled = true;
+    setTimeout(() => {
+      isThrottled = false;
+      elem.removeAttribute("disabled");
+    }, time);
+    if (isThrottled)
+      elem.setAttribute("disabled", "");
+  };
+  function turnRefreshButton(button, canTurn) {
+    const animationOptions = { duration: 600, easing: "ease-out" };
+    button.animate(
+      canTurn ? [{ transform: "rotate(360deg)" }] : [{ transform: "rotate(0deg)" }, { transform: "rotate(90deg)" }, { transform: "rotate(0deg)" }],
+      animationOptions
+    );
+  }
+  function closeEditLink() {
+    const domedit = document.querySelector("#editlink");
+    if (!domedit)
+      return;
+    clas(domedit, true, "hiding");
+    document.querySelectorAll("#linkblocks img").forEach((img) => clas(img, false, "selected"));
+    setTimeout(() => {
+      domedit ? domedit.setAttribute("class", "") : "";
+    }, 200);
+  }
+  var lsOnlineStorage = {
+    get: (local, unused, callback) => {
+      const key = local ? "bonjourrBackgrounds" : "bonjourr";
+      const data = localStorage[key] ? JSON.parse(localStorage[key]) : {};
+      callback(data);
+    },
+    set: (prop, callback) => {
+      lsOnlineStorage.get(false, null, (data) => {
+        if (typeof prop === "object") {
+          const [key, val] = Object.entries(prop)[0];
+          if (key === "import")
+            data = val;
+          else
+            data[key] = val;
+          try {
+            localStorage.bonjourr = JSON.stringify(data);
+            if (callback)
+              callback;
+          } catch (error) {
+            console.warn(error);
+            console.warn("Bonjourr couldn't save this setting \u{1F605}\nMemory might be full");
+          }
+          window.dispatchEvent(new Event("storage"));
+        }
+      });
+    },
+    clear: () => {
+      localStorage.removeItem("bonjourr");
+    },
+    setLocal: (prop, callback) => {
+      lsOnlineStorage.get(true, null, (data) => {
+        if (typeof prop === "object") {
+          data = { ...data, ...prop };
+          try {
+            localStorage.bonjourrBackgrounds = JSON.stringify(data);
+            if (callback)
+              callback;
+          } catch (error) {
+            console.log(error);
+            console.log(console.warn("Bonjourr couldn't save this setting \u{1F605}\nMemory might be full"));
+          }
+        }
+      });
+    },
+    remove: (isLocal, key) => {
+      lsOnlineStorage.get(isLocal, null, (data) => {
+        delete data[key];
+        if (isLocal)
+          localStorage.bonjourrBackgrounds = JSON.stringify(data);
+        else
+          localStorage.bonjourr = JSON.stringify(data);
+      });
+    },
+    log: (isLocal) => lsOnlineStorage.get(isLocal, null, (data) => console.log(data)),
+    del: () => localStorage.clear()
+  };
+  var getBrowserStorage = () => {
+    lsOnlineStorage.get(true, null, (local) => {
+      lsOnlineStorage.get(false, null, (sync) => console.log("local: ", local, "sync: ", sync));
+    });
+  };
+  function deleteBrowserStorage() {
+    if (detectPlatform() !== "online") {
+      lsOnlineStorage.clear();
+      lsOnlineStorage.local.clear();
+    }
+    localStorage.clear();
+    setTimeout(() => {
+      location.reload();
+    }, 400);
+  }
+  function errorMessage(comment, error) {
+    const dominterface2 = $("interface");
+    function displayMessage(dataStr) {
+      const warning = document.createElement("div");
+      const title = document.createElement("h1");
+      const subtitle = document.createElement("p");
+      const errorcode = document.createElement("textarea");
+      const explain = document.createElement("p");
+      const resetButton = document.createElement("button");
+      const closeError = document.createElement("button");
+      const buttonWrap = document.createElement("div");
+      title.textContent = comment + " \u{1F616}";
+      subtitle.textContent = `Copy your settings below and contact us !`;
+      explain.textContent = "Sharing your settings with us helps a lot in debugging. You can also reset Bonjourr, or close this window for now if you think it is a false alert.";
+      explain.className = "error-explain";
+      errorcode.textContent = dataStr;
+      errorcode.setAttribute("spellcheck", "false");
+      resetButton.textContent = "Reset Bonjourr";
+      resetButton.addEventListener("click", () => {
+        warning.style.opacity = "0";
+        deleteBrowserStorage();
+      });
+      closeError.className = "error-buttons-close";
+      closeError.textContent = "Close this window";
+      closeError.addEventListener("click", () => {
+        sessionStorage.errorMessage = "removed";
+        warning.style.opacity = "0";
+        setTimeout(() => warning.style.display = "none", 400);
+      });
+      buttonWrap.className = "error-buttons";
+      buttonWrap.appendChild(resetButton);
+      buttonWrap.appendChild(closeError);
+      warning.appendChild(title);
+      warning.appendChild(subtitle);
+      warning.appendChild(errorcode);
+      warning.appendChild(explain);
+      warning.appendChild(buttonWrap);
+      warning.id = "error";
+      document.body.prepend(warning);
+      dominterface2 ? dominterface2.style.opacity = "1" : "";
+      setTimeout(() => warning.style.opacity = "1", 20);
+    }
+    console.error(error);
+    if (sessionStorage.errorMessage === "removed" && dominterface2) {
+      dominterface2.style.opacity = "1";
+      return false;
+    } else {
+      lsOnlineStorage.get(false, null, (data) => {
+        try {
+          displayMessage(JSON.stringify(data, null, 4));
+        } catch (e2) {
+          displayMessage("");
+        }
+      });
+    }
+  }
+  var testOS = {
+    mac: window.navigator.appVersion.includes("Macintosh"),
+    windows: window.navigator.appVersion.includes("Windows"),
+    android: window.navigator.userAgent.includes("Android"),
+    ios: ["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhone", "iPod"].includes(navigator.platform) || navigator.userAgent.includes("Mac") && "ontouchend" in document
+  };
+  var safeFontList = {
+    fallback: { placeholder: "Arial", weights: ["500", "600", "800"] },
+    windows: { placeholder: "Segoe UI", weights: ["300", "400", "600", "700", "800"] },
+    android: { placeholder: "Roboto", weights: ["100", "300", "400", "500", "700", "900"] },
+    linux: { placeholder: "Fira Sans", weights: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] },
+    apple: { placeholder: "SF Pro Display", weights: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] }
+  };
+  var langList = {
+    en: "English",
+    fr: "Fran\xE7ais",
+    sk: "Slovensk\xFD",
+    sv: "Svenska",
+    pl: "Polski",
+    pt_BR: "Portugu\xEAs (Brasil)",
+    nl: "Nederlandse",
+    ru: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439",
+    zh_CN: "\u7B80\u4F53\u4E2D\u6587",
+    de: "Deutsch",
+    it: "Italiano",
+    es: "Espa\xF1ol",
+    tr: "T\xFCrk\xE7e",
+    uk: "\u0423\u043A\u0440\u0430\u0457\u043D\u0441\u044C\u043A\u0430",
+    id: "Indonesia",
+    da: "Dansk"
+  };
+  var defaultLang = "en";
+  var navLang = navigator.language.replace("-", "_");
+  for (const [code] of Object.entries(langList)) {
+    if (navLang === code || navLang.startsWith(code.substring(0, 2))) {
+      defaultLang = code;
+    }
+  }
+  function tradThis(str, lang) {
+    if (!lang) {
+      lang = document.documentElement.getAttribute("lang") || "en";
+    }
+    if (!Object.keys(dict.April).includes(lang)) {
+      return str;
+    }
+    if (Object.keys(dict).includes(str)) {
+      return dict[str][lang];
+    }
+    return str;
+  }
+  var syncDefaults = {
+    usdate: false,
+    showall: false,
+    quicklinks: true,
+    linksrow: 6,
+    linknewtab: false,
+    linkstyle: "large",
+    cssHeight: 80,
+    reviewPopup: 0,
+    background_blur: 15,
+    background_bright: 0.8,
+    notes: {
+      on: false,
+      opacity: 0.1,
+      align: "left",
+      text: `### ${tradThis("Double click to edit", defaultLang)}!
+[ ] ${tradThis(
+        "Supports Markdown and clickable checkboxes",
+        defaultLang
+      )}  
+[ ] ${tradThis("With keyboard shortcuts", defaultLang)}, [${tradThis(
+        "see documentation",
+        defaultLang
+      )}](https://bonjourr.fr/misc#notes)`
+    },
+    css: "",
+    lang: defaultLang,
+    favicon: "",
+    tabtitle: "",
+    greeting: "",
+    dark: "system",
+    custom_time: 1650516688,
+    custom_every: "pause",
+    background_type: "dynamic",
+    clock: {
+      ampm: false,
+      analog: false,
+      seconds: false,
+      face: "none",
+      timezone: "auto"
+    },
+    dynamic: {
+      every: "hour",
+      collection: "",
+      lastCollec: "day",
+      time: Date.now()
+    },
+    weather: {
+      ccode: "FR",
+      city: "Paris",
+      unit: "metric",
+      location: [],
+      forecast: "auto",
+      temperature: "actual"
+    },
+    searchbar: {
+      on: false,
+      opacity: 0.1,
+      newtab: false,
+      engine: "google",
+      request: ""
+    },
+    quotes: {
+      on: false,
+      author: false,
+      type: "classic",
+      frequency: "day",
+      last: 1650516688
+    },
+    font: {
+      url: "",
+      family: "",
+      size: "14",
+      availWeights: [],
+      weight: testOS.windows ? "400" : "300"
+    },
+    textShadow: 0.2,
+    hide: [[0, 0], [0, 0, 0], [0], [0]],
+    about: { browser: detectPlatform(), version: "1.15.0" }
+  };
+  var localDefaults = {
+    waitingForPreload: false,
+    selectedId: "",
+    idsList: [],
+    quotesCache: [],
+    dynamicCache: {
+      noon: [],
+      day: [],
+      evening: [],
+      night: [],
+      user: []
+    }
+  };
+
+  // src/scripts/settings.ts
+  function initParams(data, settingsDom) {
+    if (settingsDom == null) {
+      return;
+    }
+    const paramId = (str) => settingsDom.querySelector("#" + str);
+    const paramClasses = (str) => settingsDom.querySelectorAll("." + str);
+    const initCheckbox = (id, cat) => {
+      ;
+      paramId(id).checked = cat ? true : false;
+    };
+    const initInput = (id, val) => {
+      const input = paramId(id);
+      input.value = typeof val === "string" ? val : val.toString();
+    };
+    const whichFreq = data.background_type === "custom" ? data.custom_every : data.dynamic?.every || "hour";
+    const whichFreqDefault = data.background_type === "custom" ? "pause" : "hour";
+    initInput("i_blur", data.background_blur?.toString() || 15);
+    initInput("i_bright", data.background_bright?.toString() || 0.8);
+    initInput("cssEditor", data.css || "");
+    initInput("i_row", data.linksrow || 8);
+    initInput("i_linkstyle", data.linkstyle || "default");
+    initInput("i_type", data.background_type || "dynamic");
+    initInput("i_freq", whichFreq || whichFreqDefault);
+    initInput("i_dark", data.dark || "system");
+    initInput("i_favicon", data.favicon || "");
+    initInput("i_tabtitle", data.tabtitle || "");
+    initInput("i_greeting", data.greeting || "");
+    initInput("i_textshadow", data.textShadow?.toString() || 0.2);
+    initInput("i_notesopacity", data.notes?.opacity || 0.1);
+    initInput("i_notesalign", data.notes?.align || "left");
+    initInput("i_textshadow", data.textShadow || 0.2);
+    initInput("i_sbengine", data.searchbar?.engine || "google");
+    initInput("i_sbopacity", data.searchbar?.opacity || 0.1);
+    initInput("i_sbrequest", data.searchbar?.request || "");
+    initInput("i_qtfreq", data.quotes?.frequency || "day");
+    initInput("i_qttype", data.quotes?.type || "classic");
+    initInput("i_clockface", data.clock?.face || "none");
+    initInput("i_timezone", data.clock?.timezone || "auto");
+    initInput("i_collection", data.dynamic?.collection || "");
+    initInput("i_ccode", data.weather?.ccode || "US");
+    initInput("i_forecast", data.weather?.forecast || "auto");
+    initInput("i_temp", data.weather?.temperature || "actual");
+    initInput("i_customfont", data.font?.family || "");
+    initInput("i_weight", data.font?.weight || "300");
+    initInput("i_size", data.font?.size || (mobilecheck() ? 11 : 14));
+    initCheckbox("i_showall", data.showall);
+    initCheckbox("i_quicklinks", data.quicklinks);
+    initCheckbox("i_linknewtab", data.linknewtab);
+    initCheckbox("i_usdate", data.usdate);
+    initCheckbox("i_geol", typeof data.weather?.location !== "boolean");
+    initCheckbox("i_units", data.weather?.unit === "imperial" || false);
+    initCheckbox("i_notes", data.notes?.on || false);
+    initCheckbox("i_sb", data.searchbar?.on || false);
+    initCheckbox("i_quotes", data.quotes?.on || false);
+    initCheckbox("i_ampm", data.clock?.ampm || false);
+    initCheckbox("i_sbnewtab", data.searchbar?.newtab || false);
+    initCheckbox("i_qtauthor", data.quotes?.author || false);
+    initCheckbox("i_seconds", data.clock?.seconds || false);
+    initCheckbox("i_analog", data.clock?.analog || false);
+    translatePlaceholders(settingsDom);
+    if (mobilecheck()) {
+      settingsDom.querySelector(".tooltiptext .instructions").textContent = tradThis(
+        `Edit your Quick Links by long-pressing the icon.`
+      );
+    }
+    const i_lang = paramId("i_lang");
+    Object.entries(langList).forEach(([code, title]) => {
+      let option = document.createElement("option");
+      option.value = code;
+      option.text = title;
+      i_lang.appendChild(option);
+    });
+    initInput("i_lang", data.lang || "en");
+    if (localStorage.hasUpdated === "true") {
+      changelogControl(settingsDom);
+    }
+    if (detectPlatform() === "safari" || detectPlatform() === "online") {
+      paramId("b_importbookmarks").setAttribute("style", "display: none");
+    }
+    clas(paramId("quicklinks_options"), data.quicklinks, "shown");
+    hideElem(null, { is: "buttons", buttonList: settingsDom.querySelectorAll("#hideelem button") });
+    safeFont(settingsDom);
+    if (data.font?.family !== "")
+      customFont(null, { is: "autocomplete", elem: settingsDom });
+    if (data.font?.availWeights?.length > 0)
+      modifyWeightOptions(data.font.availWeights, settingsDom);
+    if (data.background_type === "custom") {
+      paramId("custom").setAttribute("style", "display: block");
+      settingsDom.querySelector(".as_collection")?.setAttribute("style", "display: none");
+      localBackgrounds(null, { is: "thumbnail", settings: settingsDom });
+    }
+    const i_geol = paramId("i_geol");
+    if (data.weather && Object.keys(data.weather).length > 0) {
+      const isGeolocation = data.weather?.location?.length > 0;
+      let cityName = data.weather?.city || "City";
+      paramId("i_city").setAttribute("placeholder", cityName);
+      clas(paramId("sett_city"), isGeolocation, "hidden");
+      i_geol.checked = isGeolocation;
+    } else {
+      clas(paramId("sett_city"), true, "hidden");
+      i_geol.checked = true;
+    }
+    clas(paramId("notes_options"), data.notes?.on || false, "shown");
+    clas(paramId("searchbar_options"), data.searchbar?.on, "shown");
+    clas(paramId("searchbar_request"), data.searchbar?.engine === "custom", "shown");
+    if (data.cssHeight) {
+      paramId("cssEditor").setAttribute("style", "height: " + data.cssHeight + "px");
+    }
+    clas(paramId("quotes_options"), data.quotes?.on, "shown");
+    updateExportJSON(settingsDom);
+    const enterBlurs = (elem) => {
+      elem.onkeyup = (e2) => {
+        e2.key === "Enter" ? e2.target.blur() : "";
+      };
+    };
+    enterBlurs(paramId("i_favicon"));
+    enterBlurs(paramId("i_tabtitle"));
+    enterBlurs(paramId("i_greeting"));
+    paramClasses("uploadContainer").forEach(function(uploadContainer) {
+      const toggleDrag = () => uploadContainer.classList.toggle("dragover");
+      const input = uploadContainer.querySelector('input[type="file"');
+      input?.addEventListener("dragenter", toggleDrag);
+      input?.addEventListener("dragleave", toggleDrag);
+      input?.addEventListener("drop", toggleDrag);
+    });
+    if (mobilecheck()) {
+      const instr = settingsDom.querySelector(".tooltiptext .instructions");
+      if (instr)
+        instr.textContent = tradThis(`Edit your Quick Links by long-pressing the icon.`);
+    }
+    settingsDom.querySelectorAll(".tooltip").forEach((elem) => {
+      elem.addEventListener("click", function() {
+        const cl = [...elem.classList].filter((c) => c.startsWith("tt"))[0];
+        settingsDom.querySelector(".tooltiptext." + cl)?.classList.toggle("shown");
+      });
+    });
+    if (mobilecheck()) {
+      const touchHandler = (start) => settingsDom.style.opacity = start ? "0.2" : "1";
+      const rangeInputs = settingsDom.querySelectorAll("input[type='range'");
+      rangeInputs.forEach((input) => {
+        input.addEventListener("touchstart", () => touchHandler(true), { passive: true });
+        input.addEventListener("touchend", () => touchHandler(false), { passive: true });
+      });
+    }
+    paramId("i_showall").addEventListener("change", function() {
+      showall(this.checked, true);
+    });
+    paramId("i_lang").addEventListener("change", function() {
+      switchLangs(this.value);
+    });
+    paramId("i_greeting").addEventListener("keyup", function() {
+      clock(null, { is: "greeting", value: stringMaxSize(this.value, 32) });
+    });
+    paramId("i_favicon").addEventListener("input", function() {
+      favicon(null, this);
+    });
+    paramId("i_tabtitle").addEventListener("input", function() {
+      tabTitle(null, this);
+    });
+    paramId("i_dark").addEventListener("change", function() {
+      darkmode(this.value, true);
+    });
+    paramId("hideelem").querySelectorAll("button").forEach((elem) => {
+      elem.onclick = function() {
+        elem.classList.toggle("clicked");
+        hideElem(null, { is: "hide", button: elem });
+      };
+    });
+    paramId("i_quicklinks").addEventListener("change", function() {
+      quickLinks(null, { is: "toggle", checked: this.checked });
+    });
+    const submitLinkFunc = (0, import_lodash2.default)(() => quickLinks(null, { is: "add" }), 1200);
+    paramId("i_title").onkeyup = (e2) => {
+      if (e2.code === "Enter") {
+        submitLinkFunc();
+      }
+    };
+    paramId("i_url").onkeyup = (e2) => {
+      if (e2.code === "Enter") {
+        submitLinkFunc();
+      }
+    };
+    paramId("submitlink").addEventListener("click", (e2) => {
+      submitLinkFunc();
+      inputThrottle(e2.target, 1200);
+    });
+    paramId("i_linknewtab").onchange = (e2) => {
+      const input = e2.currentTarget;
+      quickLinks(null, { is: "newtab", checked: input.checked });
+    };
+    paramId("i_linkstyle").onchange = (e2) => {
+      const input = e2.currentTarget;
+      quickLinks(null, { is: "style", value: input.value });
+    };
+    paramId("i_row").oninput = function(e2) {
+      const input = e2.currentTarget;
+      quickLinks(null, { is: "row", value: input.value });
+    };
+    paramId("b_importbookmarks").onclick = linksImport;
+    paramId("i_type").addEventListener("change", function() {
+      selectBackgroundType(this.value);
+    });
+    paramId("i_freq").addEventListener("change", function() {
+      const i_type = paramId("i_type");
+      if (i_type.value === "custom")
+        lsOnlineStorage.set({ custom_every: this.value });
+      else
+        unsplash(null, { is: "every", value: this.value });
+    });
+    paramId("i_refresh").addEventListener("click", function() {
+      const i_type = paramId("i_type");
+      if (this.children[0]) {
+        const arrow = this.children[0];
+        const event = { is: "refresh", button: arrow };
+        i_type.value === "custom" ? localBackgrounds(null, event) : unsplash(null, event);
+      }
+      inputThrottle(this);
+    });
+    paramId("i_collection").addEventListener("change", function() {
+      unsplash(null, { is: "collection", value: stringMaxSize(this.value, 256) });
+      this.blur();
+    });
+    paramId("i_bgfile").addEventListener("change", function() {
+      localBackgrounds(null, { is: "newfile", file: this.files || void 0 });
+    });
+    paramId("i_blur").addEventListener("input", function() {
+      backgroundFilter("blur", { blur: parseFloat(this.value) }, true);
+    });
+    paramId("i_bright").addEventListener("input", function() {
+      backgroundFilter("bright", { bright: parseFloat(this.value) }, true);
+    });
+    paramId("i_analog").addEventListener("change", function() {
+      clock(null, { is: "analog", checked: this.checked });
+    });
+    paramId("i_seconds").addEventListener("change", function() {
+      clock(null, { is: "seconds", checked: this.checked });
+    });
+    paramId("i_clockface").addEventListener("change", function() {
+      clock(null, { is: "face", value: this.value });
+    });
+    paramId("i_ampm").addEventListener("change", function() {
+      clock(null, { is: "ampm", checked: this.checked });
+    });
+    paramId("i_timezone").addEventListener("change", function() {
+      clock(null, { is: "timezone", value: this.value });
+    });
+    paramId("i_usdate").addEventListener("change", function() {
+      clock(null, { is: "usdate", checked: this.checked });
+    });
+    const weatherDebounce = (0, import_lodash.default)(() => weather(null, { is: "city" }), 1600);
+    paramId("i_city").onkeyup = (e2) => {
+      weatherDebounce();
+      if (e2.code === "Enter") {
+        weather(null, { is: "city" });
+        weatherDebounce.cancel();
+      }
+    };
+    paramId("i_geol").addEventListener("change", function() {
+      inputThrottle(this, 1200);
+      weather(null, { is: "geol", checked: this.checked, elem: this });
+    });
+    paramId("i_units").addEventListener("change", function() {
+      inputThrottle(this, 1200);
+      weather(null, { is: "units", checked: this.checked });
+    });
+    paramId("i_forecast").addEventListener("change", function() {
+      weather(null, { is: "forecast", value: this.value });
+    });
+    paramId("i_temp").addEventListener("change", function() {
+      weather(null, { is: "temp", value: this.value });
+    });
+    paramId("i_notes").addEventListener("change", function() {
+      notes(null, { is: "toggle", value: this.checked.toString() });
+    });
+    paramId("i_notesalign").addEventListener("change", function() {
+      notes(null, { is: "align", value: this.value });
+    });
+    paramId("i_notesopacity").addEventListener("input", function() {
+      notes(null, { is: "opacity", value: this.value });
+    });
+    paramId("i_sb").addEventListener("change", function() {
+      searchbar(null, "searchbar", this);
+    });
+    paramId("i_sbengine").addEventListener("change", function() {
+      searchbar(null, "engine", this);
+    });
+    paramId("i_sbopacity").addEventListener("input", function() {
+      searchbar(null, "opacity", this);
+    });
+    paramId("i_sbrequest").addEventListener("change", function() {
+      searchbar(null, "request", this);
+    });
+    paramId("i_sbnewtab").addEventListener("change", function() {
+      searchbar(null, "newtab", this);
+    });
+    paramId("i_quotes").addEventListener("change", function() {
+      quotes(null, { is: "toggle", checked: this.checked });
+    });
+    paramId("i_qtfreq").addEventListener("change", function() {
+      quotes(null, { is: "frequency", value: this.value });
+    });
+    paramId("i_qttype").addEventListener("change", function() {
+      quotes(null, { is: "type", value: this.value });
+    });
+    paramId("i_qtrefresh").addEventListener("click", function() {
+      inputThrottle(this);
+      turnRefreshButton(this.children[0], true);
+      quotes(null, { is: "refresh" });
+    });
+    paramId("i_qtauthor").addEventListener("change", function() {
+      quotes(null, { is: "author", checked: this.checked });
+    });
+    paramId("i_customfont").addEventListener("focus", function() {
+      if (settingsDom.querySelector("#dl_fontfamily")?.childElementCount === 0) {
+        customFont(null, { is: "autocomplete", elem: settingsDom });
+      }
+    });
+    paramId("i_customfont").addEventListener("change", function() {
+      customFont(null, { is: "family", value: this.value });
+    });
+    paramId("i_weight").addEventListener("input", function() {
+      customFont(null, { is: "weight", value: this.value });
+    });
+    paramId("i_size").addEventListener("input", function() {
+      customFont(null, { is: "size", value: this.value });
+    });
+    paramId("i_textshadow").addEventListener("input", function() {
+      textShadow(null, parseFloat(this.value));
+    });
+    paramId("cssEditor").addEventListener("keyup", function(ev) {
+      customCss(null, { is: "styling", val: ev.target.value });
+    });
+    cssInputSize(paramId("cssEditor"));
+    const { exportAsFile, copyImportText, importAsText, importAsFile } = settingsMgmt();
+    const toggleSettingsMgmt = (toggled) => {
+      clas(paramId("export"), !toggled, "shown");
+      clas(paramId("import"), toggled, "shown");
+      clas(paramClasses("tabs")[0], toggled, "toggled");
+    };
+    paramId("s_export").addEventListener("click", () => toggleSettingsMgmt(false));
+    paramId("s_import").addEventListener("click", () => toggleSettingsMgmt(true));
+    paramId("b_exportfile").addEventListener("click", () => exportAsFile());
+    paramId("b_exportcopy").addEventListener("click", (e2) => copyImportText(e2.target));
+    paramId("i_importfile").addEventListener("change", (e2) => importAsFile(e2.target));
+    paramId("i_importtext").addEventListener("keyup", (e2) => importAsText(e2.target.value));
+    paramId("b_resetconf").addEventListener("click", () => paramsReset("conf"));
+    paramId("b_resetyes").addEventListener("click", () => paramsReset("yes"));
+    paramId("b_resetno").addEventListener("click", () => paramsReset("no"));
+    paramId("b_importtext").addEventListener("click", function() {
+      paramsImport(JSON.parse($("i_importtext").value));
+    });
+    const allHidingInputs = "#i_showall, .tooltip, #i_quicklinks, #i_geol, #i_notes, #i_sb, #i_sbengine, #i_quotes, #s_export, #s_import";
+    function controlInputTabbability() {
+      const toggleTabindex = (parent, on) => {
+        settingsDom?.querySelectorAll(`${parent} :is(input,  select,  button,  a, textarea)`).forEach((dom) => {
+          on ? dom.removeAttribute("tabindex") : dom.setAttribute("tabindex", "-1");
+        });
+      };
+      const isAllSettings = paramId("i_showall").checked;
+      if (isAllSettings) {
+        toggleTabindex(".as", true);
+      }
+      settingsDom.querySelectorAll("#quicklinks_options, #searchbar_options, #quotes_options, #notes_options").forEach((dom) => toggleTabindex("#" + dom.id, has(dom, "shown")));
+      if (isAllSettings === false) {
+        toggleTabindex(".as", false);
+      }
+      settingsDom.querySelectorAll(".tooltiptext").forEach((dom) => {
+        toggleTabindex("." + dom.classList[1], has(dom, "shown"));
+      });
+      toggleTabindex("#searchbar_request", has(paramId("searchbar_request"), "shown"));
+      toggleTabindex("#sett_city", paramId("i_geol").checked === false);
+      toggleTabindex("#import", has(paramId("import"), "shown"));
+      toggleTabindex("#export", has(paramId("export"), "shown"));
+      paramId("downloadfile").setAttribute("tabindex", "-1");
+    }
+    controlInputTabbability();
+    settingsDom.querySelectorAll(allHidingInputs).forEach((dom) => {
+      dom.addEventListener("click", () => setTimeout(() => controlInputTabbability(), 10));
+    });
+  }
+  function settingsMgmt() {
+    async function copyImportText(target) {
+      try {
+        const area = $("area_export");
+        await navigator.clipboard.writeText(area.value);
+        target.textContent = tradThis("Copied");
+        setTimeout(() => {
+          const domimport = $("b_exportcopy");
+          if (domimport) {
+            domimport.textContent = tradThis("Copy text");
+          }
+        }, 1e3);
+      } catch (err) {
+        console.error("Failed to copy: ", err);
+      }
+    }
+    function exportAsFile() {
+      const a = $("downloadfile");
+      if (!a)
+        return;
+      lsOnlineStorage.get(false, null, (data) => {
+        a.setAttribute("href", `data:text/plain;charset=utf-8,${window.btoa(JSON.stringify(data))}`);
+        a.setAttribute("download", `bonjourrExport-${data?.about?.version}-${randomString(6)}.txt`);
+        a.click();
+      });
+    }
+    function importAsText(string) {
+      try {
+        JSON.parse(string);
+        $("b_importtext")?.removeAttribute("disabled");
+      } catch (error) {
+        $("b_importtext")?.setAttribute("disabled", "");
+      }
+    }
+    function importAsFile(target) {
+      if (!target.files || target.files && target.files.length === 0) {
+        return;
+      }
+      const file = target.files[0];
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          if (typeof reader.result === "string") {
+            const json = JSON.parse(window.atob(reader.result));
+            paramsImport(json);
+          }
+        } catch (err) {
+          console.log(err);
+        }
+      };
+      reader.readAsText(file);
+    }
+    return { exportAsFile, copyImportText, importAsText, importAsFile };
+  }
+  function cssInputSize(param) {
+    setTimeout(() => {
+      const cssResize = new ResizeObserver((e2) => {
+        const rect = e2[0].contentRect;
+        customCss(null, { is: "resize", val: rect.height + rect.top * 2 });
+      });
+      cssResize.observe(param);
+    }, 400);
+  }
+  function changelogControl(settingsDom) {
+    const domshowsettings = document.querySelector("#showSettings");
+    const domchangelog = settingsDom.querySelector("#changelogContainer");
+    if (!domchangelog)
+      return;
+    clas(domchangelog, true, "shown");
+    clas(domshowsettings, true, "hasUpdated");
+    const dismiss = () => {
+      clas(domshowsettings, false, "hasUpdated");
+      domchangelog.className = "dismissed";
+      localStorage.removeItem("hasUpdated");
+    };
+    const loglink = settingsDom.querySelector("#link");
+    const logdismiss = settingsDom.querySelector("#log_dismiss");
+    loglink.onclick = () => dismiss();
+    logdismiss.onclick = () => dismiss();
+  }
+  function translatePlaceholders(settingsDom) {
+    if (!settingsDom) {
+      return;
+    }
+    const cases = [
+      ["#i_title", "Name"],
+      ["#i_greeting", "Name"],
+      ["#i_tabtitle", "New tab"],
+      ["#i_sbrequest", "Search query: %s"],
+      ["#cssEditor", "Type in your custom CSS"],
+      ["#i_importtext", "or paste as text"]
+    ];
+    cases.forEach(([domId, text]) => {
+      const input = settingsDom.querySelector(domId);
+      input.setAttribute("placeholder", tradThis(text));
+    });
+  }
+  function switchLangs(nextLang) {
+    function langSwitchTranslation(langs2) {
+      const getLangList = (l) => {
+        return l === "en" ? Object.keys(dict) : Object.values(dict).map((t2) => t2[l]);
+      };
+      const { current, next } = langs2;
+      const nextList = getLangList(next);
+      const currentList = getLangList(current);
+      let switchDict = {};
+      currentList.forEach((curr, i) => switchDict[curr] = nextList[i]);
+      document.querySelectorAll(".trn").forEach((trn) => {
+        if (typeof trn.textContent === "string") {
+          trn.textContent = switchDict[trn.textContent];
+        }
+      });
+    }
+    function isValidLang(val) {
+      return Object.keys(langList).includes(val);
+    }
+    const htmllang = document.documentElement.getAttribute("lang") || "en";
+    const langs = {
+      current: isValidLang(htmllang) ? htmllang : "en",
+      next: nextLang
+    };
+    sessionStorage.lang = nextLang;
+    lsOnlineStorage.set({ lang: nextLang });
+    document.documentElement.setAttribute("lang", nextLang);
+    lsOnlineStorage.get(false, null, (data) => {
+      data.lang = nextLang;
+      langSwitchTranslation(langs);
+      translatePlaceholders($("settings"));
+      weather(data);
+      clock(data);
+      if (data.quotes?.type === "classic") {
+        localStorage.removeItem("nextQuote");
+        localStorage.removeItem("currentQuote");
+        quotes(data);
+      }
+    });
+  }
+  function showall(val, event, settingsDom) {
+    if (event)
+      lsOnlineStorage.set({ showall: val });
+    const settings = settingsDom || $("settings");
+    clas(settings, val, "all");
+  }
+  function selectBackgroundType(cat) {
+    function toggleType(sync, local) {
+      $("custom")?.setAttribute("style", `display: ${cat === "custom" ? "block" : "none"}`);
+      document.querySelector(".as_collection")?.setAttribute("style", `display: ${cat === "custom" ? "none" : "block"}`);
+      if (cat === "custom" && local.selectedId !== "") {
+        $("background_overlay").style.opacity = `0`;
+        localBackgrounds(null, { is: "thumbnail", settings: $("settings") || void 0 });
+        setTimeout(
+          () => localBackgrounds({
+            every: sync.custom_every,
+            time: sync.custom_time
+          }),
+          400
+        );
+      }
+      if (cat === "dynamic") {
+        clas($("credit"), true, "shown");
+        if (local.selectedId !== "") {
+          $("background_overlay").style.opacity = `0`;
+          setTimeout(() => unsplash(sync), 400);
+        }
+      }
+      const c_every = sync.custom_every || "pause";
+      const d_every = sync.dynamic.every || "hour";
+      $("i_freq")?.setAttribute("value", cat === "custom" ? c_every : d_every);
+      lsOnlineStorage.set({ background_type: cat });
+    }
+    lsOnlineStorage.get(true, "selectedId", (local) => {
+      lsOnlineStorage.get(false, ["custom_every", "custom_time", "dynamic"], (sync) => {
+        toggleType(sync, local);
+      });
+    });
+  }
+  function signature(dom) {
+    const spans = dom.querySelectorAll("#rand span");
+    const as = dom.querySelectorAll("#rand a");
+    const us = [
+      { href: "https://victr.me/", name: "Victor Azevedo" },
+      { href: "https://tahoe.be/", name: "Tahoe Beetschen" }
+    ];
+    if (Math.random() > 0.5)
+      us.reverse();
+    spans[0].textContent = `${tradThis("by")} `;
+    spans[1].textContent = ` & `;
+    as.forEach((a, i) => {
+      a.href = us[i].href;
+      a.textContent = us[i].name;
+    });
+  }
+  function fadeOut() {
+    const dominterface2 = $("interface");
+    dominterface2.click();
+    dominterface2.style.transition = "opacity .4s";
+    dominterface2.style.opacity = "0";
+    setTimeout(() => location.reload(), 400);
+  }
+  function paramsImport(dataToImport) {
+    try {
+      lsOnlineStorage.get(false, null, (sync) => {
+        lsOnlineStorage.get(true, "dynamicCache", (local) => {
+          const newImport = dataToImport;
+          if (sync.dynamic && newImport.dynamic) {
+            if (sync.dynamic?.collection !== newImport.dynamic?.collection) {
+              local.dynamicCache.user = [];
+            }
+          }
+          if (newImport.links?.length > 0 || bundleLinks(newImport)?.length > 0) {
+            bundleLinks(sync).forEach((elem) => {
+              delete sync[elem._id];
+            });
+          }
+          sync = { ...sync, ...newImport };
+          lsOnlineStorage.clear();
+          lsOnlineStorage.set(
+            detectPlatform() === "online" ? { import: sync } : sync,
+            () => lsOnlineStorage.setLocal(local)
+          );
+          sessionStorage.isImport = true;
+          fadeOut();
+        });
+      });
+    } catch (e2) {
+      console.log(e2);
+    }
+  }
+  function paramsReset(action) {
+    if (action === "yes") {
+      detectPlatform() === "online" ? lsOnlineStorage.del() : deleteBrowserStorage();
+      fadeOut();
+      return;
+    }
+    clas($("reset_first"), action === "no", "shown");
+    clas($("reset_conf"), action === "conf", "shown");
+  }
+  function updateExportJSON(settingsDom) {
+    if (!settingsDom && !$("settings")) {
+      return false;
+    }
+    const dom = settingsDom || $("settings");
+    const input = dom?.querySelector("#area_export");
+    dom?.querySelector("#importtext")?.setAttribute("disabled", "");
+    lsOnlineStorage.get(false, null, (data) => {
+      if (data.weather && data.weather.lastCall)
+        delete data.weather.lastCall;
+      if (data.weather && data.weather.forecastLastCall)
+        delete data.weather.forecastLastCall;
+      data.about.browser = detectPlatform();
+      const prettified = JSON.stringify(data, null, "	");
+      input.value = prettified;
+    });
+  }
+  function settingsInit(data) {
+    function settingsCreator(html) {
+      const domshowsettings = $("showSettings");
+      const dominterface2 = $("interface");
+      const domedit = $("editlink");
+      const parser = new DOMParser();
+      const settingsDom = document.createElement("aside");
+      const contentList = [...parser.parseFromString(html, "text/html").body.childNodes];
+      settingsDom.id = "settings";
+      settingsDom.setAttribute("class", "init");
+      contentList.forEach((elem) => settingsDom.appendChild(elem));
+      traduction(settingsDom, data.lang);
+      signature(settingsDom);
+      initParams(data, settingsDom);
+      showall(data.showall, false, settingsDom);
+      document.body.appendChild(settingsDom);
+      detectPlatform() === "online" ? window.onstorage = () => updateExportJSON() : lsOnlineStorage.onChanged.addListener(() => updateExportJSON());
+      function toggleDisplay(dom) {
+        const isClosed = !has(dom, "shown");
+        clas(dom, false, "init");
+        clas(dom, isClosed, "shown");
+        clas(domshowsettings, isClosed, "shown");
+        clas(domedit, isClosed, "pushed");
+        clas(dominterface2, isClosed, "pushed");
+        settingsDom.style.removeProperty("transform");
+        settingsDom.style.removeProperty("transition");
+      }
+      $("skiptosettings")?.addEventListener("click", function() {
+        toggleDisplay(settingsDom);
+        settingsDom.scrollTo({ top: 0 });
+        setTimeout(() => {
+          const showall2 = settingsDom.querySelector("#i_showall");
+          showall2.focus();
+        }, 10);
+      });
+      domshowsettings?.addEventListener("click", function() {
+        toggleDisplay(settingsDom);
+      });
+      document.onkeydown = function(e2) {
+        if (e2.altKey && e2.code === "KeyS") {
+          getBrowserStorage();
+        }
+        if (e2.code === "Escape") {
+          has($("editlink"), "shown") ? closeEditLink() : toggleDisplay(settingsDom);
+          return;
+        }
+        if (e2.code === "Tab") {
+          clas(document.body, true, "tabbing");
+          return;
+        }
+        if ($("error") && e2.ctrlKey) {
+          return;
+        }
+      };
+      window.addEventListener("click", function(e2) {
+        const path = e2.composedPath();
+        const clicksOnEdit = path.filter((d) => d.id === "editlink").length > 0;
+        if (!clicksOnEdit && has($("editlink"), "shown")) {
+          closeEditLink();
+        }
+      });
+      dominterface2?.addEventListener("click", function(e2) {
+        if (e2.composedPath().filter((d) => d.id === "linkblocks").length > 0) {
+          return;
+        }
+        if (document.body.classList.contains("tabbing")) {
+          clas(document.body, false, "tabbing");
+        }
+        if (has(settingsDom, "shown")) {
+          toggleDisplay(settingsDom);
+        }
+      });
+      function responsiveSettingsHeightDrag() {
+        let firstPos = 0;
+        let startTouchY = 0;
+        function dragStart(e2) {
+          e2.preventDefault();
+          if (e2.type === "mousedown")
+            startTouchY = e2.clientY;
+          if (e2.type === "touchstart")
+            startTouchY = e2.touches[0].clientY;
+          if (firstPos === 0)
+            firstPos = startTouchY;
+          if (testOS.windows || testOS.android) {
+            settingsDom.style.width = `calc(100% - 10px)`;
+            settingsDom.style.paddingRight = `10px`;
+          }
+          settingsDom.style.overflow = `clip`;
+          window.addEventListener("touchmove", dragMove);
+          window.addEventListener("mousemove", dragMove);
+        }
+        function dragMove(e2) {
+          let clientY = 0;
+          if (e2.type === "mousemove")
+            clientY = e2.clientY;
+          if (e2.type === "touchmove")
+            clientY = e2.touches[0].clientY;
+          if (clientY > 60) {
+            settingsDom.style.transform = `translateY(-${window.innerHeight + 30 - clientY}px)`;
+            settingsDom.style.transition = `transform .0s`;
+          }
+        }
+        function dragEnd(e2) {
+          let clientY = 0;
+          if (e2.type === "mouseup" || e2.type === "mouseleave")
+            clientY = e2.clientY;
+          if (e2.type === "touchend")
+            clientY = e2.changedTouches[0].clientY;
+          window.removeEventListener("touchmove", dragMove);
+          window.removeEventListener("mousemove", dragMove);
+          startTouchY = 0;
+          settingsDom.style.removeProperty("padding");
+          settingsDom.style.removeProperty("width");
+          settingsDom.style.removeProperty("overflow");
+          const signaturedom = document.querySelector(".signature");
+          signaturedom.style.paddingBottom = clientY + 60 + "px";
+          if (clientY > window.innerHeight - 100) {
+            toggleDisplay(settingsDom);
+          }
+        }
+        settingsDom.querySelector("#mobile-drag-zone")?.addEventListener("touchstart", dragStart);
+        settingsDom.querySelector("#mobile-drag-zone")?.addEventListener("mousedown", dragStart);
+        settingsDom.querySelector("#mobile-drag-zone")?.addEventListener("touchend", dragEnd);
+        settingsDom.querySelector("#mobile-drag-zone")?.addEventListener("mouseup", dragEnd);
+        document.body?.addEventListener("mouseleave", (e2) => {
+          if (has(settingsDom, "shown") && window.innerWidth < 600) {
+            dragEnd(e2);
+          }
+        });
+      }
+      const DrawerDragDebounce = (0, import_lodash.default)(() => {
+        ;
+        document.querySelector(".signature").style.removeProperty("padding");
+        responsiveSettingsHeightDrag();
+      }, 600);
+      window.addEventListener("resize", DrawerDragDebounce);
+      responsiveSettingsHeightDrag();
+    }
+    fetch("settings.html").then((resp) => resp.text().then(settingsCreator));
+  }
+
+  // src/scripts/index.ts
+  var eventDebounce = (0, import_lodash3.default)(function(value) {
+    lsOnlineStorage.set(value);
+  }, 400);
+  var freqControl = {
+    set: function() {
+      return new Date().getTime();
+    },
+    get: function(every, last) {
+      const nowDate = new Date();
+      const lastDate = new Date(last || 0);
+      const changed = {
+        date: nowDate.getDate() !== lastDate.getDate(),
+        hour: nowDate.getHours() !== lastDate.getHours()
+      };
+      if (every === "day")
+        return changed.date;
+      if (every === "hour")
+        return changed.date || changed.hour;
+      if (every === "tabs")
+        return true;
+      if (every === "pause")
+        return last === 0;
+      if (every === "period") {
+        const sun = sunTime();
+        if (!sun)
+          return "day";
+        else
+          return periodOfDay(sun) !== periodOfDay(sun, +lastDate);
+      }
+    }
+  };
+  function traduction(settingsDom, lang = "en") {
+    if (!Object.keys(dict.April).includes(lang)) {
+      return;
+    }
+    const trns = (settingsDom ? settingsDom : document).querySelectorAll(".trn");
+    const dictKeys = Object.keys(dict);
+    let text;
+    trns.forEach((trn) => {
+      if (trn.textContent) {
+        text = trn.textContent;
+        if (dictKeys.includes(text)) {
+          trn.textContent = dict[text][lang];
+        }
+      }
+    });
+    document.documentElement.setAttribute("lang", lang);
+  }
+  function notes(init, event) {
+    const container = $("notes_container");
+    const parsed = $("notes_parsed");
+    const editor = $("notes_editor");
+    const doneBtn = $("b_notesdone");
+    function parseMarkdownToHTML(val) {
+      const aria = tradThis("Text field tick box");
+      let html = t(val);
+      html = html.replaceAll(`<a href="undefined"> </a>`, `<input type="checkbox" aria-label="${aria}">`);
+      html = html.replaceAll(`<a href="undefined">x</a>`, `<input type="checkbox" aria-label="${aria}" checked>`);
+      const replaceAt = (s, repl, i) => {
+        return s.substring(0, i) + repl + s.substring(i + repl.length);
+      };
+      if (!parsed || !editor) {
+        return false;
+      }
+      while (parsed.firstChild) {
+        parsed.removeChild(parsed.firstChild);
+      }
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, "text/html");
+      const allNodes = [...doc.body.childNodes];
+      allNodes.forEach((node) => parsed.appendChild(node));
+      if (parsed.childNodes.length > 0 && parsed.childNodes[0]?.nodeName.match(/(H[1-6])/g)) {
+        parsed.children[0]?.setAttribute("style", "margin-top: 0px");
+      }
+      parsed.querySelectorAll('input[type="checkbox"]').forEach((checkbox, ii) => {
+        checkbox.addEventListener("click", () => {
+          let raw = editor.value;
+          const matches = [...raw.matchAll(/(\[[x ]\])/g)];
+          const matchIndex = matches[ii].index;
+          if (typeof matchIndex === "number") {
+            raw = replaceAt(raw, matches[ii][0].includes("x") ? ` ` : `x`, matchIndex + 1);
+          }
+          ;
+          editor.value = raw;
+          notes(null, { is: "change", value: raw });
+        });
+      });
+    }
+    function handleToggle(state) {
+      if (container)
+        clas(container, !state, "hidden");
+    }
+    function handleAlign(value) {
+      if (container) {
+        if (value === "center") {
+          clas(container, true, "center-align");
+        } else {
+          clas(container, false, "center-align");
+          clas(container, value === "right", "right-align");
+        }
+      }
+    }
+    function handleOpacity(value) {
+      if (container) {
+        clas(container, value > 0.45, "opaque");
+        container.style.backgroundColor = "rgba(255, 255, 255, " + value + ")";
+      }
+    }
+    function toggleEditable() {
+      if (!editor || !parsed || !doneBtn) {
+        return;
+      }
+      const isEditorHidden = editor.classList.contains("hidden");
+      const isParsedHidden = parsed.classList.contains("hidden");
+      if (isEditorHidden) {
+        const padding = parseFloat($("interface")?.style.fontSize || "0") * 16 * 3;
+        editor.style.height = ($("notes_container")?.offsetHeight || 0) - padding + "px";
+        editor.focus();
+      }
+      editor.setAttribute("tabindex", isEditorHidden ? "0" : "-1");
+      clas(editor, !isEditorHidden, "hidden");
+      clas(parsed, !isParsedHidden, "hidden");
+      doneBtn.textContent = tradThis(isEditorHidden ? "Done" : "Edit");
+    }
+    function editorKeybindings(key, cmd, shift) {
+      const editordom = editor;
+      const { selectionStart, selectionEnd } = editordom;
+      if (cmd === false) {
+        return;
+      }
+      function addDecoration(charStart, charEnd = charStart) {
+        let result = editordom.value, start = result.substring(0, selectionStart), selection = result.substring(selectionStart, selectionEnd), end = result.substring(selectionEnd);
+        const isRemoval = selection.startsWith(charStart) && (selection.endsWith(charEnd) || charEnd === "");
+        selection = isRemoval ? selection.substring(charStart.length, selection.length - charEnd.length) : charStart + selection + charEnd;
+        result = start + selection + end;
+        editordom.value = result;
+        notes(null, { is: "change", value: result });
+        const addLength = charStart.length + charEnd.length;
+        const remLength = -(charStart.length + charEnd.length);
+        editordom.selectionStart = selectionStart;
+        editordom.selectionEnd = selectionEnd + (isRemoval ? remLength : addLength);
+      }
+      switch (key) {
+        case "KeyC": {
+          if (shift)
+            addDecoration("[ ] ", "");
+          break;
+        }
+        case "KeyI":
+          addDecoration("_");
+          break;
+        case "KeyB":
+          addDecoration("**");
+          break;
+        case "KeyS":
+          addDecoration("~~");
+          break;
+        case "KeyU":
+          addDecoration("[", "](url)");
+          break;
+        case "Enter":
+          toggleEditable();
+          break;
+      }
+    }
+    if (event) {
+      lsOnlineStorage.get(false, "notes", (data) => {
+        let notes2 = data.notes || syncDefaults.notes;
+        switch (event?.is) {
+          case "toggle": {
+            const on = event.value === "true";
+            const { align, opacity, text } = notes2;
+            interfaceWidgetToggle(null, "notes");
+            handleToggle(on);
+            notes2.on = on;
+            if (on && editor) {
+              handleAlign(align);
+              handleOpacity(opacity);
+              parseMarkdownToHTML(text);
+              editor.value = text;
+            }
+            break;
+          }
+          case "change": {
+            parseMarkdownToHTML(event.value);
+            notes2.text = event.value;
+            break;
+          }
+          case "align": {
+            handleAlign(event.value);
+            notes2.align = event.value;
+            break;
+          }
+          case "opacity": {
+            handleOpacity(parseFloat(event.value));
+            notes2.opacity = parseFloat(event.value);
+            break;
+          }
+        }
+        eventDebounce({ notes: notes2 });
+      });
+      return;
+    }
+    if (!editor || !init) {
+      return;
+    }
+    if (init.on) {
+      handleAlign(init.align);
+      handleOpacity(init.opacity);
+      handleToggle(init.on);
+      parseMarkdownToHTML(init.text);
+      editor.value = init.text;
+    }
+    function doubleClickToggle(e2) {
+      const path = e2.composedPath();
+      const isCheckbox = path[0].tagName === "INPUT";
+      let string = "";
+      if ((window.getSelection()?.rangeCount || -1) > 0) {
+        string = window.getSelection()?.getRangeAt(0)?.toString().trim() || "";
+      }
+      if (!isCheckbox && string.length < 2) {
+        toggleEditable();
+      }
+    }
+    if (mobilecheck()) {
+      let last = 0;
+      parsed?.addEventListener("touchstart", (e2) => {
+        if (last !== 0 && e2.timeStamp - last < 300)
+          doubleClickToggle(e2);
+        last = e2.timeStamp;
+      });
+    } else
+      parsed?.addEventListener("dblclick", doubleClickToggle);
+    doneBtn?.addEventListener("click", () => {
+      toggleEditable();
+    });
+    editor?.addEventListener("input", function() {
+      notes(null, { is: "change", value: this.value });
+    });
+    editor?.addEventListener("keydown", (e2) => {
+      const otherKeys = ["KeyI", "KeyB", "KeyS", "KeyU", "KeyT"];
+      const modifier = testOS.mac ? e2.metaKey : e2.ctrlKey;
+      const chbxKeys = modifier && e2.shiftKey && e2.code === "KeyC";
+      if (chbxKeys || modifier && otherKeys.includes(e2.code)) {
+        e2.preventDefault();
+      }
+      if (!testOS.windows) {
+        editorKeybindings(e2.code, modifier, e2.shiftKey);
+      }
+    });
+    editor?.addEventListener("keyup", (e2) => {
+      testOS.windows ? editorKeybindings(e2.code, e2.ctrlKey, e2.shiftKey) : "";
+    });
+  }
+  function favicon(init, event) {
+    function createFavicon(emoji) {
+      const svg = `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="85">${emoji}</text></svg>`;
+      document.querySelector("link[rel~='icon']")?.setAttribute("href", emoji ? svg : `src/assets/${getFavicon()}`);
+    }
+    if (init !== void 0 && init !== null) {
+      createFavicon(init);
+    }
+    if (event) {
+      const val = event.value;
+      const isEmoji = val.match(/\p{Emoji}/gu) && !val.match(/[0-9a-z]/g);
+      if (isEmoji)
+        createFavicon(val);
+      else
+        event.value = "";
+      eventDebounce({ favicon: isEmoji ? val : "" });
+    }
+  }
+  function tabTitle(init, event) {
+    const title = init ? init : event ? stringMaxSize(event.value, 80) : tradThis("New tab");
+    if (event) {
+      eventDebounce({ tabtitle: title });
+    }
+    document.title = title;
+  }
+  function clock(init, event) {
+    function zonedDate(timezone = "auto") {
+      const date = new Date();
+      if (timezone === "auto")
+        return date;
+      const offset = date.getTimezoneOffset() / 60;
+      const utcHour = date.getHours() + offset;
+      date.setHours(utcHour + parseInt(timezone));
+      return date;
+    }
+    function clockDate(date, usdate) {
+      const jour = tradThis(days[date.getDay()]), mois = tradThis(months[date.getMonth()]), chiffre = date.getDate();
+      $("date").textContent = usdate ? `${jour}, ${mois} ${chiffre}` : `${jour} ${chiffre} ${mois}`;
+    }
+    function greetings(date, name) {
+      const greets = [
+        { text: "Good night", hour: 7 },
+        { text: "Good morning", hour: 12 },
+        { text: "Good afternoon", hour: 18 },
+        { text: "Good evening", hour: 24 }
+      ];
+      const domgreetings = $("greetings");
+      const greetResult = greets.filter((greet) => date.getHours() < greet.hour)[0];
+      domgreetings.style.textTransform = name ? "none" : "capitalize";
+      domgreetings.textContent = tradThis(greetResult.text) + (name ? `, ${name}` : "");
+    }
+    function changeAnalogFace(face = "none") {
+      const chars = {
+        none: ["", "", "", ""],
+        number: ["12", "3", "6", "9"],
+        roman: ["XII", "III", "VI", "IX"],
+        marks: ["\u2502", "\u2500", "\u2502", "\u2500"]
+      };
+      document.querySelectorAll("#analogClock .numbers").forEach((mark, i) => mark.textContent = chars[face][i]);
+    }
+    function startClock(clock3, greeting, usdate) {
+      function displayControl() {
+        const numeric = $("clock"), analog = $("analogClock"), analogSec = $("analogSeconds");
+        clas(numeric, clock3.analog, "hidden");
+        clas(analog, !clock3.analog, "hidden");
+        clas(analogSec, !clock3.seconds && clock3.analog, "hidden");
+      }
+      function clockInterval() {
+        function numerical(date2) {
+          function toAmpm(val) {
+            if (val > 12)
+              val -= 12;
+            else if (val === 0)
+              val = 12;
+            else
+              val;
+            return val;
+          }
+          function fixunits(val) {
+            let res = val < 10 ? "0" + val.toString() : val.toString();
+            return res;
+          }
+          let h = clock3.ampm ? toAmpm(date2.getHours()) : date2.getHours(), m = fixunits(date2.getMinutes()), s = fixunits(date2.getSeconds());
+          $("clock").textContent = `${h}:${m}${clock3.seconds ? ":" + s : ""}`;
+        }
+        function analog(date2) {
+          function rotation(that, val) {
+            that.style.transform = `rotate(${val}deg)`;
+          }
+          let s = date2.getSeconds() * 6, m = date2.getMinutes() * 6, h = date2.getHours() * 30;
+          if (true)
+            rotation($("minutes"), m);
+          if (true)
+            rotation($("hours"), h);
+          if (clock3.seconds)
+            rotation($("analogSeconds"), s);
+        }
+        const date = zonedDate(clock3.timezone);
+        clock3.analog ? analog(date) : numerical(date);
+        if (date.getHours() === 0 && date.getMinutes() === 0) {
+          clockDate(date, usdate);
+        }
+        if (date.getMinutes() === 0) {
+          greetings(date, greeting);
+        }
+      }
+      clearInterval(lazyClockInterval);
+      displayControl();
+      clockInterval();
+      lazyClockInterval = setInterval(clockInterval, 1e3);
+    }
+    if (event) {
+      lsOnlineStorage.get(false, ["clock", "usdate", "greeting"], (data) => {
+        let clock3 = data.clock || {
+          analog: false,
+          seconds: false,
+          ampm: false,
+          timezone: "auto",
+          face: "none"
+        };
+        switch (event.is) {
+          case "usdate": {
+            clockDate(zonedDate(data.clock.timezone), event.checked || false);
+            lsOnlineStorage.set({ usdate: event.checked });
+            break;
+          }
+          case "greeting": {
+            greetings(zonedDate(data.clock.timezone), event.value);
+            lsOnlineStorage.set({ greeting: event.value });
+            break;
+          }
+          case "timezone": {
+            clockDate(zonedDate(event.value), data.usdate);
+            greetings(zonedDate(event.value), data.greeting);
+            clock3.timezone = event.value;
+            break;
+          }
+          case "ampm":
+            clock3.ampm = event.checked;
+            break;
+          case "analog":
+            clock3.analog = event.checked;
+            break;
+          case "face":
+            clock3.face = event.value;
+            break;
+          case "seconds":
+            clock3.seconds = event.checked;
+            break;
+        }
+        lsOnlineStorage.set({ clock: clock3 });
+        startClock(clock3, data.greeting, data.usdate);
+        changeAnalogFace(clock3.face);
+      });
+      return;
+    }
+    let clock2 = init?.clock || {
+      analog: false,
+      seconds: false,
+      ampm: false,
+      timezone: "auto",
+      face: "none"
+    };
+    try {
+      startClock(clock2, init?.greeting || "", init?.usdate || false);
+      clockDate(zonedDate(clock2.timezone), init?.usdate || false);
+      greetings(zonedDate(clock2.timezone), init?.greeting || "");
+      changeAnalogFace(clock2.face);
+      canDisplayInterface("clock");
+    } catch (e2) {
+      errorMessage("Clock or greetings failed at init", e2);
+    }
+  }
+  function quickLinks(init, event) {
+    const domlinkblocks = $("linkblocks");
+    async function initblocks(links, isnewtab) {
+      function createBlock(link) {
+        let title = stringMaxSize(link.title, 64);
+        let url = stringMaxSize(link.url, 512);
+        const img = document.createElement("img");
+        const span = document.createElement("span");
+        const atag = document.createElement("a");
+        const li = document.createElement("li");
+        img.alt = "";
+        img.loading = "lazy";
+        img.setAttribute("draggable", "false");
+        atag.appendChild(img);
+        atag.appendChild(span);
+        atag.setAttribute("draggable", "false");
+        atag.href = url;
+        atag.setAttribute("rel", "noreferrer noopener");
+        if (isnewtab) {
+          atag.setAttribute("target", "_blank");
+        }
+        li.id = link._id;
+        li.setAttribute("class", "block");
+        li.appendChild(atag);
+        textOnlyControl(li, title, domlinkblocks.className === "text");
+        domlinkblocks.appendChild(li);
+        return { icon: img, block: li };
+      }
+      async function fetchNewIcon(dom, url) {
+        dom.src = "src/assets/interface/loading.svg";
+        const img = new Image();
+        let result = `https://icons.duckduckgo.com/ip3/${extractHostname(url)}.ico`;
+        const bonjourrAPI = await fetch(`https://favicon.bonjourr.fr/api/${extractHostname(url)}`);
+        const apiText = await bonjourrAPI.text();
+        if (apiText.length > 0) {
+          result = apiText;
+        }
+        img.onload = () => dom.src = result;
+        img.src = result;
+        img.remove();
+        return result;
+      }
+      if (links.length > 0) {
+        if (!init) {
+          ;
+          [...domlinkblocks.children].forEach((li) => li.remove());
+        }
+        try {
+          const blocklist = links.map((l) => createBlock(l));
+          blocklist.forEach(({ block }) => addEvents(block));
+          linksDragging();
+          canDisplayInterface("links");
+          links.map(async (link, index) => {
+            const dom = blocklist[index].icon;
+            const needsToChange = ["api.faviconkit.com", "loading.svg"].some((x) => link.icon.includes(x));
+            if (needsToChange) {
+              link.icon = await fetchNewIcon(dom, link.url);
+              lsOnlineStorage.set({ [link._id]: link });
+            } else
+              dom.src = link.icon;
+          });
+        } catch (e2) {
+          errorMessage("Failed to load links", e2);
+        }
+      } else
+        canDisplayInterface("links");
+    }
+    function removeLinkSelection() {
+      domlinkblocks.querySelectorAll("img").forEach(function(e2) {
+        clas(e2, false, "selected");
+      });
+    }
+    function addEvents(elem) {
+      if (testOS.ios) {
+        let timer = 0;
+        elem.addEventListener(
+          "touchstart",
+          function(e2) {
+            timer = setTimeout(() => {
+              e2.preventDefault();
+              removeLinkSelection();
+              displayEditWindow(elem, { x: 0, y: 0 });
+            }, 600);
+          },
+          false
+        );
+        elem.addEventListener("touchmove", () => clearTimeout(timer), false);
+        elem.addEventListener("touchend", () => clearTimeout(timer), false);
+      }
+      elem.oncontextmenu = function(e2) {
+        e2.preventDefault();
+        removeLinkSelection();
+        displayEditWindow(this, { x: e2.x, y: e2.y });
+      };
+      elem.onkeyup = function(e2) {
+        if (e2.key === "e") {
+          const { offsetLeft, offsetTop } = e2.target;
+          displayEditWindow(this, { x: offsetLeft, y: offsetTop });
+        }
+      };
+    }
+    function linksDragging() {
+      let draggedId = "";
+      let draggedClone;
+      let updatedOrder = {};
+      let coords = {};
+      let coordsEntries = [];
+      let startsDrag = false;
+      let push = 0;
+      let [cox, coy] = [0, 0];
+      const deplaceElem = (dom, x, y) => {
+        dom.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      };
+      const initDrag = (ex, ey, path) => {
+        let block = path.find((t2) => t2.className === "block");
+        if (!block) {
+          return;
+        }
+        startsDrag = true;
+        draggedId = block.id;
+        push = dominterface.classList.contains("pushed") ? 100 : 0;
+        dominterface.style.cursor = "grabbing";
+        document.querySelectorAll("#linkblocks li").forEach((block2, i) => {
+          const { x, y, width, height } = block2.getBoundingClientRect();
+          const blockid = block2.id;
+          updatedOrder[blockid] = i;
+          coords[blockid] = {
+            order: i,
+            pos: { x, y },
+            triggerbox: {
+              x: [x + width * 0.1, x + width * 0.9],
+              y: [y + height * 0.1, y + height * 0.9]
+            }
+          };
+        });
+        coordsEntries = Object.entries(coords);
+        const draggedDOM = $(draggedId);
+        const draggedCoord = coords[draggedId];
+        if (draggedDOM) {
+          draggedDOM.style.opacity = "0";
+          draggedClone = draggedDOM.cloneNode(true);
+          draggedClone.id = "";
+          draggedClone.className = "block dragging-clone on";
+          domlinkblocks.appendChild(draggedClone);
+        }
+        if (draggedCoord) {
+          cox = ex - draggedCoord.pos.x;
+          coy = ey - draggedCoord.pos.y;
+        }
+        deplaceElem(draggedClone, ex - cox + push, ey - coy);
+        clas(domlinkblocks, true, "dragging");
+      };
+      const applyDrag = (ex, ey) => {
+        deplaceElem(draggedClone, ex + push - cox, ey - coy);
+        coordsEntries.forEach(function parseThroughCoords([key, val]) {
+          if (ex > val.triggerbox.x[0] && ex < val.triggerbox.x[1] && ey > val.triggerbox.y[0] && ey < val.triggerbox.y[1]) {
+            const drgO = coords[draggedId]?.order || 0;
+            const keyO = coords[key]?.order || 0;
+            let interval = [drgO, keyO];
+            let direction = 0;
+            if (drgO < keyO)
+              direction = -1;
+            if (drgO > keyO)
+              direction = 1;
+            if (direction > 0)
+              interval[0] -= 1;
+            if (direction < 0)
+              interval[0] += 1;
+            interval = interval.sort((a, b) => a - b);
+            coordsEntries.forEach(([keyBis, coord], index) => {
+              const neighboor = $(keyBis);
+              if (!neighboor) {
+                return;
+              }
+              if (index >= interval[0] && index <= interval[1]) {
+                const ox = coordsEntries[index + direction][1].pos.x - coord.pos.x;
+                const oy = coordsEntries[index + direction][1].pos.y - coord.pos.y;
+                updatedOrder[keyBis] = index + direction;
+                deplaceElem(neighboor, ox, oy);
+                return;
+              }
+              updatedOrder[keyBis] = index;
+              deplaceElem(neighboor, 0, 0);
+            });
+            updatedOrder[draggedId] = keyO;
+          }
+        });
+      };
+      const endDrag = () => {
+        if (draggedId && startsDrag) {
+          const neworder = updatedOrder[draggedId];
+          const { x, y } = coordsEntries[neworder][1].pos;
+          startsDrag = false;
+          draggedId = "";
+          coords = {};
+          coordsEntries = [];
+          deplaceElem(draggedClone, x + push, y);
+          draggedClone.className = "block dragging-clone";
+          dominterface.style.cursor = "";
+          setTimeout(() => {
+            lsOnlineStorage.get(false, null, (data) => {
+              Object.entries(updatedOrder).forEach(([key, val]) => {
+                const link = data[key];
+                link.order = val;
+              });
+              clas(domlinkblocks, false, "dragging");
+              eventDebounce({ ...data });
+              [...domlinkblocks.children].forEach((li) => li.remove());
+              initblocks(bundleLinks(data), data.linknewtab);
+            });
+          }, 200);
+        }
+      };
+      if (testOS.ios || mobilecheck()) {
+        domlinkblocks.ontouchmove = function(e2) {
+          e2.preventDefault();
+          !startsDrag ? initDrag(e2.touches[0]?.clientX || 0, e2.touches[0]?.clientY || 0, e2.composedPath()) : applyDrag(e2.touches[0]?.clientX || 0, e2.touches[0]?.clientY || 0);
+        };
+        domlinkblocks.ontouchend = endDrag;
+      } else {
+        dominterface.onmousemove = function(e2) {
+          if (e2.buttons !== 1)
+            return;
+          !startsDrag ? initDrag(e2.x, e2.y, e2.composedPath()) : applyDrag(e2.x, e2.y);
+        };
+        dominterface.onmouseup = endDrag;
+        dominterface.onmouseleave = endDrag;
+      }
+    }
+    function editEvents() {
+      function submitEvent() {
+        return updatesEditedLink($("editlink").getAttribute("data-linkid") || "");
+      }
+      function inputSubmitEvent(e2) {
+        if (e2.code === "Enter") {
+          submitEvent();
+          const input = e2.target;
+          input.blur();
+        }
+      }
+      $("e_delete")?.addEventListener("click", function() {
+        removeLinkSelection();
+        removeblock($("editlink").getAttribute("data-linkid") || "");
+        clas($("editlink"), false, "shown");
+      });
+      $("e_submit")?.addEventListener("click", function() {
+        const noErrorOnEdit = submitEvent();
+        if (noErrorOnEdit) {
+          closeEditLink();
+          removeLinkSelection();
+        }
+      });
+      $("e_title")?.addEventListener("keyup", inputSubmitEvent);
+      $("e_url")?.addEventListener("keyup", inputSubmitEvent);
+      $("e_iconurl")?.addEventListener("keyup", inputSubmitEvent);
+    }
+    function displayEditWindow(domlink, { x, y }) {
+      function positionsEditWindow() {
+        const { innerHeight, innerWidth } = window;
+        removeLinkSelection();
+        if (x + 250 > innerWidth)
+          x -= x + 250 - innerWidth;
+        if (y + 200 > innerHeight)
+          y -= 200;
+        document.querySelector("#editlink")?.setAttribute("style", `transform: translate(${x + 3}px, ${y + 3}px)`);
+      }
+      const linkId = domlink.id;
+      const domicon = domlink.querySelector("img");
+      const domedit = document.querySelector("#editlink");
+      const opendedSettings = has($("settings"), "shown");
+      lsOnlineStorage.get(false, linkId, (data) => {
+        const { title, url, icon } = data[linkId];
+        const domtitle = $("e_title");
+        const domurl = $("e_url");
+        const domiconurl = $("e_iconurl");
+        domtitle.setAttribute("placeholder", tradThis("Title"));
+        domurl.setAttribute("placeholder", tradThis("Link"));
+        domiconurl.setAttribute("placeholder", tradThis("Icon"));
+        domtitle.value = title;
+        domurl.value = url;
+        domiconurl.value = icon;
+        positionsEditWindow();
+        clas(domicon, true, "selected");
+        clas(domedit, true, "shown");
+        clas(domedit, opendedSettings, "pushed");
+        domedit?.setAttribute("data-linkid", linkId);
+        domtitle.focus();
+      });
+    }
+    function updatesEditedLink(linkId) {
+      const e_title = $("e_title");
+      const e_url = $("e_url");
+      const e_iconurl = $("e_iconurl");
+      if (e_iconurl.value.length === 7500) {
+        e_iconurl.value = "";
+        e_iconurl.setAttribute("placeholder", tradThis("Icon must be < 8kB"));
+        return false;
+      }
+      lsOnlineStorage.get(false, linkId, (data) => {
+        const domlink = $(linkId);
+        const domicon = domlink.querySelector("img");
+        const domurl = domlink.querySelector("a");
+        let link = data[linkId];
+        link = {
+          ...link,
+          title: stringMaxSize(e_title.value, 64),
+          url: stringMaxSize(e_url.value, 512),
+          icon: stringMaxSize(e_iconurl.value, 7500)
+        };
+        textOnlyControl(domlink, link.title, domlinkblocks.className === "text");
+        domurl.href = link.url;
+        domicon.src = link.icon;
+        lsOnlineStorage.set({ [linkId]: link });
+      });
+      return true;
+    }
+    function removeblock(linkId) {
+      lsOnlineStorage.get(false, [linkId], (data) => {
+        const links = bundleLinks(data);
+        let link = data[linkId];
+        const linkDOM = $(linkId);
+        if (!link || !linkDOM) {
+          return;
+        }
+        const rowDOM = linkDOM.parentElement;
+        const height = linkDOM.getBoundingClientRect().height;
+        const isLastOnRow = rowDOM.childElementCount === 1;
+        linkDOM.setAttribute("style", "height: " + height + "px");
+        clas(linkDOM, true, "removed");
+        if (isLastOnRow) {
+          rowDOM.setAttribute("style", "max-height: 0; overflow: hidden");
+        }
+        setTimeout(function() {
+          linkDOM.remove();
+          if (isLastOnRow) {
+            rowDOM.remove();
+          }
+        }, 600);
+        links.forEach((l) => {
+          l.order -= l.order > link.order ? 1 : 0;
+          data[l._id] = l;
+        });
+        lsOnlineStorage.set(isExtension ? data : { import: data });
+        lsOnlineStorage.remove(false, link._id);
+      });
+    }
+    function linkSubmission(type, importList) {
+      lsOnlineStorage.get(false, null, (data) => {
+        const links = bundleLinks(data);
+        let newLinksList = [];
+        const validator = (title, url, order) => {
+          url = stringMaxSize(url, 512);
+          const to = (scheme) => url.startsWith(scheme);
+          const acceptableSchemes = to("http://") || to("https://");
+          const unacceptable = to("about:") || to("chrome://");
+          return {
+            order,
+            _id: "links" + randomString(6),
+            title: stringMaxSize(title, 64),
+            icon: "src/assets/interface/loading.svg",
+            url: acceptableSchemes ? url : unacceptable ? "false" : "https://" + url
+          };
+        };
+        if (type === "add") {
+          const titledom = $("i_title");
+          const urldom = $("i_url");
+          const title = titledom.value;
+          const url = urldom.value;
+          if (url.length < 3)
+            return;
+          titledom.value = "";
+          urldom.value = "";
+          newLinksList.push(validator(title, url, links.length));
+        }
+        if (type === "import" && importList) {
+          if (importList?.length === 0)
+            return;
+          importList.forEach(({ title, url }, i) => {
+            if (url !== "false") {
+              newLinksList.push(validator(title, url, links.length + i));
+            }
+          });
+        }
+        newLinksList.forEach((newlink) => {
+          lsOnlineStorage.set({ [newlink._id]: newlink });
+        });
+        links.push(...newLinksList);
+        initblocks(links, data.linknewtab);
+        domlinkblocks.style.visibility = "visible";
+      });
+    }
+    function textOnlyControl(block, title, toText) {
+      const span = block.querySelector("span");
+      const a = block.querySelector("a");
+      if (span && a) {
+        span.textContent = toText && title === "" ? extractDomain(a.href) : title;
+      }
+    }
+    function setRows(amount, style) {
+      const sizes = {
+        large: { width: 4.8, gap: 2.3 },
+        medium: { width: 3.5, gap: 2 },
+        small: { width: 2.5, gap: 2 },
+        text: { width: 5, gap: 2 }
+      };
+      const { width, gap } = sizes[style];
+      domlinkblocks.style.maxWidth = (width + gap) * amount + "em";
+    }
+    if (event) {
+      switch (event.is) {
+        case "add":
+          linkSubmission("add");
+          break;
+        case "import":
+          linkSubmission("import", event.bookmarks);
+          break;
+        case "toggle": {
+          clas($("linkblocks"), !event.checked, "hidden");
+          interfaceWidgetToggle(null, "quicklinks");
+          lsOnlineStorage.set({ quicklinks: event.checked });
+          break;
+        }
+        case "newtab": {
+          const val = event.checked || false;
+          lsOnlineStorage.set({ linknewtab: val });
+          document.querySelectorAll(".block a").forEach((a) => {
+            if (val)
+              a.setAttribute("target", "_blank");
+            else
+              a.removeAttribute("target");
+          });
+          break;
+        }
+        case "style": {
+          lsOnlineStorage.get(false, null, (data) => {
+            const links = bundleLinks(data);
+            const classes = ["large", "medium", "small", "text"];
+            const blocks = document.querySelectorAll("#linkblocks .block");
+            const chosenClass = event.value?.toString() || "";
+            links.forEach(({ title }, i) => textOnlyControl(blocks[i], title, chosenClass === "text"));
+            classes.forEach((c) => domlinkblocks.classList.remove(c));
+            domlinkblocks.classList.add(chosenClass);
+            setRows(data.linksrow, chosenClass);
+            lsOnlineStorage.set({ linkstyle: chosenClass });
+          });
+          break;
+        }
+        case "row": {
+          let domStyle = domlinkblocks.className || "large";
+          const row = parseInt(event.value || "6");
+          setRows(row, domStyle);
+          eventDebounce({ linksrow: row });
+          break;
+        }
+      }
+      return;
+    }
+    if (!init) {
+      errorMessage("No data for quick links !");
+      return;
+    }
+    domlinkblocks.className = init.linkstyle;
+    clas($("linkblocks"), !init.quicklinks, "hidden");
+    initblocks(bundleLinks(init), init.linknewtab);
+    setRows(init.linksrow, init.linkstyle);
+    setTimeout(() => editEvents(), 150);
+    window.addEventListener("resize", (e2) => {
+      if (document.querySelector("#editlink")?.classList.contains("shown")) {
+        closeEditLink();
+      }
+    });
+  }
+  async function linksImport() {
+    const closeBookmarks = (container) => {
+      container.classList.add("hiding");
+      setTimeout(() => container.setAttribute("class", ""), 400);
+    };
+    function main(links, bookmarks) {
+      const listdom = document.createElement("ol");
+      let bookmarksList = [];
+      let selectedList = [];
+      bookmarks[0].children?.forEach((cat) => {
+        const list = cat.children;
+        if (Array.isArray(list)) {
+          bookmarksList.push(...list);
+        }
+      });
+      function selectBookmark(elem) {
+        const isSelected = elem.classList.toggle("selected");
+        const index = elem.getAttribute("data-index");
+        let counter = listdom.querySelectorAll("li.selected").length;
+        if (!index)
+          return;
+        isSelected ? selectedList.push(index) : selectedList.pop();
+        if (counter === 0)
+          $("bmk_apply").textContent = tradThis("Select bookmarks to import");
+        if (counter === 1)
+          $("bmk_apply").textContent = tradThis("Import this bookmark");
+        if (counter > 1)
+          $("bmk_apply").textContent = tradThis("Import these bookmarks");
+        clas($("bmk_apply"), counter === 0, "none");
+      }
+      bookmarksList.forEach((mark, index) => {
+        const elem = document.createElement("li");
+        const titleWrap = document.createElement("p");
+        const title = document.createElement("span");
+        const favicon2 = document.createElement("img");
+        const url = document.createElement("pre");
+        const markURL = mark.url;
+        if (!markURL || markURL === "") {
+          return;
+        }
+        favicon2.src = "https://icons.duckduckgo.com/ip3/" + extractHostname(markURL) + ".ico";
+        favicon2.alt = "";
+        title.textContent = mark.title;
+        url.textContent = markURL;
+        titleWrap.appendChild(favicon2);
+        titleWrap.appendChild(title);
+        elem.setAttribute("data-index", index.toString());
+        elem.setAttribute("tabindex", "0");
+        elem.appendChild(titleWrap);
+        elem.appendChild(url);
+        elem.onclick = () => selectBookmark(elem);
+        elem.onkeydown = (e2) => e2.code === "Enter" ? selectBookmark(elem) : "";
+        if (links.filter((x) => x.url === stringMaxSize(markURL, 512)).length === 0) {
+          listdom.appendChild(elem);
+        }
+      });
+      const oldList = document.querySelector("#bookmarks ol");
+      if (oldList)
+        oldList.remove();
+      $("bookmarks").prepend(listdom);
+      if (bookmarksList.length === 0) {
+        clas($("bookmarks"), true, "noneFound");
+        return;
+      }
+      $("bmk_apply").onclick = function() {
+        let bookmarkToApply = selectedList.map((i) => ({
+          title: bookmarksList[parseInt(i)].title,
+          url: bookmarksList[parseInt(i)].url || ""
+        }));
+        if (bookmarkToApply.length > 0) {
+          closeBookmarks($("bookmarks_container"));
+          quickLinks(null, { is: "import", bookmarks: bookmarkToApply });
+        }
+      };
+      const lidom = document.querySelector("#bookmarks ol li");
+      lidom.focus();
+    }
+    chrome.permissions.request({ permissions: ["bookmarks"] }, (granted) => {
+      if (!granted)
+        return;
+      lsOnlineStorage.get(false, null, (data) => {
+        const extAPI = window.location.protocol === "moz-extension:" ? browser : chrome;
+        extAPI.bookmarks.getTree().then((response) => {
+          clas($("bookmarks_container"), true, "shown");
+          main(bundleLinks(data), response);
+        });
+      });
+    });
+    $("bmk_close").onclick = () => closeBookmarks($("bookmarks_container"));
+    $("bookmarks_container").addEventListener("click", function(e2) {
+      if (e2.target.id === "bookmarks_container")
+        closeBookmarks(this);
+    });
+  }
+  function weather(init, event) {
+    const date = new Date();
+    const i_city = $("i_city");
+    const i_ccode = $("i_ccode");
+    const sett_city = $("sett_city");
+    const current = $("current");
+    const forecast = $("forecast");
+    const tempContainer = $("tempContainer");
+    async function request(storage) {
+      function getRequestURL(isForecast) {
+        const WEATHER_API_KEY = [
+          "YTU0ZjkxOThkODY4YTJhNjk4ZDQ1MGRlN2NiODBiNDU=",
+          "Y2U1M2Y3MDdhZWMyZDk1NjEwZjIwYjk4Y2VjYzA1NzE=",
+          "N2M1NDFjYWVmNWZjNzQ2N2ZjNzI2N2UyZjc1NjQ5YTk="
+        ];
+        const type = isForecast ? "forecast" : "weather";
+        const lang = document.documentElement.getAttribute("lang");
+        const key = window.atob(WEATHER_API_KEY[forecast ? 0 : 1]);
+        const units = storage.unit || "metric";
+        let location2 = "";
+        if (storage.location?.length === 2) {
+          location2 = `&lat=${storage.location[0]}&lon=${storage.location[1]}`;
+        } else {
+          location2 = `&q=${encodeURI(storage.city)},${storage.ccode}`;
+        }
+        return `https://api.openweathermap.org/data/2.5/${type}?appid=${key}${location2}&units=${units}&lang=${lang}`;
+      }
+      if (!navigator.onLine) {
+        return storage;
+      }
+      let currentResponse;
+      let forecastResponse;
+      let currentJSON;
+      let forecastJSON;
+      try {
+        currentResponse = await fetch(getRequestURL(false));
+        forecastResponse = await fetch(getRequestURL(true));
+        currentJSON = await currentResponse.json();
+        forecastJSON = await forecastResponse.json();
+      } catch (error) {
+        console.error(error);
+        return storage;
+      }
+      if (!currentResponse.ok || !forecastResponse.ok) {
+        return storage;
+      }
+      const { temp, feels_like, temp_max } = currentJSON.main;
+      const { sunrise: sunrise2, sunset: sunset2 } = currentJSON.sys;
+      const { description, id } = currentJSON.weather[0];
+      storage = {
+        ...storage,
+        lastCall: Math.floor(new Date().getTime() / 1e3),
+        lastState: {
+          temp,
+          feels_like,
+          temp_max,
+          sunrise: sunrise2,
+          sunset: sunset2,
+          description,
+          icon_id: id
+        }
+      };
+      const thisdate = new Date();
+      const todayHour = thisdate.getHours();
+      let forecastDay = thisdate.getDate();
+      let maxTempFromList = -273.15;
+      if (todayHour > 18) {
+        const tomorrow = thisdate.setDate(thisdate.getDate() + 1);
+        forecastDay = new Date(tomorrow).getDate();
+      }
+      forecastJSON.list.forEach((elem) => {
+        if (new Date(elem.dt * 1e3).getDate() === forecastDay)
+          maxTempFromList < elem.main.temp_max ? maxTempFromList = elem.main.temp_max : "";
+      });
+      storage.fcHigh = Math.round(maxTempFromList);
+      return storage;
+    }
+    async function weatherCacheControl(storage) {
+      const now = Math.floor(date.getTime() / 1e3);
+      if (typeof storage.lastCall === "number") {
+        if (navigator.onLine && (now > storage.lastCall + 1800 || sessionStorage.lang)) {
+          sessionStorage.removeItem("lang");
+          storage = await request(storage);
+          lsOnlineStorage.set({ weather: storage });
+        }
+        displayWeather(storage);
+      } else
+        initWeather(storage);
+    }
+    async function initWeather(storage) {
+      try {
+        const ipapi = await fetch("https://ipapi.co/json");
+        if (ipapi.ok) {
+          const json = await ipapi.json();
+          if (!json.error) {
+            storage = { ...storage, city: json.city, ccode: json.country };
+          }
+        }
+      } catch (error) {
+        console.log(error);
+      }
+      async function setWeatherAfterGeolocation(location2) {
+        if (location2) {
+          storage.location = location2;
+        }
+        storage = await request(storage);
+        displayWeather(storage);
+        lsOnlineStorage.set({ weather: storage });
+        setTimeout(() => {
+          if ($("settings")) {
+            const i_ccode2 = $("i_ccode");
+            const i_city2 = $("i_city");
+            const i_geol = $("i_geol");
+            const sett_city2 = $("sett_city");
+            i_ccode2.value = storage.ccode;
+            i_city2.setAttribute("placeholder", storage.city);
+            if (location2) {
+              clas(sett_city2, true, "hidden");
+              i_geol.checked = true;
+            }
+          }
+        }, 150);
+      }
+      navigator.geolocation.getCurrentPosition(
+        (pos) => setWeatherAfterGeolocation([pos.coords.latitude, pos.coords.longitude]),
+        () => setWeatherAfterGeolocation()
+      );
+    }
+    function displayWeather(storage) {
+      const currentState = storage.lastState;
+      if (!currentState) {
+        return;
+      }
+      const handleDescription = () => {
+        const desc = currentState.description;
+        const feels = Math.floor(currentState.feels_like);
+        const actual = Math.floor(currentState.temp);
+        let tempText = "";
+        switch (storage.temperature) {
+          case "feelslike": {
+            tempText = `${tradThis("It currently feels like")} ${feels}\xB0`;
+            break;
+          }
+          case "both": {
+            tempText = `${tradThis("It is currently")} ${actual}\xB0, ${tradThis("feels like")} ${feels}\xB0`;
+            break;
+          }
+          default: {
+            tempText = `${tradThis("It is currently")} ${actual}\xB0`;
+          }
+        }
+        const iconText = tempContainer?.querySelector("p");
+        if (current && iconText) {
+          current.textContent = `${desc[0].toUpperCase() + desc.slice(1)}. ${tempText}`;
+          iconText.textContent = actual + "\xB0";
+        }
+      };
+      const handleWidget = () => {
+        let filename = "lightrain";
+        const categorieIds = [
+          [[200, 201, 202, 210, 211, 212, 221, 230, 231, 232], "thunderstorm"],
+          [[300, 301, 302, 310], "lightdrizzle"],
+          [[312, 313, 314, 321], "showerdrizzle"],
+          [[500, 501, 502, 503], "lightrain"],
+          [[504, 520, 521, 522], "showerrain"],
+          [[511, 600, 601, 602, 611, 612, 613, 615, 616, 620, 621, 622], "snow"],
+          [[701, 711, 721, 731, 741, 751, 761, 762, 771, 781], "mist"],
+          [[800], "clearsky"],
+          [[801], "fewclouds"],
+          [[802], "brokenclouds"],
+          [[803, 804], "overcastclouds"]
+        ];
+        categorieIds.forEach((category) => {
+          if (category[0].includes(currentState.icon_id))
+            filename = category[1];
+        });
+        if (!tempContainer) {
+          return;
+        }
+        const widgetIcon = tempContainer.querySelector("img");
+        const { now, rise, set } = sunTime();
+        const timeOfDay = now < rise || now > set ? "night" : "day";
+        const iconSrc = `src/assets/weather/${timeOfDay}/${filename}.png`;
+        if (widgetIcon) {
+          widgetIcon.setAttribute("src", iconSrc);
+          return;
+        }
+        const icon = document.createElement("img");
+        icon.src = iconSrc;
+        icon.setAttribute("alt", "");
+        icon.setAttribute("draggable", "false");
+        tempContainer.prepend(icon);
+        setTimeout(() => tempContainer.style.transition = "opacity 0.4s, max-height 0.4s, transform 0.4s", 400);
+      };
+      const handleForecast = () => {
+        if (forecast) {
+          forecast.textContent = `${tradThis("with a high of")} ${storage.fcHigh}\xB0 ${tradThis(
+            date.getHours() > 21 ? "tomorrow" : "today"
+          )}.`;
+          clas(forecast, false, "wait");
+        }
+      };
+      handleWidget();
+      handleDescription();
+      handleForecast();
+      clas(current, false, "wait");
+      clas(tempContainer, false, "wait");
+    }
+    function forecastVisibilityControl(value = "auto") {
+      let isTimeForForecast = false;
+      if (value === "auto")
+        isTimeForForecast = date.getHours() < 12 || date.getHours() > 21;
+      else
+        isTimeForForecast = value === "always";
+      clas(forecast, isTimeForForecast, "shown");
+    }
+    async function updatesWeather() {
+      lsOnlineStorage.get(false, "weather", async (data) => {
+        switch (event?.is) {
+          case "units": {
+            data.weather.unit = event.checked ? "imperial" : "metric";
+            data.weather = await request(data.weather);
+            break;
+          }
+          case "city": {
+            if (i_city.value.length < 3 || !navigator.onLine) {
+              return false;
+            }
+            data.weather.ccode = i_ccode.value;
+            data.weather.city = stringMaxSize(i_city.value, 64);
+            const inputAnim = i_city.animate([{ opacity: 1 }, { opacity: 0.6 }], {
+              direction: "alternate",
+              easing: "linear",
+              duration: 800,
+              iterations: Infinity
+            });
+            data.weather = await request(data.weather);
+            i_city.value = "";
+            i_city.blur();
+            inputAnim.cancel();
+            i_city.setAttribute("placeholder", data.weather.city);
+            break;
+          }
+          case "geol": {
+            data.weather.location = [];
+            if (event.checked) {
+              navigator.geolocation.getCurrentPosition(
+                async (pos) => {
+                  clas(sett_city, event.checked || true, "hidden");
+                  data.weather.location = [pos.coords.latitude, pos.coords.longitude];
+                  data.weather = await request(data.weather);
+                  lsOnlineStorage.set({ weather: data.weather });
+                  displayWeather(data.weather);
+                },
+                () => {
+                  setTimeout(() => event.checked = false, 400);
+                }
+              );
+              return;
+            } else {
+              i_city.setAttribute("placeholder", data.weather.city);
+              i_ccode.value = data.weather.ccode;
+              clas(sett_city, event.checked || false, "hidden");
+              data.weather.location = [];
+              data.weather = await request(data.weather);
+            }
+            break;
+          }
+          case "forecast": {
+            data.weather.forecast = event.value;
+            forecastVisibilityControl(event.value);
+            break;
+          }
+          case "temp": {
+            data.weather.temperature = event.value;
+            break;
+          }
+        }
+        lsOnlineStorage.set({ weather: data.weather });
+        displayWeather(data.weather);
+      });
+    }
+    if (event) {
+      updatesWeather();
+      return;
+    }
+    if (init) {
+      try {
+        if (validateHideElem(init.hide)) {
+          if (init.hide[1][1] + init.hide[1][2] === 2)
+            return false;
+        }
+      } catch (e2) {
+        errorMessage("Could not validate Hide in Weather", e2);
+      }
+      try {
+        forecastVisibilityControl(init.weather.forecast);
+        weatherCacheControl(init.weather);
+      } catch (e2) {
+        errorMessage("Weather init did not work", e2);
+      }
+    }
+  }
+  function initBackground(data) {
+    const type = data.background_type || "dynamic";
+    const blur = data.background_blur;
+    const bright = data.background_bright;
+    backgroundFilter("init", { blur, bright });
+    if (type === "custom") {
+      localBackgrounds({ every: data.custom_every, time: data.custom_time });
+      return;
+    }
+    unsplash(data);
+  }
+  function imgBackground(url, loadTime = 0, isInit) {
+    const overlaydom = $("background_overlay");
+    const backgrounddom = $("background");
+    let img = new Image();
+    img.onload = () => {
+      if (loadTime) {
+        const animDuration = loadTime > 1e3 ? 1400 : loadTime + 400;
+        const changeDuration = (time) => {
+          overlaydom.style.transition = `transform .4s, opacity ${time}ms`;
+        };
+        changeDuration(animDuration);
+        setTimeout(() => changeDuration(400), animDuration);
+      }
+      const applyBackground = () => {
+        overlaydom.style.opacity = `1`;
+        backgrounddom.style.backgroundImage = `url(${url})`;
+        localIsLoading = false;
+      };
+      isInit ? applyBackground() : setTimeout(applyBackground, 400);
+    };
+    img.src = url;
+    img.remove();
+  }
+  function localBackgrounds(init, event) {
+    function isOnlineStorageAtCapacity(newFile) {
+      if (detectPlatform() === "online") {
+        const ls = localStorage.bonjourrBackgrounds;
+        const potentialFontList = JSON.parse(ls).googleFonts ? 0 : 76e4;
+        const lsSize = ls.length + potentialFontList + 1e5;
+        if (lsSize + newFile.length > 5e6) {
+          alert(`Image size exceeds storage: ${Math.abs(lsSize - 5e6) / 1e3}ko left`);
+          $("background_overlay").style.opacity = "1";
+          return true;
+        }
+      }
+      return false;
+    }
+    function b64toBlobUrl(b64Data, callback) {
+      fetch(`data:image/jpeg;base64,${b64Data}`).then((res) => {
+        res.blob().then((blob) => callback(URL.createObjectURL(blob)));
+      });
+    }
+    function thumbnailSelection(id) {
+      document.querySelectorAll(".thumbnail").forEach((thumb) => clas(thumb, false, "selected"));
+      clas(document.querySelector(".thumbnail#" + id), true, "selected");
+    }
+    function addNewImage(files) {
+      const filesArray = [...files];
+      let filesIdsList = [];
+      let selected = "";
+      filesArray.forEach(() => {
+        const _id = randomString(6);
+        selected = _id;
+        filesIdsList.push(_id);
+      });
+      filesArray.forEach((file, i) => {
+        let reader = new FileReader();
+        reader.onload = function(event2) {
+          const result = event2.target?.result;
+          if (typeof result === "string" && isOnlineStorageAtCapacity(result)) {
+            return console.warn("Uploaded image was not saved");
+          }
+          compress(result, "thumbnail", filesIdsList[i]);
+          compress(result);
+          lsOnlineStorage.setLocal({ ["custom_" + filesIdsList[i]]: result });
+        };
+        localIsLoading = true;
+        $("background_overlay").style.opacity = "0";
+        reader.readAsDataURL(file);
+      });
+      lsOnlineStorage.get(true, ["idsList"], (local) => {
+        let list = [...local.idsList];
+        list.push(...filesIdsList);
+        if (local.idsList.length === 0) {
+          lsOnlineStorage.set({ background_type: "custom" });
+        }
+        setTimeout(() => thumbnailSelection(selected), 400);
+        lsOnlineStorage.setLocal({
+          ...local,
+          idsList: list,
+          selectedId: selected
+        });
+      });
+    }
+    function compress(file, state, _id) {
+      if (state !== "thumbnail") {
+        clas($("credit"), false, "shown");
+        $("background_overlay").style.opacity = `0`;
+      }
+      const compressStart = performance.now();
+      const img = new Image();
+      img.onload = () => {
+        const elem = document.createElement("canvas");
+        const ctx = elem.getContext("2d");
+        if (!ctx)
+          return;
+        const height = state === "thumbnail" ? 140 * window.devicePixelRatio : img.height;
+        const scaleFactor = height / img.height;
+        elem.width = img.width * scaleFactor;
+        elem.height = height;
+        ctx.drawImage(img, 0, 0, img.width * scaleFactor, height);
+        const data = ctx.canvas.toDataURL(img.src);
+        const cleanData = data.slice(data.indexOf(",") + 1, data.length);
+        if (state === "thumbnail" && _id) {
+          lsOnlineStorage.setLocal({ ["customThumb_" + _id]: cleanData });
+          addThumbnails(cleanData, _id, null, true);
+          return;
+        }
+        b64toBlobUrl(cleanData, (bloburl) => {
+          const compressTime = performance.now() - compressStart;
+          setTimeout(() => imgBackground(bloburl, compressTime), 400 - compressTime);
+        });
+      };
+      img.src = file;
+    }
+    function addThumbnails(data, _id, settingsDom, isSelected) {
+      const settings = settingsDom ? settingsDom : $("settings");
+      const thb = document.createElement("button");
+      const rem = document.createElement("button");
+      const thbimg = document.createElement("img");
+      const remimg = document.createElement("img");
+      const wrap = settings.querySelector("#fileContainer");
+      thb.id = _id;
+      thb.setAttribute("class", "thumbnail" + (isSelected ? " selected" : ""));
+      clas(rem, true, "b_removethumb");
+      clas(rem, !mobilecheck(), "hidden");
+      thb.setAttribute("aria-label", "Select this background");
+      rem.setAttribute("aria-label", "Remove this background");
+      remimg.setAttribute("alt", "");
+      thbimg.setAttribute("alt", "");
+      remimg.setAttribute("src", "src/assets/interface/close.svg");
+      rem.appendChild(remimg);
+      b64toBlobUrl(data, (bloburl) => thbimg.src = bloburl);
+      thb.appendChild(thbimg);
+      thb.appendChild(rem);
+      wrap?.prepend(thb);
+      thb.onclick = (e2) => {
+        if (e2.button !== 0 || localIsLoading || !e2.target) {
+          return;
+        }
+        const thumbnailButton = e2.composedPath().find((d) => {
+          return d.className.includes("thumbnail");
+        });
+        const _id2 = thumbnailButton.id;
+        const bgKey = "custom_" + _id2;
+        lsOnlineStorage.get(true, "selectedId", (local) => {
+          if (_id2 !== local.selectedId) {
+            thumbnailSelection(_id2);
+            $("background_overlay").style.opacity = `0`;
+            localIsLoading = true;
+            lsOnlineStorage.setLocal({ selectedId: _id2 });
+            lsOnlineStorage.get(true, [bgKey], (local2) => compress(local2[bgKey]));
+          }
+        });
+      };
+      rem.onclick = (e2) => {
+        const path = e2.composedPath();
+        if (e2.button !== 0 || localIsLoading) {
+          return;
+        }
+        lsOnlineStorage.get(true, ["idsList", "selectedId"], (local) => {
+          const thumbnail = path.find((d) => {
+            return d.className.includes("thumbnail");
+          });
+          const _id2 = thumbnail.id;
+          let { idsList, selectedId } = local;
+          let poppedList = idsList.filter((s) => !s.includes(_id2));
+          thumbnail.remove();
+          lsOnlineStorage.remove(true, "custom_" + _id2);
+          lsOnlineStorage.remove(true, ["customThumb_" + _id2]);
+          lsOnlineStorage.setLocal({ idsList: poppedList });
+          if (_id2 === selectedId) {
+            if (poppedList.length > 0) {
+              selectedId = poppedList[0];
+              thumbnailSelection(selectedId);
+              const toShowId = "custom_" + poppedList[0];
+              lsOnlineStorage.get(true, [toShowId], (local2) => compress(local2[toShowId]));
+            } else {
+              $("background_overlay").style.opacity = "0";
+              lsOnlineStorage.set({ background_type: "dynamic" });
+              setTimeout(() => {
+                lsOnlineStorage.get(false, "dynamic", (data2) => unsplash(data2));
+              }, 400);
+              selectedId = "";
+            }
+            lsOnlineStorage.setLocal({ selectedId });
+          }
+        });
+      };
+    }
+    function displayCustomThumbnails(settingsDom) {
+      const thumbnails = settingsDom.querySelectorAll("#bg_tn_wrap .thumbnail");
+      lsOnlineStorage.get(true, ["idsList", "selectedId"], (local) => {
+        const { idsList, selectedId } = local;
+        if (idsList.length > 0 && thumbnails.length < idsList.length) {
+          const thumbsKeys = idsList.map((id) => "customThumb_" + id);
+          lsOnlineStorage.get(true, thumbsKeys, (local2) => {
+            Object.entries(local2).forEach(([key, val]) => {
+              if (!key.startsWith("customThumb_"))
+                return;
+              const _id = key.replace("customThumb_", "");
+              const blob = val.replace("data:image/jpeg;base64,", "");
+              const isSelected = _id === selectedId;
+              addThumbnails(blob, _id, settingsDom, isSelected);
+            });
+          });
+        }
+      });
+    }
+    function refreshCustom(button) {
+      lsOnlineStorage.get(false, "custom_every", (sync) => {
+        $("background_overlay").style.opacity = "0";
+        turnRefreshButton(button, true);
+        localIsLoading = true;
+        setTimeout(
+          () => localBackgrounds({
+            every: sync.custom_every,
+            time: 0
+          }),
+          400
+        );
+      });
+    }
+    function applyCustomBackground(id) {
+      lsOnlineStorage.get(true, ["custom_" + id], (local) => {
+        const perfStart = performance.now();
+        const background = local["custom_" + id];
+        const cleanData = background.slice(background.indexOf(",") + 1, background.length);
+        b64toBlobUrl(cleanData, (bloburl) => {
+          imgBackground(bloburl, perfStart, !!init);
+        });
+      });
+    }
+    if (event) {
+      if (event.is === "thumbnail" && event.settings)
+        displayCustomThumbnails(event.settings);
+      if (event.is === "newfile" && event.file)
+        addNewImage(event.file);
+      if (event.is === "refresh" && event.button)
+        refreshCustom(event.button);
+      return;
+    }
+    if (!init) {
+      return;
+    }
+    lsOnlineStorage.get(true, ["selectedId", "idsList"], (local) => {
+      try {
+        let { selectedId, idsList } = local;
+        const { every, time } = init;
+        const needNewImage = freqControl.get(every, time || 0);
+        if (!idsList) {
+          idsList = [];
+          selectedId = "";
+          lsOnlineStorage.get(true, null, (local2) => {
+            const ids = Object.keys(local2).filter((k) => k.startsWith("custom_")).map((k) => k.replace("custom_", ""));
+            lsOnlineStorage.setLocal({ idsList: ids, selectedId: ids[0] || "" });
+            lsOnlineStorage.get(false, null, (data) => initBackground(data));
+          });
+        }
+        if (idsList.length === 0) {
+          lsOnlineStorage.get(false, "dynamic", (data) => {
+            unsplash(data);
+          });
+          return;
+        }
+        if (every && needNewImage) {
+          if (idsList.length > 1) {
+            idsList = idsList.filter((l) => !l.includes(selectedId));
+            selectedId = idsList[Math.floor(Math.random() * idsList.length)];
+          }
+          applyCustomBackground(selectedId);
+          lsOnlineStorage.set({ custom_time: freqControl.set() });
+          lsOnlineStorage.setLocal({ selectedId });
+          if ($("settings"))
+            thumbnailSelection(selectedId);
+          return;
+        }
+        applyCustomBackground(selectedId);
+      } catch (e2) {
+        errorMessage("Could not init local backgrounds", e2);
+      }
+    });
+  }
+  async function unsplash(init, event) {
+    async function preloadImage(src) {
+      const img = new Image();
+      img.src = src;
+      await img.decode();
+      img.remove();
+      return;
+    }
+    function imgCredits(image) {
+      const domcredit = $("credit");
+      let needsSpacer = false;
+      let artist = "";
+      let photoLocation = "";
+      let exifDescription = "";
+      const referral = "?utm_source=Bonjourr&utm_medium=referral";
+      const { city, country, name, username, link, exif } = image;
+      if (!city && !country) {
+        photoLocation = tradThis("Photo by ");
+      } else {
+        if (city)
+          photoLocation = city + ", ";
+        if (country) {
+          photoLocation += country;
+          needsSpacer = true;
+        }
+      }
+      if (exif) {
+        const orderedExifData = [
+          { key: "model", format: `%val% - ` },
+          { key: "aperture", format: `f/%val% ` },
+          { key: "exposure_time", format: `%val%s ` },
+          { key: "iso", format: `ISO %val% ` },
+          { key: "focal_length", format: `%val%mm` }
+        ];
+        orderedExifData.forEach(({ key, format }) => {
+          if (Object.keys(exif).includes(key)) {
+            const exifVal = exif[key];
+            if (exifVal) {
+              exifDescription += key === "iso" ? exifVal.toString() : format.replace("%val%", exifVal.toString());
+            }
+          }
+        });
+      }
+      artist = name.split(" ").map((s) => s.charAt(0).toUpperCase() + s.slice(1).toLocaleLowerCase()).join(" ");
+      const locationDOM = document.createElement("a");
+      const spacerDOM = document.createElement("span");
+      const artistDOM = document.createElement("a");
+      const exifDOM = document.createElement("p");
+      exifDOM.className = "exif";
+      exifDOM.textContent = exifDescription;
+      locationDOM.textContent = photoLocation;
+      artistDOM.textContent = artist;
+      spacerDOM.textContent = ` - `;
+      locationDOM.href = link + referral;
+      artistDOM.href = "https://unsplash.com/@" + username + referral;
+      if (domcredit) {
+        domcredit.textContent = "";
+        domcredit.appendChild(exifDOM);
+        domcredit.appendChild(locationDOM);
+        if (needsSpacer)
+          domcredit.appendChild(spacerDOM);
+        domcredit.appendChild(artistDOM);
+        clas(domcredit, true, "shown");
+      }
+    }
+    function loadBackground(props, loadTime) {
+      imgBackground(props.url, loadTime || 0, !!init);
+      imgCredits(props);
+      document.querySelector('meta[name="theme-color"]')?.setAttribute("content", props.color);
+    }
+    async function requestNewList(collecType) {
+      const header = new Headers();
+      const collecString = allCollectionType[collecType] || allCollectionType.day;
+      const url = `https://api.unsplash.com/photos/random?collections=${collecString}&count=8`;
+      header.append("Authorization", `Client-ID 3686c12221d29ca8f7947c94542025d760a8e0d49007ec70fa2c4b9f9d377b1d`);
+      header.append("Accept-Version", "v1");
+      let resp;
+      let json;
+      resp = await fetch(url, { headers: header });
+      if (resp.status === 404) {
+        if (collecType === "user") {
+          const defaultCollectionList = await requestNewList(chooseCollection() || "day");
+          return defaultCollectionList;
+        } else {
+          return [];
+        }
+      }
+      json = await resp.json();
+      if (json.length === 1) {
+        const defaultCollectionList = await requestNewList(chooseCollection() || "day");
+        return defaultCollectionList;
+      }
+      const filteredList = [];
+      const { width, height } = screen;
+      const imgSize = width > height ? width : height;
+      json.forEach((img) => {
+        filteredList.push({
+          url: img.urls.raw + "&w=" + imgSize + "&dpr=" + window.devicePixelRatio,
+          link: img.links.html,
+          username: img.user.username,
+          name: img.user.name,
+          city: img.location.city,
+          country: img.location.country,
+          color: img.color,
+          exif: img.exif,
+          desc: img.description
+        });
+      });
+      return filteredList;
+    }
+    function chooseCollection(customCollection) {
+      if (customCollection) {
+        customCollection = customCollection.replaceAll(` `, "");
+        allCollectionType.user = customCollection;
+        return "user";
+      }
+      return periodOfDay(sunTime());
+    }
+    function collectionUpdater(dynamic) {
+      const { every, lastCollec, collection } = dynamic;
+      const Pause = every === "pause";
+      const Day = every === "day";
+      if ((Pause || Day) && lastCollec) {
+        return lastCollec;
+      }
+      const collec = chooseCollection(collection);
+      dynamic.lastCollec = collec;
+      lsOnlineStorage.set({ dynamic });
+      return collec;
+    }
+    async function cacheControl(dynamic, caches, collecType, preloading) {
+      const needNewImage = freqControl.get(dynamic.every, dynamic.time);
+      let list = caches[collecType];
+      if (preloading) {
+        loadBackground(list[0]);
+        await preloadImage(list[1].url);
+        lsOnlineStorage.remove(true, "waitingForPreload");
+        return;
+      }
+      if (!needNewImage) {
+        loadBackground(list[0]);
+        return;
+      }
+      dynamic.lastCollec = collecType;
+      dynamic.time = freqControl.set();
+      if (list.length > 1)
+        list.shift();
+      loadBackground(list[0]);
+      if (list.length === 1 && navigator.onLine) {
+        const newList = await requestNewList(collecType);
+        if (newList) {
+          caches[collecType] = list.concat(newList);
+          await preloadImage(newList[0].url);
+          lsOnlineStorage.setLocal({ dynamicCache: caches });
+          lsOnlineStorage.remove(true, "waitingForPreload");
+        }
+        return;
+      }
+      if (list.length > 1)
+        await preloadImage(list[1].url);
+      lsOnlineStorage.set({ dynamic });
+      lsOnlineStorage.setLocal({ dynamicCache: caches });
+      lsOnlineStorage.remove(true, "waitingForPreload");
+    }
+    async function populateEmptyList(collecType, cache) {
+      const newList = await requestNewList(collecType);
+      const changeStart = performance.now();
+      if (!newList) {
+        return;
+      }
+      await preloadImage(newList[0].url);
+      loadBackground(newList[0], performance.now() - changeStart);
+      cache[collecType] = newList;
+      lsOnlineStorage.setLocal({ dynamicCache: cache });
+      lsOnlineStorage.setLocal({ waitingForPreload: true });
+      await preloadImage(newList[1].url);
+      lsOnlineStorage.remove(true, "waitingForPreload");
+    }
+    function updateDynamic(event2, sync, local) {
+      switch (event2.is) {
+        case "refresh": {
+          if (!event2.button)
+            return console.log("No buttons to animate");
+          if (local.waitingForPreload === void 0) {
+            turnRefreshButton(event2.button, true);
+            $("background_overlay").style.opacity = "0";
+            const newDynamic = { ...sync.dynamic, time: 0 };
+            lsOnlineStorage.set({ dynamic: newDynamic });
+            lsOnlineStorage.setLocal({ waitingForPreload: true });
+            setTimeout(() => cacheControl(newDynamic, local.dynamicCache, collectionUpdater(newDynamic), false), 400);
+            return;
+          }
+          turnRefreshButton(event2.button, false);
+          break;
+        }
+        case "every": {
+          if (!event2.value)
+            return console.log('Not valid "every" value');
+          sync.dynamic.every = event2.value;
+          sync.dynamic.time = freqControl.set();
+          lsOnlineStorage.set({ dynamic: sync.dynamic });
+          break;
+        }
+        case "removedCustom": {
+          lsOnlineStorage.set({ background_type: "dynamic" });
+          loadBackground(local.dynamicCache[collectionUpdater(sync.dynamic)][0]);
+          break;
+        }
+        case "collection": {
+          if (!navigator.onLine || !event2.value)
+            return;
+          $("background_overlay").style.opacity = "0";
+          if (event2.value === "") {
+            const defaultColl = chooseCollection();
+            local.dynamicCache.user = [];
+            sync.dynamic.collection = "";
+            sync.dynamic.lastCollec = defaultColl;
+            lsOnlineStorage.set({ dynamic: sync.dynamic });
+            lsOnlineStorage.setLocal({ dynamicCache: local.dynamicCache });
+            unsplash(sync);
+            return;
+          }
+          sync.dynamic.collection = event2.value;
+          sync.dynamic.lastCollec = "user";
+          sync.dynamic.time = freqControl.set();
+          lsOnlineStorage.set({ dynamic: sync.dynamic });
+          populateEmptyList(chooseCollection(event2.value), local.dynamicCache);
+          break;
+        }
+      }
+    }
+    const allCollectionType = {
+      noon: "GD4aOSg4yQE",
+      day: "o8uX55RbBPs",
+      evening: "3M2rKTckZaQ",
+      night: "bHDh4Ae7O8o",
+      user: ""
+    };
+    if (event) {
+      lsOnlineStorage.get(false, 
+        "dynamic",
+        (sync) => lsOnlineStorage.get(true, ["dynamicCache", "waitingForPreload"], (local) => {
+          updateDynamic(event, sync, local);
+        })
+      );
+    }
+    if (!init) {
+      return;
+    }
+    lsOnlineStorage.get(true, ["dynamicCache", "waitingForPreload"], (local) => {
+      try {
+        const collecType = collectionUpdater(init.dynamic);
+        const cache = local.dynamicCache || localDefaults.dynamicCache;
+        if (cache[collecType].length === 0) {
+          populateEmptyList(collecType, cache);
+          return;
+        }
+        cacheControl(init.dynamic, cache, collecType, local.waitingForPreload);
+      } catch (e2) {
+        errorMessage("Dynamic errored on init", e2);
+      }
+    });
+    return;
+  }
+  function backgroundFilter(cat, val, isEvent) {
+    let result = "";
+    const domblur = $("i_blur");
+    const dombright = $("i_bright");
+    switch (cat) {
+      case "init":
+        result = `blur(${val.blur}px) brightness(${val.bright})`;
+        break;
+      case "blur":
+        result = `blur(${val.blur}px) brightness(${dombright.value})`;
+        break;
+      case "bright":
+        result = `blur(${domblur.value}px) brightness(${val.bright})`;
+        break;
+    }
+    $("background").style.filter = result;
+    if (isEvent) {
+      if (cat === "blur")
+        eventDebounce({ background_blur: val.blur });
+      if (cat === "bright")
+        eventDebounce({ background_bright: val.bright });
+    }
+  }
+  function darkmode(value, isEvent) {
+    const time = sunTime();
+    if (time) {
+      const cases = {
+        auto: time.now <= time.rise || time.now > time.set ? "dark" : "",
+        system: "autodark",
+        enable: "dark",
+        disable: ""
+      };
+      document.body.setAttribute("class", cases[value]);
+      if (isEvent) {
+        lsOnlineStorage.set({ dark: value });
+      }
+    }
+  }
+  function searchbar(init, event, that) {
+    const domsearchbar = $("searchbar");
+    const emptyButton = $("sb_empty");
+    const submitButton = $("sb_submit");
+    const display = (shown) => $("sb_container")?.setAttribute("class", shown ? "shown" : "hidden");
+    const setEngine = (value) => domsearchbar.setAttribute("data-engine", value);
+    const setRequest = (value) => domsearchbar.setAttribute("data-request", stringMaxSize(value, 512));
+    const setNewtab = (value) => domsearchbar.setAttribute("data-newtab", value.toString());
+    const setOpacity = (value) => {
+      domsearchbar.setAttribute("style", `background: rgba(255, 255, 255, ${value}); color: ${value > 0.4 ? "#222" : "#fff"}`);
+      if (value > 0.4)
+        $("sb_container")?.classList.add("opaque");
+      else
+        $("sb_container")?.classList.remove("opaque");
+    };
+    function updateSearchbar() {
+      lsOnlineStorage.get(false, "searchbar", (data) => {
+        if (!that) {
+          return;
+        }
+        switch (event) {
+          case "searchbar": {
+            data.searchbar.on = that.checked;
+            display(that.checked);
+            interfaceWidgetToggle(null, "searchbar");
+            break;
+          }
+          case "engine": {
+            data.searchbar.engine = that.value;
+            clas($("searchbar_request"), that.value === "custom", "shown");
+            setEngine(that.value);
+            break;
+          }
+          case "opacity": {
+            data.searchbar.opacity = parseFloat(that.value);
+            setOpacity(parseFloat(that.value));
+            break;
+          }
+          case "request": {
+            let val = that.value;
+            if (val.indexOf("%s") !== -1) {
+              data.searchbar.request = stringMaxSize(val, 512);
+              that.blur();
+            } else if (val.length > 0) {
+              val = "";
+              that.setAttribute("placeholder", tradThis("%s Not found"));
+              setTimeout(() => that.setAttribute("placeholder", tradThis("Search query: %s")), 2e3);
+            }
+            setRequest(val);
+            break;
+          }
+          case "newtab": {
+            data.searchbar.newtab = that.checked;
+            setNewtab(that.checked);
+            break;
+          }
+        }
+        eventDebounce({ searchbar: data.searchbar });
+      });
+    }
+    function submitSearch() {
+      let searchURL = "https://www.google.com/search?q=%s";
+      const isNewtab = domsearchbar.getAttribute("data-newtab") === "true";
+      const engine2 = domsearchbar.getAttribute("data-engine") || "google";
+      const request2 = domsearchbar.getAttribute("data-request") || "";
+      const lang = document.documentElement.getAttribute("lang") || "en";
+      if (engine2 in enginesUrls) {
+        searchURL = enginesUrls[engine2];
+        if (engine2 in enginesLocales && lang in enginesLocales[engine2]) {
+          const selectedLocale = enginesLocales[engine2];
+          const selectedLang = selectedLocale[lang];
+          searchURL = searchURL.replace("%l", selectedLang);
+        }
+      } else if (engine2 === "custom") {
+        searchURL = request2;
+      }
+      searchURL = searchURL.replace("%s", encodeURIComponent(domsearchbar.value));
+      if (isNewtab)
+        window.open(searchURL, "_blank");
+      else
+        window.location.href = searchURL;
+    }
+    function toggleInputButton(toggle) {
+      if (toggle) {
+        emptyButton.removeAttribute("disabled");
+        submitButton.removeAttribute("disabled");
+      } else {
+        emptyButton.setAttribute("disabled", "");
+        submitButton.setAttribute("disabled", "");
+      }
+    }
+    domsearchbar.onkeyup = function(e2) {
+      const domssb = this;
+      if (e2.key === "Enter" && domssb.value.length > 0) {
+        submitSearch();
+      }
+    };
+    domsearchbar.oninput = function() {
+      const domssb = this;
+      const hasText = domssb.value.length > 0;
+      clas(emptyButton, hasText, "shown");
+      clas(submitButton, hasText, "shown");
+      toggleInputButton(hasText);
+    };
+    emptyButton.onclick = function() {
+      domsearchbar.value = "";
+      domsearchbar.focus();
+      clas(emptyButton, false, "shown");
+      clas(submitButton, false, "shown");
+      toggleInputButton(false);
+    };
+    submitButton.onclick = function() {
+      submitSearch();
+    };
+    if (event) {
+      updateSearchbar();
+      return;
+    }
+    const { on, engine, request, newtab, opacity } = init || syncDefaults.searchbar;
+    try {
+      display(on);
+      setEngine(engine);
+      setRequest(request);
+      setNewtab(newtab);
+      setOpacity(opacity);
+      if (on)
+        domsearchbar.focus();
+    } catch (e2) {
+      errorMessage("Error in searchbar initialization", e2);
+    }
+  }
+  async function quotes(init, event) {
+    function display(on) {
+      clas($("linkblocks"), on, "withQuotes");
+      $("quotes_container")?.setAttribute("class", on ? "shown" : "hidden");
+    }
+    async function newQuote(lang, type) {
+      try {
+        if (!navigator.onLine) {
+          return [];
+        }
+        const query = type += type === "classic" ? `/${lang}` : "";
+        const response = await fetch("https://quotes.bonjourr.fr/" + query);
+        const json = await response.json();
+        if (response.ok) {
+          return json;
+        }
+      } catch (error) {
+        console.warn(error);
+        return [];
+      }
+    }
+    function insertToDom(values) {
+      const quoteDOM = $("quote");
+      const authorDOM = $("author");
+      if (!values || !quoteDOM || !authorDOM) {
+        return;
+      }
+      quoteDOM.textContent = values.content;
+      authorDOM.textContent = values.author;
+    }
+    function controlCacheList(list, lang, type) {
+      list.shift();
+      lsOnlineStorage.setLocal({ quotesCache: list });
+      if (list.length < 2) {
+        newQuote(lang, type).then((list2) => {
+          lsOnlineStorage.setLocal({ quotesCache: list2 });
+        });
+      }
+      return list;
+    }
+    function updateSettings() {
+      lsOnlineStorage.get(false, ["lang", "quotes"], async (data) => {
+        const updated = { ...data.quotes };
+        const { lang, quotes: quotes2 } = data;
+        switch (event?.is) {
+          case "toggle": {
+            const on = event.checked || false;
+            updated.on = on;
+            lsOnlineStorage.get(true, "quotesCache", (local) => {
+              insertToDom(local.quotesCache[0]);
+              display(on);
+            });
+            interfaceWidgetToggle(null, "quotes");
+            break;
+          }
+          case "author": {
+            clas($("author"), event.checked || false, "alwaysVisible");
+            updated.author = event.checked;
+            break;
+          }
+          case "frequency": {
+            updated.frequency = event.value;
+            break;
+          }
+          case "type": {
+            if (event.value) {
+              updated.type = event.value;
+              const list = await newQuote(lang, event.value);
+              lsOnlineStorage.setLocal({ quotesCache: list });
+              insertToDom(list[0]);
+            }
+            break;
+          }
+          case "refresh": {
+            updated.last = freqControl.set();
+            lsOnlineStorage.get(true, "quotesCache", async (local) => {
+              const { quotesCache } = local;
+              const quote = controlCacheList(quotesCache, lang, quotes2.type)[0];
+              insertToDom(quote);
+            });
+            break;
+          }
+        }
+        lsOnlineStorage.set({ quotes: updated });
+      });
+    }
+    if (event) {
+      updateSettings();
+      return;
+    }
+    if (!init) {
+      errorMessage("No data to display Quotes !");
+      return;
+    }
+    lsOnlineStorage.get(true, "quotesCache", async (local) => {
+      canDisplayInterface("quotes");
+      const { lang, quotes: quotes2 } = init;
+      let needsNewQuote = freqControl.get(quotes2.frequency, quotes2.last);
+      let cache = local.quotesCache;
+      let quote;
+      if (!cache || cache?.length === 0) {
+        cache = await newQuote(lang, quotes2.type);
+        lsOnlineStorage.setLocal({ quotesCache: cache });
+        quote = cache[0];
+      }
+      if (needsNewQuote) {
+        quotes2.last = freqControl.set();
+        lsOnlineStorage.set({ quotes: quotes2 });
+        quote = controlCacheList(cache, lang, quotes2.type)[0];
+      }
+      if (init?.quotes?.on === false) {
+        return;
+      }
+      quote = cache[0];
+      if (quotes2.author) {
+        $("author")?.classList.add("alwaysVisible");
+      }
+      insertToDom(quote);
+      display(true);
+    });
+  }
+  function showPopup(value) {
+    function affiche() {
+      const setReviewLink = () => getBrowser() === "chrome" ? "https://chrome.google.com/webstore/detail/bonjourr-%C2%B7-minimalist-lig/dlnejlppicbjfcfcedcflplfjajinajd/reviews" : getBrowser() === "firefox" ? "https://addons.mozilla.org/en-US/firefox/addon/bonjourr-startpage/" : getBrowser() === "safari" ? "https://apps.apple.com/fr/app/bonjourr-startpage/id1615431236" : getBrowser() === "edge" ? "https://microsoftedge.microsoft.com/addons/detail/bonjourr/dehmmlejmefjphdeoagelkpaoolicmid" : "https://bonjourr.fr/help#%EF%B8%8F-reviews";
+      const dom = {
+        wrap: document.createElement("div"),
+        btnwrap: document.createElement("div"),
+        desc: document.createElement("p"),
+        review: document.createElement("a"),
+        donate: document.createElement("a")
+      };
+      const closePopup = (fromText) => {
+        if (fromText) {
+          $("popup")?.classList.remove("shown");
+          setTimeout(() => {
+            $("popup")?.remove();
+            setTimeout(() => $("credit")?.removeAttribute("style"), 400);
+          }, 200);
+        }
+        lsOnlineStorage.set({ reviewPopup: "removed" });
+      };
+      dom.wrap.id = "popup";
+      dom.desc.id = "popup_text";
+      dom.desc.textContent = tradThis(
+        "Love using Bonjourr? Consider giving us a review or donating, that would help a lot! \u{1F607}"
+      );
+      dom.review.href = setReviewLink();
+      dom.donate.href = "https://ko-fi.com/bonjourr";
+      dom.review.textContent = tradThis("Review");
+      dom.donate.textContent = tradThis("Donate");
+      dom.btnwrap.id = "popup_buttons";
+      dom.btnwrap.appendChild(dom.review);
+      dom.btnwrap.appendChild(dom.donate);
+      dom.wrap.appendChild(dom.desc);
+      dom.wrap.appendChild(dom.btnwrap);
+      document.body.appendChild(dom.wrap);
+      const creditdom = $("credit");
+      creditdom ? creditdom.style.opacity = "0" : "";
+      setTimeout(() => dom.wrap.classList.add("shown"), 200);
+      dom.review.addEventListener("mousedown", () => closePopup(false));
+      dom.donate.addEventListener("mousedown", () => closePopup(false));
+      dom.desc.addEventListener("click", () => closePopup(true), { passive: true });
+    }
+    if (typeof value === "number") {
+      if (value > 30)
+        affiche();
+      else
+        lsOnlineStorage.set({ reviewPopup: value + 1 });
+      return;
+    }
+    if (value !== "removed") {
+      lsOnlineStorage.set({ reviewPopup: 0 });
+    }
+  }
+  function modifyWeightOptions(weights, settingsDom) {
+    const select = (settingsDom ? settingsDom : $("settings")).querySelector("#i_weight");
+    const options = select?.querySelectorAll("option");
+    if ((!weights || weights.length === 0) && options) {
+      options.forEach((option) => option.style.display = "block");
+      return true;
+    } else {
+      if (weights.includes("regular"))
+        weights[weights.indexOf("regular")] = "400";
+      weights = weights.map((aa) => aa);
+      if (options) {
+        options.forEach((option) => option.style.display = weights.indexOf(option.value) !== -1 ? "block" : "none");
+      }
+    }
+  }
+  function safeFont(settingsDom) {
+    const is = safeFontList;
+    let toUse = is.fallback;
+    const hasUbuntu = document.fonts.check("16px Ubuntu");
+    const notAppleOrWindows = !testOS.mac && !testOS.windows && !testOS.ios;
+    if (testOS.windows)
+      toUse = is.windows;
+    else if (testOS.android)
+      toUse = is.android;
+    else if (testOS.mac || testOS.ios)
+      toUse = is.apple;
+    else if (notAppleOrWindows && hasUbuntu)
+      toUse = is.linux;
+    if (settingsDom) {
+      settingsDom.querySelector("#i_customfont")?.setAttribute("placeholder", toUse.placeholder);
+      modifyWeightOptions(toUse.weights, settingsDom);
+    }
+    return toUse;
+  }
+  function customFont(init, event) {
+    function setSize(val) {
+      dominterface.style.fontSize = parseInt(val) / 16 + "em";
+    }
+    function setWeight(family, weight) {
+      if (weight) {
+        const list = safeFont().weights;
+        dominterface.style.fontWeight = weight;
+        $("searchbar").style.fontWeight = weight;
+        const loweredWeight = parseInt(weight) > 100 ? list[list.indexOf(weight) - 1] : weight;
+        $("clock").style.fontWeight = family ? weight : loweredWeight;
+      }
+    }
+    function setFamily(family, fontface) {
+      $("fontstyle").textContent = fontface;
+      $("clock").style.fontFamily = '"' + family + '"';
+      $("credit").style.fontFamily = '"' + family + '"';
+      dominterface.style.fontFamily = '"' + family + '"';
+    }
+    async function setFontface(url) {
+      const resp = await fetch(url);
+      const text = await resp.text();
+      const fontface = text.replace(/(\r\n|\n|\r|  )/gm, "");
+      lsOnlineStorage.setLocal({ fontface });
+      return fontface;
+    }
+    function updateFont() {
+      function fetchFontList(callback) {
+        lsOnlineStorage.get(true, "googleFonts", async (local) => {
+          if (local.googleFonts) {
+            callback(local.googleFonts);
+            return;
+          }
+          if (!navigator.onLine) {
+            return;
+          }
+          const a = "QUl6YVN5QWt5M0pZYzJyQ09MMWpJc3NHQmdMcjFQVDR5VzE1ak9r";
+          const url = "https://www.googleapis.com/webfonts/v1/webfonts?sort=popularity&key=" + window.atob(a);
+          const resp = await fetch(url);
+          if (!resp.ok) {
+            return;
+          }
+          const json = await resp.json();
+          if (json.items?.length > 0 && typeof json.items[0]?.family === "string") {
+            lsOnlineStorage.setLocal({ googleFonts: json });
+            callback(json);
+          }
+        });
+      }
+      function removeFont() {
+        const domstyle = $("fontstyle");
+        const domclock = $("clock");
+        const domcredit = $("credit");
+        const domsearchbar = $("searchbar");
+        domstyle.textContent = "";
+        domclock.style.fontFamily = "";
+        domcredit.style.fontFamily = "";
+        dominterface.style.fontFamily = "";
+        const baseWeight = testOS.windows ? "400" : "300";
+        dominterface.style.fontWeight = baseWeight;
+        domsearchbar.style.fontWeight = baseWeight;
+        domclock.style.fontWeight = "";
+        $("i_weight")?.setAttribute("value", baseWeight);
+        return { url: "", family: "", availWeights: [], weight: baseWeight };
+      }
+      async function changeFamily(json, family) {
+        const domfamily = $("i_customfont");
+        const domweight = $("i_weight");
+        const font = json.items.filter((font2) => font2.family.toUpperCase() === family.toUpperCase());
+        if (font.length > 0) {
+          const availWeights = font[0].variants.filter((variant) => !variant.includes("italic"));
+          const defaultWeight = availWeights.includes("regular") ? "400" : availWeights[0];
+          const url = encodeURI(`https://fonts.googleapis.com/css?family=${font[0].family}:${defaultWeight}`);
+          const fontface = await setFontface(url);
+          setFamily(font[0].family, fontface);
+          setWeight(font[0].family, "400");
+          modifyWeightOptions(availWeights);
+          domweight.value = "400";
+          if (domfamily)
+            domfamily.blur();
+          return { url, family: font[0].family, availWeights, weight: "400" };
+        } else {
+          domfamily.value = "";
+          safeFont($("settings"));
+          return { url: "", family: "", availWeights: [], weight: testOS.windows ? "400" : "300" };
+        }
+      }
+      lsOnlineStorage.get(false, "font", async ({ font }) => {
+        switch (event?.is) {
+          case "autocomplete": {
+            fetchFontList((json) => {
+              if (!json)
+                return;
+              const fragment = new DocumentFragment();
+              json.items.forEach(function addOptions(item) {
+                const option = document.createElement("option");
+                option.textContent = item.family;
+                option.setAttribute("value", item.family);
+                fragment.appendChild(option);
+              });
+              if (event.elem) {
+                event.elem.querySelector("#dl_fontfamily")?.appendChild(fragment);
+              }
+            });
+            break;
+          }
+          case "family": {
+            const val = event.value;
+            if (val === "") {
+              safeFont($("settings"));
+              (0, import_lodash3.default)(() => {
+                lsOnlineStorage.remove(true, "fontface");
+                eventDebounce({ font: { size: font.size, ...removeFont() } });
+              }, 200);
+            }
+            if (typeof val === "string" && val.length > 1) {
+              fetchFontList(async (json) => {
+                lsOnlineStorage.set({
+                  font: { size: font.size, ...await changeFamily(json, val) }
+                });
+              });
+            }
+            break;
+          }
+          case "weight": {
+            if (font.url) {
+              font.url = font.url.slice(0, font.url.lastIndexOf(":") + 1);
+              font.url += event.value;
+              setFamily(font.family, await setFontface(font.url));
+            } else
+              font.weight = event.value;
+            setWeight(font.family, event.value || "400");
+            eventDebounce({ font });
+            break;
+          }
+          case "size": {
+            if (event.value) {
+              font.size = event.value;
+              setSize(event.value);
+              eventDebounce({ font });
+            }
+            break;
+          }
+        }
+      });
+    }
+    if (event) {
+      updateFont();
+      return;
+    }
+    try {
+      if (!init) {
+        return;
+      }
+      const { size, family, weight, url } = init;
+      setSize(size);
+      setWeight(family, weight);
+      if (family === "") {
+        return;
+      }
+      lsOnlineStorage.get(true, "fontface", async (local) => {
+        setFamily(family, local.fontface || await setFontface(url));
+        canDisplayInterface("fonts");
+      });
+    } catch (e2) {
+      errorMessage("Custom fonts failed to start", e2);
+    }
+  }
+  function textShadow(init, event) {
+    const val = init ? init : event;
+    dominterface.style.textShadow = `1px 2px 6px rgba(0, 0, 0, ${val})`;
+    if (typeof event === "number") {
+      eventDebounce({ textShadow: val });
+    }
+  }
+  function customCss(init, event) {
+    const styleHead = $("styles");
+    if (init) {
+      styleHead.textContent = init;
+    }
+    if (event) {
+      switch (event.is) {
+        case "styling": {
+          if (typeof event.val === "string") {
+            const val = stringMaxSize(event.val, 8080);
+            styleHead.textContent = val;
+            eventDebounce({ css: val });
+          }
+          break;
+        }
+        case "resize": {
+          if (typeof event.val === "number") {
+            eventDebounce({ cssHeight: event.val });
+          }
+          break;
+        }
+      }
+    }
+  }
+  function hideElem(init, event) {
+    const IDsList = [
+      ["time", ["time-container", "date"]],
+      ["main", ["greetings", "description", "tempContainer"]],
+      ["linkblocks", ["linkblocks"]],
+      ["showSettings", ["showSettings"]]
+    ];
+    const getEventListPosition = (that) => ({
+      row: parseInt(that.getAttribute("data-row") || "0"),
+      col: parseInt(that.getAttribute("data-col") || "0")
+    });
+    function isEverythingHidden(list, row) {
+      const filtered = list[row].filter((el) => el === 1);
+      return filtered.length === list[row].length;
+    }
+    function initElements(list) {
+      list.forEach((row, row_i) => {
+        const parent = IDsList[row_i][0];
+        if (isEverythingHidden(list, row_i)) {
+          clas($(parent), true, "he_hidden");
+        }
+        row.forEach((child, child_i) => {
+          const id = IDsList[row_i][1][child_i];
+          if (!!child) {
+            clas($(id), true, "he_hidden");
+          }
+        });
+      });
+    }
+    function initButtons() {
+      lsOnlineStorage.get(false, "hide", (data) => {
+        try {
+          data.hide = validateHideElem(data.hide) ? data.hide : [[0, 0], [0, 0, 0], [0], [0]];
+          event?.buttonList?.forEach((button) => {
+            const pos = getEventListPosition(button);
+            if (data.hide[pos.row][pos.col] === 1)
+              button.classList.toggle("clicked");
+          });
+        } catch (e2) {
+          errorMessage("Hide buttons failed", e2);
+        }
+      });
+    }
+    function toggleElement() {
+      lsOnlineStorage.get(false, ["weather", "hide"], (data) => {
+        data.hide = validateHideElem(data.hide) ? data.hide : [[0, 0], [0, 0, 0], [0], [0]];
+        if (!event?.button) {
+          return;
+        }
+        const pos = getEventListPosition(event.button);
+        const state = event.button.classList.contains("clicked");
+        const child = IDsList[pos.row][1][pos.col];
+        const parent = IDsList[pos.row][0];
+        data.hide[pos.row][pos.col] = state ? 1 : 0;
+        lsOnlineStorage.set({ hide: data.hide });
+        if (!state && pos.row === 1 && pos.col > 0 && "weather" in data) {
+          weather(data);
+        }
+        clas($(child), state, "he_hidden");
+        clas($(parent), isEverythingHidden(data.hide, pos.row), "he_hidden");
+      });
+    }
+    if (event) {
+      if (event.is === "buttons" && event.buttonList)
+        initButtons();
+      if (event.is === "hide" && event.button)
+        toggleElement();
+      return;
+    }
+    if (init && validateHideElem(init)) {
+      try {
+        initElements(init);
+      } catch (e2) {
+        errorMessage("Hide failed on init", e2);
+      }
+    }
+  }
+  function sunTime(init) {
+    if (init && init.lastState) {
+      sunrise = init.lastState.sunrise;
+      sunset = init.lastState.sunset;
+    }
+    if (sunset === 0) {
+      return {
+        now: minutator(new Date()),
+        rise: 420,
+        set: 1320
+      };
+    }
+    return {
+      now: minutator(new Date()),
+      rise: minutator(new Date(sunrise * 1e3)),
+      set: minutator(new Date(sunset * 1e3))
+    };
+  }
+  function filterImports(data) {
+    let result = { ...syncDefaults, ...data };
+    if (validateHideElem(data.hide)) {
+      const weatherIndex = data.hide.indexOf("weather_desc");
+      const widgetIndex = data.hide.indexOf("w_icon");
+      if (weatherIndex >= 0)
+        data.hide[weatherIndex] = "description";
+      if (widgetIndex >= 0)
+        data.hide[widgetIndex] = "widget";
+    } else {
+      data.hide = [[0, 0], [0, 0, 0], [0], [0]];
+    }
+    if (typeof data.searchbar === "boolean") {
+      result.on = data.searchbar;
+      result.newtab = data.searchbar_newtab || false;
+      result.engine = data.searchbar_engine ? data.searchbar_engine.replace("s_", "") : "google";
+    }
+    try {
+      let linksFilter2 = function(sync) {
+        const aliasKeyList = Object.keys(sync).filter((key) => key.match("alias:"));
+        sync.links?.forEach(({ title, url, icon }, i) => {
+          const id = "links" + randomString(6);
+          const filteredIcon = icon.startsWith("alias:") ? sync[icon] : icon;
+          sync[id] = { _id: id, order: i, title, icon: filteredIcon, url };
+        });
+        aliasKeyList.forEach((key) => delete sync[key]);
+        delete sync.links;
+        return sync;
+      };
+      var linksFilter = linksFilter2;
+      result = linksFilter2(result);
+    } catch (e2) {
+      errorMessage("Messed up in filter imports", e2);
+    }
+    return result;
+  }
+  function canDisplayInterface(cat, init) {
+    function displayInterface() {
+      const domshowsettings = $("showSettings");
+      let loadtime = performance.now() - loadtimeStart;
+      if (loadtime > 400)
+        loadtime = 400;
+      loadtime = loadtime < 33 ? 0 : 400;
+      domshowsettings.style.transition = `opacity ${loadtime}ms`;
+      dominterface.style.transition = `opacity ${loadtime}ms, transform .4s`;
+      dominterface.style.opacity = "1";
+      clas(domshowsettings, true, "enabled");
+      setTimeout(() => {
+        dominterface.classList.remove("init");
+        domshowsettings.classList.remove("init");
+        domshowsettings.style.transition = ``;
+        lsOnlineStorage.get(false, null, (data) => settingsInit(data));
+      }, loadtime + 100);
+    }
+    if (init || !cat) {
+      if (init?.font?.family && init?.font?.url)
+        functionsLoad.fonts = "Waiting";
+      if (init?.quotes?.on)
+        functionsLoad.quotes = "Waiting";
+      return;
+    }
+    if (functionsLoad[cat] === "Off") {
+      return;
+    }
+    functionsLoad[cat] = "Ready";
+    if (Object.values(functionsLoad).includes("Waiting") === false && !$("settings")) {
+      displayInterface();
+    }
+  }
+  function interfaceWidgetToggle(init, event) {
+    const toggleEmpty = (is) => clas($("widgets"), is, "empty");
+    if (event) {
+      lsOnlineStorage.get(false, ["searchbar", "notes", "quotes", "quicklinks"], (data) => {
+        let displayed = {
+          quicklinks: data.quicklinks,
+          quotes: data.quotes.on,
+          searchbar: data.searchbar.on,
+          notes: data.notes.on
+        };
+        $(event + "_options")?.classList.toggle("shown");
+        displayed[event] = !displayed[event];
+        toggleEmpty(Object.values(displayed).every((d) => !d));
+      });
+      return;
+    }
+    if (init) {
+      const { notes: notes2, quicklinks, searchbar: searchbar2, quotes: quotes2 } = init;
+      toggleEmpty(!(notes2?.on || quicklinks || searchbar2?.on || quotes2?.on));
+    }
+  }
+  function onlineAndMobileHandler() {
+    if (mobilecheck()) {
+      document.addEventListener("visibilitychange", () => {
+        lsOnlineStorage.get(false, ["dynamic", "waitingForPreload", "weather", "background_type", "hide"], (data) => {
+          const { dynamic, background_type } = data;
+          const dynamicNeedsImage = background_type === "dynamic" && freqControl.get(dynamic.every, dynamic.time);
+          if (dynamicNeedsImage) {
+            $("background_overlay").style.opacity = "0";
+            unsplash(data);
+          }
+          clock(data);
+          sunTime(data.weather);
+          weather(data);
+        });
+      });
+    }
+    if (detectPlatform() === "online") {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js");
+      }
+      let promptEvent;
+      window.addEventListener("beforeinstallprompt", function(e2) {
+        promptEvent = e2;
+        return promptEvent;
+      });
+      const appHeight = () => document.documentElement.style.setProperty("--app-height", `${window.innerHeight}px`);
+      window.addEventListener("resize", appHeight);
+      appHeight();
+      if (testOS.ios && navigator.userAgent.includes("Firefox")) {
+        let triggerAnimationFrame2 = function() {
+          appHeight();
+          globalID = requestAnimationFrame(triggerAnimationFrame2);
+        };
+        var triggerAnimationFrame = triggerAnimationFrame2;
+        let globalID;
+        window.requestAnimationFrame(triggerAnimationFrame2);
+        setTimeout(function() {
+          cancelAnimationFrame(globalID);
+        }, 500);
+      }
+    }
+  }
+  function startup(data) {
+    traduction(null, data.lang);
+    canDisplayInterface(null, data);
+    sunTime(data.weather);
+    weather(data);
+    customFont(data.font);
+    textShadow(data.textShadow);
+    favicon(data.favicon);
+    tabTitle(data.tabtitle);
+    clock(data);
+    darkmode(data.dark);
+    searchbar(data.searchbar);
+    quotes(data);
+    showPopup(data.reviewPopup);
+    notes(data.notes || null);
+    customCss(data.css);
+    hideElem(data.hide);
+    initBackground(data);
+    quickLinks(data);
+    interfaceWidgetToggle(data);
+    setInterval(() => {
+      if (navigator.onLine) {
+        lsOnlineStorage.get(false, ["weather", "hide"], (data2) => {
+          weather(data2);
+        });
+      }
+    }, 3e5);
+  }
+  var dominterface = $("interface");
+  var isExtension = detectPlatform() !== "online";
+  var functionsLoad = {
+    clock: "Waiting",
+    links: "Waiting",
+    fonts: "Off",
+    quotes: "Off"
+  };
+  var lazyClockInterval = setTimeout(() => {
+  }, 0);
+  var localIsLoading = false;
+  var loadtimeStart = performance.now();
+  var sunset = 0;
+  var sunrise = 0;
+  window.onload = function() {
+    onlineAndMobileHandler();
+    console.log(mobilecheck() ? "mobile" : "desktop");
+    try {
+      lsOnlineStorage.get(false, null, (data) => {
+        const VersionChange = data?.about?.version !== syncDefaults.about.version;
+        const isImport = sessionStorage.isImport === "true";
+        const firstStart = Object.keys(data).length === 0;
+        if (firstStart) {
+          data = syncDefaults;
+          lsOnlineStorage.setLocal(localDefaults);
+          lsOnlineStorage.set(isExtension ? data : { import: data });
+        } else if (isImport) {
+          sessionStorage.removeItem("isImport");
+          data = filterImports(data);
+          data.about = { browser: detectPlatform(), version: syncDefaults.about.version };
+          lsOnlineStorage.clear();
+          lsOnlineStorage.set(isExtension ? data : { import: data });
+        } else if (VersionChange) {
+          const oldV = data?.about?.version;
+          const newV = syncDefaults.about.version;
+          console.log(`Version change: ${oldV} => ${newV}`);
+          if (oldV === "1.14.2" && newV === "1.15.0") {
+            localStorage.hasUpdated = "true";
+          }
+          data.quicklinks = data.hide[2][0] === 0;
+          data.hide[2][0] = 0;
+          data.notes = syncDefaults.notes;
+          data.about = { browser: detectPlatform(), version: newV };
+          lsOnlineStorage.set(isExtension ? data : { import: data });
+        }
+        startup(data);
+      });
+    } catch (e2) {
+      errorMessage("Could not load chrome storage on startup", e2);
+    }
+  };
+})();

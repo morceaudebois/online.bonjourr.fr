@@ -1,3 +1,5 @@
+// Hello world
+
 const bonjourrCache = 'bonjourr-v1.17.0'
 
 const filesToChache = [

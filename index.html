@@ -22,6 +22,7 @@
 		<style type="text/css" id="styles"></style>
 		<style type="text/css" id="fontface"></style>
 
+		<script src="src/scripts/help-mode.js" defer></script>
 		<script src="src/scripts/main.js" defer></script>
 	</head>
 
@@ -280,7 +281,7 @@
 			</div>
 		</dialog>
 
-		<div id="background-wrapper" class="hidden" data-type="omages" data-texture="none">
+		<div id="background-wrapper" class="hidden" data-type="images" data-texture="none">
 			<div id="background-media"></div>
 			<div id="background-color"></div>
 			<div id="background-texture"></div>
@@ -474,186 +475,6 @@
 			</button>
 		</div>
 
-		<div id="templates">
-			<template id="bookmarks-dialog-template">
-				<dialog id="bookmarks">
-					<div id="bookmarks-header">
-						<div id="bookmarks-intro">
-							<span class="trn">
-								Synchronized groups are automatically updated to match your browser bookmarks. Learn
-								more on
-							</span>
-
-							<a class="trn" target="_blank" href="https://bonjourr.fr/docs/overview#link-groups"
-								>our documentation</a
-							>.
-						</div>
-
-						<div id="bookmarks-buttons">
-							<button id="bmk_close" class="trn btn-red">Close</button>
-							<button id="bmk_apply" class="trn" disabled>Import selection</button>
-						</div>
-					</div>
-
-					<div id="bookmarks-container"></div>
-				</dialog>
-			</template>
-
-			<template id="bookmarks-folder-template">
-				<div class="bookmarks-folder">
-					<div class="bookmarks-folder-title">
-						<h2>
-							<span class="bookmarks-folder-title-content"></span>
-							<span class="bookmarks-folder-title-synced trn">(synced)</span>
-						</h2>
-						<div>
-							<button class="trn b_bookmarks-folder-select">Select group</button>
-							<button class="trn b_bookmarks-folder-sync" disabled>Sync with browser</button>
-						</div>
-					</div>
-					<ol></ol>
-				</div>
-			</template>
-
-			<template id="bookmarks-item-template">
-				<li>
-					<button>
-						<img draggable="false" loading="lazy" alt="" />
-						<p class="bookmark-title"></p>
-						<p class="bookmark-url"></p>
-					</button>
-				</li>
-			</template>
-
-			<template id="link-group-template">
-				<div class="link-group">
-					<ul class="link-list"></ul>
-					<button class="link-title"></button>
-				</div>
-			</template>
-
-			<template id="link-elem-template">
-				<li class="link link-elem">
-					<a rel="noreferrer noopener" draggable="false">
-						<div>
-							<img alt="" draggable="false" />
-						</div>
-						<span></span>
-					</a>
-				</li>
-			</template>
-
-			<template id="link-folder-template">
-				<li class="link link-folder" tabindex="0">
-					<div>
-						<img alt="" draggable="false" />
-						<img alt="" draggable="false" />
-						<img alt="" draggable="false" />
-						<img alt="" draggable="false" />
-					</div>
-					<span></span>
-				</li>
-			</template>
-
-			<template id="popup-template">
-				<div id="popup">
-					<div id="popup_text">
-						<div id="popup_close">✕</div>
-						<img id="popup_icon" src="src/assets/interface/version-21-promo.png" alt="Version 21 icon" />
-						<p id="popup_desc"></p>
-					</div>
-					<div id="popup_buttons"></div>
-				</div>
-			</template>
-
-			<template id="supporters-modal-template">
-				<div id="supporters-modal-container">
-					<canvas id="glitter"></canvas>
-					<dialog id="supporters-modal">
-						<button id="supporters-modal-close" tabindex="0">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-							</svg>
-						</button>
-
-						<main>
-							<header>
-								<h2>✨ <span></span> ✨</h2>
-								<p></p>
-							</header>
-
-							<section>
-								<div id="supporters-monthly">
-									<h3></h3>
-									<ul></ul>
-								</div>
-
-								<div id="supporters-once">
-									<h3></h3>
-									<ul></ul>
-								</div>
-							</section>
-						</main>
-
-						<footer>
-							<p></p>
-
-							<a
-								id="donate-button"
-								href="https://ko-fi.com/bonjourr"
-								title="Donate on Bonjourr's Ko-Fi page"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-									/>
-								</svg>
-								<span id="donate-button-text" class="trn"></span>
-							</a>
-						</footer>
-					</dialog>
-				</div>
-			</template>
-
-			<template id="opera-explainer-template">
-				<dialog id="opera-explainer">
-					<div>
-						<h1 class="trn">Ok so... this is embarassing 😅</h1>
-
-						<p class="trn">
-							Opera does not allow extensions to modify its new tab. While there is no official statement,
-							we believe this is because ads on their speed dial is a good revenue source for them.
-						</p>
-
-						<h2 class="trn">What to do from here?</h2>
-
-						<ul>
-							<li class="trn">Remove Bonjourr and use Opera speed dial</li>
-							<li class="trn">Use a similar browser like Brave or Vivaldi</li>
-							<li>
-								<span class="trn">Follow </span>
-								<a href="https://bonjourr.fr/docs#opera" class="trn"
-									>this tutorial on our documentation</a
-								>
-								<span class="trn">. Bonjourr, or any homepage, should somewhat work!</span>
-							</li>
-						</ul>
-					</div>
-
-					<hr />
-
-					<button id="b_opera-explained" class="trn">Close and access Bonjourr</button>
-				</dialog>
-			</template>
-		</div>
 
 		<aside id="settings" class="init hidden" style="display: none">
 			<div id="mobile-drag-zone">
@@ -893,48 +714,54 @@
 	<div id="local_options" class="dropdown">
 		<hr />
 
+		<div class="wrapper">
+			<span class="trn">My files</span>
+
+			<label id="lbl_background-upload" title="Upload new background" aria-label="Upload new background">
+				<span class="param-btn">
+					<img src="src/assets/labels/add.svg" height="13" alt="" />
+					<span class="trn">Add new</span>
+				</span>
+				<input id="i_background-upload" type="file" name="background_file" multiple accept="image/*" />
+			</label>
+		</div>
+
+		<div class="wrapper" id="thumbnails-container"></div>
+
 		<div id="background-local-actions" class="wrapper">
 			<div>
 				<button
-					id="b_thumbnail-remove"
-					class="param-btn btn-red"
-					title="Delete selected background"
-					aria-label="Delete selected background"
+					id="b_thumbnail-zoom"
+					class="param-btn"
+					title="Increase background size on grid"
+					aria-label="Increase background size on grid"
 				>
-					<!-- <img src="src/assets/labels/remove.svg" height="13" alt="" /> -->
-					<!-- <span>&times;</span> -->
-					<span class="trn">Remove</span>
+					<img src="src/assets/labels/zoom-out.svg" height="15" alt="" />
+					<span class="trn">View</span>
 				</button>
-
+			</div>
+			<div>
 				<button
 					id="b_thumbnail-position"
-					class="trn param-btn"
+					class="param-btn"
 					title="Move selected background"
 					aria-label="Move selected background"
 				>
 					<img src="src/assets/labels/move.svg" height="15" alt="" />
 					<span class="trn">Move</span>
 				</button>
-			</div>
 
-			<div>
 				<button
-					id="b_thumbnail-zoom"
-					class="trn param-btn"
-					title="Increase background size on grid"
-					aria-label="Increase background size on grid"
+					id="b_thumbnail-remove"
+					class="param-btn btn-red"
+					title="Delete selected background"
+					aria-label="Delete selected background"
 				>
-					<img src="src/assets/labels/zoom-out.svg" height="15" alt="" />
-					<span class="trn">Zoom</span>
-				</button>
+					<!-- prettier-ignore -->
+					<svg height="13" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="m8 11c-.55228 0-1 .4477-1 1s.44772 1 1 1h8c.5523 0 1-.4477 1-1s-.4477-1-1-1z"/><path clip-rule="evenodd" d="m1 5c0-2.20914 1.79086-4 4-4h14c2.2091 0 4 1.79086 4 4v14c0 2.2091-1.7909 4-4 4h-14c-2.20914 0-4-1.7909-4-4zm4-2h14c1.1046 0 2 .89543 2 2v14c0 1.1046-.8954 2-2 2h-14c-1.10457 0-2-.8954-2-2v-14c0-1.10457.89543-2 2-2z" fill-rule="evenodd"/></g></svg>
 
-				<label id="lbl_background-upload" title="Upload new background" aria-label="Upload new background">
-					<span class="param-btn">
-						<img src="src/assets/labels/add.svg" height="13" alt="" />
-						<span class="trn">Add</span>
-					</span>
-					<input id="i_background-upload" type="file" name="background_file" multiple accept="image/*" />
-				</label>
+					<span class="trn">Remove</span>
+				</button>
 			</div>
 		</div>
 
@@ -982,12 +809,14 @@
 			</div>
 		</div>
 
-		<div id="thumbnails-container"></div>
+		<p class="tooltiptext trn" id="background-local-tooltip"
+			>Use the button above to import files from your device and set them as backgrounds in Bonjourr.</p
+		>
 
 		<hr />
 
 		<div class="wrapper">
-			<label for="i_background-local-compress" class="trn">Compress files</label>
+			<label for="i_background-local-compress" class="trn">Use compressed files</label>
 			<input id="i_background-local-compress" class="switch" type="checkbox" />
 		</div>
 	</div>
@@ -1040,7 +869,7 @@
 		<div class="wrapper">
 			<label for="i_solid-background" class="trn">Background color</label>
 
-			<div class="color-button">
+			<div id="solid-background" class="color-button">
 				<input type="color" id="i_solid-background" name="solid-background" tabindex="-1" />
 				<button id="b_solid-background" class="trn">Pick a Color</button>
 			</div>
@@ -1128,7 +957,7 @@
 				<div class="wrapper">
 					<label for="i_texture-color" class="trn">Texture color</label>
 
-					<div class="color-button">
+					<div id="texture-color" class="color-button">
 						<input type="color" id="i_texture-color" name="texture-color" tabindex="-1" />
 						<button id="b_texture-color" class="trn">Pick a Color</button>
 					</div>
@@ -1732,6 +1561,8 @@
 						type="text"
 						placeholder="https://weatherbug.com/"
 						maxlength="512"
+						autocomplete="off"
+						spellcheck="false"
 					/>
 				</div>
 			</div>
@@ -2226,7 +2057,11 @@
 		<p class="tooltiptext dropdown ttgrid">
 			<span class="trn">Customise how and where widgets appear.</span>
 			<span class="trn instructions">Open the toolbox and select a widget to modify on the page.</span>
-			<a class="trn" href="https://bonjourr.fr/docs/overview#page-layouts" rel="noreferrer noopener"
+			<a
+				class="trn"
+				href="https://bonjourr.fr/docs/overview#page-layouts"
+				rel="noreferrer noopener"
+				target="_blank"
 				>Learn more</a
 			>
 		</p>
@@ -2377,9 +2212,25 @@
 			<hr />
 
 			<div class="wrapper">
-				<label for="b_storage-persist" class="trn">Persistent storage</label>
+				<span>
+					<span class="trn">Persistent storage</span>
+					<button
+						class="tooltip ttpersistentstorage"
+						title="What is persistent storage?"
+						aria-label="What is persistent storage?"
+					>
+						?
+					</button>
+				</span>
 				<button id="b_storage-persist" class="param-btn trn">Ask permission</button>
 			</div>
+
+			<p class="tooltiptext dropdown ttpersistentstorage">
+				<span class="trn"
+					>Enabling persistent storage ensures that Firefox will remember your settings for as long as
+					possible.</span
+				>
+			</p>
 		</div>
 
 		<div id="gist-sync" class="dropdown">
@@ -2974,5 +2825,285 @@
 </template>
 
 		</aside>
+
+		<div id="templates">
+			<template id="bookmarks-dialog-template">
+				<dialog id="bookmarks">
+					<div id="bookmarks-header">
+						<div id="bookmarks-intro">
+							<span class="trn">
+								Synchronized groups are automatically updated to match your browser bookmarks. Learn
+								more on
+							</span>
+
+							<a class="trn" target="_blank" href="https://bonjourr.fr/docs/overview#link-groups"
+								>our documentation</a
+							>.
+						</div>
+
+						<div id="bookmarks-buttons">
+							<button id="bmk_close" class="trn btn-red">Close</button>
+							<button id="bmk_apply" class="trn" disabled>Import selection</button>
+						</div>
+					</div>
+
+					<div id="bookmarks-container"></div>
+				</dialog>
+			</template>
+
+			<template id="bookmarks-folder-template">
+				<div class="bookmarks-folder">
+					<div class="bookmarks-folder-title">
+						<h2>
+							<span class="bookmarks-folder-title-content"></span>
+							<span class="bookmarks-folder-title-synced trn">(synced)</span>
+						</h2>
+						<div>
+							<button class="trn b_bookmarks-folder-select">Select group</button>
+							<button class="trn b_bookmarks-folder-sync" disabled>Sync with browser</button>
+						</div>
+					</div>
+					<ol></ol>
+				</div>
+			</template>
+
+			<template id="bookmarks-item-template">
+				<li>
+					<button>
+						<img draggable="false" loading="lazy" alt="" />
+						<p class="bookmark-title"></p>
+						<p class="bookmark-url"></p>
+					</button>
+				</li>
+			</template>
+
+			<template id="link-group-template">
+				<div class="link-group">
+					<ul class="link-list"></ul>
+					<button class="link-title"></button>
+				</div>
+			</template>
+
+			<template id="link-elem-template">
+				<li class="link link-elem">
+					<a rel="noreferrer noopener" draggable="false">
+						<div>
+							<img alt="" draggable="false" />
+						</div>
+						<span></span>
+					</a>
+				</li>
+			</template>
+
+			<template id="link-folder-template">
+				<li class="link link-folder" tabindex="0">
+					<div>
+						<img alt="" draggable="false" />
+						<img alt="" draggable="false" />
+						<img alt="" draggable="false" />
+						<img alt="" draggable="false" />
+					</div>
+					<span></span>
+				</li>
+			</template>
+
+			<template id="popup-template">
+				<div id="popup">
+					<div id="popup_text">
+						<div id="popup_close" tabindex="0">✕</div>
+						<img id="popup_icon" src="src/assets/interface/version-21-promo.png" alt="Version 21 icon" />
+						<p id="popup_desc"></p>
+					</div>
+					<div id="popup_buttons"></div>
+				</div>
+			</template>
+
+			<template id="supporters-modal-template">
+				<div id="supporters-modal-container">
+					<canvas id="glitter"></canvas>
+					<dialog id="supporters-modal">
+						<button id="supporters-modal-close" tabindex="0">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+							</svg>
+						</button>
+
+						<main>
+							<header>
+								<h2>✨ <span></span> ✨</h2>
+								<p></p>
+							</header>
+
+							<section>
+								<div id="supporters-monthly">
+									<h3></h3>
+									<ul></ul>
+								</div>
+
+								<div id="supporters-once">
+									<h3></h3>
+									<ul></ul>
+								</div>
+							</section>
+						</main>
+
+						<footer>
+							<p></p>
+
+							<a
+								id="donate-button"
+								href="https://ko-fi.com/bonjourr"
+								title="Donate on Bonjourr's Ko-Fi page"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+									/>
+								</svg>
+								<span id="donate-button-text" class="trn"></span>
+							</a>
+						</footer>
+					</dialog>
+				</div>
+			</template>
+
+			<template id="opera-explainer-template">
+				<dialog id="opera-explainer">
+					<div>
+						<h1 class="trn">Ok so... this is embarassing 😅</h1>
+
+						<p class="trn">
+							Opera does not allow extensions to modify its new tab. While there is no official statement,
+							we believe this is because ads on their speed dial is a good revenue source for them.
+						</p>
+
+						<h2 class="trn">What to do from here?</h2>
+
+						<ul>
+							<li class="trn">Remove Bonjourr and use Opera speed dial</li>
+							<li class="trn">Use a similar browser like Brave or Vivaldi</li>
+							<li>
+								<span class="trn">Follow </span>
+								<a href="https://bonjourr.fr/docs#opera" class="trn"
+									>this tutorial on our documentation</a
+								>
+								<span class="trn">. Bonjourr, or any homepage, should somewhat work!</span>
+							</li>
+						</ul>
+					</div>
+
+					<hr />
+
+					<button id="b_opera-explained" class="trn">Close and access Bonjourr</button>
+				</dialog>
+			</template>
+
+			<template id="help-mode-template">
+				<div id="help-mode">
+					<h1>HELP MODE</h1>
+
+					<p>If you have an issue with your page, <a href="https://github.com/victrme/Bonjourr/issues" target="_blank">look for similar problems on Github</a>. You might also have relevant information <a href="https://bonjourr.fr/docs/" target="_blank">on our documentation</a>. </p>
+
+
+					<h2>Server status</h2>
+					<ul>
+    					<li>Website: <span id="help-status-website">loading</span><span></li>
+    					<li>Weather: <span id="help-status-weather">loading</span><span></li>
+     				    <li>Services: <span id="help-status-services">loading</span><span></li>
+					</ul>
+
+					<h2>Contact</h2>
+					<ul>
+						<li>Via email: bonjourr.app@protonmail.com</li>
+						<li>On Telegram: <a href="https://t.me/BonjourrStartpage" target="_blank">@BonjourrStartpage</a></li>
+						<li>On bluesky: <a href="https://bsky.app/profile/bonjourr.fr" target="_blank">@bonjourr.fr</a></li>
+					</ul>
+
+					<h2>Storage</h2>
+
+					<p>Here you can see everything Bonjourr stores on you browser to be functionnal.</p>
+
+					<h3>Page storage <small>(localStorage)</small></h3>
+					<p>This storage is used to store simple data. When using online.bonjourr.fr however, all of your data is stored in here.</p>
+
+					<ul id="help-localstorage"></ul>
+
+					<h3>Extension Storage</h3>
+					<h4>Synchronized <small>(browser.storage.sync)</small></h4>
+					<p>This stores critical user data when using the extension. This is the data to <b>copy to make sure you don't lose anything.</b></p>
+					<textarea id="help-storage-sync"></textarea>
+
+					<h4>Local <small>(browser.storage.local)</small></h4>
+					<p>This stores large data that cannot or does not need to be saved.</p>
+					<textarea id="help-storage-local"></textarea>
+
+					<style>
+					    #help-mode {
+    					    font-family: system-ui;
+                            max-width: 550px;
+                            margin: 4em auto;
+                            color: #333;
+                            background-color: white;
+						}
+
+						#help-mode h1 {
+    						text-align: center;
+						}
+
+						#help-mode h2 {
+						    margin-top: 2em;
+						}
+
+						#help-mode textarea {
+						    width: 100%;
+							border: none;
+							resize: vertical;
+							background-color: #f6f6f6;
+						}
+
+						#help-storage-sync,
+						#help-storage-local {
+						    font-size: small;
+		                    min-height: 200px;
+						}
+					</style>
+				</div>
+			</template>
+
+			<template id="help-mode-prompt-template">
+                <div id="help-mode-prompt">
+                    <p>Stuck? Press <code>CTRL + Shift + ?</code> to show Help Mode</p>
+
+                    <style>
+                        #help-mode-prompt {
+                            position: fixed;
+                            top: 40vh;
+                            left: 0;
+                            right: 0;
+                            color: white;
+                            font-family: system-ui;
+                            font-size: 1.5em;
+                            text-align: center;
+                            z-index: -1;
+                        }
+
+                         #help-mode-prompt code {
+                            background-color: #555;
+                            padding: .3em;
+                            border-radius: .3em;
+                            margin-inline: .3em;
+                         }
+                    </style>
+                </div>
+			</template>
+		</div>
 	</body>
 </html>

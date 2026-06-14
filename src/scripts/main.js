@@ -1,44 +1,14967 @@
-(()=>{var Au=Object.create;var _s=Object.defineProperty;var qu=Object.getOwnPropertyDescriptor;var Pu=Object.getOwnPropertyNames;var Hu=Object.getPrototypeOf,Du=Object.prototype.hasOwnProperty;var Te=(e,t)=>()=>(e&&(t=e(e=0)),t);var Fu=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),Ou=(e,t)=>{for(var o in t)_s(e,o,{get:t[o],enumerable:!0})},Ru=(e,t,o,n)=>{if(t&&typeof t=="object"||typeof t=="function")for(let s of Pu(t))!Du.call(e,s)&&s!==o&&_s(e,s,{get:()=>t[s],enumerable:!(n=qu(t,s))||n.enumerable});return e};var St=(e,t,o)=>(o=e!=null?Au(Hu(e)):{},Ru(t||!e||!e.__esModule?_s(o,"default",{value:e,enumerable:!0}):o,e));var lt=Fu((rp,Hr)=>{var Fs=Object.defineProperty,Zu=Object.getOwnPropertyDescriptor,ed=Object.getOwnPropertyNames,td=Object.prototype.hasOwnProperty,nd=(e,t)=>{for(var o in t)Fs(e,o,{get:t[o],enumerable:!0})},od=(e,t,o,n)=>{if(t&&typeof t=="object"||typeof t=="function")for(let s of ed(t))!td.call(e,s)&&s!==o&&Fs(e,s,{get:()=>t[s],enumerable:!(n=Zu(t,s))||n.enumerable});return e},sd=e=>od(Fs({},"__esModule",{value:!0}),e),Pr={};nd(Pr,{onclickdown:()=>id});Hr.exports=sd(Pr);function id(e,t,o){if(!e)throw new Error("Target is undefined");let n=e.tagName==="INPUT"&&e.getAttribute("type")==="checkbox",s=e.tagName==="A",i=!1;e?.addEventListener("pointerdown",r),e?.addEventListener("keydown",r),e?.addEventListener("click",a);function r(c){let l=c.type==="keydown",u=c?.code??"",d=c.target,h=d.tagName??"";if(!(l&&!u.match(/Space|Enter/))&&!(s&&l&&u==="Space")){if(h==="SUMMARY"){let g=d;g.open=!g.open}if(n){let g=d;g.checked=!g.checked}if(s){let g=d;globalThis.window.location.href=g.href}i=!0,t(c,d)}}function a(c){if(!(c.composedPath()[0]!==e&&o?.propagate===!1)){if(i===!1){t(c,e);return}i=!1,c.preventDefault()}}}});function An(e,t,o,n){this.type=e,this.content=t,this.alias=n,this.length=o.length}var Lo,To,gd,Jr,Ue,Ns,pd,js,Qr,So,Bn,Ws,Xr,Zr,Jt=Te(()=>{Lo={},To=Symbol(),gd=Symbol(),Jr=e=>typeof e=="string"?Ue[e]:e,Ue={plain:Lo,plaintext:Lo,text:Lo,txt:Lo},Ns=(e,t)=>(t[gd]||pd)(e,t),pd=(e,t)=>{for(var o=[e],n,s=[],i=0;n=Jr(t[To]);)delete t[To],Object.assign(t,n);for(Zr(e,t,o,0);s[i++]=o[0],o=o[1];);return s},js=(e,t,o)=>e.replace(/&/g,"&amp;").replace(t,o),Qr="</span>",So="",Bn="",Ws=e=>{for(var t="",o=e.length,n=0;n<o;)t+=Xr(e[n++]);return t},Xr=e=>{if(e instanceof An){var{type:t,alias:o,content:n}=e,s=So,i=Bn,r=`<span class="token ${t+(o?" "+o:"")+(t=="keyword"&&typeof n=="string"?" keyword-"+n:"")}">`;Bn+=Qr,So+=r;var a=Xr(n);return So=s,Bn=i,r+a+Qr}return typeof e!="string"?Ws(e):(e=js(e,/</g,"&lt;"),Bn&&e.includes(`
-`)?e.replace(/\n/g,Bn+`
-`+So):e)},Zr=(e,t,o,n,s)=>{for(var i in t)if(t[i])for(var r=0,a=t[i],c=Array.isArray(a)?a:[a];r<c.length;++r){if(s&&s[0]==i&&s[1]==r)return;for(var l=c[r],u=l.pattern||l,d=Jr(l.inside),h=l.lookbehind,g=l.greedy&&u.global,E=l.alias,b=o,v=n;b&&(!s||v<s[2]);v+=b[0].length,b=b[1]){var m=b[0],p=0,w,k;if(!(m instanceof An)){if(u.lastIndex=g?v:0,w=u.exec(g?e:m),!w&&g)break;if(w&&w[0]){if(h&&w[1]&&(k=w[1].length,w.index+=k,w[0]=w[0].slice(k)),g){for(var S=w.index,x=S+w[0].length,T;S>=v+(T=b[0].length);b=b[1],v+=T);if(b[0]instanceof An)continue;for(var M=b,a=v;(a+=M[0].length)<x;M=M[1],p++);m=e.slice(v,a),w.index-=v}for(var S=w.index,C=w[0],O=m.slice(S+C.length),j=v+m.length,D=new An(i,d?Ns(C,d):C,C,E),W=b,we=0,B;W=W[1],we++<p;);O&&(!W||W[0]instanceof An?W=[O,W]:W[0]=O+W[0]),v+=S,b[0]=S?m.slice(0,S):D,S?b=b[1]=[D,W]:b[1]=W,p&&(Zr(e,t,b,v,B=[i,r,j]),j=B[2]),s&&j>s[2]&&(s[2]=j)}}}}}});var xo,Ge,zs,hd,$e,yd,Io,Ve,bd,Se,qn,Pn=Te(()=>{Jt();xo=(e,t,...o)=>{let n,s=[],i,r="",a,c=!1,l=!0,u=[],d,h=0,g=bd(),E=g.firstChild,b=E.children,v=b[0],m=v.firstChild,p={language:"text",value:r},w=new Set(o),k={},x=B=>{Object.assign(p,B);let _=r!=(r=B.value??r),U=n!=(n=p.language);d=!!p.readOnly,g.style.tabSize=p.tabSize||2,m.inputMode=d?"none":"",m.setAttribute("aria-readonly",d),S(),M(),_&&(c||m.remove(),m.value=r,m.selectionEnd=0,c||v.prepend(m)),(_||U)&&T()},T=()=>{u=Ns(r=m.value,Ue[n]||{}),D("tokenize",u,n,r);let B=Ws(u).split(`
-`),_=0,U=h,re=h=B.length;for(;B[_]==s[_]&&_<re;)++_;for(;re&&B[--re]==s[--U];);if(_==re&&_==U)b[_+1].innerHTML=B[_]+`
-`;else{let ae=U<_?U:_-1,V=ae,de="";for(;V<re;)de+=`<div class=pce-line aria-hidden=true>${B[++V]}
-</div>`;for(V=re<_?re:_-1;V<U;V++)b[_+1].remove();for(de&&b[ae+1].insertAdjacentHTML("afterend",de),V=ae+1;V<h;)b[++V].setAttribute("data-line",V);g.style.setProperty("--number-width",(0|Math.log10(h))+1+".001ch")}D("update",r),W(!0),l&&setTimeout(setTimeout,0,()=>l=!0),s=B,l=!1},M=B=>{(B||w).forEach(_=>{typeof _=="object"?(_.update(we,p),B&&w.add(_)):(_(we,p),B||w.delete(_))})},S=([B,_]=C())=>{g.className=`prism-code-editor language-${n}${p.lineNumbers==!1?"":" show-line-numbers"} pce-${p.wordWrap?"":"no"}wrap${p.rtl?" pce-rtl":""} pce-${B<_?"has":"no"}-selection${c?" pce-focus":""}${d?" pce-readonly":""}${p.class?" "+p.class:""}`},C=()=>[m.selectionStart,m.selectionEnd,m.selectionDirection],O={Escape(){m.blur()}},j={},D=(B,..._)=>{k[B]?.forEach(U=>U.apply(we,_)),p["on"+B[0].toUpperCase()+B.slice(1)]?.apply(we,_)},W=B=>{if(B||l){let _=C(),U=b[a=Io(r,0,_[_[2]<"f"?0:1])];U!=i&&(i?.classList.remove("active-line"),U.classList.add("active-line"),i=U),S(_),D("selectionChange",_,r)}},we={container:g,wrapper:E,lines:b,textarea:m,get activeLine(){return a},get value(){return r},options:p,get focused(){return c},get tokens(){return u},inputCommandMap:j,keyCommandMap:O,extensions:{},setOptions:x,update:T,getSelection:C,addExtensions(...B){M(B)},on:(B,_)=>((k[B]||=new Set).add(_),()=>k[B].delete(_)),remove(){g.remove()}};return $e(m,"keydown",B=>{O[B.key]?.(B,C(),r)&&Se(B)}),$e(m,"beforeinput",B=>{(d||B.inputType=="insertText"&&j[B.data]?.(B,C(),r))&&Se(B)}),$e(m,"input",T),$e(m,"blur",()=>{qn=null,c=!1,S()}),$e(m,"focus",()=>{qn=W,c=!0,S()}),$e(m,"selectionchange",B=>{W(),Se(B)}),yd(e)?.append(g),t&&x(t),we},Ge="u">typeof window?document:null,zs=Ge?.createElement("div"),hd=(e,t)=>(zs&&(zs.innerHTML=e,t=zs.firstChild),()=>t.cloneNode(!0)),$e=(e,t,o,n)=>e.addEventListener(t,o,n),yd=e=>typeof e=="string"?Ge.querySelector(e):e,Io=(e,t=0,o=1/0)=>{let n=1;for(;(t=e.indexOf(`
-`,t)+1)&&t<=o;n++);return n},Ve={},bd=hd("<div><div class=pce-wrapper><div class=pce-overlays><textarea class=pce-textarea spellcheck=false autocapitalize=off autocomplete=off>"),Se=e=>{e.preventDefault(),e.stopImmediatePropagation()};Ge&&$e(Ge,"selectionchange",()=>qn?.())});var Dn,Mo,Gs,ea,Pp,Hn,Xt,Fn,nt,ta,_o,ce,na,oa,Co,$s,Us,On,Vs=Te(()=>{Pn();Jt();Dn=(e,t)=>t?e.lastIndexOf(`
-`,t-1)+1:0,Mo=(e,t)=>(t=e.indexOf(`
-`,t))+1?t:e.length,Gs=(e,t,o,n)=>$e(e.textarea,t,o,n),ea=(e,t)=>parseFloat(getComputedStyle(e)[t]),Pp=new Set("xml,rss,atom,jsx,tsx,xquery,xeora,xeoracube,actionscript".split(",")),Xt=e=>e.replace(/[$+?|.^*()[\]{}\\]/g,"\\$&"),Fn=(e,t)=>e.slice(Dn(e,t),t),nt=(e,t,o=t)=>[e.slice(t=Dn(e,t),o=Mo(e,o)).split(`
-`),t,o],ta=(e,t,o=0,n=o,s=e.getSelection()[0])=>{let i=e.value,r=e.lines[Io(i,0,s)],a=Ge.createTreeWalker(r,5),c=a.lastChild(),l=Mo(i,s)+1-s-c.length;for(;-l<=n&&(c=a.previousNode());)if(!c.lastChild&&(l-=c.length||0,l<=o)){for(;c!=r;c=c.parentNode)if(c.matches?.(t))return c}},_o=(e,t)=>ta(e,"[class*=language-]",0,0,t)?.className.match(/language-(\S*)/)[1]||e.options.language,ce=(e,t,o,n,s,i)=>{if(e.options.readOnly)return;Hn=e.getSelection(),n??=o;let r=e.textarea,a=e.value,c=$s&&!a[n??Hn[1]]&&/\n$/.test(t)&&/^$|\n$/.test(a),l;e.focused||r.focus(),o!=null&&r.setSelectionRange(o,n),s!=null&&(l=e.on("update",()=>{r.setSelectionRange(s,i??s,Hn[2]),l()})),Us||r.dispatchEvent(new InputEvent("beforeinput",{data:t})),$s||Us?(c&&(r.selectionEnd--,t=t.slice(0,-1)),Us&&(t+=`
-`),Ge.execCommand(t?"insertHTML":"delete",!1,js(t,/</g,"&lt;")),c&&r.selectionStart++):Ge.execCommand(t?"insertText":"delete",!1,t),Hn=0},na=(e,t,o=t,n)=>{let s=e.focused,i=e.textarea,r;s||($e(i,"focus",a=>{r=a.relatedTarget},{once:!0}),i.focus()),i.setSelectionRange(t,o,n),qn(!(!s&&(r?r.focus():i.blur())))},oa=Ge?navigator.userAgent:"",Co=Ge?/Mac|iPhone|iP[ao]d/.test(navigator.platform):!1,$s=/Chrome\//.test(oa),Us=!$s&&/AppleWebKit\//.test(oa),On=e=>e.altKey+e.ctrlKey*2+e.metaKey*4+e.shiftKey*8});var Ks,Bo,vd,Mt,Ys,sa=Te(()=>{Pn();Vs();Ks=!1,Bo=Co?4:2,vd=e=>Ks=e,Mt=e=>e.search(/\S|$/),Ys=(e=['""',"''","``","()","[]","{}"],t=/([^$\w'"`]["'`]|.[[({])[.,:;\])}>\s]|.[[({]`/s)=>(o,n)=>{let s,{keyCommandMap:i,inputCommandMap:r,getSelection:a,container:c}=o,l=navigator.clipboard,u=({insertSpaces:v=!0,tabSize:m}=n)=>[v?" ":"	",v?m||2:1],d=()=>!n.readOnly&&!o.extensions.cursor?.scrollIntoView(),h=([v,m],[p,w],k,x)=>(v<m||!x&&t.test((k[m-1]||" ")+p+(k[m]||" ")))&&!ce(o,p+k.slice(v,m)+w,null,null,v+1,m+1),g=([v,m],p,w)=>v==m&&w[m]==p&&!na(o,v+1),E=(v,m,p,w,k,x)=>{let T=m.join(`
-`);if(T!=v.join(`
-`)){let M=v.length-1,S=m[M],C=v[M],O=C.length-S.length,j=m[0].length-v[0].length,D=p+Mt((j<0?m:v)[0]),W=w-C.length+Mt(O>0?S:C),we=p-w+T.length+O,B=D>k?k:Math.max(D,k+j),_=x+p-w+T.length;ce(o,T,p,w,B,x<W?_+O:Math.max(W+we,_))}},b=(v,m,p,w,k,x,T,M)=>{E(m,m.map(v?S=>S.slice(Mt(S)?M-Mt(S)%M:0):S=>S&&T.repeat(M-Mt(S)%M)+S),p,w,k,x)};r["<"]=(v,m,p)=>h(m,"<>",p,!0),e.forEach(([v,m])=>{let p=v==m;r[v]=(w,k,x)=>(p&&g(k,m,x)||h(k,v+m,x))&&d(),p||(r[m]=(w,k,x)=>g(k,m,x)&&d())}),r[">"]=(v,m,p)=>{let w=Ve[_o(o)]?.autoCloseTags?.(m,p,o);w&&(ce(o,">"+w,null,null,m[0]+1),Se(v))},i.Tab=(v,[m,p],w)=>{if(Ks||n.readOnly||On(v)&6)return;let[k,x]=u(n),T=v.shiftKey,[M,S,C]=nt(w,m,p);return m<p||T?b(T,M,S,C,m,p,k,x):ce(o,k.repeat(x-(m-S)%x)),d()},i.Enter=(v,m,p)=>{let w=On(v)&7;if(!w||w==Bo){w&&(m[0]=m[1]=nt(p,m[1])[2]);let[k,x]=u(),[T,M]=m,S=Ve[_o(o)]?.autoIndent,C=Math.floor(Mt(Fn(p,T))/x)*x,O=S?.[0]?.(m,p,o)?x:0,j=S?.[1]?.(m,p,o),D=`
-`+k.repeat(C+O)+(j?`
-`+k.repeat(C):"");if(D[1]||p[M])return ce(o,D,T,M,T+C+O+1),d()}},i.Backspace=(v,[m,p],w)=>{if(m==p){let k=Fn(w,m),x=n.tabSize||2,T=e.includes(w.slice(m-1,m+1)),M=/[^ ]/.test(k)?0:(k.length-1)%x+1;if(T||M>1)return ce(o,"",m-(T?1:M),m+T),d()}};for(let v=0;v<2;v++)i[v?"ArrowDown":"ArrowUp"]=(m,[p,w],k)=>{let x=On(m);if(x==1){let T=v?p:Dn(k,p)-1,M=v?k.indexOf(`
-`,w)+1:w;if(T>-1&&M>0){let[S,C,O]=nt(k,T,M),j=S[v?"pop":"shift"](),D=(j.length+1)*(v?1:-1);S[v?"unshift":"push"](j),ce(o,S.join(`
-`),C,O,p+D,w+D)}return d()}else if(x==9){let[T,M,S]=nt(k,p,w),C=T.join(`
-`),O=v?C.length+1:0;return ce(o,C+`
-`+C,M,S,p+O,w+O),d()}else if(x==2&&!Co)return c.scrollBy(0,ea(c,"lineHeight")*(v?1:-1)),!0};Gs(o,"keydown",v=>{let m=On(v),p=v.keyCode,[w,k,x]=a();if(m==Bo&&(p==221||p==219))b(p==219,...nt(o.value,w,k),w,k,...u()),d(),Se(v);else if(m==(Co?10:2)&&p==77)vd(!Ks),Se(v);else if(p==191&&m==Bo||p==65&&m==9){let T=o.value,M=m==9,S=M?w:Dn(T,w),C=Ve[_o(o,S)]||{},{line:O,block:j}=C.getComments?.(o,S,T)||C.comments||{},[D,W,we]=nt(T,w,k),B=D.length-1;if(M){if(j){let[_,U]=j,re=T.slice(w,k),ae=T.slice(0,w).search(Xt(_)+" ?$"),V=RegExp("^ ?"+Xt(U)).test(T.slice(k));ae+1&&V?ce(o,re,ae,k+ +(T[k]==" ")+U.length,ae,ae+k-w):ce(o,`${_} ${re} ${U}`,w,k,w+_.length+1,k+_.length+1),d(),Se(v)}}else if(O){let _=Xt(O),U=RegExp(`^\\s*(${_} ?|$)`),re=RegExp(_+" ?"),ae=!/\S/.test(T.slice(W,we)),V=D.map(D.every(de=>U.test(de))&&!ae?de=>de.replace(re,""):de=>ae||/\S/.test(de)?de.replace(/^\s*/,`$&${O} `):de);E(D,V,W,we,w,k),d(),Se(v)}else if(j){let[_,U]=j,re=Mt(D[0]),ae=D[0].startsWith(_,re)&&D[B].endsWith(U),V=D.slice();V[0]=D[0].replace(ae?RegExp(Xt(_)+" ?"):/(?=\S)|$/,ae?"":_+" ");let de=V[0].length-D[0].length;V[B]=ae?V[B].replace(RegExp(`( ?${Xt(U)})?$`),""):V[B]+" "+U;let pr=V.join(`
-`),go=re+W,hr=go>w?w:Math.max(w+de,go),Bu=go>k-(w!=k)?k:Math.min(Math.max(go,k+de),W+pr.length);ce(o,pr,W,we,hr,Math.max(hr,Bu)),d(),Se(v)}}else if(m==8+Bo&&p==75){let T=o.value,[M,S,C]=nt(T,w,k),O=x>"f"?k-C+M.pop().length:w-S,j=Mo(T,C+1)-C-1;ce(o,"",S-!!S,C+!S,S+Math.min(O,j)),d(),Se(v)}}),["copy","cut","paste"].forEach(v=>Gs(o,v,m=>{let[p,w]=a();if(p==w&&l){let[[k],x,T]=nt(o.value,p,w);v=="paste"?m.clipboardData.getData("text/plain")==s&&(ce(o,s+`
-`,x,x,p+s.length+1),d(),Se(m)):(l.writeText(s=k),v=="cut"&&(ce(o,"",x,T+1),d()),Se(m))}}))}});var ia=Te(()=>{Pn()});var Qs,Wp,ra=Te(()=>{Qs=(e,t,o)=>{var n={};for(var s in e)n[s]=e[s],delete e[s];for(var s in n)s==t&&Object.assign(e,o),o.hasOwnProperty(s)||(e[s]=n[s])},Wp={}.toString});var ca,Ao,aa,la=Te(()=>{Jt();ca=/(?:"(?:\\[^]|[^\\\n"])*"|'(?:\\[^]|[^\\\n'])*')/g,Ao=ca.source,aa={rule:/^@[\w-]+/,"selector-function-argument":{pattern:/(\bselector\s*\(\s*(?![\s)]))(?:[^()\s]|\s+(?![\s)])|\((?:[^()]|\([^)]*\))*\))+(?=\s*\))/,lookbehind:!0,alias:"selector"},keyword:{pattern:/(^|[^\w-])(?:and|not|only|or)(?![\w-])/,lookbehind:!0}};aa[To]=Ue.css={comment:/\/\*[^]*?\*\//,atrule:{pattern:RegExp(`@[\\w-](?:[^\\s;{"']|\\s+(?!\\s)|${Ao})*?(?:;|(?=\\s*\\{))`),inside:aa},url:{pattern:RegExp(`\\burl\\((?:${Ao}|(?:[^\\\\
-"')=]|\\\\[^])*)\\)`,"gi"),greedy:!0,inside:{function:/^url/i,punctuation:/^\(|\)$/,string:{pattern:RegExp("^"+Ao+"$"),alias:"url"}}},selector:{pattern:RegExp(`(^|[{}\\s])[^\\s{}](?:[^\\s{};"']|\\s+(?![\\s{])|${Ao})*(?=\\s*\\{)`),lookbehind:!0},string:{pattern:ca,greedy:!0},property:{pattern:/(^|[^-\w\xa0-\uffff])(?!\d)(?:(?!\s)[-\w\xa0-\uffff])+(?=\s*:)/i,lookbehind:!0},important:/!important\b/i,function:{pattern:/(^|[^-a-z\d])[-a-z\d]+(?=\()/i,lookbehind:!0},punctuation:/[(){},:;]/}});var qo,ua=Te(()=>{Jt();ra();la();qo=Ue.css;qo.selector.inside=qo.atrule.inside["selector-function-argument"].inside={"pseudo-element":/:(?:after|before|first-letter|first-line|selection)|::[-\w]+/,"pseudo-class":/:[-\w]+/,class:/\.[-\w]+/,id:/#[-\w]+/,attribute:{pattern:/\[(?:[^[\]"']|(["'])(?:\\[^]|(?!\1)[^\\\n])*\1)*\]/g,greedy:!0,inside:{punctuation:/^\[|\]$/,"case-sensitivity":{pattern:/(\s)[si]$/i,lookbehind:!0,alias:"keyword"},namespace:{pattern:/^(\s*)(?:(?!\s)[-*\w\xa0-\uffff])*\|(?!=)/,lookbehind:!0,inside:{punctuation:/\|$/}},"attr-name":{pattern:/^(\s*)(?:(?!\s)[-\w\xa0-\uffff])+/,lookbehind:!0},"attr-value":{pattern:/(=\s*)(?:(?!\s)[-\w\xa0-\uffff])+(?=\s*$)|(["'])(?:\\[^]|(?!\2)[^\\\n])*\2/,lookbehind:!0},operator:/[|~*^$]?=/}},"n-th":[{pattern:/(\(\s*)[+-]?\d*[\dn](?:\s*[+-]\s*\d+)?(?=\s*\))/,lookbehind:!0,inside:{number:/[\dn]+/,operator:/[+-]/}},{pattern:/(\(\s*)(?:even|odd)(?=\s*\))/i,lookbehind:!0}],combinator:/[>+~]|\|\|/,punctuation:/[(),]/};Qs(qo,"property",{variable:{pattern:/(^|[^-\w\xa0-\uffff])--(?!\d)(?:(?!\s)[-\w\xa0-\uffff])*/i,lookbehind:!0}});Qs(qo,"function",{operator:{pattern:/(\s)[/*+-](?!\S)/,lookbehind:!0},hexcode:{pattern:/\B#[a-f\d]{3,8}\b/i,alias:"color"},entity:/\\[a-f\d]{1,8}/i,unit:{pattern:/(\b\d+)(?:%|[a-z]+(?![\w-]))/,lookbehind:!0},number:{pattern:/(^|[^\w.-])-?(?:\d+(?:\.\d+)?|\.\d+)/,lookbehind:!0}})});var da=Te(()=>{Jt();Ue.url=Ue.uri={scheme:{pattern:/^[a-z][a-z\d+.-]*:/img,greedy:!0,inside:{"scheme-delimiter":/:$/}},fragment:{pattern:/#[\w.~!$&'()*,;=%:@/?+-]*/,inside:{"fragment-delimiter":/^#/}},query:{pattern:/\?[\w.~!$&'()*,;=%:@/?+-]*/,inside:{"query-delimiter":{pattern:/^\?/g,greedy:!0},"pair-delimiter":/[&;]/,pair:{pattern:/^[^=][^]*/,inside:{key:/^[^=]+/,value:{pattern:/(^=)[^]+/,lookbehind:!0}}}}},authority:{pattern:/^\/\/(?:[\w.~!$&'()*,;=%:+-]*@)?(?:\[(?:[a-fA-F\d:.]{2,48}|v[a-fA-F\d]+\.[\w.~!$&'()*,;=+-]+)\]|[\w.~!$&'()*,;=%+-]*)(?::\d*)?/m,inside:{"authority-delimiter":/^\/\//,"user-info-segment":{pattern:/^[\w.~!$&'()*,;=%:+-]*@/,inside:{"user-info-delimiter":/@$/,"user-info":/^[\w.~!$&'()*,;=%:+-]+/}},"port-segment":{pattern:/:\d*$/,inside:{"port-delimiter":/^:/,port:/^\d+/}},host:{pattern:/[^]+/,inside:{"ip-literal":{pattern:/^\[[^]+\]$/,inside:{"ip-literal-delimiter":/^\[|\]$/,"ipv-future":/^v[^]+/,"ipv6-address":/^[^]+/}},"ipv4-address":/^(?:(?:[03-9]\d?|[12]\d{0,2})\.){3}(?:[03-9]\d?|[12]\d{0,2})$/}}}},path:{pattern:/^[\w.~!$&'()*,;=%:@/+-]+/m,inside:{"path-separator":/\//}}}});var kd,wd,Ed,Js,Xs,ma=Te(()=>{Vs();kd=/\[]|\(\)|{}/,wd=/[([{][^)\]}]*$/,Ed=([e,t],o)=>kd.test(o[e-1]+o[t]),Js={line:"//",block:["/*","*/"]},Xs=(e=Js,t=wd)=>({comments:e,autoIndent:[([o],n)=>t.test(Fn(n,o)),Ed]})});var fa=Te(()=>{Pn();ma();Ve.css=Xs({block:["/*","*/"]});Ve.less=Ve.scss=Xs();Ve.sass={comments:Js}});var Zs={};Ou(Zs,{createBackgroundUrlsEditor:()=>Sd,createCssEditor:()=>Ld});function Ld(e){return xo("#css-editor",e,Ys())}function Sd(e){return xo("#background-urls-editor",e,Ys())}var ei=Te(()=>{sa();ia();ua();da();fa()});var jt={en:"English",fr:"Fran\xE7ais",de:"Deutsch",it:"Italiano",es:"Espa\xF1ol",hi:"Hindi",ca:"Catal\xE0","pt-BR":"Portugu\xEAs (Brasil)","pt-PT":"Portugu\xEAs (Portugal)",nl:"Nederlands",da:"Dansk",sv:"Svenska",nb:"Norsk",is:"\xCDslenska",fi:"suomi",pl:"Polski",cs:"\u010Ce\u0161tina",hr:"Hrvatski",sk:"Slovensk\xFD",hu:"Magyar",ro:"Rom\xE2n\u0103",el:"\u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC",sr:"\u0421\u0440\u043F\u0441\u043A\u0438 (\u045B\u0438\u0440\u0438\u043B\u0438\u0446\u0430)","sr-YU":"Srpski (latinica)",be:"\u0411\u0435\u043B\u0430\u0440\u0443\u0441\u043A\u0430\u044F",uk:"\u0423\u043A\u0440\u0430\u0457\u043D\u0441\u044C\u043A\u0430",ru:"\u0420\u0443\u0441\u0441\u043A\u0438\u0439",tr:"T\xFCrk\xE7e",he:"\u05E2\u05B4\u05D1\u05E8\u05B4\u05D9\u05EA",hy:"\u0540\u0561\u0575\u0565\u0580\u0565\u0576",ar:"\u0627\u0644\u0639\u0631\u0628\u064A\u0629",az:"Az\u0259rbaycan",fa:"\u0641\u0627\u0631\u0633\u06CC",te:"\u0C24\u0C46\u0C32\u0C41\u0C17\u0C41",id:"Indonesia",vi:"Ti\u1EBFng Vi\u1EC7t","zh-CN":"\u4E2D\u56FD\u7B80\u4F53\u4E2D\u6587","zh-HK":"\u9999\u6E2F\u7E41\u9AD4\u4E2D\u6587","zh-TW":"\u81FA\u7063\u6B63\u9AD4\u4E2D\u6587","nan-Hant-TW":"\u81FA\u7063\u53F0\u8A9E\uFF08\u6F22\u7F85\uFF09",ko:"\uD55C\uAD6D\uC5B4",ja:"\u65E5\u672C\u8A9E"},Cs={el:"greek",ar:"arabic",fa:"arabic",ru:"cyrillic",uk:"cyrillic",sr:"cyrillic",be:"cyrillic",sk:"latin-ext",nb:"latin-ext",is:"latin-ext",hr:"latin-ext",cs:"latin-ext",pl:"latin-ext",ro:"latin-ext","sr-YU":"latin-ext",tr:"latin-ext",hu:"latin-ext",vi:"latin-ext",az:"latin-ext",ja:"japanese",hy:"armenian",te:"telugu",he:"hebrew","zh-CN":"chinese-simplified","zh-HK":"chinese-traditional","zh-TW":"chinese-traditional","nan-Hant-TW":"chinese-traditional",ko:"korean"};var me=globalThis.navigator,Nu="iPad Simulator|iPhone Simulator|iPod Simulator|iPad|iPhone|iPod".split("|"),ju="Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini".split("|"),Tt="22.1.0",Sn="https://services.bonjourr.fr",br=globalThis.ENV??"TEST",Tn=crypto.randomUUID(),Bs=new BroadcastChannel("bonjourr_tabs"),fe=Nu.includes(me.platform)||me.userAgent?.includes("Mac")&&"ontouchend"in document?"ios":me.appVersion?.includes("Macintosh")?"mac":me.appVersion?.includes("Windows")?"windows":me.userAgent?.toLowerCase()?.includes("android")?"android":"unknown",q=globalThis.location?.protocol==="moz-extension:"?"firefox":globalThis.location?.protocol==="chrome-extension:"?"chrome":globalThis.location?.protocol==="safari-web-extension:"?"safari":"online",K=me?.userAgentData?.brands.some(e=>e.brand==="Microsoft Edge")?"edge":me?.userAgentData?.brands.some(e=>e.brand==="Opera")?"opera":me?.userAgentData?.brands.some(e=>e.brand==="Chromium")?"chrome":me.userAgent?.toLowerCase()?.indexOf("firefox")>-1?"firefox":me.userAgent?.toLowerCase()?.indexOf("safari")>-1?"safari":"other",xn=q==="online"?void 0:q==="firefox"?browser:chrome,Ee=me.userAgentData?me.userAgentData.mobile:ju.some(e=>me.userAgent.includes(e)),yr=(()=>{for(let e of Object.keys(jt))if(me.language.replace("-","_").includes(e))return e;return"en"})(),vr=["default","google","ddg","startpage","qwant","yahoo","bing","brave","ecosia","lilo","baidu","custom"],H={about:{browser:q,version:Tt},showall:!1,lang:yr,dark:"system",favicon:"",tabtitle:"",greeting:"",greetingsize:"3",greetingsmode:"auto",pagegap:1,pagewidth:1600,time:!0,main:!0,dateformat:"auto",quicklinks:!0,textShadow:.2,announcements:"major",review:0,css:"",hide:{},linkstyle:"medium",linktitles:!0,linkbackgrounds:!0,linknewtab:!1,linksrow:6,linkiconradius:1.1,linkgroups:{on:!1,selected:"default",groups:["default"],pinned:[],synced:[]},backgrounds:{type:"images",fadein:600,blur:15,bright:.8,frequency:"hour",color:"#185A63",urls:"",images:"bonjourr-images-daylight",videos:"bonjourr-videos-daylight",mute:!0,queries:{},texture:{type:"none"}},clock:{size:1,ampm:!1,analog:!1,seconds:!1,ampmlabel:!1,ampmposition:"top-left",worldclocks:!1,timezone:"auto"},analogstyle:{face:"none",hands:"modern",shape:"round",border:"#ffff",background:"#fff2"},worldclocks:[],weather:{city:void 0,unit:"metric",provider:"",moreinfo:"none",forecast:"auto",temperature:"actual",geolocation:"approximate"},greetingscustom:{morning:"",afternoon:"",evening:"",night:""},notes:{on:!1,width:40,opacity:.1,align:"left"},searchbar:{on:!1,opacity:.1,newtab:!1,suggestions:!0,engine:"default",request:"",placeholder:""},quotes:{on:!1,author:!1,type:yr==="zh-CN"?"hitokoto":"classic",frequency:"day",last:void 0},pomodoro:{on:!1,mode:"pomodoro",pause:0,end:0,timeFor:{pomodoro:1500,break:300,longbreak:1200},focus:!1,sound:!0,volume:.7,alarm:"marimba",history:[]},font:{family:"",size:"14",system:!0,weightlist:[],weight:fe==="windows"?"400":"300"},supporters:{enabled:!0},move:{selection:"single",layouts:{}}},Ne={syncType:q==="online"?"off":"browser",gistToken:"",userQuoteSelection:0,translations:void 0,quotesCache:[],backgroundUrls:{},backgroundFiles:{},backgroundCollections:{},backgroundCompressFiles:!0,backgroundLastChange:"",lastWeather:void 0};var po=420,Wt=1320,kr=60,As;function Y(e){let t=!e&&As,o=!e||e==="auto",n=new Date;if(t)return As;if(o)return n;K==="firefox"&&(e==="CST"&&(e="-06:00"),e==="AST"&&(e="-03:00"));try{let s=new Intl.DateTimeFormat("en",{timeZone:e,dateStyle:"medium",timeStyle:"medium"});n=new Date(s.format(n))}catch(s){console.warn(s),console.info("Your timezone is not valid")}return n}function wr(e){As=Y(e)}function ho(e){let t=xt(e?new Date(e):new Date);return t>=0&&t<=po-60?"night":t<=po+60?"noon":t<=Wt-60?"day":t<=Wt+60?"evening":t>=Wt+60?"night":"day"}function je(e,t){return e&&t&&(po=xt(new Date(e)),Wt=xt(new Date(t))),kr=100-(1440-Wt)/8,{sunrise:po,sunset:Wt,dusk:kr}}function We(e,t){let o=Y(),n=t!==void 0?new Date(t):o,s={date:o.getDate()!==n.getDate(),hour:o.getHours()!==n.getHours()};switch(e){case"day":return s.date;case"hour":return s.date||s.hour;case"tabs":return!0;case"pause":return t===0;case"period":return t===0?!0:ho()!==ho(+n);default:return!1}}function xt(e){return e.getHours()*60+e.getMinutes()}function N(e,t){return e.length>t?e.slice(0,t):e}function It(e){let t="abcdefghijklmnopqr";return Array.from({length:e},()=>t[Math.floor(Math.random()*t.length)]).join("")}function Er(e,t){return e.localeCompare(t,void 0,{sensitivity:"accent"})===0}function Ze(e){return Number.parseInt(e.slice(4),16)}function Lr(e,t,o){return`#${qs(e)}${qs(t)}${qs(o)}`}function Sr(e){let t=parseInt(e.slice(1,3),16),o=parseInt(e.slice(3,5),16),n=parseInt(e.slice(5,7),16);return{r:t,g:o,b:n}}function Tr(e){if(e=e.replace(/^#/,""),e.length===3&&(e=e.split("").map(u=>u+u).join("")),e.length!==6)throw new Error("Invalid HEX color.");let t=parseInt(e.substring(0,2),16)/255,o=parseInt(e.substring(2,4),16)/255,n=parseInt(e.substring(4,6),16)/255,s=Math.max(t,o,n),i=Math.min(t,o,n),r=s-i,a=0,c=0,l=(s+i)/2;if(r!==0){switch(c=r/(1-Math.abs(2*l-1)),s){case t:a=(o-n)/r+(o<n?6:0);break;case o:a=(n-t)/r+2;break;case n:a=(t-o)/r+4;break}a*=60}return{h:Math.round(a),s:Math.round(c*100),l:Math.round(l*100)}}function xr(e){return Math.round((e.r*299+e.g*587+e.b*114)/1e3)<150?"white":"black"}function qs(e){let t=e.toString(16);return t.length===1?"0hex":t}function Ps(e,t){function o(i){return i!==null&&typeof i=="object"}let n=Object.keys(e),s=Object.keys(t);if(n.length!==s.length)return!1;for(let i of n){let r=e[i],a=t[i],c=o(r)&&o(a);if(c&&!Ps(r,a)||!c&&r!==a)return!1}return!0}function xe(e=""){try{return JSON.parse(e)}catch{e!==""&&console.info("Cannot parse")}}var y={sync:{get:Ir,set:zu,remove:Uu,clear:$u},local:{get:Mr,set:Gu,remove:Vu,clear:Ku},init:Yu,clearall:Qu,type:Wu()};function Wu(){let e="webext-sync";function t(){return e}function o(){return globalThis.chrome?.storage===void 0?(e="localstorage","localstorage"):globalThis.startupStorage?.local?.syncStorage?(e="webext-local","webext-local"):e}function n(s,i){globalThis.chrome?.storage!==void 0&&(s==="local"&&chrome.storage.local.set({syncStorage:i}),s==="sync"&&chrome.storage.local.remove("syncStorage").then(()=>{chrome.storage.sync.set(i)}))}return{init:o,get:t,change:n}}async function Ir(e){switch(y.type.get()){case"webext-sync":{let t=await chrome.storage.sync.get(e??null);return zt(t)}case"webext-local":{let{syncStorage:t}=await chrome.storage.local.get();return zt(t)}default:return zt(xe(localStorage.bonjourr)??{})}}async function zu(e,t=()=>{}){switch(y.type.get()){case"webext-sync":{chrome.storage.sync.set(e,t);return}case"webext-local":{let n={...(await chrome.storage.local.get("syncStorage")).syncStorage,...e};chrome.storage.local.set({syncStorage:n},t);return}case"localstorage":{if(typeof e!="object")return;let o=zt(xe(localStorage.bonjourr)??{});for(let[n,s]of Object.entries(e))o[n]=s;localStorage.bonjourr=JSON.stringify(o??{}),globalThis.dispatchEvent(new Event("storage"));return}default:}}async function Uu(e){switch(y.type.get()){case"webext-sync":{chrome.storage.sync.remove(e);return}case"webext-local":{let{syncStorage:t}=await chrome.storage.local.get("syncStorage");t&&(delete t[e],await chrome.storage.local.remove("syncStorage"),chrome.storage.local.set({syncStorage:t}));return}case"localstorage":{localStorage.removeItem(e);return}default:}}async function $u(){switch(y.type.get()){case"webext-sync":{await chrome.storage.sync.clear();return}case"webext-local":{await chrome.storage.local.remove("syncStorage");return}case"localstorage":{localStorage.removeItem("bonjourr");return}default:}}function Gu(e){switch(y.type.get()){case"webext-sync":case"webext-local":{chrome.storage.local.set(e);return}default:{for(let[t,o]of Object.entries(e))typeof o=="string"?localStorage.setItem(t,o):localStorage.setItem(t,JSON.stringify(o));return}}}async function Mr(e){switch(y.type.get()){case"webext-sync":case"webext-local":return await chrome.storage.local.get(e);default:{let o=structuredClone(Ne);e===void 0&&(e=Object.keys(Ne)),typeof e=="string"&&(e=[e]);let n=Object.keys(globalThis.localStorage),s=e.filter(i=>n.includes(i));for(let i of s){let r=globalThis.localStorage.getItem(i),a=r&&(r.startsWith("{")||r.startsWith("[")),c=r&&(r==="true"||r==="false"),l=r&&Number.isNaN(Number(r))===!1;a?o[i]=xe(r):c?o[i]=r==="true":l?o[i]=Number.parseFloat(r):o[i]=r}return o}}}function Vu(e){switch(y.type.get()){case"webext-sync":case"webext-local":return chrome.storage.local.remove(e);case"localstorage":return localStorage.removeItem(e),Promise.resolve();default:return Promise.resolve()}}async function Ku(){switch(y.type.get()){case"webext-sync":{chrome.storage.local.clear();return}case"webext-local":{let e=(await chrome.storage.local.get("syncStorage")).syncStorage;await chrome.storage.local.clear(),await chrome.storage.local.set({syncStorage:e});return}case"localstorage":{for(let e of Object.keys(Ne))localStorage.removeItem(e);return}default:}}async function Yu(){let e=globalThis.startupStorage??{};switch(q!=="online"&&!s()&&(globalThis.pageReady=!0,await new Promise(i=>{document.addEventListener("webextstorage",r=>{r.detail==="sync"&&(e.sync=globalThis.startupStorage.sync),r.detail==="local"&&(e.local=globalThis.startupStorage.local),s()&&i(!0)})})),y.type.init()){case"webext-local":{e.sync=globalThis.startupStorage.local?.syncStorage,e.local=globalThis.startupStorage.local;break}case"webext-sync":{e.sync=globalThis.startupStorage.sync,e.local=globalThis.startupStorage.local;break}case"localstorage":{e.sync=await Ir(),e.local=await Mr();break}default:}Object.keys(e.sync??{})?.length===0&&(e.sync=await Ju());let o=zt(e.sync),n=Xu(e.local);return{sync:o,local:n};function s(){return!!e.sync&&!!e.local}}async function Qu(){sessionStorage.clear(),Object.keys(localStorage).forEach(e=>{e.startsWith("bonjourr-archive-")===!1&&localStorage.removeItem(e)});try{globalThis.caches.delete("local-files")}catch(e){console.warn(e)}switch(globalThis.startupStorage=void 0,y.type.get()){case"webext-sync":{await chrome.storage.sync.clear(),await chrome.storage.local.clear(),chrome.storage.sync.set(H),chrome.storage.local.set(Ne);return}case"webext-local":{await chrome.storage.sync.clear(),await chrome.storage.local.clear(),chrome.storage.local.set({...Ne,syncStorage:H});return}default:}}async function Ju(){try{let e=await(await fetch("config.json")).json();return zt(e)}catch{}return H}function _r(e){let t=structuredClone(e);return t.review=H.review,t.showall=H.showall,t.weather.city=H.weather.city,t.quotes.last=H.quotes.last,Ps(t,H)}function zt(e={}){return{...H,...e}}function Xu(e={}){return{...Ne,...e}}function Le(e,t){let o,n=(...s)=>{clearTimeout(o),o=setTimeout(()=>e(...s),t)};return n.cancel=()=>clearTimeout(o),n}var Q=Le(e=>{y.sync.set(e)},400);var et,yo="en";async function Hs(e,t){let o=Ds(e);if(o==="en"){y.local.remove("translations"),et=void 0;return}let n=t?.translations?.lang;t&&n===o?et=t.translations:(et=await(await fetch(`../../_locales/${o}/translations.json`)).json(),y.local.set({translations:et})),yo=o}function Ut(e,t="en"){if(t!=="en"){if(et){let n=(e??document.body).querySelectorAll(".trn"),s;for(let i of n)s=i.textContent?.trim()??"",i.textContent=et[s]??s}document.documentElement.setAttribute("lang",t),yo=t}}async function Cr(e){let t=document.querySelectorAll(".trn"),o={},n={...et},s;await Hs(e);let i=(await y.local.get("translations")).translations;if(i&&n?.lang===void 0)for(let r of Object.keys(i))n[r]=r;for(let[r,a]of Object.entries(n))e==="en"?o[a]=r:i&&(o[a]=i[r]);for(let r of t)s=r.textContent??"",r.textContent=o[s]??s;yo=e}function G(){return yo}function L(e){return et?et[e]??e:e}function Ds(e){let t=e;return e.includes("ES")&&(t="es"),e==="gr"&&(t="el"),e==="jp"&&(t="ja"),e==="cz"&&(t="cs"),t=t.replace("_","-"),t}function bo(e,t){function o(n){let r=`data:image/svg+xml,${`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">${`<text y=".9em" font-size="85">${n}</text>`}</svg>`}`,a="/src/assets/favicons/favicon.ico",c=document.querySelector("#favicon");c&&(c.href=n?r:a)}if(K!=="edge"){if(t){let n=e?.match(/[\p{Emoji}\u25A0-\u25FF]/gu)&&!e?.match(/[0-9a-z]/g);Q({favicon:n?e:""}),document.getElementById("head-favicon")?.remove()}K==="firefox"?setTimeout(()=>o(e),0):o(e)}}function ct(e,t){e??="",document.title=N(e,80)||L("New tab"),t&&Q({tabtitle:N(e,80)})}function In(e,t){if(e.width){let o=`${e.width??H.pagewidth}px`;document.documentElement.style.setProperty("--page-width",o),t&&Q({pagewidth:e.width})}if(typeof e.gap=="number"){let o=`${e.gap??H.pagegap}em`;document.documentElement.style.setProperty("--page-gap",o),t&&Q({pagegap:e.gap})}}function vo(e,t){let o=document.querySelector("aside"),n="light";switch(e){case"disable":n="light";break;case"enable":n="dark";break;case"system":n=globalThis.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";break;default:{let s=xt(new Date),{sunrise:i,sunset:r}=je();n=s<=i||s>r?"dark":"light"}}if(document.documentElement.dataset.theme=n,t){y.sync.set({dark:e}),o?.classList.add("change-theme"),setTimeout(()=>{o?.classList.remove("change-theme")},333);return}globalThis.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",s=>{document.documentElement.dataset.theme=s.matches?"dark":"light"})}function ko(e,t){let o=e??t;document.documentElement.style.setProperty("--text-shadow-alpha",(o??.2)?.toString()),typeof t=="number"&&Q({textShadow:o})}var Br=[],Ar=!1;function R(e){Ar?e():Br.push(e)}function qr(){for(let e of Br)e();Ar=!0}var Os=St(lt());var rd=["https://images.unsplash.com/photo-1457269449834-928af64c684d?q=80&w=700&auto=format&fit=crop","https://images.unsplash.com/photo-1613136391099-c2757009bb12?q=80&w=700&auto=format&fit=crop","https://images.unsplash.com/photo-1457670912047-6ad4485d43eb?q=80&w=700&auto=format&fit=crop","https://images.unsplash.com/photo-1528834342297-fdefb9a5a92b?q=80&w=700&auto=format&fit=crop","https://images.unsplash.com/photo-1486608766848-9b9fe0c37b9d?q=80&w=700&auto=format&fit=crop","https://images.unsplash.com/photo-1551516114-063f4cef7213?q=80&w=700&auto=format&fit=crop","https://images.unsplash.com/photo-1577353716826-9151912dcdd1?q=80&w=700&auto=format&fit=crop","https://images.unsplash.com/photo-1600699260196-aca47e6d2125?q=80&w=700&auto=format&fit=crop","https://images.unsplash.com/photo-1508255139162-e1f7b7288ab7?q=80&w=700&auto=format&fit=crop","https://images.unsplash.com/photo-1507834392452-0559ec185662?q=80&w=700&auto=format&fit=crop","https://images.unsplash.com/photo-1505567745926-ba89000d255a?q=80&w=700&auto=format&fit=crop","https://images.unsplash.com/photo-1513267257196-91be473829b3?q=80&w=700&auto=format&fit=crop"],Dr=!1;function Mn(e,t){if(t?.translate){Nr();return}if(t){Rr(t);return}Fr(e)&&(R(ad),document.documentElement.dataset.supporters="")}function Fr(e){let t=!e?.supporters||!e.supporters.enabled,o=e?.review!==-1,n=e?.supporters.closedMonth,s=new Date().getMonth()+1;return t||o?!1:s!==n}function Or(e){if(!Fr(e))return;let t=document.getElementById("supporters-notif-container"),o=document.getElementById("supporters-notif-content"),n=document.getElementById("supporters-notif-close"),s=rd[new Date().getMonth()];t?.classList.add("shown"),t?.style.setProperty("--background",`url(${s})`),Nr(),(0,Os.onclickdown)(o,i=>{i instanceof PointerEvent&&i.button===0&&(wo(!0),cd())}),(0,Os.onclickdown)(n,()=>{delete document.documentElement.dataset.supporters,t?.classList.remove("shown"),Rr({closed:!0})})}async function Rr(e){let t=await y.sync.get();e.enabled!==void 0&&(t.supporters.enabled=e.enabled),e.closed!==void 0&&(t.supporters.closedMonth=new Date().getMonth()+1),y.sync.set({supporters:t.supporters})}function Nr(){let t=`This ${new Date().toLocaleString("en-US",{month:"long"})}, Bonjourr is brought to you by our lovely supporters.`,o=document.getElementById("supporters-notif-title"),n=document.getElementById("supporters-notif-button");o&&n&&(o.textContent=L(t),n.textContent=L("Find out who they are"))}function ad(){let e=document.getElementById("supporters-modal-template"),t=document.importNode(e.content,!0),o=t.getElementById("supporters-modal-container");$t(t,"header h2 span","Supporters like you make Bonjourr possible"),$t(t,"header p","Here are the wonderful people who supported us last month. Thanks to them, we can keep Bonjourr free, open source, and constantly evolving."),$t(t,"#supporters-monthly h3","Our monthly supporters"),$t(t,"#supporters-once h3","Our one-time supporters"),$t(t,"footer p","Join the community and get your name in Bonjourr."),$t(t,"footer a span","Donate");let n=t.getElementById("supporters-modal-close");document.querySelector("#interface")?.insertAdjacentElement("beforebegin",o),n.addEventListener("click",()=>{wo(!1)}),o.addEventListener("click",s=>{s.target?.id==="supporters-modal-container"&&wo(!1)}),document.addEventListener("keyup",s=>{let i=document.documentElement.dataset.supportersModal!==void 0;s.key==="Escape"&&i&&wo(!1)})}function wo(e){document.dispatchEvent(new CustomEvent("toggle-settings")),e?document.documentElement.dataset.supportersModal="":delete document.documentElement.dataset.supportersModal}async function cd(){if(Dr)return;document.body.className.includes("potato")||ld();let e=new Date().getMonth()+1,t=new Date().getFullYear(),o=e===1,n,s=t;o?(n=12,s-=1):n=e-1;let i=document.querySelector("#supporters-modal"),r=document.querySelector("#supporters-modal main"),a=document.querySelector("#supporters-monthly ul"),c=document.querySelector("#supporters-once ul");try{let l=`https://kofi.bonjourr.fr/list?date=${s}-${n}`,u=await(await fetch(l))?.json();if(u.length>0){u.sort((d,h)=>h.amount-d.amount);for(let d of u){let h=d.monthly?a:c,g=`<li>${d.name}</li>`;h?.insertAdjacentHTML("beforeend",g)}i?.classList.add("loaded")}}catch{r&&(r.innerHTML="<i>An error occured or we might be offline!</i>")}Dr=!0}function $t(e,t,o){let n=e.querySelector(t);n&&(n.innerText=L(o))}function ld(){let e={};e.canvas=document.getElementById("glitter"),e.context=e.canvas.getContext("2d"),e.snowflake=class{size;x;baseX;distance;opacity;radians;fallSpeed;y;constructor(){this.size=Math.random()*1.5+1.5,this.x=Math.random()*e.canvas.width-this.size-1+this.size+1,this.baseX=this.x,this.distance=Math.random()*50+1,this.opacity=Math.random(),this.radians=Math.random()*Math.PI*2,this.fallSpeed=Math.random()*1.5+.5,this.y=Math.random()*e.canvas.height-this.size-1+this.size+1}draw=()=>{this.y>e.canvas.height+this.size?this.y=-this.size:this.y+=this.fallSpeed,this.radians+=.02,this.x=this.baseX+this.distance*Math.sin(this.radians),e.context.beginPath(),e.context.arc(this.x,this.y,this.size,0,Math.PI*2),e.context.shadowBlur=8,e.context.shadowColor=`rgba(255, 202, 56, ${this.opacity})`,e.context.fillStyle=`rgba(255, 202, 56, ${this.opacity})`,e.context.fill(),e.context.closePath(),e.context.shadowBlur=0,e.context.shadowColor="transparent"}},e.setup=()=>{e.canvas.width=e.context.canvas.clientWidth,e.canvas.height=e.context.canvas.clientHeight,e.flakes=[];for(let n=0;n<Math.ceil(e.canvas.width*e.canvas.height/2e4);n++)e.flakes.push(new e.snowflake)};let t=Le(e.setup,200);globalThis.addEventListener("resize",t),e.animate=()=>{requestAnimationFrame(e.animate),e.context.clearRect(0,0,e.canvas.width,e.canvas.height);for(let o of e.flakes)o.draw()},e.setup(),e.animate()}async function jr(e,t){let o=document.getElementById("gist-sync-status-wrapper"),n=document.getElementById("gist-sync-status-base");if(!e)return document.querySelector("#gist-sync-status")?.remove(),n.textContent=L("Waiting for authentification"),!1;if(!t)return document.querySelector("#gist-sync-status")?.remove(),n.textContent=L("No saved data yet"),!1;let s=await fetch(`https://api.github.com/gists/${t}`,{headers:Gt(e)});if(s.status!==200)return document.querySelector("#gist-sync-status")?.remove(),n.textContent=L("No saved data yet"),!1;let i=await s.json(),r=i.updated_at,a=new Date(r).toLocaleString(G(),{day:"2-digit",month:"2-digit",year:"2-digit",hour:"2-digit",minute:"2-digit"});document.querySelector("#gist-sync-status")?.remove();let c=document.createElement("a");return c.id="gist-sync-status",c.href=i.html_url,c.textContent=a,o?.appendChild(c),n.textContent=L("Last update"),!0}async function Wr(e,t){if(!e)throw new Error(ge.TOKEN);if(!t)throw new Error(ge.ID);let o=await fetch(`https://api.github.com/gists/${t}`,{headers:Gt(e)});if(o.status===200){let n=await o.json(),s=Object.values(n?.files??{})[0]?.content??"";try{return JSON.parse(s)}catch{throw new Error(ge.JSON)}}throw new Error(ge.OTHER)}async function zr(e,t,o){let n="File automatically generated by Bonjourr. Learn more on https://bonjourr.fr/docs/overview/#sync",s={"bonjourr-export.json":{content:JSON.stringify(o,void 0,2)}};if(_r(o))throw new Error(ge.DEFAULT);if(t===void 0){let r=await fetch("https://api.github.com/gists",{body:JSON.stringify({files:s,description:n,public:!1}),headers:Gt(e),method:"POST"});if(r.status===401)throw new Error(ge.TOKEN);if(r.status>=300)throw new Error(ge.OTHER);return(await r.json()).id}if(ud(t)===!1)throw new Error(ge.ID);let i=await fetch(`https://api.github.com/gists/${t}`,{body:JSON.stringify({files:s,description:n}),headers:Gt(e),method:"PATCH"});if(i.status===404)throw new Error(ge.NOGIST);if(i.status===401)throw new Error(ge.TOKEN);if(i.status>=300)throw new Error(ge.OTHER);return t}async function Ur(e){if(!e)throw new Error(ge.TOKEN);let t=await fetch("https://api.github.com/gists?per_page=100",{headers:Gt(e)});if(t.status===401)throw new Error(ge.TOKEN);if(t.status>=300)throw new Error(ge.OTHER);return(await t.json()).filter(s=>!s.public&&s.files["bonjourr-export.json"]?.size>0)[0]?.id}async function $r(e=""){if(!e)return!1;try{let t=new Date()?.toISOString();return(await fetch(`https://api.github.com/gists?since=${t}`,{headers:Gt(e)})).status===200}catch{return!1}}function ud(e){if(!e||e.length>32)return!1;for(let t of e){let o=t.charCodeAt(0);if(!(o>=97&&o<=102||o>=48&&o<=57))return!1}return!0}function Gt(e){return{Authorization:`Bearer ${e}`,Accept:"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"}}var ge={ID:L("Invalid Gist ID in settings."),TOKEN:L("Invalid token."),NOGIST:L("Bonjourr file not found in Gists."),NOCONN:L("Cannot connect to GitHub."),JSON:L("Invalid JSON response from GitHub."),OTHER:L("Unexpected GitHub Gist error."),DEFAULT:L("Tried to send default config.")};async function Eo(e=""){let t;try{new URL(e)}catch{throw new Error(Rs.URL)}try{t=await fetch(e)}catch{try{t=await fetch("https://services.bonjourr.fr/proxy",{method:"POST",body:e})}catch{throw new Error(Rs.PROXY)}}try{return JSON.parse(await t.text())}catch{throw new Error(Rs.JSON)}}async function Gr(e=""){try{return await Eo(e),!0}catch{return!1}}var Rs={URL:L("Not a valid URL"),FAIL:L("Cannot access resource right now"),PROXY:L("Cannot access resource, even with proxy"),JSON:L("Response is not valid JSON")};function ne(e){let t,o,n,s=0;R(()=>{t=document.getElementById(e),o=t?.querySelector("button:last-of-type"),n=t?.querySelector("small");for(let l of t.querySelectorAll("input"))l?.addEventListener("input",()=>{let d=l.getAttribute("placeholder")===l.value,h=l.value==="",g=t.checkValidity();t.classList.toggle("valid",g),t.classList.toggle("remove",g&&(d||h))});t?.addEventListener("input",()=>{t.classList.contains("warn")&&(t.classList.remove("warn"),o.removeAttribute("disabled"))})});function i(){t.classList.remove("load","warn","valid","remove"),o.removeAttribute("disabled"),clearTimeout(s)}function r(){s=setTimeout(()=>{t.classList.remove("warn"),t.classList.add("valid","load"),o.setAttribute("disabled","disabled")},50)}function a(l){t.classList.add("warn"),t.classList.remove("load"),o.setAttribute("disabled",""),n.textContent=l,clearTimeout(s)}function c(l,u){if(l&&t.checkValidity()){t.classList.remove("valid");let d=document.getElementById(l);d&&u&&d.setAttribute("placeholder",u)}clearTimeout(s),setTimeout(()=>i(),200)}return{load:r,warn:a,reset:i,accept:c}}function Ie(e){let{min:t,max:o,value:n}=e;e.style.setProperty("--value",n),e.style.setProperty("--min",t||"0"),e.style.setProperty("--max",o||"100")}function _n(e,t){e&&((t!==void 0?t:typeof e.getAttribute("disabled")=="string")?e.setAttribute("disabled",""):e.removeAttribute("disabled"))}function dd(e){let t=document.querySelector(`#${e.replace("#","")}`),o=t?.querySelector("input"),n=t?.querySelector("button"),s=t?.querySelectorAll("span"),i=n?.classList?.contains("on");return{range:o?.value,button:s?.[i?1:0].dataset.value}}function ut(e,t){return document.getElementById(e)?.content.cloneNode(!0)?.querySelector(t)}function Vr(e){if(!e)return[];let t=[],o=e;for(;o;)t.push(o),o=o.parentElement;return t}function Vt(e,t){let o=e.target;o.tagName==="path"&&o.parentElement&&(o=o.parentElement),o.tagName!=="svg"&&o.firstElementChild&&(o=o.firstElementChild),o.tagName!=="svg"&&o.firstElementChild&&(o=o.firstElementChild),o?.animate(t?[{transform:"rotate(360deg)"}]:[{transform:"rotate(0deg)"},{transform:"rotate(90deg)"},{transform:"rotate(0deg)"}],{duration:600,easing:"ease-out"})}function Kt(){let e=document.getElementById("interface");e.click(),e.style.transition="opacity .4s",setTimeout(()=>{e.style.opacity="0"}),setTimeout(()=>{location.reload()},400)}var Kr=(e,t=800)=>{let o=!0;setTimeout(()=>{o=!1,e.removeAttribute("disabled")},t),o&&e.setAttribute("disabled","")};function Yt(e){let{range:t,button:o}=dd(e),n=Number.parseInt(t??"0"),s=o==="dark"?"#000":"#fff",i=n.toString(16);return s+i}function Qt(e,t){let o=document.getElementById(e),n=o?.querySelector("button"),s=o?.querySelector("input");if(n&&s){t??=s.value;let i=Tr(t);i.l=Math.max(0,i.l-10),n.style.borderColor=`hsl(${i.h}, ${i.s}%, ${i.l}%)`,n.textContent=t,n.style.backgroundColor=t,n.style.color=xr(Sr(t))}}var tt=ne("f_gistsync"),Cn=ne("f_urlsync");function ze(e,t){e&&R(()=>{dt(e),setTimeout(()=>Yr(e.syncType),200)}),t&&md(t)}async function md(e){let t=await y.local.get(["gistId","gistToken","distantUrl","syncType"]),o=await y.sync.get();if(e.down){if(t.syncType==="gist"){tt.load();try{let n=t.gistId??"",s=t.gistToken??"",i=await Wr(s,n);y.sync.set(i),Kt()}catch(n){tt.warn(n)}}if(t.syncType==="url"){Cn.load();try{let n=await Eo(t.distantUrl);y.sync.set(n),Kt()}catch(n){Cn.warn(n)}}}if(e.up&&t.syncType==="gist"){tt.load();try{let n=t.gistToken??"",s=await zr(n,t.gistId,o);tt.accept(),t.gistId=s,y.local.set({gistId:s}),dt(t)}catch(n){tt.warn(n)}}if(e.gistToken===""){t.gistToken="",t.gistId="",y.local.remove("gistToken"),y.local.remove("gistId"),tt.accept(),dt(t);return}if(e.url===""){t.distantUrl="",y.local.remove("distantUrl"),dt(t);return}if(e.gistToken){tt.load();try{t.gistToken=e.gistToken,t.gistId=await Ur(t.gistToken),y.local.set({gistId:t.gistId}),y.local.set({gistToken:t.gistToken}),tt.accept(),dt(t)}catch(n){tt.warn(n)}}if(e.url){Cn.load();try{await Eo(e.url),Cn.accept("i_urlsync",e.url),t.distantUrl=e.url,y.local.set({distantUrl:e.url}),dt(t)}catch(n){Cn.warn(n)}}fd(e.type)&&(t.syncType=e.type,y.local.set({syncType:t.syncType}),y.type.change(e.type==="browser"?"sync":"local",o),dt(t),Yr(e.type)),e.firefoxPersist&&(localStorage.choseStoragePersistence="true",dt(t))}async function Yr(e){if(!navigator?.storage?.persisted)return;let t=await navigator.storage.persisted();e==="off"&&(t||await navigator.storage.persist())}async function dt(e){let t=e?.gistId,o=e?.gistToken,n=e?.distantUrl,s=e?.syncType,i=document.querySelector("#i_gistsync"),r=document.querySelector("#i_urlsync"),a=document.querySelector("#b_gistdown"),c=document.querySelector("#b_gistup"),l=document.querySelector("#b_urldown");a?.setAttribute("disabled",""),l?.setAttribute("disabled",""),c?.setAttribute("disabled",""),i&&o&&(i.value=o),r&&n&&(r.value=n);let u=localStorage.choseStoragePersistence==="true";switch(document.getElementById("disabled-sync")?.classList.toggle("shown",!u),s){case"off":case"browser":{document.getElementById("url-sync")?.classList.remove("shown"),document.getElementById("sync-freq")?.classList.remove("shown"),document.getElementById("gist-sync")?.classList.remove("shown");break}case"gist":{document.getElementById("gist-sync")?.classList.add("shown"),document.getElementById("url-sync")?.classList.remove("shown"),document.getElementById("disabled-sync")?.classList.remove("shown"),await $r(o)&&(a?.removeAttribute("disabled"),c?.removeAttribute("disabled")),jr(o,t);break}case"url":{document.getElementById("url-sync")?.classList.add("shown"),document.getElementById("gist-sync")?.classList.remove("shown"),document.getElementById("disabled-sync")?.classList.remove("shown"),await Gr(n)&&l?.removeAttribute("disabled");break}default:}}function fd(e=""){return["browser","gist","url","off"].includes(e)}var ti="",ot;function oi(e,t,o){let n=Td(t.backgroundUrls);if(n.length===0){Zt();return}let s=n[0],i=e.frequency,r=t.backgroundUrls[s],a=new Date(r.lastUsed).getTime();if(o??=We(i,a),n.length>1&&o){n.shift();let c=Math.floor(Math.random()*n.length),l=n[c],u=new Date().toString(),d=t.backgroundUrls[l];J(ga(l,d)),t.backgroundUrls[l].lastUsed=u,y.local.set(t);return}J(ga(s,r))}function Td(e){let t=r=>new Date(r.lastUsed).getTime();return Object.entries(e).toSorted((r,a)=>t(a[1])-t(r[1])).filter(([r,a])=>a.state==="OK").map(([r,a])=>r)}function ga(e,t){return t.format==="video"?{format:"video",duration:t.duration??8,page:"",username:"",urls:{full:e,small:e}}:{format:"image",page:"",username:"",urls:{full:e,small:e}}}function pa(e){let s=Object.entries(e.backgroundUrls).filter(i=>i[1].state==="OK").toSorted((i,r)=>new Date(i[1].lastUsed).getTime()-new Date(r[1].lastUsed).getTime()).map(([i])=>i);return[s,s.map(i=>({format:"image",page:"",username:"",urls:{full:i,medium:i,small:i}}))]}async function ha(e,t){ti=e.urls;let{createBackgroundUrlsEditor:o}=await Promise.resolve().then(()=>(ei(),Zs)),n={language:"uri",value:e.urls};ot=o(n);let s=ot.keyCommandMap.Tab;ot.textarea.id="background-urls-editor-textarea",ot.textarea.maxLength=8080,ot.textarea.placeholder=`https://picsum.photos/200
-`,ot.on("update",i=>{ya(ti,N(i,8080))}),ot.keyCommandMap.Tab=(i,r,a)=>document.body.matches(".tabbing")?!1:s?.(i,r,a);for(let[i,{state:r}]of Object.entries(t.backgroundUrls))ni(i,r)}function ni(e,t){let n=ot.wrapper.querySelectorAll(".pce-line").values().find(r=>r.textContent===`${e}
-`),i=!n?.textContent?.replace(`
-`,"")?"NONE":t;n?.classList.toggle("loading",i==="LOADING"),n?.classList.toggle("error",i==="NOT_MEDIA"),n?.classList.toggle("good",i==="OK"),n?.classList.toggle("warn",i==="CANT_REACH"||i==="NOT_URL")}function ya(e,t){let o=document.querySelector("#b_background-urls");e===t?o?.setAttribute("disabled",""):o?.removeAttribute("disabled")}function ba(e){let t=ot.value,o={};for(let n of t.split(`
-`))n.startsWith("http")&&(o[n]={lastUsed:new Date().toString(),format:va(n),state:"NONE"});ti=e.urls=t,y.local.set({backgroundUrls:o}),y.sync.set({backgrounds:e}),ya("osef","osef"),xd(o)}async function xd(e){let t=Object.entries(e);for(let[o]of t)ni(o,"LOADING");for(let[o,n]of t){let s=await Id(o);n.state=s.state,n.format=s.format,n.duration=s.duration,e[o]=n,ni(o,n.state),y.local.set({backgroundUrls:e})}}async function Id(e){let t=()=>s.includes("video/"),o=()=>s.startsWith("video/")||s.startsWith("image/"),n={format:va(e),state:"NONE",needsProxy:!1},s="",i,r;try{r=new URL(e)}catch{return n.state="NOT_URL",n}try{if(i=await fetch(r),s=i.headers.get("content-type")??"",o())n.state="OK";else return n.state="NOT_MEDIA",n}catch{try{if(n.needsProxy=!0,i=await fetch(`https://services.bonjourr.fr/backgrounds/proxy/${r}`),s=i.headers.get("content-type")??"",o())n.state="OK";else return n.state="NOT_MEDIA",n}catch{return n.state="CANT_REACH",n}}if(t()?n.format="video":n.format="image",n.format==="video"){let a=document.createElement("video");if(n.duration=await new Promise((c,l)=>{setTimeout(()=>l(),5e3),a.onloadedmetadata=()=>c(Math.floor(a.duration)),a.src=e}),!n.duration)return n.state="LOADING",n}return n}function va(e){return e=e.trimEnd(),e.endsWith("mp4")||e.endsWith("webm")?"video":"image"}function Rn(e,t){return t?`${Sn}/favicon/blob/${e}?r=${t}`:`${Sn}/favicon/blob/${e}`}function si(){let e=document.querySelectorAll("li.selected");return Object.values(e).map(t=>t.id)}function en(e){let o=e.composedPath().find(n=>n.tagName==="LI"&&n.className?.includes("link"));if(o)return o}function ka(e){let o=e.composedPath().find(n=>n.className?.includes("link-title"));if(o)return o}function Po(e){let t=document.getElementById("linkblocks")?.className.includes("inline"),o=document.getElementById("linkblocks")?.className.includes("text");if(!(t||o)||e?.title!=="")return N(e.title??"",64);try{Ke(e)?e.title=new URL(e.url)?.hostname.replace("www.",""):e.title=L("folder")}catch{}return e.title}function wa(e,t){let o=e[t];if(gt(o))return o}function mt(e,t){let o=t??e.linkgroups.selected,n=[];for(let s of Object.values(e))gt(s)&&(s?.parent??0)===o&&n.push(s);return n.sort((s,i)=>s.order-i.order),n}function ft(e,t){let o=[];for(let n of Object.values(e))Ke(n)&&n?.parent===t&&o.push(n);return o.sort((n,s)=>n.order-s.order),o}function gt(e){return(e?._id??"").startsWith("links")}function Ke(e){return e?.folder!==!0}function Ea(e){return["auto","library","file","url"].includes(e)}function ii(e){return!isNaN(parseFloat(e))}function Ho(e){R(()=>{for(let[n,s]of Object.entries(e))document.getElementById(n)?.classList?.toggle("shown",s);let t=document.getElementById("settings-notifications"),o=document.querySelectorAll("#settings-notifications .param.shown").length>0;t?.classList?.toggle("shown",o)})}async function _t(...e){switch(q){case"online":return!0;case"firefox":return await browser.permissions.request({permissions:[...e]});default:return chrome.permissions.request({permissions:[...e]})??!1}}function st(e){let t=[];return Object.entries(e).map(([o,n])=>{o.length===11&&o.startsWith("links")&&t.push(n)}),t}var Ct=St(lt());var Do=[];async function Sa(){let e=await y.sync.get();for(let t of document.querySelectorAll("#bookmarks-container > *")??[])t.remove();ai(e).then(()=>{Md()})}async function ai(e){let t=await La(),o=!!t;if(!o)try{o=await _t("topSites","bookmarks")}catch{Ho({"accept-permissions":!0})}o&&(t=await La(),t&&(Do=Ad(t[0],e)))}function Ta(e){let t=Do.find(n=>n.title===e),o=[];if(t)for(let n of t.bookmarks)o.push(ci(n.title,n.url,t.title));return o}function Md(){let e=Do,t=document.querySelector("#bookmarks"),o=document.querySelector("#bookmarks-container");if(!t){t=ut("bookmarks-dialog-template","dialog"),o=t.querySelector("#bookmarks-container");let n=t.querySelector("#bmk_close"),s=t.querySelector("#bmk_apply");t?.addEventListener("click",ri),(0,Ct.onclickdown)(s,_d),(0,Ct.onclickdown)(n,ri),document.body.appendChild(t)}for(let n of e){let s=ut("bookmarks-folder-template","div"),i=s.querySelector(".b_bookmarks-folder-select"),r=s.querySelector(".b_bookmarks-folder-sync"),a=s.querySelector("ol"),c=s.querySelector(".bookmarks-folder-title-content");if(a&&c){c.textContent=n.title,(0,Ct.onclickdown)(i,()=>Cd(s)),(0,Ct.onclickdown)(r,()=>Bd(s)),s.classList.toggle("used",n.used),s.dataset.title=n.title,o?.appendChild(s),n.title==="topsites"&&r&&(c.textContent=L("Most visited"),s.classList.add("synced"),r.setAttribute("disabled",""),r.remove());for(let l of n.bookmarks){let u=ut("bookmarks-item-template","li"),d=u.querySelector("button"),h=u.querySelector(".bookmark-title"),g=u.querySelector(".bookmark-url"),E=u.querySelector("img");if(!(h&&d&&g&&E&&l.url.startsWith("http")))continue;let b=new URL(l.url);E.src=`${Sn}/favicon/blob/${b.origin}`,h.textContent=l.title,g.textContent=b.href.replace(b.protocol,"").replace("//","").replace("www.","").slice(0,-1).replace("/",""),(0,Ct.onclickdown)(d,()=>u.classList.toggle("selected")),(0,Ct.onclickdown)(d,xa),l.used&&d.setAttribute("disabled",""),u.id=l.id,a?.appendChild(u)}}}document.getElementById("bmk_apply")?.setAttribute("disabled",""),document.dispatchEvent(new CustomEvent("toggle-settings")),Ut(t,G()),t.showModal(),setTimeout(()=>t.classList.add("shown"))}function _d(){let e=Do,t=document.getElementById("bookmarks"),o=t.querySelectorAll(".bookmarks-folder li.selected"),n=t.querySelectorAll(".bookmarks-folder.selected"),s=t.querySelectorAll(".bookmarks-folder.synced"),i=Object.values(o).map(u=>u.id),r=Object.values(n).map(u=>u.dataset.title),a=Object.values(s).map(u=>u.dataset.title),c=[],l=[];for(let u of e){let d=r.includes(u.title),h=a.includes(u.title);if(d&&l.push({title:u.title,sync:h}),!(h&&u.title!=="topsites"))for(let g of u.bookmarks){let E=i.includes(g.id),b=d?u.title:void 0,v=g.title,m=g.url;(d||E)&&c.push({title:v,url:m,group:b})}}y.sync.get("linkgroups").then(({linkgroups:u})=>{let d=document.querySelector("#i_linkgroups"),g=[...l,...u.groups].length>1;F(void 0,{groups:g,addLinks:c,addGroups:l}),d&&(d.checked=g),t?.classList.remove("shown"),t?.close(),ri()})}function xa(){let e=document.getElementById("bmk_apply"),t=document.querySelectorAll("#bookmarks li.selected"),o=document.querySelectorAll("#bookmarks .bookmarks-folder.selected"),n=t.length===0&&o.length===0;_n(e,n)}function ri(e){let o=(e?.composedPath()??[])[0]?.id??"";if(!e||o==="bookmarks"||o==="bmk_close"){let n=document.querySelector("#bookmarks");n?.close(),n?.classList.remove("shown");for(let s of n?.querySelectorAll(".selected")??[])s.classList.remove("selected")}}function Cd(e){let t=e.querySelector(".b_bookmarks-folder-select"),o=e.querySelector(".b_bookmarks-folder-sync");if(t){if(e.classList.contains("selected"))e.classList.remove("selected"),o?.classList.remove("selected"),o?.setAttribute("disabled","");else{e.classList.add("selected");for(let n of e.querySelectorAll("li"))n?.classList.remove("selected");o?.removeAttribute("disabled")}xa()}}function Bd(e){e.classList.contains("synced")?e.classList.remove("synced"):e.classList.add("synced")}async function La(){let e=globalThis.startupBookmarks,t=globalThis.startupTopsites;if(e||(e=await xn?.bookmarks?.getTree()),t||(t=await xn?.topSites?.get()),!!(e&&t))return q==="chrome"&&e[0].children?.push({id:"",title:"Google Apps",children:[{id:"",title:"Youtube",url:"https://youtube.com"},{id:"",title:"Account",url:"https://myaccount.google.com"},{id:"",title:"Gmail",url:"https://mail.google.com"},{id:"",title:"Meet",url:"https://meet.google.com"},{id:"",title:"Maps",url:"https://maps.google.com"},{id:"",title:"Drive",url:"https://drive.google.com"},{id:"",title:"Photos",url:"https://photos.google.com"},{id:"",title:"Calendar",url:"https://calendar.google.com"},{id:"",title:"Translate",url:"https://translate.google.com"},{id:"",title:"News",url:"https://news.google.com"}]}),e[0].children?.unshift({id:"",title:"topsites",children:t.map(o=>({id:"",title:o.title??"",url:o.url,syncing:!1}))}),e}function Ad(e,t){function o(i){if(i.children)for(let r of i.children)r.children&&o(r),!(!r.url||(s[i.title]||(s[i.title]={title:i.title,used:!1,bookmarks:[]}),s[i.title].bookmarks.map(l=>l.url).includes(r.url)))&&s[i.title].bookmarks.push({id:It(6),title:r.title,url:r.url,used:n.includes(r.url),dateAdded:r.dateAdded??0})}let n=st(t).map(i=>gt(i)&&i.url),s={};o(e);for(let[i,{bookmarks:r}]of Object.entries(s)){let a=r.every(u=>u.used),c=t.linkgroups.groups.includes(i);(t.linkgroups.synced.includes(i)||c&&a)&&(s[i].used=!0)}return Object.values(s)}async function Ia(e,t){let o=document.createElement("canvas"),n=o.getContext("2d"),s=new Image;if(!n)throw new Error("Cannot get canvas context");return await new Promise(i=>{s.onload=()=>{let{size:r,square:a,raw:c}=t;if(c||!r){o.width=s.width,o.height=s.height,n?.drawImage(s,0,0),s.remove(),i(!0);return}let l=s.width>s.height,u=0,d=0,h=s.width,g=s.height,E=r,b=r;a?l?(u=(s.width-s.height)/2,h=g=s.height):(d=(s.height-s.width)/2,h=g=s.width):l?(b=r,E=s.width/s.height*r):(E=r,b=s.height/s.width*r),o.width=E,o.height=b,n.drawImage(s,u,d,h,g,0,0,E,b),s.remove(),i(!0)},s.src=e}),o}async function Ma(e){let t=new Image,o=4e3,n=3e3;return await new Promise(s=>{t.addEventListener("load",()=>{o=t.width,n=t.height,t.remove(),s(!0)}),t.src=e}),{width:o,height:n}}async function Fo(e,t){let o=t.type??"jpeg",n=t.q??.9;typeof e=="object"&&(e=URL.createObjectURL(e));let i=(await Ia(e,t)).getContext("2d");return await new Promise(a=>{i?.canvas.toBlob(a,`image/${o}`,n)})}async function li(e,t){let o=t.type??"jpeg",n=t.q??1;return typeof e=="object"&&(e=URL.createObjectURL(e)),(await Ia(e,t)).toDataURL(`image/${o}`,n)}async function _a(e){let t=new FileReader;return await new Promise(n=>{t.onload=()=>{n(t.result?.toString()??"")},t.readAsText(e)})}async function qd(e){if(!e.type.startsWith("image/"))throw new Error("Icon file must be an image");let t=e.size<16e3,o=e.type.replace("image/","");if(t){if(o.includes("svg")){let n=await _a(e);return`data:image/svg+xml;base64,${btoa(n)}`}if(o.includes("png"))return await li(e,{square:!0,type:"png",q:1})}return await li(e,{type:o.includes("png")?"png":"jpeg",square:!0,size:144,q:.8})}async function Ca(e,t){let o=await qd(t);return y.local.set({[`x-icon-${e}`]:o}),o}function Pe(){let e,t={};return{first:o=>{t.first=o},finally:o=>{t.finally=o},after:o=>{t.after=o},cancel:()=>clearTimeout(e),transition:async(o,...n)=>{t.first&&t.first(n),await new Promise(s=>{e=setTimeout(()=>s(!0),Math.min(o,2e3))}),t.after&&t.after(n),t.finally&&t.finally(n),t.first=void 0,t.after=void 0,t.finally=void 0}}}var Ba=document.getElementById("linkblocks");queueMicrotask(()=>{document.addEventListener("close-folder",Hd)});async function Oo(e){let t=en(e),o=!1,n=!1,s=!1;if(e instanceof MouseEvent)o=e.button===2,n=e.button===0&&(e.ctrlKey||e.metaKey),s=e.button===1;else if(e instanceof KeyboardEvent)if(e.key==="Enter"||e.key===" ")e.preventDefault(),Oo(e);else return;let i=t?.classList.contains("link-folder"),r=Ba.className.includes("select-all");if(!(t&&i)||o||r)return;document.dispatchEvent(new Event("stop-select-all"));let a=await y.sync.get();n||s?Dd(a,t):Pd(a,t)}function Pd(e,t){if(!t.parentNode)return;let o=t.parentNode.parentNode,n=o.querySelector(".link-title"),s=e[t.id],i=Pe();i.first(r),i.after(a),i.finally(c),i.transition(40);function r(){o.dataset.folder=t?.id,o.classList.add("hiding"),o.classList.remove("in-folder")}function a(){oe(e),n&&(n.textContent=s?.title||L("Folder"))}function c(){o.classList.replace("hiding","in-folder")}}async function Hd(){if(document.querySelector(".link-group.dropping"))return;let e=await y.sync.get(),t=Pe();t.first(o),t.after(n),t.finally(s),t.transition(40);function o(){let i=document.querySelectorAll(".link-group.in-folder");for(let r of i)r.classList.add("hiding"),r.dataset.folder=""}function n(){Ba.classList.toggle("with-groups",e.linkgroups.on),oe(e)}function s(){let i=document.querySelectorAll(".link-group");for(let r of i)r.classList.remove("in-folder"),r.classList.remove("hiding")}}function Dd(e,t){let o=ft(e,t.id);for(let n of o)globalThis.open(n.url,"_blank")?.focus();globalThis.open(globalThis.location.href,"_blank")?.focus(),globalThis.close()}var le=new Map,nn=new Map,ht={group:new Map,link:new Map,mini:new Map},[ui,di,Wo,zo,Aa]=[0,0,0,0,0,0],Bt=[""],Uo="",X="",pt="",jo="",Me=[],$o=[],Nn=[],Go,Vo=0,mi=0,Fd=document.getElementById("linkblocks"),qa,Ro,Pa,jn;function Wn(e){let t=e.composedPath(),o=t.some(c=>c?.className?.includes("link-title"))?"mini":"link",n=o==="mini";if(e.button>0)return;if(e.type==="pointerdown"){Od(e,o);return}Me=[],Nn=[],$o=[],Bt=[],le.clear(),ht.group.clear(),ht.link.clear(),ht.mini.clear(),jn=t.find(c=>c?.classList?.contains("link-group")),Pa=document.querySelectorAll("#linkblocks .link-group"),qa=document.querySelectorAll("#linkblocks li"),Ro=document.querySelectorAll("#link-mini button"),Go=document.querySelectorAll(n?"#link-mini":".link-group");let s=n?"BUTTON":"LI",i=t.find(c=>c.tagName===s),r=Fa(e);X=No(i),Uo=No(n?i:jn),jo=Uo;let a=new Map;if(n){let c=new Map;for(let l of Ro)c.set(l.dataset.group??"",l.getBoundingClientRect().x),l.style.width="12ch";for(let l of Ro){let u=l.dataset.group??"",d=c.get(u)??0,h=l.getBoundingClientRect().x;a.set(u,h-d)}}for(let c of[...Pa,...Ro,...qa]){let l=Yo(c),u=c.getBoundingClientRect(),d=No(c);l!=="group"?le.set(d,c):nn.set(d,c),ht[l].set(d,{x:u.x,y:u.y,h:u.height,w:u.width})}for(let c of Object.values(Go)){let l=c.querySelectorAll(s),d=(n?c:c.querySelector(".link-list"))?.getBoundingClientRect();if(d){for(let h of l){let g=Yo(h),E=No(h,g),{x:b,y:v,w:m,h:p}=ht[g].get(E)??{x:0,y:0,w:0,h:0};b-=d?.x,v-=d?.y,Me.push(E),$o.push(E),Nn.push({x:b,y:v,w:m,h:p}),h.style.transition="none",setTimeout(()=>h.style.removeProperty("transition"),10),fi(h,b,v),E===X&&(Wo=r.x-b+(a.get(E)??0),zo=r.y-v,ui=r.x,di=r.y,h.classList.add("on"))}c.style.setProperty("--drag-width",`${Math.floor(d?.width??0)}px`),c.style.setProperty("--drag-height",`${Math.floor(d?.height??0)}px`),c.classList.add("in-drag","dragging")}}document.dispatchEvent(new Event("remove-select-all")),mi=globalThis.requestAnimationFrame(Da),e.pointerType==="touch"?(document.documentElement.addEventListener("touchmove",Ko,{passive:!1}),document.documentElement.addEventListener("touchend",tn,{passive:!1})):(document.documentElement.addEventListener("pointermove",Ko),document.documentElement.addEventListener("pointerup",tn),document.documentElement.addEventListener("pointerleave",tn))}function Od(e,t){let o=t==="mini"?ka(e):en(e);if(Wo=e.offsetX,zo=e.offsetY,!o)return;o?.addEventListener("pointermove",n),o?.addEventListener("pointerup",n);function n(s){let i=s.pointerType==="touch"?7:14,r=Math.abs(Wo-s.offsetX),a=Math.abs(zo-s.offsetY),c=s.type.includes("pointerup")||s.type.includes("touchend"),l=r>i/2||a>i/2,u=r>i||a>i;l&&document.dispatchEvent(new Event("stop-select-all")),u&&Wn(s),(u||c)&&(o?.removeEventListener("pointermove",n),o?.removeEventListener("pointerup",n))}}function Ko(e){let{x:t,y:o}=Fa(e);ui=t-Wo,di=o-zo;let[n,s,i]=Nd({x:t,y:o})??["",""],r=Bt[Bt.length-1],a=Bt[Bt.length-2],c=n===r&&n!=="center",l=jo!==Uo;if(i==="group"){if(jo=s,l&&Ha(s,"group"),jo===Uo){for(let E of le.values())E.classList.remove("drop-target","drop-source");for(let E of nn.values())E.classList.remove("drop-target","drop-source")}return}if(c||l)return;if(n===""){Bt.push(""),clearTimeout(Vo);for(let E of le.values())E.classList.remove("drop-target","drop-source");for(let E of nn.values())E.classList.remove("drop-target","drop-source");return}let u=r==="center"&&(n==="left"||n==="right"),d=n!==a,h=r===n&&n==="center",g=Me[$o.indexOf(s)];h&&Ha(i==="mini"?s:g,i),u&&d&&Rd(s),r!==n&&Bt.push(n)}function Rd(e){let t=$o.indexOf(e);if(Aa!==t){clearTimeout(Vo),Aa=t,Me.splice(Me.indexOf(X),1),Me.splice(t,0,X);for(let o=0;o<Me.length;o++)Me[o]!==X&&fi(le.get(Me[o]),Nn[o].x,Nn[o].y)}}function Ha(e,t){let o=getComputedStyle(Fd).getPropertyValue("--drop-delay"),n=t==="group"?0:Number.parseInt(o||"120");clearTimeout(Vo),Vo=setTimeout(()=>{let s=e===X,i=jn?.classList.contains("in-folder");if(!(s||i)&&!(t==="mini"&&(document.querySelector("#link-mini .link-title.selected-group")?.dataset.group??e)===e)){pt=e;for(let r of le.values())r.classList.remove("drop-target","drop-source");for(let r of nn.values())r.classList.remove("drop-target","drop-source");le.get(X)?.classList.toggle("drop-source",!0),t==="group"?nn.get(e)?.classList.toggle("drop-target",!0):le.get(e)?.classList.toggle("drop-target",!0)}},n)}function tn(e){e.preventDefault(),document.documentElement.removeEventListener("pointermove",Ko),document.documentElement.removeEventListener("pointerup",tn),document.documentElement.removeEventListener("pointerleave",tn),document.documentElement.removeEventListener("touchmove",Ko),document.documentElement.removeEventListener("touchend",tn);let t=e.composedPath(),o=Yo(le.get(X)),n=jn?.dataset.group??"",s=Me.indexOf(X),i=le.get(X),r=Nn[s],a=!!document.querySelector(".drop-source"),c=!t[0]?.classList.contains("link-list")&&jn?.classList.contains("in-folder"),l=pt.startsWith("links")&&pt.length===11,u=a&&l,d=a&&!l;globalThis.cancelAnimationFrame(mi),le.get(X)?.classList.remove("on");for(let h of Go)h?.classList.replace("dragging","dropping");c||u||d?le.get(X)?.classList.add("removed"):fi(i,r.x,r.y);for(let h of nn.values())h.classList.remove("drop-target","drop-source");setTimeout(()=>{let h=le.get(pt)?.classList.contains("link-folder"),g=le.get(X)?.classList.contains("link-folder");o==="mini"?it({moveGroups:Me}):u&&!h&&!g?it({addFolder:{ids:[pt,X],group:n}}):u&&h&&!g?it({moveToFolder:{source:X,target:pt}}):u&&h&&g?it({concatFolders:{source:X,target:pt}}):d?it({moveToGroup:{ids:[X],target:pt}}):c?it({moveOutFolder:{ids:[X],group:n}}):it({moveLinks:Me}),setTimeout(()=>{for(let m of Go){let p=m.querySelectorAll("li, button");for(let w of p)w.removeAttribute("style");m?.removeAttribute("style"),m?.classList.remove("in-drag","dropping")}},1)},200)}function fi(e,t=0,o=0){e&&(e.style.transform=`translate(${Math.floor(t)}px, ${Math.floor(o)}px)`)}function Da(){let e=le.get(X);e&&(e.style.transform=`translate(${ui}px, ${di}px)`,mi=globalThis.requestAnimationFrame(Da))}function Nd({x:e,y:t}){let o=r=>{for(let[a,c]of r){let l=c.x,u=c.x+c.w*.2,d=c.y,h=c.y+c.h,g=e>l&&e<u&&t>d&&t<h,E=c.x+c.w*.8,b=c.x+c.w,v=c.y+0,m=c.y+c.h,p=e>E&&e<b&&t>v&&t<m,w=c.x+c.w*.2,k=c.x+c.w*.8,x=c.y,T=c.y+c.h,M=e>w&&e<k&&t>x&&t<T,S="";if(g&&(S="left"),p&&(S="right"),M&&(S="center"),S)return{area:S,id:a}}},n=o(ht.link);if(n)return[n.area,n.id,"link"];let s=o(ht.mini);if(s)return[s.area,s.id,"mini"];let i=o(ht.group);if(i)return[i.area,i.id,"group"]}function Fa(e){switch(e.type){case"touchmove":{let t=e.touches[0];return{x:t.clientX,y:t.clientY}}case"pointermove":{let{x:t,y:o}=e;return{x:t,y:o}}default:return{x:0,y:0}}}function Yo(e){if(e?.classList.contains("link"))return"link";if(e?.classList.contains("link-title"))return"mini";if(e?.classList.contains("link-group"))return"group";throw new Error("No valid type found for specified element")}function No(e,t){let o=t??Yo(e);if(o==="link")return e?.id??"";if(o==="mini"||o==="group")return e?.dataset.group??"";throw new Error("No valid type found for specified element")}var on=["clock","links"],Oa=()=>{},At=performance.now();function Ra(e){e&&(Oa=e)}function _e(e,t){if(t){t?.font?.family&&on.push("fonts"),t?.quotes?.on&&on.push("quotes"),t?.pomodoro?.on&&on.push("pomodoro");return}if(!e)return;let o=on.indexOf(e);if(o!==-1)on.splice(o,1);else return;if(on.length>0)return;At=Math.min(performance.now()-At,333),At=At>33?At:0,document.documentElement.style.setProperty("--load-time-transition",`${At}ms`),document.body.classList.remove("loading");let n=Math.max(333,At);setTimeout(()=>Oa(),n)}var ue=document.getElementById("linkblocks"),zn=[],Qo=0;async function F(e,t){if(t){it(t);return}if(!e)return;let{sync:o,local:n}=e;ue.classList.add(o.linkstyle??"large"),ue.classList.toggle("titles",o.linktitles),ue.classList.toggle("backgrounds",o.linkbackgrounds),ue.classList.toggle("hidden",!o.quicklinks),o.linkgroups.synced.length>0&&await ai(o),Ye(o,!!e),gi(o.linksrow,o.linkstyle),oe(o,n)}function oe(e,t){let o=Object.values(e).filter(l=>gt(l)),{pinned:n,synced:s,selected:i}=e.linkgroups,r=[];for(let l of[...n,i]){let u=document.querySelector(`.link-group[data-group="${l}"]`),d=u?.dataset.folder,h=[],g=d?ft(e,d):mt(e,l);r.push({lis:h,div:u,links:g,title:l,pinned:l!==i,synced:s?.includes(l)})}r.reverse();let a=r.map(l=>l.div),c=r.flatMap(l=>l.lis);for(let l of document.querySelectorAll("#linkblocks .link-group")){for(let u of l.querySelectorAll("li"))c.includes(u)===!1&&u.remove();a.includes(l)===!1&&l.remove()}for(let l of r){let u=l.div??ut("link-group-template",".link-group"),d=o.filter(v=>!v.folder&&typeof v.parent=="string"),h=u.querySelector("ul"),g=u.querySelector("button"),E=document.createDocumentFragment(),b=u.dataset.folder;if(!(h&&g))throw new Error("Template not found");l.synced&&(l.links=Ta(l.title));for(let v of l.links){let m=l.lis.find(p=>p.id===v._id);if(m){m.removeAttribute("style"),h?.appendChild(m);continue}m=Ke(v)?Wd(v,e.linknewtab,e.linkstyle):jd(v,d,e.linkstyle),E.appendChild(m),m.addEventListener("keyup",sn),l.synced||(m.addEventListener("click",ja),m.addEventListener("pointerdown",ja),m.addEventListener("pointerdown",Wn))}b?g.textContent=e[b].title:g.textContent=l.title,u.dataset.group=l.title,u.classList.toggle("pinned",l.pinned),u.classList.toggle("synced",l.synced),h.appendChild(E),ue.prepend(u),l.title==="topsites"&&(g.textContent=L("Most visited"),g.classList.add("topsites-title"),u.classList.add("topsites-group")),l.title==="default"&&(g.textContent=L("Default group"))}return t?Na(t):y.local.get().then(l=>{Na(l)}),za(e.linkiconradius),_e("links"),!0}function jd(e,t,o){let n=ut("link-folder-template","li"),s=n.querySelectorAll("img"),i=n.querySelector("span");if(!(n&&s&&i))throw new Error("Template not found");let r=t.filter(a=>!a.folder&&a.parent===e._id).toSorted((a,c)=>a.order-c.order);n.id=e._id,i.textContent=Po(e),n.addEventListener("mouseup",Oo),n.addEventListener("keydown",Oo);for(let a=0;a<r.length;a++){let c=s[a],l=r[a];c&&Ke(l)&&o!=="text"&&zn.push([c,Ua(l)])}return n}function Wd(e,t,o){let n=ut("link-elem-template","li"),s=n.querySelector("span"),i=n.querySelector("a"),r=n.querySelector("img");if(!(n&&s&&i&&r))throw new Error("Template not found");return n.id=e._id,i.href=N(e.url,512),s.textContent=Po(e),o!=="text"&&zn.push([r,Ua(e)]),t&&(i.target="_blank"),n}function Na(e){for(let[t,o]of zn)o.startsWith("link")?t.src=e[`x-icon-${o}`]??"":t.src=o;setTimeout(()=>{let t=zn.filter(([o])=>!o.complete||o.naturalWidth===0);for(let[o,n]of t){o.src="src/assets/interface/loading.svg";let s=document.createElement("img");s.addEventListener("load",()=>{o.src=n}),s.addEventListener("error",()=>{o.src="https://services.bonjourr.fr/favicon/blob/error"}),s.src=n,setTimeout(()=>{!s.complete&&s.naturalWidth===0&&(console.error("Icon link took too long to load: "+n),o.src="https://services.bonjourr.fr/favicon/blob/error")},5e3)}zn=[]},400)}function gi(e,t){let o={large:{width:4.8,gap:2.3},medium:{width:3.5,gap:2},small:{width:2.5,gap:2},inline:{width:11,gap:2},text:{width:5,gap:2}};if(t in o){let{width:n,gap:s}=o[t];document.documentElement.style.setProperty("--links-width",`${Math.ceil((n+s)*e)}em`)}}queueMicrotask(()=>{document.addEventListener("stop-select-all",()=>clearTimeout(Qo)),document.addEventListener("remove-select-all",zd)});function ja(e){clearTimeout(Qo);let t=ue.className.includes("select-all"),o=!e.button||e.button===0,n=e.type.includes("pointerup")||e.type.includes("click"),s=en(e);if(t&&n){o&&s?.classList.toggle("selected"),e.preventDefault();return}if(!t&&o&&e.type==="pointerdown"){if(e?.pointerType==="touch")return;Qo=setTimeout(()=>{ue.classList.add("select-all")},600)}}function zd(){clearTimeout(Qo),ue.classList.remove("select-all");for(let e of ue.querySelectorAll(".link"))e.classList.remove("selected")}async function it(e){let t=await y.sync.get();e.addLinks&&(t=Wa({type:"link",links:e.addLinks},t)),e.addFolder&&(t=Wa({type:"folder",...e.addFolder},t)),e.addGroups&&(t=Va(e.addGroups,t)),e.moveLinks&&(t=Qd(e.moveLinks,t)),e.moveGroups&&(t=Ya(e.moveGroups,t)),e.moveToGroup&&(t=Jd(e.moveToGroup,t)),e.moveToFolder&&(t=Vd(e.moveToFolder,t)),e.concatFolders&&(t=Gd(e.concatFolders,t)),e.moveOutFolder&&(t=Kd(e.moveOutFolder,t)),e.updateLink&&(t=$d(e.updateLink,t)),e.deleteLinks&&(t=Yd(e.deleteLinks,t)),e.groupTitle&&(t=Xo(e.groupTitle,t)),e.deleteGroup!==void 0&&(t=Ka(e.deleteGroup,t)),e.groups!==void 0&&(t=Ga(e.groups,t)),e.newtab!==void 0&&(t=Zd(e.newtab,t)),e.refreshIcons&&(t=Xd(e.refreshIcons,t)),e.styles&&em(e.styles),e.row&&tm(e.row),e.iconradius&&(Q({linkiconradius:e.iconradius}),za(e.iconradius)),!(e.styles||e.row)&&y.sync.set(t)}function Wa(e,t){let o=e.type,n=[];if(o==="link")for(let i of e.links)n.push(ci(i.title,i.url,i.group||t.linkgroups.selected));if(o==="folder"){let{ids:i,title:r,group:a}=e;n=Ud(i,r,a);for(let c of i){let l=t[c];l&&!l.folder&&(l.parent=n[0]._id)}}for(let i of n){let r=i.parent===void 0,{selected:a,synced:c}=t.linkgroups;r&&c.includes(a)?(i.parent="",t.linkgroups.selected="",Ye(t)):r&&(i.parent=a),t[i._id]=i}let s=Jo(t);return y.local.get().then(i=>{oe(s,i)}),s}function Ud(e,t,o){let n=document.getElementById("e-title"),s=t??n.value;n.value="";let a=[...document.querySelectorAll(".link")].map(c=>c.id).indexOf(e[0]);for(let c=0;c<e.length;c++)document.getElementById(e[c])?.classList.contains("link-folder")&&e.splice(c,1);return[{_id:`links${It(6)}`,folder:!0,order:a,parent:o??"",title:s}]}function $d({id:e,title:t,icon:o,url:n,file:s},i){let r=document.querySelector(`#${e} span`),a=document.querySelector(`#${e} img`),c=document.querySelector(`#${e} a`),l=i[e];if(r&&t!==void 0&&(l.title=N(t,64),r.textContent=l.title),Ke(l)){if(a&&o){let u=document.createElement("img"),d=a.src,h=Rn(l.url);if(a.src="src/assets/interface/loading.svg",u.onload=()=>{a.src=u.src},o.type==="auto"&&(o.value=void 0,u.src=h),o.type==="url"&&(o.value&&N(o.value,7500)?(h=o.value,u.src=h):console.error(`There was a problem with this icon URL: ${o.value}`)),o.type==="file"){let g=l.icon,E=!s&&!g?.value,b=!s&&g?.type==="file"&&!!g?.value;if(E)throw new Error("Chose file but no file uploaded");b&&(o=g,u.src=d),s&&(h=e,Ca(e,s).then(v=>{u.src=v}))}l.icon=o}r&&c&&n!==void 0&&(l.url=N(n,512),c.href=l.url,r.textContent=Po(l))}return i[e]=l,i}function Gd({target:e,source:t},o){let n=o[e],s=o[t];if(!(n.folder&&s.folder))return o;let i=ft(o,t).map(({_id:c})=>c),a=[...ft(o,e).map(({_id:c})=>c),...i];for(let[c,l]of Object.entries(o))gt(l)!==!1&&a.includes(l._id)&&!l.folder&&(o[c].parent=e,o[c].order=Date.now());return delete o[t],oe(o),setTimeout(()=>y.sync.remove(t)),o}function Vd({target:e,source:t},o){let n=typeof o[t]?.url=="string",s=o[e]?.folder===!0;return n&&s&&(o[t].parent=e,o[t].order=Date.now(),oe(o)),o}function Kd({ids:e,group:t},o){let n=mt(o,t),s=n.length>0?Math.max(...n.map(r=>r.order)):-1;e.forEach((r,a)=>{o[r].parent=t,o[r].order=s+a+1});let i=Jo(o);return oe(i),i}function Yd(e,t){for(let n of e){let s=t[n];if(s.folder)for(let i of ft(t,s._id))delete t[i._id];Ke(s)&&s.icon?.type==="file"&&y.local.remove(`x-icon-${n}`),delete t[n]}y.sync.clear();let o=Jo(t);return nm(e),o}function Qd(e,t){return e.forEach((o,n)=>{t[o].order=n}),oe(t),t}function Jd({ids:e,target:t},o){for(let s of e)o[s].parent=t,o[s].order=Date.now();let n=Jo(o);return oe(n),n}function Xd(e,t){for(let o of e){let n=t[o];if(n._id){let s=Date.now().toString();!n.icon||n.icon.type==="auto"?(n.icon=n.icon??{type:"auto",value:""},n.icon.value=Rn(n.url)+`?r=${s}`):n.icon.type==="url"&&(n.icon.value=`${n.icon.value}?r=${s}`),t[o]=n}}return oe(t),t}function Zd(e,t){let o=document.querySelectorAll(".link a");for(let n of o)e?n.setAttribute("target","_blank"):n.removeAttribute("target");return t.linknewtab=e,t}async function em(e){let t=await y.sync.get(),o=e.style??"large",{titles:n}=e,{backgrounds:s}=e;if(e.style&&$a(o)){let i=ue?.className.includes("text");if(ue.classList.remove("large","medium","small","inline","text"),ue.classList.add(o),t.linkstyle=o,y.sync.set({linkstyle:o}),i)for(let r of document.querySelectorAll("#link-list li")??[])r.remove();gi(t.linksrow,o),oe(t)}typeof n=="boolean"&&(t.linktitles=n,y.sync.set({linktitles:n}),document.getElementById("b_showtitles")?.classList?.toggle("on",n),ue.classList.toggle("titles",n)),typeof s=="boolean"&&(t.linkbackgrounds=s,y.sync.set({linkbackgrounds:s}),document.getElementById("b_showbackgrounds")?.classList?.toggle("on",s),ue.classList.toggle("backgrounds",s))}function za(e){document.documentElement.style.setProperty("--link-outer-radius",`${e}em`)}function tm(e){let t=[...ue.classList].filter($a)[0]??"large",o=Number.parseInt(e??"6");gi(o,t),Q({linksrow:e})}function ci(e,t,o){let n=l=>l.some(u=>t.startsWith(u)),s=N(t,512),i=n(["about:","chrome://","edge://"]),r=!n(["https://","http://"]),a=t.startsWith("localhost")||t.startsWith("127.0.0.1"),c=i?"#":a?"http://":r?"https://":"";return{_id:`links${It(6)}`,parent:o,order:Date.now(),title:N(e,64),url:c+s}}function nm(e){for(let t of e)document.getElementById(t)?.classList.add("removed"),setTimeout(()=>document.getElementById(t)?.remove(),600)}function Jo(e){let o=Object.values(e).filter(n=>gt(n)).filter(n=>n.folder).map(({_id:n})=>n);for(let n of o){let s=ft(e,n);for(let[i,r]of s.entries())r.order=i,e[r._id]}for(let n of e.linkgroups.groups){let s=mt(e,n);for(let[i,r]of s.entries())r.order=i,e[r._id]}return e}function Ua(e){if(!e.icon?.value)try{let{origin:t,pathname:o}=new URL(e.url);return Rn(t+o)}catch{return Rn(e.url)}return e.icon.type==="file"?e._id:e.icon.value}function $a(e){return["large","medium","small","inline","text"].includes(e)}var rn=document.getElementById("linkblocks");function Ye(e,t){if(!t)for(let o of document.querySelectorAll("#link-mini button")??[])o.remove();om(e.linkgroups),document.querySelector("#link-mini")?.addEventListener("wheel",o=>{Qa(o),o.preventDefault()},{passive:!1})}function om(e){let{groups:t,pinned:o,synced:n,selected:s}=e;for(let i of[...t,"+"]){let r=document.createElement("button"),a=i==="topsites",c=i==="default",l=i==="+";o.includes(i)||(r.textContent=i,r.dataset.group=i,r.classList.add("link-title"),r.classList.toggle("selected-group",i===s),r.classList.toggle("synced",n.includes(i)),a&&(r.textContent=L("Most visited"),r.classList.add("topsites-title")),c&&(r.textContent=L("Default group")),l?(r.classList.add("add-group"),r.addEventListener("click",sn)):(r.addEventListener("click",Qa),r.addEventListener("pointerdown",Wn)),document.querySelector("#link-mini div")?.appendChild(r))}rn?.classList.toggle("with-groups",e.on)}function Qa(e){let t;if(e.type==="wheel"){let r=Array.from(document.querySelectorAll(".link-title:not(.add-group)[data-group]")),a=r.findIndex(c=>c.classList.contains("selected-group"));t=r[(a+(e.deltaY>0?1:-1)+r.length)%r.length]}else t=e.currentTarget;let o=Pe();if(rn.dataset.folderid||t.classList.contains("selected-group"))return;o.first(s),o.after(n),o.finally(i),o.transition(100);async function n(){let r=document.querySelectorAll("#link-mini button"),a=await y.sync.get(),c=t.dataset.group??a.linkgroups.groups[0];for(let l of r??[])l.classList.remove("selected-group");t.classList.add("selected-group"),a.linkgroups.selected=c,y.sync.set(a),oe(a)}function s(){rn.classList.remove("in-folder"),rn.classList.add("hiding")}function i(){rn.classList.remove("hiding")}}function Ga(e,t){return rn?.classList.toggle("with-groups",e),t.linkgroups.on=e,t}function Xo(e,t){let o=t.linkgroups.groups.indexOf(e.old);for(let n of mt(t,e.old))t[n._id]={...n,parent:e.new};return t.linkgroups.groups[o]=e.new,t.linkgroups.selected=e.new,Ye(t),t}function Va(e,t){for(let{title:o,sync:n}of e){let s=o==="default"||o==="+",i=t.linkgroups.groups.includes(o);if(s||i)return t;for(let r of mt(t,"+"))t[r._id]={...r,parent:o};t.linkgroups.selected=o,t.linkgroups.groups.push(o),n&&t.linkgroups.synced.push(o)}return Ye(t),oe(t),t}function Ka(e,t){let{groups:o,pinned:n,synced:s,selected:i}=t.linkgroups,r=o.indexOf(e)===-1;if(o.length===1||r)return t;for(let c of mt(t,e))delete t[c._id];return t.linkgroups.selected=e===i||n.includes(e)?o[0]:i,t.linkgroups.pinned=n.filter(c=>c!==e),t.linkgroups.synced=s.filter(c=>c!==e),t.linkgroups.groups=o.filter(c=>c!==e),o.length===2&&(t.linkgroups.pinned=[]),y.sync.clear(),oe(t),Ye(t),t}function Ya(e,t){let o=e.filter(n=>n!=="+");return t.linkgroups.groups=t.linkgroups.pinned.concat(o),Ye(t),t}async function pi(e,t){let o=await y.sync.get(),{groups:n,pinned:s}=o.linkgroups;if(t==="pin"&&o.linkgroups.pinned.push(e),t==="unpin"&&(o.linkgroups.pinned=s.filter(i=>i!==e)),e===o.linkgroups.selected){let i=n.filter(r=>s.includes(r)===!1);o.linkgroups.selected=i[0]}y.sync.set(o),oe(o),Ye(o)}var qt,Ce=document.getElementById("e-title"),rt=document.getElementById("e-url"),Ja=document.getElementById("e-icon-file-label"),sm=document.getElementById("e-icon-file"),hi=document.getElementById("e-icon-type"),ts=document.getElementById("e-icon-url"),es,Zo,Z;async function yi(e,t,o){qt=t;let n=Vr(e.target),s=n.map(k=>k.className??""),i=n.find(k=>k?.className?.includes("link")&&k?.tagName==="LI"),r=n.find(k=>k?.className?.includes("link-group")),a=n.find(k=>k?.className?.includes("link-title")),c={mini:n.some(k=>k?.id?.includes("link-mini")),group:o??s.some(k=>k.includes("link-group")&&!k.includes("in-folder")),folder:s.some(k=>k.includes("link-group")&&k.includes("in-folder"))},l={link:s.some(k=>k.includes("link-elem")),folder:s.some(k=>k.includes("link-folder")),title:s.some(k=>k.includes("link-title")),synced:s.some(k=>k.includes("synced")),addgroup:s.some(k=>k.includes("add-group"))},u=s.some(k=>k.includes("select-all")),d=s.some(k=>k.includes("dragging")||k.includes("dropping")),h=(c.mini?a:r)?.dataset.group??"",E=document.querySelector(".link-group.in-folder")?.dataset?.folder??"";Z={group:h,folder:E,selectall:u,container:c,dragging:d,target:l,selected:si()};let b=im(),v=c.folder&&l.title,m=u&&Z.selected.length===0;if(b.length===0||v||m||d){pe();return}document.dispatchEvent(new Event("stop-select-all")),e.preventDefault(),qt.querySelectorAll("#contextActions button, #background-actions").forEach(function(k){k.classList.remove("on")});let w=await y.sync.get();if(l.title){let{groups:k,pinned:x}=w.linkgroups,T=Z.target.addgroup?"":Z.group;qt.dataset.group=T,Ce.value=T;let M=k.length-x.length<2,S=k.length<2;M&&document.getElementById("edit-pin")?.setAttribute("disabled",""),S&&document.getElementById("edit-delete")?.setAttribute("disabled","")}if(l.folder||l.link){let T=n.filter(S=>S.tagName==="LI")[0]?.id,M=wa(w,T);if(Ce.value=M?.title??"",M&&!M.folder){rt.value=M.url??"";let S=M.icon?.type??"auto",C=M.icon?.value??"";ts.value="",Ja.textContent=L("No file chosen"),S==="url"&&C&&(ts.value=C),S==="file"&&(Ja.textContent=C),bi(M.icon?M.icon.type:"auto")}}if(!u){for(let k of document.querySelectorAll(".link-title.selected, .link.selected")??[])k.classList.remove("selected");(l.title?a:i)?.classList.add("selected")}Z.selected=si(),o||ns(e),es?.focus()}function im(){let e=document.querySelector("#edit-delete span"),t=document.querySelector("#edit-add span"),{container:o,target:n,selectall:s}=Z,i=[];es=Ce,Un("edit-apply"),document.querySelector("#edit-delete")?.removeAttribute("disabled"),document.querySelector("#edit-pin")?.removeAttribute("disabled"),rt.value="",ts.value="",Ce.value="",o.mini&&(n.synced?i=["pin","delete"]:n.addgroup?(i=["title*","add"],Un("edit-add")):n.title&&(i=["title","delete","pin","apply"])),o.group&&(n.synced&&!n.title?i=["synced"]:n.synced&&n.title?i=["unpin","delete"]:s?(i=["delete","refresh","add"],Un("edit-add")):n.title?i=["title","delete","unpin","apply"]:n.folder?i=["title","delete","apply"]:n.link?i=["title","url*","icon","icon-url*","delete","refresh","apply"]:(i=["title","url*","add"],es=rt,Un("edit-add"))),o.folder&&(n.title?i=[]:s?i=["delete","unfolder"]:n.link?i=["title","url*","icon","icon-url*","delete","apply","unfolder"]:(i=["title","url*","add"],es=rt,Un("edit-add")));for(let a of i){let c=a.endsWith("*"),l=c?a.slice(0,-1):a;qt.querySelector(`#edit-${l}`)?.classList.add("on"),c&&(qt.querySelector(`#e-${l}`).required=!0)}let r=i.includes("title")||i.includes("title*")||i.includes("url*")||i.includes("icon");return qt.querySelector("hr")?.classList.toggle("on",r),e&&(s?e.textContent=L("Delete selected"):n.folder?e.textContent=L("Delete folder"):n.link?e.textContent=L("Delete link"):n.title&&(e.textContent=L("Delete group"))),t&&(s?t.textContent=L("Create new folder"):n.title?t.textContent=L("Add new group"):t.textContent=L("Add new link")),i}queueMicrotask(()=>{document.getElementById("editlink-form")?.addEventListener("submit",rm),hi?.addEventListener("change",bi)});function Un(e){Zo?Zo=document.getElementById(e):(Zo=document.getElementById(e??"edit-apply"),document.getElementById("editlink-form")?.addEventListener("keydown",t=>{t.key==="Enter"&&(t.preventDefault(),Zo.click())}))}function bi(e){e instanceof Event&&(e=e.target.value);let t=document.getElementById("e-icon-type");t&&(t.value=e);let o=document.getElementById("e-icon-url");o&&(o.disabled=e!=="url");let n=document.getElementById("edit-refresh");if(n){let s=["auto","url"].includes(e);n.disabled=!s,n?.classList.toggle("on",s)}document.getElementById("edit-icon-url")?.classList.toggle("on",e==="url"),document.getElementById("edit-icon-svg")?.classList.toggle("on",e==="svg"),document.getElementById("edit-icon-file")?.classList.toggle("on",e==="file")}function rm(e){let t=e.submitter?.id,{container:o,target:n,group:s,folder:i,selected:r,selectall:a}=Z;t==="edit-apply"&&am("button"),t==="edit-icon"&&bi(e),t==="edit-refresh"&&F(void 0,{refreshIcons:r}),t==="edit-delete"&&(n.title?F(void 0,{deleteGroup:s}):F(void 0,{deleteLinks:r})),t==="edit-add"&&(o.folder?F(void 0,{addLinks:[{group:i,title:Ce.value,url:rt.value}]}):n.title&&Ce.value?F(void 0,{addGroups:[{title:Ce.value}]}):a?(document.dispatchEvent(new Event("remove-select-all")),F(void 0,{addFolder:{ids:r,group:s}})):o.group&&F(void 0,{addLinks:[{group:s,title:Ce.value,url:rt.value}]})),t==="edit-unfolder"&&(document.dispatchEvent(new Event("remove-select-all")),F(void 0,{moveOutFolder:{ids:Z.selected,group:Z.group}})),t==="edit-pin"&&pi(s,"pin"),t==="edit-unpin"&&pi(s,"unpin"),e.preventDefault(),setTimeout(pe)}function am(e){let t=Z.selected[0],o=document.querySelector(`#${t}`),n=document.querySelectorAll("#editlink input");if(Z.target.addgroup){F(void 0,{addGroups:[{title:Ce.value}]}),pe();return}if(Z.target.title){F(void 0,{groupTitle:{old:qt.dataset.group??"",new:Ce.value}}),pe();return}if(Z.container.folder&&Z.selected.length===0&&rt.value){F(void 0,{addLinks:[{group:Z.folder,title:Ce.value,url:rt.value}]}),pe();return}if(Z.container.group&&!Z.target.link&&!Z.target.folder){F(void 0,{addLinks:[{group:Z.group,title:Ce.value,url:rt.value}]}),pe();return}if(!t||!o)return;let s="auto",i,r=ts.value,a=sm.files?.[0];Ea(hi.value)&&(s=hi.value,i=void 0,s==="url"&&(i=r),s==="file"&&a&&(i=a.name),s==="file"&&!a&&(s="file",i=void 0)),F(void 0,{updateLink:{id:t,title:document.querySelector("#e-title")?.value??"",url:document.querySelector("#e-url")?.value,icon:{type:s,value:i},file:a}}),pe()}var Gn=St(lt());var $n={time:{section:"#time",scrollto:"time_title"},main:{section:"#main",scrollto:"main_title"},quotes:{section:"#quotes_container",scrollto:"quotes_title"},pomodoro:{section:"#pomodoro_container",scrollto:"pomodoro_title"}},cm=document.getElementById("interface"),he=document.getElementById("contextmenu"),Pt;function sn(e){let t=globalThis.getSelection();if(t&&!t.isCollapsed)return;let o=e.target;Pt={widgets:{link:!!o.closest("#linkblocks"),time:!!o.closest($n.time.section),main:!!o.closest($n.main.section),quotes:!!o.closest($n.quotes.section),pomodoro:!!o.closest($n.pomodoro.section)},interface:o.matches("main#interface")};let n=e,s=n.button===2&&!!n.ctrlKey&&e.type==="contextmenu",i=e.type==="keyup"&&e.code!=="KeyE",r=Object.values(Pt.widgets).some(l=>l);if(!(!(s||i)&&r||Pt.interface))return;for(let l of he.querySelectorAll("label, button, hr, #background-actions, input, #pomodoro-info"))l.classList.remove("on"),l instanceof HTMLInputElement&&(l.required=!1);e.preventDefault();let c=Pe();if(c.first(()=>he?.show()),c.after(()=>he?.classList?.add("shown")),c.transition(10),Pt.widgets.link){yi(e,he);return}if(Pt.widgets.pomodoro&&ki("#pomodoro-info"),r){let u=Object.entries(Pt.widgets).filter(([d,h])=>h);for(let[d]of u){let h=$n[d];vi("openTheseSettings",h.scrollto)}ns(e);return}Pt.interface&&(vi("openTheseSettings","background_title"),document.querySelector("#linkblocks.hidden")||vi("add-new-link"),ki("#background-actions"),ns(e))}function vi(e,t){let o=`[data-action="${e}"]`;t&&(o+=`[data-attribute="${t}"]`),ki(o)}function ns(e){let t=he.getBoundingClientRect(),o=e.type==="contextmenu"||e.type==="click"||e.type==="touchstart",n=e.type==="keyup"&&e?.key==="e",{innerHeight:s,innerWidth:i}=window,r=i<600,a=document.documentElement.lang,c=a==="ar"||a==="fa"||a==="he",l=0,u=0;if(o&&r)l=(i-t.width)/2,u=(e.type==="touchstart"?e.touches[0].clientY:e.y)-60-t.height;else if(o)l=e.type==="touchstart"?e.touches[0].clientX:e.x,u=e.type==="touchstart"?e.touches[0].clientY:e.y;else if(n){let E=e.target.getBoundingClientRect();l=E.right,u=E.bottom+4}let d=t.width,h=t.height;l+d>i&&(l-=l+d-i),u+h>s&&(u-=h),c&&(l*=-1),he.style.transform=`translate(${Math.floor(l)}px, ${Math.floor(u)}px)`}function wi(e){let o=e.target.getAttribute("data-attribute");o?(document.dispatchEvent(new CustomEvent("toggle-settings",{detail:{scrollTo:`#${o}`}})),pe()):console.error(`Section "${o}" doesn't match anything`)}function ki(e){document.querySelectorAll(e).forEach(t=>{t.classList.add("on")})}queueMicrotask(()=>{if(document.addEventListener("contextmenu",o=>{if(o.altKey){pe();return}if(cm?.contains(o.target)){sn(o);return}pe()}),document.addEventListener("visibilitychange",()=>{document.visibilityState==="hidden"&&pe()}),he.querySelectorAll('input[type="file"]')?.forEach(o=>{o.addEventListener("change",function(){let n=this.nextElementSibling,s=n?.tagName==="SPAN",i=this.files?.[0];n&&i&&s&&(n.textContent=i.name)})}),document.addEventListener("close-edit",pe),he.querySelectorAll('[data-action="openTheseSettings"]')?.forEach(o=>{o?.addEventListener("click",wi)}),he.querySelector('[data-action="add-new-link"]')?.addEventListener("click",o=>yi(o,he,!0)),fe==="ios"||!Ee){let o=Le(n=>{sn(n)},500);document?.addEventListener("touchstart",n=>{let s=n.touches[0].clientY,r=globalThis.innerHeight*.95;s<r&&o(n)}),document?.addEventListener("touchend",()=>{o.cancel()}),globalThis.addEventListener("resize",pe)}});function pe(){if(he.open){let e=document.querySelectorAll(".link-title.selected, .link.selected");for(let t of e)t?.classList.remove("selected");he.removeAttribute("data-tab"),he.classList.remove("shown"),he.close(),document.dispatchEvent(new Event("remove-select-all"))}}function Ei(e){let t=document.getElementById("b_interface-background-mute"),o=e.type,n=e.frequency;document.getElementById("background-actions")?.setAttribute("data-type",o),document.getElementById("b_interface-background-pause")?.classList.toggle("paused",n==="pause"),document.getElementById("b_interface-background-download")?.toggleAttribute("disabled",o!=="images");let s=o==="files"||o==="videos";t?.toggleAttribute("disabled",!s),s&&t?.classList.toggle("muted",e.mute)}function Xa(){(0,Gn.onclickdown)(document.getElementById("b_interface-background-pause"),()=>{um()}),(0,Gn.onclickdown)(document.getElementById("b_interface-background-refresh"),e=>{z({refresh:e})}),(0,Gn.onclickdown)(document.getElementById("b_interface-background-download"),()=>{dm()}),(0,Gn.onclickdown)(document.getElementById("b_interface-background-mute"),()=>{lm()})}async function lm(){let e=document.querySelector("#i_background-mute-videos"),t=document.getElementById("b_interface-background-mute"),n=(await y.sync.get("backgrounds")).backgrounds.mute;e&&(e.checked=!n),t?.classList.toggle("muted",!n),os(!n),z({mute:!n})}async function um(){let e=document.querySelector("#i_freq"),o=document.getElementById("b_interface-background-pause")?.classList.contains("paused"),n=await y.sync.get("backgrounds"),s=localStorage.lastBackgroundFreq||"hour";e&&(e.value=o?s:"pause"),o?z({freq:s}):(localStorage.lastBackgroundFreq=n.backgrounds.frequency,z({freq:"pause"}))}async function dm(){let e=document.querySelector("#b_interface-background-download"),t=document.querySelector("#download-background");if(!t){console.warn("?");return}e?.classList.replace("idle","loading");try{let o="https://services.bonjourr.fr/unsplash",n=new URL(t.dataset.downloadUrl??""),s=o+n.pathname+n.search,i=await fetch(s);if(!i)return;let r=await i.json(),a=await fetch(r.url);if(!a.ok)return;let c=await a.blob();t.href=URL.createObjectURL(c),t.download=n.pathname.split("/")[2],t.click()}finally{e?.classList.replace("loading","idle")}}function Za(e){let t=document.getElementById("credit-container"),o=document.getElementById("credit"),n=document.getElementById("a_interface-background-download");switch(e.type){case"color":{t?.classList.remove("shown");return}case"urls":case"files":{t?.classList.add("shown"),o?.classList.add("hidden"),n?.classList.add("hidden");break}case"videos":{t?.classList.add("shown"),o?.classList.remove("hidden"),n?.classList.add("hidden");break}default:t?.classList.add("shown"),o?.classList.remove("hidden"),n?.classList.remove("hidden")}}function ec(e){let t=document.getElementById("credit-container"),o=document.getElementById("credit"),n=document.getElementById("download-background");if(!(t&&o&&e?.page&&e?.username))return;if(e?.format==="video"){if(e.username){let E=document.createElement("a");E.textContent=L(`Video by ${e.username}`),E.href=e.page,o.textContent="",o.append(E)}return}let s=e.city||e.country,i="",r="";if(e.exif){let{iso:E,model:b,aperture:v,exposure_time:m,focal_length:p}=e.exif;b&&(i+=`${b} - `),v&&(i+=`f/${v} `),m&&(i+=`${m}s `),E&&(i+=`${E}ISO `),p&&(i+=`${p}mm`)}if(s){let E=e.city||"",b=e.country||"";r=`${E}${E&&b?", ":""}${b} <name>`}else r=L("Photo by <name>");let[a,c]=r.split(" <name>"),l=document.createElement("a"),u=document.createElement("span"),d=document.createElement("span"),h=document.createElement("a"),g=document.createElement("p");g.className="exif",g.textContent=i,l.textContent=a,h.textContent=e.username.slice(0,1).toUpperCase()+e.username.slice(1),u.textContent=s?" - ":" ",d.textContent=c,e.page.includes("unsplash")?(l.href=`${e.page}?utm_source=Bonjourr&utm_medium=referral`,h.href=`https://unsplash.com/@${e.username}?utm_source=Bonjourr&utm_medium=referral`):l.href=e.page,o.textContent="",o.append(g,l,u,h,d),e.download&&n&&(n.dataset.downloadUrl=e.download)}var Li={grain:{opacity:{min:"0.02",max:"0.3",step:"0.01",value:"0.1"},size:{min:"140",max:"300",step:"5",value:"220"},color:void 0},verticalDots:{opacity:{min:"0.1",max:"1.0",step:"0.1",value:"0.3"},size:{min:"10",max:"100",step:"1",value:"30"},color:"#ffffff"},diagonalDots:{opacity:{min:"0.1",max:"1.0",step:"0.1",value:"0.3"},size:{min:"10",max:"100",step:"1",value:"30"},color:"#ffffff"},checkerboard:{opacity:{min:"0.1",max:"1.0",step:"0.1",value:"0.3"},size:{min:"10",max:"100",step:"1",value:"30"},color:"#ffffff"},isometric:{opacity:{min:"0.1",max:"1.0",step:"0.1",value:"0.3"},size:{min:"10",max:"100",step:"1",value:"30"},color:"#ffffff"},topographic:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.4"},size:{min:"400",max:"600",step:"10",value:"500"},color:"#ffffff"},grid:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.4"},size:{min:"10",max:"100",step:"1",value:"30"},color:"#ffffff"},verticalLines:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.4"},size:{min:"10",max:"100",step:"1",value:"30"},color:"#ffffff"},horizontalLines:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.4"},size:{min:"10",max:"100",step:"1",value:"30"},color:"#ffffff"},diagonalStripes:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.4"},size:{min:"10",max:"100",step:"1",value:"30"},color:"#ffffff"},verticalStripes:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.4"},size:{min:"10",max:"100",step:"1",value:"30"},color:"#ffffff"},horizontalStripes:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.4"},size:{min:"10",max:"100",step:"1",value:"30"},color:"#ffffff"},diagonalLines:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.4"},size:{min:"10",max:"100",step:"1",value:"30"},color:"#ffffff"},aztec:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.2"},size:{min:"10",max:"100",step:"1",value:"30"},color:"#ffffff"},circuitBoard:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.2"},size:{min:"150",max:"500",step:"1",value:"250"},color:"#ffffff"},ticTacToe:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.2"},size:{min:"50",max:"400",step:"1",value:"100"},color:"#ffffff"},endlessClouds:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.2"},size:{min:"80",max:"400",step:"1",value:"150"},color:"#ffffff"},waves:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.2"},size:{min:"80",max:"400",step:"1",value:"150"},color:"#ffffff"},honeycomb:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.2"},size:{min:"25",max:"300",step:"5",value:"75"},color:"#ffffff"},vectorGrain:{opacity:{min:"0.1",max:"1.0",step:"0.05",value:"0.5"},size:{min:"250",max:"1000",step:"10",value:"350"},color:"#ffffff"},none:{opacity:{min:"",max:"",value:"",step:""},size:{min:"",max:"",value:"",step:""},color:void 0}};var mm=[{optgroup:"Bonjourr",options:[{name:"Bonjourr Daylight",value:"bonjourr-images-daylight"}]},{optgroup:"Unsplash",options:[{name:"Unsplash Collections",value:"unsplash-images-collections"},{name:"Unsplash Search",value:"unsplash-images-search"}]}],fm=[{optgroup:"Bonjourr",options:[{name:"Bonjourr Daylight",value:"bonjourr-videos-daylight"}]},{optgroup:"Pixabay",options:[{name:"Pixabay Search",value:"pixabay-videos-search"}]}],tc={IMAGES:mm,VIDEOS:fm};var Si=St(lt());var ss=class{video1;video2;container;fadetime;playbackRate;listener;constructor(t,o=4e3,n=1){this.fadetime=o,this.playbackRate=n,this.container=document.createElement("div"),this.container.classList.add("video-looper"),this.video1=this.createVideo(t),this.video2=this.createVideo(t),this.video1.id="first-looped-video",this.video2.id="second-looped-video",this.container.appendChild(this.video1),this.container.appendChild(this.video2),this.listener=()=>{this.video2?.isConnected&&(this.stop(),document.hidden||this.video2.play())},document.addEventListener("visibilitychange",this.listener)}loop(){this.video2.play(),this.video1.addEventListener("timeupdate",()=>{this.isEnding(this.video1)&&this.fadetime!==0&&(this.video1.classList.add("hiding"),this.video2.play())}),this.video2.addEventListener("timeupdate",()=>{this.isEnding(this.video2)&&this.fadetime!==0&&(this.video2.classList.add("hiding"),this.video1.play())})}stop(){this.video1.pause(),this.video2.pause(),this.video1.currentTime=0,this.video2.currentTime=0,this.video1.classList.remove("hiding"),this.video2.classList.remove("hiding")}remove(){this.container.style.opacity="0",setTimeout(()=>{this.video1.remove(),this.video2.remove(),this.container.remove(),this.listener&&document.removeEventListener("visibilitychange",this.listener)},this.fadetime)}getContainer(){return this.container}setFadeTime(t){let o=this.getRealDuration(),n=Math.round(o/2*1e3);n<t?this.fadetime=n:this.fadetime=t,this.fadetime===0?(this.video2.loop=!0,this.video1.style="display: none"):(this.video2.loop=!1,this.video1.style.removeProperty("display")),this.addTransitionDuration(this.fadetime)}setPlaybackRate(t){this.playbackRate=t,this.video1.playbackRate=t,this.video2.playbackRate=t}async applyMuteStatus(t){try{let n=(await y.sync.get(["backgrounds"])).backgrounds?.mute??!0;t.muted=n}catch(o){console.error("Failed to fetch mute status",o),t.muted=!0}}createVideo(t,o=!1){let n=document.createElement("video");return n.muted=!0,n.src=t,n.autoplay=o,n.playbackRate=this.playbackRate,this.applyMuteStatus(n),n.addEventListener("loadedmetadata",()=>{this.setFadeTime(this.fadetime)}),n.addEventListener("ratechange",()=>{this.setFadeTime(this.fadetime)}),n.addEventListener("ended",()=>{n.currentTime=0,n.classList.remove("hiding"),this.container.prepend(n)}),n.addEventListener("muteStatusChange",function(s){n.muted=s.detail.status}),n}getRealDuration(){try{let t=this.video1.duration,o=this.video1.playbackRate;return t/o}catch{return console.info("Video duration was guessed to eight seconds"),8}}addTransitionDuration(t){this.container.style.setProperty("--video-fadetime",t+"ms")}isEnding(t){let o=t.currentTime*1e3/this.playbackRate,n=t.duration*1e3/this.playbackRate;return o>n-this.fadetime}};var is=class{constructor(t){this.name=t;this.dbPromise=new Promise((o,n)=>{let s=indexedDB.open(t,1);s.onupgradeneeded=()=>{s.result.createObjectStore("files")},s.onsuccess=()=>o(s.result),s.onerror=()=>n(s.error)})}name;dbPromise;async withStore(t,o){let n=await this.dbPromise;return new Promise((s,i)=>{let a=n.transaction("files",t).objectStore("files"),c=o(a);c.onsuccess=()=>s(c.result),c.onerror=()=>i(c.error)})}async put(t,o){let n=await o.blob();await this.withStore("readwrite",s=>s.put(n,t.url))}async match(t){let o=typeof t=="string"?t:t.url,n=await this.withStore("readonly",s=>s.get(o));return n?new Response(n):void 0}async delete(t){let o=typeof t=="string"?t:t.url;await this.withStore("readwrite",n=>n.delete(o))}async keys(){let t=await this.dbPromise;return new Promise((o,n)=>{let r=t.transaction("files","readonly").objectStore("files").getAllKeys();r.onsuccess=()=>{let a=r.result.map(c=>new Request(c));o(a)},r.onerror=()=>n(r.error)})}};function Vn(e){return q==="safari"?Promise.resolve(new is(e)):caches.open(e)}function nc(e){let t=3735928559,o=1103547991,n,s;for(n=0,s=0;n<e.length;n++)s=e.charCodeAt(n),t=Math.imul(t^s,2654435761),o=Math.imul(o^s,1597334677);t=Math.imul(t^t>>>16,2246822507),t^=Math.imul(o^o>>>13,3266489909),o=Math.imul(o^o>>>16,2246822507),o^=Math.imul(t^t>>>13,3266489909);let r=(4294967296*(2097151&o)+(t>>>0)).toString().split(""),a="arosmwxcvn".split("");return r.map(l=>a[Number.parseInt(l)]).join("")}var Ti,Mi,xi;async function oc(e,t){try{let o=document.getElementById("thumbnails-container"),n={},s=[],i;if(e.length===0)return;for(let a of e){let c=a.size.toString()+a.name+a.lastModified.toString(),l=nc(c).toString();Object.keys(t.backgroundFiles).includes(l)||(s.push(l),i=ic(l),o?.appendChild(i),Mi?.observe(i,{attributes:!0}))}if(o){let a=Object.keys(t.backgroundFiles).length+s.length,c=Math.min(a,5).toString();o.style.setProperty("--thumbnails-columns",c)}for(let a=0;a<s.length;a++){let c=e[a],l=s[a],u=c.type.includes("video")?"video":"image",d=globalThis.screen.orientation.type==="landscape-primary",h=d?globalThis.screen.width:globalThis.screen.height,g=d?globalThis.screen.height:globalThis.screen.width,E=Math.min(2,globalThis.devicePixelRatio),b=Math.min(1.8,h/g),v=g*b*E,m=c.type.includes("image/gif"),p=c.type.includes("image/"),w=c.type.includes("video/"),k=c.size<8e4,x=c.size<3e5,T=c,M=c;if(p&&!k){let S=URL.createObjectURL(c),C=await Ma(S),O=C.width,j=C.height,D=v*2<O+j;!m&&!x&&D&&(T=await Fo(S,{size:v,q:.8})),M=await Fo(S,{size:360,q:.4})}if(w){let S=await ym(c);S&&(M=await Fo(S,{size:360,q:.3}))}t.backgroundFiles[l]={format:"image",lastUsed:new Date().toString()},u==="video"?(t.backgroundFiles[l].format="video",t.backgroundFiles[l].video={playbackRate:1,fade:1,zoom:1}):(t.backgroundFiles[l].format="image",t.backgroundFiles[l].position={size:"cover",x:"50%",y:"50%"}),n[l]={full:T,small:M},await bm(l,n[l]),rc(l,t,n[l]),y.local.set({backgroundFiles:t.backgroundFiles})}if(s.length>0){let a=s[0],c=await He(a,t,n[a]);J(c),Ii(),i?.classList.add("selected")}let r=document.querySelector("#i_background-upload");r&&(r.value="")}catch(o){console.info(o);return}}async function gm(){try{let e=await y.local.get(),t=ac();if(t.length===0||!e.backgroundFiles)return;for(let n of t){vm([n]),delete e.backgroundFiles[n];let s=document.querySelector(`#${n}`);s?.classList.toggle("hiding",!0),setTimeout(()=>{s?.remove(),rs()},100)}let o=an(e.backgroundFiles);o.length>0?J(await He(o[0],e)):Zt(),_i(e),y.local.remove("backgroundFiles"),y.local.set({backgroundFiles:e.backgroundFiles})}catch(e){console.info(e);return}}async function Ht(e,t){let o=ac()[0],n=await y.local.get("backgroundFiles"),s=n.backgroundFiles[o],i=s.format==="video",r=!i,a=document.querySelector("#background-media div"),c=document.querySelector("#background-media .video-looper");if(!s){console.error("Cannot find file");return}if(r&&a&&(s.position||(s.position={size:"cover",x:"50%",y:"50%"}),e==="size"&&(s.position.size=t==="100"?"cover":`${t}%`,a.style.backgroundSize=s.position.size),e==="vertical"&&(s.position.y=`${t}%`,a.style.backgroundPositionY=s.position.y),e==="horizontal"&&(s.position.x=`${t}%`,a.style.backgroundPositionX=s.position.x),e==="use-compressed"&&J(await He(o,n,void 0,s))),i&&c){let l=hm();if(!l)return;s.video||(s.video={playbackRate:1,fade:4,zoom:1}),e==="video-zoom"&&(s.video.zoom=parseFloat(t),c.style.transform=`scale(${s.video.zoom})`),e==="playback-speed"&&(s.video.playbackRate=parseFloat(t),l.setPlaybackRate(parseFloat(t)),l.stop(),l.loop()),e==="loop-fade"&&(s.video.fade=parseInt(t),l.setFadeTime(parseInt(t)))}n.backgroundFiles[o]=s,y.local.set({backgroundFiles:n.backgroundFiles})}function sc(e){Ee&&document.getElementById("thumbnails-container")?.style.setProperty("--thumbnails-columns","2"),dc(e).then(i=>{_i(i)}),(0,Si.onclickdown)(document.getElementById("b_thumbnail-remove"),gm),(0,Si.onclickdown)(document.getElementById("b_thumbnail-options"),s),document.getElementById("b_thumbnail-zoom")?.addEventListener("click",n),document.getElementById("i_background-size")?.addEventListener("input",t),document.getElementById("i_background-vertical")?.addEventListener("input",t),document.getElementById("i_background-horizontal")?.addEventListener("input",t),document.getElementById("i_background-compress")?.addEventListener("change",t),document.getElementById("i_background-loop-fade")?.addEventListener("input",t),document.getElementById("i_background-video-zoom")?.addEventListener("input",t),document.getElementById("i_background-playback-speed")?.addEventListener("input",t),Mi=new MutationObserver(rs),Ti=new IntersectionObserver(o);function t(){let{id:i,value:r,checked:a}=this;i==="i_background-size"&&Ht("size",r),i==="i_background-vertical"&&Ht("vertical",r),i==="i_background-horizontal"&&Ht("horizontal",r),i==="i_background-compress"&&Ht("use-compressed",a.toString()),i==="i_background-video-zoom"&&Ht("video-zoom",r),i==="i_background-playback-speed"&&Ht("playback-speed",r),i==="i_background-loop-fade"&&Ht("loop-fade",r)}function o(i){for(let{target:r,isIntersecting:a}of i){let c=r.classList.contains("loading"),l=r.id??"";a&&c&&uc(l).then(u=>{y.local.get("backgroundFiles").then(d=>{u&&(rc(l,d,u),Ti.unobserve(r))})})}}function n(){let i=document.getElementById("thumbnails-container"),r=globalThis.getComputedStyle(i).getPropertyValue("--thumbnails-columns"),a=Math.max((Number.parseInt(r)+1)%6,1);i.style.setProperty("--thumbnails-columns",a.toString())}function s(){document.getElementById("background-file-options")?.classList.toggle("shown")}}function _i(e){let t=e.backgroundFiles,o=document.getElementById("thumbnails-container"),n=document.querySelectorAll(".thumbnail"),s=Object.values(n).map(S=>S.id),i=Object.keys(t)??[],r=an(e.backgroundFiles),a=i.filter(S=>!s.includes(S)),c=e.backgroundFiles[r[0]];if(a.length>0)for(let S of a){let C=ic(S);o?.appendChild(C),Ti?.observe(C),Mi?.observe(C,{attributes:!0}),S===r[0]&&C.classList.add("selected")}if(!c){rs();return}let l=document.querySelector("#i_background-size"),u=document.querySelector("#i_background-vertical"),d=document.querySelector("#i_background-horizontal"),h=document.querySelector("#i_background-loop-fade"),g=document.querySelector("#i_background-video-zoom"),E=document.querySelector("#i_background-playback-speed"),b=l&&u&&d,v=h&&g&&E,m=document.getElementById("background-file-image"),p=document.getElementById("background-file-video"),w=m&&p,k=c.format==="video",x=!k,T={size:"cover",x:"50%",y:"50%"},M={playbackRate:1,fade:4,zoom:1};if(w&&(m.style.display=k?"none":"block",p.style.display=k?"block":"none"),b&&x){let S=c.position??T;l.value=(S.size==="cover"?"100":S.size).replace("%",""),u.value=S.y.replace("%",""),d.value=S.x.replace("%",""),Ie(l),Ie(u),Ie(d)}if(v&&k){let S=c.video??M;h.value=S.fade.toString(),g.value=S.zoom.toString(),E.value=S.playbackRate.toString(),Ie(h),Ie(g),Ie(E)}rs()}function rs(){let e=document.getElementById("b_thumbnail-remove"),t=document.getElementById("b_thumbnail-options"),o=document.querySelectorAll(".thumbnail.selected").length,n=document.getElementById("background-options-options"),s=n?.classList.contains("shown");o===0?e?.setAttribute("disabled",""):e?.removeAttribute("disabled"),o!==1?t?.setAttribute("disabled",""):t?.removeAttribute("disabled"),o!==1&&document.getElementById("background-file-options")?.classList.remove("shown"),o===1&&s&&n?.classList.remove("shown")}function ic(e){let t=document.createElement("button"),o=document.createElement("img"),n=document.createElement("span");return t.id=e,t.className="thumbnail loading",t.setAttribute("aria-label","Select this background"),o.src="src/assets/interface/loading.svg",o.setAttribute("alt",""),o.setAttribute("draggable","false"),n.className="thumbnail-format-icon",t.appendChild(o),t.appendChild(n),t.addEventListener("click",pm),t}function rc(e,t,o){let n=document.querySelector(`#${e}`),s=document.querySelector(`#${e} img`);if(!s||!n){console.warn("Cannot find thumbnail or button for "+e);return}s.addEventListener("load",()=>{n.classList.replace("loading","loaded"),setTimeout(()=>n.classList.remove("loaded"),2)}),He(e,t,o).then(i=>{let{format:r,urls:a}=i;n.dataset.format=r,r==="image"&&(s.src=a.small),r==="video"&&i.thumbnail&&(s.src=i.thumbnail)})}async function pm(e){let t=e.ctrlKey||e.metaKey,o=e.shiftKey,n=e.button===0,s=this?.id??"";if(n&&o){let i=document.querySelectorAll(".thumbnail"),r,a,c;if(i.forEach((l,u)=>{let d=l.className.includes("selected"),h=l===this;d&&(a=u),d&&!r&&(r=u),h&&!c&&(c=u)}),r!==void 0&&a!==void 0&&c!==void 0){let l=[r,a,c],u=Math.min(...l),d=Math.max(...l);i.forEach((h,g)=>{let E=g>=u&&g<=d;h.classList.toggle("selected",E)});return}}if(n&&t){this.classList.contains("selected")||document.getElementById("b_thumbnail-remove")?.removeAttribute("disabled"),document.getElementById(s)?.classList?.toggle("selected");return}if(this.classList.contains("selected")&&n){Ii(),document.getElementById(s)?.classList?.toggle("selected");return}if(!this.classList.contains("selected")&&n){let i=await y.local.get(),r=i.backgroundFiles[s],a=await He(s,i);if(!r||!a){console.warn("metadata: ",r),console.warn("image: ",a);return}Ii(),document.getElementById(s)?.classList?.add("selected"),i.backgroundFiles[s].lastUsed=new Date().toString(),y.local.set({backgroundFiles:i.backgroundFiles}),_i(i),J(a)}}function an(e){return Object.entries(e).toSorted((o,n)=>new Date(n[1].lastUsed).getTime()-new Date(o[1].lastUsed).getTime()).map(([o,n])=>o)}async function He(e,t,o,n){if(n??=t.backgroundFiles[e],o=o??await uc(e),o.full.type.includes("video/")){let s=await lc(o.full),i=s.duration;s.remove();let r=URL.createObjectURL(o.full),a=URL.createObjectURL(o.small);return{format:"video",duration:i,mimetype:o.full.type,thumbnail:a,file:n,urls:{full:r,small:r}}}else{let s={full:URL.createObjectURL(o.full),small:URL.createObjectURL(o.small)};return{format:"image",mimetype:o.full.type,file:n,urls:{full:s.full,small:s.small}}}}function Ii(){for(let e of document.querySelectorAll(".thumbnail.selected"))e?.classList?.remove("selected")}function ac(){let e=document.querySelectorAll(".thumbnail.selected");return Object.values(e).map(o=>o?.id??"")}function cc(e,t,o){return xi=new ss(e,t,o),xi}function hm(){return xi}async function lc(e){let t=document.createElement("video"),o=URL.createObjectURL(e);return t.src=o,await new Promise(n=>{t.addEventListener("loadeddata",()=>n(!0)),t.load()}),URL.revokeObjectURL(o),t}async function ym(e){let t=await lc(e),n=document.createElement("canvas").getContext("2d");if(!n)throw new Error("Canvas context failed for "+e.name);n.canvas.width=t.videoWidth,n.canvas.height=t.videoHeight,document.body.append(t),t.style.display="none",t.play(),t.pause();let s=await new Promise((i,r)=>{let a=c=>c?i(c):r(!0);setTimeout(()=>{n.drawImage(t,0,0,t.videoWidth,t.videoHeight),n.canvas.toBlob(a,"image/jpeg",.8)},300)});return t.remove(),s}async function Ci(e,t,o){t=await dc(t);let n=an(t.backgroundFiles);if(n.length===0){Zt();return}let s=e.frequency,i=t.backgroundFiles[n[0]],r=new Date(i.lastUsed).getTime();if(o??=We(s,r),n.length>1&&o){n.shift();let a=Math.floor(Math.random()*n.length),c=n[a];J(await He(c,t)),t.backgroundFiles[c].lastUsed=new Date().toString(),y.local.set(t)}else J(await He(n[0],t))}async function bm(e,t){let o=await Vn("local-files"),{full:n,small:s}=t,i=new Request(`http://127.0.0.1:8888/${e}/full`),r=new Request(`http://127.0.0.1:8888/${e}/small`),a={"content-type":n.type,"Cache-Control":"max-age=604800"},c={"content-type":s.type,"Cache-Control":"max-age=604800"},l=new Response(n,{headers:a}),u=new Response(s,{headers:c});await Promise.all([o.put(i,l),o.put(r,u)])}async function uc(e){let t=await Vn("local-files"),o=await(await t?.match(`http://127.0.0.1:8888/${e}/full`))?.blob(),n=await(await t?.match(`http://127.0.0.1:8888/${e}/small`))?.blob();if(!o||!n)throw new Error(`${e} is undefined`);return{full:o,small:n}}async function vm(e){let t=await Vn("local-files");for(let o of e)sessionStorage.removeItem(o),t.delete(`http://127.0.0.1:8888/${o}/full`),t.delete(`http://127.0.0.1:8888/${o}/small`);return!0}async function dc(e){let t={},n=await(await Vn("local-files")).keys();for(let r of n)try{let a=new URL(r.url).pathname.split("/")[1],c=r.url.includes(".mp4")||r.url.includes(".webm"),l=e.backgroundFiles[a];l||(l={format:c?"video":"image",lastUsed:new Date("01/01/1971").toString(),position:{size:"cover",x:"50%",y:"50%"}}),t[a]=l}catch(a){console.info(a)}let s=Object.keys(e.backgroundFiles),i=Object.keys(t);return s.length!==i.length&&y.local.set({backgroundFiles:t}),e.backgroundFiles=t,e}var cn=Le(Em,600),km=Le(Lm,600),wm=Le(Sm,200),mc=0,Bi=ne("f_background-user-coll"),Ai=ne("f_background-user-search");function Yn(e,t,o){if(o){let s=e.backgrounds.type==="color",i=e.backgrounds.fadein===0,r=document.getElementById("background-wrapper");(s||i)&&r?.classList.remove("hidden");let a=document.getElementById("b_interface-background-pause"),c=e.backgrounds.frequency==="pause";a?.classList.toggle("paused",c),Xa(),document.addEventListener("visibilitychange",Am)}switch(Za(e.backgrounds),cs(e.backgrounds),Kn(e.backgrounds.texture),Ei(e.backgrounds),document.getElementById("background-wrapper")?.setAttribute("data-type",e.backgrounds.type),e.backgrounds.type){case"files":{Ci(e.backgrounds,t);break}case"urls":{oi(e.backgrounds,t);break}case"color":{J(e.backgrounds.color);break}default:as(e.backgrounds,t)}}async function z(e){let t=await y.sync.get("backgrounds"),o=await y.local.get();if(e.blurenter){_m(t,o);return}if(e.blur!==void 0){cs({blur:Number.parseFloat(e.blur)}),cn({blur:Number.parseFloat(e.blur)});return}if(e.bright!==void 0){cs({bright:Number.parseFloat(e.bright)}),cn({bright:Number.parseFloat(e.bright)});return}if(e.fadein!==void 0){cs({fadein:Number.parseInt(e.fadein)}),cn({fadein:Number.parseFloat(e.fadein)}),wm(Number.parseFloat(e.fadein));return}if(Pm(e.type)){t.backgrounds.type=e.type,y.sync.set({backgrounds:t.backgrounds}),yc(t.backgrounds),ln(t.backgrounds),Yn(t,o);return}if(Dm(e.freq)){if(t.backgrounds.frequency=e.freq,e.freq==="pause"){let n=t.backgrounds.type;if(n==="images"){let s=Qe(t.backgrounds,o).images();t.backgrounds.pausedImage=s[0]}if(n==="videos"){let s=Qe(t.backgrounds,o).videos();t.backgrounds.pausedVideo=s[0]}if(n==="urls"){let[s,i]=pa(o);t.backgrounds.pausedUrl=i[0].urls.full}}y.sync.set({backgrounds:t.backgrounds}),ln(t.backgrounds)}if(e.refresh){switch(t.backgrounds.type){case"files":{Ci(t.backgrounds,o,!0);break}case"urls":{oi(t.backgrounds,o,!0);break}case"images":case"videos":{as(t.backgrounds,o,!0);break}}Vt(e.refresh,!0)}switch(e.color&&(Qt("solid-background",e.color),J(e.color),km(e.color)),e.urlsapply&&ba(t.backgrounds),e.files&&oc(e.files,o),e.mute!==void 0&&(t.backgrounds.mute=e.mute,y.sync.set({backgrounds:t.backgrounds})),e.texturecolor!==void 0&&(t.backgrounds.texture.color=e.texturecolor,cn({texture:t.backgrounds.texture}),Qt("texture-color",e.texturecolor),Kn(t.backgrounds.texture)),e.textureopacity!==void 0&&(t.backgrounds.texture.opacity=Number.parseFloat(e.textureopacity),cn({texture:t.backgrounds.texture}),Kn(t.backgrounds.texture)),e.texturesize!==void 0&&(t.backgrounds.texture.size=Number.parseInt(e.texturesize),cn({texture:t.backgrounds.texture}),Kn(t.backgrounds.texture)),Hm(e.texture)&&(t.backgrounds.texture={type:e.texture},y.sync.set({backgrounds:t.backgrounds}),ln(t.backgrounds),Kn(t.backgrounds.texture)),document.dispatchEvent(new CustomEvent("updateSettingsBeforeInit",{detail:t})),t.backgrounds.type){case"files":case"urls":case"color":return;default:}if(e.provider){t.backgrounds[t.backgrounds.type]=e.provider,y.sync.set({backgrounds:t.backgrounds}),ln(t.backgrounds);let n=o.backgroundCollections[e.provider]?.length>0,s=e.provider.includes("bonjourr");(n||s)&&as(t.backgrounds,o)}if(e.query!==void 0){let n=t.backgrounds[t.backgrounds.type],r=e.query.target.querySelector("input")?.value??"",a=n==="unsplash-images-collections",c=r.startsWith("https://unsplash.com/collections/");if(a&&c&&(r=r.replace("https://unsplash.com/collections/","").slice(0,r.indexOf("/"))),o.backgroundCollections[n]=[],t.backgrounds.queries[n]=r,y.sync.set({backgrounds:t.backgrounds}),r===""){y.local.set({backgroundCollections:o.backgroundCollections}),Bi.accept(""),Ai.accept(""),Zt();return}Bi.load(),Ai.load(),ln(t.backgrounds),await as(t.backgrounds,o),Bi.accept(n),Ai.accept(n)}}async function Em({blur:e,bright:t,fadein:o,texture:n}){let s=await y.sync.get("backgrounds");e!==void 0&&(s.backgrounds.blur=e),t!==void 0&&(s.backgrounds.bright=t),o!==void 0&&(s.backgrounds.fadein=o),n!==void 0&&(s.backgrounds.texture=n),y.sync.set({backgrounds:s.backgrounds})}async function Lm(e){let t=await y.sync.get("backgrounds");t.backgrounds.color=e,y.sync.set({backgrounds:t.backgrounds})}function Sm(e){let t=document.getElementById("background-wrapper"),o=n=>t?.setAttribute("style",`opacity: ${n}`);clearTimeout(mc),mc=setTimeout(()=>o(1),e),o(0)}async function as(e,t,o){if(e.type==="color")return;let n=[];switch(e.type){case"images":n=Qe(e,t).images();break;case"videos":n=Qe(e,t).videos();break;default:}let s=new Date(t.backgroundLastChange??"01/01/1971").getTime(),i=e.frequency==="pause",r=localStorage.backgroundPreloading==="true";if(o??=We(e.frequency,s),n.length===0){let a=await fc(e);if(a){let c=qi(e,t).fromApi(a),l=Qe(e,c),u=e.type==="images";c.backgroundLastChange=Y().toString(),y.local.set(c),n=u?l.images():l.videos(),yt(n[1])}}if(r){J(n[0]),yt(n[1]);return}if(!o&&i){if(e.pausedImage&&e.type==="images"){J(e.pausedImage);return}if(e.pausedVideo&&e.videos==="videos"){J(e.pausedVideo);return}}if(!o){J(n[0]);return}if(n.length>1&&n.shift(),e.frequency==="pause"&&(e.type==="images"&&(e.pausedImage=n[0]),e.type==="videos"&&(e.pausedVideo=n[0]),y.sync.set({backgrounds:e})),n.length>1){let a=t;yt(n[1]),a=qi(e,t).fromList(n),a.backgroundLastChange=Y().toString(),y.local.set(a)}if(J(n[0]),n.length===1&&navigator.onLine){let a=await fc(e);if(a){let c=qi(e,t).fromApi(a),l=Qe(e,c),u=e.type==="images"?l.images():l.videos();yt(u[0]),yt(u[1]),y.local.set({backgroundCollections:c.backgroundCollections})}}}async function fc(e){switch(e.type){case"files":case"urls":case"color":throw new Error('Can only fetch with "images" or "videos" type');default:}let t=e[e.type],[o,n,s]=t.split("-"),i="https://services.bonjourr.fr/backgrounds",r=`/${o}/${n}/${s}`,a=Math.max(2,globalThis.devicePixelRatio),c=globalThis.screen.width/globalThis.screen.height,l=globalThis.screen.height*a,u=globalThis.screen.width*a;c>=2&&(u=l*2),c<=.5&&(l=u*2);let d=`?h=${l}&w=${u}`,h=e.queries[t]??"",g=h?`&query=${h}`:"",E=i+r+d+g,v=await(await fetch(E)).json(),m=n==="images"&&Object.keys(v)?.every(w=>w.includes("images")),p=n==="videos"&&Object.keys(v)?.every(w=>w.includes("videos"));if(m||p)return v;throw new Error("Received JSON is bad")}function pc(e,t){switch(e.type){case"files":case"urls":case"color":throw new Error('Only collection names with "images" or "videos" type');default:}let{frequency:o,type:n,pausedImage:s,pausedVideo:i}=e,r=n==="images"&&o==="pause"&&s,a=n==="videos"&&o==="pause"&&i;if(r)return gc(s,t);if(a)return gc(i,t);let c=e[n];if(c.includes("daylight")){let u=ho(Y().getTime());return`${c}-${u}`}return c}function gc(e,t){let o=new Map;for(let[n,s]of Object.entries(t.backgroundCollections))for(let i of s)o.set(i.urls.full,n);return o.get(e.urls.full)}function Qe(e,t){switch(e.type){case"files":case"urls":case"color":throw new Error('Can only fetch with "images" or "videos" type');default:}let o=pc(e,t),n=t.backgroundCollections[o]??[];return{images:()=>{if(Fm(n))return n;throw new Error("Wrong background format")},videos:()=>{if(Om(n))return n;throw new Error("Wrong background format")}}}function qi(e,t){switch(e.type){case"files":case"urls":case"color":throw new Error("Cannot update with this type");default:}function o(s){for(let[i,r]of Object.entries(s))t.backgroundCollections[i]=r;return t}function n(s){let i=pc(e,t);return t.backgroundCollections[i]=s,t}return{fromList:n,fromApi:o}}function J(e,t,o){let n=document.getElementById("background-media"),s=t||bc(),i;if(typeof e=="string"){n?.childNodes.forEach(r=>r.remove()),document.documentElement.style.setProperty("--solid-background",e);return}if(o&&document.body.classList.add("init"),!!e){if(e.format==="image"){s=e.mimetype==="image/gif"?"full":s;let r=e.urls[s];i=Tm(r,e)}else{let a=e.urls[s];i=xm(a,e,4e3)}if(i.dataset.res=s,n.prepend(i),n?.childElementCount>1){let c=Object.values(n?.children).filter(l=>!l.className.includes("hiding")).at(-1);o?(document.body.classList.remove("init"),setTimeout(()=>n?.lastElementChild?.remove(),200)):(c?.classList.add("hiding"),setTimeout(()=>n?.lastElementChild?.remove(),1200))}}}function Tm(e,t,o){let n=document.getElementById("background-wrapper"),s=document.createElement("div"),i=new Image;if(i.addEventListener("load",()=>{let r=i.width<=256&&i.height<=256,a=!!t.mimetype?.includes("png");s?.classList.toggle("pixelated",a&&r),n?.classList.remove("hidden"),Bm(t,i),ec(t),o&&o()}),i.src=e,i.remove(),s.classList.add("background-image"),s.style.backgroundImage=`url(${e})`,t?.file?.position){let{size:r,x:a,y:c}=t.file.position;s.style.backgroundSize=r,s.style.backgroundPositionX=a,s.style.backgroundPositionY=c}return s}function xm(e,t,o){let n=document.getElementById("background-wrapper"),s=cc(e,o,1),i=s.getContainer();if(s.loop(),t?.file?.video){let{playbackRate:r,zoom:a,fade:c}=t.file.video;i.style.transform=`scale(${a})`,s.setPlaybackRate(r),s.setFadeTime(c)}return n?.classList.remove("hidden"),i}function yt(e,t){if(!e)return;localStorage.setItem("backgroundPreloading","true");let o=t||bc(),n=e.urls[o];if(e.format==="image"){let s=document.createElement("img");return s.fetchPriority="low",new Promise(i=>{s.addEventListener("load",()=>{localStorage.removeItem("backgroundPreloading"),s.remove(),i(!0)}),s.src=n})}if(e.format==="video"){let s=document.createElement("video");return new Promise(i=>{s.addEventListener("canplaythrough",()=>{localStorage.removeItem("backgroundPreloading"),s.remove(),i(!0)}),setTimeout(()=>s.src=n,600)})}}function Zt(){let e=document.getElementById("background-media");setTimeout(()=>document.querySelector("#background-media div")?.classList.add("hiding")),setTimeout(()=>e.firstChild?.remove(),2e3)}function cs({blur:e,bright:t,fadein:o}){e!==void 0&&(document.documentElement.style.setProperty("--blur",`${e}px`),document.body.classList.toggle("blurred",e>=15)),t!==void 0&&document.documentElement.style.setProperty("--brightness",`${t}`),o!==void 0&&document.documentElement.style.setProperty("--fade-in",`${o}ms`)}function Kn(e){let t=document.getElementById("background-wrapper");if(!(document.getElementById("background-texture")&&t))return;let n=Li[e.type],s=e.color??n.color,i=e.size??n.size.value,r=e.opacity??n.opacity.value;t.dataset.texture=e.type,document.documentElement.style.setProperty("--texture-color",`${s}`),document.documentElement.style.setProperty("--texture-color-transparent",`${s}77`),document.documentElement.style.setProperty("--texture-opacity",`${r}`),document.documentElement.style.setProperty("--texture-size",`${i}px`)}function hc(e,t){sc(t),ha(e.backgrounds,t),yc(e.backgrounds),ln(e.backgrounds)}function ln(e){let t=e.type,o=t==="videos"||t==="files"||t==="urls";document.getElementById("local_options")?.classList.toggle("shown",t==="files"),document.getElementById("solid_options")?.classList.toggle("shown",t==="color"),document.getElementById("unsplash_options")?.classList.toggle("shown",t==="images"),document.getElementById("background-urls-option")?.classList.toggle("shown",t==="urls"),document.getElementById("background-freq-option")?.classList.toggle("shown",t!=="color"),document.getElementById("background-filters-options")?.classList.toggle("shown",t!=="color"),document.getElementById("background-video-sound-options")?.classList.toggle("shown",o),Im(e),Mm(e),Ei(e)}function Im(e){let t=e.texture.type!=="none";if(document.getElementById("background-texture-options")?.classList.toggle("shown",t),t){let o=document.querySelector("#i_texture-opacity"),n=document.querySelector("#i_texture-size"),s=document.querySelector("#background-texture-color-option"),i=Li[e.texture.type],{opacity:r,size:a}=e.texture;s?.classList.toggle("shown",i.color!==void 0),o&&(o.min=i.opacity.min,o.max=i.opacity.max,o.step=i.opacity.step,o.value=r===void 0?i.opacity.value:r.toString(),Ie(o)),n&&(n.min=i.size.min,n.max=i.size.max,n.step=i.size.step,n.value=a===void 0?i.size.value:a.toString(),Ie(n))}}function Mm(e){switch(e.type){case"files":case"urls":case"color":{document.getElementById("background-provider-option")?.classList.remove("shown");return}default:}document.getElementById("background-provider-option")?.classList.add("shown");let t=e[e.type],o=t.includes("coll"),n=t.includes("search"),s=document.querySelector("#i_background-user-coll"),i=document.querySelector("#i_background-user-search"),r=document.querySelector("#background-user-coll-option"),a=document.querySelector("#background-user-search-option");s&&i&&r&&a&&(r.classList.toggle("shown",o),a.classList.toggle("shown",n),s.value=e.queries[t]??"",i.value=e.queries[t]??"")}function yc(e){let t=document.querySelector("#i_background-provider"),o=e.type==="images"?"IMAGES":"VIDEOS",n=tc[o];if(!t)throw new Error("Cannot find #i_background-provider");for(let s of Object.values(t.children))s.remove();for(let s of n){let i=document.createElement("optgroup");i.label=s.optgroup,t?.appendChild(i);for(let r of s.options){let a=document.createElement("option");a.textContent=r.name,a.value=r.value,i.appendChild(a)}}switch(e.type){case"images":case"videos":{let s=e[e.type];t.value=s;break}default:}}async function _m(e,t){if(e.backgrounds.type==="files"){let s=an(t.backgroundFiles),i=await He(s[0],t);J(i,"full");return}let[o,n]=await Cm(e,t);yt(o,"small"),yt(o,"full")?.then(()=>{J(o,"full","fast"),yt(n,"full")})}async function Cm(e,t){if(e.backgrounds.type==="files"){let o=an(t.backgroundFiles),n=await He(o[0],t),s=await He(o[1],t);return[n,s]}if(e.backgrounds.frequency==="pause"&&e.backgrounds.pausedImage){let n=Qe(e.backgrounds,t).images();return[e.backgrounds.pausedImage,n[0]]}if(e.backgrounds.frequency==="pause"&&e.backgrounds.pausedVideo){let n=Qe(e.backgrounds,t).videos();return[e.backgrounds.pausedVideo,n[0]]}if(e.backgrounds.type==="images"){let n=Qe(e.backgrounds,t).images();return[n[0],n[1]]}if(e.backgrounds.type==="videos"){let n=Qe(e.backgrounds,t).videos();return[n[0],n[1]]}return[]}function bc(){return document.body.className.includes("blurred")?"small":"full"}function Bm(e,t){let o=e.color;if(o||(o=qm(t)),o){let n=Number.parseInt(document.documentElement.style.getPropertyValue("--fade-in"));document.querySelector('meta[name="theme-color"]')?.setAttribute("content",o),setTimeout(()=>{document.documentElement.style.setProperty("--average-color",o)},n)}}function Am(){document.querySelectorAll("video")?.forEach(e=>{document.hidden?e.pause():e.play()})}function qm(e){try{let t=document.createElement("canvas"),o=t.getContext("2d"),n=100,s=Math.min(n/e.width,n/e.height);t.width=e.width*s,t.height=e.height*s,o?.drawImage(e,0,0,t.width,t.height);let r=o?.getImageData(0,0,t.width,t.height)?.data,a=0,c=0,l=0,u=0;if(r)for(let d=0;d<r.length;d+=4)a+=r[d],c+=r[d+1],l+=r[d+2],u++;return a=Math.floor(a/u),c=Math.floor(c/u),l=Math.floor(l/u),Lr(a,c,l)}catch{}}function os(e=!0){document.querySelectorAll("#background-media video").forEach(t=>{t.dispatchEvent(new CustomEvent("muteStatusChange",{detail:{status:e}}))})}function Pm(e=""){return["files","urls","images","videos","color"].includes(e)}function Hm(e=""){return["none","grain","verticalDots","diagonalDots","topographic","checkerboard","isometric","grid","verticalLines","horizontalLines","diagonalStripes","verticalStripes","horizontalStripes","diagonalLines","aztec","circuitBoard","ticTacToe","endlessClouds","vectorGrain","waves","honeycomb"].includes(e)}function Dm(e=""){return["tabs","hour","day","period","pause"].includes(e)}function Fm(e){return e?.every(t=>t.format==="image")}function Om(e){return e?.every(t=>t.format==="video")}var Rm="https://ko-fi.com/post/Bonjourr-22-pomodoro-timer-new-look-right-click-F1F11P47J8",vc={en:"<b>Bonjourr just got a major update! \u2728</b> Discover what\u2019s new: Pomodoro timer, universal right-click menu, improved links, refreshed design, and more.",fr:"<b>Bonjourr vient d'avoir une mise \xE0 jour majeure ! \u2728</b> D\xE9couvrez les nouveaut\xE9s : minuteur Pomodoro, menu clic droit universel, liens am\xE9lior\xE9s, nouveau design, et bien plus encore.",de:"<b>Bonjourr hat ein gro\xDFes Update erhalten! \u2728</b> Entdecke die Neuerungen: Pomodoro-Timer, universelles Rechtsklick-Men\xFC, verbesserte Links, neues Design und mehr.",it:"<b>Bonjourr ha ricevuto un aggiornamento importante! \u2728</b> Scopri le novit\xE0: timer Pomodoro, menu clic destro universale, link migliorati, design rinnovato e molto altro.",es:"<b>\xA1Bonjourr acaba de recibir una gran actualizaci\xF3n! \u2728</b> Descubre las novedades: temporizador Pomodoro, men\xFA de clic derecho universal, enlaces mejorados, dise\xF1o renovado y mucho m\xE1s.","pt-BR":"<b>Bonjourr acabou de receber uma grande atualiza\xE7\xE3o! \u2728</b> Descubra as novidades: timer Pomodoro, menu de clique direito universal, links aprimorados, design renovado e muito mais.","pt-PT":"<b>O Bonjourr recebeu uma grande atualiza\xE7\xE3o! \u2728</b> Descubra as novidades: temporizador Pomodoro, menu de clique direito universal, liga\xE7\xF5es melhoradas, design renovado e muito mais.",nl:"<b>Bonjourr heeft een grote update gekregen! \u2728</b> Ontdek wat er nieuw is: Pomodoro-timer, universeel rechtermuisknopmenu, verbeterde links, vernieuwd design en meer.",da:"<b>Bonjourr har f\xE5et en stor opdatering! \u2728</b> Se nyhederne: Pomodoro-timer, universel h\xF8jreklikmenu, forbedrede links, opdateret design og meget mere.",sv:"<b>Bonjourr har f\xE5tt en stor uppdatering! \u2728</b> Uppt\xE4ck nyheterna: Pomodoro-timer, universell h\xF6gerklicksmeny, f\xF6rb\xE4ttrade l\xE4nkar, uppdaterad design och mer.",nb:"<b>Bonjourr har f\xE5tt en stor oppdatering! \u2728</b> Oppdag nyhetene: Pomodoro-timer, universell h\xF8yreklikkmeny, forbedrede lenker, oppdatert design og mer.",fi:"<b>Bonjourr on saanut suuren p\xE4ivityksen! \u2728</b> Tutustu uutuuksiin: Pomodoro-ajastin, yleinen hiiren oikean painikkeen valikko, parannetut linkit, uudistettu ulkoasu ja paljon muuta.",pl:"<b>Bonjourr otrzyma\u0142 du\u017C\u0105 aktualizacj\u0119! \u2728</b> Sprawd\u017A nowo\u015Bci: timer Pomodoro, uniwersalne menu prawego przycisku myszy, ulepszone linki, od\u015Bwie\u017Cony wygl\u0105d i wi\u0119cej.",cs:"<b>Bonjourr dostal velkou aktualizaci! \u2728</b> Objevte novinky: Pomodoro \u010Dasova\u010D, univerz\xE1ln\xED nab\xEDdka prav\xE9ho kliknut\xED, vylep\u0161en\xE9 odkazy, obnoven\xFD design a dal\u0161\xED.",hr:"<b>Bonjourr je dobio veliko a\u017Euriranje! \u2728</b> Otkrijte novosti: Pomodoro mjera\u010D vremena, univerzalni izbornik desnog klika, pobolj\u0161ane poveznice, osvje\u017Een dizajn i jo\u0161 mnogo toga.",sk:"<b>Bonjourr dostal ve\u013Ek\xFA aktualiz\xE1ciu! \u2728</b> Objavte novinky: Pomodoro \u010Dasova\u010D, univerz\xE1lne menu prav\xE9ho kliknutia, vylep\u0161en\xE9 odkazy, obnoven\xFD dizajn a viac.",hu:"<b>A Bonjourr jelent\u0151s friss\xEDt\xE9st kapott! \u2728</b> Fedezd fel az \xFAjdons\xE1gokat: Pomodoro id\u0151z\xEDt\u0151, univerz\xE1lis jobbklikk men\xFC, tov\xE1bbfejlesztett hivatkoz\xE1sok, meg\xFAjult diz\xE1jn \xE9s m\xE9g sok m\xE1s.",ro:"<b>Bonjourr a primit o actualizare major\u0103! \u2728</b> Descoper\u0103 nout\u0103\u021Bile: cronometru Pomodoro, meniu universal de clic dreapta, linkuri \xEEmbun\u0103t\u0103\u021Bite, design re\xEEmprosp\u0103tat \u0219i multe altele.",el:"<b>\u03A4\u03BF Bonjourr \u03BC\u03CC\u03BB\u03B9\u03C2 \u03B1\u03C0\u03AD\u03BA\u03C4\u03B7\u03C3\u03B5 \u03BC\u03B9\u03B1 \u03BC\u03B5\u03B3\u03AC\u03BB\u03B7 \u03B5\u03BD\u03B7\u03BC\u03AD\u03C1\u03C9\u03C3\u03B7! \u2728</b> \u0391\u03BD\u03B1\u03BA\u03B1\u03BB\u03CD\u03C8\u03C4\u03B5 \u03C4\u03B9 \u03BD\u03AD\u03BF \u03C5\u03C0\u03AC\u03C1\u03C7\u03B5\u03B9: \u03C7\u03C1\u03BF\u03BD\u03BF\u03B4\u03B9\u03B1\u03BA\u03CC\u03C0\u03C4\u03B7\u03C2 Pomodoro, \u03BA\u03B1\u03B8\u03BF\u03BB\u03B9\u03BA\u03CC \u03BC\u03B5\u03BD\u03BF\u03CD \u03B4\u03B5\u03BE\u03B9\u03BF\u03CD \u03BA\u03BB\u03B9\u03BA, \u03B2\u03B5\u03BB\u03C4\u03B9\u03C9\u03BC\u03AD\u03BD\u03BF\u03B9 \u03C3\u03CD\u03BD\u03B4\u03B5\u03C3\u03BC\u03BF\u03B9, \u03B1\u03BD\u03B1\u03BD\u03B5\u03C9\u03BC\u03AD\u03BD\u03BF\u03C2 \u03C3\u03C7\u03B5\u03B4\u03B9\u03B1\u03C3\u03BC\u03CC\u03C2 \u03BA\u03B1\u03B9 \u03C0\u03BF\u03BB\u03BB\u03AC \u03B1\u03BA\u03CC\u03BC\u03B7.",hy:"<b>Bonjourr-\u0568 \u057D\u057F\u0561\u0581\u0565\u056C \u0567 \u0574\u0565\u056E \u0569\u0561\u0580\u0574\u0561\u0581\u0578\u0582\u0574\u0589 \u2728</b> \u0532\u0561\u0581\u0561\u0570\u0561\u0575\u057F\u0565\u0584 \u0576\u0578\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580\u0568\u2024 Pomodoro \u056A\u0561\u0574\u0561\u0576\u0561\u056F\u0561\u0579\u0561\u0583, \u0578\u0582\u0576\u056B\u057E\u0565\u0580\u057D\u0561\u056C \u0561\u057B \u057D\u0565\u0572\u0574\u0574\u0561\u0576 \u0568\u0576\u057F\u0580\u0561\u0581\u0561\u0576\u056F, \u0562\u0561\u0580\u0565\u056C\u0561\u057E\u057E\u0561\u056E \u0570\u0572\u0578\u0582\u0574\u0576\u0565\u0580, \u0569\u0561\u0580\u0574\u0561\u0581\u057E\u0561\u056E \u0564\u056B\u0566\u0561\u0575\u0576 \u0587 \u0561\u057E\u0565\u056C\u056B\u0576\u0589",sr:"<b>Bonjourr \u0458\u0435 \u0434\u043E\u0431\u0438\u043E \u0432\u0435\u043B\u0438\u043A\u043E \u0430\u0436\u0443\u0440\u0438\u0440\u0430\u045A\u0435! \u2728</b> \u041E\u0442\u043A\u0440\u0438\u0458\u0442\u0435 \u043D\u043E\u0432\u043E\u0441\u0442\u0438: Pomodoro \u0442\u0430\u0458\u043C\u0435\u0440, \u0443\u043D\u0438\u0432\u0435\u0440\u0437\u0430\u043B\u043D\u0438 \u043C\u0435\u043D\u0438 \u0434\u0435\u0441\u043D\u043E\u0433 \u043A\u043B\u0438\u043A\u0430, \u0443\u043D\u0430\u043F\u0440\u0435\u0452\u0435\u043D\u0435 \u0432\u0435\u0437\u0435, \u043E\u0441\u0432\u0435\u0436\u0435\u043D \u0434\u0438\u0437\u0430\u0458\u043D \u0438 \u0458\u043E\u0448 \u043C\u043D\u043E\u0433\u043E \u0442\u043E\u0433\u0430.","sr-YU":"<b>Bonjourr je dobio veliko a\u017Euriranje! \u2728</b> Otkrijte novosti: Pomodoro tajmer, univerzalni meni desnog klika, unapre\u0111ene veze, osve\u017Een dizajn i jo\u0161 mnogo toga.",uk:"<b>Bonjourr \u043E\u0442\u0440\u0438\u043C\u0430\u0432 \u0432\u0435\u043B\u0438\u043A\u0435 \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F! \u2728</b> \u0414\u0456\u0437\u043D\u0430\u0439\u0442\u0435\u0441\u044F, \u0449\u043E \u043D\u043E\u0432\u043E\u0433\u043E: \u0442\u0430\u0439\u043C\u0435\u0440 Pomodoro, \u0443\u043D\u0456\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u0435 \u043C\u0435\u043D\u044E \u043F\u0440\u0430\u0432\u043E\u0457 \u043A\u043D\u043E\u043F\u043A\u0438 \u043C\u0438\u0448\u0456, \u043F\u043E\u043A\u0440\u0430\u0449\u0435\u043D\u0456 \u043F\u043E\u0441\u0438\u043B\u0430\u043D\u043D\u044F, \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0439 \u0434\u0438\u0437\u0430\u0439\u043D \u0442\u0430 \u0456\u043D\u0448\u0435.",ru:"<b>Bonjourr \u043F\u043E\u043B\u0443\u0447\u0438\u043B \u043A\u0440\u0443\u043F\u043D\u043E\u0435 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435! \u2728</b> \u0423\u0437\u043D\u0430\u0439\u0442\u0435, \u0447\u0442\u043E \u043D\u043E\u0432\u043E\u0433\u043E: \u0442\u0430\u0439\u043C\u0435\u0440 Pomodoro, \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u043E\u043D\u0442\u0435\u043A\u0441\u0442\u043D\u043E\u0435 \u043C\u0435\u043D\u044E, \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u043D\u044B\u0435 \u0441\u0441\u044B\u043B\u043A\u0438, \u043E\u0431\u043D\u043E\u0432\u043B\u0451\u043D\u043D\u044B\u0439 \u0434\u0438\u0437\u0430\u0439\u043D \u0438 \u043C\u043D\u043E\u0433\u043E\u0435 \u0434\u0440\u0443\u0433\u043E\u0435.",tr:"<b>Bonjourr b\xFCy\xFCk bir g\xFCncelleme ald\u0131! \u2728</b> Yenilikleri ke\u015Ffedin: Pomodoro zamanlay\u0131c\u0131, evrensel sa\u011F t\u0131k men\xFCs\xFC, geli\u015Ftirilmi\u015F ba\u011Flant\u0131lar, yenilenmi\u015F tasar\u0131m ve daha fazlas\u0131.",ar:"<b>\u062D\u0635\u0644 Bonjourr \u0639\u0644\u0649 \u062A\u062D\u062F\u064A\u062B \u0643\u0628\u064A\u0631! \u2728</b> \u0627\u0643\u062A\u0634\u0641 \u0627\u0644\u0645\u064A\u0632\u0627\u062A \u0627\u0644\u062C\u062F\u064A\u062F\u0629: \u0645\u0624\u0642\u0651\u062A \u0628\u0648\u0645\u0648\u062F\u0648\u0631\u0648\u060C \u0642\u0627\u0626\u0645\u0629 \u0646\u0642\u0631 \u0628\u0632\u0631 \u0627\u0644\u0641\u0623\u0631\u0629 \u0627\u0644\u0623\u064A\u0645\u0646 \u0634\u0627\u0645\u0644\u0629\u060C \u0631\u0648\u0627\u0628\u0637 \u0645\u062D\u0633\u0651\u0646\u0629\u060C \u062A\u0635\u0645\u064A\u0645 \u0645\u064F\u062D\u062F\u0651\u062B \u0648\u0627\u0644\u0645\u0632\u064A\u062F.",fa:"<b>Bonjourr \u06CC\u06A9 \u0628\u0647\u200C\u0631\u0648\u0632\u0631\u0633\u0627\u0646\u06CC \u0628\u0632\u0631\u06AF \u062F\u0631\u06CC\u0627\u0641\u062A \u06A9\u0631\u062F! \u2728</b> \u0648\u06CC\u0698\u06AF\u06CC\u200C\u0647\u0627\u06CC \u062C\u062F\u06CC\u062F \u0631\u0627 \u06A9\u0634\u0641 \u06A9\u0646\u06CC\u062F: \u062A\u0627\u06CC\u0645\u0631 \u067E\u0648\u0645\u0648\u062F\u0648\u0631\u0648\u060C \u0645\u0646\u0648\u06CC \u06A9\u0644\u06CC\u06A9 \u0631\u0627\u0633\u062A \u0633\u0631\u0627\u0633\u0631\u06CC\u060C \u0644\u06CC\u0646\u06A9\u200C\u0647\u0627\u06CC \u0628\u0647\u0628\u0648\u062F\u06CC\u0627\u0641\u062A\u0647\u060C \u0637\u0631\u0627\u062D\u06CC \u062A\u0627\u0632\u0647 \u0648 \u0645\u0648\u0627\u0631\u062F \u0628\u06CC\u0634\u062A\u0631.","zh-CN":"<b>Bonjourr \u521A\u521A\u8FCE\u6765\u4E00\u6B21\u91CD\u5927\u66F4\u65B0\uFF01\u2728</b> \u63A2\u7D22\u65B0\u529F\u80FD\uFF1A\u756A\u8304\u949F\u3001\u901A\u7528\u53F3\u952E\u83DC\u5355\u3001\u6539\u8FDB\u7684\u94FE\u63A5\u3001\u7115\u7136\u4E00\u65B0\u7684\u8BBE\u8BA1\u7B49\u3002","zh-HK":"<b>Bonjourr \u525B\u525B\u63A8\u51FA\u91CD\u5927\u66F4\u65B0\uFF01\u2728</b> \u63A2\u7D22\u65B0\u529F\u80FD\uFF1A\u756A\u8304\u9418\u3001\u901A\u7528\u53F3\u9375\u9078\u55AE\u3001\u6539\u9032\u7684\u9023\u7D50\u3001\u7165\u7136\u4E00\u65B0\u7684\u8A2D\u8A08\u7B49\u3002","zh-TW":"<b>Bonjourr \u525B\u63A8\u51FA\u91CD\u5927\u66F4\u65B0\uFF01\u2728</b> \u63A2\u7D22\u65B0\u529F\u80FD\uFF1A\u756A\u8304\u9418\u3001\u901A\u7528\u53F3\u9375\u9078\u55AE\u3001\u6539\u9032\u7684\u9023\u7D50\u3001\u5168\u65B0\u8A2D\u8A08\u7B49\u3002",ja:"<b>Bonjourr \u306B\u5927\u898F\u6A21\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u304C\u767B\u5834\uFF01\u2728</b> \u65B0\u6A5F\u80FD\u3092\u3054\u7D39\u4ECB\uFF1A\u30DD\u30E2\u30C9\u30FC\u30ED\u30BF\u30A4\u30DE\u30FC\u3001\u30E6\u30CB\u30D0\u30FC\u30B5\u30EB\u53F3\u30AF\u30EA\u30C3\u30AF\u30E1\u30CB\u30E5\u30FC\u3001\u30EA\u30F3\u30AF\u306E\u6539\u5584\u3001\u5237\u65B0\u3055\u308C\u305F\u30C7\u30B6\u30A4\u30F3\u306A\u3069\u3002",id:"<b>Bonjourr baru saja mendapatkan pembaruan besar! \u2728</b> Temukan fitur baru: timer Pomodoro, menu klik kanan universal, tautan yang ditingkatkan, desain baru, dan banyak lagi.",ca:"<b>Bonjourr ha rebut una actualitzaci\xF3 important! \u2728</b> Descobreix les novetats: temporitzador Pomodoro, men\xFA de clic dret universal, enlla\xE7os millorats, disseny renovat i molt m\xE9s.",vi:"<b>Bonjourr v\u1EEBa nh\u1EADn \u0111\u01B0\u1EE3c b\u1EA3n c\u1EADp nh\u1EADt l\u1EDBn! \u2728</b> Kh\xE1m ph\xE1 c\xE1c t\xEDnh n\u0103ng m\u1EDBi: b\u1ED9 h\u1EB9n gi\u1EDD Pomodoro, menu chu\u1ED9t ph\u1EA3i to\xE0n c\u1EE5c, li\xEAn k\u1EBFt \u0111\u01B0\u1EE3c c\u1EA3i thi\u1EC7n, giao di\u1EC7n l\xE0m m\u1EDBi v\xE0 nhi\u1EC1u h\u01A1n n\u1EEFa."},Nm="Love using Bonjourr? Consider giving us a review or donating, that would help a lot! \u{1F607}",jm={chrome:"https://chrome.google.com/webstore/detail/bonjourr-%C2%B7-minimalist-lig/dlnejlppicbjfcfcedcflplfjajinajd/reviews",opera:"https://chrome.google.com/webstore/detail/bonjourr-%C2%B7-minimalist-lig/dlnejlppicbjfcfcedcflplfjajinajd/reviews",firefox:"https://addons.mozilla.org/en-US/firefox/addon/bonjourr-startpage/",safari:"https://apps.apple.com/fr/app/bonjourr-startpage/id1615431236",edge:"https://microsoftedge.microsoft.com/addons/detail/bonjourr/dehmmlejmefjphdeoagelkpaoolicmid",other:"https://bonjourr.fr/help#%EF%B8%8F-reviews"};function ls(e,t){if(t?.announcements!==void 0){y.sync.set({announcements:t.announcements?"major":"off"});return}if(!e||e?.announce==="off")return;if(e.old&&e.review===-1){let n=a=>Number.parseInt(a.split(".")[0]),s=n(e.new)>n(e.old),i=e.announce==="major"&&s;if(localStorage.hasUpdated==="true"||i){localStorage.hasUpdated="true",kc("announce",!0);return}}if(e.review===-1)return;let o=parseInt(localStorage.reviewCounter??"0");if(o>30){kc("review");return}localStorage.reviewCounter=o+1}function kc(e,t=!1){let o=document.getElementById("popup-template"),n=document.importNode(o.content,!0),s=n.getElementById("popup"),i=n.getElementById("popup_desc"),r=n.getElementById("popup_close"),a=n.getElementById("popup_buttons");if(s){if(e==="review"&&(i.textContent=L(Nm),a.appendChild(Pi(jm[K],L("Review"))),a.appendChild(Pi("https://ko-fi.com/bonjourr",L("Donate")))),e==="announce"){let c=G(),l=vc[c]??vc.en,u=`${L("Read the blog post")} \u{1F4DD}`;i.innerHTML=l,a.appendChild(Pi(Rm,u))}r?.addEventListener("click",zm),document.body.appendChild(s),s.classList.add(e),s.classList.toggle("withIcon",t),Wm()}}function Pi(e,t){let o=document.createElement("a");return o.href=e,o.rel="noreferrer",o.textContent=t,o.addEventListener("pointerdown",wc),o}function wc(){y.sync.set({review:-1}),localStorage.removeItem("reviewCounter"),localStorage.removeItem("hasUpdated")}function Wm(){setTimeout(()=>document.getElementById("popup")?.classList.add("shown"),800),setTimeout(()=>document.getElementById("credit-container")?.setAttribute("style","opacity: 0"),400)}function zm(){setTimeout(()=>document.getElementById("popup")?.remove(),200),setTimeout(()=>document.getElementById("credit-container")?.removeAttribute("style"),600),document.getElementById("popup")?.classList.remove("shown"),wc()}var Um=["time","main","quicklinks","notes","quotes","searchbar","pomodoro"],ds={time:globalThis.document.getElementById("time"),main:globalThis.document.getElementById("main"),quicklinks:globalThis.document.getElementById("linkblocks"),searchbar:globalThis.document.getElementById("sb_container"),notes:globalThis.document.getElementById("notes_container"),quotes:globalThis.document.getElementById("quotes_container"),pomodoro:globalThis.document.getElementById("pomodoro_container")},us={single:{grid:[["time"],["main"],["quicklinks"]],items:{}},double:{grid:[["time","."],["main","."],["quicklinks","."]],items:{}},triple:{grid:[["time",".","."],["main",".","."],["quicklinks",".","."]],items:{}}};function ms(){return document.getElementById("interface")?.classList.contains("move-edit")??!1}function Qn(e,t){return e.filter(o=>o===t).length>1}function Be(e,t){if("move"in e){let s=e.move.layouts,i=t??e.move.selection;return s[i]??us[i]}let o=e.layouts,n=t??e.selection;return o?.[n]??us[n]}function $m(e){return e.flat().every(n=>n==="."||Um.includes(n))}function at(e=""){let t=n=>e.split(n).filter(r=>r.length>1).map(r=>r.split(" ")),o=t("'");return $m(o)?o:t('"')}function Ae(e){let t="",o=n=>n.reduce((s,i)=>`${s} ${i}`);return t=e.map(n=>`'${o(n)}'`).join(" "),t.trimEnd()}function bt(e,t){let o=[];return e.flat().forEach((n,s)=>{if(n!==t)return;let i=s%e[0].length,r=Math.floor(s/e[0].length);o.push([i,r])}),o}function Gm(e,t){let o=bt(e,t),n=Object.values(o).map(([s,i])=>i);return o.length<2?"none":n[0]!==n[1]?"columns":"rows"}function Ec(e,t){if(e[t]===void 0)return!1;let o=e[t],n=!0;return o.some(s=>{s!=="."&&Gm(e,s)!=="columns"&&(n=!1)}),n}function Hi(e,t,{toggle:o,remove:n}){function s(u){let d=u.indexOf(t),h=[!1,!1],g=u;function E(b,v,m){return!h[m]&&b[v]&&(b[v]==="."?b[v]=t:b[v]!==t&&(h[m]=!0)),b}for(let b=1;b<g.length;b++)g=E(g,d+b,0),g=E(g,d-b,1);return g}function i(u){let d=!0;return u.map(h=>h===t?(d&&(d=!1),"."):h)}let[r,a]=bt(e,t)[0],c=e.map(u=>u[r]),l=[...e[a]];return n&&(c=i(c),l=i(l)),o&&(o==="col"&&(c=Qn(c,t)?i(c):s(c)),o==="row"&&(l=Qn(l,t)?i(l):s(l))),e.forEach((u,d)=>{e[d][r]=c[d]}),e[a].forEach((u,d)=>{e[a][d]=l[d]}),e}function Di(e){let t={time:e.time,main:e.main,notes:!!e.notes?.on,searchbar:!!e.searchbar?.on,pomodoro:!!e.pomodoro?.on,quicklinks:e.quicklinks,quotes:!!e.quotes?.on};return Object.entries(t).filter(([o,n])=>n).map(([o,n])=>o)}function fs(e,t){for(let[o,n]of e)o==="time"&&(t.time=n),o==="main"&&(t.main=n),o==="quicklinks"&&(t.quicklinks=n),o==="quotes"&&(t.quotes={...t.quotes,on:n}),o==="pomodoro"&&(t.pomodoro={...t.pomodoro,on:n}),o==="searchbar"&&(t.searchbar={...t.searchbar,on:n}),o==="notes"&&t.notes&&(t.notes={...t.notes,on:n});return t}function Jn(e){let t=e.replaceAll("'","").replaceAll(".","").split(" ");return t.filter((n,s)=>n&&t.indexOf(n)===s)}function un(e,t,o){let n=Vm(o,t),s=e.split("'").filter(c=>!(c===" "||c==="")),i=0;if(e==="")return`'${n}'`;let r=s[0].includes("time"),a=s.at(-1)?.includes("quotes");return t==="time"&&(i=0),t==="main"&&(i=r?1:0),t==="notes"&&(i=s.length===1?1:2),t==="searchbar"&&(i=s.length===1?1:2),t==="pomodoro"&&(i=s.length===1?1:2),t==="quicklinks"&&(i=s.length-(a?1:0)),t==="quotes"&&(i=s.length),s.splice(i,0,n),s=s.map(c=>`'${c}'`),s.join(" ")}function gs(e,t,o){let n=e.split("'").filter(s=>!(s===" "||s===""));return n=n.filter(s=>!s.includes(t)),n=n.map(s=>`'${s}'`),n.join(" ")}function Vm(e,t){return`${e==="triple"?". ":""}${t}${e==="triple"||e==="double"?" .":""}`}var Lc=St(lt()),Km=document.querySelector("#interface");function vt(e){let t=typeof e=="string"?e:Ae(e);document.documentElement.style.setProperty("--grid",t)}function Fi(e,t){let{box:o,text:n}=t??{box:"",text:""},s=ds[e];s&&(s.style.placeSelf=o,e==="quicklinks"?(document.getElementById("linkblocks")?.classList.remove("text-left","text-right"),n==="left"&&document.getElementById("linkblocks")?.classList.add("text-left"),n==="right"&&document.getElementById("linkblocks")?.classList.add("text-right")):s.style.textAlign=n||"")}function dn(e){for(let[t,o]of Object.entries(e))Fi(t,o)}function Xn(e){let t=document.createElement("button");t.id=`move-overlay-${e}`,t.className="move-overlay",Km?.appendChild(t),(0,Lc.onclickdown)(t,()=>{te(void 0,{select:e})})}function Zn(e){if(e)document.querySelector(`#move-overlay-${e}`)?.remove();else for(let t of document.querySelectorAll(".move-overlay"))t.remove()}function Dt(){let e=document.getElementById("element-mover"),t=document.querySelectorAll(".move-overlay, #grid-mover button, .grid-spanner, #element-mover button");for(let o of t)o.classList.remove("selected"),o.removeAttribute("disabled");e?.classList.remove("active")}function mn(e){if(e==="in"){let t=document.getElementById("interface");t.style.removeProperty("opacity"),setTimeout(()=>{t.style.transition=""},200)}if(e==="out"){let t=document.getElementById("interface");t.style.opacity="0",t.style.transition="opacity 200ms cubic-bezier(.215,.61,.355,1)"}}var Sc=!0;function kt(e,t){let o=G().includes("zh")||G().includes("ja"),n=document.getElementById("current-desc"),s=document.getElementById("current-temp"),i=document.getElementById("tempContainer"),r=document.getElementById("weather"),a=o?"\u3002":". ",c=Y(),l=()=>{let g=Math.floor(t.feels_like),E=Math.floor(t.temp),b=e.temperature==="feelslike"?g:E,v="";e.temperature==="actual"&&(v=L("It is currently <temp1>\xB0")),e.temperature==="feelslike"&&(v=L("It currently feels like <temp2>\xB0")),e.temperature==="both"&&(v=L("It is currently <temp1>\xB0 and feels like <temp2>\xB0"));let m=i?.querySelector("p"),p=t.description[0].toUpperCase()+t.description.slice(1);v=v.replace("<temp1>",E.toString()),v=v.replace("<temp2>",g.toString()),n&&s&&m&&(n.textContent=p+a,s.textContent=v,m.textContent=`${b}\xB0`)},u=()=>{let g=t.icon_id;if(!i)return;let E=xt(c),{sunrise:b,sunset:v,dusk:m}=je(),p=E<b||E>v+m?"night":"day",w=document.getElementById("weather-icon");w.dataset.daytime=p,w.dataset.condition=g},d=()=>{let g=document.getElementById("forecast"),E=c.getHours()>eo()?"tomorrow":"today",b="";E==="today"&&(b=L("with a high of <temp1>\xB0 today")),E==="tomorrow"&&(b=L("with a high of <temp1>\xB0 tomorrow")),b=b.replace("<temp1>",t.forecasted_high.toString()),b+=a,g&&(g.textContent=b)},h=()=>{let g=!e.moreinfo||e.moreinfo==="none",E=e.moreinfo==="custom"&&!e.provider;if(g||E){r?.removeAttribute("href");return}let b={accu:t.link??"https://www.accuweather.com/",msnw:L("https://www.msn.com/en-xl/weather/forecast/"),yhw:"https://www.yahoo.com/news/weather/",windy:"https://www.windy.com/",custom:e.provider??""};(e.moreinfo||"")in b&&r?.setAttribute("href",b[e.moreinfo])};Oi(e.forecast),u(),h(),l(),d(),Sc&&(Sc=!1,r?.classList.remove("wait"),setTimeout(()=>r?.classList.remove("init"),900))}function Oi(e){let t=Y(),o=t.getHours()<12||t.getHours()>eo(),n=e==="auto"?o:e==="always";if(n&&!document.getElementById("forecast")){let s=document.createElement("p");s.id="forecast",document.getElementById("description")?.appendChild(s)}n||document.querySelector("#forecast")?.remove()}var to=ne("f_location"),Tc=ne("f_units"),no=ne("f_geol"),Ym=Le(Zm,600);async function xc(e){let{weather:t,hide:o}=await y.sync.get(["weather","hide"]),n=(await y.local.get("lastWeather")).lastWeather;if(t&&o){if(ef(e.units)&&(Tc.load(),t.unit=e.units,n=await gn(t,n)??n,Tc.accept()),tf(e.forecast)&&(t.forecast=e.forecast),of(e.temp)&&(t.temperature=e.temp),nf(e.moreinfo)&&(document.getElementById("weather_provider")?.classList.toggle("shown",e.moreinfo==="custom"),t.moreinfo=e.moreinfo),e.provider&&(t.provider=e.provider),e.unhide){let{weatherdesc:s,weathericon:i}=o||{};s&&i&&oo(t)}if(e.suggestions){Xm(e.suggestions);return}if(e.city){Qm(t,n);return}if(e.geol){console.log(e.geol),Jm(e.geol,t,n);return}y.sync.set({weather:t}),R(()=>fn(t)),n&&(y.local.set({lastWeather:n}),kt(t,n))}}async function Qm(e,t){let n=document.getElementById("i_city").value;if(ps(),!navigator.onLine){to.warn(L("No internet connection"));return}if(n===e.city)return;n=N(n,64),to.load();let s={...e,city:n},i;try{i=await gn(s,t)}catch(r){to.warn(L(r));return}if(!i){to.warn(L("Cannot reach weather service"));return}i&&(e.city=n??"Paris",to.accept("i_city",e.city),y.sync.set({weather:e}),y.local.set({lastWeather:i}),kt(e,i))}async function Jm(e,t,o){if(no.load(),!sf(e)){no.warn("bad geolocation type");return}if(e==="precise"&&!await Ri("precise")){no.warn("Cannot get precise location");return}if(t.geolocation=e,fn(t),y.sync.set({weather:t}),e==="off"){no.accept();return}let n=await gn(t,o)??o;n&&(y.local.set({lastWeather:o}),kt(t,n)),no.accept()}function fn(e){let t=document.querySelector("#i_city"),o=document.querySelector("#i_geol");t&&o&&(o.value=e?.geolocation??!1,t.setAttribute("placeholder",e.city??"Paris"),document.getElementById("location_options")?.classList.toggle("shown",e.geolocation==="off"))}function Xm(e){let t=document.querySelector("#f_location"),o=document.querySelector("#i_city"),n=e;t&&o&&n.data!==void 0&&(t?.classList.toggle("valid",o.value.length>2),ps(),Ym())}function ps(){let t=document.querySelector("#dl_cityfound")?.children??[];for(let o of t)o.remove()}async function Zm(){let e=document.querySelector("#dl_cityfound"),o=document.getElementById("i_city").value;if(o===""){ps();return}let n=new URL("https://weather.bonjourr.fr/");n.searchParams.set("provider","accuweather"),n.searchParams.set("data","simple"),n.searchParams.set("geo","true"),n.searchParams.set("query",encodeURIComponent(o));try{let s=await fetch(n);if(ps(),s.status!==200)return;for(let{detail:i}of await s.json()){let r=document.createElement("option");r.value=i,r.textContent=i,e?.appendChild(r)}}catch{}}function ef(e=""){return["metric","imperial"].includes(e)}function tf(e=""){return["auto","always","never"].includes(e)}function nf(e=""){return["none","msnw","yhw","windy","accu","custom"].includes(e)}function of(e=""){return["actual","feelslike","both"].includes(e)}function sf(e=""){return["precise","approximate","off"].includes(e)}async function oo(e,t){if(Oi(e.forecast),!t){rf(e);return}let o=Date.now(),n=t?.timestamp??0,s=o>n+36e5;if(navigator.onLine&&s){let i=await gn(e,t);if(i){y.local.set({lastWeather:i}),kt(e,i);return}}kt(e,t)}async function gn(e,t){if(!navigator.onLine)return t;let o=await Ri(e.geolocation),n=new URL("https://weather.bonjourr.fr/");if(n.searchParams.set("provider","auto"),n.searchParams.set("data","simple"),n.searchParams.set("lang",G()),n.searchParams.set("unit",e.unit==="metric"?"C":"F"),o?.lat&&o?.lon&&(n.searchParams.set("lat",o.lat.toString()),n.searchParams.set("lon",o.lon.toString())),e.geolocation==="off"&&!o){let E=e.city??"Paris",b=encodeURIComponent(E);n.searchParams.set("query",b)}let s=await fetch(n);if(s.status!==200)throw new Error("Cannot get weather");let i=await s?.json(),[r,a]=[0,0],{temp:c,feels:l}=i.now,{description:u,icon:d}=i.now,h=t?.forecasted_high??-273.15,g=t?.forecasted_timestamp??0;if(i.daily){let[E,b]=i.daily;new Date().getHours()>eo()?(h=b.high,g=new Date(b.time).getTime()):(h=E.high,g=new Date(E.time).getTime())}if(i.sun){let[E,b]=i.sun.rise,[v,m]=i.sun.set,p=new Date;p.setHours(E,b,0,0),a=p.getTime(),p.setHours(v,m,0,0),r=p.getTime(),je(a,r)}return{timestamp:Date.now(),forecasted_timestamp:g,forecasted_high:h,description:u,feels_like:l,icon_id:d,sunrise:a,sunset:r,temp:c,link:i.meta.url??"",approximation:{ccode:i?.geo?.country,city:i?.geo?.city,lat:i?.geo?.lat,lon:i?.geo?.lon}}}async function rf(e){let t=await gn(e);t&&(e.city=t.approximation?.city??L("City"),y.sync.set({weather:e}),y.local.set({lastWeather:t}),kt(e,t),setTimeout(()=>fn(e),400))}async function Ri(e){let t={lat:0,lon:0};return e==="precise"&&await new Promise(o=>navigator.geolocation.getCurrentPosition(n=>{t.lat=n.coords.latitude,t.lon=n.coords.longitude,o(!0)},()=>{o(!1)})),t.lat!==0&&t.lon!==0?t:void 0}var Ic=0;function se(e,t){if(t){xc(t);return}if(!e){console.warn(new Error("No weather data"));return}let o=!e.sync.main;!(e.sync.hide?.weatherdesc&&e.sync.hide?.weathericon||o)&&oo(e.sync.weather,e.lastWeather),R(()=>{fn(e.sync.weather)}),queueMicrotask(()=>{clearInterval(Ic),Ic=setInterval(async()=>{let i=await y.sync.get(["weather","hide","main"]),r=await y.local.get("lastWeather");oo(i.weather,r.lastWeather)},12e5)})}function eo(){let e=new Date;return e.setHours(Math.round(je().sunset/60)),e.getHours()}function Mc(e,t){if(!t)return;let[o,n]=t,s=n?un:gs,i=Pe(),r=e.move.selection,a=Be(e),c=at(s(Ae(a.grid),o,r));e.move.layouts[r]={items:a.items,grid:c};let l=fs([t],e);y.sync.set(l),i.first(()=>{Ni([[o,n]]),mn("out")}),i.after(()=>{let u=Be(l);vt(u.grid),dn(u.items),ji([[o,n]]),Dt(),ms()&&(n?Xn(o):Zn(o)),o==="main"&&n===!0&&y.local.get("lastWeather").then(d=>{se({sync:l,lastWeather:d.lastWeather})})}),i.finally(()=>{mn("in")}),i.transition(200)}function Ni(e){let t={time:"i_time",main:"i_main",quicklinks:"i_quicklinks",notes:"i_notes",quotes:"i_quotes",pomodoro:"i_pomodoro",searchbar:"i_sb"};for(let[o,n]of e){let s=document.getElementById(t[o]);document.getElementById(`${o}_options`)?.classList.toggle("shown",n),s.checked=n}}function ji(e){let t={time:"time",main:"main",quicklinks:"linkblocks",notes:"notes_container",quotes:"quotes_container",pomodoro:"pomodoro_container",searchbar:"sb_container"};for(let[o,n]of e)document.getElementById(t[o])?.classList.toggle("hidden",!n)}var Ft=St(lt()),De=document.querySelector("#element-mover"),_c,pn={x:0,y:0},so={x:0,y:0};function Cc(){let e=Object.entries(ds),t=document.querySelectorAll("#grid-mover button"),o=document.querySelectorAll("#box-alignment-mover button"),n=document.querySelectorAll("#text-alignment-mover button"),s=document.querySelector("#grid-span-cols"),i=document.querySelector("#grid-span-rows"),r=document.querySelector("#b_resetlayout"),a=document.querySelector("#close-mover");for(let[d,h]of e)(0,Ft.onclickdown)(h,()=>Fe({select:d}),{propagate:!1});for(let d of t)(0,Ft.onclickdown)(d,()=>{Fe({grid:{x:d.dataset.col,y:d.dataset.row}})});for(let d of o)(0,Ft.onclickdown)(d,()=>{Fe({box:d.dataset.align})});for(let d of n)(0,Ft.onclickdown)(d,()=>{Fe({text:d.dataset.align})});(0,Ft.onclickdown)(s,()=>Fe({span:"col"})),(0,Ft.onclickdown)(i,()=>Fe({span:"row"})),a?.addEventListener("click",()=>Fe({toggle:!1})),r?.addEventListener("click",()=>Fe({reset:!0})),De?.addEventListener("mousedown",c),De?.addEventListener("mouseup",u),De?.addEventListener("mouseleave",u),De?.addEventListener("touchstart",c,{passive:!1}),De?.addEventListener("touchend",u);function c(d){let h=d.target,g=h?.tagName==="HR"||h?.tagName==="P",E=h?.id==="element-mover"||h?.id==="close-mover-wrapper";(g||E)&&De?.addEventListener(d.type.includes("touch")?"touchmove":"mousemove",l)}function l(d){let h=d.touches?d.touches[0]:d,g=h.clientX,E=h.clientY;if(pn.x===0&&pn.y===0){pn={x:g-so.x,y:E-so.y};return}so={x:g-pn.x,y:E-pn.y},De&&(document.documentElement.style.overscrollBehavior="none",De.style.transform=`translate(${so.x}px, ${so.y}px)`)}function u(){pn={x:0,y:0},De.style.removeProperty("cursor"),document.documentElement.style.removeProperty("overscroll-behavior"),De?.removeEventListener("mousemove",l),De?.removeEventListener("touchmove",l)}}function Bc(e){for(let t of document.querySelectorAll("#grid-layout button"))t.classList.toggle("selected",t.dataset.layout===e)}function io(e){let t=document.documentElement?.style.getPropertyValue("--grid")||"",o=at(t);if(o.length===0)return;let n=!1,s=!1,i=!1,r=!1,a=bt(o,e),c=Jn(Ae(o)).length-1,l=o[0].length-1;for(let[u,d]of a)if(d===0&&(n=!0),u===0&&(i=!0),u===l&&(r=!0),d===c&&(s=!0),d===o.length-1){let h=o.at(d)?.filter(g=>g!==".");new Set(h).size===1&&(s=!0)}for(let u of document.querySelectorAll("#grid-mover button")){let d=Number.parseInt(u.dataset.col||"0"),h=Number.parseInt(u.dataset.row||"0"),g=!1;h===-1&&(g=n),h===1&&(g=s),d===-1&&(g=i),d===1&&(g=r),_n(u,g)}}function Wi(e){let t=document.documentElement?.style.getPropertyValue("--grid")||"",o=at(t);if(o.length===0)return;let n=(u,d)=>{let h=document.querySelector(`#grid-span-${u}s`),g=document.querySelector(`#grid-span-${u==="col"?"rows":"cols"}`);_n(g,d),h?.classList.toggle("selected",d)},[s,i]=bt(o,e)[0],r=o.map(u=>u[s]),a=[...o[i]],c=Qn(r,e),l=Qn(a,e);n("col",c),n("row",l)}function hs(e){let{box:t,text:o}=e??{box:"",text:""},n=document.querySelectorAll("#box-alignment-mover button"),s=document.querySelectorAll("#text-alignment-mover button");for(let i of n)i.classList.toggle("selected",i.dataset.align===(t||"center"));for(let i of s)i.classList.toggle("selected",i.dataset.align===(o||"center"))}function Ac(){let e=document.getElementById("b_resetlayout"),t=!!e.dataset.confirm;return clearTimeout(_c),t===!1?(e.textContent=L("Are you sure?"),e.dataset.confirm="true",_c=setTimeout(()=>{e.textContent=L("Reset layout"),e.dataset.confirm=""},1e3)):(e.textContent=L("Reset layout"),e.dataset.confirm=""),t}function zi(e){e!=="single"?document.getElementById("grid-spanner-container")?.classList.add("active"):document.getElementById("grid-spanner-container")?.classList.remove("active")}var Ui=document.querySelector("#interface"),ee;function te(e,t){if(!(e||t)){Fe({reset:!0});return}if(t){Fe(t);return}if(e){let{grid:o,items:n}=Be(e);dn(n),vt(Ae(o)),R(()=>{Cc(),zi(e.selection)})}}async function Fe(e){let t=await y.sync.get();t.move||(t.move=structuredClone(H.move)),e.grid&&af(t.move,e.grid),e.span&&mf(t.move,e.span),e.layout&&cf(t,e.layout),e.reset&&lf(t),e.widget&&Mc(t,e.widget),e.select&&uf(t.move,e.select),e.box!==void 0&&qc(t.move,e.box,"box"),e.text!==void 0&&qc(t.move,e.text,"text"),e.toggle!==void 0&&df(t,e.toggle),e.overlay!==void 0&&ff(t.move,e.overlay)}function af(e,t){if(!ee)return;let o=Number.parseInt(t?.y||"0"),n=Number.parseInt(t?.x||"0"),s=Be(e),i=bt(s.grid,ee),r=[],a=s.grid;i.some(([l])=>a[l+o]===void 0)&&(e.selection==="single"&&a.push(["."]),e.selection==="double"&&a.push([".","."]),e.selection==="triple"&&a.push([".",".","."]));for(let[l,u]of i){let d=a[u+o][l+n];d!=="."&&r.push(d)}for(let l of r)bt(a,l).length>1&&(a=Hi(a,l,{remove:!0}));for(let[l,u]of i){let d=Math.min(Math.max(u+o,0),a.length-1),h=Math.min(Math.max(l+n,0),a[0].length-1),g=a[u][l];a[u][l]=a[d][h],a[d][h]=g}for(let l=0;l<a.length;l++)Ec(a,l)&&a.splice(l,1);s.grid=a,e.layouts[e.selection]=s,y.sync.set({move:e}),vt(a),io(ee)}function qc(e,t,o){if(!ee)return;let n=Be(e),s=n.items[ee]??{box:"",text:""};o==="box"&&(s.box=t),o==="text"&&(s.text=t),n.items[ee]=s,e.layouts[e.selection]=n,y.sync.set({move:e}),hs(s),Fi(ee,s)}function cf(e,t){if(t===e.move.selection)return;(t==="single"||t==="double"||t==="triple")&&(e.move.selection=t);let o=Be(e),n=Jn(Ae(o.grid)),s=[["time",n.includes("time")],["main",n.includes("main")],["notes",n.includes("notes")],["quotes",n.includes("quotes")],["pomodoro",n.includes("pomodoro")],["searchbar",n.includes("searchbar")],["quicklinks",n.includes("quicklinks")]],i=fs(s,e);y.sync.set(i);let r=Pe();r.first(()=>{mn("out")}),r.after(()=>{let a=Be(i);dn(a.items),vt(a.grid),Bc(i.move.selection),zi(i.move.selection),Dt(),Ni(s),ji(s),ee&&(io(ee),hs(a.items[ee]))}),r.finally(()=>{mn("in")}),r.transition(200)}function lf(e){let t=Di(e),o="";if(Ac()!==!1){for(let n of t)o=un(o,n,e.move.selection);e.move.layouts[e.move.selection]={grid:at(o),items:{}},y.sync.set(e),Dt(),vt(o),dn({quicklinks:void 0,main:void 0,time:void 0,notes:void 0,searchbar:void 0,quotes:void 0,pomodoro:void 0})}}function uf(e,t){Dt(),ms()&&t&&(ee=t,hs(Be(e).items[ee]),Wi(ee),io(ee),document.getElementById(`ove-overlay-${ee}`)?.classList.add("selected"),document.getElementById("element-mover")?.classList.add("active"))}function df(e,t){let o=document.getElementById("element-mover"),n=document.getElementById("b_editmove"),s=Ui?.classList.contains("move-edit"),i=document.querySelector(".move-overlay")===null;if(!(t??!s))n.textContent=L("Open"),Ui?.classList.remove("move-edit"),o.classList.add("hidden"),Zn();else if(i){n.textContent=L("Close"),Ui?.classList.add("move-edit"),o.classList.remove("hidden");for(let a of Di(e))Xn(a)}o?.classList.remove("active"),Dt()}function mf(e,t){if(!ee)return;let o=Be(e),n=Hi(o.grid,ee,{toggle:t});e.layouts[e.selection]={items:o.items,grid:n},y.sync.set({move:e}),vt(n),io(ee),Wi(ee)}function ff(e,t){let o=document.getElementById("interface")?.classList?.contains("move-edit"),n=document.querySelector(".move-overlay");if(!o&&t===!1){Zn();return}if(!n){let s=Be(e),i=Ae(s.grid),r=Jn(i);for(let a of r)Xn(a)}}async function Ot(e,t){if(e??={},t?.isEvent){let n={...(await y.sync.get("hide")).hide,...e};y.sync.set({hide:n})}for(let[o,n]of Object.entries(e))for(let s of document.querySelectorAll(`[data-hide="${o}"]`))s?.classList.toggle("he_hidden",n)}async function Pc(e){try{let t=new WebSocket(`wss://services.bonjourr.fr/${e}`);if(await new Promise(n=>{t.onopen=()=>n(!0),t.onerror=()=>n(!1),t.onclose=()=>n(!1)}))return t}catch{}}async function hn(e){try{return await fetch(`https://services.bonjourr.fr${e}`)}catch{}}function $i(e){return(e<10?"0":"")+e.toString()}function Hc(e){return["none","number","roman","marks","swiss","braun"].includes(e??"")}function Dc(e){return["modern","swiss","classic","braun","apple"].includes(e??"")}function Fc(e){return["round","square","rectangle"].includes(e??"")}function Oc(e=""){return["auto","eu","us","cn"].includes(e)}function Rc(e){return["top-left","top-right","bottom-left","bottom-right"].includes(e??"")}function Gi(){let e=document.querySelectorAll(".worldclocks-item"),t=document.querySelectorAll(".worldclocks-item input"),o=!1;e.forEach((n,s)=>{let i=!!t[s]?.value,r=!!t[s-1]?.value;n?.classList.toggle("shown",s===0||i||r),!o&&i&&(o=!0)})}function Vi(e){let t=document.getElementById("timezone_options"),o=e.clock.worldclocks&&!!e?.worldclocks[0]?.region;t?.classList.toggle("shown",!o)}var gf=Math.random()>.8?1:0;function yn({mode:e,name:t,custom:o}){let n=Y(),s=document.getElementById("greetings"),i=document.getElementById("greeting"),r=document.getElementById("greeting-name"),a=gf,c=n.getHours(),l;if(c<3?l="evening":c<5?l="night":c<12?l="morning":c<18?l="afternoon":l="evening",e==="custom"&&o&&o[l]){let u=t?o[l].replace("$name",t):o[l];s.style.textTransform="none",i.textContent=u,r.textContent=""}else{let d={morning:"Good morning",afternoon:"Good afternoon",evening:"Good evening",night:["Good night","Sweet dreams"][a]}[l];s.style.textTransform=t||a&&l==="night"?"none":"capitalize",i.textContent=L(d)+(t?", ":""),r.textContent=t??""}}function ye(e){return Math.floor(e)}function Nc(e,t,o){let n=ye((14-t)/12),s=o+4800-n,i=t+12*n-3,r=e+ye((153*i+2)/5)+365*s+ye(s/4)-ye(s/100)+ye(s/400)-32045;return r<2299161&&(r=e+ye((153*i+2)/5)+365*s+ye(s/4)-32083),r}function pf(e){let t,o=e/1236.85,n=o*o,s=n*o,i=Math.PI/180,r=241502075933e-5+29.53058868*e+1178e-7*n-155e-9*s;r+=33e-5*Math.sin((166.56+132.87*o-.009173*n)*i);let a=359.2242+29.10535608*e-333e-7*n-347e-8*s,c=306.0253+385.81691806*e+.0107306*n+1236e-8*s,l=21.2964+390.67050646*e-.0016528*n-239e-8*s,u=(.1734-393e-6*o)*Math.sin(a*i)+.0021*Math.sin(2*i*a);return u=u-.4068*Math.sin(c*i)+.0161*Math.sin(i*2*c),u-=4e-4*Math.sin(i*3*c),u=u+.0104*Math.sin(i*2*l)-.0051*Math.sin(i*(a+c)),u=u-.0074*Math.sin(i*(a-c))+4e-4*Math.sin(i*(2*l+a)),u=u-4e-4*Math.sin(i*(2*l-a))-6e-4*Math.sin(i*(2*l+c)),u=u+.001*Math.sin(i*(2*l-c))+5e-4*Math.sin(i*(2*c+a)),o<-11?t=.001+839e-6*o+2261e-7*n-845e-8*s-81e-9*o*s:t=-278e-6+265e-6*o+262e-6*n,r+u-t}function hf(e){let t=(e-2451545)/36525,o=t*t,n=Math.PI/180,s=357.5291+35999.0503*t-1559e-7*o-48e-8*t*o,i=280.46645+36000.76983*t+3032e-7*o,r=(1.9146-.004817*t-14e-6*o)*Math.sin(n*s);r=r+(.019993-101e-6*t)*Math.sin(n*2*s)+29e-5*Math.sin(n*3*s);let a=i+r;return a*=n,a-=Math.PI*2*ye(a/(Math.PI*2)),a}function Yi(e,t){return ye(hf(e-.5-t/24)/Math.PI*6)}function bn(e,t){return ye(pf(e)+.5+t/24)}function Ki(e,t){let o=Nc(31,12,e)-2415021,n=ye(o/29.530588853),s=bn(n,t);return Yi(s,t)>=9&&(s=bn(n-1,t)),s}function yf(e,t){let o=ye((e-2415021076998695e-9)/29.530588853+.5),n=0,s=1,i=Yi(bn(o+s,t),t);do n=i,s++,i=Yi(bn(o+s,t),t);while(i!==n&&s<14);return s-1}function bf(e,t,o,n){let s=Nc(e,t,o),i=ye((s-2415021076998695e-9)/29.530588853),r=bn(i+1,n);r>s&&(r=bn(i,n));let a=Ki(o,n),c=a,l;a>=r?(l=o,a=Ki(o-1,n)):(l=o+1,c=Ki(o+1,n));let u=s-r+1,d=ye((r-a)/29),h=0,g=d+11;if(c-a>365){let E=yf(a,n);d>=E&&(g=d+10,d===E&&(h=1))}return g>12&&(g-=12),g>=11&&d<4&&(l-=1),[u,g,l,h]}function jc(e){let t=["Gi\xE1p","\u1EA4t","B\xEDnh","\u0110inh","M\u1EADu","K\u1EF7","Canh","T\xE2n","Nh\xE2m","Qu\xFD"],o=["T\xFD","S\u1EEDu","D\u1EA7n","M\xE3o","Th\xECn","T\u1EF5","Ng\u1ECD","M\xF9i","Th\xE2n","D\u1EADu","Tu\u1EA5t","H\u1EE3i"],n=bf(e.getDate(),e.getMonth()+1,e.getFullYear(),7),s=`${t[(n[2]+6)%10]} ${o[(n[2]+8)%12]}`,i=n[3]?" (nhu\u1EADn)":"";return`\xC2m l\u1ECBch: ${n[0]} th\xE1ng ${n[1]}${i} n\u0103m ${s}`}function Wc(e,t,o,n){let s=e.querySelector(".clock-date"),i=e.querySelector(".clock-date-aa"),r=e.querySelector(".clock-date-bb"),a=e.querySelector(".clock-date-cc"),c=e.querySelector(".clock-date-secondary"),l=G().replaceAll("_","-"),u=new Intl.DateTimeFormat(l,{day:"numeric"}).format(t),d=new Intl.DateTimeFormat(l,{month:"long"}).format(t),h=new Intl.DateTimeFormat(l,{weekday:"long"}).format(t);if(s.classList.remove("eu","us","cn"),s.classList.add(o),o==="auto"){let g=new Intl.DateTimeFormat(l,{weekday:"long",month:"long",day:"numeric"});i.textContent=g.format(t),r.textContent="",a.textContent=""}o==="eu"&&(i.textContent=h,r.textContent=u,a.textContent=d),o==="us"&&(i.textContent=h,r.textContent=d,a.textContent=u),o==="cn"&&(i.textContent=d,r.textContent=u,a.textContent=h),l==="vi"&&(n==="auto"||n==="Asia/Ho_Chi_Minh")?c.textContent=jc(t):c.textContent=""}var zc;function Qi(e){let{clock:t,world:o,dateformat:n,greetings:s}=e;document.getElementById("time")?.classList.toggle("is-analog",t.analog),document.getElementById("time")?.classList.toggle("seconds",t.seconds),document.querySelectorAll(".clock-wrapper").forEach((a,c)=>{c>0&&a.remove()});let i=[];t.worldclocks&&i.push(...o.filter(({region:a})=>a)),i.length===0&&i.push({region:"",timezone:t.timezone}),wr(i[0].timezone),r(!0),clearInterval(zc),zc=setInterval(r,1e3);function r(a){for(let c=0;c<i.length;c++){let{region:l,timezone:u}=i[c],d=vf(c),h=d.querySelector(".clock-region"),g=Y(u),E=g.getMinutes()===0;t.analog?wf(d,t,u):kf(d,t,u),(E||a)&&Wc(d,g,n,u),h&&(h.textContent=l)}yn(s)}}function vf(e){let t=document.getElementById("time-container"),o=document.querySelector(`.clock-wrapper[data-index="${e}"]`);if(o)return o;let s=document.getElementById("clock-wrapper")?.cloneNode(!0);return s.removeAttribute("id"),s.dataset.index=e.toString(),t?.appendChild(s),s}function kf(e,t,o){let n=Y(o),s=e.querySelector(".digital"),i=e.querySelector(".digital-hh"),r=e.querySelector(".digital-mm"),a=e.querySelector(".digital-ss"),c=e.querySelector(".digital-ampm"),l=$i(n.getMinutes()),u=$i(n.getSeconds()),d=t.ampm?n.getHours()%12:n.getHours();s&&(t.ampmlabel?s.dataset.ampmLabel="":delete s.dataset.ampmLabel,t.ampm?s.dataset.ampm=n.getHours()<12?"am":"pm":delete s.dataset.ampm,t.ampm&&d===0&&(d=12),s.classList.toggle("zero",!t.ampm&&d<10),i.textContent=d.toString(),r.textContent=l.toString(),a.textContent=u.toString(),t.ampm&&(t.ampmposition?s.dataset.ampmposition=t.ampmposition:s.dataset.ampmposition="top-left",t.ampmposition==="top-right"||t.ampmposition==="bottom-right"?c&&s.lastElementChild!==c&&s.insertBefore(c,s.lastElementChild):(t.ampmposition==="top-left"||t.ampmposition==="bottom-left")&&c&&s.firstElementChild!==c&&s.insertBefore(c,s.firstElementChild)))}function wf(e,t,o){let n=Y(o),s=((n.getMinutes()+n.getSeconds()/60)*6).toFixed(1),i=((n.getHours()%12+n.getMinutes()/60)*30).toFixed(1),r=(n.getSeconds()*6).toFixed(1);e.querySelector(".analog-hours")?.style.setProperty("--deg",`${i}deg`),e.querySelector(".analog-minutes")?.style.setProperty("--deg",`${s}deg`),t.seconds&&e.querySelector(".analog-seconds")?.style.setProperty("--deg",`${r}deg`)}var Uc={face:"none",hands:"modern",shape:"round",border:"#ffff",background:"#fff2"},Ef=/zh-CN|zh-HK|ja/,Lf=["Europe/Paris","America/Sao_Paulo","America/Los_Angeles","Asia/Tokyo","Asia/Kolkata"],Sf=["Paris","New York","Tokyo","Lisbon","Los Angeles"];function P(e,t){if(t){Tf(t);return}let o=e?.clock??{...H.clock},n=e?.worldclocks??{...H.worldclocks},s=e?.dateformat||"eu",i={name:e?.greeting||"",mode:e?.greetingsmode||"auto",custom:e?.greetingscustom};try{Qi({clock:o,world:n,greetings:i,dateformat:s}),Gc(e?.greetingsize),Ji(e?.analogstyle),$c(o.size),_e("clock"),R(Gi)}catch(r){console.info(r)}}async function Tf(e){let t=await y.sync.get(),o=t.analogstyle??structuredClone(Uc);if(e.analog!==void 0&&(document.getElementById("analog_options")?.classList.toggle("shown",e.analog),document.getElementById("digital_options")?.classList.toggle("shown",!e.analog)),Oc(e.dateformat)&&(t.dateformat=e.dateformat,y.sync.set({dateformat:e.dateformat})),e.greeting!==void 0&&(t.greeting=N(e.greeting,64),yn({mode:t.greetingsmode,name:t.greeting,custom:t.greetingscustom}),y.sync.set({greeting:t.greeting})),e.greetingsize!==void 0&&(Gc(e.greetingsize),y.sync.set({greetingsize:e.greetingsize})),e.greetingsmode!==void 0){let n=document.getElementById("greetingscustom_options"),s=e.greetingsmode;t.greetingsmode=s,y.sync.set({greetingsmode:s}),n?.classList.toggle("shown",s==="custom"),yn({mode:s,name:t.greeting,custom:t.greetingscustom})}if(e.greetingscustom!==void 0){let n={...t.greetingscustom,...e.greetingscustom};t.greetingscustom=n,y.sync.set({greetingscustom:n}),yn({mode:t.greetingsmode,name:t.greeting,custom:n})}if(Dc(e.hands)&&(o.hands=e.hands),Fc(e.shape)&&(o.shape=e.shape),Hc(e.face)&&(o.face=e.face),e.background||e.border){let n=e.background?"background":"border";o[n]=Yt(`#analog-${n}-range`),Ji(o),e?.[n]==="opacity"&&Q({analogstyle:o}),e?.[n]==="shade"&&y.sync.set({analogstyle:o});return}if(e.worldclocks!==void 0&&(t.clock.worldclocks=e.worldclocks,Vi(t)),e.world!==void 0){let n=e.world.index,s={region:Sf[n],timezone:Lf[n]},i=t.worldclocks?.[n]??s,{region:r,timezone:a}=e.world;r!==void 0&&(i.region=r),a!==void 0&&(i.timezone=a),t.worldclocks[n]=i,Gi(),Vi(t)}t.clock={ampm:e.ampm??t.clock.ampm,size:e.size??t.clock.size,analog:e.analog??t.clock.analog,seconds:e.seconds??t.clock.seconds,timezone:e.timezone??t.clock.timezone,ampmlabel:e.ampmlabel??t.clock.ampmlabel,ampmposition:Rc(e.ampmposition)?e.ampmposition:t.clock.ampmposition,worldclocks:e.worldclocks??t.clock.worldclocks},y.sync.set({clock:t.clock,worldclocks:t.worldclocks,analogstyle:o,dateformat:t.dateformat}),Qi({clock:t.clock,world:t.worldclocks,dateformat:t.dateformat,greetings:{name:t.greeting,mode:t.greetingsmode,custom:t.greetingscustom}}),Ji(t.analogstyle),$c(t.clock.size)}function Ji(e=structuredClone(Uc)){let{face:t,shape:o,hands:n}=e,s=document.getElementById("time"),i=document.querySelectorAll(".analog .analog-face span"),r=Number.parseInt(e.background.slice(4),16),a=e.background?.includes("fff")&&r>7,c=r===0,l=["12","3","6","9"],u=G();u==="am"?l=["\u0533","\u0536","\u0539","\u053A\u0532"]:u==="ar"?l=["\u0663","\u0666","\u0669","\u0661\u0662"]:u==="fa"?l=["\u06F3","\u06F6","\u06F9","\u06F1\u06F2"]:u.match(Ef)&&(l=["\u4E09","\u516D","\u4E5D","\u5341\u4E8C"]),i.forEach((d,h)=>{t==="roman"?d.textContent=["XII","III","VI","IX"][h%4]:t==="marks"?d.textContent=["\u2502","\u2015","\u2502","\u2015"][h%4]:t==="number"?d.textContent=l[h%4]:d.textContent=""}),s.dataset.face=t==="swiss"||t==="braun"?t:"",s.dataset.shape=o||"",s.dataset.hands=n||"",s.classList.toggle("transparent",c),s.classList.toggle("white-opaque",a),s.style.setProperty("--analog-border",e.border),s.style.setProperty("--analog-background",e.background)}function $c(e=5){document.documentElement.style.setProperty("--clock-size",`${e.toString()}em`)}function Gc(e="3"){document.documentElement.style.setProperty("--greeting-size",`${e}em`)}var ro=ne("f_customfont"),Rt=(()=>{let e={fallback:{placeholder:"Arial",weights:["500","600","800"]},windows:{placeholder:"Segoe UI",weights:["300","400","600","700","800"]},android:{placeholder:"Roboto",weights:["100","300","400","500","700","900"]},linux:{placeholder:"Fira Sans",weights:["100","200","300","400","500","600","700","800","900"]},apple:{placeholder:"SF Pro Display",weights:["100","200","300","400","500","600","700","800","900"]}};return fe==="windows"?e.windows:fe==="android"?e.android:fe==="mac"||fe==="ios"?e.apple:e.linux})();function wt(e,t){if(t){Vc(t);return}if(e)try{let o=Cf(e);vn(o),_e("fonts"),R(()=>{Mf(o)})}catch{}}async function Vc({family:e,weight:t,size:o,lang:n,autocomplete:s}){if(s){Qc();return}let i=await y.sync.get("font");if(e!==void 0&&(i.font=await xf(i,e)),t&&(i.font.weight=t||"400",vn(i.font)),o&&(i.font.size=o,Yc(o)),n){If(i.font);return}Q({font:i.font})}async function xf(e,t){let o=document.getElementById("i_weight"),n=t.length===0?"none":ys(t)?"system":"fontsource",s={family:"",system:!0,size:e.font.size,weight:fe==="windows"?"400":"300",weightlist:Rt.weights};switch(n){case"fontsource":{ro.load();let i=await Kc(s,t);if(i&&navigator.onLine&&(s={...s,...i},vn(s),await _f(t),ro.accept("i_customfont",t),P(void 0,{})),s.family==="")return ro.warn(L("Cannot load this font")),e.font;break}case"system":{s.family=t,vn(s),ro.accept("i_customfont",t);break}default:vn(s),ro.accept("i_customfont",Rt.placeholder)}return P(void 0,{}),Jc(s.weightlist),o.value=s.weight,s}async function If(e){if(!e.family||e?.system)return;let o=await Kc(e,e.family);if(o===void 0){Vc({family:""});return}e.family=o.family,e.weight=o.weight,e.weightlist=o.weightlist,vn(e),Qc(!0)}async function Kc(e,t){let o=await(await hn("/fonts"))?.json()??[],n;for(let s of o){let i=s.subsets.includes(bs()),r=s.family.toLowerCase()===t.toLowerCase();i&&r&&(n=s)}if(n)return e.weight="400",e.system=!1,e.family=t,e.weightlist=n.weights.map(s=>s.toString()),e}function vn({family:e,size:t,weight:o,system:n}){let s=Number.parseInt(o)>100?Rt.weights[Rt.weights.indexOf(o)-1]:o,i=bs(),r=e.toLocaleLowerCase().replaceAll(" ","-"),a=document.getElementById("fontface");if(!n){let c=`
-			@font-face {font-family: "${e}";
-				src: url(https://cdn.jsdelivr.net/fontsource/fonts/${r}@latest/latin-${o}-normal.woff2) format('woff2');
+(() => {
+  var __create = Object.create;
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __getProtoOf = Object.getPrototypeOf;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __esm = (fn, res) => function __init() {
+    return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
+  };
+  var __commonJS = (cb, mod2) => function __require() {
+    return mod2 || (0, cb[__getOwnPropNames(cb)[0]])((mod2 = { exports: {} }).exports, mod2), mod2.exports;
+  };
+  var __export = (target, all) => {
+    for (var name in all)
+      __defProp(target, name, { get: all[name], enumerable: true });
+  };
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toESM = (mod2, isNodeMode, target) => (target = mod2 != null ? __create(__getProtoOf(mod2)) : {}, __copyProps(
+    // If the importer is in node compatibility mode or this is not an ESM
+    // file that has been converted to a CommonJS file using a Babel-
+    // compatible transform (i.e. "__esModule" has not been set), then set
+    // "default" to the CommonJS "module.exports" for node compatibility.
+    isNodeMode || !mod2 || !mod2.__esModule ? __defProp(target, "default", { value: mod2, enumerable: true }) : target,
+    mod2
+  ));
+
+  // node_modules/.deno/clickdown@1.3.4/node_modules/clickdown/dist/index.js
+  var require_dist = __commonJS({
+    "node_modules/.deno/clickdown@1.3.4/node_modules/clickdown/dist/index.js"(exports, module) {
+      var __defProp2 = Object.defineProperty;
+      var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;
+      var __getOwnPropNames2 = Object.getOwnPropertyNames;
+      var __hasOwnProp2 = Object.prototype.hasOwnProperty;
+      var __export2 = (target, all) => {
+        for (var name in all)
+          __defProp2(target, name, { get: all[name], enumerable: true });
+      };
+      var __copyProps2 = (to, from, except, desc) => {
+        if (from && typeof from === "object" || typeof from === "function") {
+          for (let key of __getOwnPropNames2(from))
+            if (!__hasOwnProp2.call(to, key) && key !== except)
+              __defProp2(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc2(from, key)) || desc.enumerable });
+        }
+        return to;
+      };
+      var __toCommonJS = (mod2) => __copyProps2(__defProp2({}, "__esModule", { value: true }), mod2);
+      var index_exports = {};
+      __export2(index_exports, {
+        onclickdown: () => onclickdown8
+      });
+      module.exports = __toCommonJS(index_exports);
+      function onclickdown8(target, callback, options) {
+        if (!target) {
+          throw new Error("Target is undefined");
+        }
+        const isCheckbox = target.tagName === "INPUT" && target.getAttribute("type") === "checkbox";
+        const isLink2 = target.tagName === "A";
+        let isFast = false;
+        target == null ? void 0 : target.addEventListener("pointerdown", downEvent);
+        target == null ? void 0 : target.addEventListener("keydown", downEvent);
+        target == null ? void 0 : target.addEventListener("click", clickEvent);
+        function downEvent(event) {
+          const isKeydown = event.type === "keydown";
+          const code = (event == null ? void 0 : event.code) ?? "";
+          const target2 = event.target;
+          const tagName = target2.tagName ?? "";
+          if (isKeydown && !code.match(/Space|Enter/)) {
+            return;
+          }
+          if (isLink2 && isKeydown && code === "Space") {
+            return;
+          }
+          if (tagName === "SUMMARY") {
+            const details = target2;
+            details.open = !details.open;
+          }
+          if (isCheckbox) {
+            const checkbox = target2;
+            checkbox.checked = !checkbox.checked;
+          }
+          if (isLink2) {
+            const link = target2;
+            globalThis.window.location.href = link.href;
+          }
+          isFast = true;
+          callback(event, target2);
+        }
+        function clickEvent(event) {
+          const path = event.composedPath();
+          const onChild = path[0] !== target;
+          if (onChild && (options == null ? void 0 : options.propagate) === false) {
+            return;
+          }
+          if (isFast === false) {
+            callback(event, target);
+            return;
+          }
+          isFast = false;
+          event.preventDefault();
+        }
+      }
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/core-DpDyJ-7r.js
+  function Token(type, content, matchedStr, alias) {
+    this.type = type;
+    this.content = content;
+    this.alias = alias;
+    this.length = matchedStr.length;
+  }
+  var plainTextGrammar, rest, tokenize, resolve, languages, tokenizeText, withoutTokenizer, escapeHtml, closingTag, openingTags, closingTags, highlightTokens, stringify, matchGrammar;
+  var init_core_DpDyJ_7r = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/core-DpDyJ-7r.js"() {
+      plainTextGrammar = {};
+      rest = /* @__PURE__ */ Symbol();
+      tokenize = /* @__PURE__ */ Symbol();
+      resolve = (id) => typeof id == "string" ? languages[id] : id;
+      languages = {
+        plain: plainTextGrammar,
+        plaintext: plainTextGrammar,
+        text: plainTextGrammar,
+        txt: plainTextGrammar
+      };
+      tokenizeText = (text, grammar) => (grammar[tokenize] || withoutTokenizer)(text, grammar);
+      withoutTokenizer = (text, grammar) => {
+        var startNode = [text];
+        var restGrammar;
+        var array = [], i = 0;
+        while (restGrammar = resolve(grammar[rest])) {
+          delete grammar[rest];
+          Object.assign(grammar, restGrammar);
+        }
+        matchGrammar(text, grammar, startNode, 0);
+        while (array[i++] = startNode[0], startNode = startNode[1]) ;
+        return array;
+      };
+      escapeHtml = (string2, pattern, replacement) => {
+        return string2.replace(/&/g, "&amp;").replace(pattern, replacement);
+      };
+      closingTag = "</span>";
+      openingTags = "";
+      closingTags = "";
+      highlightTokens = (tokens) => {
+        var str = "", token, i = 0;
+        while (token = tokens[i++]) str += stringify(token);
+        return str;
+      };
+      stringify = (token) => {
+        if (token instanceof Token) {
+          var { type, alias, content } = token;
+          var prevOpening = openingTags;
+          var prevClosing = closingTags;
+          var opening = `<span class="token ${type + (alias ? " " + alias : "") + (type == "keyword" && typeof content == "string" ? " keyword-" + content : "")}">`;
+          closingTags += closingTag;
+          openingTags += opening;
+          var contentStr = stringify(content);
+          openingTags = prevOpening;
+          closingTags = prevClosing;
+          return opening + contentStr + closingTag;
+        }
+        if (typeof token != "string") return highlightTokens(token);
+        token = escapeHtml(token, /</g, "&lt;");
+        if (closingTags && token.includes("\n")) return token.replace(/\n/g, closingTags + "\n" + openingTags);
+        return token;
+      };
+      matchGrammar = (text, grammar, startNode, startPos, rematch) => {
+        for (var token in grammar) if (grammar[token]) for (var j = 0, p = grammar[token], patternObj, patterns = Array.isArray(p) ? p : [p]; patternObj = patterns[j]; j++) {
+          if (rematch && rematch[0] == token && rematch[1] == j) return;
+          var pattern = patternObj.pattern || patternObj;
+          var inside = resolve(patternObj.inside);
+          var lookbehind = patternObj.lookbehind;
+          var greedy = pattern.global;
+          var alias = patternObj.alias;
+          for (var currentNode = startNode, pos = startPos; currentNode && (!rematch || pos < rematch[2]); pos += currentNode[0].length, currentNode = currentNode[1]) {
+            var str = currentNode[0];
+            var removeCount = 0;
+            var match;
+            if (str instanceof Token) continue;
+            pattern.lastIndex = greedy ? pos : 0;
+            match = pattern.exec(greedy ? text : str);
+            if (!match && greedy) break;
+            if (!(match && match[0])) continue;
+            var lookbehindLength = lookbehind && match[1] ? match[1].length : 0;
+            var from = match.index + lookbehindLength;
+            var matchStr = match[0].slice(lookbehindLength);
+            var to = from + matchStr.length;
+            var k, p;
+            if (greedy) {
+              for (; p = pos + currentNode[0].length, from >= p; currentNode = currentNode[1], pos = p) ;
+              if (currentNode[0] instanceof Token) continue;
+              for (k = currentNode, p = pos; (p += k[0].length) < to; k = k[1], removeCount++) ;
+              str = text.slice(pos, p);
+              from -= pos;
+              to -= pos;
+            }
+            var after = str.slice(to);
+            var reach = pos + str.length;
+            var newToken = new Token(token, inside ? tokenizeText(matchStr, inside) : matchStr, matchStr, alias);
+            var next = currentNode, i = 0;
+            var nestedRematch;
+            while (next = next[1], i++ < removeCount) ;
+            if (after) if (!next || next[0] instanceof Token) next = [after, next];
+            else next[0] = after + next[0];
+            pos += from;
+            currentNode[0] = from ? str.slice(0, from) : newToken;
+            if (from) currentNode = currentNode[1] = [newToken, next];
+            else currentNode[1] = next;
+            if (removeCount) {
+              matchGrammar(text, grammar, currentNode, pos, nestedRematch = [
+                token,
+                j,
+                reach
+              ]);
+              reach = nestedRematch[2];
+            }
+            if (rematch && reach > rematch[2]) rematch[2] = reach;
+          }
+        }
+      };
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/core-fngiDtt5.js
+  var createEditor, doc, templateEl, createTemplate, addListener, getElement, numLines, languageMap, editorTemplate, preventDefault, selectionChange;
+  var init_core_fngiDtt5 = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/core-fngiDtt5.js"() {
+      init_core_DpDyJ_7r();
+      createEditor = (container2, options, ...extensions) => {
+        let language;
+        let prevLines = [];
+        let activeLine;
+        let value = "";
+        let activeLineNumber;
+        let focused = false;
+        let handleSelectionChange = true;
+        let tokens = [];
+        let readOnly;
+        let lineCount = 0;
+        const scrollContainer = editorTemplate();
+        const wrapper = scrollContainer.firstChild;
+        const lines = wrapper.children;
+        const overlays = lines[0];
+        const textarea = overlays.firstChild;
+        const currentOptions = {
+          language: "text",
+          value
+        };
+        const currentExtensions = new Set(extensions);
+        const listeners = {};
+        const setOptions = (options2) => {
+          Object.assign(currentOptions, options2);
+          let isNewVal = value != (value = options2.value ?? value);
+          let isNewLang = language != (language = currentOptions.language);
+          readOnly = !!currentOptions.readOnly;
+          scrollContainer.style.tabSize = currentOptions.tabSize || 2;
+          textarea.inputMode = readOnly ? "none" : "";
+          textarea.setAttribute("aria-readonly", readOnly);
+          updateClassName();
+          updateExtensions();
+          if (isNewVal) {
+            if (!focused) textarea.remove();
+            textarea.value = value;
+            textarea.selectionEnd = 0;
+            if (!focused) overlays.prepend(textarea);
+          }
+          if (isNewVal || isNewLang) update();
+        };
+        const update = () => {
+          tokens = tokenizeText(value = textarea.value, languages[language] || {});
+          dispatchEvent("tokenize", tokens, language, value);
+          let newLines = highlightTokens(tokens).split("\n");
+          let start = 0;
+          let end2 = lineCount;
+          let end1 = lineCount = newLines.length;
+          while (newLines[start] == prevLines[start] && start < end1) ++start;
+          while (end1 && newLines[--end1] == prevLines[--end2]) ;
+          if (start == end1 && start == end2) lines[start + 1].innerHTML = newLines[start] + "\n";
+          else {
+            let insertStart = end2 < start ? end2 : start - 1;
+            let i = insertStart;
+            let newHTML = "";
+            while (i < end1) newHTML += `<div class=pce-line aria-hidden=true>${newLines[++i]}
+</div>`;
+            for (i = end1 < start ? end1 : start - 1; i < end2; i++) lines[start + 1].remove();
+            if (newHTML) lines[insertStart + 1].insertAdjacentHTML("afterend", newHTML);
+            scrollContainer.style.setProperty("--number-width", (0 | Math.log10(lineCount)) + 1 + ".001ch");
+          }
+          dispatchEvent("update", value);
+          dispatchSelection(true);
+          if (handleSelectionChange) setTimeout(setTimeout, 0, () => handleSelectionChange = true);
+          prevLines = newLines;
+          handleSelectionChange = false;
+        };
+        const updateExtensions = (newExtensions) => {
+          (newExtensions || currentExtensions).forEach((extension) => {
+            if (typeof extension == "object") {
+              extension.update(self2, currentOptions);
+              if (newExtensions) currentExtensions.add(extension);
+            } else {
+              extension(self2, currentOptions);
+              if (!newExtensions) currentExtensions.delete(extension);
+            }
+          });
+        };
+        const updateClassName = ([start, end] = getInputSelection()) => {
+          scrollContainer.className = `prism-code-editor language-${language}${currentOptions.lineNumbers == false ? "" : " show-line-numbers"} pce-${currentOptions.wordWrap ? "" : "no"}wrap${currentOptions.rtl ? " pce-rtl" : ""} pce-${start < end ? "has" : "no"}-selection${focused ? " pce-focus" : ""}${readOnly ? " pce-readonly" : ""}${currentOptions.class ? " " + currentOptions.class : ""}`;
+        };
+        const getInputSelection = () => [
+          textarea.selectionStart,
+          textarea.selectionEnd,
+          textarea.selectionDirection
+        ];
+        const keyCommandMap = { Escape() {
+          textarea.blur();
+        } };
+        const inputCommandMap = {};
+        const dispatchEvent = (name, ...args) => {
+          listeners[name]?.forEach((handler) => handler.apply(self2, args));
+          currentOptions["on" + name[0].toUpperCase() + name.slice(1)]?.(...args, self2);
+        };
+        const dispatchSelection = (force) => {
+          if (force || handleSelectionChange) {
+            const selection = getInputSelection();
+            const newLine = lines[activeLineNumber = numLines(value, 0, selection[selection[2] < "f" ? 0 : 1])];
+            if (newLine != activeLine) {
+              activeLine?.classList.remove("active-line");
+              newLine.classList.add("active-line");
+              activeLine = newLine;
+            }
+            updateClassName(selection);
+            dispatchEvent("selectionChange", selection, value);
+          }
+        };
+        const self2 = {
+          container: scrollContainer,
+          wrapper,
+          lines,
+          textarea,
+          get activeLine() {
+            return activeLineNumber;
+          },
+          get value() {
+            return value;
+          },
+          options: currentOptions,
+          get focused() {
+            return focused;
+          },
+          get tokens() {
+            return tokens;
+          },
+          inputCommandMap,
+          keyCommandMap,
+          extensions: {},
+          setOptions,
+          update,
+          getSelection: getInputSelection,
+          addExtensions(...extensions2) {
+            updateExtensions(extensions2);
+          },
+          on: (name, handler) => {
+            (listeners[name] ||= /* @__PURE__ */ new Set()).add(handler);
+            return () => listeners[name].delete(handler);
+          },
+          remove() {
+            scrollContainer.remove();
+          }
+        };
+        addListener(textarea, "keydown", (e) => {
+          keyCommandMap[e.key]?.(e, getInputSelection(), value) && preventDefault(e);
+        });
+        addListener(textarea, "beforeinput", (e) => {
+          if (readOnly || e.inputType == "insertText" && inputCommandMap[e.data]?.(e, getInputSelection(), value)) preventDefault(e);
+        });
+        addListener(textarea, "input", update);
+        addListener(textarea, "blur", () => {
+          selectionChange = null;
+          focused = false;
+          updateClassName();
+        });
+        addListener(textarea, "focus", () => {
+          selectionChange = dispatchSelection;
+          focused = true;
+          updateClassName();
+        });
+        addListener(textarea, "selectionchange", (e) => {
+          dispatchSelection(!e.isTrusted);
+          preventDefault(e);
+        });
+        getElement(container2)?.append(scrollContainer);
+        options && setOptions(options);
+        return self2;
+      };
+      doc = "u" > typeof window ? document : null;
+      templateEl = /* @__PURE__ */ doc?.createElement("div");
+      createTemplate = (html, node) => {
+        if (templateEl) {
+          templateEl.innerHTML = html;
+          node = templateEl.firstChild;
+        }
+        return () => node.cloneNode(true);
+      };
+      addListener = (target, type, listener, options) => target.addEventListener(type, listener, options);
+      getElement = (el) => typeof el == "string" ? doc.querySelector(el) : el;
+      numLines = (str, start = 0, end = Infinity) => {
+        let count = 1;
+        for (; (start = str.indexOf("\n", start) + 1) && start <= end; count++) ;
+        return count;
+      };
+      languageMap = {};
+      editorTemplate = /* @__PURE__ */ createTemplate("<div><div class=pce-wrapper><div class=pce-overlays><textarea class=pce-textarea spellcheck=false autocapitalize=off autocomplete=off>");
+      preventDefault = (e) => {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+      };
+      if (doc) addListener(doc, "selectionchange", () => selectionChange?.());
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/utils-umP5W0OV.js
+  var getLineStart, getLineEnd, addListener2, addTextareaListener, getStyleValue, voidlessLangs, prevSelection, regexEscape, getLineBefore, getLines, getClosestToken, getLanguage, insertText, setSelection, userAgent, isMac, isChrome, isWebKit, getModifierCode;
+  var init_utils_umP5W0OV = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/utils-umP5W0OV.js"() {
+      init_core_DpDyJ_7r();
+      init_core_fngiDtt5();
+      getLineStart = (text, position) => position ? text.lastIndexOf("\n", position - 1) + 1 : 0;
+      getLineEnd = (text, position) => (position = text.indexOf("\n", position)) + 1 ? position : text.length;
+      addListener2 = (element, type, listener, options) => {
+        addListener(element, type, listener, options);
+        return () => element.removeEventListener(type, listener, options);
+      };
+      addTextareaListener = (editor, type, listener, options) => addListener2(editor.textarea, type, listener, options);
+      getStyleValue = (el, prop) => parseFloat(getComputedStyle(el)[prop]);
+      voidlessLangs = new Set("xml,rss,atom,jsx,tsx,xquery,xeora,xeoracube,actionscript".split(","));
+      regexEscape = (str) => str.replace(/[$+?|.^*()[\]{}\\]/g, "\\$&");
+      getLineBefore = (text, position) => text.slice(getLineStart(text, position), position);
+      getLines = (text, start, end = start) => [
+        text.slice(start = getLineStart(text, start), end = getLineEnd(text, end)).split("\n"),
+        start,
+        end
+      ];
+      getClosestToken = (editor, selector, marginLeft = 0, marginRight = marginLeft, position = editor.getSelection()[0]) => {
+        const value = editor.value;
+        const line = editor.lines[numLines(value, 0, position)];
+        const walker = doc.createTreeWalker(line, 5);
+        let node = walker.lastChild();
+        let offset = getLineEnd(value, position) + 1 - position - node.length;
+        while (-offset <= marginRight && (node = walker.previousNode())) {
+          if (node.lastChild) continue;
+          offset -= node.length || 0;
+          if (offset <= marginLeft) {
+            for (; node != line; node = node.parentNode) if (node.matches?.(selector)) return node;
+          }
+        }
+      };
+      getLanguage = (editor, position) => getClosestToken(editor, "[class*=language-]", 0, 0, position)?.className.match(/language-(\S*)/)[1] || editor.options.language;
+      insertText = (editor, text, start, end, newCursorStart, newCursorEnd) => {
+        if (editor.options.readOnly) return;
+        prevSelection = editor.getSelection();
+        end ??= start;
+        let textarea = editor.textarea;
+        let value = editor.value;
+        let avoidBug = isChrome && !value[end ?? prevSelection[1]] && /\n$/.test(text) && /^$|\n$/.test(value);
+        let removeListener;
+        editor.focused || textarea.focus();
+        if (start != null) textarea.setSelectionRange(start, end);
+        if (newCursorStart != null) removeListener = editor.on("update", () => {
+          textarea.setSelectionRange(newCursorStart, newCursorEnd ?? newCursorStart, prevSelection[2]);
+          removeListener();
+        });
+        isWebKit || textarea.dispatchEvent(new InputEvent("beforeinput", { data: text }));
+        if (isChrome || isWebKit) {
+          if (avoidBug) {
+            textarea.selectionEnd--;
+            text = text.slice(0, -1);
+          }
+          if (isWebKit) text += "\n";
+          doc.execCommand(text ? "insertHTML" : "delete", false, escapeHtml(text, /</g, "&lt;"));
+          if (avoidBug) textarea.selectionStart++;
+        } else doc.execCommand(text ? "insertText" : "delete", false, text);
+        prevSelection = 0;
+      };
+      setSelection = (editor, start, end = start, direction) => {
+        let textarea = editor.textarea;
+        let removeHandler = addListener2(textarea, "focus", (e) => {
+          let target = e.relatedTarget;
+          target ? target.focus() : textarea.blur();
+        });
+        textarea.setSelectionRange(start, end, direction);
+        removeHandler();
+        textarea.dispatchEvent(new Event("selectionchange"));
+      };
+      userAgent = doc ? navigator.userAgent : "";
+      isMac = doc ? /Mac|iPhone|iP[ao]d/.test(navigator.platform) : false;
+      isChrome = /Chrome\//.test(userAgent);
+      isWebKit = !isChrome && /AppleWebKit\//.test(userAgent);
+      getModifierCode = (e) => e.altKey + e.ctrlKey * 2 + e.metaKey * 4 + e.shiftKey * 8;
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/utils-DSQ-ulqQ.js
+  var mod;
+  var init_utils_DSQ_ulqQ = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/utils-DSQ-ulqQ.js"() {
+      init_utils_umP5W0OV();
+      mod = isMac ? 4 : 2;
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/commands-HRCav5fj.js
+  var ignoreTab, setIgnoreTab, whitespaceEnd, getIndent, scroll, insertLines, indentSelectedLines, insertTab, insertLineAndIndent, moveSelectedLines, copySelectedLines, scrollByOneLine, deleteSelectedLines, toggleComment, defaultKeymap, defaultCommands, autoCompleteShortcutLabels, modifiers, searchShortcutLabels;
+  var init_commands_HRCav5fj = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/commands-HRCav5fj.js"() {
+      init_core_fngiDtt5();
+      init_utils_umP5W0OV();
+      init_utils_DSQ_ulqQ();
+      ignoreTab = false;
+      setIgnoreTab = (newState) => ignoreTab = newState;
+      whitespaceEnd = (str) => str.search(/\S|$/);
+      getIndent = ({ options: { insertSpaces = true, tabSize } }) => [insertSpaces ? " " : "	", insertSpaces ? tabSize || 2 : 1];
+      scroll = (editor) => !editor.options.readOnly && !editor.extensions.cursor?.scrollIntoView();
+      insertLines = (editor, old, newL, start, end, selectionStart, selectionEnd) => {
+        let newLines = newL.join("\n");
+        if (newLines == old.join("\n")) return;
+        const last = old.length - 1;
+        const lastLine = newL[last];
+        const oldLastLine = old[last];
+        const lastDiff = oldLastLine.length - lastLine.length;
+        const firstDiff = newL[0].length - old[0].length;
+        const firstInsersion = start + whitespaceEnd((firstDiff < 0 ? newL : old)[0]);
+        const lastInsersion = end - oldLastLine.length + whitespaceEnd(lastDiff > 0 ? lastLine : oldLastLine);
+        const offset = start - end + newLines.length + lastDiff;
+        const newCursorStart = firstInsersion > selectionStart ? selectionStart : Math.max(firstInsersion, selectionStart + firstDiff);
+        const newCursorEnd = selectionEnd + start - end + newLines.length;
+        insertText(editor, newLines, start, end, newCursorStart, selectionEnd < lastInsersion ? newCursorEnd + lastDiff : Math.max(lastInsersion + offset, newCursorEnd));
+      };
+      indentSelectedLines = (editor, less) => {
+        const [start, end] = editor.getSelection();
+        const [lines, start1, end1] = getLines(editor.value, start, end);
+        const [indentChar, tabSize] = getIndent(editor);
+        insertLines(editor, lines, lines.map(less ? (str) => str.slice(whitespaceEnd(str) ? tabSize - whitespaceEnd(str) % tabSize : 0) : (str) => str && indentChar.repeat(tabSize - whitespaceEnd(str) % tabSize) + str), start1, end1, start, end);
+        return scroll(editor);
+      };
+      insertTab = (editor, pos) => {
+        const [indentChar, tabSize] = getIndent(editor);
+        insertText(editor, indentChar.repeat(tabSize - (pos - getLineStart(editor.value, pos)) % tabSize));
+        return scroll(editor);
+      };
+      insertLineAndIndent = (editor, eol) => {
+        let selection = editor.getSelection();
+        let value = editor.value;
+        if (eol) selection[0] = selection[1] = getLineEnd(value, selection[1]);
+        const [indentChar, tabSize] = getIndent(editor);
+        const [start, end] = selection;
+        const autoIndent = languageMap[getLanguage(editor, start)]?.autoIndent;
+        const indenationCount = Math.floor(whitespaceEnd(getLineBefore(value, start)) / tabSize) * tabSize;
+        const extraIndent = autoIndent?.[0]?.(selection, value, editor) ? tabSize : 0;
+        const extraLine = autoIndent?.[1]?.(selection, value, editor);
+        const newText = "\n" + indentChar.repeat(indenationCount + extraIndent) + (extraLine ? "\n" + indentChar.repeat(indenationCount) : "");
+        if (newText[1] || value[end]) {
+          insertText(editor, newText, start, end, start + indenationCount + extraIndent + 1);
+          return scroll(editor);
+        }
+      };
+      moveSelectedLines = (editor, up) => {
+        const [start, end] = editor.getSelection();
+        const value = editor.value;
+        const newStart = up ? getLineStart(value, start) - 1 : start;
+        const newEnd = up ? end : value.indexOf("\n", end) + 1;
+        if (newStart > -1 && newEnd > 0) {
+          const [lines, start1, end1] = getLines(value, newStart, newEnd);
+          const line = lines[up ? "shift" : "pop"]();
+          const offset = (line.length + 1) * (up ? -1 : 1);
+          lines[up ? "push" : "unshift"](line);
+          insertText(editor, lines.join("\n"), start1, end1, start + offset, end + offset);
+        }
+        return scroll(editor);
+      };
+      copySelectedLines = (editor, up) => {
+        const [start, end] = editor.getSelection();
+        const value = editor.value;
+        const [lines, start1, end1] = getLines(value, start, end);
+        const str = lines.join("\n");
+        const offset = up ? 0 : str.length + 1;
+        insertText(editor, str + "\n" + str, start1, end1, start + offset, end + offset);
+        return scroll(editor);
+      };
+      scrollByOneLine = (editor, up) => {
+        editor.container.scrollBy(0, getStyleValue(editor.container, "lineHeight") * (up ? -1 : 1));
+        return true;
+      };
+      deleteSelectedLines = (editor) => {
+        const [start, end, dir] = editor.getSelection();
+        const value = editor.value;
+        const [lines, start1, end1] = getLines(value, start, end);
+        const column = dir > "f" ? end - end1 + lines.pop().length : start - start1;
+        const newLineLen = getLineEnd(value, end1 + 1) - end1 - 1;
+        insertText(editor, "", start1 - !!start1, end1 + !start1, start1 + Math.min(column, newLineLen));
+        return scroll(editor);
+      };
+      toggleComment = (editor, isBlock) => {
+        const [start, end] = editor.getSelection();
+        const value = editor.value;
+        const position = isBlock ? start : getLineStart(value, start);
+        const lang = languageMap[getLanguage(editor, position)] || {};
+        const { line, block } = lang.getComments?.(editor, position, value) || lang.comments || {};
+        const [lines, start1, end1] = getLines(value, start, end);
+        const last = lines.length - 1;
+        if (isBlock) {
+          if (block) {
+            const [open, close] = block;
+            const text = value.slice(start, end);
+            const pos = value.slice(0, start).search(regexEscape(open) + " ?$");
+            if (pos + 1 && RegExp("^ ?" + regexEscape(close)).test(value.slice(end))) insertText(editor, text, pos, end + (value[end] == " ") + close.length, pos, pos + end - start);
+            else insertText(editor, `${open} ${text} ${close}`, start, end, start + open.length + 1, end + open.length + 1);
+          }
+        } else if (line) {
+          const escaped = regexEscape(line);
+          const regex = RegExp(`^\\s*(${escaped} ?|$)`);
+          const regex2 = RegExp(escaped + " ?");
+          const allWhiteSpace = !/\S/.test(value.slice(start1, end1));
+          insertLines(editor, lines, lines.map(!allWhiteSpace && lines.every((line2) => regex.test(line2)) ? (str) => str.replace(regex2, "") : (str) => allWhiteSpace || /\S/.test(str) ? str.replace(/(?!\s)/, line + " ") : str), start1, end1, start, end);
+        } else if (block) {
+          const [open, close] = block;
+          const first = lines[0];
+          const insertionPoint = whitespaceEnd(first);
+          const hasComment = first.startsWith(open, insertionPoint) && lines[last].endsWith(close);
+          lines[0] = first.replace(hasComment ? RegExp(regexEscape(open) + " ?") : /(?!\s)/, hasComment ? "" : open + " ");
+          let diff = lines[0].length - first.length;
+          lines[last] = hasComment ? lines[last].replace(RegExp(` ?${regexEscape(close)}$`), "") : lines[last] + " " + close;
+          let newText = lines.join("\n");
+          let firstInsersion = insertionPoint + start1;
+          let newStart = firstInsersion > start ? start : Math.max(start + diff, firstInsersion);
+          let newEnd = firstInsersion > end - (start != end) ? end : Math.min(Math.max(firstInsersion, end + diff), start1 + newText.length);
+          insertText(editor, newText, start1, end1, newStart, Math.max(newStart, newEnd));
+        }
+        return block || line && !isBlock ? scroll(editor) : false;
+      };
+      defaultKeymap = {
+        Tab(editor) {
+          if (!ignoreTab) {
+            const [start, end] = editor.getSelection();
+            return start == end ? insertTab(editor, start) : indentSelectedLines(editor);
+          }
+        },
+        "8+Tab": (editor) => !ignoreTab && indentSelectedLines(editor, true),
+        "1+ArrowDown": (editor) => moveSelectedLines(editor),
+        "1+ArrowUp": (editor) => moveSelectedLines(editor, true),
+        "9+ArrowDown": (editor) => copySelectedLines(editor),
+        "9+ArrowUp": (editor) => copySelectedLines(editor, true),
+        Enter: (editor) => insertLineAndIndent(editor),
+        "8+Enter": (editor) => insertLineAndIndent(editor),
+        "Mod+Enter": (editor) => insertLineAndIndent(editor, true),
+        "Mod+]": (editor) => indentSelectedLines(editor),
+        "Mod+[": (editor) => indentSelectedLines(editor, true),
+        "8+Mod+k": deleteSelectedLines,
+        "Mod+/": (editor) => toggleComment(editor),
+        "9+a": (editor) => toggleComment(editor, true),
+        [isMac ? "10+m" : "2+m"]: () => (ignoreTab = !ignoreTab, true),
+        [`2+${isMac ? "Page" : "Arrow"}Down`]: (editor) => scrollByOneLine(editor),
+        [`2+${isMac ? "Page" : "Arrow"}Up`]: (editor) => scrollByOneLine(editor, true)
+      };
+      defaultCommands = (selfClosePairs = [
+        '""',
+        "''",
+        "``",
+        "()",
+        "[]",
+        "{}"
+      ], selfCloseRegex = /([^$\w'"`]["'`]|.[[({])[.,:;\])}>\s]|.[[({]`/s) => {
+        return (editor, options) => {
+          let prevCopy;
+          const { keyCommandMap, inputCommandMap, getSelection: getSelection2, container: container2 } = editor;
+          const clipboard = navigator.clipboard;
+          const getIndent2 = ({ insertSpaces = true, tabSize } = options) => [insertSpaces ? " " : "	", insertSpaces ? tabSize || 2 : 1];
+          const scroll2 = () => !options.readOnly && !editor.extensions.cursor?.scrollIntoView();
+          const selfClose = ([start, end], [open, close], value, wrapOnly) => (start < end || !wrapOnly && selfCloseRegex.test((value[end - 1] || " ") + open + (value[end] || " "))) && !insertText(editor, open + value.slice(start, end) + close, null, null, start + 1, end + 1);
+          const skipIfEqual = ([start, end], char, value) => start == end && value[end] == char && !setSelection(editor, start + 1);
+          const insertLines2 = (old, newL, start, end, selectionStart, selectionEnd) => {
+            let newLines = newL.join("\n");
+            if (newLines != old.join("\n")) {
+              const last = old.length - 1;
+              const lastLine = newL[last];
+              const oldLastLine = old[last];
+              const lastDiff = oldLastLine.length - lastLine.length;
+              const firstDiff = newL[0].length - old[0].length;
+              const firstInsersion = start + whitespaceEnd((firstDiff < 0 ? newL : old)[0]);
+              const lastInsersion = end - oldLastLine.length + whitespaceEnd(lastDiff > 0 ? lastLine : oldLastLine);
+              const offset = start - end + newLines.length + lastDiff;
+              const newCursorStart = firstInsersion > selectionStart ? selectionStart : Math.max(firstInsersion, selectionStart + firstDiff);
+              const newCursorEnd = selectionEnd + start - end + newLines.length;
+              insertText(editor, newLines, start, end, newCursorStart, selectionEnd < lastInsersion ? newCursorEnd + lastDiff : Math.max(lastInsersion + offset, newCursorEnd));
+            }
+          };
+          const indent = (outdent, lines, start1, end1, start, end, indentChar, tabSize) => {
+            insertLines2(lines, lines.map(outdent ? (str) => str.slice(whitespaceEnd(str) ? tabSize - whitespaceEnd(str) % tabSize : 0) : (str) => str && indentChar.repeat(tabSize - whitespaceEnd(str) % tabSize) + str), start1, end1, start, end);
+          };
+          inputCommandMap["<"] = (_e, selection, value) => selfClose(selection, "<>", value, true);
+          selfClosePairs.forEach(([open, close]) => {
+            const isQuote = open == close;
+            inputCommandMap[open] = (_e, selection, value) => (isQuote && skipIfEqual(selection, close, value) || selfClose(selection, open + close, value)) && scroll2();
+            if (!isQuote) inputCommandMap[close] = (_e, selection, value) => skipIfEqual(selection, close, value) && scroll2();
+          });
+          inputCommandMap[">"] = (e, selection, value) => {
+            const closingTag2 = languageMap[getLanguage(editor)]?.autoCloseTags?.(selection, value, editor);
+            if (closingTag2) {
+              insertText(editor, ">" + closingTag2, null, null, selection[0] + 1);
+              preventDefault(e);
+            }
+          };
+          keyCommandMap.Tab = (e, [start, end], value) => {
+            if (ignoreTab || options.readOnly || getModifierCode(e) & 7) return;
+            const [indentChar, tabSize] = getIndent2();
+            const shiftKey = e.shiftKey;
+            const [lines, start1, end1] = getLines(value, start, end);
+            if (start < end || shiftKey) indent(shiftKey, lines, start1, end1, start, end, indentChar, tabSize);
+            else insertText(editor, indentChar.repeat(tabSize - (start - start1) % tabSize));
+            return scroll2();
+          };
+          keyCommandMap.Enter = (e, selection, value) => {
+            const code = getModifierCode(e) & 7;
+            if (!code || code == mod) {
+              if (code) selection[0] = selection[1] = getLines(value, selection[1])[2];
+              const [indentChar, tabSize] = getIndent2();
+              const [start, end] = selection;
+              const autoIndent = languageMap[getLanguage(editor, start)]?.autoIndent;
+              const indenationCount = Math.floor(whitespaceEnd(getLineBefore(value, start)) / tabSize) * tabSize;
+              const extraIndent = autoIndent?.[0]?.(selection, value, editor) ? tabSize : 0;
+              const extraLine = autoIndent?.[1]?.(selection, value, editor);
+              const newText = "\n" + indentChar.repeat(indenationCount + extraIndent) + (extraLine ? "\n" + indentChar.repeat(indenationCount) : "");
+              if (newText[1] || value[end]) {
+                insertText(editor, newText, start, end, start + indenationCount + extraIndent + 1);
+                return scroll2();
+              }
+            }
+          };
+          keyCommandMap.Backspace = (_e, [start, end], value) => {
+            if (start == end) {
+              const line = getLineBefore(value, start);
+              const tabSize = options.tabSize || 2;
+              const isPair = selfClosePairs.includes(value.slice(start - 1, start + 1));
+              const indenationCount = /[^ ]/.test(line) ? 0 : (line.length - 1) % tabSize + 1;
+              if (isPair || indenationCount > 1) {
+                insertText(editor, "", start - (isPair ? 1 : indenationCount), start + isPair);
+                return scroll2();
+              }
+            }
+          };
+          for (let i = 0; i < 2; i++) keyCommandMap[i ? "ArrowDown" : "ArrowUp"] = (e, [start, end], value) => {
+            const code = getModifierCode(e);
+            if (code == 1) {
+              const newStart = i ? start : getLineStart(value, start) - 1;
+              const newEnd = i ? value.indexOf("\n", end) + 1 : end;
+              if (newStart > -1 && newEnd > 0) {
+                const [lines, start1, end1] = getLines(value, newStart, newEnd);
+                const line = lines[i ? "pop" : "shift"]();
+                const offset = (line.length + 1) * (i ? 1 : -1);
+                lines[i ? "unshift" : "push"](line);
+                insertText(editor, lines.join("\n"), start1, end1, start + offset, end + offset);
+              }
+              return scroll2();
+            } else if (code == 9) {
+              const [lines, start1, end1] = getLines(value, start, end);
+              const str = lines.join("\n");
+              const offset = i ? str.length + 1 : 0;
+              insertText(editor, str + "\n" + str, start1, end1, start + offset, end + offset);
+              return scroll2();
+            } else if (code == 2 && !isMac) {
+              container2.scrollBy(0, getStyleValue(container2, "lineHeight") * (i ? 1 : -1));
+              return true;
+            }
+          };
+          addTextareaListener(editor, "keydown", (e) => {
+            const code = getModifierCode(e);
+            const keyCode = e.keyCode;
+            const [start, end, dir] = getSelection2();
+            if (code == mod && (keyCode == 221 || keyCode == 219)) {
+              indent(keyCode == 219, ...getLines(editor.value, start, end), start, end, ...getIndent2());
+              scroll2();
+              preventDefault(e);
+            } else if (code == (isMac ? 10 : 2) && keyCode == 77) {
+              setIgnoreTab(!ignoreTab);
+              preventDefault(e);
+            } else if (keyCode == 191 && code == mod || keyCode == 65 && code == 9) {
+              const value = editor.value;
+              const isBlock = code == 9;
+              const position = isBlock ? start : getLineStart(value, start);
+              const language = languageMap[getLanguage(editor, position)] || {};
+              const { line, block } = language.getComments?.(editor, position, value) || language.comments || {};
+              const [lines, start1, end1] = getLines(value, start, end);
+              const last = lines.length - 1;
+              if (isBlock) {
+                if (block) {
+                  const [open, close] = block;
+                  const text = value.slice(start, end);
+                  const pos = value.slice(0, start).search(regexEscape(open) + " ?$");
+                  if (pos + 1 && RegExp("^ ?" + regexEscape(close)).test(value.slice(end))) insertText(editor, text, pos, end + (value[end] == " ") + close.length, pos, pos + end - start);
+                  else insertText(editor, `${open} ${text} ${close}`, start, end, start + open.length + 1, end + open.length + 1);
+                  scroll2();
+                  preventDefault(e);
+                }
+              } else if (line) {
+                const escaped = regexEscape(line);
+                const regex = RegExp(`^\\s*(${escaped} ?|$)`);
+                const regex2 = RegExp(escaped + " ?");
+                const allWhiteSpace = !/\S/.test(value.slice(start1, end1));
+                insertLines2(lines, lines.map(!allWhiteSpace && lines.every((line2) => regex.test(line2)) ? (str) => str.replace(regex2, "") : (str) => allWhiteSpace || /\S/.test(str) ? str.replace(/(?!\s)/, line + " ") : str), start1, end1, start, end);
+                scroll2();
+                preventDefault(e);
+              } else if (block) {
+                const [open, close] = block;
+                const first = lines[0];
+                const insertionPoint = whitespaceEnd(first);
+                const hasComment = first.startsWith(open, insertionPoint) && lines[last].endsWith(close);
+                lines[0] = first.replace(hasComment ? RegExp(regexEscape(open) + " ?") : /(?!\s)/, hasComment ? "" : open + " ");
+                let diff = lines[0].length - first.length;
+                lines[last] = hasComment ? lines[last].replace(RegExp(` ?${regexEscape(close)}$`), "") : lines[last] + " " + close;
+                let newText = lines.join("\n");
+                let firstInsersion = insertionPoint + start1;
+                let newStart = firstInsersion > start ? start : Math.max(start + diff, firstInsersion);
+                let newEnd = firstInsersion > end - (start != end) ? end : Math.min(Math.max(firstInsersion, end + diff), start1 + newText.length);
+                insertText(editor, newText, start1, end1, newStart, Math.max(newStart, newEnd));
+                scroll2();
+                preventDefault(e);
+              }
+            } else if (code == 8 + mod && keyCode == 75) {
+              const value = editor.value;
+              const [lines, start1, end1] = getLines(value, start, end);
+              const column = dir > "f" ? end - end1 + lines.pop().length : start - start1;
+              const newLineLen = getLineEnd(value, end1 + 1) - end1 - 1;
+              insertText(editor, "", start1 - !!start1, end1 + !start1, start1 + Math.min(column, newLineLen));
+              scroll2();
+              preventDefault(e);
+            }
+          });
+          [
+            "copy",
+            "cut",
+            "paste"
+          ].forEach((type) => addTextareaListener(editor, type, (e) => {
+            const [start, end] = getSelection2();
+            if (start == end && clipboard) {
+              const [[line], start1, end1] = getLines(editor.value, start, end);
+              if (type == "paste") {
+                if (e.clipboardData.getData("text/plain") == prevCopy) {
+                  insertText(editor, prevCopy + "\n", start1, start1, start + prevCopy.length + 1);
+                  scroll2();
+                  preventDefault(e);
+                }
+              } else {
+                clipboard.writeText(prevCopy = line);
+                if (type == "cut") insertText(editor, "", start1, end1 + 1), scroll2();
+                preventDefault(e);
+              }
+            }
+          }));
+        };
+      };
+      autoCompleteShortcutLabels = [
+        ["2+ ", "Trigger suggestion"],
+        ["mod+i", "Trigger suggestion"],
+        ...isMac ? [["1+Escape", "Trigger suggestion"]] : [],
+        ["2+ ", "Toggle suggestion documentation"],
+        ["mod+i", "Toggle suggestion documentation"],
+        ["Tab", "Insert suggestion"],
+        ["Enter", "Insert suggestion"],
+        ["Escape", "Close completion widget"],
+        ["Escape", "Clear tab stops"],
+        ["Tab", "Select next tab stop"],
+        ["8+Tab", "Select previous tab stop"],
+        ["ArrowUp", "Select previous suggestion"],
+        ["ArrowDown", "Select next suggestion"],
+        ["PageUp", "Select first visible suggestion"],
+        ["PageDown", "Select last visible suggestion"]
+      ];
+      modifiers = isMac ? 5 : 1;
+      searchShortcutLabels = [
+        ["mod+f", "Start search"],
+        ["mod+g", "Find next match"],
+        ["mod+8+g", "Find previous match"],
+        ["f3", "Find next match"],
+        ["8+f3", "Find previous match"],
+        ["Enter", "Select next match"],
+        ["8+Enter", "Select previous match"],
+        ["Escape", "Close search widget"],
+        ["Enter", "Replace match"],
+        [`${isMac ? 4 : 3}+Enter`, "Replace all matches"],
+        [modifiers + "+r", "Toggle regex search"],
+        [modifiers + "+p", "Toggle case preservation"],
+        [modifiers + "+w", "Toggle whole word search"],
+        [modifiers + "+l", "Toggle find in selection"]
+      ];
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/extensions/commands/index.js
+  var init_commands = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/extensions/commands/index.js"() {
+      init_commands_HRCav5fj();
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/index.js
+  var init_dist = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/index.js"() {
+      init_core_fngiDtt5();
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/language-CPVUjid6.js
+  var insertBefore, toString;
+  var init_language_CPVUjid6 = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/language-CPVUjid6.js"() {
+      insertBefore = (grammar, before, insert) => {
+        var temp = {};
+        for (var token in grammar) {
+          temp[token] = grammar[token];
+          delete grammar[token];
+        }
+        for (var token in temp) {
+          if (token == before) Object.assign(grammar, insert);
+          if (!insert.hasOwnProperty(token)) grammar[token] = temp[token];
+        }
+      };
+      toString = {}.toString;
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/prism/languages/css.js
+  var string, stringSrc, atruleInside;
+  var init_css = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/prism/languages/css.js"() {
+      init_core_DpDyJ_7r();
+      string = /"(?:\\[^]|[^\\\n"])*"|'(?:\\[^]|[^\\\n'])*'/g;
+      stringSrc = string.source;
+      atruleInside = {
+        "rule": /^@[\w-]+/,
+        "selector-function-argument": {
+          pattern: /(\bselector\s*\(\s*(?![\s)]))(?:[^()\s]|\s+(?![\s)])|\((?:[^()]|\([^)]*\))*\))+(?=\s*\))/,
+          lookbehind: true,
+          alias: "selector"
+        },
+        "keyword": {
+          pattern: /(^|[^\w-])(?:and|not|only|or)(?![\w-])/,
+          lookbehind: true
+        }
+      };
+      atruleInside[rest] = languages.css = {
+        "comment": /\/\*[^]*?\*\//,
+        "atrule": {
+          pattern: RegExp(`@[\\w-](?:[^\\s;{"']|\\s+(?!\\s)|${stringSrc})*?(?:;|(?=\\s*\\{))`),
+          inside: atruleInside
+        },
+        "url": {
+          pattern: RegExp(`\\burl\\((?:${stringSrc}|(?:[^\\\\
+"')=]|\\\\[^])*)\\)`, "gi"),
+          inside: {
+            "function": /^url/i,
+            "punctuation": /^\(|\)$/,
+            "string": {
+              pattern: /^["'][^]+/,
+              alias: "url"
+            }
+          }
+        },
+        "selector": {
+          pattern: RegExp(`(^|[{}\\s])[^\\s{}](?:[^\\s{};"']|\\s+(?![\\s{])|${stringSrc})*(?=\\s*\\{)`),
+          lookbehind: true
+        },
+        "string": string,
+        "variable": {
+          pattern: /(^|[^-\w\xa0-\uffff])--(?:(?!\s)[-\w\xa0-\uffff])*/,
+          lookbehind: true
+        },
+        "property": {
+          pattern: /(^|[^-\w\xa0-\uffff])(?!\d)(?:(?!\s)[-\w\xa0-\uffff])+(?=\s*:)/,
+          lookbehind: true
+        },
+        "important": /!important\b/i,
+        "function": {
+          pattern: /(^|[^-a-z\d])[-a-z\d]+(?=\()/i,
+          lookbehind: true
+        },
+        "punctuation": /[(){},:;]/
+      };
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/prism/languages/css-extras.js
+  var css;
+  var init_css_extras = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/prism/languages/css-extras.js"() {
+      init_core_DpDyJ_7r();
+      init_language_CPVUjid6();
+      init_css();
+      css = languages.css;
+      css.selector.inside = css["atrule"].inside["selector-function-argument"].inside = {
+        "pseudo-element": /:(?:after|before|first-letter|first-line|selection)|::[-\w]+/,
+        "pseudo-class": /:[-\w]+/,
+        "class": /\.[-\w]+/,
+        "id": /#[-\w]+/,
+        "attribute": {
+          pattern: /\[(?:[^[\]"']|(["'])(?:\\[^]|(?!\1)[^\\\n])*\1)*\]/g,
+          inside: {
+            "punctuation": /^\[|\]$/,
+            "case-sensitivity": {
+              pattern: /(\s)[si]$/i,
+              lookbehind: true,
+              alias: "keyword"
+            },
+            "namespace": {
+              pattern: /^(\s*)(?:(?!\s)[-*\w\xa0-\uffff])*\|(?!=)/,
+              lookbehind: true,
+              inside: { "punctuation": /\|$/ }
+            },
+            "attr-name": {
+              pattern: /^(\s*)(?:(?!\s)[-\w\xa0-\uffff])+/,
+              lookbehind: true
+            },
+            "attr-value": {
+              pattern: /(=\s*)(?:(?!\s)[-\w\xa0-\uffff])+(?=\s*$)|(["'])(?:\\[^]|(?!\2)[^\\\n])*\2/,
+              lookbehind: true
+            },
+            "operator": /[|~*^$]?=/
+          }
+        },
+        "n-th": [{
+          pattern: /(\(\s*)[+-]?\d*[\dn](?:\s*[+-]\s*\d+)?(?=\s*\))/,
+          lookbehind: true,
+          inside: {
+            "number": /[\dn]+/,
+            "operator": /[+-]/
+          }
+        }, {
+          pattern: /(\(\s*)(?:even|odd)(?=\s*\))/i,
+          lookbehind: true
+        }],
+        "combinator": /[>+~]|\|\|/,
+        "punctuation": /[(),]/
+      };
+      insertBefore(css, "function", {
+        "operator": {
+          pattern: /(\s)[/*+-](?!\S)/,
+          lookbehind: true
+        },
+        "hexcode": {
+          pattern: /\B#[a-f\d]{3,8}\b/i,
+          alias: "color"
+        },
+        "entity": /\\[a-f\d]{1,8}/i,
+        "unit": {
+          pattern: /(\b\d+)(?:%|[a-z]+(?![\w-]))/,
+          lookbehind: true
+        },
+        "number": {
+          pattern: /(^|[^\w.-])-?(?:\d+(?:\.\d+)?|\.\d+)/,
+          lookbehind: true
+        }
+      });
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/prism/languages/uri.js
+  var init_uri = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/prism/languages/uri.js"() {
+      init_core_DpDyJ_7r();
+      languages.url = languages.uri = {
+        "scheme": {
+          pattern: /^[a-z][a-z\d+.-]*:/gim,
+          inside: { "scheme-delimiter": /:$/ }
+        },
+        "fragment": {
+          pattern: /#[\w.~!$&'()*,;=%:@/?+-]*/,
+          inside: { "fragment-delimiter": /^#/ }
+        },
+        "query": {
+          pattern: /\?[\w.~!$&'()*,;=%:@/?+-]*/,
+          inside: {
+            "query-delimiter": /^\?/g,
+            "pair-delimiter": /[&;]/,
+            "pair": {
+              pattern: /^[^=][^]*/,
+              inside: {
+                "key": /^[^=]+/,
+                "value": {
+                  pattern: /(^=)[^]+/,
+                  lookbehind: true
+                }
+              }
+            }
+          }
+        },
+        "authority": {
+          pattern: /^\/\/(?:[\w.~!$&'()*,;=%:+-]*@)?(?:\[(?:[a-fA-F\d:.]{2,48}|v[a-fA-F\d]+\.[\w.~!$&'()*,;=+-]+)\]|[\w.~!$&'()*,;=%+-]*)(?::\d*)?/m,
+          inside: {
+            "authority-delimiter": /^\/\//,
+            "user-info-segment": {
+              pattern: /^[\w.~!$&'()*,;=%:+-]*@/,
+              inside: {
+                "user-info-delimiter": /@$/,
+                "user-info": /^[\w.~!$&'()*,;=%:+-]+/
+              }
+            },
+            "port-segment": {
+              pattern: /:\d*$/,
+              inside: {
+                "port-delimiter": /^:/,
+                "port": /^\d+/
+              }
+            },
+            "host": {
+              pattern: /[^]+/,
+              inside: {
+                "ip-literal": {
+                  pattern: /^\[[^]+\]$/,
+                  inside: {
+                    "ip-literal-delimiter": /^\[|\]$/,
+                    "ipv-future": /^v[^]+/,
+                    "ipv6-address": /^[^]+/
+                  }
+                },
+                "ipv4-address": /^(?:(?:[03-9]\d?|[12]\d{0,2})\.){3}(?:[03-9]\d?|[12]\d{0,2})$/
+              }
+            }
+          }
+        },
+        "path": {
+          pattern: /^[\w.~!$&'()*,;=%:@/+-]+/m,
+          inside: { "path-separator": /\// }
+        }
+      };
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/shared-c_zHT_t0.js
+  var isBracketPair, openBracket, testBracketPair, clikeComment, bracketIndenting;
+  var init_shared_c_zHT_t0 = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/shared-c_zHT_t0.js"() {
+      init_utils_umP5W0OV();
+      isBracketPair = /\[]|\(\)|{}/;
+      openBracket = /[([{][^)\]}]*$/;
+      testBracketPair = ([start, end], value) => {
+        return isBracketPair.test(value[start - 1] + value[end]);
+      };
+      clikeComment = {
+        line: "//",
+        block: ["/*", "*/"]
+      };
+      bracketIndenting = (comments = clikeComment, indentPattern = openBracket) => ({
+        comments,
+        autoIndent: [([start], value) => indentPattern.test(getLineBefore(value, start)), testBracketPair]
+      });
+    }
+  });
+
+  // node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/languages/css.js
+  var init_css2 = __esm({
+    "node_modules/.deno/prism-code-editor@5.2.0/node_modules/prism-code-editor/dist/languages/css.js"() {
+      init_core_fngiDtt5();
+      init_shared_c_zHT_t0();
+      languageMap.css = bracketIndenting({ block: ["/*", "*/"] });
+      languageMap.less = languageMap.scss = bracketIndenting();
+      languageMap.sass = { comments: clikeComment };
+    }
+  });
+
+  // src/scripts/features/csseditor.ts
+  var csseditor_exports = {};
+  __export(csseditor_exports, {
+    createBackgroundUrlsEditor: () => createBackgroundUrlsEditor,
+    createCssEditor: () => createCssEditor
+  });
+  function createCssEditor(options) {
+    return createEditor("#css-editor", options, defaultCommands());
+  }
+  function createBackgroundUrlsEditor(options) {
+    return createEditor("#background-urls-editor", options, defaultCommands());
+  }
+  var init_csseditor = __esm({
+    "src/scripts/features/csseditor.ts"() {
+      init_commands();
+      init_dist();
+      init_css_extras();
+      init_uri();
+      init_css2();
+    }
+  });
+
+  // src/scripts/langs.ts
+  var langList = {
+    en: "English",
+    fr: "Fran\xE7ais",
+    de: "Deutsch",
+    it: "Italiano",
+    es: "Espa\xF1ol",
+    hi: "Hindi",
+    ca: "Catal\xE0",
+    "pt-BR": "Portugu\xEAs (Brasil)",
+    "pt-PT": "Portugu\xEAs (Portugal)",
+    nl: "Nederlands",
+    da: "Dansk",
+    sv: "Svenska",
+    nb: "Norsk",
+    is: "\xCDslenska",
+    fi: "suomi",
+    pl: "Polski",
+    cs: "\u010Ce\u0161tina",
+    hr: "Hrvatski",
+    sk: "Slovensk\xFD",
+    hu: "Magyar",
+    ro: "Rom\xE2n\u0103",
+    el: "\u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC",
+    sr: "\u0421\u0440\u043F\u0441\u043A\u0438 (\u045B\u0438\u0440\u0438\u043B\u0438\u0446\u0430)",
+    "sr-YU": "Srpski (latinica)",
+    be: "\u0411\u0435\u043B\u0430\u0440\u0443\u0441\u043A\u0430\u044F",
+    uk: "\u0423\u043A\u0440\u0430\u0457\u043D\u0441\u044C\u043A\u0430",
+    ru: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439",
+    tr: "T\xFCrk\xE7e",
+    he: "\u05E2\u05B4\u05D1\u05E8\u05B4\u05D9\u05EA",
+    hy: "\u0540\u0561\u0575\u0565\u0580\u0565\u0576",
+    ar: "\u0627\u0644\u0639\u0631\u0628\u064A\u0629",
+    az: "Az\u0259rbaycan",
+    uz: "O'zbekcha",
+    fa: "\u0641\u0627\u0631\u0633\u06CC",
+    te: "\u0C24\u0C46\u0C32\u0C41\u0C17\u0C41",
+    id: "Indonesia",
+    vi: "Ti\u1EBFng Vi\u1EC7t",
+    "zh-CN": "\u4E2D\u56FD\u7B80\u4F53\u4E2D\u6587",
+    "zh-HK": "\u9999\u6E2F\u7E41\u9AD4\u4E2D\u6587",
+    "zh-TW": "\u81FA\u7063\u6B63\u9AD4\u4E2D\u6587",
+    "nan-Hant-TW": "\u81FA\u7063\u53F0\u8A9E\uFF08\u6F22\u7F85\uFF09",
+    ko: "\uD55C\uAD6D\uC5B4",
+    ja: "\u65E5\u672C\u8A9E"
+  };
+  var subsets = {
+    el: "greek",
+    ar: "arabic",
+    fa: "arabic",
+    ru: "cyrillic",
+    uk: "cyrillic",
+    sr: "cyrillic",
+    be: "cyrillic",
+    sk: "latin-ext",
+    nb: "latin-ext",
+    is: "latin-ext",
+    hr: "latin-ext",
+    cs: "latin-ext",
+    pl: "latin-ext",
+    ro: "latin-ext",
+    "sr-YU": "latin-ext",
+    tr: "latin-ext",
+    hu: "latin-ext",
+    vi: "latin-ext",
+    az: "latin-ext",
+    uz: "latin-ext",
+    ja: "japanese",
+    hy: "armenian",
+    te: "telugu",
+    he: "hebrew",
+    "zh-CN": "chinese-simplified",
+    "zh-HK": "chinese-traditional",
+    "zh-TW": "chinese-traditional",
+    "nan-Hant-TW": "chinese-traditional",
+    ko: "korean"
+  };
+
+  // src/scripts/defaults.ts
+  var navigator2 = globalThis.navigator;
+  var iosUA = "iPad Simulator|iPhone Simulator|iPod Simulator|iPad|iPhone|iPod".split("|");
+  var mobileUA = "Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini".split("|");
+  var CURRENT_VERSION = "22.2.0";
+  var API_DOMAIN = "https://services.bonjourr.fr";
+  var ENVIRONNEMENT = globalThis.ENV ?? "TEST";
+  var TAB_ID = crypto.randomUUID();
+  var tabsBc = new BroadcastChannel("bonjourr_tabs");
+  var SYSTEM_OS = iosUA.includes(navigator2.platform) || navigator2.userAgent?.includes("Mac") && "ontouchend" in document ? "ios" : navigator2.appVersion?.includes("Macintosh") ? "mac" : navigator2.appVersion?.includes("Windows") ? "windows" : navigator2.userAgent?.toLowerCase()?.includes("android") ? "android" : "unknown";
+  var PLATFORM = globalThis.location?.protocol === "moz-extension:" ? "firefox" : globalThis.location?.protocol === "chrome-extension:" ? "chrome" : globalThis.location?.protocol === "safari-web-extension:" ? "safari" : "online";
+  var BROWSER = navigator2?.userAgentData?.brands.some((b) => b.brand === "Microsoft Edge") ? "edge" : navigator2?.userAgentData?.brands.some((b) => b.brand === "Opera") ? "opera" : navigator2?.userAgentData?.brands.some((b) => b.brand === "Chromium") ? "chrome" : navigator2.userAgent?.toLowerCase()?.indexOf("firefox") > -1 ? "firefox" : navigator2.userAgent?.toLowerCase()?.indexOf("safari") > -1 ? "safari" : "other";
+  var EXTENSION = PLATFORM === "online" ? void 0 : PLATFORM === "firefox" ? browser : chrome;
+  var IS_MOBILE = navigator2.userAgentData ? navigator2.userAgentData.mobile : mobileUA.some((ua) => navigator2.userAgent.includes(ua));
+  var DEFAULT_LANG = (() => {
+    for (const code of Object.keys(langList)) {
+      if (navigator2.language.replace("-", "_").includes(code)) {
+        return code;
+      }
+    }
+    return "en";
+  })();
+  var DEFAULT_UNIT = (() => {
+    const locale = navigator2.language?.toLowerCase() ?? "";
+    const imperialLocales = ["en-us", "en-lr", "my-mm", "en-bs", "en-bz", "en-ky", "en-pw"];
+    return imperialLocales.some((l) => locale.startsWith(l)) ? "imperial" : "metric";
+  })();
+  var SEARCHBAR_ENGINES = [
+    "default",
+    "google",
+    "ddg",
+    "startpage",
+    "qwant",
+    "yahoo",
+    "bing",
+    "brave",
+    "ecosia",
+    "lilo",
+    "baidu",
+    "custom"
+  ];
+  var SYNC_DEFAULT = {
+    about: {
+      browser: PLATFORM,
+      version: CURRENT_VERSION
+    },
+    showall: false,
+    lang: DEFAULT_LANG,
+    dark: "system",
+    favicon: "",
+    tabtitle: "",
+    greeting: "",
+    greetingsize: "3",
+    greetingsmode: "auto",
+    pagegap: 1,
+    pagewidth: 1600,
+    time: true,
+    main: true,
+    dateformat: "auto",
+    quicklinks: true,
+    textShadow: 0.2,
+    announcements: "major",
+    review: 0,
+    css: "",
+    hide: {},
+    linkstyle: "medium",
+    linktitles: true,
+    linkbackgrounds: true,
+    linknewtab: false,
+    linksrow: 6,
+    linkiconradius: 1.1,
+    linkgroups: {
+      on: false,
+      selected: "default",
+      groups: ["default"],
+      pinned: [],
+      synced: []
+    },
+    backgrounds: {
+      type: "images",
+      fadein: 600,
+      blur: 15,
+      bright: 0.8,
+      frequency: "hour",
+      color: "#185A63",
+      urls: "",
+      images: "bonjourr-images-daylight",
+      videos: "bonjourr-videos-daylight",
+      mute: true,
+      queries: {},
+      texture: {
+        type: "none"
+      }
+    },
+    clock: {
+      size: 1,
+      ampm: false,
+      analog: false,
+      seconds: false,
+      ampmlabel: false,
+      ampmposition: "top-left",
+      worldclocks: false,
+      timezone: "auto"
+    },
+    analogstyle: {
+      face: "none",
+      hands: "modern",
+      shape: "round",
+      border: "#ffff",
+      background: "#fff2"
+    },
+    worldclocks: [],
+    weather: {
+      city: void 0,
+      unit: DEFAULT_UNIT,
+      show_unit: false,
+      provider: "",
+      moreinfo: "none",
+      forecast: "auto",
+      temperature: "actual",
+      geolocation: "approximate"
+    },
+    greetingscustom: {
+      morning: "",
+      afternoon: "",
+      evening: "",
+      night: ""
+    },
+    notes: {
+      on: false,
+      width: 40,
+      opacity: 0.1,
+      align: "left"
+    },
+    searchbar: {
+      on: false,
+      opacity: 0.1,
+      newtab: false,
+      suggestions: true,
+      engine: "default",
+      request: "",
+      placeholder: ""
+    },
+    quotes: {
+      on: false,
+      author: false,
+      type: DEFAULT_LANG === "zh-CN" ? "hitokoto" : "classic",
+      frequency: "day",
+      last: void 0
+    },
+    pomodoro: {
+      on: false,
+      mode: "pomodoro",
+      pause: 0,
+      end: 0,
+      timeFor: {
+        pomodoro: 1500,
+        break: 300,
+        longbreak: 1200
+      },
+      focus: false,
+      sound: true,
+      volume: 0.7,
+      alarm: "marimba",
+      history: []
+    },
+    font: {
+      family: "",
+      size: "14",
+      system: true,
+      color: "#ffffff",
+      weightlist: [],
+      weight: SYSTEM_OS === "windows" ? "400" : "300"
+    },
+    supporters: {
+      enabled: true
+    },
+    move: {
+      selection: "single",
+      layouts: {}
+    }
+  };
+  var LOCAL_DEFAULT = {
+    syncType: PLATFORM === "online" ? "off" : "browser",
+    gistToken: "",
+    userQuoteSelection: 0,
+    translations: void 0,
+    quotesCache: [],
+    backgroundUrls: {},
+    backgroundFiles: {},
+    backgroundCollections: {},
+    backgroundCompressFiles: true,
+    backgroundLastChange: "",
+    lastWeather: void 0
+  };
+
+  // src/scripts/shared/time.ts
+  var sunrise = 420;
+  var sunset = 1320;
+  var dusk = 60;
+  var userSetDate;
+  function userDate(timezone) {
+    const hasSetDate = !timezone && userSetDate;
+    const isAuto = !timezone || timezone === "auto";
+    let date = /* @__PURE__ */ new Date();
+    if (hasSetDate) {
+      return userSetDate;
+    }
+    if (isAuto) {
+      return date;
+    }
+    if (BROWSER === "firefox") {
+      if (timezone === "CST") {
+        timezone = "-06:00";
+      }
+      if (timezone === "AST") {
+        timezone = "-03:00";
+      }
+    }
+    try {
+      const intl = new Intl.DateTimeFormat("en", {
+        timeZone: timezone,
+        dateStyle: "medium",
+        timeStyle: "medium"
+      });
+      date = new Date(intl.format(date));
+    } catch (e) {
+      console.warn(e);
+      console.info("Your timezone is not valid");
+    }
+    return date;
+  }
+  function setUserDate(timezone) {
+    userSetDate = userDate(timezone);
+  }
+  function daylightPeriod(time) {
+    const mins = minutator(time ? new Date(time) : /* @__PURE__ */ new Date());
+    if (mins >= 0 && mins <= sunrise - 60) {
+      return "night";
+    }
+    if (mins <= sunrise + 60) {
+      return "noon";
+    }
+    if (mins <= sunset - 60) {
+      return "day";
+    }
+    if (mins <= sunset + 60) {
+      return "evening";
+    }
+    if (mins >= sunset + 60) {
+      return "night";
+    }
+    return "day";
+  }
+  function suntime(rise, set) {
+    if (rise && set) {
+      sunrise = minutator(new Date(rise));
+      sunset = minutator(new Date(set));
+    }
+    const minutesInADay = 60 * 24;
+    const maxTimeToDusk = 100;
+    dusk = maxTimeToDusk - (minutesInADay - sunset) / 8;
+    return {
+      sunrise,
+      sunset,
+      dusk
+    };
+  }
+  function needsChange(every, last) {
+    const nowDate = userDate();
+    const lastDate = last !== void 0 ? new Date(last) : nowDate;
+    const changed = {
+      date: nowDate.getDate() !== lastDate.getDate(),
+      hour: nowDate.getHours() !== lastDate.getHours()
+    };
+    switch (every) {
+      case "day":
+        return changed.date;
+      case "hour":
+        return changed.date || changed.hour;
+      case "tabs":
+        return true;
+      case "pause":
+        return last === 0;
+      case "period": {
+        return last === 0 ? true : daylightPeriod() !== daylightPeriod(+lastDate);
+      }
+      default:
+        return false;
+    }
+  }
+  function minutator(date) {
+    return date.getHours() * 60 + date.getMinutes();
+  }
+
+  // src/scripts/shared/generic.ts
+  function stringMaxSize(str, size) {
+    return str.length > size ? str.slice(0, size) : str;
+  }
+  function randomString(len) {
+    const chars = "abcdefghijklmnopqr";
+    return Array.from({ length: len }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
+  }
+  function equalsCaseInsensitive(a, b) {
+    return a.localeCompare(b, void 0, { sensitivity: "accent" }) === 0;
+  }
+  function opacityFromHex(hex) {
+    return Number.parseInt(hex.slice(4), 16);
+  }
+  function rgbToHex(r, g, b) {
+    return `#${componentToHex(r)}${componentToHex(g)}${componentToHex(b)}`;
+  }
+  function hexToRGB(hex) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return { r, g, b };
+  }
+  function getReadableTextColor(bgColor) {
+    const brightness = Math.round((bgColor.r * 299 + bgColor.g * 587 + bgColor.b * 114) / 1e3);
+    return brightness < 150 ? "white" : "#2b2b2b";
+  }
+  function componentToHex(c) {
+    const hex = c.toString(16);
+    return hex.length === 1 ? `${0}hex` : hex;
+  }
+
+  // src/scripts/dependencies/deepequal.ts
+  function deepEqual(object1, object2) {
+    function isObject2(object) {
+      return object !== null && typeof object === "object";
+    }
+    const keys1 = Object.keys(object1);
+    const keys2 = Object.keys(object2);
+    if (keys1.length !== keys2.length) {
+      return false;
+    }
+    for (const key of keys1) {
+      const val1 = object1[key];
+      const val2 = object2[key];
+      const areObjects = isObject2(val1) && isObject2(val2);
+      const areDifferent = areObjects && !deepEqual(val1, val2) || !areObjects && val1 !== val2;
+      if (areDifferent) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  // src/scripts/utils/parse.ts
+  function parse(str = "") {
+    try {
+      return JSON.parse(str);
+    } catch (_error) {
+      if (str !== "") {
+        console.info("Cannot parse");
+      }
+    }
+  }
+
+  // src/scripts/storage.ts
+  var storage = {
+    sync: {
+      get: syncGet,
+      set: syncSet,
+      remove: syncRemove,
+      clear: syncClear
+    },
+    local: {
+      get: localGet,
+      set: localSet,
+      remove: localRemove,
+      clear: localClear
+    },
+    init,
+    clearall,
+    type: storageTypeFn()
+  };
+  function storageTypeFn() {
+    let type = "webext-sync";
+    function get() {
+      return type;
+    }
+    function init2() {
+      if (globalThis.chrome?.storage === void 0) {
+        type = "localstorage";
+        return "localstorage";
+      }
+      if (globalThis.startupStorage?.local?.syncStorage) {
+        type = "webext-local";
+        return "webext-local";
+      }
+      return type;
+    }
+    function change(type2, data) {
+      if (globalThis.chrome?.storage === void 0) {
+        return;
+      }
+      if (type2 === "local") {
+        chrome.storage.local.set({ syncStorage: data });
+      }
+      if (type2 === "sync") {
+        chrome.storage.local.remove("syncStorage").then(() => {
+          chrome.storage.sync.set(data);
+        });
+      }
+    }
+    return { init: init2, get, change };
+  }
+  async function syncGet(key) {
+    switch (storage.type.get()) {
+      case "webext-sync": {
+        const data = await chrome.storage.sync.get(key ?? null);
+        return verifyDataAsSync(data);
+      }
+      case "webext-local": {
+        const { syncStorage } = await chrome.storage.local.get();
+        return verifyDataAsSync(syncStorage);
+      }
+      default: {
+        return verifyDataAsSync(parse(localStorage.bonjourr) ?? {});
+      }
+    }
+  }
+  async function syncSet(keyval, fn = () => {
+  }) {
+    switch (storage.type.get()) {
+      case "webext-sync": {
+        chrome.storage.sync.set(keyval, fn);
+        return;
+      }
+      case "webext-local": {
+        const local = await chrome.storage.local.get("syncStorage");
+        const data = {
+          ...local.syncStorage,
+          ...keyval
+        };
+        chrome.storage.local.set({ syncStorage: data }, fn);
+        return;
+      }
+      case "localstorage": {
+        if (typeof keyval !== "object") {
+          return;
+        }
+        const data = verifyDataAsSync(parse(localStorage.bonjourr) ?? {});
+        for (const [k, v] of Object.entries(keyval)) {
+          data[k] = v;
+        }
+        localStorage.bonjourr = JSON.stringify(data ?? {});
+        globalThis.dispatchEvent(new Event("storage"));
+        return;
+      }
+      default:
+    }
+  }
+  async function syncRemove(key) {
+    switch (storage.type.get()) {
+      case "webext-sync": {
+        chrome.storage.sync.remove(key);
+        return;
+      }
+      case "webext-local": {
+        const { syncStorage } = await chrome.storage.local.get("syncStorage");
+        if (syncStorage) {
+          delete syncStorage[key];
+          await chrome.storage.local.remove("syncStorage");
+          chrome.storage.local.set({ syncStorage });
+        }
+        return;
+      }
+      case "localstorage": {
+        localStorage.removeItem(key);
+        return;
+      }
+      default:
+    }
+  }
+  async function syncClear() {
+    switch (storage.type.get()) {
+      case "webext-sync": {
+        await chrome.storage.sync.clear();
+        return;
+      }
+      case "webext-local": {
+        await chrome.storage.local.remove("syncStorage");
+        return;
+      }
+      case "localstorage": {
+        localStorage.removeItem("bonjourr");
+        return;
+      }
+      default:
+    }
+  }
+  function localSet(value) {
+    switch (storage.type.get()) {
+      case "webext-sync":
+      case "webext-local": {
+        chrome.storage.local.set(value);
+        return;
+      }
+      default: {
+        for (const [key, val] of Object.entries(value)) {
+          if (typeof val === "string") {
+            localStorage.setItem(key, val);
+          } else {
+            localStorage.setItem(key, JSON.stringify(val));
+          }
+        }
+        return;
+      }
+    }
+  }
+  async function localGet(keys) {
+    switch (storage.type.get()) {
+      case "webext-sync":
+      case "webext-local": {
+        const data = await chrome.storage.local.get(keys);
+        return data;
+      }
+      default: {
+        const defaults = structuredClone(LOCAL_DEFAULT);
+        const result = defaults;
+        if (keys === void 0) {
+          keys = Object.keys(LOCAL_DEFAULT);
+        }
+        if (typeof keys === "string") {
+          keys = [keys];
+        }
+        const localKeys = Object.keys(globalThis.localStorage);
+        const neededKeys = keys.filter((k) => localKeys.includes(k));
+        for (const key of neededKeys) {
+          const item = globalThis.localStorage.getItem(key);
+          const isJson = item && (item.startsWith("{") || item.startsWith("["));
+          const isBool = item && (item === "true" || item === "false");
+          const isNoom = item && Number.isNaN(Number(item)) === false;
+          if (isJson) {
+            result[key] = parse(item);
+          } else if (isBool) {
+            result[key] = item === "true";
+          } else if (isNoom) {
+            result[key] = Number.parseFloat(item);
+          } else {
+            result[key] = item;
+          }
+        }
+        return result;
+      }
+    }
+  }
+  function localRemove(key) {
+    switch (storage.type.get()) {
+      case "webext-sync":
+      case "webext-local": {
+        return chrome.storage.local.remove(key);
+      }
+      case "localstorage": {
+        localStorage.removeItem(key);
+        return Promise.resolve();
+      }
+      default: {
+        return Promise.resolve();
+      }
+    }
+  }
+  async function localClear() {
+    switch (storage.type.get()) {
+      case "webext-sync": {
+        chrome.storage.local.clear();
+        return;
+      }
+      case "webext-local": {
+        const sync = (await chrome.storage.local.get("syncStorage")).syncStorage;
+        await chrome.storage.local.clear();
+        await chrome.storage.local.set({ syncStorage: sync });
+        return;
+      }
+      case "localstorage": {
+        for (const key of Object.keys(LOCAL_DEFAULT)) {
+          localStorage.removeItem(key);
+        }
+        return;
+      }
+      default:
+    }
+  }
+  async function init() {
+    const store = globalThis.startupStorage ?? {};
+    if (PLATFORM !== "online" && !webextStoreReady()) {
+      globalThis.pageReady = true;
+      await new Promise((resolve2) => {
+        document.addEventListener("webextstorage", (event) => {
+          if (event.detail === "sync") {
+            store.sync = globalThis.startupStorage.sync;
+          }
+          if (event.detail === "local") {
+            store.local = globalThis.startupStorage.local;
+          }
+          if (webextStoreReady()) {
+            resolve2(true);
+          }
+        });
+      });
+    }
+    const type = storage.type.init();
+    switch (type) {
+      case "webext-local": {
+        store.sync = globalThis.startupStorage.local?.syncStorage;
+        store.local = globalThis.startupStorage.local;
+        break;
+      }
+      case "webext-sync": {
+        store.sync = globalThis.startupStorage.sync;
+        store.local = globalThis.startupStorage.local;
+        break;
+      }
+      case "localstorage": {
+        store.sync = await syncGet();
+        store.local = await localGet();
+        break;
+      }
+      default:
+    }
+    if (Object.keys(store.sync ?? {})?.length === 0) {
+      store.sync = await getSyncDefaults();
+    }
+    const sync = verifyDataAsSync(store.sync);
+    const local = verifyDataAsLocal(store.local);
+    return {
+      sync,
+      local
+    };
+    function webextStoreReady() {
+      return !!store.sync && !!store.local;
+    }
+  }
+  async function clearall() {
+    sessionStorage.clear();
+    Object.keys(localStorage).forEach((key) => {
+      if (key.startsWith("bonjourr-archive-") === false) {
+        localStorage.removeItem(key);
+      }
+    });
+    try {
+      globalThis.caches.delete("local-files");
+    } catch (err) {
+      console.warn(err);
+    }
+    globalThis.startupStorage = void 0;
+    switch (storage.type.get()) {
+      case "webext-sync": {
+        await chrome.storage.sync.clear();
+        await chrome.storage.local.clear();
+        chrome.storage.sync.set(SYNC_DEFAULT);
+        chrome.storage.local.set(LOCAL_DEFAULT);
+        return;
+      }
+      case "webext-local": {
+        await chrome.storage.sync.clear();
+        await chrome.storage.local.clear();
+        chrome.storage.local.set({
+          ...LOCAL_DEFAULT,
+          syncStorage: SYNC_DEFAULT
+        });
+        return;
+      }
+      default:
+    }
+  }
+  async function getSyncDefaults() {
+    try {
+      const json = await (await fetch("config.json")).json();
+      return verifyDataAsSync(json);
+    } catch (_) {
+    }
+    return SYNC_DEFAULT;
+  }
+  function isStorageDefault(data) {
+    const current = structuredClone(data);
+    current.review = SYNC_DEFAULT.review;
+    current.showall = SYNC_DEFAULT.showall;
+    current.weather.city = SYNC_DEFAULT.weather.city;
+    current.quotes.last = SYNC_DEFAULT.quotes.last;
+    return deepEqual(current, SYNC_DEFAULT);
+  }
+  function verifyDataAsSync(data = {}) {
+    return {
+      ...SYNC_DEFAULT,
+      ...data
+    };
+  }
+  function verifyDataAsLocal(data = {}) {
+    return {
+      ...LOCAL_DEFAULT,
+      ...data
+    };
+  }
+
+  // src/scripts/utils/debounce.ts
+  function debounce(callback, waitFor) {
+    let timeout;
+    const debounced = (...args) => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => callback(...args), waitFor);
+    };
+    debounced.cancel = () => clearTimeout(timeout);
+    return debounced;
+  }
+  var eventDebounce = debounce((value) => {
+    storage.sync.set(value);
+  }, 400);
+
+  // src/scripts/utils/translations.ts
+  var trns;
+  var currentTrnsLang = "en";
+  async function setTranslationCache(language, local) {
+    const lang = countryCodeToLanguageCode(language);
+    if (lang === "en") {
+      storage.local.remove("translations");
+      trns = void 0;
+      return;
+    }
+    const cachedLang = local?.translations?.lang;
+    const useCache = local && cachedLang === lang;
+    if (useCache) {
+      trns = local.translations;
+    } else {
+      trns = await (await fetch(`../../_locales/${lang}/translations.json`)).json();
+      storage.local.set({ translations: trns });
+    }
+    currentTrnsLang = lang;
+  }
+  function traduction(scope, lang = "en") {
+    if (lang === "en") {
+      return;
+    }
+    if (trns) {
+      const dom = scope ?? document.body;
+      const tags = dom.querySelectorAll(".trn");
+      let text;
+      for (const tag of tags) {
+        text = tag.textContent?.trim() ?? "";
+        tag.textContent = trns[text] ?? text;
+      }
+    }
+    document.documentElement.setAttribute("lang", lang);
+    currentTrnsLang = lang;
+  }
+  async function toggleTraduction(lang) {
+    const tags = document.querySelectorAll(".trn");
+    const toggleDict = {};
+    const currentDict = { ...trns };
+    let text;
+    await setTranslationCache(lang);
+    const newDict = (await storage.local.get("translations")).translations;
+    if (newDict && currentDict?.lang === void 0) {
+      for (const key of Object.keys(newDict)) {
+        currentDict[key] = key;
+      }
+    }
+    for (const [key, val] of Object.entries(currentDict)) {
+      if (lang === "en") {
+        toggleDict[val] = key;
+      } else if (newDict) {
+        toggleDict[val] = newDict[key];
+      }
+    }
+    for (const tag of tags) {
+      text = tag.textContent ?? "";
+      tag.textContent = toggleDict[text] ?? text;
+    }
+    currentTrnsLang = lang;
+  }
+  function getLang() {
+    return currentTrnsLang;
+  }
+  function tradThis(str) {
+    return trns ? trns[str] ?? str : str;
+  }
+  function countryCodeToLanguageCode(lang) {
+    let sanitizedLang = lang;
+    if (lang.includes("ES")) {
+      sanitizedLang = "es";
+    }
+    if (lang === "gr") {
+      sanitizedLang = "el";
+    }
+    if (lang === "jp") {
+      sanitizedLang = "ja";
+    }
+    if (lang === "cz") {
+      sanitizedLang = "cs";
+    }
+    sanitizedLang = sanitizedLang.replace("_", "-");
+    return sanitizedLang;
+  }
+
+  // src/scripts/features/links/helpers.ts
+  function getDefaultIcon(url, refresh) {
+    if (refresh) {
+      return `${API_DOMAIN}/favicon/blob/${url}?r=${refresh}`;
+    }
+    return `${API_DOMAIN}/favicon/blob/${url}`;
+  }
+  function getSelectedIds() {
+    const selected = document.querySelectorAll("li.selected");
+    return Object.values(selected).map((li) => li.id);
+  }
+  function getLiFromEvent(event) {
+    const path = event.composedPath();
+    const li = path.find((el) => el.tagName === "LI" && el.className?.includes("link"));
+    if (li) {
+      return li;
+    }
+  }
+  function getTitleFromEvent(event) {
+    const path = event.composedPath();
+    const title = path.find((el) => el.className?.includes("link-title"));
+    if (title) {
+      return title;
+    }
+  }
+  function createTitle(link) {
+    const isInline = document.getElementById("linkblocks")?.className.includes("inline");
+    const isText = document.getElementById("linkblocks")?.className.includes("text");
+    if (!(isInline || isText) || link?.title !== "") {
+      return stringMaxSize(link.title ?? "", 64);
+    }
+    try {
+      if (isElem(link)) {
+        link.title = new URL(link.url)?.hostname.replace("www.", "");
+      } else {
+        link.title = tradThis("folder");
+      }
+    } catch (_) {
+    }
+    return link.title;
+  }
+  function getLink(data, id) {
+    const val = data[id];
+    if (isLink(val)) {
+      return val;
+    }
+  }
+  function getLinksInGroup(data, group) {
+    const groupName = group ?? data.linkgroups.selected;
+    const links = [];
+    for (const value of Object.values(data)) {
+      if (isLink(value) && (value?.parent ?? 0) === groupName) {
+        links.push(value);
+      }
+    }
+    links.sort((a, b) => a.order - b.order);
+    return links;
+  }
+  function getLinksInFolder(data, id) {
+    const links = [];
+    for (const value of Object.values(data)) {
+      if (isElem(value) && value?.parent === id) {
+        links.push(value);
+      }
+    }
+    links.sort((a, b) => a.order - b.order);
+    return links;
+  }
+  function isLink(link) {
+    return (link?._id ?? "").startsWith("links");
+  }
+  function isElem(link) {
+    return link?.folder !== true;
+  }
+  function isLinkIconType(type) {
+    return ["auto", "library", "file", "url"].includes(type);
+  }
+  function isNumber(value) {
+    return !isNaN(parseFloat(value));
+  }
+  function isTypingTarget(target) {
+    return target instanceof HTMLElement && (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target.isContentEditable);
+  }
+
+  // src/scripts/features/others.ts
+  function favicon(val, isEvent) {
+    function createFavicon(emoji) {
+      const svgtext = `<text y=".9em" font-size="85">${emoji}</text>`;
+      const svgtag = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">${svgtext}</svg>`;
+      const svgdata = `data:image/svg+xml,${svgtag}`;
+      const defaulticon = `/src/assets/favicons/favicon.ico`;
+      const domfavicon = document.querySelector("#favicon");
+      if (domfavicon) {
+        domfavicon.href = emoji ? svgdata : defaulticon;
+      }
+    }
+    if (isEvent) {
+      const isEmojiOrShape = val?.match(/[\p{Emoji}\u25A0-\u25FF]/gu) && !val?.match(/[0-9a-z]/g);
+      eventDebounce({ favicon: isEmojiOrShape ? val : "" });
+      document.getElementById("head-favicon")?.remove();
+    }
+    if (BROWSER === "firefox") {
+      setTimeout(() => createFavicon(val), 0);
+    } else {
+      createFavicon(val);
+    }
+  }
+  function tabTitle(val, isEvent) {
+    val ??= "";
+    const tabTitle2 = stringMaxSize(val, 80) || tradThis("New tab");
+    if (tabTitle2 !== document.title) {
+      document.title = tabTitle2;
+    }
+    if (isEvent) {
+      eventDebounce({ tabtitle: stringMaxSize(val, 80) });
+    }
+  }
+  function pageControl(val, isEvent) {
+    if (val.width) {
+      const property = `${val.width ?? SYNC_DEFAULT.pagewidth}px`;
+      document.documentElement.style.setProperty("--page-width", property);
+      if (isEvent) {
+        eventDebounce({ pagewidth: val.width });
+      }
+    }
+    if (typeof val.gap === "number") {
+      const property = `${val.gap ?? SYNC_DEFAULT.pagegap}em`;
+      document.documentElement.style.setProperty("--page-gap", property);
+      if (isEvent) {
+        eventDebounce({ pagegap: val.gap });
+      }
+    }
+  }
+  function darkmode(value, isEvent) {
+    const settings = document.querySelector("aside");
+    let theme = "light";
+    switch (value) {
+      case "disable":
+        theme = "light";
+        break;
+      case "enable":
+        theme = "dark";
+        break;
+      case "system":
+        theme = globalThis.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        break;
+      default: {
+        const now = minutator(/* @__PURE__ */ new Date());
+        const { sunrise: sunrise2, sunset: sunset2 } = suntime();
+        theme = now <= sunrise2 || now > sunset2 ? "dark" : "light";
+      }
+    }
+    document.documentElement.dataset.theme = theme;
+    if (isEvent) {
+      storage.sync.set({ dark: value });
+      settings?.classList.add("change-theme");
+      setTimeout(() => {
+        settings?.classList.remove("change-theme");
+      }, 333);
+      return;
+    }
+    globalThis.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
+      document.documentElement.dataset.theme = event.matches ? "dark" : "light";
+    });
+  }
+  function textShadow(init2, event) {
+    const val = init2 ?? event;
+    document.documentElement.style.setProperty("--text-shadow-alpha", (val ?? 0.2)?.toString());
+    if (typeof event === "number") {
+      eventDebounce({ textShadow: val });
+    }
+  }
+  function altMode() {
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Alt" && !isTypingTarget(event.target)) {
+        document.documentElement.dataset.altMode = "true";
+      }
+    });
+    document.addEventListener("keyup", (event) => {
+      if (event.key === "Alt") {
+        document.documentElement.dataset.altMode = "false";
+      }
+    });
+    self.addEventListener("blur", () => {
+      document.documentElement.dataset.altMode = "false";
+    });
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        document.documentElement.dataset.altMode = "false";
+      }
+    });
+    document.addEventListener("contextmenu", () => {
+      document.documentElement.dataset.altMode = "false";
+    });
+  }
+
+  // src/scripts/utils/onsettingsload.ts
+  var callbackList = [];
+  var areSettingsLoaded = false;
+  function onSettingsLoad(callback) {
+    areSettingsLoaded ? callback() : callbackList.push(callback);
+  }
+  function loadCallbacks() {
+    for (const callback of callbackList) {
+      callback();
+    }
+    areSettingsLoaded = true;
+  }
+
+  // src/scripts/features/supporters.ts
+  var import_mod = __toESM(require_dist());
+
+  // src/scripts/features/popup.ts
+  var ANNOUNCEMENT_URL = "https://ko-fi.com/post/Bonjourr-22-pomodoro-timer-new-look-right-click-F1F11P47J8";
+  var ANNOUNCEMENT_TRNS = {
+    en: "<b>Bonjourr just got a major update! \u2728</b> Discover what\u2019s new: Pomodoro timer, universal right-click menu, improved links, refreshed design, and more.",
+    fr: "<b>Bonjourr vient d'avoir une mise \xE0 jour majeure ! \u2728</b> D\xE9couvrez les nouveaut\xE9s : minuteur Pomodoro, menu clic droit universel, liens am\xE9lior\xE9s, nouveau design, et bien plus encore.",
+    de: "<b>Bonjourr hat ein gro\xDFes Update erhalten! \u2728</b> Entdecke die Neuerungen: Pomodoro-Timer, universelles Rechtsklick-Men\xFC, verbesserte Links, neues Design und mehr.",
+    it: "<b>Bonjourr ha ricevuto un aggiornamento importante! \u2728</b> Scopri le novit\xE0: timer Pomodoro, menu clic destro universale, link migliorati, design rinnovato e molto altro.",
+    es: "<b>\xA1Bonjourr acaba de recibir una gran actualizaci\xF3n! \u2728</b> Descubre las novedades: temporizador Pomodoro, men\xFA de clic derecho universal, enlaces mejorados, dise\xF1o renovado y mucho m\xE1s.",
+    "pt-BR": "<b>Bonjourr acabou de receber uma grande atualiza\xE7\xE3o! \u2728</b> Descubra as novidades: timer Pomodoro, menu de clique direito universal, links aprimorados, design renovado e muito mais.",
+    "pt-PT": "<b>O Bonjourr recebeu uma grande atualiza\xE7\xE3o! \u2728</b> Descubra as novidades: temporizador Pomodoro, menu de clique direito universal, liga\xE7\xF5es melhoradas, design renovado e muito mais.",
+    nl: "<b>Bonjourr heeft een grote update gekregen! \u2728</b> Ontdek wat er nieuw is: Pomodoro-timer, universeel rechtermuisknopmenu, verbeterde links, vernieuwd design en meer.",
+    da: "<b>Bonjourr har f\xE5et en stor opdatering! \u2728</b> Se nyhederne: Pomodoro-timer, universel h\xF8jreklikmenu, forbedrede links, opdateret design og meget mere.",
+    sv: "<b>Bonjourr har f\xE5tt en stor uppdatering! \u2728</b> Uppt\xE4ck nyheterna: Pomodoro-timer, universell h\xF6gerklicksmeny, f\xF6rb\xE4ttrade l\xE4nkar, uppdaterad design och mer.",
+    nb: "<b>Bonjourr har f\xE5tt en stor oppdatering! \u2728</b> Oppdag nyhetene: Pomodoro-timer, universell h\xF8yreklikkmeny, forbedrede lenker, oppdatert design og mer.",
+    fi: "<b>Bonjourr on saanut suuren p\xE4ivityksen! \u2728</b> Tutustu uutuuksiin: Pomodoro-ajastin, yleinen hiiren oikean painikkeen valikko, parannetut linkit, uudistettu ulkoasu ja paljon muuta.",
+    pl: "<b>Bonjourr otrzyma\u0142 du\u017C\u0105 aktualizacj\u0119! \u2728</b> Sprawd\u017A nowo\u015Bci: timer Pomodoro, uniwersalne menu prawego przycisku myszy, ulepszone linki, od\u015Bwie\u017Cony wygl\u0105d i wi\u0119cej.",
+    cs: "<b>Bonjourr dostal velkou aktualizaci! \u2728</b> Objevte novinky: Pomodoro \u010Dasova\u010D, univerz\xE1ln\xED nab\xEDdka prav\xE9ho kliknut\xED, vylep\u0161en\xE9 odkazy, obnoven\xFD design a dal\u0161\xED.",
+    hr: "<b>Bonjourr je dobio veliko a\u017Euriranje! \u2728</b> Otkrijte novosti: Pomodoro mjera\u010D vremena, univerzalni izbornik desnog klika, pobolj\u0161ane poveznice, osvje\u017Een dizajn i jo\u0161 mnogo toga.",
+    sk: "<b>Bonjourr dostal ve\u013Ek\xFA aktualiz\xE1ciu! \u2728</b> Objavte novinky: Pomodoro \u010Dasova\u010D, univerz\xE1lne menu prav\xE9ho kliknutia, vylep\u0161en\xE9 odkazy, obnoven\xFD dizajn a viac.",
+    hu: "<b>A Bonjourr jelent\u0151s friss\xEDt\xE9st kapott! \u2728</b> Fedezd fel az \xFAjdons\xE1gokat: Pomodoro id\u0151z\xEDt\u0151, univerz\xE1lis jobbklikk men\xFC, tov\xE1bbfejlesztett hivatkoz\xE1sok, meg\xFAjult diz\xE1jn \xE9s m\xE9g sok m\xE1s.",
+    ro: "<b>Bonjourr a primit o actualizare major\u0103! \u2728</b> Descoper\u0103 nout\u0103\u021Bile: cronometru Pomodoro, meniu universal de clic dreapta, linkuri \xEEmbun\u0103t\u0103\u021Bite, design re\xEEmprosp\u0103tat \u0219i multe altele.",
+    el: "<b>\u03A4\u03BF Bonjourr \u03BC\u03CC\u03BB\u03B9\u03C2 \u03B1\u03C0\u03AD\u03BA\u03C4\u03B7\u03C3\u03B5 \u03BC\u03B9\u03B1 \u03BC\u03B5\u03B3\u03AC\u03BB\u03B7 \u03B5\u03BD\u03B7\u03BC\u03AD\u03C1\u03C9\u03C3\u03B7! \u2728</b> \u0391\u03BD\u03B1\u03BA\u03B1\u03BB\u03CD\u03C8\u03C4\u03B5 \u03C4\u03B9 \u03BD\u03AD\u03BF \u03C5\u03C0\u03AC\u03C1\u03C7\u03B5\u03B9: \u03C7\u03C1\u03BF\u03BD\u03BF\u03B4\u03B9\u03B1\u03BA\u03CC\u03C0\u03C4\u03B7\u03C2 Pomodoro, \u03BA\u03B1\u03B8\u03BF\u03BB\u03B9\u03BA\u03CC \u03BC\u03B5\u03BD\u03BF\u03CD \u03B4\u03B5\u03BE\u03B9\u03BF\u03CD \u03BA\u03BB\u03B9\u03BA, \u03B2\u03B5\u03BB\u03C4\u03B9\u03C9\u03BC\u03AD\u03BD\u03BF\u03B9 \u03C3\u03CD\u03BD\u03B4\u03B5\u03C3\u03BC\u03BF\u03B9, \u03B1\u03BD\u03B1\u03BD\u03B5\u03C9\u03BC\u03AD\u03BD\u03BF\u03C2 \u03C3\u03C7\u03B5\u03B4\u03B9\u03B1\u03C3\u03BC\u03CC\u03C2 \u03BA\u03B1\u03B9 \u03C0\u03BF\u03BB\u03BB\u03AC \u03B1\u03BA\u03CC\u03BC\u03B7.",
+    hy: "<b>Bonjourr-\u0568 \u057D\u057F\u0561\u0581\u0565\u056C \u0567 \u0574\u0565\u056E \u0569\u0561\u0580\u0574\u0561\u0581\u0578\u0582\u0574\u0589 \u2728</b> \u0532\u0561\u0581\u0561\u0570\u0561\u0575\u057F\u0565\u0584 \u0576\u0578\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580\u0568\u2024 Pomodoro \u056A\u0561\u0574\u0561\u0576\u0561\u056F\u0561\u0579\u0561\u0583, \u0578\u0582\u0576\u056B\u057E\u0565\u0580\u057D\u0561\u056C \u0561\u057B \u057D\u0565\u0572\u0574\u0574\u0561\u0576 \u0568\u0576\u057F\u0580\u0561\u0581\u0561\u0576\u056F, \u0562\u0561\u0580\u0565\u056C\u0561\u057E\u057E\u0561\u056E \u0570\u0572\u0578\u0582\u0574\u0576\u0565\u0580, \u0569\u0561\u0580\u0574\u0561\u0581\u057E\u0561\u056E \u0564\u056B\u0566\u0561\u0575\u0576 \u0587 \u0561\u057E\u0565\u056C\u056B\u0576\u0589",
+    sr: "<b>Bonjourr \u0458\u0435 \u0434\u043E\u0431\u0438\u043E \u0432\u0435\u043B\u0438\u043A\u043E \u0430\u0436\u0443\u0440\u0438\u0440\u0430\u045A\u0435! \u2728</b> \u041E\u0442\u043A\u0440\u0438\u0458\u0442\u0435 \u043D\u043E\u0432\u043E\u0441\u0442\u0438: Pomodoro \u0442\u0430\u0458\u043C\u0435\u0440, \u0443\u043D\u0438\u0432\u0435\u0440\u0437\u0430\u043B\u043D\u0438 \u043C\u0435\u043D\u0438 \u0434\u0435\u0441\u043D\u043E\u0433 \u043A\u043B\u0438\u043A\u0430, \u0443\u043D\u0430\u043F\u0440\u0435\u0452\u0435\u043D\u0435 \u0432\u0435\u0437\u0435, \u043E\u0441\u0432\u0435\u0436\u0435\u043D \u0434\u0438\u0437\u0430\u0458\u043D \u0438 \u0458\u043E\u0448 \u043C\u043D\u043E\u0433\u043E \u0442\u043E\u0433\u0430.",
+    "sr-YU": "<b>Bonjourr je dobio veliko a\u017Euriranje! \u2728</b> Otkrijte novosti: Pomodoro tajmer, univerzalni meni desnog klika, unapre\u0111ene veze, osve\u017Een dizajn i jo\u0161 mnogo toga.",
+    uk: "<b>Bonjourr \u043E\u0442\u0440\u0438\u043C\u0430\u0432 \u0432\u0435\u043B\u0438\u043A\u0435 \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F! \u2728</b> \u0414\u0456\u0437\u043D\u0430\u0439\u0442\u0435\u0441\u044F, \u0449\u043E \u043D\u043E\u0432\u043E\u0433\u043E: \u0442\u0430\u0439\u043C\u0435\u0440 Pomodoro, \u0443\u043D\u0456\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u0435 \u043C\u0435\u043D\u044E \u043F\u0440\u0430\u0432\u043E\u0457 \u043A\u043D\u043E\u043F\u043A\u0438 \u043C\u0438\u0448\u0456, \u043F\u043E\u043A\u0440\u0430\u0449\u0435\u043D\u0456 \u043F\u043E\u0441\u0438\u043B\u0430\u043D\u043D\u044F, \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0439 \u0434\u0438\u0437\u0430\u0439\u043D \u0442\u0430 \u0456\u043D\u0448\u0435.",
+    ru: "<b>Bonjourr \u043F\u043E\u043B\u0443\u0447\u0438\u043B \u043A\u0440\u0443\u043F\u043D\u043E\u0435 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435! \u2728</b> \u0423\u0437\u043D\u0430\u0439\u0442\u0435, \u0447\u0442\u043E \u043D\u043E\u0432\u043E\u0433\u043E: \u0442\u0430\u0439\u043C\u0435\u0440 Pomodoro, \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u043E\u043D\u0442\u0435\u043A\u0441\u0442\u043D\u043E\u0435 \u043C\u0435\u043D\u044E, \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u043D\u044B\u0435 \u0441\u0441\u044B\u043B\u043A\u0438, \u043E\u0431\u043D\u043E\u0432\u043B\u0451\u043D\u043D\u044B\u0439 \u0434\u0438\u0437\u0430\u0439\u043D \u0438 \u043C\u043D\u043E\u0433\u043E\u0435 \u0434\u0440\u0443\u0433\u043E\u0435.",
+    tr: "<b>Bonjourr b\xFCy\xFCk bir g\xFCncelleme ald\u0131! \u2728</b> Yenilikleri ke\u015Ffedin: Pomodoro zamanlay\u0131c\u0131, evrensel sa\u011F t\u0131k men\xFCs\xFC, geli\u015Ftirilmi\u015F ba\u011Flant\u0131lar, yenilenmi\u015F tasar\u0131m ve daha fazlas\u0131.",
+    ar: "<b>\u062D\u0635\u0644 Bonjourr \u0639\u0644\u0649 \u062A\u062D\u062F\u064A\u062B \u0643\u0628\u064A\u0631! \u2728</b> \u0627\u0643\u062A\u0634\u0641 \u0627\u0644\u0645\u064A\u0632\u0627\u062A \u0627\u0644\u062C\u062F\u064A\u062F\u0629: \u0645\u0624\u0642\u0651\u062A \u0628\u0648\u0645\u0648\u062F\u0648\u0631\u0648\u060C \u0642\u0627\u0626\u0645\u0629 \u0646\u0642\u0631 \u0628\u0632\u0631 \u0627\u0644\u0641\u0623\u0631\u0629 \u0627\u0644\u0623\u064A\u0645\u0646 \u0634\u0627\u0645\u0644\u0629\u060C \u0631\u0648\u0627\u0628\u0637 \u0645\u062D\u0633\u0651\u0646\u0629\u060C \u062A\u0635\u0645\u064A\u0645 \u0645\u064F\u062D\u062F\u0651\u062B \u0648\u0627\u0644\u0645\u0632\u064A\u062F.",
+    fa: "<b>Bonjourr \u06CC\u06A9 \u0628\u0647\u200C\u0631\u0648\u0632\u0631\u0633\u0627\u0646\u06CC \u0628\u0632\u0631\u06AF \u062F\u0631\u06CC\u0627\u0641\u062A \u06A9\u0631\u062F! \u2728</b> \u0648\u06CC\u0698\u06AF\u06CC\u200C\u0647\u0627\u06CC \u062C\u062F\u06CC\u062F \u0631\u0627 \u06A9\u0634\u0641 \u06A9\u0646\u06CC\u062F: \u062A\u0627\u06CC\u0645\u0631 \u067E\u0648\u0645\u0648\u062F\u0648\u0631\u0648\u060C \u0645\u0646\u0648\u06CC \u06A9\u0644\u06CC\u06A9 \u0631\u0627\u0633\u062A \u0633\u0631\u0627\u0633\u0631\u06CC\u060C \u0644\u06CC\u0646\u06A9\u200C\u0647\u0627\u06CC \u0628\u0647\u0628\u0648\u062F\u06CC\u0627\u0641\u062A\u0647\u060C \u0637\u0631\u0627\u062D\u06CC \u062A\u0627\u0632\u0647 \u0648 \u0645\u0648\u0627\u0631\u062F \u0628\u06CC\u0634\u062A\u0631.",
+    "zh-CN": "<b>Bonjourr \u521A\u521A\u8FCE\u6765\u4E00\u6B21\u91CD\u5927\u66F4\u65B0\uFF01\u2728</b> \u63A2\u7D22\u65B0\u529F\u80FD\uFF1A\u756A\u8304\u949F\u3001\u901A\u7528\u53F3\u952E\u83DC\u5355\u3001\u6539\u8FDB\u7684\u94FE\u63A5\u3001\u7115\u7136\u4E00\u65B0\u7684\u8BBE\u8BA1\u7B49\u3002",
+    "zh-HK": "<b>Bonjourr \u525B\u525B\u63A8\u51FA\u91CD\u5927\u66F4\u65B0\uFF01\u2728</b> \u63A2\u7D22\u65B0\u529F\u80FD\uFF1A\u756A\u8304\u9418\u3001\u901A\u7528\u53F3\u9375\u9078\u55AE\u3001\u6539\u9032\u7684\u9023\u7D50\u3001\u7165\u7136\u4E00\u65B0\u7684\u8A2D\u8A08\u7B49\u3002",
+    "zh-TW": "<b>Bonjourr \u525B\u63A8\u51FA\u91CD\u5927\u66F4\u65B0\uFF01\u2728</b> \u63A2\u7D22\u65B0\u529F\u80FD\uFF1A\u756A\u8304\u9418\u3001\u901A\u7528\u53F3\u9375\u9078\u55AE\u3001\u6539\u9032\u7684\u9023\u7D50\u3001\u5168\u65B0\u8A2D\u8A08\u7B49\u3002",
+    ja: "<b>Bonjourr \u306B\u5927\u898F\u6A21\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u304C\u767B\u5834\uFF01\u2728</b> \u65B0\u6A5F\u80FD\u3092\u3054\u7D39\u4ECB\uFF1A\u30DD\u30E2\u30C9\u30FC\u30ED\u30BF\u30A4\u30DE\u30FC\u3001\u30E6\u30CB\u30D0\u30FC\u30B5\u30EB\u53F3\u30AF\u30EA\u30C3\u30AF\u30E1\u30CB\u30E5\u30FC\u3001\u30EA\u30F3\u30AF\u306E\u6539\u5584\u3001\u5237\u65B0\u3055\u308C\u305F\u30C7\u30B6\u30A4\u30F3\u306A\u3069\u3002",
+    id: "<b>Bonjourr baru saja mendapatkan pembaruan besar! \u2728</b> Temukan fitur baru: timer Pomodoro, menu klik kanan universal, tautan yang ditingkatkan, desain baru, dan banyak lagi.",
+    ca: "<b>Bonjourr ha rebut una actualitzaci\xF3 important! \u2728</b> Descobreix les novetats: temporitzador Pomodoro, men\xFA de clic dret universal, enlla\xE7os millorats, disseny renovat i molt m\xE9s.",
+    vi: "<b>Bonjourr v\u1EEBa nh\u1EADn \u0111\u01B0\u1EE3c b\u1EA3n c\u1EADp nh\u1EADt l\u1EDBn! \u2728</b> Kh\xE1m ph\xE1 c\xE1c t\xEDnh n\u0103ng m\u1EDBi: b\u1ED9 h\u1EB9n gi\u1EDD Pomodoro, menu chu\u1ED9t ph\u1EA3i to\xE0n c\u1EE5c, li\xEAn k\u1EBFt \u0111\u01B0\u1EE3c c\u1EA3i thi\u1EC7n, giao di\u1EC7n l\xE0m m\u1EDBi v\xE0 nhi\u1EC1u h\u01A1n n\u1EEFa."
+  };
+  var REVIEW_TEXT = "Love using Bonjourr? Consider giving us a review or donating, that would help a lot! \u{1F607}";
+  var REVIEW_URLS = {
+    chrome: "https://chrome.google.com/webstore/detail/bonjourr-%C2%B7-minimalist-lig/dlnejlppicbjfcfcedcflplfjajinajd/reviews",
+    opera: "https://chrome.google.com/webstore/detail/bonjourr-%C2%B7-minimalist-lig/dlnejlppicbjfcfcedcflplfjajinajd/reviews",
+    firefox: "https://addons.mozilla.org/en-US/firefox/addon/bonjourr-startpage/",
+    safari: "https://apps.apple.com/fr/app/bonjourr-startpage/id1615431236",
+    edge: "https://microsoftedge.microsoft.com/addons/detail/bonjourr/dehmmlejmefjphdeoagelkpaoolicmid",
+    other: "https://bonjourr.fr/help#%EF%B8%8F-reviews"
+  };
+  function interfacePopup(init2, event) {
+    if (event?.announcements !== void 0) {
+      storage.sync.set({ announcements: event.announcements ? "major" : "off" });
+      return;
+    }
+    if (!init2 || init2?.announce === "off") {
+      return;
+    }
+    if (init2.old) {
+      const major = (s) => Number.parseInt(s.split(".")[0]);
+      const isMajorUpdate = major(init2.new) > major(init2.old);
+      const announceMajor = init2.announce === "major" && isMajorUpdate;
+      const canAnnounce = localStorage.hasUpdated === "true" || announceMajor;
+      if (canAnnounce) {
+        localStorage.hasUpdated = "true";
+        displayPopup("announce", true);
+        return;
+      }
+    }
+    if (init2.review === -1) {
+      return;
+    }
+    const reviewCounter = getReviewCounter();
+    if (reviewCounter > 30) {
+      displayPopup("review");
+    }
+    if (reviewCounter > 200) {
+      closePopup();
+    }
+    localStorage.reviewCounter = reviewCounter + 1;
+  }
+  function displayPopup(type, showIcon = false) {
+    const template = document.getElementById("popup-template");
+    const doc2 = document.importNode(template.content, true);
+    const popup = doc2.getElementById("popup");
+    const desc = doc2.getElementById("popup_desc");
+    const close = doc2.getElementById("popup_close");
+    const buttons = doc2.getElementById("popup_buttons");
+    if (!popup) {
+      return;
+    }
+    if (type === "review") {
+      desc.textContent = tradThis(REVIEW_TEXT);
+      buttons.appendChild(createPopupButton(REVIEW_URLS[BROWSER], tradThis("Review")));
+      buttons.appendChild(createPopupButton("https://ko-fi.com/bonjourr", tradThis("Donate")));
+    }
+    if (type === "announce") {
+      const lang = getLang();
+      const description = ANNOUNCEMENT_TRNS[lang] ?? ANNOUNCEMENT_TRNS.en;
+      const buttontext = `${tradThis("Read the blog post")} \u{1F4DD}`;
+      desc.innerHTML = description;
+      buttons.appendChild(createPopupButton(ANNOUNCEMENT_URL, buttontext));
+    }
+    close?.addEventListener("click", closePopup);
+    document.body.appendChild(popup);
+    popup.classList.add(type);
+    popup.classList.toggle("withIcon", showIcon);
+    openPopup();
+  }
+  function createPopupButton(href, text) {
+    const anchor = document.createElement("a");
+    anchor.href = href;
+    anchor.rel = "noreferrer";
+    anchor.textContent = text;
+    anchor.addEventListener("pointerdown", removePopupTrigger);
+    return anchor;
+  }
+  function removePopupTrigger() {
+    storage.sync.set({ review: -1 });
+    localStorage.removeItem("reviewCounter");
+    localStorage.removeItem("hasUpdated");
+  }
+  function openPopup() {
+    setTimeout(() => document.getElementById("popup")?.classList.add("shown"), 800);
+    setTimeout(() => document.getElementById("credit-container")?.setAttribute("style", "opacity: 0"), 400);
+  }
+  function closePopup() {
+    setTimeout(() => document.getElementById("popup")?.remove(), 200);
+    setTimeout(() => document.getElementById("credit-container")?.removeAttribute("style"), 600);
+    document.getElementById("popup")?.classList.remove("shown");
+    removePopupTrigger();
+    console.info("Popup closed.");
+  }
+  function getReviewCounter() {
+    return parseInt(localStorage.reviewCounter ?? 0);
+  }
+
+  // src/scripts/features/supporters.ts
+  var monthBackgrounds = [
+    "https://images.unsplash.com/photo-1457269449834-928af64c684d?q=80&w=700&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1613136391099-c2757009bb12?q=80&w=700&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1457670912047-6ad4485d43eb?q=80&w=700&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1528834342297-fdefb9a5a92b?q=80&w=700&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1486608766848-9b9fe0c37b9d?q=80&w=700&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1551516114-063f4cef7213?q=80&w=700&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1577353716826-9151912dcdd1?q=80&w=700&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1600699260196-aca47e6d2125?q=80&w=700&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1508255139162-e1f7b7288ab7?q=80&w=700&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1507834392452-0559ec185662?q=80&w=700&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1505567745926-ba89000d255a?q=80&w=700&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1513267257196-91be473829b3?q=80&w=700&auto=format&fit=crop"
+  ];
+  var modalDataLoaded = false;
+  var glitterHandle = null;
+  function supportersNotifications(init2, update) {
+    if (update?.translate) {
+      setNotifStrings();
+      return;
+    }
+    if (update) {
+      updateSupportersOption(update);
+      return;
+    }
+    if (canShowSupporters(init2)) {
+      onSettingsLoad(initSupportersModal);
+      document.documentElement.dataset.supporters = "";
+    }
+  }
+  function canShowSupporters(sync) {
+    const hasSupportersDisabled = !sync?.supporters || !sync.supporters.enabled;
+    const isNewUser = (getReviewCounter() <= 45 || getReviewCounter() === 0) && sync?.review !== -1;
+    const closedMonth = sync?.supporters.closedMonth;
+    const currentMonth = (/* @__PURE__ */ new Date()).getMonth() + 1;
+    if (hasSupportersDisabled || isNewUser) {
+      return false;
+    } else {
+      return currentMonth !== closedMonth;
+    }
+  }
+  function initSupportersSettingsNotif(sync) {
+    if (!canShowSupporters(sync)) {
+      return;
+    }
+    const settingsNotifs = document.getElementById("supporters-notif-container");
+    const settingsNotifContent = document.getElementById("supporters-notif-content");
+    const notifClose = document.getElementById("supporters-notif-close");
+    const image = monthBackgrounds[(/* @__PURE__ */ new Date()).getMonth()];
+    settingsNotifs?.classList.add("shown");
+    settingsNotifs?.style.setProperty("--background", `url(${image})`);
+    setNotifStrings();
+    (0, import_mod.onclickdown)(settingsNotifContent, (e) => {
+      const isLeftClick = e instanceof PointerEvent && e.button === 0;
+      if (isLeftClick) {
+        toggleSupportersModal(true);
+        loadModalData();
+      }
+    });
+    (0, import_mod.onclickdown)(notifClose, () => {
+      delete document.documentElement.dataset.supporters;
+      settingsNotifs?.classList.remove("shown");
+      updateSupportersOption({ closed: true });
+    });
+  }
+  async function updateSupportersOption(update) {
+    const data = await storage.sync.get();
+    if (update.enabled !== void 0) {
+      data.supporters.enabled = update.enabled;
+    }
+    if (update.closed !== void 0) {
+      data.supporters.closedMonth = (/* @__PURE__ */ new Date()).getMonth() + 1;
+    }
+    storage.sync.set({ supporters: data.supporters });
+  }
+  function setNotifStrings() {
+    const currentMonth = (/* @__PURE__ */ new Date()).toLocaleString("en-US", { month: "long" });
+    const introString = `This ${currentMonth}, Bonjourr is brought to you by our lovely supporters.`;
+    const notifTitle = document.getElementById("supporters-notif-title");
+    const notifButton = document.getElementById("supporters-notif-button");
+    if (notifTitle && notifButton) {
+      notifTitle.textContent = tradThis(introString);
+      notifButton.textContent = tradThis("Find out who they are");
+    }
+  }
+  function initSupportersModal() {
+    const template = document.getElementById("supporters-modal-template");
+    const doc2 = document.importNode(template.content, true);
+    const supportersModal = doc2.getElementById("supporters-modal-container");
+    tradTemplateString(doc2, "header h2 span", "Supporters like you make Bonjourr possible");
+    tradTemplateString(
+      doc2,
+      "header p",
+      "Here are the wonderful people who supported us last month. Thanks to them, we can keep Bonjourr free, open source, and constantly evolving."
+    );
+    tradTemplateString(doc2, "#supporters-monthly h3", "Our monthly supporters");
+    tradTemplateString(doc2, "#supporters-once h3", "Our one-time supporters");
+    tradTemplateString(doc2, "footer p", "Join the community and get your name in Bonjourr.");
+    tradTemplateString(doc2, "footer a span", "Donate");
+    const close = doc2.getElementById("supporters-modal-close");
+    document.querySelector("#interface")?.insertAdjacentElement("beforebegin", supportersModal);
+    close.addEventListener("click", () => {
+      toggleSupportersModal(false);
+    });
+    supportersModal.addEventListener("click", (event) => {
+      if (event.target?.id === "supporters-modal-container") {
+        toggleSupportersModal(false);
+      }
+    });
+    document.addEventListener("keyup", (event) => {
+      const hasDataset = document.documentElement.dataset.supportersModal !== void 0;
+      const isEscape = event.key === "Escape";
+      if (isEscape && hasDataset) {
+        toggleSupportersModal(false);
+      }
+    });
+  }
+  function toggleSupportersModal(toggle) {
+    document.dispatchEvent(new CustomEvent("toggle-settings"));
+    if (toggle) {
+      document.documentElement.dataset.supportersModal = "";
+    } else {
+      delete document.documentElement.dataset.supportersModal;
+      glitterHandle?.stop();
+    }
+  }
+  async function loadModalData() {
+    if (glitterHandle === null && !document.body.className.includes("potato")) {
+      glitterHandle = initGlitter();
+    }
+    glitterHandle?.start();
+    if (modalDataLoaded) {
+      return;
+    }
+    const currentMonth = (/* @__PURE__ */ new Date()).getMonth() + 1;
+    const currentYear = (/* @__PURE__ */ new Date()).getFullYear();
+    const isJanuary = currentMonth === 1;
+    let monthToGet;
+    let yearToGet = currentYear;
+    if (isJanuary) {
+      monthToGet = 12;
+      yearToGet -= 1;
+    } else {
+      monthToGet = currentMonth - 1;
+    }
+    const modal = document.querySelector("#supporters-modal");
+    const main = document.querySelector("#supporters-modal main");
+    const monthly = document.querySelector("#supporters-monthly ul");
+    const once = document.querySelector("#supporters-once ul");
+    try {
+      const url = `https://kofi.bonjourr.fr/list?date=${yearToGet}-${monthToGet}`;
+      const supporters = await (await fetch(url))?.json();
+      if (supporters.length > 0) {
+        supporters.sort((a, b) => b.amount - a.amount);
+        for (const supporter of supporters) {
+          const parent = supporter.monthly ? monthly : once;
+          const li = `<li>${supporter.name}</li>`;
+          parent?.insertAdjacentHTML("beforeend", li);
+        }
+        modal?.classList.add("loaded");
+      }
+    } catch (_error) {
+      if (main) {
+        main.innerHTML = `<i>An error occured or we might be offline!</i>`;
+      }
+    }
+    modalDataLoaded = true;
+  }
+  function tradTemplateString(doc2, selector, text) {
+    const toTranslate = doc2.querySelector(selector);
+    if (toTranslate) {
+      toTranslate.innerText = tradThis(text);
+    }
+  }
+  function initGlitter() {
+    const snowfall = {};
+    let rafId = null;
+    snowfall.canvas = document.getElementById("glitter");
+    snowfall.context = snowfall.canvas.getContext("2d");
+    snowfall.snowflake = class {
+      size;
+      x;
+      baseX;
+      distance;
+      opacity;
+      radians;
+      fallSpeed;
+      y;
+      constructor() {
+        this.size = Math.random() * 1.5 + 1.5;
+        this.x = Math.random() * snowfall.canvas.width - this.size - 1 + this.size + 1;
+        this.baseX = this.x;
+        this.distance = Math.random() * 50 + 1;
+        this.opacity = Math.random();
+        this.radians = Math.random() * Math.PI * 2;
+        this.fallSpeed = Math.random() * 1.5 + 0.5;
+        this.y = Math.random() * snowfall.canvas.height - this.size - 1 + this.size + 1;
+      }
+      draw = () => {
+        if (this.y > snowfall.canvas.height + this.size) {
+          this.y = -this.size;
+        } else {
+          this.y += this.fallSpeed;
+        }
+        this.radians += 0.02;
+        this.x = this.baseX + this.distance * Math.sin(this.radians);
+        snowfall.context.beginPath();
+        snowfall.context.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        snowfall.context.shadowBlur = 8;
+        snowfall.context.shadowColor = `rgb(255 202 56 / ${this.opacity})`;
+        snowfall.context.fillStyle = `rgb(255 202 56 / ${this.opacity})`;
+        snowfall.context.fill();
+        snowfall.context.closePath();
+        snowfall.context.shadowBlur = 0;
+        snowfall.context.shadowColor = "transparent";
+      };
+    };
+    snowfall.setup = () => {
+      const particleDivisor = 2e4;
+      snowfall.canvas.width = snowfall.context.canvas.clientWidth;
+      snowfall.canvas.height = snowfall.context.canvas.clientHeight;
+      snowfall.flakes = [];
+      for (let x = 0; x < Math.ceil(snowfall.canvas.width * snowfall.canvas.height / particleDivisor); x++) {
+        snowfall.flakes.push(new snowfall.snowflake());
+      }
+    };
+    const snowfallDebounce = debounce(snowfall.setup, 200);
+    snowfall.animate = () => {
+      rafId = requestAnimationFrame(snowfall.animate);
+      snowfall.context.clearRect(0, 0, snowfall.canvas.width, snowfall.canvas.height);
+      for (const snowflake of snowfall.flakes) {
+        snowflake.draw();
+      }
+    };
+    return {
+      start() {
+        if (rafId !== null) {
+          return;
+        }
+        snowfall.setup();
+        globalThis.addEventListener("resize", snowfallDebounce);
+        snowfall.animate();
+      },
+      stop() {
+        if (rafId === null) {
+          return;
+        }
+        cancelAnimationFrame(rafId);
+        rafId = null;
+        globalThis.removeEventListener("resize", snowfallDebounce);
+      }
+    };
+  }
+
+  // src/scripts/features/synchronization/gist.ts
+  async function setGistStatus(token, id) {
+    const wrapper = document.getElementById("gist-sync-status-wrapper");
+    const base = document.getElementById("gist-sync-status-base");
+    if (!token) {
+      document.querySelector("#gist-sync-status")?.remove();
+      base.textContent = tradThis("Waiting for authentification");
+      return false;
+    }
+    if (!id) {
+      document.querySelector("#gist-sync-status")?.remove();
+      base.textContent = tradThis("No saved data yet");
+      return false;
+    }
+    const resp = await fetch(`https://api.github.com/gists/${id}`, { headers: gistHeaders(token) });
+    if (resp.status !== 200) {
+      document.querySelector("#gist-sync-status")?.remove();
+      base.textContent = tradThis("No saved data yet");
+      return false;
+    }
+    const json = await resp.json();
+    const isoDate = json.updated_at;
+    const dateString = new Date(isoDate).toLocaleString(getLang(), {
+      day: "2-digit",
+      month: "2-digit",
+      year: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+    document.querySelector("#gist-sync-status")?.remove();
+    const link = document.createElement("a");
+    link.id = "gist-sync-status";
+    link.href = json.html_url;
+    link.textContent = dateString;
+    wrapper?.appendChild(link);
+    base.textContent = tradThis("Last update");
+    return true;
+  }
+  async function retrieveGist(token, id) {
+    if (!token) {
+      throw new Error(GIST_ERROR.TOKEN);
+    }
+    if (!id) {
+      throw new Error(GIST_ERROR.ID);
+    }
+    const req = await fetch(`https://api.github.com/gists/${id}`, {
+      headers: gistHeaders(token)
+    });
+    if (req.status === 200) {
+      const gist = await req.json();
+      const content = Object.values(gist?.files ?? {})[0]?.content ?? "";
+      try {
+        return JSON.parse(content);
+      } catch (_) {
+        throw new Error(GIST_ERROR.JSON);
+      }
+    }
+    throw new Error(GIST_ERROR.OTHER);
+  }
+  async function sendGist(token, id, data) {
+    const description = "File automatically generated by Bonjourr. Learn more on https://bonjourr.fr/docs/overview/#sync";
+    const files = { "bonjourr-export.json": { content: JSON.stringify(data, void 0, 2) } };
+    if (isStorageDefault(data)) {
+      throw new Error(GIST_ERROR.DEFAULT);
+    }
+    if (id === void 0) {
+      const resp2 = await fetch("https://api.github.com/gists", {
+        body: JSON.stringify({ files, description, public: false }),
+        headers: gistHeaders(token),
+        method: "POST"
+      });
+      if (resp2.status === 401) {
+        throw new Error(GIST_ERROR.TOKEN);
+      }
+      if (resp2.status >= 300) {
+        throw new Error(GIST_ERROR.OTHER);
+      }
+      const api = await resp2.json();
+      return api.id;
+    }
+    if (isGistIdValid(id) === false) {
+      throw new Error(GIST_ERROR.ID);
+    }
+    const resp = await fetch(`https://api.github.com/gists/${id}`, {
+      body: JSON.stringify({ files, description }),
+      headers: gistHeaders(token),
+      method: "PATCH"
+    });
+    if (resp.status === 404) {
+      throw new Error(GIST_ERROR.NOGIST);
+    }
+    if (resp.status === 401) {
+      throw new Error(GIST_ERROR.TOKEN);
+    }
+    if (resp.status >= 300) {
+      throw new Error(GIST_ERROR.OTHER);
+    }
+    return id;
+  }
+  async function findGistId(token) {
+    if (!token) {
+      throw new Error(GIST_ERROR.TOKEN);
+    }
+    const resp = await fetch("https://api.github.com/gists?per_page=100", { headers: gistHeaders(token) });
+    if (resp.status === 401) {
+      throw new Error(GIST_ERROR.TOKEN);
+    }
+    if (resp.status >= 300) {
+      throw new Error(GIST_ERROR.OTHER);
+    }
+    const list = await resp.json();
+    const file = list.filter((gist) => !gist.public && gist.files["bonjourr-export.json"]?.size > 0)[0];
+    return file?.id;
+  }
+  async function isGistTokenValid(token = "") {
+    if (!token) {
+      return false;
+    }
+    try {
+      const isoDate = (/* @__PURE__ */ new Date())?.toISOString();
+      const resp = await fetch(`https://api.github.com/gists?since=${isoDate}`, {
+        headers: gistHeaders(token)
+      });
+      return resp.status === 200;
+    } catch (_) {
+      return false;
+    }
+  }
+  function isGistIdValid(id) {
+    if (!id || id.length > 32) {
+      return false;
+    }
+    for (const char of id) {
+      const code = char.charCodeAt(0);
+      const isHex = code >= 97 && code <= 102 || code >= 48 && code <= 57;
+      if (!isHex) {
+        return false;
+      }
+    }
+    return true;
+  }
+  function gistHeaders(token) {
+    return {
+      Authorization: `Bearer ${token}`,
+      Accept: "application/vnd.github+json",
+      "X-GitHub-Api-Version": "2022-11-28"
+    };
+  }
+  var GIST_ERROR = {
+    ID: tradThis("Invalid Gist ID in settings."),
+    TOKEN: tradThis("Invalid token."),
+    NOGIST: tradThis("Bonjourr file not found in Gists."),
+    NOCONN: tradThis("Cannot connect to GitHub."),
+    JSON: tradThis("Invalid JSON response from GitHub."),
+    OTHER: tradThis("Unexpected GitHub Gist error."),
+    DEFAULT: tradThis("Tried to send default config.")
+  };
+
+  // src/scripts/features/synchronization/url.ts
+  async function receiveFromURL(url = "") {
+    let resp;
+    try {
+      new URL(url);
+    } catch (_) {
+      throw new Error(DISTANT_ERROR.URL);
+    }
+    try {
+      resp = await fetch(url);
+    } catch (_) {
+      try {
+        resp = await fetch("https://services.bonjourr.fr/proxy", {
+          method: "POST",
+          body: url
+        });
+      } catch (_2) {
+        throw new Error(DISTANT_ERROR.PROXY);
+      }
+    }
+    try {
+      return JSON.parse(await resp.text());
+    } catch (_) {
+      throw new Error(DISTANT_ERROR.JSON);
+    }
+  }
+  async function isDistantUrlValid(url = "") {
+    try {
+      await receiveFromURL(url);
+      return true;
+    } catch (_) {
+      return false;
+    }
+  }
+  var DISTANT_ERROR = {
+    URL: tradThis("Not a valid URL"),
+    FAIL: tradThis("Cannot access resource right now"),
+    PROXY: tradThis("Cannot access resource, even with proxy"),
+    JSON: tradThis("Response is not valid JSON")
+  };
+
+  // src/scripts/shared/form.ts
+  function networkForm(targetId2) {
+    let form;
+    let button;
+    let message;
+    let loadTimeout;
+    onSettingsLoad(() => {
+      form = document.getElementById(targetId2);
+      button = form?.querySelector("button:last-of-type");
+      message = form?.querySelector("small");
+      for (const input of form.querySelectorAll("input")) {
+        input?.addEventListener("input", () => {
+          const placeholder = input.getAttribute("placeholder");
+          const isSame = placeholder === input.value;
+          const isEmpty = input.value === "";
+          const isValid = form.checkValidity();
+          form.classList.toggle("valid", isValid);
+          form.classList.toggle("remove", isValid && (isSame || isEmpty));
+        });
+      }
+      form?.addEventListener("input", () => {
+        if (form.classList.contains("warn")) {
+          form.classList.remove("warn");
+          button.removeAttribute("disabled");
+        }
+      });
+    });
+    function reset() {
+      form.classList.remove("load", "warn", "valid", "remove");
+      button.removeAttribute("disabled");
+      clearTimeout(loadTimeout);
+    }
+    function load() {
+      loadTimeout = setTimeout(() => {
+        form.classList.remove("warn");
+        form.classList.add("valid", "load");
+        button.setAttribute("disabled", "disabled");
+      }, 50);
+    }
+    function warn(err) {
+      form.classList.add("warn");
+      form.classList.remove("load");
+      button.setAttribute("disabled", "");
+      message.textContent = err;
+      clearTimeout(loadTimeout);
+    }
+    function accept(inputId, value) {
+      if (inputId && form.checkValidity()) {
+        form.classList.remove("valid");
+        const input = document.getElementById(inputId);
+        if (input && value) {
+          input.setAttribute("placeholder", value);
+        }
+      }
+      clearTimeout(loadTimeout);
+      setTimeout(() => reset(), 200);
+    }
+    return {
+      load,
+      warn,
+      reset,
+      accept
+    };
+  }
+
+  // src/scripts/shared/dom.ts
+  function webkitRangeTrackColor(input) {
+    const { min, max, value } = input;
+    input.style.setProperty("--value", value);
+    input.style.setProperty("--min", min || "0");
+    input.style.setProperty("--max", max || "100");
+  }
+  function toggleDisabled(element, force) {
+    if (element) {
+      const toggle = force !== void 0 ? force : typeof element.getAttribute("disabled") === "string";
+      if (toggle) {
+        element.setAttribute("disabled", "");
+      } else {
+        element.removeAttribute("disabled");
+      }
+    }
+  }
+  function getSplitRangeData(id) {
+    const wrapper = document.querySelector(`#${id.replace("#", "")}`);
+    const range = wrapper?.querySelector("input");
+    const button = wrapper?.querySelector("button");
+    const span = wrapper?.querySelectorAll("span");
+    const isButtonOn = button?.classList?.contains("on");
+    return {
+      range: range?.value,
+      button: span?.[isButtonOn ? 1 : 0].dataset.value
+    };
+  }
+  function getHTMLTemplate(id, selector) {
+    const template = document.getElementById(id);
+    const clone = template?.content.cloneNode(true);
+    return clone?.querySelector(selector);
+  }
+  function getComposedPath(target) {
+    if (!target) {
+      return [];
+    }
+    const path = [];
+    let node = target;
+    while (node) {
+      path.push(node);
+      node = node.parentElement;
+    }
+    return path;
+  }
+  function turnRefreshButton(event, canTurn) {
+    let target = event.target;
+    if (target.tagName === "path" && target.parentElement) target = target.parentElement;
+    if (target.tagName !== "svg" && target.firstElementChild) target = target.firstElementChild;
+    if (target.tagName !== "svg" && target.firstElementChild) target = target.firstElementChild;
+    target?.animate(
+      canTurn ? [{ transform: "rotate(360deg)" }] : [{ transform: "rotate(0deg)" }, { transform: "rotate(90deg)" }, { transform: "rotate(0deg)" }],
+      { duration: 600, easing: "ease-out" }
+    );
+  }
+  function fadeOut() {
+    const dominterface3 = document.getElementById("interface");
+    dominterface3.click();
+    dominterface3.style.transition = "opacity .4s";
+    setTimeout(() => {
+      dominterface3.style.opacity = "0";
+    });
+    setTimeout(() => {
+      location.reload();
+    }, 400);
+  }
+  var inputThrottle = (elem, time = 800) => {
+    let isThrottled = true;
+    setTimeout(() => {
+      isThrottled = false;
+      elem.removeAttribute("disabled");
+    }, time);
+    if (isThrottled) {
+      elem.setAttribute("disabled", "");
+    }
+  };
+  function hexColorFromSplitRange(id) {
+    const { range, button } = getSplitRangeData(id);
+    const opacity = Number.parseInt(range ?? "0");
+    const color = button === "dark" ? "#000" : "#fff";
+    const alpha = opacity.toString(16);
+    return color + alpha;
+  }
+  function colorInput(id, color) {
+    const wrapper = document.getElementById(id);
+    const button = wrapper?.querySelector("button");
+    const input = wrapper?.querySelector("input");
+    if (button && input) {
+      color ??= input.value;
+      button.textContent = color;
+      button.style.color = getReadableTextColor(hexToRGB(color));
+      const rgbColor = hexToRGB(color);
+      button.style.setProperty("--input-color", `${rgbColor.r} ${rgbColor.g} ${rgbColor.b}`);
+    }
+  }
+
+  // src/scripts/features/synchronization/index.ts
+  var gistsyncform = networkForm("f_gistsync");
+  var urlsyncform = networkForm("f_urlsync");
+  function synchronization(init2, update) {
+    if (init2) {
+      onSettingsLoad(() => {
+        toggleSyncSettingsOption(init2);
+      });
+    }
+    if (update) {
+      updateSyncOption(update);
+    }
+  }
+  async function updateSyncOption(update) {
+    const local = await storage.local.get(["gistId", "gistToken", "distantUrl", "syncType"]);
+    const data = await storage.sync.get();
+    if (update.down) {
+      if (local.syncType === "gist") {
+        gistsyncform.load();
+        try {
+          const id = local.gistId ?? "";
+          const token = local.gistToken ?? "";
+          const update2 = await retrieveGist(token, id);
+          storage.sync.set(update2);
+          fadeOut();
+        } catch (err) {
+          gistsyncform.warn(err);
+        }
+      }
+      if (local.syncType === "url") {
+        urlsyncform.load();
+        try {
+          const update2 = await receiveFromURL(local.distantUrl);
+          storage.sync.set(update2);
+          fadeOut();
+        } catch (err) {
+          urlsyncform.warn(err);
+        }
+      }
+    }
+    if (update.up) {
+      if (local.syncType === "gist") {
+        gistsyncform.load();
+        try {
+          const token = local.gistToken ?? "";
+          const id = await sendGist(token, local.gistId, data);
+          gistsyncform.accept();
+          local.gistId = id;
+          storage.local.set({ gistId: id });
+          toggleSyncSettingsOption(local);
+        } catch (error) {
+          gistsyncform.warn(error);
+        }
+      }
+    }
+    if (update.gistToken === "") {
+      local.gistToken = "";
+      local.gistId = "";
+      storage.local.remove("gistToken");
+      storage.local.remove("gistId");
+      gistsyncform.accept();
+      toggleSyncSettingsOption(local);
+      return;
+    }
+    if (update.url === "") {
+      local.distantUrl = "";
+      storage.local.remove("distantUrl");
+      toggleSyncSettingsOption(local);
+      return;
+    }
+    if (update.gistToken) {
+      gistsyncform.load();
+      try {
+        local.gistToken = update.gistToken;
+        local.gistId = await findGistId(local.gistToken);
+        storage.local.set({ gistId: local.gistId });
+        storage.local.set({ gistToken: local.gistToken });
+        gistsyncform.accept();
+        toggleSyncSettingsOption(local);
+      } catch (error) {
+        gistsyncform.warn(error);
+      }
+    }
+    if (update.url) {
+      urlsyncform.load();
+      try {
+        await receiveFromURL(update.url);
+        urlsyncform.accept("i_urlsync", update.url);
+        local.distantUrl = update.url;
+        storage.local.set({ distantUrl: update.url });
+        toggleSyncSettingsOption(local);
+      } catch (error) {
+        urlsyncform.warn(error);
+      }
+    }
+    if (isSyncType(update.type)) {
+      local.syncType = update.type;
+      storage.local.set({ syncType: local.syncType });
+      storage.type.change(update.type === "browser" ? "sync" : "local", data);
+      toggleSyncSettingsOption(local);
+      handleStoragePersistence(update.type);
+    }
+    if (update.firefoxPersist) {
+      localStorage.choseStoragePersistence = "true";
+      toggleSyncSettingsOption(local);
+    }
+  }
+  async function handleStoragePersistence(type) {
+    if (!navigator?.storage?.persisted) {
+      return;
+    }
+    const persisted = await navigator.storage.persisted();
+    if (type !== "off") {
+      return;
+    }
+    if (!persisted) {
+      await navigator.storage.persist();
+    }
+  }
+  async function toggleSyncSettingsOption(local) {
+    const gistId = local?.gistId;
+    const gistToken = local?.gistToken;
+    const distantUrl = local?.distantUrl;
+    const type = local?.syncType;
+    const iGistsync = document.querySelector("#i_gistsync");
+    const iUrlsync = document.querySelector("#i_urlsync");
+    const bGistdown = document.querySelector("#b_gistdown");
+    const bGistup = document.querySelector("#b_gistup");
+    const bUrldown = document.querySelector("#b_urldown");
+    bGistdown?.setAttribute("disabled", "");
+    bUrldown?.setAttribute("disabled", "");
+    bGistup?.setAttribute("disabled", "");
+    if (iGistsync && gistToken) {
+      iGistsync.value = gistToken;
+    }
+    if (iUrlsync && distantUrl) {
+      iUrlsync.value = distantUrl;
+    }
+    const choseStoragePersistence = localStorage.choseStoragePersistence === "true";
+    document.getElementById("disabled-sync")?.classList.toggle("shown", !choseStoragePersistence);
+    switch (type) {
+      case "off":
+      case "browser": {
+        document.getElementById("url-sync")?.classList.remove("shown");
+        document.getElementById("sync-freq")?.classList.remove("shown");
+        document.getElementById("gist-sync")?.classList.remove("shown");
+        break;
+      }
+      case "gist": {
+        document.getElementById("gist-sync")?.classList.add("shown");
+        document.getElementById("url-sync")?.classList.remove("shown");
+        document.getElementById("disabled-sync")?.classList.remove("shown");
+        const isValid = await isGistTokenValid(gistToken);
+        if (isValid) {
+          bGistdown?.removeAttribute("disabled");
+          bGistup?.removeAttribute("disabled");
+        }
+        setGistStatus(gistToken, gistId);
+        break;
+      }
+      case "url": {
+        document.getElementById("url-sync")?.classList.add("shown");
+        document.getElementById("gist-sync")?.classList.remove("shown");
+        document.getElementById("disabled-sync")?.classList.remove("shown");
+        if (await isDistantUrlValid(distantUrl)) {
+          bUrldown?.removeAttribute("disabled");
+        }
+        break;
+      }
+      default:
+    }
+  }
+  function isSyncType(val = "") {
+    return ["browser", "gist", "url", "off"].includes(val);
+  }
+
+  // src/scripts/features/backgrounds/urls.ts
+  var globalUrlValue = "";
+  var backgroundUrlsEditor;
+  function urlsCacheControl(backgrounds, local, needNew) {
+    const urls = lastUsedValidUrls(local.backgroundUrls);
+    if (urls.length === 0) {
+      removeBackgrounds();
+      return;
+    }
+    const url = urls[0];
+    const freq = backgrounds.frequency;
+    const metadata = local.backgroundUrls[url];
+    const lastUsed = new Date(metadata.lastUsed).getTime();
+    needNew ??= needsChange(freq, lastUsed);
+    if (urls.length > 1 && needNew) {
+      urls.shift();
+      const rand = Math.floor(Math.random() * urls.length);
+      const url2 = urls[rand];
+      const now = (/* @__PURE__ */ new Date()).toString();
+      const metadata2 = local.backgroundUrls[url2];
+      applyBackground(urlAsBackgroundMedia(url2, metadata2));
+      local.backgroundUrls[url2].lastUsed = now;
+      storage.local.set(local);
+      return;
+    }
+    applyBackground(urlAsBackgroundMedia(url, metadata));
+  }
+  function lastUsedValidUrls(metadatas) {
+    const getTime = (item) => new Date(item.lastUsed).getTime();
+    const entries = Object.entries(metadatas);
+    const sortedUrls = entries.toSorted((a, b) => getTime(b[1]) - getTime(a[1]));
+    const validOnly = sortedUrls.filter(([_, metadata]) => metadata.state === "OK");
+    const urls = validOnly.map(([url, _]) => url);
+    return urls;
+  }
+  function urlAsBackgroundMedia(url, metadata) {
+    if (metadata.format === "video") {
+      return {
+        format: "video",
+        duration: metadata.duration ?? 8,
+        page: "",
+        username: "",
+        urls: {
+          full: url,
+          small: url
+        }
+      };
+    }
+    return {
+      format: "image",
+      page: "",
+      username: "",
+      urls: {
+        full: url,
+        small: url
+      }
+    };
+  }
+  function getUrlsAsCollection(local) {
+    const entries = Object.entries(local.backgroundUrls);
+    const working = entries.filter((entry) => entry[1].state === "OK");
+    const sorted = working.toSorted((a, b) => new Date(a[1].lastUsed).getTime() - new Date(b[1].lastUsed).getTime());
+    const urls = sorted.map(([key]) => key);
+    return [
+      urls,
+      urls.map((url) => ({
+        format: "image",
+        page: "",
+        username: "",
+        urls: {
+          full: url,
+          medium: url,
+          small: url
+        }
+      }))
+    ];
+  }
+  async function initUrlsEditor(backgrounds, local) {
+    globalUrlValue = backgrounds.urls;
+    const { createBackgroundUrlsEditor: createBackgroundUrlsEditor2 } = await Promise.resolve().then(() => (init_csseditor(), csseditor_exports));
+    const options = {
+      language: "uri",
+      value: backgrounds.urls
+    };
+    backgroundUrlsEditor = createBackgroundUrlsEditor2(options);
+    const tabCommand = backgroundUrlsEditor.keyCommandMap.Tab;
+    backgroundUrlsEditor.textarea.id = "background-urls-editor-textarea";
+    backgroundUrlsEditor.textarea.maxLength = 8080;
+    backgroundUrlsEditor.textarea.placeholder = "https://picsum.photos/200\n";
+    backgroundUrlsEditor.on("update", (value) => {
+      toggleUrlsButton(globalUrlValue, stringMaxSize(value, 8080));
+    });
+    backgroundUrlsEditor.keyCommandMap.Tab = (e, selection, value) => {
+      if (document.body.matches(".tabbing")) {
+        return false;
+      }
+      return tabCommand?.(e, selection, value);
+    };
+    for (const [url, { state }] of Object.entries(local.backgroundUrls)) {
+      highlightUrlsEditorLine(url, state);
+    }
+  }
+  function highlightUrlsEditorLine(url, state) {
+    const lines = backgroundUrlsEditor.wrapper.querySelectorAll(".pce-line");
+    const line = lines.values().find((l) => l.textContent === `${url}
+`);
+    const noContent = !line?.textContent?.replace("\n", "");
+    const lineState = noContent ? "NONE" : state;
+    line?.classList.toggle("loading", lineState === "LOADING");
+    line?.classList.toggle("error", lineState === "NOT_MEDIA");
+    line?.classList.toggle("good", lineState === "OK");
+    line?.classList.toggle("warn", lineState === "CANT_REACH" || lineState === "NOT_URL");
+  }
+  function toggleUrlsButton(storage2, value) {
+    const button = document.querySelector("#b_background-urls");
+    if (storage2 === value) {
+      button?.setAttribute("disabled", "");
+    } else {
+      button?.removeAttribute("disabled");
+    }
+  }
+  function applyUrls(backgrounds) {
+    const editorValue = backgroundUrlsEditor.value;
+    const backgroundUrls = buildBackgroundUrls(parseUrlList(editorValue), "NONE");
+    globalUrlValue = backgrounds.urls = editorValue;
+    storage.local.set({ backgroundUrls });
+    storage.sync.set({ backgrounds });
+    toggleUrlsButton("osef", "osef");
+    checkUrlInfos(backgroundUrls);
+  }
+  function parseUrlList(urls) {
+    return urls.split("\n").map((url) => url.trim()).filter((url) => url.startsWith("http"));
+  }
+  function buildBackgroundUrls(urls, initialState = "OK") {
+    const backgroundUrls = {};
+    for (const url of urls) {
+      backgroundUrls[url] = {
+        lastUsed: (/* @__PURE__ */ new Date()).toString(),
+        format: formatFromFileExt(url),
+        state: initialState
+      };
+    }
+    return backgroundUrls;
+  }
+  async function checkUrlInfos(backgroundUrls) {
+    const entries = Object.entries(backgroundUrls);
+    for (const [url] of entries) {
+      highlightUrlsEditorLine(url, "LOADING");
+    }
+    for (const [url, item] of entries) {
+      const infos = await getUrlInfos(url);
+      item.state = infos.state;
+      item.format = infos.format;
+      item.duration = infos.duration;
+      backgroundUrls[url] = item;
+      highlightUrlsEditorLine(url, item.state);
+      storage.local.set({ backgroundUrls });
+    }
+  }
+  async function getUrlInfos(item) {
+    const isVideo = () => type.includes("video/");
+    const isMedia = () => type.startsWith("video/") || type.startsWith("image/");
+    const infos = {
+      "format": formatFromFileExt(item),
+      "state": "NONE",
+      "needsProxy": false
+    };
+    let type = "";
+    let resp;
+    let url;
+    try {
+      url = new URL(item);
+    } catch (_) {
+      infos.state = "NOT_URL";
+      return infos;
+    }
+    try {
+      resp = await fetch(url);
+      type = resp.headers.get("content-type") ?? "";
+      if (isMedia()) {
+        infos.state = "OK";
+      } else {
+        infos.state = "NOT_MEDIA";
+        return infos;
+      }
+    } catch (_) {
+      try {
+        infos.needsProxy = true;
+        resp = await fetch(`https://services.bonjourr.fr/backgrounds/proxy/${url}`);
+        type = resp.headers.get("content-type") ?? "";
+        if (isMedia()) {
+          infos.state = "OK";
+        } else {
+          infos.state = "NOT_MEDIA";
+          return infos;
+        }
+      } catch (_2) {
+        infos.state = "CANT_REACH";
+        return infos;
+      }
+    }
+    if (isVideo()) {
+      infos.format = "video";
+    } else {
+      infos.format = "image";
+    }
+    if (infos.format === "video") {
+      const video = document.createElement("video");
+      infos.duration = await new Promise((resolve2, reject) => {
+        setTimeout(() => reject(), 5e3);
+        video.onloadedmetadata = () => resolve2(Math.floor(video.duration));
+        video.src = item;
+      });
+      if (!infos.duration) {
+        infos.state = "LOADING";
+        return infos;
+      }
+    }
+    return infos;
+  }
+  function formatFromFileExt(url) {
+    url = url.trimEnd();
+    if (url.endsWith("mp4") || url.endsWith("webm")) {
+      return "video";
+    } else {
+      return "image";
+    }
+  }
+
+  // src/scripts/utils/notifications.ts
+  function settingsNotifications(notifs) {
+    onSettingsLoad(() => {
+      for (const [id, state] of Object.entries(notifs)) {
+        document.getElementById(id)?.classList?.toggle("shown", state);
+      }
+      const wrapper = document.getElementById("settings-notifications");
+      const hasNotifs = document.querySelectorAll("#settings-notifications .param.shown").length > 0;
+      wrapper?.classList?.toggle("shown", hasNotifs);
+    });
+  }
+
+  // src/scripts/utils/permissions.ts
+  async function getPermissions(...args) {
+    switch (PLATFORM) {
+      case "online": {
+        return true;
+      }
+      case "firefox": {
+        return await browser.permissions.request({
+          permissions: [...args]
+        });
+      }
+      default: {
+        return chrome.permissions.request({
+          permissions: [...args]
+        }) ?? false;
+      }
+    }
+  }
+
+  // src/scripts/utils/bundlelinks.ts
+  function bundleLinks(data) {
+    const res = [];
+    Object.entries(data).map(([key, val]) => {
+      if (key.length === 11 && key.startsWith("links")) {
+        res.push(val);
+      }
+    });
+    return res;
+  }
+
+  // src/scripts/features/links/bookmarks.ts
+  var import_mod2 = __toESM(require_dist());
+  var browserBookmarkFolders = [];
+  async function linksImport() {
+    const data = await storage.sync.get();
+    for (const node of document.querySelectorAll("#bookmarks-container > *") ?? []) {
+      node.remove();
+    }
+    initBookmarkSync(data).then(() => {
+      createBookmarksDialog();
+    });
+  }
+  async function initBookmarkSync(data) {
+    let treenode = await getBookmarkTree();
+    let permission = !!treenode;
+    if (!permission) {
+      try {
+        permission = await getPermissions("topSites", "bookmarks");
+      } catch (_error) {
+        settingsNotifications({ "accept-permissions": true });
+      }
+    }
+    if (!permission) {
+      return;
+    }
+    treenode = await getBookmarkTree();
+    if (treenode) {
+      browserBookmarkFolders = bookmarkTreeToFolderList(treenode[0], data);
+    }
+  }
+  function syncBookmarks(group) {
+    const folder = browserBookmarkFolders.find((folder2) => folder2.title === group);
+    const syncedLinks = [];
+    if (folder) {
+      for (const bookmark of folder.bookmarks) {
+        syncedLinks.push(validateLink(bookmark.title, bookmark.url, folder.title));
+      }
+    }
+    return syncedLinks;
+  }
+  function createBookmarksDialog() {
+    const bookmarkFolders = browserBookmarkFolders;
+    let bookmarksdom = document.querySelector("#bookmarks");
+    let container2 = document.querySelector("#bookmarks-container");
+    if (!bookmarksdom) {
+      bookmarksdom = getHTMLTemplate("bookmarks-dialog-template", "dialog");
+      container2 = bookmarksdom.querySelector("#bookmarks-container");
+      const closebutton = bookmarksdom.querySelector("#bmk_close");
+      const applybutton = bookmarksdom.querySelector("#bmk_apply");
+      bookmarksdom?.addEventListener("click", closeDialog);
+      (0, import_mod2.onclickdown)(applybutton, importSelectedBookmarks);
+      (0, import_mod2.onclickdown)(closebutton, closeDialog);
+      document.body.appendChild(bookmarksdom);
+    }
+    for (const list of bookmarkFolders) {
+      const folder = getHTMLTemplate("bookmarks-folder-template", "div");
+      const selectButton = folder.querySelector(".b_bookmarks-folder-select");
+      const syncButton = folder.querySelector(".b_bookmarks-folder-sync");
+      const ol = folder.querySelector("ol");
+      const h2 = folder.querySelector(".bookmarks-folder-title-content");
+      if (!(ol && h2)) {
+        continue;
+      }
+      h2.textContent = list.title;
+      (0, import_mod2.onclickdown)(selectButton, () => toggleFolderSelect(folder));
+      (0, import_mod2.onclickdown)(syncButton, () => toggleFolderSync(folder));
+      folder.classList.toggle("used", list.used);
+      folder.dataset.title = list.title;
+      container2?.appendChild(folder);
+      if (list.title === "topsites" && syncButton) {
+        h2.textContent = tradThis("Most visited");
+        folder.classList.add("synced");
+        syncButton.setAttribute("disabled", "");
+        syncButton.remove();
+      }
+      for (const bookmark of list.bookmarks) {
+        const li = getHTMLTemplate("bookmarks-item-template", "li");
+        const liButton = li.querySelector("button");
+        const liTitle = li.querySelector(".bookmark-title");
+        const liUrl = li.querySelector(".bookmark-url");
+        const liImg = li.querySelector("img");
+        if (!(liTitle && liButton && liUrl && liImg && bookmark.url.startsWith("http"))) {
+          continue;
+        }
+        const url = new URL(bookmark.url);
+        liImg.src = `${API_DOMAIN}/favicon/blob/${url.origin}`;
+        liTitle.textContent = bookmark.title;
+        liUrl.textContent = url.href.replace(url.protocol, "").replace("//", "").replace("www.", "").slice(0, -1).replace("/", "");
+        (0, import_mod2.onclickdown)(liButton, () => li.classList.toggle("selected"));
+        (0, import_mod2.onclickdown)(liButton, handleApplyButtonText);
+        if (bookmark.used) {
+          liButton.setAttribute("disabled", "");
+        }
+        li.id = bookmark.id;
+        ol?.appendChild(li);
+      }
+    }
+    document.getElementById("bmk_apply")?.setAttribute("disabled", "");
+    document.dispatchEvent(new CustomEvent("toggle-settings"));
+    traduction(bookmarksdom, getLang());
+    bookmarksdom.showModal();
+    setTimeout(() => bookmarksdom.classList.add("shown"));
+  }
+  function importSelectedBookmarks() {
+    const folders = browserBookmarkFolders;
+    const bookmarksdom = document.getElementById("bookmarks");
+    const selectedLinks = bookmarksdom.querySelectorAll(".bookmarks-folder li.selected");
+    const selectedFolders = bookmarksdom.querySelectorAll(".bookmarks-folder.selected");
+    const syncedFolders = bookmarksdom.querySelectorAll(".bookmarks-folder.synced");
+    const linksIds = Object.values(selectedLinks).map((element) => element.id);
+    const folderIds = Object.values(selectedFolders).map((element) => element.dataset.title);
+    const syncedIds = Object.values(syncedFolders).map((element) => element.dataset.title);
+    const links = [];
+    const groups2 = [];
+    for (const folder of folders) {
+      const isFolderSelected = folderIds.includes(folder.title);
+      const isFolderSynced = syncedIds.includes(folder.title);
+      if (isFolderSelected) {
+        groups2.push({
+          title: folder.title,
+          sync: isFolderSynced
+        });
+      }
+      if (isFolderSynced && folder.title !== "topsites") {
+        continue;
+      }
+      for (const bookmark of folder.bookmarks) {
+        const isBookmarkSelected = linksIds.includes(bookmark.id);
+        const group = isFolderSelected ? folder.title : void 0;
+        const title = bookmark.title;
+        const url = bookmark.url;
+        if (isFolderSelected || isBookmarkSelected) {
+          links.push({ title, url, group });
+        }
+      }
+    }
+    storage.sync.get("linkgroups").then(({ linkgroups }) => {
+      const iLinkgroups = document.querySelector("#i_linkgroups");
+      const allGroups = [...groups2, ...linkgroups.groups];
+      const toggleGroups2 = allGroups.length > 1;
+      quickLinks(void 0, {
+        groups: toggleGroups2,
+        addLinks: links,
+        addGroups: groups2
+      });
+      if (iLinkgroups) {
+        iLinkgroups.checked = toggleGroups2;
+      }
+      bookmarksdom?.classList.remove("shown");
+      bookmarksdom?.close();
+      closeDialog();
+    });
+  }
+  function handleApplyButtonText() {
+    const applybutton = document.getElementById("bmk_apply");
+    const links = document.querySelectorAll("#bookmarks li.selected");
+    const folders = document.querySelectorAll("#bookmarks .bookmarks-folder.selected");
+    const emptySelection = links.length === 0 && folders.length === 0;
+    toggleDisabled(applybutton, emptySelection);
+  }
+  function closeDialog(event) {
+    const path = event?.composedPath() ?? [];
+    const id = path[0]?.id ?? "";
+    if (!event || id === "bookmarks" || id === "bmk_close") {
+      const bookmarksdom = document.querySelector("#bookmarks");
+      bookmarksdom?.close();
+      bookmarksdom?.classList.remove("shown");
+      for (const node of bookmarksdom?.querySelectorAll(".selected") ?? []) {
+        node.classList.remove("selected");
+      }
+    }
+  }
+  function toggleFolderSelect(folder) {
+    const selectButton = folder.querySelector(".b_bookmarks-folder-select");
+    const syncButton = folder.querySelector(".b_bookmarks-folder-sync");
+    if (!selectButton) {
+      return;
+    }
+    if (folder.classList.contains("selected")) {
+      folder.classList.remove("selected");
+      syncButton?.classList.remove("selected");
+      syncButton?.setAttribute("disabled", "");
+    } else {
+      folder.classList.add("selected");
+      for (const li of folder.querySelectorAll("li")) {
+        li?.classList.remove("selected");
+      }
+      syncButton?.removeAttribute("disabled");
+    }
+    handleApplyButtonText();
+  }
+  function toggleFolderSync(folder) {
+    if (folder.classList.contains("synced")) {
+      folder.classList.remove("synced");
+    } else {
+      folder.classList.add("synced");
+    }
+  }
+  async function getBookmarkTree() {
+    let treenode = globalThis.startupBookmarks;
+    let topsites = globalThis.startupTopsites;
+    if (!treenode) {
+      treenode = await EXTENSION?.bookmarks?.getTree();
+    }
+    if (!topsites) {
+      topsites = await EXTENSION?.topSites?.get();
+    }
+    if (!(treenode && topsites)) {
+      return;
+    }
+    if (PLATFORM === "chrome") {
+      treenode[0].children?.push({
+        id: "",
+        title: "Google Apps",
+        children: [
+          { id: "", title: "Youtube", url: "https://youtube.com" },
+          { id: "", title: "Account", url: "https://myaccount.google.com" },
+          { id: "", title: "Gmail", url: "https://mail.google.com" },
+          { id: "", title: "Meet", url: "https://meet.google.com" },
+          { id: "", title: "Maps", url: "https://maps.google.com" },
+          { id: "", title: "Drive", url: "https://drive.google.com" },
+          { id: "", title: "Photos", url: "https://photos.google.com" },
+          { id: "", title: "Calendar", url: "https://calendar.google.com" },
+          { id: "", title: "Translate", url: "https://translate.google.com" },
+          { id: "", title: "News", url: "https://news.google.com" }
+        ]
+      });
+    }
+    treenode[0].children?.unshift({
+      id: "",
+      title: "topsites",
+      children: topsites.map((site) => ({
+        id: "",
+        title: site.title ?? "",
+        url: site.url,
+        syncing: false
+      }))
+    });
+    return treenode;
+  }
+  function bookmarkTreeToFolderList(treenode, data) {
+    function createMapFromTree(treenode2) {
+      if (!treenode2.children) {
+        return;
+      }
+      for (const child of treenode2.children) {
+        if (child.children) {
+          createMapFromTree(child);
+        }
+        if (!child.url) {
+          continue;
+        }
+        if (!folders[treenode2.title]) {
+          folders[treenode2.title] = {
+            title: treenode2.title,
+            used: false,
+            bookmarks: []
+          };
+        }
+        const current = folders[treenode2.title].bookmarks;
+        const urls = current.map((b) => b.url);
+        if (urls.includes(child.url)) {
+          continue;
+        }
+        folders[treenode2.title].bookmarks.push({
+          id: randomString(6),
+          title: child.title,
+          url: child.url,
+          used: linksUrLs.includes(child.url),
+          dateAdded: child.dateAdded ?? 0
+        });
+      }
+    }
+    const linksUrLs = bundleLinks(data).map((link) => isLink(link) && link.url);
+    const folders = {};
+    createMapFromTree(treenode);
+    for (const [folder, { bookmarks }] of Object.entries(folders)) {
+      const allUsed = bookmarks.every((b) => b.used);
+      const isGroup = data.linkgroups.groups.includes(folder);
+      const isSynced = data.linkgroups.synced.includes(folder);
+      if (isSynced || isGroup && allUsed) {
+        folders[folder].used = true;
+      }
+    }
+    return Object.values(folders);
+  }
+
+  // src/scripts/shared/compress.ts
+  async function loadOnCanvas(url, options) {
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    const img = new Image();
+    if (!ctx) {
+      throw new Error("Cannot get canvas context");
+    }
+    await new Promise((resolve2) => {
+      img.onload = () => {
+        const { size, square, raw } = options;
+        if (raw || !size) {
+          canvas.width = img.width;
+          canvas.height = img.height;
+          ctx?.drawImage(img, 0, 0);
+          img.remove();
+          resolve2(true);
+          return;
+        }
+        const isLandscape = img.width > img.height;
+        let sx = 0;
+        let sy = 0;
+        let sWidth = img.width;
+        let sHeight = img.height;
+        let dWidth = size;
+        let dHeight = size;
+        if (!square) {
+          if (isLandscape) {
+            dHeight = size;
+            dWidth = img.width / img.height * size;
+          } else {
+            dWidth = size;
+            dHeight = img.height / img.width * size;
+          }
+        } else {
+          if (isLandscape) {
+            sx = (img.width - img.height) / 2;
+            sWidth = sHeight = img.height;
+          } else {
+            sy = (img.height - img.width) / 2;
+            sWidth = sHeight = img.width;
+          }
+        }
+        canvas.width = dWidth;
+        canvas.height = dHeight;
+        ctx.drawImage(img, sx, sy, sWidth, sHeight, 0, 0, dWidth, dHeight);
+        img.remove();
+        resolve2(true);
+      };
+      img.src = url;
+    });
+    return canvas;
+  }
+  async function imageDimensions(src) {
+    const img = new Image();
+    let width = 4e3;
+    let height = 3e3;
+    await new Promise((resolve2) => {
+      img.addEventListener("load", () => {
+        width = img.width;
+        height = img.height;
+        img.remove();
+        resolve2(true);
+      });
+      img.src = src;
+    });
+    return { width, height };
+  }
+  async function compressAsBlob(elem, options) {
+    const type = options.type ?? "jpeg";
+    const q = options.q ?? 0.9;
+    if (typeof elem === "object") {
+      elem = URL.createObjectURL(elem);
+    }
+    const canvas = await loadOnCanvas(elem, options);
+    const ctx = canvas.getContext("2d");
+    const newBlob = await new Promise((resolve2) => {
+      ctx?.canvas.toBlob(resolve2, `image/${type}`, q);
+    });
+    return newBlob;
+  }
+  async function compressAsDataUri(elem, options) {
+    const type = options.type ?? "jpeg";
+    const q = options.q ?? 1;
+    if (typeof elem === "object") {
+      elem = URL.createObjectURL(elem);
+    }
+    const canvas = await loadOnCanvas(elem, options);
+    const uri = canvas.toDataURL(`image/${type}`, q);
+    return uri;
+  }
+  async function svgToText(file) {
+    const reader = new FileReader();
+    const data = await new Promise((resolve2) => {
+      reader.onload = () => {
+        resolve2(reader.result?.toString() ?? "");
+      };
+      reader.readAsText(file);
+    });
+    return data;
+  }
+
+  // src/scripts/features/links/fileicons.ts
+  async function convertIconFileToDataUri(file) {
+    if (!file.type.startsWith("image/")) {
+      throw new Error("Icon file must be an image");
+    }
+    const isSmall = file.size < 16e3;
+    const type = file.type.replace("image/", "");
+    if (isSmall) {
+      if (type.includes("svg")) {
+        const data = await svgToText(file);
+        return `data:image/svg+xml;base64,${btoa(data)}`;
+      }
+      if (type.includes("png")) {
+        return await compressAsDataUri(file, {
+          square: true,
+          type: "png",
+          q: 1
+        });
+      }
+    }
+    return await compressAsDataUri(file, {
+      type: type.includes("png") ? "png" : "jpeg",
+      square: true,
+      size: 144,
+      q: 0.8
+    });
+  }
+  async function storeIconFile(id, file) {
+    const uri = await convertIconFileToDataUri(file);
+    storage.local.set({ [`x-icon-${id}`]: uri });
+    return uri;
+  }
+
+  // src/scripts/utils/transitioner.ts
+  function transitioner() {
+    let waitTimeout;
+    const steps = {};
+    return {
+      first: (cb) => {
+        steps.first = cb;
+      },
+      finally: (cb) => {
+        steps.finally = cb;
+      },
+      after: (cb) => {
+        steps.after = cb;
+      },
+      cancel: () => clearTimeout(waitTimeout),
+      transition: async (timeout, ...rest2) => {
+        if (steps.first) {
+          steps.first(rest2);
+        }
+        await new Promise((r) => {
+          waitTimeout = setTimeout(() => r(true), Math.min(timeout, 2e3));
+        });
+        if (steps.after) {
+          steps.after(rest2);
+        }
+        if (steps.finally) {
+          steps.finally(rest2);
+        }
+        steps.first = void 0;
+        steps.after = void 0;
+        steps.finally = void 0;
+      }
+    };
+  }
+
+  // src/scripts/features/links/folders.ts
+  var domlinkblocks = document.getElementById("linkblocks");
+  queueMicrotask(() => {
+    document.addEventListener("close-folder", closeFolder);
+  });
+  async function folderClick(event, li) {
+    if (!li) {
+      li = getLiFromEvent(event);
+    }
+    let rightClick = false;
+    let ctrlClick = false;
+    let middleClick = false;
+    if (event instanceof MouseEvent) {
+      rightClick = event.button === 2;
+      ctrlClick = event.button === 0 && (event.ctrlKey || event.metaKey);
+      middleClick = event.button === 1;
+    } else if (event instanceof KeyboardEvent) {
+      if (event.key === "Enter" || event.key === " " || event.altKey) {
+        event.preventDefault();
+      } else return;
+    }
+    const inFolder = li?.classList.contains("link-folder");
+    const isSelectAll = domlinkblocks.className.includes("select-all");
+    if (!(li && inFolder) || rightClick || isSelectAll) {
+      return;
+    }
+    document.dispatchEvent(new Event("stop-select-all"));
+    const data = await storage.sync.get();
+    if (ctrlClick || middleClick) {
+      openAllLinks(data, li);
+    } else {
+      openFolder(data, li);
+    }
+  }
+  function openFolder(data, li) {
+    if (!li.parentNode) {
+      return;
+    }
+    const linkgroup = li.parentNode.parentNode;
+    const linktitle = linkgroup.querySelector(".link-title");
+    const folder = data[li.id];
+    const transition = transitioner();
+    transition.first(hide);
+    transition.after(changeToFolder);
+    transition.finally(show);
+    transition.transition(40);
+    function hide() {
+      linkgroup.dataset.folder = li?.id;
+      linkgroup.classList.add("hiding");
+      linkgroup.classList.remove("in-folder");
+    }
+    function changeToFolder() {
+      initblocks(data);
+      if (linktitle) {
+        linktitle.textContent = folder?.title || tradThis("Folder");
+      }
+    }
+    function show() {
+      linkgroup.classList.replace("hiding", "in-folder");
+    }
+  }
+  async function closeFolder() {
+    if (document.querySelector(".link-group.dropping")) {
+      return;
+    }
+    const data = await storage.sync.get();
+    const transition = transitioner();
+    transition.first(hide);
+    transition.after(changeToTab);
+    transition.finally(show);
+    transition.transition(40);
+    function hide() {
+      const folders = document.querySelectorAll(".link-group.in-folder");
+      for (const group of folders) {
+        group.classList.add("hiding");
+        group.dataset.folder = "";
+      }
+    }
+    function changeToTab() {
+      domlinkblocks.classList.toggle("with-groups", data.linkgroups.on);
+      initblocks(data);
+    }
+    function show() {
+      const groups2 = document.querySelectorAll(".link-group");
+      for (const group of groups2) {
+        group.classList.remove("in-folder");
+        group.classList.remove("hiding");
+      }
+    }
+  }
+  function openAllLinks(data, li) {
+    const linksInFolder = getLinksInFolder(data, li.id);
+    for (const link of linksInFolder) {
+      globalThis.open(link.url, "_blank")?.focus();
+    }
+    globalThis.open(globalThis.location.href, "_blank")?.focus();
+    globalThis.close();
+  }
+
+  // src/scripts/features/links/drag.ts
+  var blocks = /* @__PURE__ */ new Map();
+  var groups = /* @__PURE__ */ new Map();
+  var dropzones = {
+    group: /* @__PURE__ */ new Map(),
+    link: /* @__PURE__ */ new Map(),
+    mini: /* @__PURE__ */ new Map()
+  };
+  var [dx, dy, cox, coy, lastIndex] = [0, 0, 0, 0, 0, 0];
+  var lastdropAreas = [""];
+  var draggedGroup = "";
+  var draggedId = "";
+  var targetId = "";
+  var targetGroup = "";
+  var ids = [];
+  var initids = [];
+  var coords = [];
+  var dragContainers;
+  var dragChangeParentTimeout;
+  var dragAnimationFrame = 0;
+  var domlinkblocks2 = document.getElementById("linkblocks");
+  var domlinklinks;
+  var domlinktitles;
+  var domlinkgroups;
+  var domlinkgroup;
+  function startDrag(event) {
+    const path = event.composedPath();
+    const type = path.some((element) => element?.className?.includes("link-title")) ? "mini" : "link";
+    const isMini = type === "mini";
+    if (event.button > 0) {
+      return;
+    }
+    if (event.type === "pointerdown") {
+      beforeStartDrag(event, type);
+      return;
+    }
+    ids = [];
+    coords = [];
+    initids = [];
+    lastdropAreas = [];
+    blocks.clear();
+    dropzones.group.clear();
+    dropzones.link.clear();
+    dropzones.mini.clear();
+    domlinkgroup = path.find((node) => node?.classList?.contains("link-group"));
+    domlinkgroups = document.querySelectorAll("#linkblocks .link-group");
+    domlinklinks = document.querySelectorAll("#linkblocks li");
+    domlinktitles = document.querySelectorAll("#link-mini button");
+    dragContainers = document.querySelectorAll(isMini ? "#link-mini" : ".link-group");
+    const tagName = isMini ? "BUTTON" : "LI";
+    const target = path.find((node) => node.tagName === tagName);
+    const pos = getPosFromEvent(event);
+    draggedId = findIdFromElement(target);
+    draggedGroup = findIdFromElement(isMini ? target : domlinkgroup);
+    targetGroup = draggedGroup;
+    const groupSizeOffsets = /* @__PURE__ */ new Map();
+    if (isMini) {
+      const beforeMap = /* @__PURE__ */ new Map();
+      for (const group of domlinktitles) {
+        beforeMap.set(group.dataset.group ?? "", group.getBoundingClientRect().x);
+        group.style.width = "12ch";
+      }
+      for (const group of domlinktitles) {
+        const id = group.dataset.group ?? "";
+        const before = beforeMap.get(id) ?? 0;
+        const after = group.getBoundingClientRect().x;
+        groupSizeOffsets.set(id, after - before);
+      }
+    }
+    for (const element of [...domlinkgroups, ...domlinktitles, ...domlinklinks]) {
+      const type2 = findTypeFromElement(element);
+      const rect = element.getBoundingClientRect();
+      const id = findIdFromElement(element);
+      if (type2 !== "group") {
+        blocks.set(id, element);
+      } else {
+        groups.set(id, element);
+      }
+      dropzones[type2].set(id, {
+        x: rect.x,
+        y: rect.y,
+        h: rect.height,
+        w: rect.width
+      });
+    }
+    for (const container2 of Object.values(dragContainers)) {
+      const elements2 = container2.querySelectorAll(tagName);
+      const wrapper = isMini ? container2 : container2.querySelector(".link-list");
+      const rect = wrapper?.getBoundingClientRect();
+      if (!rect) {
+        continue;
+      }
+      for (const element of elements2) {
+        const type2 = findTypeFromElement(element);
+        const id = findIdFromElement(element, type2);
+        let { x, y, w, h } = dropzones[type2].get(id) ?? { x: 0, y: 0, w: 0, h: 0 };
+        x -= rect?.x;
+        y -= rect?.y;
+        ids.push(id);
+        initids.push(id);
+        coords.push({ x, y, w, h });
+        element.style.transition = "none";
+        setTimeout(() => element.style.removeProperty("transition"), 10);
+        deplaceElem(element, x, y);
+        if (id === draggedId) {
+          cox = pos.x - x + (groupSizeOffsets.get(id) ?? 0);
+          coy = pos.y - y;
+          dx = pos.x;
+          dy = pos.y;
+          element.classList.add("on");
+        }
+      }
+      container2.style.setProperty("--drag-width", `${Math.floor(rect?.width ?? 0)}px`);
+      container2.style.setProperty("--drag-height", `${Math.floor(rect?.height ?? 0)}px`);
+      container2.classList.add("in-drag", "dragging");
+    }
+    document.dispatchEvent(new Event("remove-select-all"));
+    dragAnimationFrame = globalThis.requestAnimationFrame(deplaceDraggedElem);
+    if (event.pointerType === "touch") {
+      document.documentElement.addEventListener("touchmove", moveDrag, { passive: false });
+      document.documentElement.addEventListener("touchend", endDrag, { passive: false });
+    } else {
+      document.documentElement.addEventListener("pointermove", moveDrag);
+      document.documentElement.addEventListener("pointerup", endDrag);
+      document.documentElement.addEventListener("pointerleave", endDrag);
+    }
+  }
+  function beforeStartDrag(event, type) {
+    const target = type === "mini" ? getTitleFromEvent(event) : getLiFromEvent(event);
+    cox = event.offsetX;
+    coy = event.offsetY;
+    if (!target) {
+      return;
+    }
+    target?.addEventListener("pointermove", pointerDeadzone);
+    target?.addEventListener("pointerup", pointerDeadzone);
+    function pointerDeadzone(event2) {
+      const precision = event2.pointerType === "touch" ? 7 : 14;
+      const ox = Math.abs(cox - event2.offsetX);
+      const oy = Math.abs(coy - event2.offsetY);
+      const isEndEvents = event2.type.includes("pointerup") || event2.type.includes("touchend");
+      const isHalfOutside = ox > precision / 2 || oy > precision / 2;
+      const isOutside = ox > precision || oy > precision;
+      if (isHalfOutside) {
+        document.dispatchEvent(new Event("stop-select-all"));
+      }
+      if (isOutside) {
+        startDrag(event2);
+      }
+      if (isOutside || isEndEvents) {
+        target?.removeEventListener("pointermove", pointerDeadzone);
+        target?.removeEventListener("pointerup", pointerDeadzone);
+      }
+    }
+  }
+  function moveDrag(event) {
+    const { x, y } = getPosFromEvent(event);
+    dx = x - cox;
+    dy = y - coy;
+    const [curr, id, type] = isDraggingOver({ x, y }) ?? ["", ""];
+    const last = lastdropAreas[lastdropAreas.length - 1];
+    const secondlast = lastdropAreas[lastdropAreas.length - 2];
+    const staysOutsideCenter = curr === last && curr !== "center";
+    const isDifferentGroup = targetGroup !== draggedGroup;
+    if (type === "group") {
+      targetGroup = id;
+      if (isDifferentGroup) {
+        applyDragChangeParent(id, "group");
+      }
+      if (targetGroup === draggedGroup) {
+        for (const block of blocks.values()) {
+          block.classList.remove("drop-target", "drop-source");
+        }
+        for (const block of groups.values()) {
+          block.classList.remove("drop-target", "drop-source");
+        }
+      }
+      return;
+    }
+    if (staysOutsideCenter || isDifferentGroup) {
+      return;
+    }
+    if (curr === "") {
+      lastdropAreas.push("");
+      clearTimeout(dragChangeParentTimeout);
+      for (const block of blocks.values()) {
+        block.classList.remove("drop-target", "drop-source");
+      }
+      for (const block of groups.values()) {
+        block.classList.remove("drop-target", "drop-source");
+      }
+      return;
+    }
+    const movesFromCenter = last === "center" && (curr === "left" || curr === "right");
+    const movesAcrossArea = curr !== secondlast;
+    const staysInCenter = last === curr && curr === "center";
+    const idAtCurrentArea = ids[initids.indexOf(id)];
+    if (staysInCenter) {
+      applyDragChangeParent(type === "mini" ? id : idAtCurrentArea, type);
+    }
+    if (movesFromCenter && movesAcrossArea) {
+      applyDragMoveBlocks(id);
+    }
+    if (last !== curr) {
+      lastdropAreas.push(curr);
+    }
+  }
+  function applyDragMoveBlocks(id) {
+    const targetIndex = initids.indexOf(id);
+    if (lastIndex === targetIndex) {
+      return;
+    }
+    clearTimeout(dragChangeParentTimeout);
+    lastIndex = targetIndex;
+    ids.splice(ids.indexOf(draggedId), 1);
+    ids.splice(targetIndex, 0, draggedId);
+    for (let i = 0; i < ids.length; i++) {
+      if (ids[i] !== draggedId) {
+        deplaceElem(blocks.get(ids[i]), coords[i].x, coords[i].y);
+      }
+    }
+  }
+  function applyDragChangeParent(id, type) {
+    const propertyValue = getComputedStyle(domlinkblocks2).getPropertyValue("--drop-delay");
+    const dropDelay = type === "group" ? 0 : Number.parseInt(propertyValue || "120");
+    clearTimeout(dragChangeParentTimeout);
+    dragChangeParentTimeout = setTimeout(() => {
+      const isDraggedId = id === draggedId;
+      const inFolder = domlinkgroup?.classList.contains("in-folder");
+      if (isDraggedId || inFolder) {
+        return;
+      }
+      if (type === "mini") {
+        const selectedGroup = document.querySelector("#link-mini .link-title.selected-group");
+        const selection = selectedGroup?.dataset.group ?? id;
+        if (selection === id) {
+          return;
+        }
+      }
+      targetId = id;
+      for (const block of blocks.values()) {
+        block.classList.remove("drop-target", "drop-source");
+      }
+      for (const block of groups.values()) {
+        block.classList.remove("drop-target", "drop-source");
+      }
+      blocks.get(draggedId)?.classList.toggle("drop-source", true);
+      if (type === "group") {
+        groups.get(id)?.classList.toggle("drop-target", true);
+      } else {
+        blocks.get(id)?.classList.toggle("drop-target", true);
+      }
+    }, dropDelay);
+  }
+  function endDrag(event) {
+    event.preventDefault();
+    document.documentElement.removeEventListener("pointermove", moveDrag);
+    document.documentElement.removeEventListener("pointerup", endDrag);
+    document.documentElement.removeEventListener("pointerleave", endDrag);
+    document.documentElement.removeEventListener("touchmove", moveDrag);
+    document.documentElement.removeEventListener("touchend", endDrag);
+    const path = event.composedPath();
+    const type = findTypeFromElement(blocks.get(draggedId));
+    const group = domlinkgroup?.dataset.group ?? "";
+    const newIndex = ids.indexOf(draggedId);
+    const block = blocks.get(draggedId);
+    const coord = coords[newIndex];
+    const isDroppable = !!document.querySelector(".drop-source");
+    const outOfFolder = !path[0]?.classList.contains("link-list") && domlinkgroup?.classList.contains("in-folder");
+    const targetIdIsLink = targetId.startsWith("links") && targetId.length === 11;
+    const toFolder = isDroppable && targetIdIsLink;
+    const toTab = isDroppable && !targetIdIsLink;
+    globalThis.cancelAnimationFrame(dragAnimationFrame);
+    blocks.get(draggedId)?.classList.remove("on");
+    for (const container2 of dragContainers) {
+      container2?.classList.replace("dragging", "dropping");
+    }
+    if (outOfFolder || toFolder || toTab) {
+      blocks.get(draggedId)?.classList.add("removed");
+    } else {
+      deplaceElem(block, coord.x, coord.y);
+    }
+    for (const block2 of groups.values()) {
+      block2.classList.remove("drop-target", "drop-source");
+    }
+    setTimeout(() => {
+      const targetIsFolder = blocks.get(targetId)?.classList.contains("link-folder");
+      const draggedIsFolder = blocks.get(draggedId)?.classList.contains("link-folder");
+      const createFolder2 = toFolder && !targetIsFolder && !draggedIsFolder;
+      const moveToFolder2 = toFolder && targetIsFolder && !draggedIsFolder;
+      const concatFolders2 = toFolder && targetIsFolder && draggedIsFolder;
+      if (type === "mini") {
+        linksUpdate({ moveGroups: ids });
+      } else if (createFolder2) {
+        linksUpdate({ addFolder: { ids: [targetId, draggedId], group } });
+      } else if (moveToFolder2) {
+        linksUpdate({ moveToFolder: { source: draggedId, target: targetId } });
+      } else if (concatFolders2) {
+        linksUpdate({ concatFolders: { source: draggedId, target: targetId } });
+      } else if (toTab) {
+        linksUpdate({ moveToGroup: { ids: [draggedId], target: targetId } });
+      } else if (outOfFolder) {
+        linksUpdate({ moveOutFolder: { ids: [draggedId], group } });
+      } else {
+        linksUpdate({ moveLinks: ids });
+      }
+      setTimeout(() => {
+        for (const container2 of dragContainers) {
+          const elements2 = container2.querySelectorAll("li, button");
+          for (const element of elements2) {
+            element.removeAttribute("style");
+          }
+          container2?.removeAttribute("style");
+          container2?.classList.remove("in-drag", "dropping");
+        }
+      }, 1);
+    }, 200);
+  }
+  function deplaceElem(dom, x = 0, y = 0) {
+    if (dom) {
+      dom.style.transform = `translate(${Math.floor(x)}px, ${Math.floor(y)}px)`;
+    }
+  }
+  function deplaceDraggedElem() {
+    const block = blocks.get(draggedId);
+    if (block) {
+      block.style.transform = `translate(${dx}px, ${dy}px)`;
+      dragAnimationFrame = globalThis.requestAnimationFrame(deplaceDraggedElem);
+    }
+  }
+  function isDraggingOver({ x, y }) {
+    const findArea = (zones) => {
+      for (const [id, zone] of zones) {
+        const ll = zone.x;
+        const lr = zone.x + zone.w * 0.2;
+        const lt = zone.y;
+        const lb = zone.y + zone.h;
+        const isInLeftEdge = x > ll && x < lr && y > lt && y < lb;
+        const rl = zone.x + zone.w * 0.8;
+        const rr = zone.x + zone.w;
+        const rt = zone.y + 0;
+        const rb = zone.y + zone.h;
+        const isInRightEdge = x > rl && x < rr && y > rt && y < rb;
+        const cl = zone.x + zone.w * 0.2;
+        const cr = zone.x + zone.w * 0.8;
+        const ct = zone.y;
+        const cb = zone.y + zone.h;
+        const isInCenter = x > cl && x < cr && y > ct && y < cb;
+        let area = "";
+        if (isInLeftEdge) {
+          area = "left";
+        }
+        if (isInRightEdge) {
+          area = "right";
+        }
+        if (isInCenter) {
+          area = "center";
+        }
+        if (area) {
+          return { area, id };
+        }
+      }
+    };
+    const linkarea = findArea(dropzones.link);
+    if (linkarea) {
+      return [linkarea.area, linkarea.id, "link"];
+    }
+    const miniarea = findArea(dropzones.mini);
+    if (miniarea) {
+      return [miniarea.area, miniarea.id, "mini"];
+    }
+    const grouparea = findArea(dropzones.group);
+    if (grouparea) {
+      return [grouparea.area, grouparea.id, "group"];
+    }
+  }
+  function getPosFromEvent(event) {
+    switch (event.type) {
+      case "touchmove": {
+        const touch = event.touches[0];
+        return { x: touch.clientX, y: touch.clientY };
+      }
+      case "pointermove": {
+        const { x, y } = event;
+        return { x, y };
+      }
+      default: {
+        return { x: 0, y: 0 };
+      }
+    }
+  }
+  function findTypeFromElement(element) {
+    if (element?.classList.contains("link")) {
+      return "link";
+    }
+    if (element?.classList.contains("link-title")) {
+      return "mini";
+    }
+    if (element?.classList.contains("link-group")) {
+      return "group";
+    }
+    throw new Error("No valid type found for specified element");
+  }
+  function findIdFromElement(element, type) {
+    const elementType = type ?? findTypeFromElement(element);
+    if (elementType === "link") {
+      return element?.id ?? "";
+    }
+    if (elementType === "mini") {
+      return element?.dataset.group ?? "";
+    }
+    if (elementType === "group") {
+      return element?.dataset.group ?? "";
+    }
+    throw new Error("No valid type found for specified element");
+  }
+
+  // src/scripts/shared/display.ts
+  var features = ["clock", "links"];
+  var interfaceDisplayCallback = () => void 0;
+  var loadtime = performance.now();
+  function onInterfaceDisplay(callback) {
+    if (callback) {
+      interfaceDisplayCallback = callback;
+    }
+  }
+  function displayInterface(ready, data) {
+    if (data) {
+      if (data?.font?.family) {
+        features.push("fonts");
+      }
+      if (data?.quotes?.on) {
+        features.push("quotes");
+      }
+      if (data?.pomodoro?.on) {
+        features.push("pomodoro");
+      }
+      return;
+    }
+    if (!ready) {
+      return;
+    }
+    const index = features.indexOf(ready);
+    if (index !== -1) {
+      features.splice(index, 1);
+    } else {
+      return;
+    }
+    if (features.length > 0) {
+      return;
+    }
+    loadtime = Math.min(performance.now() - loadtime, 333);
+    loadtime = loadtime > 33 ? loadtime : 0;
+    document.documentElement.style.setProperty("--load-time-transition", `${loadtime}ms`);
+    document.body.classList.remove("loading");
+    const delay = Math.max(333, loadtime);
+    setTimeout(() => interfaceDisplayCallback(), delay);
+  }
+
+  // src/scripts/features/links/index.ts
+  var domlinkblocks3 = document.getElementById("linkblocks");
+  var initIconList = [];
+  var selectallTimer;
+  async function quickLinks(init2, event) {
+    if (event) {
+      linksUpdate(event);
+      return;
+    }
+    if (!init2) {
+      return;
+    }
+    const { sync, local } = init2;
+    domlinkblocks3.classList.add(sync.linkstyle ?? "large");
+    domlinkblocks3.classList.toggle("titles", sync.linktitles);
+    domlinkblocks3.classList.toggle("backgrounds", sync.linkbackgrounds);
+    domlinkblocks3.classList.toggle("hidden", !sync.quicklinks);
+    document.addEventListener("keydown", openLinksWithKeyboard);
+    if (sync.linkgroups.synced.length > 0) {
+      await initBookmarkSync(sync);
+    }
+    initGroups(sync, !!init2);
+    initRows(sync.linksrow, sync.linkstyle);
+    initblocks(sync, local);
+  }
+  function initblocks(sync, local) {
+    const allLinks = Object.values(sync).filter((val) => isLink(val));
+    const { pinned, synced, selected } = sync.linkgroups;
+    const activeGroups = [];
+    for (const group of [...pinned, selected]) {
+      const div = document.querySelector(`.link-group[data-group="${group}"]`);
+      const folder = div?.dataset.folder;
+      const lis = [];
+      const links = folder ? getLinksInFolder(sync, folder) : getLinksInGroup(sync, group);
+      activeGroups.push({
+        lis,
+        div,
+        links,
+        title: group,
+        pinned: group !== selected,
+        synced: synced?.includes(group)
+      });
+    }
+    activeGroups.reverse();
+    const divs = activeGroups.map((g) => g.div);
+    const usedLis = activeGroups.flatMap((group) => group.lis);
+    for (const div of document.querySelectorAll("#linkblocks .link-group")) {
+      for (const li of div.querySelectorAll("li")) {
+        if (usedLis.includes(li) === false) {
+          li.remove();
+        }
+      }
+      if (divs.includes(div) === false) {
+        div.remove();
+      }
+    }
+    for (const group of activeGroups) {
+      const linkgroup = group.div ?? getHTMLTemplate("link-group-template", ".link-group");
+      const linksInFolders = allLinks.filter((link) => !link.folder && typeof link.parent === "string");
+      const linklist = linkgroup.querySelector("ul");
+      const linktitle = linkgroup.querySelector("button");
+      const fragment = document.createDocumentFragment();
+      const folderid = linkgroup.dataset.folder;
+      if (!(linklist && linktitle)) {
+        throw new Error("Template not found");
+      }
+      if (group.synced) {
+        group.links = syncBookmarks(group.title);
+      }
+      for (const link of group.links) {
+        let li = group.lis.find((li2) => li2.id === link._id);
+        if (li) {
+          li.removeAttribute("style");
+          linklist?.appendChild(li);
+          continue;
+        }
+        li = isElem(link) ? createElem(link, sync.linknewtab, sync.linkstyle) : createFolder(link, linksInFolders, sync.linkstyle);
+        fragment.appendChild(li);
+        li.addEventListener("keyup", openContextMenu);
+        if (!group.synced) {
+          li.addEventListener("click", selectAll);
+          li.addEventListener("pointerdown", selectAll);
+          li.addEventListener("pointerdown", startDrag);
+        }
+      }
+      if (folderid) {
+        linktitle.textContent = sync[folderid].title;
+      } else {
+        linktitle.textContent = group.title;
+      }
+      linkgroup.dataset.group = group.title;
+      linkgroup.classList.toggle("pinned", group.pinned);
+      linkgroup.classList.toggle("synced", group.synced);
+      linklist.appendChild(fragment);
+      domlinkblocks3.prepend(linkgroup);
+      if (group.title === "topsites") {
+        linktitle.textContent = tradThis("Most visited");
+        linktitle.classList.add("topsites-title");
+        linkgroup.classList.add("topsites-group");
+      }
+      if (group.title === "default") {
+        linktitle.textContent = tradThis("Default group");
+      }
+    }
+    if (local) {
+      createIcons(local);
+    } else {
+      storage.local.get().then((local2) => {
+        createIcons(local2);
+      });
+    }
+    setRadius(sync.linkiconradius);
+    displayInterface("links");
+    limitAltableLinks();
+    return true;
+  }
+  function createFolder(link, folderChildren, style) {
+    const li = getHTMLTemplate("link-folder-template", "li");
+    const imgs = li.querySelectorAll("img");
+    const span = li.querySelector("span");
+    if (!(li && imgs && span)) {
+      throw new Error("Template not found");
+    }
+    const linksInThisFolder = folderChildren.filter((l) => !l.folder && l.parent === link._id).toSorted((a, b) => a.order - b.order);
+    li.id = link._id;
+    span.textContent = createTitle(link);
+    li.addEventListener("mouseup", folderClick);
+    li.addEventListener("keydown", folderClick);
+    for (let i = 0; i < linksInThisFolder.length; i++) {
+      const img = imgs[i];
+      const elem = linksInThisFolder[i];
+      const isIconShown = img && isElem(elem) && style !== "text";
+      if (isIconShown) {
+        initIconList.push([img, getIconFromLinkElem(elem)]);
+      }
+    }
+    return li;
+  }
+  function createElem(link, openInNewtab, style) {
+    const li = getHTMLTemplate("link-elem-template", "li");
+    const span = li.querySelector("span.link-elem-title");
+    const anchor = li.querySelector("a");
+    const img = li.querySelector("img");
+    if (!(li && span && anchor && img)) {
+      throw new Error("Template not found");
+    }
+    li.id = link._id;
+    anchor.href = stringMaxSize(link.url, 512);
+    span.textContent = createTitle(link);
+    if (style !== "text") {
+      initIconList.push([img, getIconFromLinkElem(link)]);
+    }
+    if (openInNewtab) {
+      anchor.target = "_blank";
+    }
+    return li;
+  }
+  function createIcons(local) {
+    for (const [img, url] of initIconList) {
+      if (url.startsWith("link")) {
+        img.src = local[`x-icon-${url}`] ?? "";
+      } else {
+        img.src = url;
+      }
+    }
+    setTimeout(() => {
+      const incomplete = initIconList.filter(
+        ([img]) => !img.complete || img.naturalWidth === 0
+      );
+      for (const [img, url] of incomplete) {
+        img.src = "src/assets/interface/loading.svg";
+        const newimg = document.createElement("img");
+        newimg.addEventListener("load", () => {
+          img.src = url;
+        });
+        newimg.addEventListener("error", () => {
+          img.src = "https://services.bonjourr.fr/favicon/blob/error";
+        });
+        newimg.src = url;
+        setTimeout(() => {
+          if (!newimg.complete && newimg.naturalWidth === 0) {
+            console.error("Icon link took too long to load: " + url);
+            img.src = "https://services.bonjourr.fr/favicon/blob/error";
+          }
+        }, 5e3);
+      }
+      initIconList = [];
+    }, 400);
+  }
+  function initRows(row, style) {
+    const sizes = {
+      large: { width: 4.8, gap: 2.3 },
+      medium: { width: 3.5, gap: 2 },
+      small: { width: 2.5, gap: 2 },
+      inline: { width: 11, gap: 2 },
+      text: { width: 5, gap: 2 }
+      // arbitrary width because width is auto
+    };
+    if (style in sizes) {
+      const { width, gap } = sizes[style];
+      document.documentElement.style.setProperty("--links-width", `${Math.ceil((width + gap) * row)}em`);
+    }
+  }
+  queueMicrotask(() => {
+    document.addEventListener("stop-select-all", () => clearTimeout(selectallTimer));
+    document.addEventListener("remove-select-all", removeSelectAll);
+  });
+  function selectAll(event) {
+    clearTimeout(selectallTimer);
+    const selectAllActive = domlinkblocks3.className.includes("select-all");
+    const primaryButton = !event.button || event.button === 0;
+    const pointerUpOrClick = event.type.includes("pointerup") || event.type.includes("click");
+    const li = getLiFromEvent(event);
+    if (selectAllActive && pointerUpOrClick) {
+      if (primaryButton) {
+        li?.classList.toggle("selected");
+      }
+      event.preventDefault();
+      return;
+    }
+    if (!selectAllActive && primaryButton && event.type === "pointerdown") {
+      if (event?.pointerType === "touch") {
+        return;
+      }
+      selectallTimer = setTimeout(() => {
+        domlinkblocks3.classList.add("select-all");
+      }, 600);
+    }
+  }
+  function removeSelectAll() {
+    clearTimeout(selectallTimer);
+    domlinkblocks3.classList.remove("select-all");
+    for (const li of domlinkblocks3.querySelectorAll(".link")) {
+      li.classList.remove("selected");
+    }
+  }
+  async function linksUpdate(update) {
+    let data = await storage.sync.get();
+    if (update.addLinks) {
+      data = linkSubmission({ type: "link", links: update.addLinks }, data);
+    }
+    if (update.addFolder) {
+      data = linkSubmission({ type: "folder", ...update.addFolder }, data);
+    }
+    if (update.addGroups) {
+      data = addGroup(update.addGroups, data);
+    }
+    if (update.moveLinks) {
+      data = moveLinks(update.moveLinks, data);
+    }
+    if (update.moveGroups) {
+      data = moveGroups(update.moveGroups, data);
+    }
+    if (update.moveToGroup) {
+      data = moveToGroup(update.moveToGroup, data);
+    }
+    if (update.moveToFolder) {
+      data = moveToFolder(update.moveToFolder, data);
+    }
+    if (update.concatFolders) {
+      data = concatFolders(update.concatFolders, data);
+    }
+    if (update.moveOutFolder) {
+      data = moveOutFolder(update.moveOutFolder, data);
+    }
+    if (update.updateLink) {
+      data = updateLink(update.updateLink, data);
+    }
+    if (update.deleteLinks) {
+      data = deleteLinks(update.deleteLinks, data);
+    }
+    if (update.groupTitle) {
+      data = changeGroupTitle(update.groupTitle, data);
+    }
+    if (update.deleteGroup !== void 0) {
+      data = deleteGroup(update.deleteGroup, data);
+    }
+    if (update.groups !== void 0) {
+      data = toggleGroups(update.groups, data);
+    }
+    if (update.newtab !== void 0) {
+      data = setOpenInNewTab(update.newtab, data);
+    }
+    if (update.refreshIcons) {
+      data = refreshIcons(update.refreshIcons, data);
+    }
+    if (update.styles) {
+      setLinkStyle(update.styles);
+    }
+    if (update.row) {
+      setRows(update.row);
+    }
+    if (update.iconradius) {
+      eventDebounce({ linkiconradius: update.iconradius });
+      setRadius(update.iconradius);
+    }
+    if (update.styles || update.row) {
+      return;
+    }
+    storage.sync.set(data);
+  }
+  function linkSubmission(args, data) {
+    const type = args.type;
+    let newlinks = [];
+    if (type === "link") {
+      for (const link of args.links) {
+        newlinks.push(validateLink(
+          link.title,
+          link.url,
+          // if no group is specified, adds to the selected one
+          link.group || data.linkgroups.selected
+        ));
+      }
+    }
+    if (type === "folder") {
+      const { ids: ids2, title, group } = args;
+      newlinks = addLinkFolder(ids2, title, group);
+      for (const id of ids2) {
+        const elem = data[id];
+        if (elem && !elem.folder) {
+          elem.parent = newlinks[0]._id;
+        }
+      }
+    }
+    for (const link of newlinks) {
+      const noParents = link.parent === void 0;
+      const { selected, synced } = data.linkgroups;
+      if (noParents && synced.includes(selected)) {
+        link.parent = "";
+        data.linkgroups.selected = "";
+        initGroups(data);
+      } else if (noParents) {
+        link.parent = selected;
+      }
+      data[link._id] = link;
+    }
+    const newsync = correctLinksOrder(data);
+    storage.local.get().then((local) => {
+      initblocks(newsync, local);
+    });
+    return newsync;
+  }
+  function addLinkFolder(ids2, title, group) {
+    const titledom = document.getElementById("e-title");
+    const linktitle = title ?? titledom.value;
+    titledom.value = "";
+    const blocks2 = [...document.querySelectorAll(".link")];
+    const idsOnInterface = blocks2.map((block) => block.id);
+    const order = idsOnInterface.indexOf(ids2[0]);
+    for (let i = 0; i < ids2.length; i++) {
+      const dom = document.getElementById(ids2[i]);
+      const isFolder = dom?.classList.contains("link-folder");
+      if (isFolder) {
+        ids2.splice(i, 1);
+      }
+    }
+    return [
+      {
+        _id: `links${randomString(6)}`,
+        folder: true,
+        order,
+        parent: group ?? "",
+        title: linktitle
+      }
+    ];
+  }
+  function updateLink({ id, title, icon, url, file }, data) {
+    const titledom = document.querySelector(`#${id} span`);
+    const icondom = document.querySelector(`#${id} img`);
+    const urldom = document.querySelector(`#${id} a`);
+    const link = data[id];
+    if (titledom && title !== void 0) {
+      link.title = stringMaxSize(title, 64);
+      titledom.textContent = link.title;
+    }
+    if (isElem(link)) {
+      if (icondom && icon) {
+        const img = document.createElement("img");
+        const currentSrc = icondom.src;
+        let url2 = getDefaultIcon(link.url);
+        icondom.src = "src/assets/interface/loading.svg";
+        img.onload = () => {
+          icondom.src = img.src;
+        };
+        if (icon.type === "auto") {
+          icon.value = void 0;
+          img.src = url2;
+        }
+        if (icon.type === "url") {
+          if (icon.value && stringMaxSize(icon.value, 7500)) {
+            url2 = icon.value;
+            img.src = url2;
+          } else {
+            console.error(`There was a problem with this icon URL: ${icon.value}`);
+          }
+        }
+        if (icon.type === "file") {
+          const currentIcon = link.icon;
+          const noNewOrCurrentFile = !file && !currentIcon?.value;
+          const noNewButHasCurrentFile = !file && currentIcon?.type === "file" && !!currentIcon?.value;
+          if (noNewOrCurrentFile) {
+            throw new Error("Chose file but no file uploaded");
+          }
+          if (noNewButHasCurrentFile) {
+            icon = currentIcon;
+            img.src = currentSrc;
+          }
+          if (file) {
+            url2 = id;
+            storeIconFile(id, file).then((uri) => {
+              img.src = uri;
+            });
+          }
+        }
+        link.icon = icon;
+      }
+      if (titledom && urldom && url !== void 0) {
+        link.url = stringMaxSize(url, 512);
+        urldom.href = link.url;
+        titledom.textContent = createTitle(link);
+      }
+    }
+    data[id] = link;
+    return data;
+  }
+  function concatFolders({ target, source }, data) {
+    const linktarget = data[target];
+    const linksource = data[source];
+    if (!(linktarget.folder && linksource.folder)) {
+      return data;
+    }
+    const sourceIds = getLinksInFolder(data, source).map(({ _id }) => _id);
+    const targetIds = getLinksInFolder(data, target).map(({ _id }) => _id);
+    const ids2 = [...targetIds, ...sourceIds];
+    for (const [key, val] of Object.entries(data)) {
+      if (isLink(val) === false) {
+        continue;
+      }
+      if (ids2.includes(val._id) && !val.folder) {
+        ;
+        data[key].parent = target;
+        data[key].order = Date.now();
+      }
+    }
+    delete data[source];
+    initblocks(data);
+    setTimeout(() => storage.sync.remove(source));
+    return data;
+  }
+  function moveToFolder({ target, source }, data) {
+    const isSourceElem = typeof data[source]?.url === "string";
+    const isTargetFolder = data[target]?.folder === true;
+    if (isSourceElem && isTargetFolder) {
+      ;
+      data[source].parent = target;
+      data[source].order = Date.now();
+      initblocks(data);
+    }
+    return data;
+  }
+  function moveOutFolder({ ids: ids2, group }, data) {
+    const linksInGroup = getLinksInGroup(data, group);
+    const maxOrder = linksInGroup.length > 0 ? Math.max(...linksInGroup.map((link) => link.order)) : -1;
+    ids2.forEach((id, index) => {
+      ;
+      data[id].parent = group;
+      data[id].order = maxOrder + index + 1;
+    });
+    const correctdata = correctLinksOrder(data);
+    initblocks(correctdata);
+    return correctdata;
+  }
+  function deleteLinks(ids2, data) {
+    for (const id of ids2) {
+      const link = data[id];
+      if (link.folder) {
+        for (const child of getLinksInFolder(data, link._id)) {
+          delete data[child._id];
+        }
+      }
+      if (isElem(link)) {
+        if (link.icon?.type === "file") {
+          storage.local.remove(`x-icon-${id}`);
+        }
+      }
+      delete data[id];
+    }
+    storage.sync.clear();
+    const correctdata = correctLinksOrder(data);
+    animateLinksRemove(ids2);
+    return correctdata;
+  }
+  function moveLinks(ids2, data) {
+    ids2.forEach((id, i) => {
+      ;
+      data[id].order = i;
+    });
+    initblocks(data);
+    return data;
+  }
+  function moveToGroup({ ids: ids2, target }, data) {
+    for (const id of ids2) {
+      ;
+      data[id].parent = target;
+      data[id].order = Date.now();
+    }
+    const correctdata = correctLinksOrder(data);
+    initblocks(correctdata);
+    return correctdata;
+  }
+  function refreshIcons(ids2, data) {
+    for (const id of ids2) {
+      const link = data[id];
+      if (link._id) {
+        const unixDate = Date.now().toString();
+        if (!link.icon || link.icon.type === "auto") {
+          link.icon = link.icon ?? { type: "auto", value: "" };
+          link.icon.value = getDefaultIcon(link.url) + `?r=${unixDate}`;
+        } else if (link.icon.type === "url") {
+          link.icon.value = `${link.icon.value}?r=${unixDate}`;
+        }
+        data[id] = link;
+      }
+    }
+    initblocks(data);
+    return data;
+  }
+  function setOpenInNewTab(newtab, data) {
+    const anchors = document.querySelectorAll(".link a");
+    for (const anchor of anchors) {
+      if (newtab) {
+        anchor.setAttribute("target", "_blank");
+      } else {
+        anchor.removeAttribute("target");
+      }
+    }
+    data.linknewtab = newtab;
+    return data;
+  }
+  async function setLinkStyle(styles) {
+    const data = await storage.sync.get();
+    const style = styles.style ?? "large";
+    const { titles } = styles;
+    const { backgrounds } = styles;
+    if (styles.style && isLinkStyle(style)) {
+      const wasText = domlinkblocks3?.className.includes("text");
+      domlinkblocks3.classList.remove("large", "medium", "small", "inline", "text");
+      domlinkblocks3.classList.add(style);
+      data.linkstyle = style;
+      storage.sync.set({ linkstyle: style });
+      if (wasText) {
+        for (const el of document.querySelectorAll("#link-list li") ?? []) {
+          el.remove();
+        }
+      }
+      initRows(data.linksrow, style);
+      initblocks(data);
+    }
+    if (typeof titles === "boolean") {
+      data.linktitles = titles;
+      storage.sync.set({ linktitles: titles });
+      document.getElementById("b_showtitles")?.classList?.toggle("on", titles);
+      domlinkblocks3.classList.toggle("titles", titles);
+    }
+    if (typeof backgrounds === "boolean") {
+      data.linkbackgrounds = backgrounds;
+      storage.sync.set({ linkbackgrounds: backgrounds });
+      document.getElementById("b_showbackgrounds")?.classList?.toggle("on", backgrounds);
+      domlinkblocks3.classList.toggle("backgrounds", backgrounds);
+    }
+  }
+  function setRadius(radius) {
+    document.documentElement.style.setProperty("--link-outer-radius", `${radius}em`);
+  }
+  function setRows(row) {
+    const style = [...domlinkblocks3.classList].filter(isLinkStyle)[0] ?? "large";
+    const val = Number.parseInt(row ?? "6");
+    initRows(val, style);
+    eventDebounce({ linksrow: row });
+  }
+  function validateLink(title, url, parent) {
+    const startsWithEither = (strs) => strs.some((str) => url.startsWith(str));
+    const sanitizedUrl = stringMaxSize(url, 512);
+    const isConfig = startsWithEither(["about:", "chrome://", "edge://"]);
+    const noProtocol = !startsWithEither(["https://", "http://"]);
+    const isLocalhost = url.startsWith("localhost") || url.startsWith("127.0.0.1");
+    const prefix = isConfig ? "#" : isLocalhost ? "http://" : noProtocol ? "https://" : "";
+    return {
+      _id: `links${randomString(6)}`,
+      parent,
+      order: Date.now(),
+      // big number
+      title: stringMaxSize(title, 64),
+      url: prefix + sanitizedUrl
+    };
+  }
+  function animateLinksRemove(ids2) {
+    for (const id of ids2) {
+      document.getElementById(id)?.classList.add("removed");
+      setTimeout(() => document.getElementById(id)?.remove(), 600);
+    }
+  }
+  function correctLinksOrder(data) {
+    const allLinks = Object.values(data).filter((val) => isLink(val));
+    const folderIds = allLinks.filter((link) => link.folder).map(({ _id }) => _id);
+    for (const folderId of folderIds) {
+      const linksInFolder = getLinksInFolder(data, folderId);
+      for (const [i, link] of linksInFolder.entries()) {
+        link.order = i;
+        data[link._id];
+      }
+    }
+    for (const group of data.linkgroups.groups) {
+      const linksInGroup = getLinksInGroup(data, group);
+      for (const [i, link] of linksInGroup.entries()) {
+        link.order = i;
+        data[link._id];
+      }
+    }
+    return data;
+  }
+  function getIconFromLinkElem(link) {
+    if (!link.icon?.value) {
+      try {
+        const { origin, pathname } = new URL(link.url);
+        return getDefaultIcon(origin + pathname);
+      } catch (_) {
+        return getDefaultIcon(link.url);
+      }
+    }
+    if (link.icon.type === "file") {
+      return link._id;
+    }
+    return link.icon.value;
+  }
+  function isLinkStyle(s) {
+    return ["large", "medium", "small", "inline", "text"].includes(s);
+  }
+  function openLinksWithKeyboard(event) {
+    if (isTypingTarget(event.target)) return;
+    const { altKey, ctrlKey, metaKey, code } = event;
+    const isNotAltComboKey = !altKey || ctrlKey || metaKey;
+    const codeNumber = parseInt(code.replace("Digit", "").replace("Numpad", ""));
+    if (isNotAltComboKey || isNaN(codeNumber)) {
+      return;
+    }
+    const links = document.querySelectorAll(".link");
+    const link = links[codeNumber - 1];
+    if (!link) {
+      return;
+    }
+    event.preventDefault();
+    if (link.classList.contains("link-folder")) {
+      folderClick(event, link);
+    } else {
+      link.querySelector("a")?.click();
+    }
+  }
+  function limitAltableLinks() {
+    const links = document.querySelectorAll("#linkblocks .link");
+    links.forEach((link, i) => {
+      link.classList.toggle("no-alt", i >= 9);
+    });
+  }
+
+  // src/scripts/features/links/groups.ts
+  var domlinkblocks4 = document.getElementById("linkblocks");
+  function initGroups(data, init2) {
+    if (!init2) {
+      for (const node of document.querySelectorAll("#link-mini button") ?? []) {
+        node.remove();
+      }
+    }
+    createGroups(data.linkgroups);
+    document.querySelector("#link-mini")?.addEventListener("wheel", (event) => {
+      changeGroup(event);
+      event.preventDefault();
+    }, { passive: false });
+  }
+  function createGroups(linkgroups) {
+    const { groups: groups2, pinned, synced, selected } = linkgroups;
+    for (const group of [...groups2, "+"]) {
+      const button = document.createElement("button");
+      const isTopSite = group === "topsites";
+      const isDefault = group === "default";
+      const isAddMore = group === "+";
+      if (pinned.includes(group)) {
+        continue;
+      }
+      button.textContent = group;
+      button.dataset.group = group;
+      button.classList.add("link-title");
+      button.classList.toggle("selected-group", group === selected);
+      button.classList.toggle("synced", synced.includes(group));
+      if (isTopSite) {
+        button.textContent = tradThis("Most visited");
+        button.classList.add("topsites-title");
+      }
+      if (isDefault) {
+        button.textContent = tradThis("Default group");
+      }
+      if (isAddMore) {
+        button.classList.add("add-group");
+        button.addEventListener("click", openContextMenu);
+      } else {
+        button.addEventListener("click", changeGroup);
+        button.addEventListener("pointerdown", startDrag);
+      }
+      document.querySelector("#link-mini div")?.appendChild(button);
+    }
+    domlinkblocks4?.classList.toggle("with-groups", linkgroups.on);
+  }
+  function changeGroup(event) {
+    let button;
+    if (event.type === "wheel") {
+      const buttons = Array.from(
+        document.querySelectorAll(".link-title:not(.add-group)[data-group]")
+      );
+      const index = buttons.findIndex((btn) => btn.classList.contains("selected-group"));
+      button = buttons[
+        // unsmooth brain thing to get the index for the previous/next button
+        (index + (event.deltaY > 0 ? 1 : -1) + buttons.length) % buttons.length
+      ];
+    } else {
+      button = event.currentTarget;
+    }
+    const transition = transitioner();
+    if (!!domlinkblocks4.dataset.folderid || button.classList.contains("selected-group")) {
+      return;
+    }
+    transition.first(hideCurrentGroup);
+    transition.after(recreateLinksFromNewGroup);
+    transition.finally(showNewGroup);
+    transition.transition(100);
+    async function recreateLinksFromNewGroup() {
+      const buttons = document.querySelectorAll("#link-mini button");
+      const data = await storage.sync.get();
+      const group = button.dataset.group ?? data.linkgroups.groups[0];
+      for (const div of buttons ?? []) {
+        div.classList.remove("selected-group");
+      }
+      button.classList.add("selected-group");
+      data.linkgroups.selected = group;
+      storage.sync.set(data);
+      initblocks(data);
+    }
+    function hideCurrentGroup() {
+      domlinkblocks4.classList.remove("in-folder");
+      domlinkblocks4.classList.add("hiding");
+    }
+    function showNewGroup() {
+      domlinkblocks4.classList.remove("hiding");
+    }
+  }
+  function toggleGroups(on, data) {
+    domlinkblocks4?.classList.toggle("with-groups", on);
+    data.linkgroups.on = on;
+    return data;
+  }
+  function changeGroupTitle(title, data) {
+    const index = data.linkgroups.groups.indexOf(title.old);
+    for (const link of getLinksInGroup(data, title.old)) {
+      data[link._id] = {
+        ...link,
+        parent: title.new
+      };
+    }
+    data.linkgroups.groups[index] = title.new;
+    data.linkgroups.selected = title.new;
+    initGroups(data);
+    return data;
+  }
+  function addGroup(groups2, data) {
+    for (const { title, sync } of groups2) {
+      const isReserved = title === "default" || title === "+";
+      const isAlreadyUsed = data.linkgroups.groups.includes(title);
+      if (isReserved || isAlreadyUsed) {
+        return data;
+      }
+      for (const link of getLinksInGroup(data, "+")) {
+        data[link._id] = {
+          ...link,
+          parent: title
+        };
+      }
+      data.linkgroups.selected = title;
+      data.linkgroups.groups.push(title);
+      if (sync) {
+        data.linkgroups.synced.push(title);
+      }
+    }
+    initGroups(data);
+    initblocks(data);
+    return data;
+  }
+  function deleteGroup(group, data) {
+    const { groups: groups2, pinned, synced, selected } = data.linkgroups;
+    const isBroken = groups2.indexOf(group) === -1;
+    const isMinimum = groups2.length === 1;
+    if (isMinimum || isBroken) {
+      return data;
+    }
+    for (const link of getLinksInGroup(data, group)) {
+      delete data[link._id];
+    }
+    data.linkgroups.selected = group === selected || pinned.includes(group) ? groups2[0] : selected;
+    data.linkgroups.pinned = pinned.filter((p) => p !== group);
+    data.linkgroups.synced = synced.filter((g) => g !== group);
+    data.linkgroups.groups = groups2.filter((g) => g !== group);
+    if (groups2.length === 2) {
+      data.linkgroups.pinned = [];
+    }
+    storage.sync.clear();
+    initblocks(data);
+    initGroups(data);
+    return data;
+  }
+  function moveGroups(mini, data) {
+    const userMini = mini.filter((name) => name !== "+");
+    data.linkgroups.groups = data.linkgroups.pinned.concat(userMini);
+    initGroups(data);
+    return data;
+  }
+  async function togglePinGroup(group, action) {
+    const data = await storage.sync.get();
+    const { groups: groups2, pinned } = data.linkgroups;
+    if (action === "pin") {
+      data.linkgroups.pinned.push(group);
+    }
+    if (action === "unpin") {
+      data.linkgroups.pinned = pinned.filter((pinned2) => pinned2 !== group);
+    }
+    if (group === data.linkgroups.selected) {
+      const unpinned = groups2.filter((id) => pinned.includes(id) === false);
+      data.linkgroups.selected = unpinned[0];
+    }
+    storage.sync.set(data);
+    initblocks(data);
+    initGroups(data);
+  }
+
+  // src/scripts/features/links/edit.ts
+  var domeditlink;
+  var domtitle = document.getElementById("e-title");
+  var domurl = document.getElementById("e-url");
+  var domiconfilelabel = document.getElementById("e-icon-file-label");
+  var domiconfile = document.getElementById("e-icon-file");
+  var domicontype = document.getElementById("e-icon-type");
+  var domiconurl = document.getElementById("e-icon-url");
+  var inputToFocus;
+  var buttonToSubmit;
+  var editStates;
+  async function populateDialogWithEditLink(event, domdialog2, newLinkFromGlobal) {
+    domeditlink = domdialog2;
+    const path = getComposedPath(event.target);
+    const classNames = path.map((element) => element.className ?? "");
+    const linkelem = path.find((el) => el?.className?.includes("link") && el?.tagName === "LI");
+    const linkgroup = path.find((el) => el?.className?.includes("link-group"));
+    const linktitle = path.find((el) => el?.className?.includes("link-title"));
+    const container2 = {
+      mini: path.some((element) => element?.id?.includes("link-mini")),
+      group: newLinkFromGlobal ?? classNames.some((cl) => cl.includes("link-group") && !cl.includes("in-folder")),
+      folder: classNames.some((cl) => cl.includes("link-group") && cl.includes("in-folder"))
+    };
+    const target = {
+      link: classNames.some((cl) => cl.includes("link-elem")),
+      folder: classNames.some((cl) => cl.includes("link-folder")),
+      title: classNames.some((cl) => cl.includes("link-title")),
+      synced: classNames.some((cl) => cl.includes("synced")),
+      addgroup: classNames.some((cl) => cl.includes("add-group"))
+    };
+    const selectall = classNames.some((cl) => cl.includes("select-all"));
+    const dragging = classNames.some((cl) => cl.includes("dragging") || cl.includes("dropping"));
+    const group = (container2.mini ? linktitle : linkgroup)?.dataset.group ?? "";
+    const domfolder = document.querySelector(".link-group.in-folder");
+    const folder = domfolder?.dataset?.folder ?? "";
+    editStates = {
+      group,
+      folder,
+      selectall,
+      container: container2,
+      dragging,
+      target,
+      selected: getSelectedIds()
+    };
+    const inputs = toggleEditInputs();
+    const folderTitle = container2.folder && target.title;
+    const noSelection = selectall && editStates.selected.length === 0;
+    const noInputs = inputs.length === 0;
+    if (noInputs || folderTitle || noSelection || dragging) {
+      closeContextMenu();
+      return;
+    }
+    document.dispatchEvent(new Event("stop-select-all"));
+    event.preventDefault();
+    domeditlink.querySelectorAll("#contextActions button, #background-actions").forEach(function(contextButton) {
+      contextButton.classList.remove("on");
+    });
+    const data = await storage.sync.get();
+    if (target.title) {
+      const { groups: groups2, pinned } = data.linkgroups;
+      const title = editStates.target.addgroup ? "" : editStates.group;
+      domeditlink.dataset.group = title;
+      domtitle.value = title;
+      const onlyOneTitleUnpinned = groups2.length - pinned.length < 2;
+      const onlyOneTitleLeft = groups2.length < 2;
+      if (onlyOneTitleUnpinned) {
+        document.getElementById("edit-pin")?.setAttribute("disabled", "");
+      }
+      if (onlyOneTitleLeft) {
+        document.getElementById("edit-delete")?.setAttribute("disabled", "");
+      }
+    }
+    if (target.folder || target.link) {
+      const pathLis = path.filter((el) => el.tagName === "LI");
+      const li = pathLis[0];
+      const id = li?.id;
+      const link = getLink(data, id);
+      domtitle.value = link?.title ?? "";
+      if (link && !link.folder) {
+        domurl.value = link.url ?? "";
+        const iconType = link.icon?.type ?? "auto";
+        const iconValue = link.icon?.value ?? "";
+        domiconurl.value = "";
+        domiconfilelabel.textContent = tradThis("No file chosen");
+        if (iconType === "url" && iconValue) {
+          domiconurl.value = iconValue;
+        }
+        if (iconType === "file") {
+          domiconfilelabel.textContent = iconValue;
+        }
+        toggleIconType(link.icon ? link.icon.type : "auto");
+      }
+    }
+    if (!selectall) {
+      for (const node of document.querySelectorAll(".link-title.selected, .link.selected") ?? []) {
+        node.classList.remove("selected");
+      }
+      ;
+      (target.title ? linktitle : linkelem)?.classList.add("selected");
+    }
+    editStates.selected = getSelectedIds();
+    if (!newLinkFromGlobal) {
+      positionContextMenu(event);
+    }
+    inputToFocus?.focus();
+  }
+  function toggleEditInputs() {
+    const deleteButtonTxt = document.querySelector("#edit-delete span");
+    const addButtonTxt = document.querySelector("#edit-add span");
+    const { container: container2, target, selectall } = editStates;
+    let inputs = [];
+    inputToFocus = domtitle;
+    setSubmitOnEnter("edit-apply");
+    document.querySelector("#edit-delete")?.removeAttribute("disabled");
+    document.querySelector("#edit-pin")?.removeAttribute("disabled");
+    domurl.value = "";
+    domiconurl.value = "";
+    domtitle.value = "";
+    if (container2.mini) {
+      if (target.synced) {
+        inputs = ["pin", "delete"];
+      } else if (target.addgroup) {
+        inputs = ["title*", "add"];
+        setSubmitOnEnter("edit-add");
+      } else if (target.title) {
+        inputs = ["title", "delete", "pin", "apply"];
+      }
+    }
+    if (container2.group) {
+      if (target.synced && !target.title) {
+        inputs = ["synced"];
+      } else if (target.synced && target.title) {
+        inputs = ["unpin", "delete"];
+      } else if (selectall) {
+        inputs = ["delete", "refresh", "add"];
+        setSubmitOnEnter("edit-add");
+      } else if (target.title) {
+        inputs = ["title", "delete", "unpin", "apply"];
+      } else if (target.folder) {
+        inputs = ["title", "delete", "apply"];
+      } else if (target.link) {
+        inputs = ["title", "url*", "icon", "icon-url*", "delete", "refresh", "apply"];
+      } else {
+        inputs = ["title", "url*", "add"];
+        inputToFocus = domurl;
+        setSubmitOnEnter("edit-add");
+      }
+    }
+    if (container2.folder) {
+      if (target.title) {
+        inputs = [];
+      } else if (selectall) {
+        inputs = ["delete", "unfolder"];
+      } else if (target.link) {
+        inputs = ["title", "url*", "icon", "icon-url*", "delete", "apply", "unfolder"];
+      } else {
+        inputs = ["title", "url*", "add"];
+        inputToFocus = domurl;
+        setSubmitOnEnter("edit-add");
+      }
+    }
+    for (const id of inputs) {
+      const required = id.endsWith("*");
+      const cleanId = required ? id.slice(0, -1) : id;
+      domeditlink.querySelector(`#edit-${cleanId}`)?.classList.add("on");
+      if (required) {
+        domeditlink.querySelector(`#e-${cleanId}`).required = true;
+      }
+    }
+    const hasLabels = inputs.includes("title") || inputs.includes("title*") || inputs.includes("url*") || inputs.includes("icon");
+    domeditlink.querySelector("hr")?.classList.toggle("on", hasLabels);
+    if (deleteButtonTxt) {
+      if (selectall) {
+        deleteButtonTxt.textContent = tradThis("Delete selected");
+      } else if (target.folder) {
+        deleteButtonTxt.textContent = tradThis("Delete folder");
+      } else if (target.link) {
+        deleteButtonTxt.textContent = tradThis("Delete link");
+      } else if (target.title) {
+        deleteButtonTxt.textContent = tradThis("Delete group");
+      }
+    }
+    if (addButtonTxt) {
+      if (selectall) {
+        addButtonTxt.textContent = tradThis("Create new folder");
+      } else if (target.title) {
+        addButtonTxt.textContent = tradThis("Add new group");
+      } else {
+        addButtonTxt.textContent = tradThis("Add new link");
+      }
+    }
+    return inputs;
+  }
+  queueMicrotask(() => {
+    document.getElementById("editlink-form")?.addEventListener("submit", submitChanges);
+    domicontype?.addEventListener("change", toggleIconType);
+  });
+  function setSubmitOnEnter(theButton) {
+    if (!buttonToSubmit) {
+      buttonToSubmit = document.getElementById(theButton ?? "edit-apply");
+      document.getElementById("editlink-form")?.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          buttonToSubmit.click();
+        }
+      });
+    } else {
+      buttonToSubmit = document.getElementById(theButton);
+    }
+  }
+  function toggleIconType(iconType) {
+    if (iconType instanceof Event) {
+      const target = iconType.target;
+      iconType = target.value;
+    }
+    const selectIconType = document.getElementById("e-icon-type");
+    if (selectIconType) {
+      selectIconType.value = iconType;
+    }
+    const editIconUrl = document.getElementById("e-icon-url");
+    if (editIconUrl) {
+      editIconUrl.disabled = iconType !== "url";
+    }
+    const refreshButton = document.getElementById("edit-refresh");
+    if (refreshButton) {
+      const showsRefreshButton = ["auto", "url"].includes(iconType);
+      refreshButton.disabled = !showsRefreshButton;
+      refreshButton?.classList.toggle("on", showsRefreshButton);
+    }
+    document.getElementById("edit-icon-url")?.classList.toggle("on", iconType === "url");
+    document.getElementById("edit-icon-svg")?.classList.toggle("on", iconType === "svg");
+    document.getElementById("edit-icon-file")?.classList.toggle("on", iconType === "file");
+  }
+  function submitChanges(event) {
+    const change = event.submitter?.id;
+    const { container: container2, target, group, folder, selected, selectall } = editStates;
+    if (change === "edit-apply") {
+      applyLinkChanges("button");
+    }
+    if (change === "edit-icon") {
+      toggleIconType(event);
+    }
+    if (change === "edit-refresh") {
+      quickLinks(void 0, { refreshIcons: selected });
+    }
+    if (change === "edit-delete") {
+      if (target.title) {
+        quickLinks(void 0, { deleteGroup: group });
+      } else {
+        quickLinks(void 0, { deleteLinks: selected });
+      }
+    }
+    if (change === "edit-add") {
+      if (container2.folder) {
+        quickLinks(void 0, {
+          addLinks: [{
+            group: folder,
+            title: domtitle.value,
+            url: domurl.value
+          }]
+        });
+      } else if (target.title && domtitle.value) {
+        quickLinks(void 0, {
+          addGroups: [{
+            title: domtitle.value
+          }]
+        });
+      } else if (selectall) {
+        document.dispatchEvent(new Event("remove-select-all"));
+        quickLinks(void 0, {
+          addFolder: {
+            ids: selected,
+            group
+          }
+        });
+      } else if (container2.group) {
+        quickLinks(void 0, {
+          addLinks: [{
+            group,
+            title: domtitle.value,
+            url: domurl.value
+          }]
+        });
+      }
+    }
+    if (change === "edit-unfolder") {
+      document.dispatchEvent(new Event("remove-select-all"));
+      quickLinks(void 0, {
+        moveOutFolder: {
+          ids: editStates.selected,
+          group: editStates.group
+        }
+      });
+    }
+    if (change === "edit-pin") {
+      togglePinGroup(group, "pin");
+    }
+    if (change === "edit-unpin") {
+      togglePinGroup(group, "unpin");
+    }
+    event.preventDefault();
+    setTimeout(closeContextMenu);
+  }
+  function applyLinkChanges(_origin) {
+    const id = editStates.selected[0];
+    const li = document.querySelector(`#${id}`);
+    const _inputs = document.querySelectorAll("#editlink input");
+    if (editStates.target.addgroup) {
+      quickLinks(void 0, { addGroups: [{ title: domtitle.value }] });
+      closeContextMenu();
+      return;
+    }
+    if (editStates.target.title) {
+      quickLinks(void 0, {
+        groupTitle: {
+          old: domeditlink.dataset.group ?? "",
+          new: domtitle.value
+        }
+      });
+      closeContextMenu();
+      return;
+    }
+    if (editStates.container.folder && editStates.selected.length === 0 && domurl.value) {
+      quickLinks(void 0, {
+        addLinks: [{
+          group: editStates.folder,
+          title: domtitle.value,
+          url: domurl.value
+        }]
+      });
+      closeContextMenu();
+      return;
+    }
+    if (editStates.container.group && !editStates.target.link && !editStates.target.folder) {
+      quickLinks(void 0, {
+        addLinks: [{
+          group: editStates.group,
+          title: domtitle.value,
+          url: domurl.value
+        }]
+      });
+      closeContextMenu();
+      return;
+    }
+    if (!id || !li) {
+      return;
+    }
+    let iconType = "auto";
+    let iconValue = void 0;
+    const iconUrl = domiconurl.value;
+    const iconFile = domiconfile.files?.[0];
+    if (isLinkIconType(domicontype.value)) {
+      iconType = domicontype.value;
+      iconValue = void 0;
+      if (iconType === "url") {
+        iconValue = iconUrl;
+      }
+      if (iconType === "file" && iconFile) {
+        iconValue = iconFile.name;
+      }
+      if (iconType === "file" && !iconFile) {
+        iconType = "file";
+        iconValue = void 0;
+      }
+    }
+    quickLinks(void 0, {
+      updateLink: {
+        id,
+        title: document.querySelector("#e-title")?.value ?? "",
+        url: document.querySelector("#e-url")?.value,
+        icon: {
+          type: iconType,
+          value: iconValue
+        },
+        file: iconFile
+      }
+    });
+    closeContextMenu();
+  }
+
+  // src/scripts/features/contextmenu.ts
+  var import_mod3 = __toESM(require_dist());
+  var sectionMatching = {
+    time: {
+      section: "#time",
+      scrollto: "time_title"
+    },
+    main: {
+      section: "#main",
+      scrollto: "main_title"
+    },
+    quotes: {
+      section: "#quotes_container",
+      scrollto: "quotes_title"
+    },
+    pomodoro: {
+      section: "#pomodoro_container",
+      scrollto: "pomodoro_title"
+    },
+    searchbar: {
+      section: "#sb_container",
+      scrollto: "searchbar_title"
+    },
+    notes: {
+      section: "#notes_container",
+      scrollto: "notes_title"
+    }
+  };
+  var mainInterface = document.getElementById("interface");
+  var domdialog = document.getElementById("contextmenu");
+  var eventLocation;
+  function openContextMenu(event) {
+    const selection = globalThis.getSelection();
+    if (selection && !selection.isCollapsed) {
+      return;
+    }
+    const target = event.target;
+    eventLocation = {
+      widgets: {
+        link: !!target.closest("#linkblocks"),
+        time: !!target.closest(sectionMatching.time.section),
+        main: !!target.closest(sectionMatching.main.section),
+        quotes: !!target.closest(sectionMatching.quotes.section),
+        pomodoro: !!target.closest(sectionMatching.pomodoro.section),
+        searchbar: !!target.closest(sectionMatching.searchbar.section),
+        notes: !!target.closest(sectionMatching.notes.section)
+      },
+      interface: target.matches("main#interface") || target.matches("body")
+    };
+    const pointer = event;
+    const ctrlRightClick = pointer.button === 2 && !!pointer.ctrlKey && event.type === "contextmenu";
+    const notPressingE = event.type === "keyup" && event.code !== "KeyE";
+    const clickedOnWidgets = Object.values(eventLocation.widgets).some((v) => v);
+    const menuWillOpen = !(ctrlRightClick || notPressingE) && clickedOnWidgets || eventLocation.interface;
+    if (!menuWillOpen) {
+      return;
+    }
+    for (const node of domdialog.querySelectorAll("label, button, hr, #background-actions, input, #pomodoro-info")) {
+      node.classList.remove("on");
+      if (node instanceof HTMLInputElement) {
+        node.required = false;
+      }
+    }
+    event.preventDefault();
+    const contextmenuTransition = transitioner();
+    contextmenuTransition.first(() => domdialog?.show());
+    contextmenuTransition.after(() => domdialog?.classList?.add("shown"));
+    contextmenuTransition.transition(10);
+    if (eventLocation.widgets.link) {
+      populateDialogWithEditLink(event, domdialog);
+      return;
+    }
+    if (eventLocation.widgets.pomodoro) {
+      showTheseElements("#pomodoro-info");
+    }
+    if (clickedOnWidgets) {
+      const allWidgets = Object.entries(eventLocation.widgets);
+      const clickedOnWidgets2 = allWidgets.filter(([_, clicked]) => clicked);
+      for (const [widget2] of clickedOnWidgets2) {
+        const section = sectionMatching[widget2];
+        populateDialogWithAction("openTheseSettings", section.scrollto);
+      }
+      positionContextMenu(event);
+      return;
+    }
+    if (eventLocation.interface) {
+      populateDialogWithAction("openTheseSettings", "background_title");
+      if (!document.querySelector("#linkblocks.hidden")) {
+        populateDialogWithAction("add-new-link");
+        populateDialogWithAction("openTheseSettings", "links_title");
+      }
+      showTheseElements("#background-actions");
+      positionContextMenu(event);
+    }
+  }
+  function populateDialogWithAction(actionType, attribute) {
+    let selector = `[data-action="${actionType}"]`;
+    if (attribute) {
+      selector += `[data-attribute="${attribute}"]`;
+    }
+    showTheseElements(selector);
+  }
+  function positionContextMenu(event) {
+    const editRects = domdialog.getBoundingClientRect();
+    const withPointer = event.type === "contextmenu" || event.type === "click" || event.type === "touchstart";
+    const withKeyboard = event.type === "keyup" && event?.key === "e";
+    const { innerHeight, innerWidth } = window;
+    const isMobileSized = innerWidth < 600;
+    const docLang = document.documentElement.lang;
+    const rightToLeft = docLang === "ar" || docLang === "fa" || docLang === "he";
+    let x = 0;
+    let y = 0;
+    if (withPointer && isMobileSized) {
+      x = (innerWidth - editRects.width) / 2;
+      y = (event.type === "touchstart" ? event.touches[0].clientY : event.y) - 60 - editRects.height;
+    } else if (withPointer) {
+      x = event.type === "touchstart" ? event.touches[0].clientX : event.x;
+      y = event.type === "touchstart" ? event.touches[0].clientY : event.y;
+    } else if (withKeyboard) {
+      const targetEl = event.target;
+      const rect = targetEl.getBoundingClientRect();
+      x = rect.right;
+      y = rect.bottom + 4;
+    }
+    const w = editRects.width;
+    const h = editRects.height;
+    if (x + w > innerWidth) {
+      x -= x + w - innerWidth;
+    }
+    if (y + h > innerHeight) {
+      y -= h;
+    }
+    if (rightToLeft) {
+      x *= -1;
+    }
+    domdialog.style.transform = `translate(${Math.floor(x)}px, ${Math.floor(y)}px)`;
+  }
+  function openSettingsButtonEvent(event) {
+    const target = event.target;
+    const sectionToScrollTo = target.getAttribute("data-attribute");
+    if (sectionToScrollTo) {
+      document.dispatchEvent(
+        new CustomEvent("toggle-settings", {
+          detail: { scrollTo: `#${sectionToScrollTo}` }
+        })
+      );
+      closeContextMenu();
+    } else {
+      console.error(`Section "${sectionToScrollTo}" doesn't match anything`);
+    }
+  }
+  function showTheseElements(query) {
+    document.querySelectorAll(query).forEach((element) => {
+      element.classList.add("on");
+    });
+  }
+  queueMicrotask(() => {
+    document.addEventListener("contextmenu", (event) => {
+      if (event.altKey) {
+        closeContextMenu();
+        return;
+      }
+      if (mainInterface?.contains(event.target) || event.target === document.body) {
+        openContextMenu(event);
+        return;
+      }
+      closeContextMenu();
+    });
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "hidden") {
+        closeContextMenu();
+      }
+    });
+    domdialog.querySelectorAll('input[type="file"]')?.forEach((input) => {
+      input.addEventListener("change", function() {
+        const span = this.nextElementSibling;
+        const isSpan = span?.tagName === "SPAN";
+        const file = this.files?.[0];
+        if (span && file && isSpan) {
+          span.textContent = file.name;
+        }
+      });
+    });
+    document.addEventListener("close-edit", closeContextMenu);
+    const openSettingsButtons = domdialog.querySelectorAll(`[data-action="openTheseSettings"]`);
+    openSettingsButtons?.forEach((btn) => {
+      btn?.addEventListener("click", openSettingsButtonEvent);
+    });
+    const addNewLinkButton = domdialog.querySelector(`[data-action="add-new-link"]`);
+    addNewLinkButton?.addEventListener("click", (event) => populateDialogWithEditLink(event, domdialog, true));
+    if (SYSTEM_OS === "ios" || !IS_MOBILE) {
+      const handleLongPress = debounce((event) => {
+        openContextMenu(event);
+      }, 500);
+      document?.addEventListener("touchstart", (event) => {
+        const touchY = event.touches[0].clientY;
+        const windowHeight = globalThis.innerHeight;
+        const threshold = windowHeight * 0.95;
+        if (touchY < threshold) {
+          handleLongPress(event);
+        }
+      });
+      document?.addEventListener("touchend", () => {
+        handleLongPress.cancel();
+      });
+      globalThis.addEventListener("resize", closeContextMenu);
+    }
+  });
+  function closeContextMenu() {
+    if (domdialog.open) {
+      const selected = document.querySelectorAll(".link-title.selected, .link.selected");
+      for (const node of selected) {
+        node?.classList.remove("selected");
+      }
+      domdialog.removeAttribute("data-tab");
+      domdialog.classList.remove("shown");
+      domdialog.close();
+      document.dispatchEvent(new Event("remove-select-all"));
+    }
+  }
+  function handleBackgroundActions(backgrounds) {
+    const muteButton = document.getElementById("b_interface-background-mute");
+    const type = backgrounds.type;
+    const freq = backgrounds.frequency;
+    document.getElementById("background-actions")?.setAttribute("data-type", type);
+    document.getElementById("b_interface-background-pause")?.classList.toggle("paused", freq === "pause");
+    document.getElementById("b_interface-background-download")?.toggleAttribute("disabled", type !== "images");
+    const shouldShowMute = type === "files" || type === "videos";
+    muteButton?.toggleAttribute("disabled", !shouldShowMute);
+    if (shouldShowMute) {
+      muteButton?.classList.toggle("muted", backgrounds.mute);
+    }
+  }
+  function initBackgroundActionsEvents() {
+    (0, import_mod3.onclickdown)(document.getElementById("b_interface-background-pause"), () => {
+      toggleBackgroundPause();
+    });
+    (0, import_mod3.onclickdown)(document.getElementById("b_interface-background-refresh"), (event) => {
+      backgroundUpdate({ refresh: event });
+    });
+    (0, import_mod3.onclickdown)(document.getElementById("b_interface-background-download"), () => {
+      downloadImage();
+    });
+    (0, import_mod3.onclickdown)(document.getElementById("b_interface-background-mute"), () => {
+      toggleMuteVideo();
+    });
+  }
+  async function toggleMuteVideo() {
+    const muteInput = document.querySelector("#i_background-mute-videos");
+    const muteContextButton = document.getElementById("b_interface-background-mute");
+    const sync = await storage.sync.get("backgrounds");
+    const lastMuteStatus = sync.backgrounds.mute;
+    if (muteInput) {
+      muteInput.checked = !lastMuteStatus;
+    }
+    muteContextButton?.classList.toggle("muted", !lastMuteStatus);
+    toggleMuteStatus(!lastMuteStatus);
+    backgroundUpdate({ mute: !lastMuteStatus });
+  }
+  async function toggleBackgroundPause() {
+    const freqInput = document.querySelector("#i_freq");
+    const button = document.getElementById("b_interface-background-pause");
+    const paused = button?.classList.contains("paused");
+    const sync = await storage.sync.get("backgrounds");
+    const last = localStorage.lastBackgroundFreq || "hour";
+    if (freqInput) {
+      freqInput.value = paused ? last : "pause";
+    }
+    if (paused) {
+      backgroundUpdate({ freq: last });
+    } else {
+      localStorage.lastBackgroundFreq = sync.backgrounds.frequency;
+      backgroundUpdate({ freq: "pause" });
+    }
+  }
+  async function downloadImage() {
+    const dombutton = document.querySelector("#b_interface-background-download");
+    const domsave = document.querySelector("#download-background");
+    if (!domsave) {
+      console.warn("?");
+      return;
+    }
+    dombutton?.classList.replace("idle", "loading");
+    try {
+      const baseUrl = "https://services.bonjourr.fr/unsplash";
+      const downloadUrl = new URL(domsave.dataset.downloadUrl ?? "");
+      const apiDownloadUrl = baseUrl + downloadUrl.pathname + downloadUrl.search;
+      const downloadResponse = await fetch(apiDownloadUrl);
+      if (!downloadResponse) {
+        return;
+      }
+      const data = await downloadResponse.json();
+      const imageResponse = await fetch(data.url);
+      if (!imageResponse.ok) {
+        return;
+      }
+      const blob = await imageResponse.blob();
+      domsave.href = URL.createObjectURL(blob);
+      domsave.download = downloadUrl.pathname.split("/")[2];
+      domsave.click();
+    } finally {
+      dombutton?.classList.replace("loading", "idle");
+    }
+  }
+
+  // src/scripts/features/backgrounds/credits.ts
+  function toggleCredits(backgrounds) {
+    const domcontainer2 = document.getElementById("credit-container");
+    const domcredit = document.getElementById("credit");
+    const domsave = document.getElementById("a_interface-background-download");
+    switch (backgrounds.type) {
+      case "color": {
+        domcontainer2?.classList.remove("shown");
+        return;
+      }
+      case "urls":
+      case "files": {
+        domcontainer2?.classList.add("shown");
+        domcredit?.classList.add("hidden");
+        domsave?.classList.add("hidden");
+        break;
+      }
+      case "videos": {
+        domcontainer2?.classList.add("shown");
+        domcredit?.classList.remove("hidden");
+        domsave?.classList.add("hidden");
+        break;
+      }
+      default: {
+        domcontainer2?.classList.add("shown");
+        domcredit?.classList.remove("hidden");
+        domsave?.classList.remove("hidden");
+      }
+    }
+  }
+  function updateCredits(image) {
+    const domcontainer2 = document.getElementById("credit-container");
+    const domcredit = document.getElementById("credit");
+    const domsave = document.getElementById("download-background");
+    if (!(domcontainer2 && domcredit && image?.page && image?.username)) {
+      return;
+    }
+    if (image?.format === "video") {
+      if (image.username) {
+        const dompage = document.createElement("a");
+        dompage.textContent = tradThis(`Video by ${image.username}`);
+        dompage.href = image.page;
+        domcredit.textContent = "";
+        domcredit.append(dompage);
+      }
+      return;
+    }
+    const hasLocation = image.city || image.country;
+    let exif = "";
+    let credits = "";
+    if (image.exif) {
+      const { iso, model, aperture, exposure_time, focal_length } = image.exif;
+      if (model) {
+        exif += `${model} - `;
+      }
+      if (aperture) {
+        exif += `f/${aperture} `;
+      }
+      if (exposure_time) {
+        exif += `${exposure_time}s `;
+      }
+      if (iso) {
+        exif += `${iso}ISO `;
+      }
+      if (focal_length) {
+        exif += `${focal_length}mm`;
+      }
+    }
+    if (hasLocation) {
+      const city = image.city || "";
+      const country = image.country || "";
+      const comma = city && country ? ", " : "";
+      credits = `${city}${comma}${country} <name>`;
+    } else {
+      credits = tradThis("Photo by <name>");
+    }
+    const [location2, rest2] = credits.split(" <name>");
+    const domlocation = document.createElement("a");
+    const domspacer = document.createElement("span");
+    const domrest = document.createElement("span");
+    const domartist = document.createElement("a");
+    const domexif = document.createElement("p");
+    domexif.className = "exif";
+    domexif.textContent = exif;
+    domlocation.textContent = location2;
+    domartist.textContent = image.username.slice(0, 1).toUpperCase() + image.username.slice(1);
+    domspacer.textContent = hasLocation ? " - " : " ";
+    domrest.textContent = rest2;
+    if (image.page.includes("unsplash")) {
+      domlocation.href = `${image.page}?utm_source=Bonjourr&utm_medium=referral`;
+      domartist.href = `https://unsplash.com/@${image.username}?utm_source=Bonjourr&utm_medium=referral`;
+    } else {
+      domlocation.href = image.page;
+    }
+    domcredit.textContent = "";
+    domcredit.append(domexif, domlocation, domspacer, domartist, domrest);
+    if (image.download && domsave) {
+      domsave.dataset.downloadUrl = image.download;
+    }
+  }
+
+  // src/scripts/features/backgrounds/textures.ts
+  var TEXTURE_RANGES = {
+    grain: {
+      opacity: {
+        min: "0.02",
+        max: "0.3",
+        step: "0.01",
+        value: "0.1"
+      },
+      size: {
+        min: "140",
+        max: "300",
+        step: "5",
+        value: "220"
+      },
+      color: void 0
+    },
+    verticalDots: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.1",
+        value: "0.3"
+      },
+      size: {
+        min: "10",
+        max: "100",
+        step: "1",
+        value: "30"
+      },
+      color: "#ffffff"
+    },
+    diagonalDots: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.1",
+        value: "0.3"
+      },
+      size: {
+        min: "10",
+        max: "100",
+        step: "1",
+        value: "30"
+      },
+      color: "#ffffff"
+    },
+    checkerboard: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.1",
+        value: "0.3"
+      },
+      size: {
+        min: "10",
+        max: "100",
+        step: "1",
+        value: "30"
+      },
+      color: "#ffffff"
+    },
+    isometric: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.1",
+        value: "0.3"
+      },
+      size: {
+        min: "10",
+        max: "100",
+        step: "1",
+        value: "30"
+      },
+      color: "#ffffff"
+    },
+    topographic: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.4"
+      },
+      size: {
+        min: "400",
+        max: "600",
+        step: "10",
+        value: "500"
+      },
+      color: "#ffffff"
+    },
+    grid: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.4"
+      },
+      size: {
+        min: "10",
+        max: "100",
+        step: "1",
+        value: "30"
+      },
+      color: "#ffffff"
+    },
+    verticalLines: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.4"
+      },
+      size: {
+        min: "10",
+        max: "100",
+        step: "1",
+        value: "30"
+      },
+      color: "#ffffff"
+    },
+    horizontalLines: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.4"
+      },
+      size: {
+        min: "10",
+        max: "100",
+        step: "1",
+        value: "30"
+      },
+      color: "#ffffff"
+    },
+    diagonalStripes: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.4"
+      },
+      size: {
+        min: "10",
+        max: "100",
+        step: "1",
+        value: "30"
+      },
+      color: "#ffffff"
+    },
+    verticalStripes: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.4"
+      },
+      size: {
+        min: "10",
+        max: "100",
+        step: "1",
+        value: "30"
+      },
+      color: "#ffffff"
+    },
+    horizontalStripes: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.4"
+      },
+      size: {
+        min: "10",
+        max: "100",
+        step: "1",
+        value: "30"
+      },
+      color: "#ffffff"
+    },
+    diagonalLines: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.4"
+      },
+      size: {
+        min: "10",
+        max: "100",
+        step: "1",
+        value: "30"
+      },
+      color: "#ffffff"
+    },
+    aztec: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.2"
+      },
+      size: {
+        min: "10",
+        max: "100",
+        step: "1",
+        value: "30"
+      },
+      color: "#ffffff"
+    },
+    circuitBoard: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.2"
+      },
+      size: {
+        min: "150",
+        max: "500",
+        step: "1",
+        value: "250"
+      },
+      color: "#ffffff"
+    },
+    ticTacToe: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.2"
+      },
+      size: {
+        min: "50",
+        max: "400",
+        step: "1",
+        value: "100"
+      },
+      color: "#ffffff"
+    },
+    endlessClouds: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.2"
+      },
+      size: {
+        min: "80",
+        max: "400",
+        step: "1",
+        value: "150"
+      },
+      color: "#ffffff"
+    },
+    waves: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.2"
+      },
+      size: {
+        min: "80",
+        max: "400",
+        step: "1",
+        value: "150"
+      },
+      color: "#ffffff"
+    },
+    honeycomb: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.2"
+      },
+      size: {
+        min: "25",
+        max: "300",
+        step: "5",
+        value: "75"
+      },
+      color: "#ffffff"
+    },
+    vectorGrain: {
+      opacity: {
+        min: "0.1",
+        max: "1.0",
+        step: "0.05",
+        value: "0.5"
+      },
+      size: {
+        min: "250",
+        max: "1000",
+        step: "10",
+        value: "350"
+      },
+      color: "#ffffff"
+    },
+    none: {
+      opacity: {
+        min: "",
+        max: "",
+        value: "",
+        step: ""
+      },
+      size: {
+        min: "",
+        max: "",
+        value: "",
+        step: ""
+      },
+      color: void 0
+    }
+  };
+
+  // src/scripts/features/backgrounds/providers.ts
+  var IMAGES = [
+    {
+      optgroup: "Bonjourr",
+      options: [
+        {
+          name: "Bonjourr Daylight",
+          value: "bonjourr-images-daylight"
+        }
+      ]
+    },
+    {
+      optgroup: "Unsplash",
+      options: [
+        {
+          name: "Unsplash Collections",
+          value: "unsplash-images-collections"
+        },
+        {
+          name: "Unsplash Search",
+          value: "unsplash-images-search"
+        }
+      ]
+    }
+    // {
+    // 	optgroup: 'Pixabay',
+    // 	options: [
+    // 		{
+    // 			name: 'Pixabay Search',
+    // 			value: 'pixabay-images-search',
+    // 		},
+    // 	],
+    // },
+    // {
+    // 	optgroup: 'MET Museum',
+    // 	options: [
+    // 		{
+    // 			name: 'MET Museum paintings',
+    // 			value: 'metmuseum-images-paintings',
+    // 		},
+    // 	],
+    // },
+  ];
+  var VIDEOS = [
+    {
+      optgroup: "Bonjourr",
+      options: [
+        {
+          name: "Bonjourr Daylight",
+          value: "bonjourr-videos-daylight"
+        }
+      ]
+    },
+    {
+      optgroup: "Pixabay",
+      options: [
+        {
+          name: "Pixabay Search",
+          value: "pixabay-videos-search"
+        }
+      ]
+    }
+  ];
+  var PROVIDERS = { IMAGES, VIDEOS };
+
+  // src/scripts/features/backgrounds/local.ts
+  var import_mod4 = __toESM(require_dist());
+
+  // src/scripts/features/backgrounds/VideoLooper.ts
+  var VideoLooper = class {
+    video1;
+    video2;
+    container;
+    fadetime;
+    playbackRate;
+    listener;
+    constructor(src, fadetime = 4e3, playbackRate = 1) {
+      this.fadetime = fadetime;
+      this.playbackRate = playbackRate;
+      this.container = document.createElement("div");
+      this.container.classList.add("video-looper");
+      this.video1 = this.createVideo(src);
+      this.video2 = this.createVideo(src);
+      this.video1.id = "first-looped-video";
+      this.video2.id = "second-looped-video";
+      this.container.appendChild(this.video1);
+      this.container.appendChild(this.video2);
+      this.listener = () => {
+        if (!this.video2?.isConnected) return;
+        this.stop();
+        if (!document.hidden) {
+          this.video2.play();
+        }
+      };
+      document.addEventListener(
+        "visibilitychange",
+        this.listener
+      );
+      return;
+    }
+    //
+    // Public
+    //
+    loop() {
+      this.video2.play();
+      this.video1.addEventListener("timeupdate", () => {
+        if (this.isEnding(this.video1) && this.fadetime !== 0) {
+          this.video1.classList.add("hiding");
+          this.video2.play();
+        }
+      });
+      this.video2.addEventListener("timeupdate", () => {
+        if (this.isEnding(this.video2) && this.fadetime !== 0) {
+          this.video2.classList.add("hiding");
+          this.video1.play();
+        }
+      });
+    }
+    stop() {
+      this.video1.pause();
+      this.video2.pause();
+      this.video1.currentTime = 0;
+      this.video2.currentTime = 0;
+      this.video1.classList.remove("hiding");
+      this.video2.classList.remove("hiding");
+    }
+    remove() {
+      this.container.style.opacity = "0";
+      setTimeout(() => {
+        this.video1.remove();
+        this.video2.remove();
+        this.container.remove();
+        if (this.listener) {
+          document.removeEventListener(
+            "visibilitychange",
+            this.listener
+          );
+        }
+      }, this.fadetime);
+    }
+    getContainer() {
+      return this.container;
+    }
+    setFadeTime(fadetime) {
+      const realDuration = this.getRealDuration();
+      const halfDurationInMs = Math.round(realDuration / 2 * 1e3);
+      const isFadeTooLong = halfDurationInMs < fadetime;
+      if (isFadeTooLong) {
+        this.fadetime = halfDurationInMs;
+      } else {
+        this.fadetime = fadetime;
+      }
+      if (this.fadetime === 0) {
+        this.video2.loop = true;
+        this.video1.style = "display: none";
+      } else {
+        this.video2.loop = false;
+        this.video1.style.removeProperty("display");
+      }
+      this.addTransitionDuration(this.fadetime);
+    }
+    setPlaybackRate(playbackRate) {
+      this.playbackRate = playbackRate;
+      this.video1.playbackRate = playbackRate;
+      this.video2.playbackRate = playbackRate;
+    }
+    //
+    // Private
+    //
+    async applyMuteStatus(video) {
+      try {
+        const result = await storage.sync.get(["backgrounds"]);
+        const isMuted = result.backgrounds?.mute ?? true;
+        video.muted = isMuted;
+      } catch (err) {
+        console.error("Failed to fetch mute status", err);
+        video.muted = true;
+      }
+    }
+    createVideo(src, autoplay = false) {
+      const elem = document.createElement("video");
+      elem.muted = true;
+      elem.src = src;
+      elem.autoplay = autoplay;
+      elem.playbackRate = this.playbackRate;
+      this.applyMuteStatus(elem);
+      elem.addEventListener("loadedmetadata", () => {
+        this.setFadeTime(this.fadetime);
+      });
+      elem.addEventListener("ratechange", () => {
+        this.setFadeTime(this.fadetime);
+      });
+      elem.addEventListener("ended", () => {
+        elem.currentTime = 0;
+        elem.classList.remove("hiding");
+        this.container.prepend(elem);
+      });
+      elem.addEventListener("muteStatusChange", function(event) {
+        elem.muted = event.detail.status;
+      });
+      return elem;
+    }
+    /**
+     * Javascript counts seconds faster instead of using real time.
+     * This returns the video duration based on its speed.
+     *
+     * If triggered before video loaded, returns 8 seconds to cap fadetime
+     */
+    getRealDuration() {
+      try {
+        const durationInMs = this.video1.duration;
+        const playbackRate = this.video1.playbackRate;
+        return durationInMs / playbackRate;
+      } catch (_) {
+        console.info("Video duration was guessed to eight seconds");
+        return 8;
+      }
+    }
+    addTransitionDuration(fadetime) {
+      this.container.style.setProperty("--video-fadetime", fadetime + "ms");
+    }
+    isEnding(vid) {
+      const currentTime = vid.currentTime * 1e3 / this.playbackRate;
+      const duration = vid.duration * 1e3 / this.playbackRate;
+      return currentTime > duration - this.fadetime;
+    }
+  };
+
+  // src/scripts/dependencies/idbcache.ts
+  var IDBCache = class {
+    constructor(name) {
+      this.name = name;
+      this.dbPromise = new Promise((resolve2, reject) => {
+        const request = indexedDB.open(name, 1);
+        request.onupgradeneeded = () => {
+          request.result.createObjectStore("files");
+        };
+        request.onsuccess = () => resolve2(request.result);
+        request.onerror = () => reject(request.error);
+      });
+    }
+    name;
+    dbPromise;
+    async withStore(mode, fn) {
+      const db = await this.dbPromise;
+      return new Promise((resolve2, reject) => {
+        const tx = db.transaction("files", mode);
+        const store = tx.objectStore("files");
+        const req = fn(store);
+        req.onsuccess = () => resolve2(req.result);
+        req.onerror = () => reject(req.error);
+      });
+    }
+    async put(request, response) {
+      const blob = await response.blob();
+      await this.withStore("readwrite", (s) => s.put(blob, request.url));
+    }
+    async match(request) {
+      const key = typeof request === "string" ? request : request.url;
+      const blob = await this.withStore("readonly", (s) => s.get(key));
+      return blob ? new Response(blob) : void 0;
+    }
+    async delete(request) {
+      const key = typeof request === "string" ? request : request.url;
+      await this.withStore("readwrite", (s) => s.delete(key));
+    }
+    async keys() {
+      const db = await this.dbPromise;
+      return new Promise((resolve2, reject) => {
+        const tx = db.transaction("files", "readonly");
+        const store = tx.objectStore("files");
+        const req = store.getAllKeys();
+        req.onsuccess = () => {
+          const keys = req.result.map((url) => new Request(url));
+          resolve2(keys);
+        };
+        req.onerror = () => reject(req.error);
+      });
+    }
+  };
+
+  // src/scripts/shared/cache.ts
+  function getCache(name) {
+    if (PLATFORM === "safari") {
+      return Promise.resolve(new IDBCache(name));
+    }
+    return caches.open(name);
+  }
+
+  // src/scripts/utils/hash.ts
+  function hashcode(str) {
+    let h1 = 3735928559;
+    let h2 = 1103547991;
+    let i;
+    let ch;
+    for (i = 0, ch = 0; i < str.length; i++) {
+      ch = str.charCodeAt(i);
+      h1 = Math.imul(h1 ^ ch, 2654435761);
+      h2 = Math.imul(h2 ^ ch, 1597334677);
+    }
+    h1 = Math.imul(h1 ^ h1 >>> 16, 2246822507);
+    h1 ^= Math.imul(h2 ^ h2 >>> 13, 3266489909);
+    h2 = Math.imul(h2 ^ h2 >>> 16, 2246822507);
+    h2 ^= Math.imul(h1 ^ h1 >>> 13, 3266489909);
+    const number = 4294967296 * (2097151 & h2) + (h1 >>> 0);
+    const array = number.toString().split("");
+    const charlist = "arosmwxcvn".split("");
+    const string2 = array.map((num) => charlist[Number.parseInt(num)]).join("");
+    return string2;
+  }
+
+  // src/scripts/features/backgrounds/local.ts
+  var thumbnailVisibilityObserver;
+  var thumbnailSelectionObserver;
+  var currentVideoLooper;
+  async function addLocalBackgrounds(filelist, local) {
+    try {
+      const thumbnailsContainer = document.getElementById("thumbnails-container");
+      const filesData = {};
+      const newids = [];
+      let thumbnail;
+      if (filelist.length === 0) {
+        return;
+      }
+      for (const file of filelist) {
+        const infosString = file.size.toString() + file.name + file.lastModified.toString();
+        const hashString = hashcode(infosString).toString();
+        if (Object.keys(local.backgroundFiles).includes(hashString)) {
+          continue;
+        }
+        newids.push(hashString);
+        thumbnail = createThumbnail(hashString);
+        thumbnailsContainer?.appendChild(thumbnail);
+        thumbnailSelectionObserver?.observe(thumbnail, { attributes: true });
+      }
+      if (thumbnailsContainer) {
+        const idsAmount = Object.keys(local.backgroundFiles).length + newids.length;
+        const columnsAmount = Math.min(idsAmount, 5).toString();
+        thumbnailsContainer.style.setProperty("--thumbnails-columns", columnsAmount);
+      }
+      for (let i = 0; i < newids.length; i++) {
+        const file = filelist[i];
+        const id = newids[i];
+        const format = file.type.includes("video") ? "video" : "image";
+        const isLandscape = globalThis.screen.orientation.type === "landscape-primary";
+        const long = isLandscape ? globalThis.screen.width : globalThis.screen.height;
+        const short = isLandscape ? globalThis.screen.height : globalThis.screen.width;
+        const density = Math.min(2, globalThis.devicePixelRatio);
+        const ratio = Math.min(1.8, long / short);
+        const averagePixelHeight = short * ratio * density;
+        const isGif = file.type.includes("image/gif");
+        const isImage = file.type.includes("image/");
+        const isVideo = file.type.includes("video/");
+        const isThumbnailSize = file.size < 8e4;
+        const isResonablySized = file.size < 3e5;
+        let full = file;
+        let small = file;
+        if (isImage) {
+          if (!isThumbnailSize) {
+            const objectUrl = URL.createObjectURL(file);
+            const dimensions = await imageDimensions(objectUrl);
+            const width = dimensions.width;
+            const height = dimensions.height;
+            const isHighRes = averagePixelHeight * 2 < width + height;
+            const isCompressible = !isGif && !isResonablySized && isHighRes;
+            if (isCompressible) {
+              full = await compressAsBlob(objectUrl, { size: averagePixelHeight, q: 0.8 });
+            }
+            small = await compressAsBlob(objectUrl, { size: 360, q: 0.4 });
+          }
+        }
+        if (isVideo) {
+          const thumb = await generateImageFromVideo(file);
+          if (thumb) small = await compressAsBlob(thumb, { size: 360, q: 0.3 });
+        }
+        local.backgroundFiles[id] = {
+          format: "image",
+          lastUsed: (/* @__PURE__ */ new Date()).toString()
+        };
+        if (format === "video") {
+          local.backgroundFiles[id].format = "video";
+          local.backgroundFiles[id].video = {
+            playbackRate: 1,
+            fade: 1,
+            zoom: 1
+          };
+        } else {
+          local.backgroundFiles[id].format = "image";
+          local.backgroundFiles[id].position = {
+            size: "cover",
+            x: "50%",
+            y: "50%"
+          };
+        }
+        filesData[id] = {
+          full,
+          small
+        };
+        await saveFileToCache(id, filesData[id]);
+        addThumbnailImage(id, local, filesData[id]);
+        storage.local.set({ backgroundFiles: local.backgroundFiles });
+      }
+      if (newids.length > 0) {
+        const id = newids[0];
+        const media = await mediaFromFiles(id, local, filesData[id]);
+        applyBackground(media);
+        unselectAll();
+        thumbnail?.classList.add("selected");
+      }
+      const uploadInput = document.querySelector("#i_background-upload");
+      if (uploadInput) {
+        uploadInput.value = "";
+      }
+    } catch (e) {
+      console.info(e);
+      return;
+    }
+  }
+  async function removeLocalBackgrounds() {
+    try {
+      const local = await storage.local.get();
+      const selectedIds = getSelection();
+      if (selectedIds.length === 0 || !local.backgroundFiles) {
+        return;
+      }
+      for (const id of selectedIds) {
+        removeFilesFromCache([id]);
+        delete local.backgroundFiles[id];
+        const thumbnail = document.querySelector(`#${id}`);
+        thumbnail?.classList.toggle("hiding", true);
+        setTimeout(() => {
+          thumbnail?.remove();
+          toggleFileButtons();
+        }, 100);
+      }
+      const filesIds = lastUsedBackgroundFiles(local.backgroundFiles);
+      if (filesIds.length > 0) {
+        applyBackground(await mediaFromFiles(filesIds[0], local));
+      } else {
+        removeBackgrounds();
+      }
+      handleFilesSettingsOptions(local);
+      storage.local.remove("backgroundFiles");
+      storage.local.set({ backgroundFiles: local.backgroundFiles });
+    } catch (err) {
+      console.info(err);
+      return;
+    }
+  }
+  async function updateFileOptions(option, value) {
+    const selection = getSelection()[0];
+    const local = await storage.local.get("backgroundFiles");
+    const file = local.backgroundFiles[selection];
+    const isVideo = file.format === "video";
+    const isImage = !isVideo;
+    const backgroundImage = document.querySelector("#background-media div");
+    const videoContainer = document.querySelector("#background-media .video-looper");
+    if (!file) {
+      console.error("Cannot find file");
+      return;
+    }
+    if (isImage && backgroundImage) {
+      if (!file.position) {
+        file.position = {
+          size: "cover",
+          x: "50%",
+          y: "50%"
+        };
+      }
+      if (option === "size") {
+        file.position.size = value === "100" ? "cover" : `${value}%`;
+        backgroundImage.style.backgroundSize = file.position.size;
+      }
+      if (option === "vertical") {
+        file.position.y = `${value}%`;
+        backgroundImage.style.backgroundPositionY = file.position.y;
+      }
+      if (option === "horizontal") {
+        file.position.x = `${value}%`;
+        backgroundImage.style.backgroundPositionX = file.position.x;
+      }
+      if (option === "use-compressed") {
+        applyBackground(await mediaFromFiles(selection, local, void 0, file));
+      }
+    }
+    if (isVideo && videoContainer) {
+      const video = getCurrentVideo();
+      if (!video) {
+        return;
+      }
+      if (!file.video) {
+        file.video = {
+          playbackRate: 1,
+          fade: 4,
+          zoom: 1
+        };
+      }
+      if (option === "video-zoom") {
+        file.video.zoom = parseFloat(value);
+        videoContainer.style.transform = `scale(${file.video.zoom})`;
+      }
+      if (option === "playback-speed") {
+        file.video.playbackRate = parseFloat(value);
+        video.setPlaybackRate(parseFloat(value));
+        video.stop();
+        video.loop();
+      }
+      if (option === "loop-fade") {
+        file.video.fade = parseInt(value);
+        video.setFadeTime(parseInt(value));
+      }
+    }
+    local.backgroundFiles[selection] = file;
+    storage.local.set({ backgroundFiles: local.backgroundFiles });
+  }
+  function initFilesSettingsOptions(local) {
+    if (IS_MOBILE) {
+      const container2 = document.getElementById("thumbnails-container");
+      container2?.style.setProperty("--thumbnails-columns", "2");
+    }
+    sanitizeMetadatas(local).then((newlocal) => {
+      handleFilesSettingsOptions(newlocal);
+    });
+    (0, import_mod4.onclickdown)(document.getElementById("b_thumbnail-remove"), removeLocalBackgrounds);
+    (0, import_mod4.onclickdown)(document.getElementById("b_thumbnail-options"), toggleFileOptions);
+    document.getElementById("b_thumbnail-zoom")?.addEventListener("click", handleGridView);
+    document.getElementById("i_background-size")?.addEventListener("input", fileOptionsEvent);
+    document.getElementById("i_background-vertical")?.addEventListener("input", fileOptionsEvent);
+    document.getElementById("i_background-horizontal")?.addEventListener("input", fileOptionsEvent);
+    document.getElementById("i_background-compress")?.addEventListener("change", fileOptionsEvent);
+    document.getElementById("i_background-loop-fade")?.addEventListener("input", fileOptionsEvent);
+    document.getElementById("i_background-video-zoom")?.addEventListener("input", fileOptionsEvent);
+    document.getElementById("i_background-playback-speed")?.addEventListener("input", fileOptionsEvent);
+    thumbnailSelectionObserver = new MutationObserver(toggleFileButtons);
+    thumbnailVisibilityObserver = new IntersectionObserver(renderThumbnailOnIntersection);
+    function fileOptionsEvent() {
+      const { id, value, checked } = this;
+      if (id === "i_background-size") {
+        updateFileOptions("size", value);
+      }
+      if (id === "i_background-vertical") {
+        updateFileOptions("vertical", value);
+      }
+      if (id === "i_background-horizontal") {
+        updateFileOptions("horizontal", value);
+      }
+      if (id === "i_background-compress") {
+        updateFileOptions("use-compressed", checked.toString());
+      }
+      if (id === "i_background-video-zoom") {
+        updateFileOptions("video-zoom", value);
+      }
+      if (id === "i_background-playback-speed") {
+        updateFileOptions("playback-speed", value);
+      }
+      if (id === "i_background-loop-fade") {
+        updateFileOptions("loop-fade", value);
+      }
+    }
+    function renderThumbnailOnIntersection(entries) {
+      for (const { target, isIntersecting } of entries) {
+        const isLoading = target.classList.contains("loading");
+        const id = target.id ?? "";
+        if (isIntersecting && isLoading) {
+          getFileFromCache(id).then((data) => {
+            storage.local.get("backgroundFiles").then((local2) => {
+              if (data) {
+                addThumbnailImage(id, local2, data);
+                thumbnailVisibilityObserver.unobserve(target);
+              }
+            });
+          });
+        }
+      }
+    }
+    function handleGridView() {
+      const container2 = document.getElementById("thumbnails-container");
+      const currentZoom = globalThis.getComputedStyle(container2).getPropertyValue("--thumbnails-columns");
+      const newZoom = Math.max((Number.parseInt(currentZoom) + 1) % 6, 1);
+      container2.style.setProperty("--thumbnails-columns", newZoom.toString());
+    }
+    function toggleFileOptions() {
+      document.getElementById("background-file-options")?.classList.toggle("shown");
+    }
+  }
+  function handleFilesSettingsOptions(local) {
+    const backgroundFiles = local.backgroundFiles;
+    const thumbnailsContainer = document.getElementById("thumbnails-container");
+    const thumbs = document.querySelectorAll(".thumbnail");
+    const thumbIds = Object.values(thumbs).map((el) => el.id);
+    const fileIds = Object.keys(backgroundFiles) ?? [];
+    const lastUsedIds = lastUsedBackgroundFiles(local.backgroundFiles);
+    const missingThumbnails = fileIds.filter((id) => !thumbIds.includes(id));
+    const file = local.backgroundFiles[lastUsedIds[0]];
+    if (missingThumbnails.length > 0) {
+      for (const id of missingThumbnails) {
+        const thumbnail = createThumbnail(id);
+        thumbnailsContainer?.appendChild(thumbnail);
+        thumbnailVisibilityObserver?.observe(thumbnail);
+        thumbnailSelectionObserver?.observe(thumbnail, { attributes: true });
+        if (id === lastUsedIds[0]) {
+          thumbnail.classList.add("selected");
+        }
+      }
+    }
+    if (!file) {
+      toggleFileButtons();
+      return;
+    }
+    const domSize = document.querySelector("#i_background-size");
+    const domVertical = document.querySelector("#i_background-vertical");
+    const domHorizontal = document.querySelector("#i_background-horizontal");
+    const domLoopFade = document.querySelector("#i_background-loop-fade");
+    const domVideoZoom = document.querySelector("#i_background-video-zoom");
+    const domPlaybackRate = document.querySelector("#i_background-playback-speed");
+    const imageRangesExist = domSize && domVertical && domHorizontal;
+    const videoRangesExist = domLoopFade && domVideoZoom && domPlaybackRate;
+    const domFileImage = document.getElementById("background-file-image");
+    const domFileVideo = document.getElementById("background-file-video");
+    const groupsExist = domFileImage && domFileVideo;
+    const isVideo = file.format === "video";
+    const isImage = !isVideo;
+    const imageDefaults = { size: "cover", x: "50%", y: "50%" };
+    const videoDefaults = { playbackRate: 1, fade: 4, zoom: 1 };
+    if (groupsExist) {
+      domFileImage.style.display = isVideo ? "none" : "block";
+      domFileVideo.style.display = isVideo ? "block" : "none";
+    }
+    if (imageRangesExist && isImage) {
+      const pos = file.position ?? imageDefaults;
+      domSize.value = (pos.size === "cover" ? "100" : pos.size).replace("%", "");
+      domVertical.value = pos.y.replace("%", "");
+      domHorizontal.value = pos.x.replace("%", "");
+      webkitRangeTrackColor(domSize);
+      webkitRangeTrackColor(domVertical);
+      webkitRangeTrackColor(domHorizontal);
+    }
+    if (videoRangesExist && isVideo) {
+      const video = file.video ?? videoDefaults;
+      domLoopFade.value = video.fade.toString();
+      domVideoZoom.value = video.zoom.toString();
+      domPlaybackRate.value = video.playbackRate.toString();
+      webkitRangeTrackColor(domLoopFade);
+      webkitRangeTrackColor(domVideoZoom);
+      webkitRangeTrackColor(domPlaybackRate);
+    }
+    toggleFileButtons();
+  }
+  function toggleFileButtons() {
+    const thmbRemove = document.getElementById("b_thumbnail-remove");
+    const thmbOptions = document.getElementById("b_thumbnail-options");
+    const selected = document.querySelectorAll(".thumbnail.selected").length;
+    const domoptions = document.getElementById("background-options-options");
+    const areOptionsShown = domoptions?.classList.contains("shown");
+    selected === 0 ? thmbRemove?.setAttribute("disabled", "") : thmbRemove?.removeAttribute("disabled");
+    selected !== 1 ? thmbOptions?.setAttribute("disabled", "") : thmbOptions?.removeAttribute("disabled");
+    if (selected !== 1) {
+      document.getElementById("background-file-options")?.classList.remove("shown");
+    }
+    if (selected === 1 && areOptionsShown) {
+      domoptions?.classList.remove("shown");
+    }
+  }
+  function createThumbnail(id) {
+    const thb = document.createElement("button");
+    const thbimg = document.createElement("img");
+    const formatIcon = document.createElement("span");
+    thb.id = id;
+    thb.className = "thumbnail loading";
+    thb.setAttribute("aria-label", "Select this background");
+    thbimg.src = "src/assets/interface/loading.svg";
+    thbimg.setAttribute("alt", "");
+    thbimg.setAttribute("draggable", "false");
+    formatIcon.className = "thumbnail-format-icon";
+    thb.appendChild(thbimg);
+    thb.appendChild(formatIcon);
+    thb.addEventListener("click", handleThumbnailClick);
+    return thb;
+  }
+  function addThumbnailImage(id, local, data) {
+    const btn = document.querySelector(`#${id}`);
+    const img = document.querySelector(`#${id} img`);
+    if (!img || !btn) {
+      console.warn("Cannot find thumbnail or button for " + id);
+      return;
+    }
+    img.addEventListener("load", () => {
+      btn.classList.replace("loading", "loaded");
+      setTimeout(() => btn.classList.remove("loaded"), 2);
+    });
+    mediaFromFiles(id, local, data).then((image) => {
+      const { format, urls } = image;
+      btn.dataset.format = format;
+      if (format === "image") {
+        img.src = urls.small;
+      }
+      if (format === "video") {
+        if (image.thumbnail) {
+          img.src = image.thumbnail;
+        }
+      }
+    });
+  }
+  async function handleThumbnailClick(mouseEvent) {
+    const hasCtrl = mouseEvent.ctrlKey || mouseEvent.metaKey;
+    const shiftKey = mouseEvent.shiftKey;
+    const isLeftClick = mouseEvent.button === 0;
+    const id = this?.id ?? "";
+    if (isLeftClick && shiftKey) {
+      const thumbnails = document.querySelectorAll(".thumbnail");
+      let firstSelectionPos;
+      let lastSelectionPos;
+      let selectedPos;
+      thumbnails.forEach((thumbnail, index) => {
+        const isSelected = thumbnail.className.includes("selected");
+        const isSelection = thumbnail === this;
+        if (isSelected) {
+          lastSelectionPos = index;
+        }
+        if (isSelected && !firstSelectionPos) {
+          firstSelectionPos = index;
+        }
+        if (isSelection && !selectedPos) {
+          selectedPos = index;
+        }
+      });
+      if (firstSelectionPos !== void 0 && lastSelectionPos !== void 0 && selectedPos !== void 0) {
+        const positions = [firstSelectionPos, lastSelectionPos, selectedPos];
+        const first = Math.min(...positions);
+        const last = Math.max(...positions);
+        thumbnails.forEach((thumbnail, index) => {
+          const inSelectionRange = index >= first && index <= last;
+          thumbnail.classList.toggle("selected", inSelectionRange);
+        });
+        return;
+      }
+    }
+    if (isLeftClick && hasCtrl) {
+      if (!this.classList.contains("selected")) {
+        document.getElementById("b_thumbnail-remove")?.removeAttribute("disabled");
+      }
+      document.getElementById(id)?.classList?.toggle("selected");
+      return;
+    }
+    if (this.classList.contains("selected") && isLeftClick) {
+      unselectAll();
+      document.getElementById(id)?.classList?.toggle("selected");
+      return;
+    }
+    if (this.classList.contains("selected")) {
+      return;
+    }
+    if (isLeftClick) {
+      const local = await storage.local.get();
+      const metadata = local.backgroundFiles[id];
+      const image = await mediaFromFiles(id, local);
+      if (!metadata || !image) {
+        console.warn("metadata: ", metadata);
+        console.warn("image: ", image);
+        return;
+      }
+      unselectAll();
+      document.getElementById(id)?.classList?.add("selected");
+      local.backgroundFiles[id].lastUsed = (/* @__PURE__ */ new Date()).toString();
+      storage.local.set({ backgroundFiles: local.backgroundFiles });
+      handleFilesSettingsOptions(local);
+      applyBackground(image);
+    }
+  }
+  function lastUsedBackgroundFiles(metadatas) {
+    const sortedMetadata = Object.entries(metadatas).toSorted((a, b) => {
+      return new Date(b[1].lastUsed).getTime() - new Date(a[1].lastUsed).getTime();
+    });
+    return sortedMetadata.map(([id, _]) => id);
+  }
+  async function mediaFromFiles(id, local, data, metadata) {
+    metadata ??= local.backgroundFiles[id];
+    data = data ?? await getFileFromCache(id);
+    if (data.full.type.includes("video/")) {
+      const htmlvideo = await getLoadedVideo(data.full);
+      const duration = htmlvideo.duration;
+      htmlvideo.remove();
+      const videoUrl = URL.createObjectURL(data.full);
+      const thumbnailUrl = URL.createObjectURL(data.small);
+      const video = {
+        format: "video",
+        duration,
+        mimetype: data.full.type,
+        thumbnail: thumbnailUrl,
+        file: metadata,
+        urls: {
+          full: videoUrl,
+          small: videoUrl
+        }
+      };
+      return video;
+    } else {
+      const urls = {
+        full: URL.createObjectURL(data.full),
+        small: URL.createObjectURL(data.small)
+      };
+      const image = {
+        format: "image",
+        mimetype: data.full.type,
+        file: metadata,
+        urls: {
+          full: urls.full,
+          small: urls.small
+        }
+      };
+      return image;
+    }
+  }
+  function unselectAll() {
+    for (const node of document.querySelectorAll(".thumbnail.selected")) {
+      node?.classList?.remove("selected");
+    }
+  }
+  function getSelection() {
+    const thmbs = document.querySelectorAll(".thumbnail.selected");
+    const ids2 = Object.values(thmbs).map((thmb) => thmb?.id ?? "");
+    return ids2;
+  }
+  function setCurrentVideo(src, fade, playback) {
+    currentVideoLooper = new VideoLooper(src, fade, playback);
+    return currentVideoLooper;
+  }
+  function getCurrentVideo() {
+    return currentVideoLooper;
+  }
+  async function getLoadedVideo(blob) {
+    const video = document.createElement("video");
+    const url = URL.createObjectURL(blob);
+    video.src = url;
+    await new Promise((r) => {
+      video.addEventListener("loadeddata", () => r(true));
+      video.load();
+    });
+    URL.revokeObjectURL(url);
+    return video;
+  }
+  async function generateImageFromVideo(file) {
+    const video = await getLoadedVideo(file);
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    if (!ctx) {
+      throw new Error("Canvas context failed for " + file.name);
+    }
+    ctx.canvas.width = video.videoWidth;
+    ctx.canvas.height = video.videoHeight;
+    document.body.append(video);
+    video.style.display = "none";
+    video.play();
+    video.pause();
+    const blob = await new Promise((resolve2, reject) => {
+      const toBlobCallback = (blob2) => blob2 ? resolve2(blob2) : reject(true);
+      setTimeout(() => {
+        ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+        ctx.canvas.toBlob(toBlobCallback, "image/jpeg", 0.8);
+      }, 300);
+    });
+    video.remove();
+    return blob;
+  }
+  async function localFilesCacheControl(backgrounds, local, needNew) {
+    local = await sanitizeMetadatas(local);
+    const ids2 = lastUsedBackgroundFiles(local.backgroundFiles);
+    if (ids2.length === 0) {
+      removeBackgrounds();
+      return;
+    }
+    const freq = backgrounds.frequency;
+    const metadata = local.backgroundFiles[ids2[0]];
+    const lastUsed = new Date(metadata.lastUsed).getTime();
+    needNew ??= needsChange(freq, lastUsed);
+    if (ids2.length > 1 && needNew) {
+      ids2.shift();
+      const rand = Math.floor(Math.random() * ids2.length);
+      const id = ids2[rand];
+      applyBackground(await mediaFromFiles(id, local));
+      local.backgroundFiles[id].lastUsed = (/* @__PURE__ */ new Date()).toString();
+      storage.local.set(local);
+    } else {
+      applyBackground(await mediaFromFiles(ids2[0], local));
+    }
+  }
+  async function saveFileToCache(id, filedata) {
+    const cache = await getCache("local-files");
+    const { full, small } = filedata;
+    const requestFull = new Request(`http://127.0.0.1:8888/${id}/full`);
+    const requestSmall = new Request(`http://127.0.0.1:8888/${id}/small`);
+    const headersFull = { "content-type": full.type, "Cache-Control": "max-age=604800" };
+    const headersSmall = { "content-type": small.type, "Cache-Control": "max-age=604800" };
+    const responseFull = new Response(full, { headers: headersFull });
+    const responseSmall = new Response(small, { headers: headersSmall });
+    await Promise.all([
+      cache.put(requestFull, responseFull),
+      cache.put(requestSmall, responseSmall)
+    ]);
+  }
+  async function getFileFromCache(id) {
+    const cache = await getCache("local-files");
+    const full = await (await cache?.match(`http://127.0.0.1:8888/${id}/full`))?.blob();
+    const small = await (await cache?.match(`http://127.0.0.1:8888/${id}/small`))?.blob();
+    if (!full || !small) {
+      throw new Error(`${id} is undefined`);
+    }
+    return { full, small };
+  }
+  async function removeFilesFromCache(ids2) {
+    const cache = await getCache("local-files");
+    for (const id of ids2) {
+      sessionStorage.removeItem(id);
+      cache.delete(`http://127.0.0.1:8888/${id}/full`);
+      cache.delete(`http://127.0.0.1:8888/${id}/small`);
+    }
+    return true;
+  }
+  async function sanitizeMetadatas(local) {
+    const newMetadataList = {};
+    const cache = await getCache("local-files");
+    const cacheKeys = await cache.keys();
+    for (const request of cacheKeys) {
+      try {
+        const key = new URL(request.url).pathname.split("/")[1];
+        const surelyVideo = request.url.includes(".mp4") || request.url.includes(".webm");
+        let metadata = local.backgroundFiles[key];
+        if (!metadata) {
+          metadata = {
+            format: surelyVideo ? "video" : "image",
+            lastUsed: (/* @__PURE__ */ new Date("01/01/1971")).toString(),
+            position: {
+              size: "cover",
+              x: "50%",
+              y: "50%"
+            }
+          };
+        }
+        newMetadataList[key] = metadata;
+      } catch (err) {
+        console.info(err);
+      }
+    }
+    const oldKeys = Object.keys(local.backgroundFiles);
+    const newKeys = Object.keys(newMetadataList);
+    if (oldKeys.length !== newKeys.length) {
+      storage.local.set({ backgroundFiles: newMetadataList });
+    }
+    local.backgroundFiles = newMetadataList;
+    return local;
+  }
+
+  // src/scripts/features/backgrounds/index.ts
+  var propertiesUpdateDebounce = debounce(filtersUpdate, 600);
+  var colorUpdateDebounce = debounce(solidUpdate, 600);
+  var fadeinPreviewDebounce = debounce(previewFadein, 200);
+  var fadeinTimeout;
+  var formBackgroundUserColl = networkForm("f_background-user-coll");
+  var formBackgroundUserSearch = networkForm("f_background-user-search");
+  function backgroundsInit(sync, local, init2) {
+    if (init2) {
+      const type = sync.backgrounds.type;
+      const isColor = type === "color";
+      const noFadeIn = sync.backgrounds.fadein === 0;
+      const wrapper = document.getElementById("background-wrapper");
+      if (isColor || noFadeIn) {
+        wrapper?.classList.remove("hidden");
+      }
+      const pauseButton = document.getElementById("b_interface-background-pause");
+      const isPaused = sync.backgrounds.frequency === "pause";
+      pauseButton?.classList.toggle("paused", isPaused);
+      initBackgroundActionsEvents();
+      document.addEventListener("visibilitychange", pauseVideoOnVisibilityChange);
+    }
+    toggleCredits(sync.backgrounds);
+    applyFilters(sync.backgrounds);
+    applyTexture(sync.backgrounds.texture);
+    handleBackgroundActions(sync.backgrounds);
+    document.getElementById("background-wrapper")?.setAttribute("data-type", sync.backgrounds.type);
+    switch (sync.backgrounds.type) {
+      case "files": {
+        localFilesCacheControl(sync.backgrounds, local);
+        break;
+      }
+      case "urls": {
+        urlsCacheControl(sync.backgrounds, local);
+        break;
+      }
+      case "color": {
+        applyBackground(sync.backgrounds.color);
+        break;
+      }
+      default: {
+        backgroundCacheControl(sync.backgrounds, local);
+      }
+    }
+  }
+  async function backgroundUpdate(update) {
+    const data = await storage.sync.get("backgrounds");
+    const local = await storage.local.get();
+    if (update.blurenter) {
+      blurResolutionControl(data, local);
+      return;
+    }
+    if (update.blur !== void 0) {
+      applyFilters({ blur: Number.parseFloat(update.blur) });
+      propertiesUpdateDebounce({ blur: Number.parseFloat(update.blur) });
+      return;
+    }
+    if (update.bright !== void 0) {
+      applyFilters({ bright: Number.parseFloat(update.bright) });
+      propertiesUpdateDebounce({ bright: Number.parseFloat(update.bright) });
+      return;
+    }
+    if (update.fadein !== void 0) {
+      applyFilters({ fadein: Number.parseInt(update.fadein) });
+      propertiesUpdateDebounce({ fadein: Number.parseFloat(update.fadein) });
+      fadeinPreviewDebounce(Number.parseFloat(update.fadein));
+      return;
+    }
+    if (isBackgroundType(update.type)) {
+      data.backgrounds.type = update.type;
+      storage.sync.set({ backgrounds: data.backgrounds });
+      createProviderSelect(data.backgrounds);
+      handleBackgroundOptions(data.backgrounds);
+      backgroundsInit(data, local);
+      return;
+    }
+    if (isFrequency(update.freq)) {
+      data.backgrounds.frequency = update.freq;
+      if (update.freq === "pause") {
+        const type = data.backgrounds.type;
+        if (type === "images") {
+          const collection = getCollection(data.backgrounds, local).images();
+          data.backgrounds.pausedImage = collection[0];
+        }
+        if (type === "videos") {
+          const collection = getCollection(data.backgrounds, local).videos();
+          data.backgrounds.pausedVideo = collection[0];
+        }
+        if (type === "urls") {
+          const [_, list] = getUrlsAsCollection(local);
+          data.backgrounds.pausedUrl = list[0].urls.full;
+        }
+      }
+      storage.sync.set({ backgrounds: data.backgrounds });
+      handleBackgroundOptions(data.backgrounds);
+    }
+    if (update.refresh) {
+      switch (data.backgrounds.type) {
+        case "files": {
+          localFilesCacheControl(data.backgrounds, local, true);
+          break;
+        }
+        case "urls": {
+          urlsCacheControl(data.backgrounds, local, true);
+          break;
+        }
+        case "images":
+        case "videos": {
+          backgroundCacheControl(data.backgrounds, local, true);
+          break;
+        }
+      }
+      turnRefreshButton(update.refresh, true);
+    }
+    if (update.color) {
+      colorInput("solid-background", update.color);
+      applyBackground(update.color);
+      colorUpdateDebounce(update.color);
+    }
+    if (update.urlsapply) {
+      applyUrls(data.backgrounds);
+    }
+    if (update.files) {
+      addLocalBackgrounds(update.files, local);
+    }
+    if (update.mute !== void 0) {
+      data.backgrounds.mute = update.mute;
+      storage.sync.set({ backgrounds: data.backgrounds });
+    }
+    if (update.texturecolor !== void 0) {
+      data.backgrounds.texture.color = update.texturecolor;
+      propertiesUpdateDebounce({ texture: data.backgrounds.texture });
+      colorInput("texture-color", update.texturecolor);
+      applyTexture(data.backgrounds.texture);
+    }
+    if (update.textureopacity !== void 0) {
+      data.backgrounds.texture.opacity = Number.parseFloat(update.textureopacity);
+      propertiesUpdateDebounce({ texture: data.backgrounds.texture });
+      applyTexture(data.backgrounds.texture);
+    }
+    if (update.texturesize !== void 0) {
+      data.backgrounds.texture.size = Number.parseInt(update.texturesize);
+      propertiesUpdateDebounce({ texture: data.backgrounds.texture });
+      applyTexture(data.backgrounds.texture);
+    }
+    if (isBackgroundTexture(update.texture)) {
+      data.backgrounds.texture = { type: update.texture };
+      storage.sync.set({ backgrounds: data.backgrounds });
+      handleBackgroundOptions(data.backgrounds);
+      applyTexture(data.backgrounds.texture);
+    }
+    document.dispatchEvent(
+      new CustomEvent("updateSettingsBeforeInit", {
+        detail: data
+      })
+    );
+    switch (data.backgrounds.type) {
+      case "files":
+      case "urls":
+      case "color": {
+        return;
+      }
+      default:
+    }
+    if (update.provider) {
+      data.backgrounds[data.backgrounds.type] = update.provider;
+      storage.sync.set({ backgrounds: data.backgrounds });
+      handleBackgroundOptions(data.backgrounds);
+      const isNotEmpty = local.backgroundCollections[update.provider]?.length > 0;
+      const isDefault = update.provider.includes("bonjourr");
+      if (isNotEmpty || isDefault) {
+        backgroundCacheControl(data.backgrounds, local);
+      }
+    }
+    if (update.query !== void 0) {
+      const collectionName = data.backgrounds[data.backgrounds.type];
+      const target = update.query.target;
+      const input = target.querySelector("input");
+      let query = input?.value ?? "";
+      const isCorrectCollection = collectionName === "unsplash-images-collections";
+      const startsWithUrl = query.startsWith("https://unsplash.com/collections/");
+      if (isCorrectCollection && startsWithUrl) {
+        query = query.replace("https://unsplash.com/collections/", "").slice(0, query.indexOf("/"));
+      }
+      local.backgroundCollections[collectionName] = [];
+      data.backgrounds.queries[collectionName] = query;
+      storage.sync.set({ backgrounds: data.backgrounds });
+      if (query === "") {
+        storage.local.set({ backgroundCollections: local.backgroundCollections });
+        formBackgroundUserColl.accept("");
+        formBackgroundUserSearch.accept("");
+        removeBackgrounds();
+        return;
+      }
+      formBackgroundUserColl.load();
+      formBackgroundUserSearch.load();
+      handleBackgroundOptions(data.backgrounds);
+      await backgroundCacheControl(data.backgrounds, local);
+      formBackgroundUserColl.accept(collectionName);
+      formBackgroundUserSearch.accept(collectionName);
+    }
+  }
+  async function filtersUpdate({ blur, bright, fadein, texture }) {
+    const data = await storage.sync.get("backgrounds");
+    if (blur !== void 0) {
+      data.backgrounds.blur = blur;
+    }
+    if (bright !== void 0) {
+      data.backgrounds.bright = bright;
+    }
+    if (fadein !== void 0) {
+      data.backgrounds.fadein = fadein;
+    }
+    if (texture !== void 0) {
+      data.backgrounds.texture = texture;
+    }
+    storage.sync.set({ backgrounds: data.backgrounds });
+  }
+  async function solidUpdate(value) {
+    const data = await storage.sync.get("backgrounds");
+    data.backgrounds.color = value;
+    storage.sync.set({ backgrounds: data.backgrounds });
+  }
+  function previewFadein(ms) {
+    const wrapper = document.getElementById("background-wrapper");
+    const setOpacity = (val) => wrapper?.setAttribute("style", `opacity: ${val}`);
+    clearTimeout(fadeinTimeout);
+    fadeinTimeout = setTimeout(() => setOpacity(1), ms);
+    setOpacity(0);
+  }
+  async function backgroundCacheControl(backgrounds, local, needNew) {
+    if (backgrounds.type === "color") {
+      return;
+    }
+    let list = [];
+    switch (backgrounds.type) {
+      case "images":
+        list = getCollection(backgrounds, local).images();
+        break;
+      case "videos":
+        list = getCollection(backgrounds, local).videos();
+        break;
+      default:
+    }
+    const lastTime = new Date(local.backgroundLastChange ?? "01/01/1971").getTime();
+    const isPaused = backgrounds.frequency === "pause";
+    const isPreloading = localStorage.backgroundPreloading === "true";
+    needNew ??= needsChange(backgrounds.frequency, lastTime);
+    if (list.length === 0) {
+      const json = await fetchNewBackgrounds(backgrounds);
+      if (json) {
+        const newlocal = setCollection(backgrounds, local).fromApi(json);
+        const newcoll = getCollection(backgrounds, newlocal);
+        const isImage = backgrounds.type === "images";
+        newlocal.backgroundLastChange = userDate().toString();
+        storage.local.set(newlocal);
+        list = isImage ? newcoll.images() : newcoll.videos();
+        preloadBackground(list[1]);
+      }
+    }
+    if (isPreloading) {
+      applyBackground(list[0]);
+      preloadBackground(list[1]);
+      return;
+    }
+    if (!needNew && isPaused) {
+      if (backgrounds.pausedImage && backgrounds.type === "images") {
+        applyBackground(backgrounds.pausedImage);
+        return;
+      }
+      if (backgrounds.pausedVideo && backgrounds.videos === "videos") {
+        applyBackground(backgrounds.pausedVideo);
+        return;
+      }
+    }
+    if (!needNew) {
+      applyBackground(list[0]);
+      return;
+    }
+    if (list.length > 1) {
+      list.shift();
+    }
+    if (backgrounds.frequency === "pause") {
+      if (backgrounds.type === "images") {
+        backgrounds.pausedImage = list[0];
+      }
+      if (backgrounds.type === "videos") {
+        backgrounds.pausedVideo = list[0];
+      }
+      storage.sync.set({ backgrounds });
+    }
+    if (list.length > 1) {
+      let newlocal = local;
+      preloadBackground(list[1]);
+      newlocal = setCollection(backgrounds, local).fromList(list);
+      newlocal.backgroundLastChange = userDate().toString();
+      storage.local.set(newlocal);
+    }
+    applyBackground(list[0]);
+    if (list.length === 1 && navigator.onLine) {
+      const json = await fetchNewBackgrounds(backgrounds);
+      if (json) {
+        const newlocal = setCollection(backgrounds, local).fromApi(json);
+        const newcoll = getCollection(backgrounds, newlocal);
+        const newlist = backgrounds.type === "images" ? newcoll.images() : newcoll.videos();
+        preloadBackground(newlist[0]);
+        preloadBackground(newlist[1]);
+        storage.local.set({ backgroundCollections: newlocal.backgroundCollections });
+      }
+    }
+  }
+  async function fetchNewBackgrounds(backgrounds) {
+    switch (backgrounds.type) {
+      case "files":
+      case "urls":
+      case "color": {
+        throw new Error('Can only fetch with "images" or "videos" type');
+      }
+      default:
+    }
+    const collectionName = backgrounds[backgrounds.type];
+    const [provider, type, category] = collectionName.split("-");
+    const base = "https://services.bonjourr.fr/backgrounds";
+    const path = `/${provider}/${type}/${category}`;
+    const density = Math.max(2, globalThis.devicePixelRatio);
+    const ratio = globalThis.screen.width / globalThis.screen.height;
+    let height = globalThis.screen.height * density;
+    let width = globalThis.screen.width * density;
+    if (ratio >= 2) {
+      width = height * 2;
+    }
+    if (ratio <= 0.5) {
+      height = width * 2;
+    }
+    const screen = `?h=${height}&w=${width}`;
+    const query = backgrounds.queries[collectionName] ?? "";
+    const search = query ? `&query=${query}` : "";
+    const url = base + path + screen + search;
+    const resp = await fetch(url);
+    const json = await resp.json();
+    const areImages = type === "images" && Object.keys(json)?.every((key) => key.includes("images"));
+    const areVideos = type === "videos" && Object.keys(json)?.every((key) => key.includes("videos"));
+    if (areImages || areVideos) {
+      return json;
+    }
+    throw new Error("Received JSON is bad");
+  }
+  function findCollectionName(backgrounds, local) {
+    switch (backgrounds.type) {
+      case "files":
+      case "urls":
+      case "color": {
+        throw new Error('Only collection names with "images" or "videos" type');
+      }
+      default:
+    }
+    const { frequency, type, pausedImage, pausedVideo } = backgrounds;
+    const isPausedOnImage = type === "images" && frequency === "pause" && pausedImage;
+    const isPausedOnVideo = type === "videos" && frequency === "pause" && pausedVideo;
+    if (isPausedOnImage) {
+      return getCollectionNameFromMedia(pausedImage, local);
+    }
+    if (isPausedOnVideo) {
+      return getCollectionNameFromMedia(pausedVideo, local);
+    }
+    const collectionName = backgrounds[type];
+    const isDaylight = collectionName.includes("daylight");
+    if (isDaylight) {
+      const period = daylightPeriod(userDate().getTime());
+      return `${collectionName}-${period}`;
+    }
+    return collectionName;
+  }
+  function getCollectionNameFromMedia(media, local) {
+    const collMap = /* @__PURE__ */ new Map();
+    for (const [coll, medias] of Object.entries(local.backgroundCollections)) {
+      for (const media2 of medias) {
+        collMap.set(media2.urls.full, coll);
+      }
+    }
+    return collMap.get(media.urls.full);
+  }
+  function getCollection(backgrounds, local) {
+    switch (backgrounds.type) {
+      case "files":
+      case "urls":
+      case "color": {
+        throw new Error('Can only fetch with "images" or "videos" type');
+      }
+      default:
+    }
+    const collectionName = findCollectionName(backgrounds, local);
+    const collection = local.backgroundCollections[collectionName] ?? [];
+    const images = () => {
+      if (areOnlyImages(collection)) {
+        return collection;
+      }
+      throw new Error("Wrong background format");
+    };
+    const videos = () => {
+      if (areOnlyVideos(collection)) {
+        return collection;
+      }
+      throw new Error("Wrong background format");
+    };
+    return { images, videos };
+  }
+  function setCollection(backgrounds, local) {
+    switch (backgrounds.type) {
+      case "files":
+      case "urls":
+      case "color": {
+        throw new Error("Cannot update with this type");
+      }
+      default:
+    }
+    function fromApi(json) {
+      for (const [key, list] of Object.entries(json)) {
+        local.backgroundCollections[key] = list;
+      }
+      return local;
+    }
+    function fromList(list) {
+      const collectionName = findCollectionName(backgrounds, local);
+      local.backgroundCollections[collectionName] = list;
+      return local;
+    }
+    return { fromList, fromApi };
+  }
+  function applyBackground(media, res, fast) {
+    const mediaWrapper = document.getElementById("background-media");
+    let resolution = res ? res : detectBackgroundSize();
+    let item;
+    if (typeof media === "string") {
+      mediaWrapper?.childNodes.forEach((node) => node.remove());
+      document.documentElement.style.setProperty("--solid-background", media);
+      return;
+    }
+    if (fast) {
+      document.body.classList.add("init");
+    }
+    if (!media) {
+      return;
+    }
+    if (media.format === "image") {
+      resolution = media.mimetype === "image/gif" ? "full" : resolution;
+      const src = media.urls[resolution];
+      item = createImageItem(src, media);
+    } else {
+      const fade = 4e3;
+      const src = media.urls[resolution];
+      item = createVideoItem(src, media, fade);
+    }
+    item.dataset.res = resolution;
+    mediaWrapper.prepend(item);
+    if (mediaWrapper?.childElementCount > 1) {
+      const children = Object.values(mediaWrapper?.children);
+      const notHiding = children.filter((child) => !child.className.includes("hiding"));
+      const lastVisible = notHiding.at(-1);
+      if (fast) {
+        document.body.classList.remove("init");
+        setTimeout(() => mediaWrapper?.lastElementChild?.remove(), 200);
+      } else {
+        lastVisible?.classList.add("hiding");
+        setTimeout(() => mediaWrapper?.lastElementChild?.remove(), 1200);
+      }
+    }
+  }
+  function createImageItem(src, media, callback) {
+    const backgroundsWrapper = document.getElementById("background-wrapper");
+    const div = document.createElement("div");
+    const img = new Image();
+    img.addEventListener("load", () => {
+      const isSmall = img.width <= 256 && img.height <= 256;
+      const isPng = !!media.mimetype?.includes("png");
+      div?.classList.toggle("pixelated", isPng && isSmall);
+      backgroundsWrapper?.classList.remove("hidden");
+      applyThemeColor(media, img);
+      updateCredits(media);
+      if (callback) {
+        callback();
+      }
+    });
+    img.src = src;
+    img.remove();
+    div.classList.add("background-image");
+    div.style.backgroundImage = `url(${src})`;
+    if (media?.file?.position) {
+      const { size, x, y } = media.file.position;
+      div.style.backgroundSize = size;
+      div.style.backgroundPositionX = x;
+      div.style.backgroundPositionY = y;
+    }
+    return div;
+  }
+  function createVideoItem(src, media, duration) {
+    const backgroundsWrapper = document.getElementById("background-wrapper");
+    const looper = setCurrentVideo(src, duration, 1);
+    const container2 = looper.getContainer();
+    looper.loop();
+    if (media?.file?.video) {
+      const { playbackRate, zoom, fade } = media.file.video;
+      container2.style.transform = `scale(${zoom})`;
+      looper.setPlaybackRate(playbackRate);
+      looper.setFadeTime(fade);
+    }
+    backgroundsWrapper?.classList.remove("hidden");
+    return container2;
+  }
+  function preloadBackground(media, res) {
+    if (!media) {
+      return;
+    }
+    localStorage.setItem("backgroundPreloading", "true");
+    const resolution = res ? res : detectBackgroundSize();
+    const src = media.urls[resolution];
+    if (media.format === "image") {
+      const img = document.createElement("img");
+      img.fetchPriority = "low";
+      return new Promise((resolve2) => {
+        img.addEventListener("load", () => {
+          localStorage.removeItem("backgroundPreloading");
+          img.remove();
+          resolve2(true);
+        });
+        img.src = src;
+      });
+    }
+    if (media.format === "video") {
+      const video = document.createElement("video");
+      return new Promise((resolve2) => {
+        video.addEventListener("canplaythrough", () => {
+          localStorage.removeItem("backgroundPreloading");
+          video.remove();
+          resolve2(true);
+        });
+        setTimeout(() => video.src = src, 600);
+      });
+    }
+  }
+  function removeBackgrounds() {
+    const mediaWrapper = document.getElementById("background-media");
+    setTimeout(() => document.querySelector("#background-media div")?.classList.add("hiding"));
+    setTimeout(() => mediaWrapper.firstChild?.remove(), 2e3);
+  }
+  function applyFilters({ blur, bright, fadein }) {
+    if (blur !== void 0) {
+      document.documentElement.style.setProperty("--blur", `${blur}px`);
+      document.body.classList.toggle("blurred", blur >= 15);
+    }
+    if (bright !== void 0) {
+      document.documentElement.style.setProperty("--brightness", `${bright}`);
+    }
+    if (fadein !== void 0) {
+      document.documentElement.style.setProperty("--fade-in", `${fadein}ms`);
+    }
+  }
+  function applyTexture(texture) {
+    const wrapper = document.getElementById("background-wrapper");
+    const domtexture = document.getElementById("background-texture");
+    if (!(domtexture && wrapper)) {
+      return;
+    }
+    const ranges = TEXTURE_RANGES[texture.type];
+    const color = texture.color ?? ranges.color;
+    const size = texture.size ?? ranges.size.value;
+    const opacity = texture.opacity ?? ranges.opacity.value;
+    wrapper.dataset.texture = texture.type;
+    document.documentElement.style.setProperty("--texture-color", `${color}`);
+    document.documentElement.style.setProperty("--texture-color-transparent", `${color}77`);
+    document.documentElement.style.setProperty("--texture-opacity", `${opacity}`);
+    document.documentElement.style.setProperty("--texture-size", `${size}px`);
+  }
+  function initBackgroundOptions(sync, local) {
+    initFilesSettingsOptions(local);
+    initUrlsEditor(sync.backgrounds, local);
+    createProviderSelect(sync.backgrounds);
+    handleBackgroundOptions(sync.backgrounds);
+  }
+  function handleBackgroundOptions(backgrounds) {
+    const type = backgrounds.type;
+    const withVideos = type === "videos" || type === "files" || type === "urls";
+    document.getElementById("local_options")?.classList.toggle("shown", type === "files");
+    document.getElementById("solid_options")?.classList.toggle("shown", type === "color");
+    document.getElementById("unsplash_options")?.classList.toggle("shown", type === "images");
+    document.getElementById("background-urls-option")?.classList.toggle("shown", type === "urls");
+    document.getElementById("background-freq-option")?.classList.toggle("shown", type !== "color");
+    document.getElementById("background-filters-options")?.classList.toggle("shown", type !== "color");
+    document.getElementById("background-video-sound-options")?.classList.toggle("shown", withVideos);
+    handleTextureOptions(backgrounds);
+    handleProviderOptions(backgrounds);
+    handleBackgroundActions(backgrounds);
+  }
+  function handleTextureOptions(backgrounds) {
+    const hasTexture = backgrounds.texture.type !== "none";
+    document.getElementById("background-texture-options")?.classList.toggle("shown", hasTexture);
+    if (hasTexture) {
+      const iOpacity = document.querySelector("#i_texture-opacity");
+      const iSize = document.querySelector("#i_texture-size");
+      const colorOption = document.querySelector("#background-texture-color-option");
+      const ranges = TEXTURE_RANGES[backgrounds.texture.type];
+      const { opacity, size } = backgrounds.texture;
+      colorOption?.classList.toggle("shown", ranges.color !== void 0);
+      if (iOpacity) {
+        iOpacity.min = ranges.opacity.min;
+        iOpacity.max = ranges.opacity.max;
+        iOpacity.step = ranges.opacity.step;
+        iOpacity.value = opacity === void 0 ? ranges.opacity.value : opacity.toString();
+        webkitRangeTrackColor(iOpacity);
+      }
+      if (iSize) {
+        iSize.min = ranges.size.min;
+        iSize.max = ranges.size.max;
+        iSize.step = ranges.size.step;
+        iSize.value = size === void 0 ? ranges.size.value : size.toString();
+        webkitRangeTrackColor(iSize);
+      }
+    }
+  }
+  function handleProviderOptions(backgrounds) {
+    switch (backgrounds.type) {
+      case "files":
+      case "urls":
+      case "color": {
+        document.getElementById("background-provider-option")?.classList.remove("shown");
+        return;
+      }
+      default:
+    }
+    document.getElementById("background-provider-option")?.classList.add("shown");
+    const collectionName = backgrounds[backgrounds.type];
+    const hasCollections = collectionName.includes("coll");
+    const hasSearch = collectionName.includes("search");
+    const domusercoll = document.querySelector("#i_background-user-coll");
+    const domusersearch = document.querySelector("#i_background-user-search");
+    const domusercolloption = document.querySelector("#background-user-coll-option");
+    const domusersearchoption = document.querySelector("#background-user-search-option");
+    const optionsExist = domusercoll && domusersearch && domusercolloption && domusersearchoption;
+    if (optionsExist) {
+      domusercolloption.classList.toggle("shown", hasCollections);
+      domusersearchoption.classList.toggle("shown", hasSearch);
+      domusercoll.value = backgrounds.queries[collectionName] ?? "";
+      domusersearch.value = backgrounds.queries[collectionName] ?? "";
+    }
+  }
+  function createProviderSelect(backgrounds) {
+    const backgroundProvider = document.querySelector("#i_background-provider");
+    const providersType = backgrounds.type === "images" ? "IMAGES" : "VIDEOS";
+    const providersList = PROVIDERS[providersType];
+    if (!backgroundProvider) {
+      throw new Error("Cannot find #i_background-provider");
+    }
+    for (const node of Object.values(backgroundProvider.children)) {
+      node.remove();
+    }
+    for (const provider of providersList) {
+      const optgroup = document.createElement("optgroup");
+      optgroup.label = provider.optgroup;
+      backgroundProvider?.appendChild(optgroup);
+      for (const option of provider.options) {
+        const opt = document.createElement("option");
+        opt.textContent = option.name;
+        opt.value = option.value;
+        optgroup.appendChild(opt);
+      }
+    }
+    switch (backgrounds.type) {
+      case "images":
+      case "videos": {
+        const collectionName = backgrounds[backgrounds.type];
+        backgroundProvider.value = collectionName;
+        break;
+      }
+      default:
+    }
+  }
+  async function blurResolutionControl(sync, local) {
+    if (sync.backgrounds.type === "files") {
+      const ids2 = lastUsedBackgroundFiles(local.backgroundFiles);
+      const image = await mediaFromFiles(ids2[0], local);
+      applyBackground(image, "full");
+      return;
+    }
+    const [current, next] = await getCurrentBackgrounds(sync, local);
+    preloadBackground(current, "small");
+    preloadBackground(current, "full")?.then(() => {
+      applyBackground(current, "full", "fast");
+      preloadBackground(next, "full");
+    });
+  }
+  async function getCurrentBackgrounds(sync, local) {
+    if (sync.backgrounds.type === "files") {
+      const ids2 = lastUsedBackgroundFiles(local.backgroundFiles);
+      const current = await mediaFromFiles(ids2[0], local);
+      const next = await mediaFromFiles(ids2[1], local);
+      return [current, next];
+    }
+    if (sync.backgrounds.frequency === "pause" && sync.backgrounds.pausedImage) {
+      const lists = getCollection(sync.backgrounds, local);
+      const images = lists.images();
+      return [sync.backgrounds.pausedImage, images[0]];
+    }
+    if (sync.backgrounds.frequency === "pause" && sync.backgrounds.pausedVideo) {
+      const lists = getCollection(sync.backgrounds, local);
+      const videos = lists.videos();
+      return [sync.backgrounds.pausedVideo, videos[0]];
+    }
+    if (sync.backgrounds.type === "images") {
+      const lists = getCollection(sync.backgrounds, local);
+      const images = lists.images();
+      return [images[0], images[1]];
+    }
+    if (sync.backgrounds.type === "videos") {
+      const lists = getCollection(sync.backgrounds, local);
+      const videos = lists.videos();
+      return [videos[0], videos[1]];
+    }
+    return [];
+  }
+  function detectBackgroundSize() {
+    return document.body.className.includes("blurred") ? "small" : "full";
+  }
+  function applyThemeColor(image, img) {
+    let color = image.color;
+    if (!color) {
+      color = getAverageColor(img);
+    }
+    if (color) {
+      const fadein = Number.parseInt(document.documentElement.style.getPropertyValue("--fade-in"));
+      document.querySelector('meta[name="theme-color"]')?.setAttribute("content", color);
+      setTimeout(() => {
+        document.documentElement.style.setProperty("--average-color", color);
+      }, fadein);
+    }
+  }
+  function pauseVideoOnVisibilityChange() {
+    document.querySelectorAll("video")?.forEach((video) => {
+      if (document.hidden) {
+        video.pause();
+      } else {
+        video.play();
+      }
+    });
+  }
+  function getAverageColor(img) {
+    try {
+      const canvas = document.createElement("canvas");
+      const ctx = canvas.getContext("2d");
+      const maxDimension = 100;
+      const scale = Math.min(maxDimension / img.width, maxDimension / img.height);
+      canvas.width = img.width * scale;
+      canvas.height = img.height * scale;
+      ctx?.drawImage(img, 0, 0, canvas.width, canvas.height);
+      const imageData = ctx?.getImageData(0, 0, canvas.width, canvas.height);
+      const data = imageData?.data;
+      let r = 0;
+      let g = 0;
+      let b = 0;
+      let count = 0;
+      if (data) {
+        for (let i = 0; i < data.length; i += 4) {
+          r += data[i];
+          g += data[i + 1];
+          b += data[i + 2];
+          count++;
+        }
+      }
+      r = Math.floor(r / count);
+      g = Math.floor(g / count);
+      b = Math.floor(b / count);
+      return rgbToHex(r, g, b);
+    } catch (_error) {
+    }
+  }
+  function toggleMuteStatus(muted = true) {
+    document.querySelectorAll("#background-media video").forEach((video) => {
+      video.dispatchEvent(
+        new CustomEvent("muteStatusChange", {
+          detail: {
+            status: muted
+          }
+        })
+      );
+    });
+  }
+  function isBackgroundType(str = "") {
+    return ["files", "urls", "images", "videos", "color"].includes(str);
+  }
+  function isBackgroundTexture(str = "") {
+    return [
+      "none",
+      "grain",
+      "verticalDots",
+      "diagonalDots",
+      "topographic",
+      "checkerboard",
+      "isometric",
+      "grid",
+      "verticalLines",
+      "horizontalLines",
+      "diagonalStripes",
+      "verticalStripes",
+      "horizontalStripes",
+      "diagonalLines",
+      "aztec",
+      "circuitBoard",
+      "ticTacToe",
+      "endlessClouds",
+      "vectorGrain",
+      "waves",
+      "honeycomb"
+    ].includes(str);
+  }
+  function isFrequency(str = "") {
+    return ["tabs", "hour", "day", "period", "pause"].includes(str);
+  }
+  function areOnlyImages(list) {
+    return list?.every((item) => item.format === "image");
+  }
+  function areOnlyVideos(list) {
+    return list?.every((item) => item.format === "video");
+  }
+
+  // src/scripts/features/move/helpers.ts
+  var MOVE_WIDGETS = ["time", "main", "quicklinks", "notes", "quotes", "searchbar", "pomodoro"];
+  var elements = {
+    time: globalThis.document.getElementById("time"),
+    main: globalThis.document.getElementById("main"),
+    quicklinks: globalThis.document.getElementById("linkblocks"),
+    searchbar: globalThis.document.getElementById("sb_container"),
+    notes: globalThis.document.getElementById("notes_container"),
+    quotes: globalThis.document.getElementById("quotes_container"),
+    pomodoro: globalThis.document.getElementById("pomodoro_container")
+  };
+  var defaultLayouts = {
+    single: {
+      grid: [["time"], ["main"], ["quicklinks"]],
+      items: {}
+    },
+    double: {
+      grid: [
+        ["time", "."],
+        ["main", "."],
+        ["quicklinks", "."]
+      ],
+      items: {}
+    },
+    triple: {
+      grid: [
+        ["time", ".", "."],
+        ["main", ".", "."],
+        ["quicklinks", ".", "."]
+      ],
+      items: {}
+    }
+  };
+  function isEditing() {
+    return document.getElementById("interface")?.classList.contains("move-edit") ?? false;
+  }
+  function hasDuplicateInArray(arr, id) {
+    return arr.filter((a) => a === id).length > 1;
+  }
+  function getLayout(data, selection) {
+    if ("move" in data) {
+      const layouts2 = data.move.layouts;
+      const selec2 = selection ?? data.move.selection;
+      return layouts2[selec2] ?? defaultLayouts[selec2];
+    }
+    const layouts = data.layouts;
+    const selec = selection ?? data.selection;
+    return layouts?.[selec] ?? defaultLayouts[selec];
+  }
+  function gridValidate(grid) {
+    const cells = grid.flat();
+    const cellsAreWidgets = cells.every((val) => val === "." || MOVE_WIDGETS.includes(val));
+    return cellsAreWidgets;
+  }
+  function gridParse(area = "") {
+    const stringToGrid = (split) => {
+      const rows = area.split(split).filter((a) => a.length > 1);
+      const grid = rows.map((r) => r.split(" "));
+      return grid;
+    };
+    const result = stringToGrid("'");
+    if (gridValidate(result)) {
+      return result;
+    }
+    return stringToGrid(`"`);
+  }
+  function gridStringify(grid) {
+    let areas = "";
+    const itemListToString = (row) => row.reduce((a, b) => `${a} ${b}`);
+    areas = grid.map((row) => `'${itemListToString(row)}'`).join(" ");
+    return areas.trimEnd();
+  }
+  function gridFind(grid, id) {
+    const positions = [];
+    grid.flat().forEach((a, i) => {
+      if (a !== id) {
+        return;
+      }
+      const column = i % grid[0].length;
+      const row = Math.floor(i / grid[0].length);
+      positions.push([column, row]);
+    });
+    return positions;
+  }
+  function getSpanDirection(grid, id) {
+    const poses = gridFind(grid, id);
+    const rows = Object.values(poses).map(([_, row]) => row);
+    if (poses.length < 2) {
+      return "none";
+    }
+    if (rows[0] !== rows[1]) {
+      return "columns";
+    }
+    return "rows";
+  }
+  function isRowEmpty(grid, index) {
+    if (grid[index] === void 0) {
+      return false;
+    }
+    const row = grid[index];
+    let empty = true;
+    row.some((cell) => {
+      if (cell !== "." && getSpanDirection(grid, cell) !== "columns") {
+        empty = false;
+      }
+    });
+    return empty;
+  }
+  function spansInGridArea(grid, id, { toggle, remove }) {
+    function addSpans(row2) {
+      const target = row2.indexOf(id);
+      const stopper = [false, false];
+      let arr = row2;
+      function replaceWithId(a, i, lim) {
+        if (!stopper[lim] && a[i]) {
+          if (a[i] === ".") {
+            a[i] = id;
+          } else if (a[i] !== id) {
+            stopper[lim] = true;
+          }
+        }
+        return a;
+      }
+      for (let ii = 1; ii < arr.length; ii++) {
+        arr = replaceWithId(arr, target + ii, 0);
+        arr = replaceWithId(arr, target - ii, 1);
+      }
+      return arr;
+    }
+    function removeSpans(arr) {
+      let keepfirst = true;
+      return arr.map((a) => {
+        if (a === id) {
+          if (keepfirst) {
+            keepfirst = false;
+          }
+          return ".";
+        }
+        return a;
+      });
+    }
+    const [x, y] = gridFind(grid, id)[0];
+    let col = grid.map((g) => g[x]);
+    let row = [...grid[y]];
+    if (remove) {
+      col = removeSpans(col);
+      row = removeSpans(row);
+    }
+    if (toggle) {
+      if (toggle === "col") {
+        col = hasDuplicateInArray(col, id) ? removeSpans(col) : addSpans(col);
+      }
+      if (toggle === "row") {
+        row = hasDuplicateInArray(row, id) ? removeSpans(row) : addSpans(row);
+      }
+    }
+    grid.forEach((_, i) => {
+      grid[i][x] = col[i];
+    });
+    grid[y].forEach((_, i) => {
+      grid[y][i] = row[i];
+    });
+    return grid;
+  }
+  function getWidgetsStorage(data) {
+    const displayed = {
+      time: data.time,
+      main: data.main,
+      notes: !!data.notes?.on,
+      searchbar: !!data.searchbar?.on,
+      pomodoro: !!data.pomodoro?.on,
+      quicklinks: data.quicklinks,
+      quotes: !!data.quotes?.on
+    };
+    return Object.entries(displayed).filter(([_, val]) => val).map(([key, _]) => key);
+  }
+  function updateWidgetsStorage(states, data) {
+    for (const [id, on] of states) {
+      if (id === "time") {
+        data.time = on;
+      }
+      if (id === "main") {
+        data.main = on;
+      }
+      if (id === "quicklinks") {
+        data.quicklinks = on;
+      }
+      if (id === "quotes") {
+        data.quotes = { ...data.quotes, on };
+      }
+      if (id === "pomodoro") {
+        data.pomodoro = { ...data.pomodoro, on };
+      }
+      if (id === "searchbar") {
+        data.searchbar = { ...data.searchbar, on };
+      }
+      if (id === "notes" && data.notes) {
+        data.notes = { ...data.notes, on };
+      }
+    }
+    return data;
+  }
+  function getGridWidgets(area) {
+    const list = area.replaceAll("'", "").replaceAll(".", "").split(" ");
+    const widgets = list.filter((str, i) => str && list.indexOf(str) === i);
+    return widgets;
+  }
+  function addGridWidget(grid, id, selection) {
+    const newrow = addGridRow(selection, id);
+    let rows = grid.split("'").filter((row) => !(row === " " || row === ""));
+    let position = 0;
+    if (grid === "") {
+      return `'${newrow}'`;
+    }
+    const isFirstWidgetTime = rows[0].includes("time");
+    const isLastWidgetQuotes = rows.at(-1)?.includes("quotes");
+    if (id === "time") {
+      position = 0;
+    }
+    if (id === "main") {
+      position = isFirstWidgetTime ? 1 : 0;
+    }
+    if (id === "notes") {
+      position = rows.length === 1 ? 1 : 2;
+    }
+    if (id === "searchbar") {
+      position = rows.length === 1 ? 1 : 2;
+    }
+    if (id === "pomodoro") {
+      position = rows.length === 1 ? 1 : 2;
+    }
+    if (id === "quicklinks") {
+      position = rows.length - (isLastWidgetQuotes ? 1 : 0);
+    }
+    if (id === "quotes") {
+      position = rows.length;
+    }
+    rows.splice(position, 0, newrow);
+    rows = rows.map((row) => `'${row}'`);
+    return rows.join(" ");
+  }
+  function removeGridWidget(grid, id, _) {
+    let rows = grid.split("'").filter((row) => !(row === " " || row === ""));
+    rows = rows.filter((row) => !row.includes(id));
+    rows = rows.map((row) => `'${row}'`);
+    return rows.join(" ");
+  }
+  function addGridRow(selection, id) {
+    const firstcolumn = selection === "triple" ? ". " : "";
+    const lastcolumn = selection === "triple" || selection === "double" ? " ." : "";
+    return `${firstcolumn}${id}${lastcolumn}`;
+  }
+
+  // src/scripts/features/move/dom.ts
+  var import_mod5 = __toESM(require_dist());
+  var dominterface = document.querySelector("#interface");
+  function setGridAreas(grid) {
+    const property = typeof grid === "string" ? grid : gridStringify(grid);
+    document.documentElement.style.setProperty("--grid", property);
+  }
+  function setAlign(id, align) {
+    const { box, text } = align ?? { box: "", text: "" };
+    const elem = elements[id];
+    if (elem) {
+      elem.style.placeSelf = box;
+      if (id === "quicklinks") {
+        document.getElementById("linkblocks")?.classList.remove("text-left", "text-right");
+        if (text === "left") {
+          document.getElementById("linkblocks")?.classList.add("text-left");
+        }
+        if (text === "right") {
+          document.getElementById("linkblocks")?.classList.add("text-right");
+        }
+      } else {
+        elem.style.textAlign = text || "";
+      }
+    }
+  }
+  function setAllAligns(items) {
+    for (const [widget2, align] of Object.entries(items)) {
+      setAlign(widget2, align);
+    }
+  }
+  function addOverlay(id) {
+    const button = document.createElement("button");
+    button.id = `move-overlay-${id}`;
+    button.className = "move-overlay";
+    dominterface?.appendChild(button);
+    (0, import_mod5.onclickdown)(button, () => {
+      moveElements(void 0, { select: id });
+    });
+  }
+  function removeOverlay(id) {
+    if (id) {
+      document.querySelector(`#move-overlay-${id}`)?.remove();
+    } else {
+      for (const overlay of document.querySelectorAll(".move-overlay")) {
+        overlay.remove();
+      }
+    }
+  }
+  function removeSelection() {
+    const toolbox = document.getElementById("element-mover");
+    const elements2 = document.querySelectorAll(
+      ".move-overlay, #grid-mover button, .grid-spanner, #element-mover button"
+    );
+    for (const elem of elements2) {
+      elem.classList.remove("selected");
+      elem.removeAttribute("disabled");
+    }
+    toolbox?.classList.remove("active");
+  }
+  function interfaceFade(fade) {
+    if (fade === "in") {
+      const dominterface3 = document.getElementById("interface");
+      dominterface3.style.removeProperty("opacity");
+      setTimeout(() => {
+        dominterface3.style.transition = "";
+      }, 200);
+    }
+    if (fade === "out") {
+      const dominterface3 = document.getElementById("interface");
+      dominterface3.style.opacity = "0";
+      dominterface3.style.transition = "opacity 200ms cubic-bezier(.215,.61,.355,1)";
+    }
+  }
+
+  // src/scripts/shared/api.ts
+  async function apiWebSocket(path) {
+    try {
+      const socket2 = new WebSocket(`wss://services.bonjourr.fr/${path}`);
+      const isOpened = await new Promise((resolve2) => {
+        socket2.onopen = () => resolve2(true);
+        socket2.onerror = () => resolve2(false);
+        socket2.onclose = () => resolve2(false);
+      });
+      if (isOpened) {
+        return socket2;
+      }
+    } catch (_error) {
+    }
+  }
+  async function apiFetch(path) {
+    try {
+      return await fetch(`https://services.bonjourr.fr${path}`);
+    } catch (_error) {
+    }
+  }
+
+  // src/scripts/features/clock/helpers.ts
+  function fixunits(val) {
+    return (val < 10 ? "0" : "") + val.toString();
+  }
+  function isFace(str) {
+    return ["none", "number", "roman", "marks", "swiss", "braun"].includes(str ?? "");
+  }
+  function isHands(str) {
+    return ["modern", "swiss", "classic", "braun", "apple"].includes(str ?? "");
+  }
+  function isShape(str) {
+    return ["round", "square", "rectangle"].includes(str ?? "");
+  }
+  function isDateFormat(str = "") {
+    return ["auto", "eu", "us", "cn"].includes(str);
+  }
+  function isAmpmPosition(str) {
+    return ["top-left", "top-right", "bottom-left", "bottom-right"].includes(str ?? "");
+  }
+
+  // src/scripts/features/clock/world.ts
+  function toggleWorldClocksOptions() {
+    const parents = document.querySelectorAll(".worldclocks-item");
+    const inputs = document.querySelectorAll(".worldclocks-item input");
+    let hasWorld = false;
+    parents.forEach((parent, i) => {
+      const currHasText = !!inputs[i]?.value;
+      const nextHasText = !!inputs[i - 1]?.value;
+      parent?.classList.toggle("shown", i === 0 || currHasText || nextHasText);
+      if (!hasWorld && currHasText) {
+        hasWorld = true;
+      }
+    });
+  }
+  function toggleTimezoneOptions(data) {
+    const timezoneOptions = document.getElementById("timezone_options");
+    const hasWorldClock = data.clock.worldclocks && !!data?.worldclocks[0]?.region;
+    timezoneOptions?.classList.toggle("shown", !hasWorldClock);
+  }
+
+  // src/scripts/features/clock/greetings.ts
+  var oneInFive = Math.random() > 0.8 ? 1 : 0;
+  function displayGreetings({ mode, name, custom }) {
+    const date = userDate();
+    const domgreetings = document.getElementById("greetings");
+    const domgreeting = document.getElementById("greeting");
+    const domname = document.getElementById("greeting-name");
+    const rare = oneInFive;
+    const hour = date.getHours();
+    let period;
+    if (hour < 3) {
+      period = "evening";
+    } else if (hour < 5) {
+      period = "night";
+    } else if (hour < 12) {
+      period = "morning";
+    } else if (hour < 18) {
+      period = "afternoon";
+    } else {
+      period = "evening";
+    }
+    if (mode === "custom" && custom && custom[period]) {
+      const greet = name ? custom[period].replace("$name", name) : custom[period];
+      domgreetings.style.textTransform = "none";
+      domgreeting.textContent = greet;
+      domname.textContent = "";
+    } else {
+      const greetings = {
+        morning: "Good morning",
+        afternoon: "Good afternoon",
+        evening: "Good evening",
+        night: ["Good night", "Sweet dreams"][rare]
+      };
+      const greet = greetings[period];
+      domgreetings.style.textTransform = name || rare && period === "night" ? "none" : "capitalize";
+      domgreeting.textContent = tradThis(greet) + (name ? ", " : "");
+      domname.textContent = name ?? "";
+    }
+  }
+
+  // src/scripts/dependencies/vietnamese-calendar.ts
+  function INT(d) {
+    return Math.floor(d);
+  }
+  function jdFromDate(dd, mm, yy) {
+    const a = INT((14 - mm) / 12);
+    const y = yy + 4800 - a;
+    const m = mm + 12 * a - 3;
+    let jd = dd + INT((153 * m + 2) / 5) + 365 * y + INT(y / 4) - INT(y / 100) + INT(y / 400) - 32045;
+    if (jd < 2299161) {
+      jd = dd + INT((153 * m + 2) / 5) + 365 * y + INT(y / 4) - 32083;
+    }
+    return jd;
+  }
+  function NewMoon(k) {
+    let deltat;
+    const T = k / 1236.85;
+    const T2 = T * T;
+    const T3 = T2 * T;
+    const dr = Math.PI / 180;
+    let Jd1 = 241502075933e-5 + 29.53058868 * k + 1178e-7 * T2 - 155e-9 * T3;
+    Jd1 += 33e-5 * Math.sin((166.56 + 132.87 * T - 9173e-6 * T2) * dr);
+    const M = 359.2242 + 29.10535608 * k - 333e-7 * T2 - 347e-8 * T3;
+    const Mpr = 306.0253 + 385.81691806 * k + 0.0107306 * T2 + 1236e-8 * T3;
+    const F = 21.2964 + 390.67050646 * k - 16528e-7 * T2 - 239e-8 * T3;
+    let C1 = (0.1734 - 393e-6 * T) * Math.sin(M * dr) + 21e-4 * Math.sin(2 * dr * M);
+    C1 = C1 - 0.4068 * Math.sin(Mpr * dr) + 0.0161 * Math.sin(dr * 2 * Mpr);
+    C1 -= 4e-4 * Math.sin(dr * 3 * Mpr);
+    C1 = C1 + 0.0104 * Math.sin(dr * 2 * F) - 51e-4 * Math.sin(dr * (M + Mpr));
+    C1 = C1 - 74e-4 * Math.sin(dr * (M - Mpr)) + 4e-4 * Math.sin(dr * (2 * F + M));
+    C1 = C1 - 4e-4 * Math.sin(dr * (2 * F - M)) - 6e-4 * Math.sin(dr * (2 * F + Mpr));
+    C1 = C1 + 1e-3 * Math.sin(dr * (2 * F - Mpr)) + 5e-4 * Math.sin(dr * (2 * Mpr + M));
+    if (T < -11) {
+      deltat = 1e-3 + 839e-6 * T + 2261e-7 * T2 - 845e-8 * T3 - 81e-9 * T * T3;
+    } else {
+      deltat = -278e-6 + 265e-6 * T + 262e-6 * T2;
+    }
+    const JdNew = Jd1 + C1 - deltat;
+    return JdNew;
+  }
+  function SunLongitude(jdn) {
+    const T = (jdn - 2451545) / 36525;
+    const T2 = T * T;
+    const dr = Math.PI / 180;
+    const M = 357.5291 + 35999.0503 * T - 1559e-7 * T2 - 48e-8 * T * T2;
+    const L0 = 280.46645 + 36000.76983 * T + 3032e-7 * T2;
+    let dl = (1.9146 - 4817e-6 * T - 14e-6 * T2) * Math.sin(dr * M);
+    dl = dl + (0.019993 - 101e-6 * T) * Math.sin(dr * 2 * M) + 29e-5 * Math.sin(dr * 3 * M);
+    let L = L0 + dl;
+    L *= dr;
+    L -= Math.PI * 2 * INT(L / (Math.PI * 2));
+    return L;
+  }
+  function getSunLongitude(dayNumber, timeZone) {
+    return INT(SunLongitude(dayNumber - 0.5 - timeZone / 24) / Math.PI * 6);
+  }
+  function getNewMoonDay(k, timeZone) {
+    return INT(NewMoon(k) + 0.5 + timeZone / 24);
+  }
+  function getLunarMonth11(yy, timeZone) {
+    const off = jdFromDate(31, 12, yy) - 2415021;
+    const k = INT(off / 29.530588853);
+    let nm = getNewMoonDay(k, timeZone);
+    const sunLong = getSunLongitude(nm, timeZone);
+    if (sunLong >= 9) {
+      nm = getNewMoonDay(k - 1, timeZone);
+    }
+    return nm;
+  }
+  function getLeapMonthOffset(a11, timeZone) {
+    const k = INT((a11 - 2415021076998695e-9) / 29.530588853 + 0.5);
+    let last = 0;
+    let i = 1;
+    let arc = getSunLongitude(getNewMoonDay(k + i, timeZone), timeZone);
+    do {
+      last = arc;
+      i++;
+      arc = getSunLongitude(getNewMoonDay(k + i, timeZone), timeZone);
+    } while (arc !== last && i < 14);
+    return i - 1;
+  }
+  function convertSolar2Lunar(dd, mm, yy, timeZone) {
+    const dayNumber = jdFromDate(dd, mm, yy);
+    const k = INT((dayNumber - 2415021076998695e-9) / 29.530588853);
+    let monthStart = getNewMoonDay(k + 1, timeZone);
+    if (monthStart > dayNumber) {
+      monthStart = getNewMoonDay(k, timeZone);
+    }
+    let a11 = getLunarMonth11(yy, timeZone);
+    let b11 = a11;
+    let lunarYear;
+    if (a11 >= monthStart) {
+      lunarYear = yy;
+      a11 = getLunarMonth11(yy - 1, timeZone);
+    } else {
+      lunarYear = yy + 1;
+      b11 = getLunarMonth11(yy + 1, timeZone);
+    }
+    const lunarDay = dayNumber - monthStart + 1;
+    const diff = INT((monthStart - a11) / 29);
+    let lunarLeap = 0;
+    let lunarMonth = diff + 11;
+    if (b11 - a11 > 365) {
+      const leapMonthDiff = getLeapMonthOffset(a11, timeZone);
+      if (diff >= leapMonthDiff) {
+        lunarMonth = diff + 10;
+        if (diff === leapMonthDiff) {
+          lunarLeap = 1;
+        }
+      }
+    }
+    if (lunarMonth > 12) {
+      lunarMonth -= 12;
+    }
+    if (lunarMonth >= 11 && diff < 4) {
+      lunarYear -= 1;
+    }
+    return [lunarDay, lunarMonth, lunarYear, lunarLeap];
+  }
+  function getVnCalendar(date) {
+    const can = ["Gi\xE1p", "\u1EA4t", "B\xEDnh", "\u0110inh", "M\u1EADu", "K\u1EF7", "Canh", "T\xE2n", "Nh\xE2m", "Qu\xFD"];
+    const chi = ["T\xFD", "S\u1EEDu", "D\u1EA7n", "M\xE3o", "Th\xECn", "T\u1EF5", "Ng\u1ECD", "M\xF9i", "Th\xE2n", "D\u1EADu", "Tu\u1EA5t", "H\u1EE3i"];
+    const ld = convertSolar2Lunar(date.getDate(), date.getMonth() + 1, date.getFullYear(), 7);
+    const yearCanChi = `${can[(ld[2] + 6) % 10]} ${chi[(ld[2] + 8) % 12]}`;
+    const leapText = ld[3] ? " (nhu\u1EADn)" : "";
+    return `\xC2m l\u1ECBch: ${ld[0]} th\xE1ng ${ld[1]}${leapText} n\u0103m ${yearCanChi}`;
+  }
+
+  // src/scripts/features/clock/date.ts
+  function clockDate(wrapper, date, dateformat, timezone) {
+    const datedom = wrapper.querySelector(".clock-date");
+    const aa = wrapper.querySelector(".clock-date-aa");
+    const bb = wrapper.querySelector(".clock-date-bb");
+    const cc = wrapper.querySelector(".clock-date-cc");
+    const secondary = wrapper.querySelector(".clock-date-secondary");
+    const lang = getLang().replaceAll("_", "-");
+    const day = new Intl.DateTimeFormat(lang, { day: "numeric" }).format(date);
+    const month = new Intl.DateTimeFormat(lang, { month: "long" }).format(date);
+    const weekday = new Intl.DateTimeFormat(lang, { weekday: "long" }).format(date);
+    datedom.classList.remove("eu", "us", "cn");
+    datedom.classList.add(dateformat);
+    if (dateformat === "auto") {
+      const intl = new Intl.DateTimeFormat(lang, { weekday: "long", month: "long", day: "numeric" });
+      aa.textContent = intl.format(date);
+      bb.textContent = "";
+      cc.textContent = "";
+    }
+    if (dateformat === "eu") {
+      aa.textContent = weekday;
+      bb.textContent = day;
+      cc.textContent = month;
+    }
+    if (dateformat === "us") {
+      aa.textContent = weekday;
+      bb.textContent = month;
+      cc.textContent = day;
+    }
+    if (dateformat === "cn") {
+      aa.textContent = month;
+      bb.textContent = day;
+      cc.textContent = weekday;
+    }
+    if (lang === "vi" && (timezone === "auto" || timezone === "Asia/Ho_Chi_Minh")) {
+      secondary.textContent = getVnCalendar(date);
+    } else {
+      secondary.textContent = "";
+    }
+  }
+
+  // src/scripts/features/clock/clock.ts
+  var clockInterval;
+  var clockVisibilityListener = null;
+  function startClock(options) {
+    const { clock: clock2, world, dateformat, greetings } = options;
+    document.getElementById("time")?.classList.toggle("is-analog", clock2.analog);
+    document.getElementById("time")?.classList.toggle("seconds", clock2.seconds);
+    document.querySelectorAll(".clock-wrapper").forEach((node, index) => {
+      if (index > 0) {
+        node.remove();
+      }
+    });
+    const clocks = [];
+    if (clock2.worldclocks) {
+      clocks.push(...world.filter(({ region }) => region));
+    }
+    if (clocks.length === 0) {
+      clocks.push({ region: "", timezone: clock2.timezone });
+    }
+    setUserDate(clocks[0].timezone);
+    start(true);
+    clearInterval(clockInterval);
+    if (clockVisibilityListener) {
+      document.removeEventListener("visibilitychange", clockVisibilityListener);
+    }
+    if (!document.hidden) {
+      clockInterval = setInterval(start, 1e3);
+    }
+    clockVisibilityListener = () => {
+      clearInterval(clockInterval);
+      if (!document.hidden) {
+        start();
+        clockInterval = setInterval(start, 1e3);
+      }
+    };
+    document.addEventListener("visibilitychange", clockVisibilityListener);
+    function start(firstStart) {
+      for (let index = 0; index < clocks.length; index++) {
+        const { region, timezone } = clocks[index];
+        const domclock = getClock(index);
+        const domregion = domclock.querySelector(".clock-region");
+        const date = userDate(timezone);
+        const isNextHour = date.getMinutes() === 0;
+        if (clock2.analog) {
+          analog(domclock, clock2, timezone);
+        } else {
+          digital(domclock, clock2, timezone);
+        }
+        if (isNextHour || firstStart) {
+          clockDate(domclock, date, dateformat, timezone);
+        }
+        if (domregion) {
+          domregion.textContent = region;
+        }
+      }
+      displayGreetings(greetings);
+    }
+  }
+  function getClock(index) {
+    const container2 = document.getElementById("time-container");
+    const wrapper = document.querySelector(`.clock-wrapper[data-index="${index}"]`);
+    if (wrapper) {
+      return wrapper;
+    }
+    const first = document.getElementById("clock-wrapper");
+    const clone = first?.cloneNode(true);
+    clone.removeAttribute("id");
+    clone.dataset.index = index.toString();
+    container2?.appendChild(clone);
+    return clone;
+  }
+  function digital(wrapper, clock2, timezone) {
+    const date = userDate(timezone);
+    const domclock = wrapper.querySelector(".digital");
+    const hh = wrapper.querySelector(".digital-hh");
+    const mm = wrapper.querySelector(".digital-mm");
+    const ss = wrapper.querySelector(".digital-ss");
+    const m = fixunits(date.getMinutes());
+    const s = fixunits(date.getSeconds());
+    let h = clock2.ampm ? date.getHours() % 12 : date.getHours();
+    if (!domclock || !hh || !mm || !ss) {
+      return;
+    }
+    if (clock2.ampmlabel) {
+      domclock.dataset.ampmLabel = clock2.ampmposition ?? "top-left";
+    } else {
+      delete domclock.dataset.ampmLabel;
+    }
+    if (clock2.ampm) {
+      domclock.dataset.ampm = date.getHours() < 12 ? "am" : "pm";
+    } else {
+      delete domclock.dataset.ampm;
+    }
+    if (clock2.ampm && h === 0) {
+      h = 12;
+    }
+    domclock.classList.toggle("zero", !clock2.ampm && h < 10);
+    hh.textContent = h.toString();
+    mm.textContent = m.toString();
+    ss.textContent = s.toString();
+  }
+  function analog(wrapper, clock2, timezone) {
+    const date = userDate(timezone);
+    const m = ((date.getMinutes() + date.getSeconds() / 60) * 6).toFixed(1);
+    const h = ((date.getHours() % 12 + date.getMinutes() / 60) * 30).toFixed(1);
+    const s = (date.getSeconds() * 6).toFixed(1);
+    wrapper.querySelector(".analog-hours")?.style.setProperty("--deg", `${h}deg`);
+    wrapper.querySelector(".analog-minutes")?.style.setProperty("--deg", `${m}deg`);
+    if (!clock2.seconds) {
+      return;
+    }
+    wrapper.querySelector(".analog-seconds")?.style.setProperty("--deg", `${s}deg`);
+  }
+
+  // src/scripts/features/clock/index.ts
+  var defaultAnalogStyle = {
+    face: "none",
+    hands: "modern",
+    shape: "round",
+    border: "#ffff",
+    background: "#fff2"
+  };
+  var sinogramRegex = /zh-CN|zh-HK|ja/;
+  var defaultTimezones = ["Europe/Paris", "America/Sao_Paulo", "America/Los_Angeles", "Asia/Tokyo", "Asia/Kolkata"];
+  var defaultRegions = ["Paris", "New York", "Tokyo", "Lisbon", "Los Angeles"];
+  function clock(init2, event) {
+    if (event) {
+      clockUpdate(event);
+      return;
+    }
+    const clock2 = init2?.clock ?? { ...SYNC_DEFAULT.clock };
+    const world = init2?.worldclocks ?? { ...SYNC_DEFAULT.worldclocks };
+    const dateformat = init2?.dateformat || "eu";
+    const greetings = {
+      name: init2?.greeting || "",
+      mode: init2?.greetingsmode || "auto",
+      custom: init2?.greetingscustom
+    };
+    try {
+      startClock({ clock: clock2, world, greetings, dateformat });
+      greetingSize(init2?.greetingsize);
+      analogStyle(init2?.analogstyle);
+      clockSize(clock2.size);
+      displayInterface("clock");
+      onSettingsLoad(toggleWorldClocksOptions);
+    } catch (err) {
+      console.info(err);
+    }
+  }
+  async function clockUpdate(update) {
+    const data = await storage.sync.get();
+    const analogstyle = data.analogstyle ?? structuredClone(defaultAnalogStyle);
+    if (update.analog !== void 0) {
+      toggleSettingsDropdown("analog_options", update.analog);
+      toggleSettingsDropdown("digital_options", !update.analog);
+    }
+    if (isDateFormat(update.dateformat)) {
+      data.dateformat = update.dateformat;
+      storage.sync.set({ dateformat: update.dateformat });
+    }
+    if (update.greeting !== void 0) {
+      data.greeting = stringMaxSize(update.greeting, 64);
+      displayGreetings({
+        mode: data.greetingsmode,
+        name: data.greeting,
+        custom: data.greetingscustom
+      });
+      storage.sync.set({ greeting: data.greeting });
+    }
+    if (update.greetingsize !== void 0) {
+      greetingSize(update.greetingsize);
+      storage.sync.set({ greetingsize: update.greetingsize });
+    }
+    if (update.greetingsmode !== void 0) {
+      const mode = update.greetingsmode;
+      data.greetingsmode = mode;
+      storage.sync.set({ greetingsmode: mode });
+      toggleSettingsDropdown("greetingscustom_options", mode === "custom");
+      displayGreetings({ mode, name: data.greeting, custom: data.greetingscustom });
+    }
+    if (update.greetingscustom !== void 0) {
+      const newCustoms = {
+        ...data.greetingscustom,
+        ...update.greetingscustom
+      };
+      data.greetingscustom = newCustoms;
+      storage.sync.set({ greetingscustom: newCustoms });
+      displayGreetings({
+        mode: data.greetingsmode,
+        name: data.greeting,
+        custom: newCustoms
+      });
+    }
+    if (isHands(update.hands)) {
+      analogstyle.hands = update.hands;
+    }
+    if (isShape(update.shape)) {
+      analogstyle.shape = update.shape;
+    }
+    if (isFace(update.face)) {
+      analogstyle.face = update.face;
+    }
+    if (update.background || update.border) {
+      const option = update.background ? "background" : "border";
+      analogstyle[option] = hexColorFromSplitRange(`#analog-${option}-range`);
+      analogStyle(analogstyle);
+      if (update?.[option] === "opacity") {
+        eventDebounce({ analogstyle });
+      }
+      if (update?.[option] === "shade") {
+        storage.sync.set({ analogstyle });
+      }
+      return;
+    }
+    if (update.worldclocks !== void 0) {
+      data.clock.worldclocks = update.worldclocks;
+      toggleTimezoneOptions(data);
+    }
+    if (update.world !== void 0) {
+      const index = update.world.index;
+      const baseclock = { region: defaultRegions[index], timezone: defaultTimezones[index] };
+      const worldclock = data.worldclocks?.[index] ?? baseclock;
+      const { region, timezone } = update.world;
+      if (region !== void 0) {
+        worldclock.region = region;
+      }
+      if (timezone !== void 0) {
+        worldclock.timezone = timezone;
+      }
+      data.worldclocks[index] = worldclock;
+      toggleWorldClocksOptions();
+      toggleTimezoneOptions(data);
+    }
+    data.clock = {
+      ampm: update.ampm ?? data.clock.ampm,
+      size: update.size ?? data.clock.size,
+      analog: update.analog ?? data.clock.analog,
+      seconds: update.seconds ?? data.clock.seconds,
+      timezone: update.timezone ?? data.clock.timezone,
+      ampmlabel: update.ampmlabel ?? data.clock.ampmlabel,
+      ampmposition: isAmpmPosition(update.ampmposition) ? update.ampmposition : data.clock.ampmposition,
+      worldclocks: update.worldclocks ?? data.clock.worldclocks
+    };
+    storage.sync.set({
+      clock: data.clock,
+      worldclocks: data.worldclocks,
+      analogstyle,
+      dateformat: data.dateformat
+    });
+    startClock({
+      clock: data.clock,
+      world: data.worldclocks,
+      dateformat: data.dateformat,
+      greetings: {
+        name: data.greeting,
+        mode: data.greetingsmode,
+        custom: data.greetingscustom
+      }
+    });
+    analogStyle(data.analogstyle);
+    clockSize(data.clock.size);
+  }
+  function analogStyle(style = structuredClone(defaultAnalogStyle)) {
+    const { face, shape, hands } = style;
+    const time = document.getElementById("time");
+    const spans = document.querySelectorAll(".analog .analog-face span");
+    const backgroundAlpha = Number.parseInt(style.background.slice(4), 16);
+    const isWhiteOpaque = style.background?.includes("fff") && backgroundAlpha > 7;
+    const isTransparent = backgroundAlpha === 0;
+    let faceNumbers = ["12", "3", "6", "9"];
+    const lang = getLang();
+    if (lang === "am") {
+      faceNumbers = ["\u0533", "\u0536", "\u0539", "\u053A\u0532"];
+    } else if (lang === "ar") {
+      faceNumbers = ["\u0663", "\u0666", "\u0669", "\u0661\u0662"];
+    } else if (lang === "fa") {
+      faceNumbers = ["\u06F3", "\u06F6", "\u06F9", "\u06F1\u06F2"];
+    } else if (lang.match(sinogramRegex)) {
+      faceNumbers = ["\u4E09", "\u516D", "\u4E5D", "\u5341\u4E8C"];
+    }
+    spans.forEach((span, i) => {
+      if (face === "roman") {
+        span.textContent = ["XII", "III", "VI", "IX"][i % 4];
+      } else if (face === "marks") {
+        span.textContent = ["\u2502", "\u2015", "\u2502", "\u2015"][i % 4];
+      } else if (face === "number") {
+        span.textContent = faceNumbers[i % 4];
+      } else {
+        span.textContent = "";
+      }
+    });
+    time.dataset.face = face === "swiss" || face === "braun" ? face : "";
+    time.dataset.shape = shape || "";
+    time.dataset.hands = hands || "";
+    time.classList.toggle("transparent", isTransparent);
+    time.classList.toggle("white-opaque", isWhiteOpaque);
+    time.style.setProperty("--analog-border", style.border);
+    time.style.setProperty("--analog-background", style.background);
+  }
+  function clockSize(size = 5) {
+    document.documentElement.style.setProperty("--clock-size", `${size.toString()}em`);
+  }
+  function greetingSize(size = "3") {
+    document.documentElement.style.setProperty("--greeting-size", `${size}em`);
+  }
+
+  // src/scripts/features/fonts.ts
+  var familyForm = networkForm("f_customfont");
+  var systemfont = (() => {
+    const fonts = {
+      fallback: { placeholder: "Arial", weights: ["500", "600", "800"] },
+      windows: { placeholder: "Segoe UI", weights: ["300", "400", "600", "700", "800"] },
+      android: { placeholder: "Roboto", weights: ["100", "300", "400", "500", "700", "900"] },
+      linux: { placeholder: "Fira Sans", weights: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] },
+      apple: {
+        placeholder: "SF Pro Display",
+        weights: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+      }
+    };
+    if (SYSTEM_OS === "windows") {
+      return fonts.windows;
+    }
+    if (SYSTEM_OS === "android") {
+      return fonts.android;
+    }
+    if (SYSTEM_OS === "mac") {
+      return fonts.apple;
+    }
+    if (SYSTEM_OS === "ios") {
+      return fonts.apple;
+    }
+    return fonts.linux;
+  })();
+  function customFont(init2, event) {
+    if (event) {
+      updateCustomFont(event);
+      return;
+    }
+    if (init2) {
+      try {
+        const font = migrateToNewFormat(init2);
+        displayFont(font);
+        displayInterface("fonts");
+        onSettingsLoad(() => {
+          initFontSettings(font);
+        });
+      } catch (_) {
+      }
+    }
+  }
+  async function updateCustomFont({ family, weight, size, lang, autocomplete, color }) {
+    if (autocomplete) {
+      setAutocompleteSettings();
+      return;
+    }
+    const data = await storage.sync.get("font");
+    if (family !== void 0) {
+      data.font = await updateFontFamily(data, family);
+    }
+    if (weight) {
+      data.font.weight = weight || "400";
+      displayFont(data.font);
+    }
+    if (color) {
+      data.font.color = color;
+      colorInput("font-color", color);
+      setFontColor(color);
+    }
+    if (size) {
+      data.font.size = size;
+      setFontSize(size);
+    }
+    if (lang) {
+      handleLangSwitch(data.font);
+      return;
+    }
+    eventDebounce({ font: data.font });
+  }
+  async function updateFontFamily(data, family) {
+    const iWeight = document.getElementById("i_weight");
+    const familyType = family.length === 0 ? "none" : systemFontChecker(family) ? "system" : "fontsource";
+    let font = {
+      family: "",
+      system: true,
+      size: data.font.size,
+      weight: SYSTEM_OS === "windows" ? "400" : "300",
+      weightlist: systemfont.weights,
+      color: data.font.color
+    };
+    switch (familyType) {
+      case "fontsource": {
+        familyForm.load();
+        const newfont = await getNewFont(font, family);
+        if (newfont && navigator.onLine) {
+          font = { ...font, ...newfont };
+          displayFont(font);
+          await waitForFontLoad(family);
+          familyForm.accept("i_customfont", family);
+          clock(void 0, {});
+        }
+        if (font.family === "") {
+          familyForm.warn(tradThis("Cannot load this font"));
+          return data.font;
+        }
+        break;
+      }
+      case "system": {
+        font.family = family;
+        displayFont(font);
+        familyForm.accept("i_customfont", family);
+        break;
+      }
+      default: {
+        displayFont(font);
+        familyForm.accept("i_customfont", systemfont.placeholder);
+      }
+    }
+    clock(void 0, {});
+    setWeightSettings(font.weightlist);
+    iWeight.value = font.weight;
+    return font;
+  }
+  async function handleLangSwitch(font) {
+    const noCustomOrSystemFont = !font.family || font?.system;
+    if (noCustomOrSystemFont) {
+      return;
+    }
+    const newfont = await getNewFont(font, font.family);
+    if (newfont === void 0) {
+      updateCustomFont({ family: "" });
+      return;
+    }
+    font.family = newfont.family;
+    font.weight = newfont.weight;
+    font.weightlist = newfont.weightlist;
+    displayFont(font);
+    setAutocompleteSettings(true);
+  }
+  async function getNewFont(font, newfamily) {
+    const fontlist = await (await apiFetch("/fonts"))?.json() ?? [];
+    let newfont;
+    for (const item of fontlist) {
+      const hasCorrectSubset = item.subsets.includes(getRequiredSubset());
+      const isFamily = item.family.toLowerCase() === newfamily.toLowerCase();
+      if (hasCorrectSubset && isFamily) {
+        newfont = item;
+      }
+    }
+    if (newfont) {
+      font.weight = "400";
+      font.system = false;
+      font.family = newfamily;
+      font.weightlist = newfont.weights.map((w) => w.toString());
+      return font;
+    }
+    return;
+  }
+  function displayFont({ family, size, weight, system, color }) {
+    const clockWeight = Number.parseInt(weight) > 100 ? systemfont.weights[systemfont.weights.indexOf(weight) - 1] : weight;
+    const subset = getRequiredSubset();
+    const id = family.toLocaleLowerCase().replaceAll(" ", "-");
+    const fontfacedom = document.getElementById("fontface");
+    if (!system) {
+      let fontface = `
+			@font-face {font-family: "${family}";
+				src: url(https://cdn.jsdelivr.net/fontsource/fonts/${id}@latest/latin-${weight}-normal.woff2) format('woff2');
 			}
-		`;i!=="latin"&&(c+=c.replace("latin",i)),a&&(a.textContent+=c)}document.documentElement.style.setProperty("--font-family",e?`"${e}"`:null),document.documentElement.style.setProperty("--font-weight",o),document.documentElement.style.setProperty("--font-weight-clock",e?o:s),Yc(t)}function Yc(e){document.documentElement.style.setProperty("--font-size",`${Number.parseInt(e)/16}em`)}function Mf(e){let o=e&&e.weightlist.length>0?e.weightlist:Rt.weights;Jc(o)}async function Qc(e){let t=document.querySelector("#dl_fontfamily");if(e&&t?.childNodes)for(let o of t.childNodes)o.remove();if(t?.childElementCount===0){let o=await(await hn("/fonts"))?.json()??[],n=new DocumentFragment,s=bs();for(let i of o)if(i.subsets.includes(s)){let r=document.createElement("option");r.textContent=i.family,r.value=i.family,n.appendChild(r)}t?.appendChild(n)}}function Jc(e){let t=document.querySelectorAll("#i_weight option");for(let o of t)o.classList.toggle("hidden",e.includes(o.value)===!1)}async function Xc(e,t){let n=(await(await hn("/fonts"))?.json())?.find(i=>i.family===t),s=bs(e);return n?.subsets.includes(s)}function ys(e){let t=document.createElement("p");t.setAttribute("style","position: absolute; opacity: 0; font-family: invalid font;"),t.textContent=`mqlskdjfhgpaozieurytwnxbcv?./,;:1234567890${L("New tab")}`,document.getElementById("interface")?.prepend(t);let o=t.getBoundingClientRect().width;t.style.fontFamily=`'${e}'`;let n=t.getBoundingClientRect().width,s=o!==n;return t.remove(),s}function _f(e){return new Promise(t=>{let o=0,n=ys(e),s=setInterval(()=>{if(n||o===100)return clearInterval(s),t(!0);n=ys(e),o++},100)})}function bs(e=G()){let t="latin";return e in Cs&&(t=Cs[e]),t}function Cf(e){return e?.weightlist||(e.availWeights&&(e.weightlist=e.availWeights),e.system=ys(e.family),e.availWeights=void 0,e.url=void 0,y.local.remove("fontface"),y.local.remove("fonts"),y.sync.remove("font"),setTimeout(()=>y.sync.set({font:e}))),e}var Xi=ne("f_sbrequest"),Et,Zc=/^(?!.*\s)(?:https?:\/\/)?([a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9-]{2,})/i,be=document.getElementById("sb-suggestions"),ve=document.getElementById("sb_container"),ie=document.getElementById("searchbar"),el=document.getElementById("sb-buttons"),tl=document.getElementById("sb_empty"),Bf=(e=!1)=>ve?.classList.toggle("hidden",!e),nl=(e="google")=>ve?.setAttribute("data-engine",e),ol=(e="")=>ve?.setAttribute("data-request",N(e,512)),sl=(e=!1)=>ve?.setAttribute("data-newtab",e.toString()),il=(e=!0)=>ve?.setAttribute("data-suggestions",e.toString()),rl=(e="")=>ie?.setAttribute("placeholder",e),al=(e=30)=>document.documentElement.style.setProperty("--searchbar-width",`${e.toString()}em`),cl=(e="#fff2")=>{document.documentElement.style.setProperty("--searchbar-background",e),document.getElementById("sb_container")?.classList.toggle("opaque",e.includes("#fff")&&Ze(e)>7)};function Oe(e,t){if(t){Af(t);return}try{Bf(e?.on),al(e?.width),nl(e?.engine),ol(e?.request),sl(e?.newtab),rl(e?.placeholder),il(e?.suggestions),cl(e?.background),el?.addEventListener("click",Of),tl?.addEventListener("click",Ff),ve?.addEventListener("submit",Zi),ie?.addEventListener("input",Df),ie?.addEventListener("focus",()=>{document.dispatchEvent(new Event("close-edit")),ie.focus()}),document.addEventListener("keydown",Rf)}catch{}}async function Af({engine:e,newtab:t,background:o,placeholder:n,request:s,suggestions:i,width:r}){let{searchbar:a}=await y.sync.get("searchbar");if(a){if(dl(e)&&(document.getElementById("searchbar_request")?.classList.toggle("shown",e==="custom"),a.engine=e,nl(e)),i!==void 0&&(a.suggestions=i,il(i)),t!==void 0&&(a.newtab=t,sl(t)),r!==void 0&&(a.width=Number.parseInt(r),al(a.width)),n!==void 0&&(a.placeholder=n,rl(n)),o&&(a.background=Yt("sb-background-range"),cl(a.background)),s){let c=document.querySelector("#f_sbrequest");if(!c)return;let u=new FormData(c).get("sbrequest")?.toString()??"",d=!u.includes("%s")&&u.length>0;if(!u.match(Zc)){Xi.warn(L("URL seems wrong"));return}if(d){Xi.warn(L("No %s present in URL"));return}a.request=N(u,512),ol(a.request),Xi.accept()}Q({searchbar:a})}}function ll(e){try{let t=!!new URL(e),o=Zc.test(e);return t&&o}catch{return!1}}function qf(e,t){let o={default:"",google:"https://www.google.com/search?q=%s",ddg:"https://duckduckgo.com/?q=%s",startpage:"https://www.startpage.com/do/search?query=%s",qwant:"https://www.qwant.com/?q=%s",yahoo:"https://search.yahoo.com/search?q=%s",bing:"https://www.bing.com/search?q=%s",brave:"https://search.brave.com/search?q=%s",ecosia:"https://www.ecosia.org/search?q=%s",lilo:"https://search.lilo.org/?q=%s",baidu:"https://www.baidu.com/s?wd=%s",custom:ve?.dataset.request||""};if(!dl(t)||t==="custom"&&!o.custom)return"about:blank";let n="",s=encodeURIComponent(e??""),i=L(t);return n=i.includes("%s")?i:o[t],n=n.replace("%s",s),n}function Zi(e){e.preventDefault();let t=!Ee&&(q==="chrome"||q==="firefox"),o=ve?.dataset.newtab==="true",n=ie?.value,s=ve?.dataset.engine??"default";if(!n)return;if(Et&&Et.close(),t&&s==="default"){xn?.search.query({disposition:o?"NEW_TAB":"CURRENT_TAB",text:n});return}s=s.replace("default","google");let r=n.startsWith("http://")||n.startsWith("https://")?n:`https://${n}`,a=qf(n,s),c=ll(r)?r:a,l=o?"_blank":"_self";globalThis.open(c,l)}function Pf(){function e(r){return r?.classList.contains("shown")?r:null}function t(r){r&&ie&&(ie.value=r?.querySelector(".suggest-result")?.textContent??"")}for(let r=0;r<10;r++){let a=document.createElement("li"),c=document.createElement("img"),l=document.createElement("div"),u=document.createElement("p"),d=document.createElement("p");a.setAttribute("tabindex","0"),c.setAttribute("draggable","false"),c.setAttribute("width","16"),c.setAttribute("height","16"),u.classList.add("suggest-result"),d.classList.add("suggest-desc"),l.appendChild(u),l.appendChild(d),a.appendChild(c),a.appendChild(l),a.addEventListener("mouseenter",()=>{ve?.querySelector('li[aria-selected="true"]')?.removeAttribute("aria-selected"),a?.setAttribute("aria-selected","true")}),a.addEventListener("mouseleave",()=>{a?.removeAttribute("aria-selected")}),a.addEventListener("click",h=>{t(a),Zi(h)}),be?.appendChild(a)}function o(r){let c=r?.relatedTarget?.parentElement?.id==="sb-suggestions",l=document.querySelectorAll("#sb-suggestions li.shown")?.length>0,u=r.type==="focus";c||be?.classList.toggle("shown",u&&l)}function n(r){let a=r.code==="ArrowDown",c=r.code==="ArrowUp",l=r.code==="Enter",u=r.code==="Escape",d=be?.querySelector('li[aria-selected="true"]');d?.removeAttribute("aria-selected"),!u&&(a&&(d=e(d?.nextElementSibling)??be?.querySelector("li.shown"),t(d)),c&&(d=e(d?.previousElementSibling),t(d),r.preventDefault()),l&&d&&(t(d),Zi(r)),d?.setAttribute("aria-selected","true"))}function s(){let r=Object.values(be?.children??[]);for(let a of r)a.classList.remove("shown");be?.classList.remove("shown")}async function i(){Et=await Pc("suggestions"),Et?.addEventListener("message",r=>{let a=xe(r.data);Array.isArray(a)?Hf(a):a?.error&&i()})}ve?.addEventListener("keydown",n),ie?.addEventListener("focus",o),ie?.addEventListener("blur",o),tl?.addEventListener("click",s),i()}function Hf(e){let t=ie,o=be?.querySelectorAll("li")??[];be?.classList.toggle("shown",e.length>0),be?.querySelector('li[aria-selected="true"]')?.removeAttribute("aria-selected"),o.forEach((n,s)=>{let i=e[s],r=n.querySelector(".suggest-result"),a=n.querySelector(".suggest-desc");if(!(i&&r&&a))return;let c="src/assets/interface/magnifying-glass.svg",l=i.image??c,u=i.desc??"";if(r&&(r.textContent=i.text),i.text.includes(t.value)){let b=i.text.indexOf(t.value),v=document.createElement("span"),m=document.createElement("b"),p=document.createElement("span");v.textContent=i.text.slice(0,b),m.textContent=i.text.slice(b,t.value.length),p.textContent=i.text.slice(t.value.length),r.textContent="",r.appendChild(v),r.appendChild(m),r.appendChild(p)}let d=n.querySelector("img");d.classList.toggle("default-search-icon",l===c),d.src=l,a.textContent=u,n.classList.toggle("shown",!!i);let h=n.getBoundingClientRect();h.y+h.height+40>document.body.offsetHeight&&n.classList.remove("shown")}),be?.querySelectorAll("li.shown")?.length===0&&be?.classList.remove("shown")}function Df(e){let t=e.target.value??"",n=t.startsWith("http://")||t.startsWith("https://")?t:`https://${t}`,s="https://".startsWith(t)||"http://".startsWith(t);if(ie&&ul(t.length>0),t===""){for(let i of document.querySelectorAll("#sb-suggestions li.shown")??[])i.classList.remove("shown");be?.classList.remove("shown");return}if(s||ll(n)){be?.classList.remove("shown");return}if(ve?.dataset.suggestions==="true"&&be?.childElementCount===0&&Pf(),ve?.dataset.suggestions==="true"&&Et&&Et.readyState===Et.OPEN){let i=(ve?.dataset.engine??"ddg").replace("custom","ddg").replace("default","google"),r=encodeURIComponent(t??"");Et.send(JSON.stringify({q:r,with:i,lang:G()}))}}function ul(e){document.getElementById("sb-buttons")?.classList.toggle("shown",e),document.getElementById("sb_empty")?.toggleAttribute("disabled",!e),document.getElementById("sb_submit")?.toggleAttribute("disabled",!e)}function Ff(){ie&&(ie.focus(),ie.value="",ul(!1))}function Of(){el?.classList.contains("shown")===!1&&ie?.focus()}function Rf(e){e.target.tagName==="BODY"&&e.key==="/"&&(ie?.focus(),ie?.select(),e.preventDefault())}function dl(e=""){return vr.includes(e)}function ml(e,t){let o=document.getElementById("styles");if(t){if(t?.styling!==void 0){let n=N(t.styling,8080);o.textContent=n,Q({css:n})}return}e&&(o.textContent=e),R(async()=>{let{createCssEditor:n}=await Promise.resolve().then(()=>(ei(),Zs)),i=n({language:"css",lineNumbers:!1,wordWrap:!0,insertSpaces:!1,value:e||""}),r=i.keyCommandMap.Tab;i.textarea.id="css-editor-textarea",i.textarea.maxLength=8080,i.textarea.setAttribute("aria-labelledby","lbl-css"),i.textarea.placeholder=L("Type in your custom CSS"),i.on("update",a=>{Q({css:N(a,8080)}),o.textContent=N(a,8080)}),i.keyCommandMap.Tab=(a,c,l)=>document.body.matches(".tabbing")?!1:r?.(a,c,l)})}function fl(e=""){return["tabs","hour","day","period","pause"].includes(e)}var Nf=ne("f_qttype"),jf=ne("f_qturl");async function Je(e,t){if(t){Wf(t);return}if(!e)return;let{lang:o,quotes:n}=e.sync,s=We(n.frequency,n.last??0),i=e.local?.userQuoteSelection??0,r=e.local?.quotesCache??[],a=r[0];n.type==="user"?(r=ao(n.userlist),a=r[i]):(!r||r?.length===0)&&(r=await hl(o,n.type,n.url),a=r[0],y.local.set({quotesCache:r})),s&&(n.last=Y().getTime(),a=yl(r,o,n.type,n.url),y.sync.set({quotes:n})),vs(a),bl(n.author),document.getElementById("quotes_container")?.classList.toggle("hidden",!n.on),_e("quotes")}async function Wf({author:e,frequency:t,type:o,userlist:n,url:s,refresh:i}){let r=await y.sync.get(["lang","quotes"]),a=await y.local.get("quotesCache");e!==void 0&&(r.quotes.author=e,bl(e)),n&&(r.quotes.userlist=Uf(n));let c=!1;Kf(s)&&(r.quotes.url=s,c=!0),i&&(r.quotes.last=Y().getTime(),$f(r,a?.quotesCache)),fl(t)&&(r.quotes.frequency=t),Gf(o)&&(r.quotes.type=o,c=!0),c&&zf(r),y.sync.set({quotes:r.quotes})}async function zf(e){let t=e.quotes.type==="user",o=[],n=0;if(t&&e.quotes.userlist&&(n=(await y.local.get("userQuoteSelection"))?.userQuoteSelection??0,o=ao(e.quotes.userlist)),!t){let s=e.quotes.type==="url"?jf:Nf;try{s.load(),o=await pl(e.lang,e.quotes.type,e.quotes.url),s.accept()}catch{s.warn(L("Fetch failed, please check console for more information"))}y.local.set({quotesCache:o})}o.length>0&&vs(o[n]),document.getElementById("quotes_userlist")?.classList.toggle("shown",t),document.getElementById("quotes_url")?.classList.toggle("shown",e.quotes.type==="url")}function Uf(e){let t=[];return e.length===0?"":(e.startsWith("[[")?t=ao(ks(xe(e)??[])):t=ao(e),t.length>0&&(vs({author:t[0].author,content:t[0].content}),document.getElementById("i_qtlist")?.blur(),y.local.set({userQuoteSelection:0})),e)}function $f(e,t=[]){let{lang:o,quotes:n}=e,{type:s,url:i,userlist:r}=n,c=s==="user"&&r?ao(r):t;vs(yl(c,o,s,i))}async function pl(e,t,o){if(!navigator.onLine||t==="user")return[];let n;if(t==="url"){if(!o)return[];n=await fetch(o),gl(n);let r=Yf(n);return r==="json"?await n.json():r==="csv"?er(await n.text()):[]}let s=t==="classic"?`${e}`:"",i=`/quotes/${t}/${s}`;return n=await hn(i),gl(n),await n.json()}function gl(e){if(!e)throw new Error("No response");if(!e.ok)throw new Error(`Response not ok: ${e.status} ${e.statusText}`)}async function hl(e,t,o){try{return await pl(e,t,o)}catch(n){console.info(n)}return[]}function yl(e,t,o,n){if(o==="user"){let s=Math.round(Math.random()*(e.length-1));return y.local.set({userQuoteSelection:s}),e[s]}if(e.length>1){let s=e.shift();return y.local.set({quotesCache:e}),s??{author:"",content:""}}return hl(t,o,n).then(s=>{y.local.set({quotesCache:s})}),e[0]}function bl(e){document.getElementById("author")?.classList.toggle("always-on",e)}function vs(e){let t=document.getElementById("quote"),o=document.getElementById("author");e&&t&&o&&(t.textContent=e.content,o.textContent=e.author)}function ao(e){return e?Array.isArray(e)?er(ks(e)):er(e):[]}function ks(e){return e.map(t=>t.join(",")).join(`
-`)}function er(e){let t=e.split(`
-`),o=[];for(let n of t){let[s,...i]=n.split(","),r=i.join(",").trimStart();o.push({author:s,content:r})}return o}function Gf(e=""){return["classic","kaamelott","inspirobot","stoic","hitokoto","office","user","url"].includes(e)}var Vf=/^https?:\/\//i;function Kf(e){return e===void 0?!1:e===""||Vf.test(e)}function Yf(e){let t=e.headers.get("content-type")?.split(";",2)[0];if(t==="application/json")return"json";if(t==="text/csv")return"csv";let n=new URL(e.url).pathname.split("."),s=n[n.length-1];return Er(s,"json")?"json":"csv"}var ke,qe=document.getElementById("pomodoro_container"),Qf=document.getElementById("pmdr_start"),Jf=document.getElementById("pmdr_pause"),Xf=document.getElementById("pmdr_reset"),vl=document.getElementById("pmdr_timer"),Zf=document.querySelectorAll('#pmdr_modes input[type="radio"]'),wl=document.getElementById("pmdr-focus"),kn=new BroadcastChannel("bonjourr_pomodoro"),El,Ll,Sl,Tl=1e4,tr=new Audio,xl=(e="")=>document.getElementById(`pmdr-${e}`).checked=!0,sr=e=>ke.timeFor[e];function Xe(e,t){if(t){Nt(t);return}if(e?.on){kl(e);return}e&&R(()=>{kl(e)})}function kl(e){ke=e,uo(e.focus&&e.on),xl(e.mode),sg(e.on),ng(e),_e("pomodoro"),tg(),eg(),Bl(e.history)}function eg(){Zf.forEach(e=>{e.addEventListener("change",t=>{let o=t.target.value;co(o,!0),kn.postMessage({type:"switch-mode",mode:o})})}),Qf?.addEventListener("click",()=>{ke.mode&&(y.sync.get().then(e=>{ir(e.pomodoro,!0)}),kn.postMessage({type:"start-pomodoro",time:sr(ke.mode)}))}),Jf?.addEventListener("click",()=>{Ml(),kn.postMessage({type:"pause-pomodoro"})}),Xf?.addEventListener("pointerdown",e=>{rr(),kn.postMessage({type:"reset-pomodoro"}),Vt(e,!0)}),wl?.addEventListener("change",e=>{let t=e.target.checked;uo(t),Nt({focus:t}),kn.postMessage({type:"toggle-focus",on:t})}),document.querySelectorAll(".pomodoro_mode, #focus-toggle").forEach(e=>{e.addEventListener("keydown",t=>{if(t.code==="Space"||t.code==="Enter"){let o=e.querySelector('input[type="radio"], input[type="checkbox"]');if(!o)return;o.checked=!o.checked,o.dispatchEvent(new Event("change",{bubbles:!0})),t.preventDefault()}})})}function tg(){kn.addEventListener("message",({data:e={}})=>{e.type==="start-pomodoro"&&y.sync.get().then(t=>{ir(t.pomodoro,!0,e.time)}),e.type==="switch-mode"&&(xl(e.mode),co(e.mode)),e.type==="pause-pomodoro"&&Ml(),e.type==="reset-pomodoro"&&rr(),e.type==="toggle-focus"&&uo(e.on)})}function co(e,t,o){Il(),lo(e,t),Es(),ws(sr(e),!1),o||Nt({mode:e,end:0,pause:0})}function Il(){clearTimeout(Sl),clearTimeout(Ll)}function lo(e,t){let o=document.querySelector("#pmdr_modes"),n=o?.querySelectorAll(".pomodoro_mode"),s=o?.querySelector(".pomodoro_mode.active"),i=o?.querySelector(`#pmdr-${e}`)?.parentElement,r=o?.querySelector("span.glider");if(n?.forEach(a=>{a.classList.remove("active")}),!t){i?.classList.add("active");return}if(i&&r){let a=s?.offsetLeft??0,c=s?.offsetWidth??100,l=i.offsetLeft,u=i.offsetWidth;r.style.opacity="1",r.style.left=`${a}px`,r.style.width=`${c}px`,setTimeout(()=>{r.style.left=`${l}px`,r.style.width=`${u}px`,r.classList.add("gliding")},16),setTimeout(()=>{r.removeAttribute("style"),r.classList.remove("gliding"),i.classList.add("active")},200)}}function ng(e){let t=e.end&&Date.now()<e.end,o=!e.end||Date.now()>e.end;if(t){ir(e);return}o&&e.mode&&co(e.mode,!1,!0)}function ir(e,t,o){t??=!1,Es(),Il();let n=e.mode??"pomodoro",s=o??sr(n),i=e.pause!==0,r=Date.now(),a=0;if(i&&(a=e.end-e.pause),t)if(i){let c=r+a;nr(c),Nt({end:c,pause:0})}else{let c=r+s*1e3;Nt({end:c,pause:0}),nr(c)}else lo(e.mode),i?ws(or(r+a),!1):nr(e.end)}function nr(e){ws(or(e)),El=setInterval(()=>{ws(or(e))},100),_l(!0)}function Ml(){Es(),Nt({pause:Date.now()})}function _l(e){qe&&qe.classList.toggle("started",e)}function Es(){clearInterval(El),_l(!1)}function rr(){co(ke.mode)}function or(e){let t=Math.round((e-Date.now())/1e3);return t<=0?(Es(),ig(),Ll=setTimeout(()=>{co(ke.mode)},Tl),0):t}function ws(e,t=!0){if(!vl)return;let o=Math.floor(e/60),n=e%60,s=`${o}:${n<10?"0":""}${n}`;vl.textContent=s,og(s,t)}function og(e,t){let o=document.title,s=o.match(/\| (.*)/)?.[1]??o,i;e!=="0:00"?i=t?`${e} | ${s}`:s:(i=`${L("Time's up!")} | ${s}`,Sl=setTimeout(()=>{ct(s)},Tl)),ct(i)}function sg(e){qe?.classList.toggle("hidden",!e)}function uo(e){let t=e&&!ke.focus,n=!e&&ke.focus||t;if(wl.checked=e,ke.focus=e,n||(qe.classList.toggle("onFocus",e),qe.classList.toggle("outOfFocus",!e)),n&&document.visibilityState==="visible"){let s=qe.getBoundingClientRect(),i=qe.cloneNode(!0);i.style.position="absolute",i.style.top=s.top+"px",i.style.left=s.left+"px",i.style.fontSize=document.documentElement.style.getPropertyValue("--font-size"),i.style.fontFamily=document.documentElement.style.getPropertyValue("--font-family"),i.classList.add("clone"),document.body.appendChild(i),i.classList.remove("onFocus","outOfFocus"),i.classList.toggle("onFocus",!t),i.classList.toggle("outOfFocus",t),qe.style.visibility="hidden",document.body.classList.toggle("pomodoro-focus",t),qe.classList.toggle("onFocus",e),qe.classList.toggle("outOfFocus",!e);let r=qe.getBoundingClientRect(),a=r.left-s.left,c=r.top-s.top;requestAnimationFrame(()=>{i.classList.remove("onFocus","outOfFocus"),i.classList.add(t?"onFocus":"outOfFocus"),i.style.transform=`translate(${a}px, ${c}px)`}),i.addEventListener("transitionend",l=>{l.propertyName==="transform"&&(qe.style.visibility="visible",i.remove())})}else document.body.classList.toggle("pomodoro-focus",e)}function ig(){let e=localStorage.getItem("lastActiveTab");e===Tn?(ke.sound&&Cl(),ke.mode==="pomodoro"&&Nt({history:{endedAt:Date.now().toString()}})):console.info("Alarm is ringing, but this isn't the active tab.",{lastTab:e,TAB_ID:Tn})}function Cl(){let e=ke.alarm||"marimba",t=ke.volume??.7;tr.src=`src/assets/sounds/${e}.mp3`,tr.volume=t,tr.play()}function Bl(e){let t=new Date,o=0,n=0,s=0,i=new Date(t.getFullYear(),t.getMonth(),t.getDate()),r=new Date(t),a=(t.getDay()+6)%7;r.setDate(t.getDate()-a),r.setHours(0,0,0,0);let c=new Date(t.getFullYear(),t.getMonth(),1);for(let l of e){let u=new Date(Number(l.endedAt));u>=i&&o++,u>=r&&n++,u>=c&&s++}document.getElementById("poms-today").textContent=o.toString(),document.getElementById("poms-week").textContent=n.toString(),document.getElementById("poms-month").textContent=s.toString()}async function Nt(e){let t=await y.sync.get(["pomodoro"]);if(e.listen){Cl();return}if(e.on!==void 0&&(t.pomodoro.on=e.on),e.sound!==void 0&&(t.pomodoro.sound=e.sound),e.alarm&&(t.pomodoro.alarm=e.alarm),e.volume&&(t.pomodoro.volume=e.volume),e.end!==void 0&&(t.pomodoro.end=e.end),e.mode&&(t.pomodoro.mode=e.mode),e.pause!==void 0&&(t.pomodoro.pause=e.pause),e.focus!==void 0&&(t.pomodoro.focus=e.focus),e.history!==void 0&&t.pomodoro.history.push({endedAt:e.history.endedAt,duration:t.pomodoro.timeFor.pomodoro}),e.timeFor){let{timeFor:o}=e;for(let n of Object.keys(o)){let s=o[n];s!==void 0&&(t.pomodoro.timeFor[n]=s*60)}}await y.sync.set({pomodoro:t.pomodoro}),ke=t.pomodoro,Bl(t.pomodoro.history),e.timeFor&&rr()}function ar(e,t){for(let[o,n]of Object.entries(t))if(e.startsWith(`${n} `))return o;return""}function Ls(e,t){let o=document.createDocumentFragment();t=t.replaceAll("	","");for(let n of t.split(`
+		`;
+      if (subset !== "latin") {
+        fontface += fontface.replace("latin", subset);
+      }
+      if (fontfacedom) {
+        fontfacedom.textContent += fontface;
+      }
+    }
+    document.documentElement.style.setProperty("--font-family", family ? `"${family}"` : null);
+    document.documentElement.style.setProperty("--font-weight", weight);
+    document.documentElement.style.setProperty("--font-weight-clock", family ? weight : clockWeight);
+    setFontSize(size);
+    setFontColor(color);
+  }
+  function setFontSize(size) {
+    document.documentElement.style.setProperty("--font-size", `${Number.parseInt(size) / 16}em`);
+  }
+  function setFontColor(color) {
+    const rgbColor = hexToRGB(color);
+    document.documentElement.style.setProperty("--font-color", `${rgbColor.r}, ${rgbColor.g}, ${rgbColor.b}`);
+  }
+  function initFontSettings(font) {
+    const hasCustomWeights = font && font.weightlist.length > 0;
+    const weights = hasCustomWeights ? font.weightlist : systemfont.weights;
+    setWeightSettings(weights);
+  }
+  async function setAutocompleteSettings(isLangSwitch) {
+    const dlFontfamily = document.querySelector("#dl_fontfamily");
+    if (isLangSwitch && dlFontfamily?.childNodes) {
+      for (const node of dlFontfamily.childNodes) {
+        node.remove();
+      }
+    }
+    if (dlFontfamily?.childElementCount === 0) {
+      const fontlist = await (await apiFetch("/fonts"))?.json() ?? [];
+      const fragment = new DocumentFragment();
+      const requiredSubset = getRequiredSubset();
+      for (const item of fontlist) {
+        if (item.subsets.includes(requiredSubset)) {
+          const option = document.createElement("option");
+          option.textContent = item.family;
+          option.value = item.family;
+          fragment.appendChild(option);
+        }
+      }
+      dlFontfamily?.appendChild(fragment);
+    }
+  }
+  function setWeightSettings(weights) {
+    const options = document.querySelectorAll("#i_weight option");
+    for (const option of options) {
+      option.classList.toggle("hidden", weights.includes(option.value) === false);
+    }
+  }
+  async function fontIsAvailableInSubset(lang, family) {
+    const fontlist = await (await apiFetch("/fonts"))?.json();
+    const font = fontlist?.find((item) => item.family === family);
+    const subset = getRequiredSubset(lang);
+    return font?.subsets.includes(subset);
+  }
+  function systemFontChecker(family) {
+    const p = document.createElement("p");
+    p.setAttribute("style", "position: absolute; opacity: 0; font-family: invalid font;");
+    p.textContent = `mqlskdjfhgpaozieurytwnxbcv?./,;:1234567890${tradThis("New tab")}`;
+    document.getElementById("interface")?.prepend(p);
+    const firstW = p.getBoundingClientRect().width;
+    p.style.fontFamily = `'${family}'`;
+    const secondW = p.getBoundingClientRect().width;
+    const hasLoadedFont = firstW !== secondW;
+    p.remove();
+    return hasLoadedFont;
+  }
+  function waitForFontLoad(family) {
+    return new Promise((resolve2) => {
+      let limitcounter = 0;
+      let hasLoadedFont = systemFontChecker(family);
+      const interval = setInterval(() => {
+        if (hasLoadedFont || limitcounter === 100) {
+          clearInterval(interval);
+          return resolve2(true);
+        }
+        hasLoadedFont = systemFontChecker(family);
+        limitcounter++;
+      }, 100);
+    });
+  }
+  function getRequiredSubset(lang = getLang()) {
+    let subset = "latin";
+    if (lang in subsets) {
+      subset = subsets[lang];
+    }
+    return subset;
+  }
+  function migrateToNewFormat(font) {
+    if (font?.weightlist) {
+      return font;
+    }
+    if (font.availWeights) {
+      font.weightlist = font.availWeights;
+    }
+    font.system = systemFontChecker(font.family);
+    font.availWeights = void 0;
+    font.url = void 0;
+    storage.local.remove("fontface");
+    storage.local.remove("fonts");
+    storage.sync.remove("font");
+    setTimeout(() => storage.sync.set({ font }));
+    return font;
+  }
 
-`)){if(n.indexOf(`
-`)===-1){o.appendChild(e.createLine({text:n,modif:ar(n,e.mods)}));continue}for(let s of n.split(`
-`))o.appendChild(e.createLine({text:s,modif:ar(s,e.mods)}))}return o}function Ss(e){function t(i){return i.dataset.list===""?"- ":i.dataset.h1===""?"# ":i.dataset.h2===""?"## ":i.dataset.h3===""?"### ":i.dataset.todoChecked===""?"[x] ":i.dataset.todo===""?"[ ] ":""}let o="",n="",s=i=>i?.dataset.list||i?.dataset.todo;return e.forEach((i,r)=>{if(i.textContent==="pe-mock-selection")return;n=t(i),o+=n+i.textContent;let a=s(e[r+1])&&s(i),c=e.length-1===r;o+=c?"":a?`
-`:`
+  // src/scripts/features/hide.ts
+  async function hideElements(hide, options) {
+    hide ??= {};
+    if (options?.isEvent) {
+      const sync = await storage.sync.get("hide");
+      const newhide = {
+        ...sync.hide,
+        // ⚠️ sync must be first. If not, event doesn't save
+        ...hide
+      };
+      storage.sync.set({ hide: newhide });
+    }
+    for (const [key, val] of Object.entries(hide)) {
+      for (const element of document.querySelectorAll(`[data-hide="${key}"]`)) {
+        element?.classList.toggle("he_hidden", val);
+      }
+    }
+  }
 
-`}),o}function wn(e){let t=e;for(;t?.childNodes.length>0;){let o=Object.values(t.childNodes).reverse(),n=o.filter(s=>s.nodeName==="#text");if(n.length>0)return n[0];t=o[0]}return t}function Re(e,t){let o=wn(e),n=window.getSelection(),s=document.createRange(),i=o.nodeValue?.length||0;s.setStart(o,t?0:i),s.setEnd(o,t?0:i),n?.removeAllRanges(),n?.addRange(s),n?.collapseToEnd()}var En=[];function Ts(e,t){let o=e.lines,n=Ss(o),s=t?o.indexOf(t):0;n!==En[0]?.markdown&&(En.unshift({markdown:n,index:s}),En.length>50&&En.pop())}function rg(e){let t;new MutationObserver(()=>{t&&clearTimeout(t)}).observe(e.container,{characterData:!0,subtree:!0}),e.container.addEventListener("keydown",n=>{(n.ctrlKey||n.metaKey)&&n.key==="z"&&(t=window.setTimeout(()=>{ag(e)},1))})}function ag(e){let{markdown:t,index:o}=En[0]??{};if(t){for(let n of Object.values(e.container.children))n.remove();e.container.appendChild(Ls(e,t)),setTimeout(()=>{let n=e.container.querySelectorAll("[contenteditable]")[o];n&&(n.focus(),Re(n,!1))},0),En.shift(),e.container.dispatchEvent(new InputEvent("input",{inputType:"insertText",bubbles:!0,data:""}))}}function cg(e,t){let o=e.getSelectedLines();o.length>0&&(t.clipboardData?.setData("text/plain",Ss(o)),t.preventDefault())}function lg(e,t){let o=e.getSelectedLines();o.length>0&&(t.clipboardData?.setData("text/plain",Ss(o)),t.preventDefault(),e.removeLines(o),Ts(e,o[o.length-1]))}function ug(e,t){t.preventDefault();let o=window.getSelection(),n=o?.getRangeAt(0),s=t.clipboardData?.getData("text")||"";if(ar(s,e.mods)!==""){let i=t.target,r=Ls(e,s),a=r.childElementCount-1,c=e.getLineFromEditable(i),l=e.getSelectedLines();if(l.length>0&&(c=l[l.length-1]),c?.parentElement?.dataset.pocketEditor===void 0)return;e.container.insertBefore(r,e.getNextLine(c));let u=c.nextSibling;for(let d=0;d<a;d++)u&&(u=u.nextSibling);if(u&&Re(u),c&&c.textContent===""){let d=h=>{let g=c?.dataset[h]===h,E=e.getNextLine(c)?.dataset[h]===h;return g===E};(c||d("list")||d("todo")||d("todo-checked"))&&c.remove()}e.container.dispatchEvent(new InputEvent("input",{inputType:"insertText",bubbles:!0,data:""}));return}if(o?.rangeCount&&n){let i=o?.anchorOffset??0,r=o.focusNode?.nodeValue??"";r&&o.focusNode?(o.focusNode.nodeValue=r.slice(0,i)+s+r.slice(i),o.collapse(o.focusNode,i+s.length)):(n.insertNode(document.createTextNode(s)),Re(n.endContainer))}e.container.dispatchEvent(new InputEvent("input",{inputType:"insertText",bubbles:!0,data:""}))}function cr(e){let t=document.createElement("div"),o=e.parentElement;if(o){delete o.dataset.list,delete o.dataset.todo,delete o.dataset.h1,delete o.dataset.h2,delete o.dataset.h3,delete o.dataset.todoChecked,t.textContent=o.textContent,t.setAttribute("contenteditable","true");for(let n of Object.values(o.childNodes))n.remove();return o.appendChild(t),t.focus(),t}}function lr(e,t,o,n=!0){if(!o)return;let s=e.getLineFromEditable(t);if(!s||s?.dataset[o])return;switch(s.querySelector("span[data-list-marker]")?.remove(),s.querySelector("span[data-todo-marker]")?.remove(),delete s.dataset.h1,delete s.dataset.h2,delete s.dataset.h3,delete s.dataset.list,delete s.dataset.todo,delete s.dataset.todoChecked,o){case"h1":case"h2":case"h3":i(o);break;case"list":a();break;case"todo":r(!1);break;case"todo-checked":r(!0);break;default:}function i(c){let l=document.createElement(c),u=c==="h1"?"#":c==="h2"?"##":"###";l.textContent=t.textContent?.replace(u,"").trimStart()||"",l.setAttribute("contenteditable","true"),s&&(s.dataset[c]="",t.replaceWith(l)),n&&Re(l)}function r(c){let l=document.createElement("input"),u=document.createElement("span"),d=document.createElement("p"),h=e.getLineFromEditable(t),g=(t.textContent??"").replace(e.ZERO_WIDTH_WHITESPACE,"");!h||h.dataset.todo||((g.startsWith("[ ]")||g.startsWith("[x]"))&&(g=g.slice(4,g.length)),l.type="checkbox",l.name="checkbox",l.setAttribute("aria-label","todo list checkbox"),l.addEventListener("input",()=>{l.checked?(h.setAttribute("data-todo-checked",""),l.setAttribute("checked","")):(h.removeAttribute("data-todo-checked"),h.setAttribute("data-todo",""),l.removeAttribute("checked"))}),c&&(l.setAttribute("checked",""),h.dataset.todoChecked=""),h.dataset.todo="",u.dataset.todoMarker="",d.textContent=g,d.setAttribute("contenteditable","true"),t.replaceWith(d),u.appendChild(l),h.prepend(u),n&&Re(d))}function a(){let c=document.createElement("span"),l=document.createElement("p"),u=(t.textContent??"").replace(e.ZERO_WIDTH_WHITESPACE,"");!s||s.dataset.list===""||(u.startsWith("-")&&(u=u?.replace("-","").trimStart()),s.dataset.list="",c.dataset.content="\u2022",c.dataset.listMarker="",l.textContent=u,l.setAttribute("contenteditable","true"),t.replaceWith(l),s.prepend(c),n&&Re(l))}}function Al(e,t){let o=e.container,n=t.target,s;try{let u=n?.hasAttribute("contenteditable"),d=n?.tagName==="INPUT";if(s=window.getSelection()?.getRangeAt(0),!(s&&u)||d)throw new Error("?")}catch{return}let i=e.getLineFromEditable(n),r=Object.keys(i?.dataset??{}),a=t?.inputType==="insertParagraph",c=t?.inputType==="insertText",l;if(t.type==="beforeinput"&&a&&i){t.preventDefault(),Ts(e,i);let u=(n.textContent??"").replace(e.ZERO_WIDTH_WHITESPACE,""),d=u.slice(0,s.startOffset),h=u.slice(s.startOffset);if((s.startOffset===0||u===""&&s.startOffset===1)&&r.length>0){cr(n);return}i.dataset.todo===""&&(l="todo"),i.dataset.list===""&&(l="list"),i.dataset.todoChecked===""&&(l="todo");let E=e.getNextLine(i),b=e.createLine({text:h,modif:l});E?o.insertBefore(b,E):o?.appendChild(b),b.querySelector("[contenteditable]")?.focus(),n.textContent=d,o.dispatchEvent(new InputEvent("input",{inputType:"insertText",bubbles:!0,data:""}));return}if(t.type==="input"&&c){let d=(n?.textContent??"").replace("\u200B","");for(let[h,g]of Object.entries(e.mods))(d.startsWith(g+" ")||d.startsWith(g+"\xA0"))&&(l=h,lr(e,n,l))}}function Pl(e,t){let o=!t.key.includes("Arrow"),n=!window.getSelection()?.anchorNode;if(o||n)return;let s=t.target,i=e.getLineFromEditable(s),r=window?.getSelection()?.getRangeAt(0),a=r?.startContainer?.nodeValue?.length??0;if(!(r&&i))return;let c=e.getPrevLine(i),l=e.getNextLine(i),u=Math.min(r?.endOffset,r?.startOffset)===0,d=Math.max(r?.endOffset,r?.startOffset)===a,h=t.key==="ArrowLeft"&&u&&c,g=t.key==="ArrowRight"&&d&&l;if(h)return{line:i,dir:"up"};if(g)return{line:i,dir:"down"};let E=!1,b=!1,v=r?.getBoundingClientRect(),m=i?.getBoundingClientRect();!(m&&v)||v.y===0?(E=!0,b=!0):(E=m.top-v.top+v.height>0,b=v.bottom+v.height-m.bottom>0);let w=t.key==="ArrowUp"&&c&&E,k=t.key==="ArrowDown"&&l&&b;if(w)return{line:i,dir:"up"};if(k)return{line:i,dir:"down"}}function dg(e){let t=e.lines,o,n=[-1,-1],s=-1,i=-1;function r(p){clearTimeout(o),o=window.setTimeout(()=>{p()},200)}function a(p){if(p||(p=e.getSelectedLines()),p.length===0)return;document.querySelector("#pocket-editor-mock-sel")?.remove();let w=document.createElement("pre");w.id="pocket-editor-mock-sel",w.textContent="pe-mock-selection",w.setAttribute("contenteditable","true"),e.container.appendChild(w);let k=window.getSelection(),x=document.createRange(),T=w.childNodes[0].nodeValue?.length||0;x.setStart(w.childNodes[0],0),x.setEnd(w.childNodes[0],T),k?.removeAllRanges(),k?.addRange(x)}function c(p){let w=e.getLineFromEditable(p);return w?t.indexOf(w):-1}function l(){let p=t[s];p?.querySelector("[contenteditable]")&&Re(p),s=-1,i=-1,n=[-1,-1],document.querySelector("#pocket-editor-mock-sel")?.remove(),e.container.removeEventListener("mousemove",b)}function u(p){p>i&&(n[1]=p),p<i&&(n[0]=p),p===i&&(n=[p,p])}function d(p){i=p,n=[p,p]}function h(p){t.forEach((w,k)=>{k>=p[0]&&k<=p[1]?w.setAttribute("data-selected",""):w.removeAttribute("data-selected")}),r(()=>a())}function g(p){s=i=p,n=[p,p]}function E(p){t=e.lines;let w=e.getSelectedLines(),k=p.key.match(/([x|c|v])/g),x=p.key==="Control"||p.key==="Meta",T=w.length>0,M=p.ctrlKey||p.metaKey;if(x||M&&k&&T)return;if(M&&p.key==="a"){window.getSelection()?.removeAllRanges(),s=i=0,n=[0,t.length-1],h(n),p.preventDefault();return}if(T){if(window.getSelection()?.removeAllRanges(),p.key==="Escape"||p.key==="Tab"){l(),h(n),p.preventDefault();return}if(p.key.includes("Arrow")){p.key.includes("Down")&&(s=Math.min(s+1,t.length-1)),p.key.includes("Up")&&(s=Math.max(0,s-1)),p.shiftKey&&u(s),p.shiftKey||d(s),h(n),p.preventDefault();return}mg(p.code,"Shift","Alt","Control","Caps")||(l(),Ts(e,w[w.length- -1]),e.removeLines(w),p.code==="Enter"&&p.preventDefault())}if(!p.shiftKey)return;let{line:S}=Pl(e,p)??{};if(S){let C=t.indexOf(S);g(C),h(n),window.getSelection()?.removeAllRanges()}}function b(p){let w=p.target,k=e.getSelectedLines();k.length>0&&window.getSelection()?.removeAllRanges();let x=w.getAttribute("aria-label")==="todo list checkbox",T=w.dataset.listMarker,M=!!w.getAttribute("contenteditable");if(x||T||M){if(s=c(w),s===i&&k.length===0)return;u(s),h(n)}}function v(p){let w=p.target,k=p.button===2,x=p.button===0,T=e.getSelectedLines().length>0;t=e.lines,k&&p.preventDefault(),x&&(T&&(l(),h(n)),w.getAttribute("contenteditable")&&(g(c(w)),e.container.addEventListener("mousemove",b)))}function m(p){let w=p.composedPath(),k=e.getSelectedLines().length>0;!w.includes(e.container)&&k&&(t=e.lines,l(),h(n)),e.container.removeEventListener("mousemove",b)}window.addEventListener("touchend",m),window.addEventListener("click",m),e.container.addEventListener("keydown",E),e.container.addEventListener("mousedown",v)}function mg(e,...t){for(let o of t)if(e.includes(o))return!0;return!1}function fg(e,t){Re(t),e.parentElement?.remove()}function gg(e,t){let o=wn(t),n=o.nodeType===3,s=o.nodeValue?.length||0,i=e?.textContent||"";o[n?"nodeValue":"textContent"]+=i;let r=window.getSelection(),a=document.createRange();a.setStart(o,n?s:0),a.setEnd(o,n?s:0),r?.removeAllRanges(),r?.addRange(a),e.parentElement.remove()}function pg(e){let t="ontouchstart"in window||navigator.maxTouchPoints>0,o=navigator.userAgent.toLowerCase(),n=window.getSelection();function s(i){let r=i.target,a=e.getLineFromEditable(r),c="ontouchstart"in window||navigator.maxTouchPoints>0,l=!!r.getAttribute("contenteditable"),u=n?.getRangeAt(0)?.endOffset===0,d=i.inputType==="deleteContentBackward";if(i.type==="beforeinput"&&!d||!u||!l)return;if(i.preventDefault(),a&&Ts(e,a),Object.keys(a?.dataset??{}).length>0){let E=cr(r);c&&E&&E.textContent===""&&(E.textContent=e.ZERO_WIDTH_WHITESPACE,Re(E));return}let g=e.getPrevLine(a);g&&(r.textContent===""?fg(r,g):gg(r,g),e.container.dispatchEvent(new InputEvent("beforeinput",{inputType:"deleteContentBackward",bubbles:!0})))}if(e.container.addEventListener("beforeinput",s),o.includes("safari")&&!(o.includes("chrome")&&o.includes("chromium"))&&e.container.addEventListener("keydown",i=>{try{let r=n?.getRangeAt(0),a=i.key==="Backspace",c=r?.startOffset===0;a&&c&&s(i)}catch{}}),t){let i=!1;e.container.addEventListener("beforeinput",r=>{let a=r.target,c=r.inputType==="deleteContentBackward",l=a.textContent===e.ZERO_WIDTH_WHITESPACE;c&&l&&(i=!0)}),e.container.addEventListener("keyup",r=>{let a=r.target;if(i){i=!1,s(r);return}a.textContent===""&&(a.textContent=e.ZERO_WIDTH_WHITESPACE,Re(a))})}}function hg(e){let t=0;function o(){let i=document.createElement("p"),r=document.createElement("span");i.id="pocket-editor-mock-p",r.textContent="abcdefghijklmnopqrstuvwxyz0123456789",i?.appendChild(r),e.container.querySelector(".line [contenteditable]")?.appendChild(i),t=r.offsetWidth/36/2,i.remove()}function n(i,r){let a=window.getSelection(),c=-1,l=ql(a,i),u=e.caret_x??l.offset,d=i?.querySelector("[contenteditable]"),h=wn(d),g=document.createRange();g.setStart(h,0),g.setEnd(h,0);let E=0;for(let b=0;b<r.length-1;b++){try{g.setStart(h,b),g.setEnd(h,b)}catch{break}if(E=g.getBoundingClientRect().x-l.editable,E+t>=u){c=b;break}}return c}function s(i){let r=i?.querySelector("[contenteditable]");if(!r)return console.warn("Couldn't get string[], no contenteditable found"),[];let a=0,c=0,l=0,u=[""],d=(r.textContent??"").split(" "),h=wn(r),g=document.createRange();g.setStart(h,0),g.setEnd(h,0);let E=navigator.userAgent.includes("AppleWebKit");l=c=g.getBoundingClientRect().y;for(let b of d){b=`${b} `,a+=b.length;try{g.setStart(h,a),g.setEnd(h,a),c=g.getBoundingClientRect().y}catch{}E&&(u[0]+=b),c>l&&(E&&(u[0]=u[0].trimEnd()),u.unshift(""),l=c),E===!1&&(u[0]+=b)}return u.reverse(),u}e.container.addEventListener("pointerdown",()=>{e.caret_x=void 0}),e.container.addEventListener("keydown",i=>{if(!i.key.includes("Arrow"))return;let r=i.key==="ArrowRight",a=i.key==="ArrowLeft",{line:c,dir:l}=Pl(e,i)??{},u=window.getSelection(),d=document.createRange(),h=document.createTextNode(""),g=0;if(a||r?e.caret_x=void 0:e.caret_x===void 0&&(e.caret_x=ql(u,c).offset),!!c){if(t===0&&o(),l==="down"){let E=e.getNextLine(c)??c;h=wn(E);let b=h.nodeValue?.length||0;if(!r){let v=s(E);g=n(E,v[0])??-1,g<0&&(g=b)}}if(l==="up"){let E=e.getPrevLine(c)??c;h=wn(E);let b=h.nodeValue?.length||0;if(g=b,!a){let v=s(E),m=v[v.length-1].trimEnd(),p=n(E,m)??b;g=b-(m.length-p),p<0&&(g=b)}}try{d.setStart(h,g),d.setEnd(h,g),u?.removeAllRanges(),u?.addRange(d),u?.collapseToEnd(),i.preventDefault()}catch{console.warn("Cannot set caret")}}})}function ql(e,t){let o=!e?.anchorNode;if(!t||o)return{editable:0,range:0,offset:0};let s=t.querySelector("[contenteditable]")?.getBoundingClientRect().x??0,i=e?.getRangeAt(0)?.cloneRange()?.getBoundingClientRect().x??0;return{editable:s,range:i,offset:i-s}}function yg(e,t){let o=t.target,s=(t.ctrlKey||t.metaKey)&&t.shiftKey&&t.code.includes("Digit"),i=e.getLineFromEditable(o);if(s&&o){let r=Number.parseInt(t.code.replace("Digit",""))-1,c=Object.keys(e.mods)[r];if(i?.hasAttribute(`data-${c}`)||r===5){t.preventDefault(),cr(o);return}c in e.mods&&c!=="todo-checked"&&(t.preventDefault(),lr(e,o,c))}}var Hl=class{container;lines;wrapper;caret_x;ZERO_WIDTH_WHITESPACE="\u200B";mods={h1:"#",h2:"##",h3:"###",list:"-",todo:"[ ]","todo-checked":"[x]"};constructor(e,t){let o=document.createElement("div"),{text:n,defer:s,id:i}=t??{};if(this.wrapper=typeof e=="string"?document.querySelector(e):e,this.container=o,this.lines=[],this.wrapper===null)throw new Error(`Pocket editor: selector "${e}" was not found`);i&&(o.id=i),o.dataset.pocketEditor="",typeof s=="number"?setTimeout(()=>this.init(n),s):s===!0?setTimeout(()=>this.init(n)):this.init(n)}init(e){e?this.container.appendChild(Ls(this,e)):this.container.appendChild(this.createLine({text:""})),this.wrapper&&this.wrapper.appendChild(this.container),this.container.addEventListener("beforeinput",n=>Al(this,n)),this.container.addEventListener("input",n=>Al(this,n)),this.container.addEventListener("keydown",n=>yg(this,n)),this.container.addEventListener("paste",n=>ug(this,n)),this.container.addEventListener("copy",n=>cg(this,n)),this.container.addEventListener("cut",n=>lg(this,n)),dg(this),hg(this),pg(this),rg(this);let t=()=>{this.lines=Object.values(this.container.children)};new MutationObserver(t).observe(this.container,{childList:!0}),this.lines=Object.values(this.container.children)}get value(){return Ss(this.lines)}set value(e){for(let t of Object.values(this.container.children))t.remove();this.container.appendChild(Ls(this,e))}oninput(e){let t=o=>{if(o.type==="beforeinput"){let i=o.inputType;(i==="deleteContentBackward"||i==="insertParagraph")&&queueMicrotask(()=>{e(this.value),console.log(this.value)});return}e(this.value)};return this.container.addEventListener("cut",t),this.container.addEventListener("paste",t),this.container.addEventListener("input",t),this.container.addEventListener("beforeinput",t),()=>{this.container.removeEventListener("cut",t),this.container.removeEventListener("paste",t),this.container.removeEventListener("input",t),this.container.removeEventListener("beforeinput",t)}}addEventListener(e,t){return this.oninput(t)}getSelectedLines(){return this.lines.filter(e=>e.dataset.selected!==void 0)??[]}getPrevLine(e){return this.lines[this.lines.indexOf(e)-1]}getNextLine(e){return this.lines[this.lines.indexOf(e)+1]}getLineFromEditable(e){for(;e?.parentElement;){let t=e.parentElement;if(t.tagName==="DIV")return t;e=t}return null}removeLines(e){let t=this.createLine(),o=this.getPrevLine(e[0]);for(let n of e)n.remove();o?this.insertAfter(t,o):this.container.prepend(t),Re(t),this.container.dispatchEvent(new InputEvent("input",{inputType:"deleteContent",bubbles:!0,data:""}))}createLine(e){let t=document.createElement("div"),o=document.createElement("p"),n=e?.modif??"",s=this.mods;return o.setAttribute("contenteditable","true"),t.appendChild(o),typeof e?.text=="string"&&(o.textContent=e.text),n in s&&lr(this,o,n,!1),t}insertAfter(e,t){t?.parentNode?.insertBefore(e,t.nextSibling)}},Dl=Hl;globalThis.PocketEditor=Hl;var mo=document.getElementById("notes_container");function Lt(e,t){if(t){Ol(t);return}e&&(e.on?Fl(e):R(()=>Fl(e)))}async function Ol(e){let t=(await y.sync.get("notes"))?.notes;t&&(e?.text!==void 0&&(t.text=e.text),e?.align!==void 0&&(t.align=e.align,Rl(t.align)),e?.width!==void 0&&(t.width=Number.parseInt(e.width),Nl(t.width)),e?.background&&(t.background=Yt("notes-background-range"),jl(t.background)),Q({notes:t}))}function Fl(e){document.getElementById("pocket-editor")?.remove(),Rl(e.align),Nl(e.width),jl(e.background),bg(e.on),e.text=e.text??vg(),new Dl("#notes_container",{text:e.text,id:"pocket-editor"}).oninput(t=>{Ol({text:t})})}function bg(e){mo?.classList.toggle("hidden",!e)}function Rl(e){mo?.classList.toggle("center-align",e==="center"),mo?.classList.toggle("right-align",e==="right")}function Nl(e){e&&document.documentElement.style.setProperty("--notes-width",`${e.toString()}em`)}function jl(e="#fff2"){mo&&(mo?.classList.toggle("opaque",e.includes("#fff")&&Ze(e)>7),document.documentElement.style.setProperty("--notes-background",e))}function vg(){let e=G();e&&e in jt||(e="en");let t=L("Edit this note"),o=L("With markdown titles, lists, and checkboxes"),n=L("Learn more on <url>");return`## ${t}!
+  // src/scripts/features/searchbar.ts
+  var customEngineForm = networkForm("f_sbrequest");
+  var socket;
+  var domainPattern = /^(?!.*\s)(?:https?:\/\/)?([a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9-]{2,})/i;
+  var domsuggestions = document.getElementById("sb-suggestions");
+  var domcontainer = document.getElementById("sb_container");
+  var domsearchbar = document.getElementById("searchbar");
+  var dombuttons = document.getElementById("sb-buttons");
+  var emptyButton = document.getElementById("sb_empty");
+  var display = (shown = false) => domcontainer?.classList.toggle("hidden", !shown);
+  var setEngine = (value = "google") => domcontainer?.setAttribute("data-engine", value);
+  var setRequest = (value = "") => domcontainer?.setAttribute("data-request", stringMaxSize(value, 512));
+  var setNewtab = (value = false) => domcontainer?.setAttribute("data-newtab", value.toString());
+  var setSuggestions = (value = true) => domcontainer?.setAttribute("data-suggestions", value.toString());
+  var setPlaceholder = (value = "") => domsearchbar?.setAttribute("placeholder", value);
+  var setWidth = (value = 30) => document.documentElement.style.setProperty("--searchbar-width", `${value.toString()}em`);
+  var setBackground = (value = "#fff2") => {
+    document.documentElement.style.setProperty("--searchbar-background", value);
+    document.getElementById("sb_container")?.classList.toggle("opaque", value.includes("#fff") && opacityFromHex(value) > 7);
+  };
+  function searchbar(init2, update) {
+    if (update) {
+      updateSearchbar(update);
+      return;
+    }
+    try {
+      display(init2?.on);
+      setWidth(init2?.width);
+      setEngine(init2?.engine);
+      setRequest(init2?.request);
+      setNewtab(init2?.newtab);
+      setPlaceholder(init2?.placeholder);
+      setSuggestions(init2?.suggestions);
+      setBackground(init2?.background);
+      dombuttons?.addEventListener("click", focusSearchbar);
+      emptyButton?.addEventListener("click", removeInputText);
+      domcontainer?.addEventListener("submit", submitSearch);
+      domsearchbar?.addEventListener("input", handleUserInput);
+      domsearchbar?.addEventListener("focus", () => {
+        document.dispatchEvent(new Event("close-edit"));
+        domsearchbar.focus();
+      });
+      document.addEventListener("keydown", searchbarShortcut);
+    } catch (_) {
+    }
+  }
+  async function updateSearchbar({
+    engine,
+    newtab,
+    background,
+    placeholder,
+    request,
+    suggestions: suggestions2,
+    width
+  }) {
+    const { searchbar: searchbar2 } = await storage.sync.get("searchbar");
+    if (!searchbar2) {
+      return;
+    }
+    if (isValidEngine(engine)) {
+      toggleSettingsDropdown("searchbar_request", engine === "custom");
+      searchbar2.engine = engine;
+      setEngine(engine);
+    }
+    if (suggestions2 !== void 0) {
+      searchbar2.suggestions = suggestions2;
+      setSuggestions(suggestions2);
+    }
+    if (newtab !== void 0) {
+      searchbar2.newtab = newtab;
+      setNewtab(newtab);
+    }
+    if (width !== void 0) {
+      searchbar2.width = Number.parseInt(width);
+      setWidth(searchbar2.width);
+    }
+    if (placeholder !== void 0) {
+      searchbar2.placeholder = placeholder;
+      setPlaceholder(placeholder);
+    }
+    if (background) {
+      searchbar2.background = hexColorFromSplitRange("sb-background-range");
+      setBackground(searchbar2.background);
+    }
+    if (request) {
+      const form = document.querySelector("#f_sbrequest");
+      if (!form) {
+        return;
+      }
+      const formdata = new FormData(form);
+      const value = formdata.get("sbrequest")?.toString() ?? "";
+      const noQueryPlaceholder = !value.includes("%s") && value.length > 0;
+      const badCustomDomain = !value.match(domainPattern);
+      if (badCustomDomain) {
+        customEngineForm.warn(tradThis("URL seems wrong"));
+        return;
+      }
+      if (noQueryPlaceholder) {
+        customEngineForm.warn(tradThis("No %s present in URL"));
+        return;
+      }
+      searchbar2.request = stringMaxSize(value, 512);
+      setRequest(searchbar2.request);
+      customEngineForm.accept();
+    }
+    eventDebounce({ searchbar: searchbar2 });
+  }
+  function isValidUrl(string2) {
+    try {
+      const basicURL = !!new URL(string2);
+      const regexMatch = domainPattern.test(string2);
+      return basicURL && regexMatch;
+    } catch (_) {
+      return false;
+    }
+  }
+  function createSearchUrl(val, engine) {
+    const urls = {
+      default: "",
+      google: "https://www.google.com/search?q=%s",
+      ddg: "https://duckduckgo.com/?q=%s",
+      startpage: "https://www.startpage.com/do/search?query=%s",
+      qwant: "https://www.qwant.com/?q=%s",
+      yahoo: "https://search.yahoo.com/search?q=%s",
+      bing: "https://www.bing.com/search?q=%s",
+      brave: "https://search.brave.com/search?q=%s",
+      ecosia: "https://www.ecosia.org/search?q=%s",
+      lilo: "https://search.lilo.org/?q=%s",
+      baidu: "https://www.baidu.com/s?wd=%s",
+      custom: domcontainer?.dataset.request || ""
+    };
+    if (!isValidEngine(engine)) {
+      return "about:blank";
+    }
+    if (engine === "custom" && !urls.custom) {
+      return "about:blank";
+    }
+    let result = "";
+    const query = encodeURIComponent(val ?? "");
+    const localizedEngine = tradThis(engine);
+    result = localizedEngine.includes("%s") ? localizedEngine : urls[engine];
+    result = result.replace("%s", query);
+    return result;
+  }
+  function submitSearch(e) {
+    e.preventDefault();
+    const canUseDefault = !IS_MOBILE && (PLATFORM === "chrome" || PLATFORM === "firefox");
+    const newtab = domcontainer?.dataset.newtab === "true";
+    const val = domsearchbar?.value;
+    let engine = domcontainer?.dataset.engine ?? "default";
+    if (!val) {
+      return;
+    }
+    if (socket) {
+      socket.close();
+    }
+    if (canUseDefault && engine === "default") {
+      ;
+      EXTENSION?.search.query({
+        disposition: newtab ? "NEW_TAB" : "CURRENT_TAB",
+        text: val
+      });
+      return;
+    }
+    engine = engine.replace("default", "google");
+    const hasProtocol = val.startsWith("http://") || val.startsWith("https://");
+    const domainUrl = hasProtocol ? val : `https://${val}`;
+    const searchUrl = createSearchUrl(val, engine);
+    const url = isValidUrl(domainUrl) ? domainUrl : searchUrl;
+    const target = newtab ? "_blank" : "_self";
+    globalThis.open(url, target);
+    return;
+  }
+  function initSuggestions() {
+    function selectShownResult(next) {
+      return next?.classList.contains("shown") ? next : null;
+    }
+    function applyResultContentToInput(elem) {
+      if (!(elem && domsearchbar)) {
+        return;
+      }
+      domsearchbar.value = elem?.querySelector(".suggest-result")?.textContent ?? "";
+    }
+    for (let ii = 0; ii < 10; ii++) {
+      const li = document.createElement("li");
+      const image = document.createElement("img");
+      const wrapper = document.createElement("div");
+      const result = document.createElement("p");
+      const description = document.createElement("p");
+      li.setAttribute("tabindex", "0");
+      image.setAttribute("draggable", "false");
+      image.setAttribute("width", "16");
+      image.setAttribute("height", "16");
+      result.classList.add("suggest-result");
+      description.classList.add("suggest-desc");
+      wrapper.appendChild(result);
+      wrapper.appendChild(description);
+      li.appendChild(image);
+      li.appendChild(wrapper);
+      li.addEventListener("mouseenter", () => {
+        domcontainer?.querySelector('li[aria-selected="true"]')?.removeAttribute("aria-selected");
+        li?.setAttribute("aria-selected", "true");
+      });
+      li.addEventListener("mouseleave", () => {
+        li?.removeAttribute("aria-selected");
+      });
+      li.addEventListener("click", (e) => {
+        applyResultContentToInput(li);
+        submitSearch(e);
+      });
+      domsuggestions?.appendChild(li);
+    }
+    function toggleSuggestions(e) {
+      const relatedTarget = e?.relatedTarget;
+      const targetIsResult = relatedTarget?.parentElement?.id === "sb-suggestions";
+      const hasResults = document.querySelectorAll("#sb-suggestions li.shown")?.length > 0;
+      const isFocus = e.type === "focus";
+      if (!targetIsResult) {
+        domsuggestions?.classList.toggle("shown", isFocus && hasResults);
+      }
+    }
+    function navigateSuggestions(e) {
+      const isArrowDown = e.code === "ArrowDown";
+      const isArrowUp = e.code === "ArrowUp";
+      const isEnter = e.code === "Enter";
+      const isEscape = e.code === "Escape";
+      let lastSelected = domsuggestions?.querySelector('li[aria-selected="true"]');
+      lastSelected?.removeAttribute("aria-selected");
+      if (isEscape) {
+        return;
+      }
+      if (isArrowDown) {
+        lastSelected = selectShownResult(lastSelected?.nextElementSibling) ?? domsuggestions?.querySelector("li.shown");
+        applyResultContentToInput(lastSelected);
+      }
+      if (isArrowUp) {
+        lastSelected = selectShownResult(lastSelected?.previousElementSibling);
+        applyResultContentToInput(lastSelected);
+        e.preventDefault();
+      }
+      if (isEnter && lastSelected) {
+        applyResultContentToInput(lastSelected);
+        submitSearch(e);
+      }
+      lastSelected?.setAttribute("aria-selected", "true");
+    }
+    function hideResultsAndSuggestions() {
+      const children = Object.values(domsuggestions?.children ?? []);
+      for (const child of children) {
+        child.classList.remove("shown");
+      }
+      domsuggestions?.classList.remove("shown");
+    }
+    async function createSuggestionSocket() {
+      socket = await apiWebSocket("suggestions");
+      socket?.addEventListener("message", (event) => {
+        const data = parse(event.data);
+        if (Array.isArray(data)) {
+          suggestions(data);
+        } else if (data?.error) {
+          createSuggestionSocket();
+        }
+      });
+    }
+    domcontainer?.addEventListener("keydown", navigateSuggestions);
+    domsearchbar?.addEventListener("focus", toggleSuggestions);
+    domsearchbar?.addEventListener("blur", toggleSuggestions);
+    emptyButton?.addEventListener("click", hideResultsAndSuggestions);
+    createSuggestionSocket();
+  }
+  function suggestions(results) {
+    const input = domsearchbar;
+    const liList = domsuggestions?.querySelectorAll("li") ?? [];
+    domsuggestions?.classList.toggle("shown", results.length > 0);
+    domsuggestions?.querySelector('li[aria-selected="true"]')?.removeAttribute("aria-selected");
+    liList.forEach((li, i) => {
+      const result = results[i];
+      const resultdom = li.querySelector(".suggest-result");
+      const descdom = li.querySelector(".suggest-desc");
+      if (!(result && resultdom && descdom)) {
+        return;
+      }
+      const searchIcon = "src/assets/interface/magnifying-glass.svg";
+      const image = result.image ?? searchIcon;
+      const desc = result.desc ?? "";
+      if (resultdom) {
+        resultdom.textContent = result.text;
+      }
+      if (result.text.includes(input.value)) {
+        const queryIndex = result.text.indexOf(input.value);
+        const startdom = document.createElement("span");
+        const querydom = document.createElement("b");
+        const enddom = document.createElement("span");
+        startdom.textContent = result.text.slice(0, queryIndex);
+        querydom.textContent = result.text.slice(queryIndex, input.value.length);
+        enddom.textContent = result.text.slice(input.value.length);
+        resultdom.textContent = "";
+        resultdom.appendChild(startdom);
+        resultdom.appendChild(querydom);
+        resultdom.appendChild(enddom);
+      }
+      const imgdom = li.querySelector("img");
+      imgdom.classList.toggle("default-search-icon", image === searchIcon);
+      imgdom.src = image;
+      descdom.textContent = desc;
+      li.classList.toggle("shown", !!result);
+      const rect = li.getBoundingClientRect();
+      const yLimit = rect.y + rect.height + 40;
+      const isOverflowing = yLimit > document.body.offsetHeight;
+      if (isOverflowing) {
+        li.classList.remove("shown");
+      }
+    });
+    if (domsuggestions?.querySelectorAll("li.shown")?.length === 0) {
+      domsuggestions?.classList.remove("shown");
+    }
+  }
+  function handleUserInput(e) {
+    const value = e.target.value ?? "";
+    const hasProtocol = value.startsWith("http://") || value.startsWith("https://");
+    const withProtocol = hasProtocol ? value : `https://${value}`;
+    const startsTypingProtocol = "https://".startsWith(value) || "http://".startsWith(value);
+    if (domsearchbar) {
+      toggleInputButton(value.length > 0);
+    }
+    if (value === "") {
+      for (const li of document.querySelectorAll("#sb-suggestions li.shown") ?? []) {
+        li.classList.remove("shown");
+      }
+      domsuggestions?.classList.remove("shown");
+      return;
+    }
+    if (startsTypingProtocol || isValidUrl(withProtocol)) {
+      domsuggestions?.classList.remove("shown");
+      return;
+    }
+    if (domcontainer?.dataset.suggestions === "true" && domsuggestions?.childElementCount === 0) {
+      initSuggestions();
+    }
+    if (domcontainer?.dataset.suggestions === "true" && socket && socket.readyState === socket.OPEN) {
+      const engine = (domcontainer?.dataset.engine ?? "ddg").replace("custom", "ddg").replace("default", "google");
+      const query = encodeURIComponent(value ?? "");
+      socket.send(JSON.stringify({ q: query, with: engine, lang: getLang() }));
+    }
+  }
+  function toggleInputButton(enabled) {
+    document.getElementById("sb-buttons")?.classList.toggle("shown", enabled);
+    document.getElementById("sb_empty")?.toggleAttribute("disabled", !enabled);
+    document.getElementById("sb_submit")?.toggleAttribute("disabled", !enabled);
+  }
+  function removeInputText() {
+    if (domsearchbar) {
+      domsearchbar.focus();
+      domsearchbar.value = "";
+      toggleInputButton(false);
+    }
+  }
+  function focusSearchbar() {
+    if (dombuttons?.classList.contains("shown") === false) {
+      domsearchbar?.focus();
+    }
+  }
+  function searchbarShortcut(event) {
+    const target = event.target;
+    const fromBody = target.tagName === "BODY";
+    if (fromBody && event.key === "/") {
+      domsearchbar?.focus();
+      domsearchbar?.select();
+      event.preventDefault();
+    }
+  }
+  function isValidEngine(str = "") {
+    return SEARCHBAR_ENGINES.includes(str);
+  }
 
-[ ] ${o}
+  // src/scripts/features/weather/display.ts
+  var weatherFirstStart = true;
+  function displayWeather(data, lastWeather) {
+    const useSinograms = getLang().includes("zh") || getLang().includes("ja");
+    const currentDesc = document.getElementById("current-desc");
+    const currentTemp = document.getElementById("current-temp");
+    const tempContainer = document.getElementById("tempContainer");
+    const dotContainer = document.getElementById("dotContainer");
+    const weatherdom = document.getElementById("weather");
+    const unit = data.unit;
+    const dot = useSinograms ? "\u3002" : ". ";
+    const date = userDate();
+    const handleDescription = () => {
+      const feels = Math.floor(lastWeather.feels_like);
+      const actual = Math.floor(lastWeather.temp);
+      const maintemp = data.temperature === "feelslike" ? feels : actual;
+      let tempReport = "";
+      if (data.temperature === "actual") {
+        tempReport = tradThis("It is currently <temp1>");
+      }
+      if (data.temperature === "feelslike") {
+        tempReport = tradThis("It currently feels like <temp2>");
+      }
+      if (data.temperature === "both") {
+        tempReport = tradThis("It is currently <temp1> and feels like <temp2>");
+      }
+      const weatherReport = lastWeather.description[0].toUpperCase() + lastWeather.description.slice(1);
+      const splitString = tempReport.split(/<temp\d+>/).filter(Boolean);
+      if (currentDesc && currentTemp && dotContainer && tempContainer) {
+        currentDesc.innerText = weatherReport + dot;
+        currentTemp.querySelector("#current-a")?.replaceChildren(splitString[0]);
+        currentTemp.querySelector("#current-temp-a .temp-value")?.replaceChildren(
+          actual.toString() + "\xB0"
+        );
+        currentTemp.querySelector("#current-temp-a .temp-unit")?.replaceChildren(getUnitSymbol(unit));
+        currentTemp.querySelector("#current-b")?.replaceChildren(
+          data.temperature === "both" ? splitString[1] : ""
+        );
+        currentTemp.querySelector("#current-temp-b .temp-value")?.replaceChildren(
+          data.temperature === "both" ? feels.toString() + "\xB0" : ""
+        );
+        currentTemp.querySelector("#current-temp-b .temp-unit")?.replaceChildren(
+          data.temperature === "both" ? getUnitSymbol(unit) : ""
+        );
+        dotContainer.innerText = dot;
+        tempContainer.querySelector(".temp-value")?.replaceChildren(maintemp.toString() + "\xB0");
+        tempContainer.querySelector(".temp-unit")?.replaceChildren(getUnitSymbol(unit));
+      }
+    };
+    const handleWidget = () => {
+      const condition = lastWeather.icon_id;
+      if (!tempContainer) {
+        return;
+      }
+      const now = minutator(date);
+      const { sunrise: sunrise2, sunset: sunset2, dusk: dusk2 } = suntime();
+      const daytime = now < sunrise2 || now > sunset2 + dusk2 ? "night" : "day";
+      const iconName = `weather-${daytime}-${condition}`;
+      const svg = document.querySelector(".weather-icon");
+      const useEl = svg?.querySelector("use");
+      if (svg && useEl) {
+        svg.id = iconName;
+        useEl.href.baseVal = `src/assets/interface/weather-sprites.svg#${iconName}`;
+      }
+    };
+    const handleForecastData = () => {
+      const forecastdom = document.getElementById("forecast");
+      const day = date.getHours() > getSunsetHour() ? "tomorrow" : "today";
+      let string2 = "";
+      if (day === "today") {
+        string2 += tradThis("with a high of <temp1> today");
+      }
+      if (day === "tomorrow") {
+        string2 += tradThis("with a high of <temp1> tomorrow");
+      }
+      const splitString = string2.split("<temp1>");
+      if (forecastdom) {
+        forecastdom.querySelector("#forecast-a")?.replaceChildren(splitString[0]);
+        forecastdom.querySelector(".temp-value")?.replaceChildren(
+          lastWeather.forecasted_high.toString() + "\xB0"
+        );
+        forecastdom.querySelector(".temp-unit")?.replaceChildren(getUnitSymbol(unit));
+        forecastdom.querySelector("#forecast-b")?.replaceChildren(splitString[1]);
+      }
+    };
+    const handleMoreInfo = () => {
+      const noDetails = !data.moreinfo || data.moreinfo === "none";
+      const emptyCustom = data.moreinfo === "custom" && !data.provider;
+      if (noDetails || emptyCustom) {
+        weatherdom?.removeAttribute("href");
+        return;
+      }
+      const urLs = {
+        accu: lastWeather.link ?? "https://www.accuweather.com/",
+        msnw: tradThis("https://www.msn.com/en-xl/weather/forecast/"),
+        yhw: "https://www.yahoo.com/news/weather/",
+        windy: "https://www.windy.com/",
+        custom: data.provider ?? ""
+      };
+      if ((data.moreinfo || "") in urLs) {
+        weatherdom?.setAttribute("href", urLs[data.moreinfo]);
+      }
+    };
+    handleForecastDisplay(data.forecast);
+    handleWidget();
+    handleMoreInfo();
+    handleDescription();
+    handleForecastData();
+    handleShowUnit(data.show_unit);
+    if (weatherFirstStart) {
+      weatherFirstStart = false;
+      weatherdom?.classList.remove("wait");
+      setTimeout(() => weatherdom?.classList.remove("init"), 900);
+    }
+  }
+  function handleForecastDisplay(forecast) {
+    const date = userDate();
+    const morningOrLateDay = date.getHours() < 12 || date.getHours() > getSunsetHour();
+    const isTimeForForecast = forecast === "auto" ? morningOrLateDay : forecast === "always";
+    document.querySelector("#forecast")?.classList.toggle("shown", isTimeForForecast);
+  }
+  function handleShowUnit(show_unit = false) {
+    document.querySelector("#weather")?.setAttribute("data-show-unit", String(show_unit));
+  }
+  function getUnitSymbol(unit) {
+    return unit === "imperial" ? "F" : "C";
+  }
 
-[ ] ${n.replace("<url>","https://bonjourr.fr/docs/overview#notes")}`}function Wl(e){if(e||K!=="opera"||q!=="chrome")return;let o=document.getElementById("opera-explainer-template").content.cloneNode(!0),n=o.getElementById("opera-explainer"),s=o.getElementById("b_opera-explained");document.body.classList.add("loading"),document.body.appendChild(n),n.showModal(),setTimeout(()=>n.classList.add("shown")),s?.addEventListener("click",()=>{y.local.set({operaExplained:!0}),document.body.classList.remove("loading"),n.close()})}function zl(){if(K==="firefox"||K==="safari")return;let e=1e3*60*60*4,t=localStorage.potato==="yes";if(Date.now()-Number.parseInt(localStorage.lastPotatoCheck??"0")<e){document.body.classList.toggle("potato",t);return}let s=document.createElement("canvas")?.getContext("webgl"),i=s?.getExtension("WEBGL_debug_renderer_info");if(K==="chrome"&&!s){document.body.classList.add("potato");return}let r=s?.getParameter(i?.UNMASKED_VENDOR_WEBGL??0).toString(),a=s?.getParameter(i?.UNMASKED_RENDERER_WEBGL??0).toString(),c=r.includes("Google")&&a.includes("SwiftShader");localStorage.potato=c?"yes":"no",localStorage.lastPotatoCheck=Date.now(),document.body.classList.toggle("potato",c)}function Ul(){let e=document.getElementById("interface"),t=q==="online"&&K==="firefox"&&Ee,o=q==="online"&&K==="safari"&&fe==="ios",n=!1,s;Ee&&document.addEventListener("visibilitychange",i),t&&(a(),fe==="ios"&&(globalThis.requestAnimationFrame(r),setTimeout(()=>cancelAnimationFrame(s),500))),o&&R(()=>{let u=document.querySelectorAll('input[type="text"], input[type="url"], textarea');for(let d of u)d.addEventListener("focus",c),d.addEventListener("blur",l)});async function i(){if(n===!1){n=!0;return}n=!1;let u=await y.sync.get(),d=await y.local.get(),{backgroundLastChange:h,lastWeather:g}=d;if(!u.clock||!u.weather)return;let E=(h?new Date(h):new Date).getTime(),b=We(u.backgrounds.frequency,E),v=u.backgrounds.type!=="color";P(u),se({sync:u,lastWeather:g}),v&&b&&Yn(u,d)}function r(){a(),s=requestAnimationFrame(r)}function a(){document.documentElement.style.setProperty("--app-height",`${globalThis.innerHeight}px`)}function c(){let u=document.getElementById("settings");e&&u&&(e.style.touchAction="none",u.style.touchAction="none")}function l(){let u=document.getElementById("settings");e&&u&&(e.style.removeProperty("touch-action"),u.style.removeProperty("touch-action"))}}function $l(){if(br!=="PROD"||q!=="online"||!("serviceWorker"in navigator))return;navigator.serviceWorker.register("service-worker.js");let e;globalThis.addEventListener("beforeinstallprompt",t=>(e=t,e))}function Gl(){function e(){localStorage.setItem("lastActiveTab",Tn)}document.hidden||e(),globalThis.window.addEventListener("focus",e),globalThis.window.addEventListener("visibilitychange",()=>{document.hidden||e()}),globalThis.window.addEventListener("beforeunload",()=>{Bs.postMessage("tabClosed")}),Bs.onmessage=t=>{t.data==="tabClosed"&&e()}}var A=St(lt());function Vl(e){let t=[];Object.entries(e).map(([o,n])=>{o.length===11&&o.startsWith("links")&&t.push(n)});for(let o of t)if(Ke(o)){if(o.icon&&typeof o.icon=="string"){let n=o.icon,s=n.startsWith("https://services.bonjourr.fr")||ii(n),i=s&&ii(n)?`https://services.bonjourr.fr/favicon/blob/${o.url}?r=${n}`:void 0;o.icon={type:s?"auto":"url",value:s?i:n}}e[o._id]=o}return e}function Kl(e){return e.pomodoro||(e.pomodoro=H.pomodoro),e.pomodoro.alarm=e.pomodoro.alarm??H.pomodoro.alarm,e.pomodoro.volume=e.pomodoro.volume??H.pomodoro.alarm,e}function Yl(e){return e.backgrounds?.bright===null&&(e.backgrounds.bright=H.backgrounds.bright),e}function Ql(e){return e.supporters===void 0&&(e.supporters={enabled:!0}),e}function Jl(e){let t={};return Array.isArray(e.hide)&&(e.hide[0]?.[0]&&(t.clock=!0),e.hide[0]?.[1]&&(t.date=!0),e.hide[1]?.[0]&&(t.greetings=!0),e.hide[1]?.[1]&&(t.weatherdesc=!0),e.hide[1]?.[2]&&(t.weathericon=!0),e.hide[3]?.[0]&&(t.settingsicon=!0),e.hide=t,e.time=!(e.hide.clock&&e.hide.date),e.main=!(e.hide.weatherdesc&&e.hide.weathericon&&e.hide.weathericon)),e}function Xl(e){return typeof e.searchbar=="boolean"&&(e.searchbar={...H.searchbar,on:e.searchbar,newtab:e.searchbar_newtab,engine:e.searchbar_engine?.replace("s_","")||"google",suggestions:!1}),e}function Zl(e){if(Array.isArray(e.links)){e.links.length>0&&e.quicklinks===void 0&&(e.quicklinks=!0),e.links?.forEach(({title:o,url:n,icon:s},i)=>{let r=`links${It(6)}`,a=s?.startsWith("alias:")?e[s]:s;e[r]={_id:r,parent:"default",order:i,title:o,url:n,icon:a}});let t=Object.keys(e).filter(o=>o.match("alias:"));for(let o of t)e[o]=void 0}return e}function eu(e){return e.font&&(e.font.weightlist=e.font?.availWeights??[],e.font.url=void 0,e.font.availWeights=void 0,e.font.system===void 0&&(e.font.system=!1)),e}function tu(e){return e.reviewPopup&&(e.review=e.reviewPopup==="removed"?-1:+e.reviewPopup),e}function nu(e){return Array.isArray(e?.quotes?.userlist)&&(e.quotes.userlist=ks(e.quotes.userlist)),e}function ou(e){return e.lang=Ds(e.lang??"en"),e}function su(e){return e.usdate?e.dateformat="us":e.dateformat="auto",e}function iu(e,t){return t.worldclocks&&e.worldclocks&&(e.worldclocks=t.worldclocks),e}function ru(e){let t={"-10":"-10:00","-9":"-09:00","-8":"-08:00","-7":"-07:00","-6":"-06:00","-5":"-05:00","-4":"-04:00","-3":"-03:00","+0":"+00:00","+1":"+01:00","+2":"+02:00","+3":"+03:00","+5:30":"+05:30","+7":"+07:00","+8":"+08:00","+9":"+09:00","+10":"+10:00","+12":"+12:00"},o=Object.keys(t);return e.clock&&o.includes(e.clock.timezone)&&(e.clock.timezone=t[e.clock.timezone]),e.worldclocks?.forEach(({timezone:n},s)=>{let i=o.includes(n);e.worldclocks?.[s]&&i&&(e.worldclocks[s].timezone=t[n])}),e}function au(e){let t=st(e),o=[...new Set(t.map(b=>b.parent))],n=o.filter(b=>!b?.toString().startsWith("links")),s=o.filter(b=>typeof b=="number"),i=e.linktabs;if(i&&s.length>0){e.linkgroups={on:i.active,selected:i.titles[i.selected],groups:[...i.titles],synced:[],pinned:[]};for(let b of t)typeof b?.parent=="number"&&(b.parent=e.linkgroups.groups[b.parent]),e[b._id]=b}e.linkgroups||(e.linkgroups=H.linkgroups);let{groups:r,pinned:a,synced:c,selected:l}=e.linkgroups;e.linkgroups.selected=l||"default",e.linkgroups.groups=r.map(b=>b||"default"),e.linkgroups.pinned=a.map(b=>b||"default"),e.linkgroups.synced=c.map(b=>b||"default");for(let b of t)b?.parent||(b.parent=e.linkgroups.selected,e[b._id]=b);t=st(e),o=[...new Set(t.map(b=>b.parent))],n=o.filter(b=>!b?.toString().startsWith("links"));for(let b of n)b&&e.linkgroups.groups.push(b.toString());e.linkgroups.groups.length>1&&(e.linkgroups.on=!0);let u=e.linkgroups.groups.filter(b=>b!=="default"),d=e.linkgroups.groups.includes("default"),h=n.includes("default")===!1,g=u.length>0,E=t.length>0;return d&&h&&g&&E&&(e.linkgroups.groups=u,e.linkgroups.selected=u[0]),e}function cu(e){if(e?.linktabs||e?.linkgroups)return e;let t="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI2MiIgdmlld0JveD0iMC",o=st(e).sort((n,s)=>(n.order??0)-(s.order??0));for(let n of o)Ke(n)&&typeof n.icon=="string"&&n.icon.startsWith(t)&&(n.icon={type:"auto"},e[n._id]=n);return e}function lu(e){if(e.weather&&e.weather?.geolocation===void 0){let t=e.weather?.location??[];e.weather.geolocation="approximate",e.weather.geolocation=t.length===0?"off":"precise"}return e}function uu(e){let t=e,o=structuredClone(H);return e.backgrounds||(e.backgrounds=o.backgrounds),t.background_blur!==void 0&&(e.backgrounds.blur=t.background_blur),t.background_bright!==void 0&&(e.backgrounds.bright=t.background_bright),t.background_type!==void 0&&(e.backgrounds.type=t.background_type==="unsplash"?"images":"files"),t.unsplash&&(e.backgrounds.frequency=t.unsplash?.every??"hour"),t.unsplash?.collection&&(e.backgrounds.images="unsplash-images-collections",e.backgrounds.queries={"unsplash-images-collections":t.unsplash.collection}),e}function du(e){return e.clock?.style&&(e.analogstyle={background:"#fff2",border:"#ffff",face:e?.clock?.face||"none",shape:"round",hands:"modern"},(e.clock.style==="round"||e.clock.style==="square")&&(e.analogstyle.shape=e.clock.style),e.clock.style==="transparent"&&(e.analogstyle.background="#fff0",e.analogstyle.border="#fff0")),e}function mu(e){e.linkgroups.groups=[...new Set(e.linkgroups.groups)],e.linkgroups.pinned=[...new Set(e.linkgroups.pinned)],e.linkgroups.synced=[...new Set(e.linkgroups.synced)];let n=st(e).map(i=>i.parent).some(i=>i==="default");return e.linkgroups.groups.length>1&&!n&&(e.linkgroups.groups=e.linkgroups.groups.filter(i=>i!=="default"),e.linkgroups.pinned=e.linkgroups.pinned.filter(i=>i!=="default"),e.linkgroups.synced=e.linkgroups.synced.filter(i=>i!=="default")),e}function fu(e,t){if(t.move){e.move=t.move;let s=(e.move.layouts[e.move.selection]?.grid??us[e.move.selection].grid).flat().join(" ");return e.time=s.includes("time"),e.main=s.includes("main"),e.quicklinks=s.includes("quicklinks"),e.notes&&(e.notes.on=s.includes("notes")),e.quotes&&(e.quotes.on=s.includes("quotes")),e.searchbar&&(e.searchbar.on=s.includes("searchbar")),e}if(!t.move){let o={time:t.time??e.time,main:t.main??e.main,notes:t.notes?.on??e.notes?.on,quotes:t.quotes?.on??e.quotes?.on,pomodoro:t.pomodoro?.on??e.pomodoro?.on,searchbar:t.searchbar?.on??e.searchbar?.on,quicklinks:t.quicklinks??e.quicklinks},n={time:e.time!==o.time,main:e.main!==o.main,notes:e.notes?.on!==o.notes,quotes:e.quotes?.on!==o.quotes,searchbar:e.searchbar?.on!==o.searchbar,quicklinks:e.quicklinks!==o.quicklinks};Object.keys(t).some(a=>a.match(/time|main|notes|quotes|searchbar|quicklinks/g))&&(e.move.selection="single");let s=e.move.selection,i=structuredClone(e.move.layouts[s]),r=Object.entries(n).filter(([a,c])=>c===!0);if(!i)return e;for(let[a]of r){let c=a,u=o[c]?un:gs;i.grid=at(u(Ae(i.grid),c,s))}e.move.layouts[s]=i}return e}function ur(e,t){let{major:o,minor:n}=t;return o<22&&(e=Vl(e),n<1&&(e=Kl(e))),o<=21&&n<3&&(e=Yl(e)),o<21&&(e=uu(e),e=ru(e)),o<20&&(e=du(e),e=au(e),e=Ql(e),e=ou(e)),o<19&&(e=eu(e),e=tu(e),e=nu(e),e=cu(e)),o<18&&(e=Xl(e),e=Zl(e),e=Jl(e),e=lu(e),e=su(e)),e}var wg=Object.getPrototypeOf({});function gu(e){function t(m){return m!=="constructor"&&m!=="prototype"&&m!=="__proto__"}function o(m){let p=0,w=m.length,k=new Array(w);for(p=0;p<w;++p)k[p]=g(m[p]);return k}function n(m){let p={};if(c&&Object.getPrototypeOf(m)!==wg)return c(m);let w=a(m),k,x,T;for(k=0,x=w.length;k<x;++k)t(T=w[k])&&(p[T]=g(m[T]));return p}function s(m,p){let w=m.length,k=p.length,x=0,T=new Array(w+k);for(x=0;x<w;++x)T[x]=g(m[x]);for(x=0;x<k;++x)T[x+w]=g(p[x]);return T}let i=Object.prototype.propertyIsEnumerable;function r(m){let p=Object.keys(m),w=Object.getOwnPropertySymbols(m);for(let k=0,x=w.length;k<x;++k)i.call(m,w[k])&&p.push(w[k]);return p}let a=e&&e.symbols?r:Object.keys,c=typeof e?.cloneProtoObject=="function"?e.cloneProtoObject:void 0;function l(m){return typeof m=="object"&&m!==null&&!(m instanceof RegExp)&&!(m instanceof Date)}function u(m){return typeof m!="object"||m===null}let d=typeof Buffer<"u"?m=>typeof m!="object"||m===null||m instanceof RegExp||m instanceof Date||m instanceof Buffer:m=>typeof m!="object"||m===null||m instanceof RegExp||m instanceof Date,h=e&&typeof e.mergeArray=="function"?e.mergeArray({clone:g,deepmerge:b,getKeys:a,isMergeableObject:l}):s;function g(m){return l(m)?Array.isArray(m)?o(m):n(m):m}function E(m,p){let w={},k=a(m),x=a(p),T,M,S;for(T=0,M=k.length;T<M;++T)t(S=k[T])&&x.indexOf(S)===-1&&(w[S]=g(m[S]));for(T=0,M=x.length;T<M;++T)t(S=x[T])&&(S in m&&(k.indexOf(S)!==-1&&(w[S]=b(m[S],p[S])),!0)||(w[S]=g(p[S])));return w}function b(m,p){let w=Array.isArray(p),k=Array.isArray(m);return u(p)?p:d(m)?g(p):w&&k?h(m,p):w!==k?g(p):E(m,p)}function v(){switch(arguments.length){case 0:return{};case 1:return g(arguments[0]);case 2:return b(arguments[0],arguments[1])}let m;for(let p=0,w=arguments.length;p<w;++p)m=b(m,arguments[p]);return m}return e&&e.all?v:b}var fw=gu({symbols:!1}),pu=gu({all:!0,symbols:!1});function dr(e="0.0.0"){let t={major:0,minor:0,patch:0};if(typeof e=="string"){let o=e.split("."),n=parseInt(o[0]??"0"),s=parseInt(o[1]??"0"),i=parseInt(o[2]??"0");!isNaN(n)&&!isNaN(s)&&!isNaN(i)&&(t.major=n,t.minor=s,t.patch=i)}return t}function xs(e,t,o){let n=t,s=o??{};if(e==="update"){let i=dr(n.about.version);n=ur(n,i)}if(e==="import"){s=ur(s,dr(void 0));let i=Object.keys(n).length;Object.keys(s).length!==i?(n=pu(n,s),n=mu(n),n=iu(n,s),n=fu(n,s)):n=s}return n.about={browser:q,version:Tt},delete n.syncbookmarks,delete n.settingssync,delete n.custom_every,delete n.custom_time,delete n.searchbar_newtab,delete n.searchbar_newtab,delete n.searchbar_engine,delete n.cssHeight,delete n.linktabs,delete n.links,delete n.dynamic,delete n.unsplash,delete n.background_blur,delete n.background_bright,delete n.background_type,delete n.usdate,delete n?.weather?.location,delete n?.weather?.lastState,delete n?.weather?.lastCall,n}function Ln(e){let t=structuredClone(H);for(let i of st(e))t[i._id]=i;for(let[i,r]of Object.entries(e)){let a=t[i];mr(r)&&mr(a)?t[i]={...a,...r}:t[i]=r}let o=hu(t),n=(i="",r="")=>o.indexOf(i)-o.indexOf(r);return JSON.stringify(e,o.sort(n),2)}function hu(e){let t=[];for(let[o,n]of Object.entries(e))t.push(o),mr(n)&&t.push(...hu(n));return t}function mr(e){return!Array.isArray(e)&&e!==null&&typeof e=="object"}var gr,bu;function vu(e,t){let o=document.getElementById("show-settings");gr=e,bu=t,document.addEventListener("updateSettingsBeforeInit",s=>{gr=s.detail}),document.body?.addEventListener("keydown",fo),o?.addEventListener("pointerdown",fo),document.body.querySelectorAll('[data-action="openTheseSettings"]').forEach(s=>{s?.addEventListener("pointerdown",fo)})}function fo(e){let t=document.getElementById("show-settings"),o=document.getElementById("settings"),n=o?.classList.contains("hidden"),s=e?.button===0,i=e?.code==="Escape";if(!(n&&(i||s)))return;let a=bu,c=gr;o?.removeAttribute("style"),o?.classList.remove("hidden"),document.dispatchEvent(new Event("settings")),document.addEventListener("toggle-settings",(l=>{ku(l)})),e.pointerType==="touch"&&setTimeout(()=>{e.target.getAttribute("data-attribute")?wi(e):document.dispatchEvent(new CustomEvent("toggle-settings"))},0),document.body?.removeEventListener("keydown",fo),t?.removeEventListener("pointerdown",fo),Lu(c.showall,!1),Ut(o,c.lang),wu(),hc(c,a),Or(c),Eg(c,a),Lg(),Su(),setTimeout(()=>{Sg(c),xu(c),Cg(),Eu(),xg(),qr(),o?.classList.remove("init")},500)}function ku(e){let t=document.getElementById("show-settings"),o=document.getElementById("interface"),n=document.getElementById("settings"),s=document.getElementById("editlink"),i=n?.classList.contains("shown")===!1,r=e?.detail?.scrollTo??!1,a=n?.querySelector(r);a&&n&&requestAnimationFrame(()=>{setTimeout(()=>{a.scrollIntoView({behavior:"smooth",block:"start"})},0)}),!(!i&&r)&&(n?.classList.toggle("shown",i),s?.classList.toggle("pushed",i),o?.classList.toggle("pushed",i),t?.classList.toggle("shown",i),n?.style.removeProperty("transform"),n?.style.removeProperty("transition"),document.dispatchEvent(new Event("close-edit")))}function Eg(e,t){let o=document.getElementById("settings"),n=e.quotes?.userlist?.[0]?e.quotes?.userlist:void 0;if(I("i_blur",e.backgrounds.blur??15),I("i_bright",e.backgrounds.bright??.8),I("i_fadein",e.backgrounds.fadein??400),I("i_row",e.linksrow||8),I("i_icon_radius",e.linkiconradius||1.1),I("i_linkstyle",e.linkstyle||"default"),I("i_type",e.backgrounds.type||"images"),I("i_freq",e.backgrounds?.frequency||"hour"),I("i_dark",e.dark||"system"),I("i_favicon",e.favicon??""),I("i_tabtitle",e.tabtitle??""),I("i_solid-background",e.backgrounds.color??"#185A63"),I("i_texture",e.backgrounds.texture.type??"none"),I("i_texture-size",e.backgrounds.texture.size??"220"),I("i_texture-opacity",e.backgrounds.texture.opacity??"0.1"),I("i_texture-color",e.backgrounds.texture.color??"#ffffff"),I("i_pagewidth",e.pagewidth||1600),I("i_pagegap",e.pagegap??1),I("i_dateformat",e.dateformat||"eu"),I("i_greeting",e.greeting??""),I("i_greetmorning",e.greetingscustom?.morning??""),I("i_greetafternoon",e.greetingscustom?.afternoon??""),I("i_greetevening",e.greetingscustom?.evening??""),I("i_greetnight",e.greetingscustom?.night??""),I("i_textshadow",e.textShadow??.2),I("i_noteswidth",e.notes?.width||50),I("i_notes-opacity",Ze(e.notes?.background??"#fff2")),I("i_notesalign",e.notes?.align||"left"),I("i_sbengine",e.searchbar?.engine||"google"),I("i_sbplaceholder",e.searchbar?.placeholder||""),I("i_sb-opacity",Ze(e.searchbar?.background??"#fff2")),I("i_sbwidth",e.searchbar?.width??30),I("i_sbrequest",e.searchbar?.request||""),I("i_qtfreq",e.quotes?.frequency||"day"),I("i_qttype",e.quotes?.type||"classic"),I("i_qtlist",n??""),I("i_qturl",e.quotes?.url??""),I("i_clockface",e.analogstyle?.face||"none"),I("i_clockhands",e.analogstyle?.hands||"none"),I("i_clockshape",e.analogstyle?.shape||"round"),I("i_analog-border-opacity",Ze(e.analogstyle?.border??"#ffff")),I("i_analog-background-opacity",Ze(e.analogstyle?.background??"#fff2")),I("i_ampm_position",e.clock.ampmposition||"top-left"),I("i_clocksize",e.clock?.size??5),I("i_greetsize",e.greetingsize??3),I("i_greetmode",e.greetingsmode??"auto"),I("i_timezone",e.clock?.timezone||"auto"),I("i_geol",e.weather?.geolocation||"approximate"),I("i_units",e.weather?.unit??"metric"),I("i_forecast",e.weather?.forecast||"auto"),I("i_temp",e.weather?.temperature||"actual"),I("i_moreinfo",e.weather?.moreinfo||"none"),I("i_provider",e.weather?.provider??""),I("i_weight",e.font?.weight||"300"),I("i_size",e.font?.size||(Ee?"11":"14")),I("i_announce",e.announcements??"major"),I("i_synctype",t.syncType??(q==="online"?"off":"browser")),I("i_pmdr_volume",e.pomodoro?.volume??.7),I("i_pmdr_alarms",e.pomodoro?.alarm??"marimba"),I("i_pmdr_break",e.pomodoro?.timeFor.break/60),I("i_pmdr_break",e.pomodoro?.timeFor.break/60),I("i_pmdr_pomodoro",e.pomodoro?.timeFor.pomodoro/60),I("i_pmdr_longbreak",e.pomodoro?.timeFor.longbreak/60),Ms("i_city",t.lastWeather?.approximation?.city??"Paris",e.weather.city),Ms("i_customfont",Rt.placeholder,e.font?.family),Ms("i_gistsync","github_pat_XX000X00X",t?.gistToken),Ms("i_urlsync","https://pastebin.com/raw/y7XhhiDs",t?.distantUrl),$("i_showall",e.showall),$("i_settingshide",e.hide?.settingsicon??!1),$("i_background-mute-videos",e.backgrounds.mute??!0),$("i_quicklinks",e.quicklinks),$("i_linkgroups",e?.linkgroups?.on),$("i_linknewtab",e.linknewtab),$("i_time",e.time),$("i_analog",e.clock?.analog??!1),$("i_seconds",e.clock?.seconds??!1),$("i_worldclocks",e.clock?.worldclocks??!1),$("i_main",e.main),$("i_greethide",!e.hide?.greetings),$("i_notes",e.notes?.on??!1),$("i_sb",e.searchbar?.on??!1),$("i_quotes",e.quotes?.on??!1),$("i_pomodoro",e.pomodoro?.on??!1),$("i_pmdr_sound",e.pomodoro?.sound??!0),$("i_ampm",e.clock?.ampm??!1),$("i_ampm-label",e.clock?.ampmlabel??!1),$("i_sbsuggestions",e.searchbar?.suggestions??!0),$("i_sbnewtab",e.searchbar?.newtab??!1),$("i_qtauthor",e.quotes?.author??!1),$("i_supporters_notif",e.supporters?.enabled??!0),Qt("solid-background",e.backgrounds.color),Qt("texture-color",e.backgrounds.texture.color??"#ffffff"),f("i_notes-shade")?.classList.toggle("on",(e.notes?.background??"#fff").includes("#000")),f("i_sb-shade")?.classList.toggle("on",(e.searchbar?.background??"#fff").includes("#000")),f("i_analog-border-shade")?.classList.toggle("on",(e.analogstyle?.border??"#fff").includes("#000")),f("i_analog-background-shade")?.classList.toggle("on",(e.analogstyle?.background??"#fff").includes("#000")),Ee){let v=o.querySelector(".tooltiptext .instructions"),m=L("Edit your Quick Links by long-pressing the icon.");v&&(v.textContent=m)}let s=f("i_lang");for(let[v,m]of Object.entries(jt)){let p=document.createElement("option");p.value=v,p.text=m,s.appendChild(p)}I("i_lang",e.lang||"en"),f("time_options")?.classList.toggle("shown",e.time),f("analog_options")?.classList.toggle("shown",e.clock.analog&&e.showall),f("greetings_options")?.classList.toggle("shown",!e.hide?.greetings),f("greetingscustom_options")?.classList.toggle("shown",e.greetingsmode==="custom"),f("digital_options")?.classList.toggle("shown",!e.clock.analog),f("ampm_label")?.classList.toggle("shown",e.clock.ampm),f("ampm_position")?.classList.toggle("shown",e.clock.ampmlabel),f("worldclocks_options")?.classList.toggle("shown",e.clock.worldclocks),f("main_options")?.classList.toggle("shown",e.main),f("weather_provider")?.classList.toggle("shown",e.weather?.moreinfo==="custom"),f("quicklinks_options")?.classList.toggle("shown",e.quicklinks),f("pomodoro_options")?.classList.toggle("shown",e.pomodoro.on),f("notes_options")?.classList.toggle("shown",e.notes?.on),f("searchbar_options")?.classList.toggle("shown",e.searchbar?.on),f("searchbar_request")?.classList.toggle("shown",e.searchbar?.engine==="custom"),f("quotes_options")?.classList.toggle("shown",e.quotes?.on);let i=o.querySelectorAll("#grid-layout button"),r=e.move?.selection||"single";for(let v of i)v?.classList.toggle("selected",v.dataset.layout===r);f("b_showtitles").classList.toggle("on",e?.linktitles??!0),f("b_showbackgrounds").classList.toggle("on",e?.linkbackgrounds??!0);let a=e.hide?.weatherdesc&&e.hide?.weathericon,c=e.hide?.weatherdesc,l=e.hide?.weathericon,u=e.hide?.clock,d=e.hide?.date,h="all",g="all";u?h="date":d&&(h="clock"),a?g="disabled":c?g="desc":l&&(g="icon"),I("i_timehide",h),I("i_weatherhide",g),f("quotes_options")?.classList.toggle("shown",e.quotes?.on),f("quotes_userlist")?.classList.toggle("shown",e.quotes?.type==="user"),f("quotes_url")?.classList.toggle("shown",e.quotes?.type==="url");let E=document.querySelectorAll("#settings form");for(let v of E){let m=v.querySelectorAll("input");for(let p of m)p.addEventListener("input",()=>{v.classList.toggle("valid",v.checkValidity())})}let b=document.querySelector("#i_synctype option[value='browser']");b&&(q==="firefox"?b.textContent="Firefox Sync":q==="chrome"&&K==="edge"?b.textContent="Edge Sync":q==="chrome"?b.textContent="Chrome Sync":q==="safari"?b.textContent="Safari":b.textContent=L("Automatic"));for(let v of document.querySelectorAll('input[type="range"]'))Ie(v),v.addEventListener("input",()=>{v.style.setProperty("--value",v.value)})}function Lg(){if((0,A.onclickdown)(f("b_accept-permissions"),async()=>{await _t("topSites","bookmarks");let n=await y.sync.get(),s=await y.local.get();F({sync:n,local:s}),setTimeout(()=>Ye(n),10),Ho({"accept-permissions":!1})}),(0,A.onclickdown)(f("i_showall"),(n,s)=>{Lu(s.checked,!0)}),f("i_lang").addEventListener("change",function(){Tg(this.value)}),f("i_favicon").addEventListener("input",function(){bo(this.value,!0)}),f("i_favicon").addEventListener("change",function(){this.blur()}),f("i_tabtitle").addEventListener("input",function(){ct(this.value,!0)}),f("i_tabtitle").addEventListener("change",function(){this.blur()}),f("i_dark").addEventListener("change",function(){vo(this.value,!0)}),(0,A.onclickdown)(f("i_settingshide"),(n,s)=>{Ot({settingsicon:s.checked},{isEvent:!0})}),(0,A.onclickdown)(f("i_quicklinks"),(n,s)=>{te(void 0,{widget:["quicklinks",s.checked]})}),f("f_addlink").addEventListener("submit",function(n){n.preventDefault(),F(void 0,{addLinks:[{title:f("i_addlink-title").value,url:f("i_addlink-url").value}]}),f("i_addlink-url").value="",f("i_addlink-title").value="",this.classList.remove("valid")}),(0,A.onclickdown)(f("i_linkgroups"),(n,s)=>{F(void 0,{groups:s.checked})}),(0,A.onclickdown)(f("i_linknewtab"),(n,s)=>{F(void 0,{newtab:s.checked})}),f("i_linkstyle").addEventListener("change",function(){F(void 0,{styles:{style:this.value}})}),(0,A.onclickdown)(f("b_showtitles"),(n,s)=>{F(void 0,{styles:{titles:!s.classList.contains("on")}})}),(0,A.onclickdown)(f("b_showbackgrounds"),(n,s)=>{F(void 0,{styles:{backgrounds:!s.classList.contains("on")}})}),f("i_row").addEventListener("input",function(){F(void 0,{row:this.value})}),f("i_icon_radius").addEventListener("input",function(){F(void 0,{iconradius:this.value})}),(0,A.onclickdown)(f("b_importbookmarks"),async()=>{await _t("topSites","bookmarks"),Sa()}),f("i_type").addEventListener("change",function(){z({type:this.value})}),f("b_solid-background").addEventListener("click",function(){f("i_solid-background").click()}),f("i_solid-background").addEventListener("input",function(){z({color:this.value})}),f("i_background-provider").addEventListener("input",function(){z({provider:this.value})}),f("f_background-user-coll").addEventListener("submit",function(n){z({query:n}),n.preventDefault()}),f("f_background-user-search").addEventListener("submit",function(n){z({query:n}),n.preventDefault()}),f("i_freq").addEventListener("change",function(){z({freq:this.value})}),(0,A.onclickdown)(f("i_refresh"),n=>{z({refresh:n})}),f("i_background-upload").addEventListener("change",function(){z({files:this.files})}),(0,A.onclickdown)(f("b_background-urls"),()=>{z({urlsapply:!0})}),(0,A.onclickdown)(f("i_background-mute-videos"),(n,s)=>{os(s.checked),z({mute:s.checked})}),f("i_texture").addEventListener("change",function(){z({texture:this.value})}),f("b_texture-color").addEventListener("click",function(){f("i_texture-color").click()}),f("i_texture-color").addEventListener("input",function(){z({texturecolor:this.value})}),f("i_texture-size").addEventListener("input",function(){z({texturesize:this.value})}),f("i_texture-opacity").addEventListener("input",function(){z({textureopacity:this.value})}),f("i_blur").addEventListener("pointerdown",function(){z({blurenter:!0})}),f("i_blur").addEventListener("input",function(){z({blur:this.value})}),f("i_bright").addEventListener("input",function(){z({bright:this.value})}),f("i_fadein").addEventListener("input",function(){z({fadein:this.value})}),(0,A.onclickdown)(f("i_time"),(n,s)=>{te(void 0,{widget:["time",s.checked]})}),(0,A.onclickdown)(f("i_analog"),(n,s)=>{P(void 0,{analog:s.checked})}),(0,A.onclickdown)(f("i_seconds"),(n,s)=>{P(void 0,{seconds:s.checked})}),(0,A.onclickdown)(f("i_worldclocks"),(n,s)=>{f("worldclocks_options")?.classList.toggle("shown",s.checked),P(void 0,{worldclocks:s.checked})}),f("i_clockface").addEventListener("change",function(){P(void 0,{face:this.value})}),f("i_clockhands").addEventListener("change",function(){P(void 0,{hands:this.value})}),f("i_analog-border-opacity").addEventListener("input",function(){P(void 0,{border:"opacity"})}),f("i_analog-background-opacity").addEventListener("input",function(){P(void 0,{background:"opacity"})}),f("i_analog-border-shade").addEventListener("click",()=>{P(void 0,{border:"shade"})}),f("i_analog-background-shade").addEventListener("click",()=>{P(void 0,{background:"shade"})}),f("i_clockshape").addEventListener("change",function(){P(void 0,{shape:this.value})}),f("i_clocksize").addEventListener("input",function(){P(void 0,{size:Number.parseFloat(this.value)})}),(0,A.onclickdown)(f("i_ampm"),(n,s)=>{P(void 0,{ampm:s.checked}),f("ampm_label")?.classList.toggle("shown",s.checked)}),(0,A.onclickdown)(f("i_ampm-label"),(n,s)=>{P(void 0,{ampmlabel:s.checked}),f("ampm_position")?.classList.toggle("shown",s.checked)}),f("i_ampm_position").addEventListener("change",function(){P(void 0,{ampmposition:this.value})}),f("i_timezone").addEventListener("change",function(){P(void 0,{timezone:this.value})}),f("i_dateformat").addEventListener("change",function(){P(void 0,{dateformat:this.value})}),f("i_timehide").addEventListener("change",function(){Ot({clock:this.value==="clock",date:this.value==="date"},{isEvent:!0})}),(0,A.onclickdown)(f("i_main"),(n,s)=>{te(void 0,{widget:["main",s.checked]})}),f("i_geol").addEventListener("change",function(){se(void 0,{geol:this?.value})}),f("i_city").addEventListener("input",function(n){se(void 0,{suggestions:n})}),f("f_location").addEventListener("submit",function(n){se(void 0,{city:!0}),n.preventDefault()}),f("i_units").addEventListener("change",function(){se(void 0,{units:this.value})}),f("i_forecast").addEventListener("change",function(){se(void 0,{forecast:this.value})}),f("i_temp").addEventListener("change",function(){se(void 0,{temp:this.value})}),f("i_moreinfo").addEventListener("change",function(){se(void 0,{moreinfo:this.value})}),f("i_provider").addEventListener("change",function(){se(void 0,{provider:this.value}),this.blur()}),f("i_weatherhide").addEventListener("change",function(){let n=this.value==="disabled"||this.value==="desc",s=this.value==="disabled"||this.value==="icon";Ot({weatherdesc:n,weathericon:s},{isEvent:!0}),se(void 0,{unhide:!0})}),(0,A.onclickdown)(f("i_greethide"),(n,s)=>{document.getElementById("greetings_options")?.classList.toggle("shown",s.checked),Ot({greetings:!s.checked},{isEvent:!0})}),f("i_greeting").addEventListener("input",function(){P(void 0,{greeting:this.value})}),f("i_greeting").addEventListener("change",()=>{f("i_greeting").blur()}),f("i_greetsize").addEventListener("input",function(){P(void 0,{greetingsize:this.value})}),f("i_greetmode").addEventListener("change",function(){P(void 0,{greetingsmode:this.value})}),f("i_greetmorning").addEventListener("input",function(){P(void 0,{greetingscustom:{morning:this.value}})}),f("i_greetafternoon").addEventListener("input",function(){P(void 0,{greetingscustom:{afternoon:this.value}})}),f("i_greetevening").addEventListener("input",function(){P(void 0,{greetingscustom:{evening:this.value}})}),f("i_greetnight").addEventListener("input",function(){P(void 0,{greetingscustom:{night:this.value}})}),f("i_greetmorning").addEventListener("change",()=>{f("i_greetmorning").blur()}),f("i_greetafternoon").addEventListener("change",()=>{f("i_greetafternoon").blur()}),f("i_greetevening").addEventListener("change",()=>{f("i_greetevening").blur()}),f("i_greetnight").addEventListener("change",()=>{f("i_greetnight").blur()}),(0,A.onclickdown)(f("i_notes"),(n,s)=>{te(void 0,{widget:["notes",s.checked]})}),f("i_notesalign").addEventListener("change",function(){Lt(void 0,{align:this.value})}),f("i_noteswidth").addEventListener("input",function(){Lt(void 0,{width:this.value})}),f("i_notes-opacity").addEventListener("input",function(){Lt(void 0,{background:!0})}),(0,A.onclickdown)(f("i_notes-shade"),()=>{Lt(void 0,{background:!0})}),(0,A.onclickdown)(f("i_sb"),(n,s)=>{te(void 0,{widget:["searchbar",s.checked]}),_t("search")}),f("i_sbengine").addEventListener("change",function(){Oe(void 0,{engine:this.value})}),f("i_sb-opacity").addEventListener("input",function(){Oe(void 0,{background:!0})}),f("i_sb-shade").addEventListener("click",()=>{Oe(void 0,{background:!0})}),f("i_sbwidth").addEventListener("input",function(){Oe(void 0,{width:this.value})}),f("f_sbrequest").addEventListener("submit",function(n){Oe(void 0,{request:!0}),n.preventDefault()}),(0,A.onclickdown)(f("i_sbnewtab"),(n,s)=>{Oe(void 0,{newtab:s.checked})}),(0,A.onclickdown)(f("i_sbsuggestions"),(n,s)=>{Oe(void 0,{suggestions:s.checked})}),f("i_sbplaceholder").addEventListener("keyup",function(){Oe(void 0,{placeholder:this.value})}),f("i_sbplaceholder").addEventListener("change",()=>{f("i_sbplaceholder").blur()}),(0,A.onclickdown)(f("i_quotes"),(n,s)=>{te(void 0,{widget:["quotes",s.checked]})}),f("i_qtfreq").addEventListener("change",function(){Je(void 0,{frequency:this.value})}),f("i_qttype").addEventListener("change",function(){Je(void 0,{type:this.value})}),(0,A.onclickdown)(f("i_qtrefresh"),(n,s)=>{Kr(s),Vt(n,!0),Je(void 0,{refresh:!0})}),(0,A.onclickdown)(f("i_qtauthor"),(n,s)=>{Je(void 0,{author:s.checked})}),f("i_qtlist").addEventListener("change",function(){Je(void 0,{userlist:this.value})}),f("f_qturl").addEventListener("submit",function(n){n.preventDefault(),Je(void 0,{url:f("i_qturl").value})}),(0,A.onclickdown)(f("i_pomodoro"),(n,s)=>{te(void 0,{widget:["pomodoro",s.checked]}),document.querySelector("#pomodoro_container .glider").style.width==="0px"&&setTimeout(()=>{lo()},333)}),(0,A.onclickdown)(f("i_pmdr_sound"),(n,s)=>{Xe(void 0,{sound:s.checked})}),(0,A.onclickdown)(f("i_pmdr_listen"),()=>{Xe(void 0,{listen:!0})}),f("i_pmdr_alarms").addEventListener("change",function(){Xe(void 0,{alarm:this.value})}),f("i_pmdr_volume").addEventListener("input",function(){Xe(void 0,{volume:Number(this.value)})}),f("i_pmdr_pomodoro").addEventListener("input",function(){Xe(void 0,{timeFor:{pomodoro:Number(this.value)}})}),f("i_pmdr_break").addEventListener("input",function(){Xe(void 0,{timeFor:{break:Number(this.value)}})}),f("i_pmdr_longbreak").addEventListener("input",function(){Xe(void 0,{timeFor:{longbreak:Number(this.value)}})}),f("i_customfont").addEventListener("pointerenter",()=>{wt(void 0,{autocomplete:!0})}),f("f_customfont").addEventListener("submit",n=>{wt(void 0,{family:f("i_customfont").value}),n.preventDefault()}),f("i_weight").addEventListener("input",function(){wt(void 0,{weight:this.value})}),f("i_size").addEventListener("input",function(){wt(void 0,{size:this.value})}),f("i_textshadow").addEventListener("input",function(){ko(void 0,Number.parseFloat(this.value))}),(0,A.onclickdown)(f("b_editmove"),()=>{uo(!1),te(void 0,{toggle:!document.getElementById("interface")?.classList.contains("move-edit")})}),f("i_pagecolumns").addEventListener("change",function(){te(void 0,{layout:this.value,toggle:!0})}),f("i_pagewidth").addEventListener("input",function(){In({width:Number.parseInt(this.value)},!0)}),f("i_pagegap").addEventListener("input",function(){In({gap:Number.parseFloat(this.value)},!0)}),f("i_pagewidth").addEventListener("touchstart",()=>te(void 0,{overlay:!0}),{passive:!0}),f("i_pagewidth").addEventListener("mousedown",()=>te(void 0,{overlay:!0})),f("i_pagewidth").addEventListener("touchend",()=>te(void 0,{overlay:!1})),f("i_pagewidth").addEventListener("mouseup",()=>te(void 0,{overlay:!1})),f("i_announce").addEventListener("change",function(){ls(void 0,{announcements:this.checked})}),(0,A.onclickdown)(f("i_supporters_notif"),(n,s)=>{Mn(void 0,{enabled:s.checked})}),f("i_synctype").addEventListener("change",function(){ze(void 0,{type:this.value})}),f("f_gistsync").addEventListener("submit",function(n){n.preventDefault(),ze(void 0,{gistToken:f("i_gistsync").value})}),f("f_urlsync").addEventListener("submit",function(n){n.preventDefault(),ze(void 0,{url:f("i_urlsync").value})}),(0,A.onclickdown)(f("b_storage-persist"),async()=>{let n=await navigator.storage.persist();ze(void 0,{firefoxPersist:n})}),(0,A.onclickdown)(f("b_gistup"),()=>{ze(void 0,{up:!0})}),(0,A.onclickdown)(f("b_gistdown"),()=>{ze(void 0,{down:!0})}),(0,A.onclickdown)(f("b_urldown"),()=>{ze(void 0,{down:!0})}),f("settings-managment").addEventListener("dragenter",()=>{f("settings-managment").classList.add("dragging-file")}),f("file-import").addEventListener("dragleave",()=>{f("settings-managment").classList.remove("dragging-file")}),f("b_file-load").addEventListener("click",function(){f("file-import")?.click()}),f("b_file-save").addEventListener("click",()=>{Mg()}),f("file-import").addEventListener("change",function(){_g(this)}),f("b_settings-copy").addEventListener("click",()=>{Ig()}),f("settings-data").addEventListener("input",n=>{Is(n.type)}),f("settings-data").addEventListener("focus",n=>{Is(n.type)}),f("settings-data").addEventListener("blur",n=>{Is(n.type)}),(0,A.onclickdown)(f("b_settings-cancel"),()=>{Is("cancel")}),(0,A.onclickdown)(f("b_settings-apply"),()=>{let n=f("settings-data").value;Tu(xe(n)??{})}),(0,A.onclickdown)(f("b_reset-first"),()=>{fr("first")}),(0,A.onclickdown)(f("b_reset-apply"),()=>{fr("yes")}),(0,A.onclickdown)(f("b_reset-cancel"),()=>{fr("no")}),Ee){let n=document.querySelectorAll("input[type='range'"),s=i=>{document.getElementById("settings")?.classList.toggle("see-through",i.type==="touchstart")};for(let i of n)i.addEventListener("touchstart",s,{passive:!0}),i.addEventListener("touchend",s,{passive:!0})}let e=document.querySelectorAll('input[type="file"]');for(let n of e){let s=i=>{n.classList.toggle("dragover")};n?.addEventListener("dragenter",s),n?.addEventListener("dragleave",s),n?.addEventListener("drop",s)}let t=document.querySelectorAll(".tooltip");for(let n of t)(0,A.onclickdown)(n,()=>{let i=[...n.classList].filter(a=>a.startsWith("tt"))[0];document.querySelector(`.tooltiptext.${i}`)?.classList.toggle("shown")});let o=document.querySelectorAll(".split-range button");for(let n of o)(0,A.onclickdown)(n,()=>{n.classList.toggle("on")})}function Sg(e){let t=document.getElementById("timezones-select-template"),o='input[name="worldclock-city"]',n=".worldclocks-item select",s=document.querySelectorAll(o),i=document.querySelector("#i_timezone"),r=document.querySelectorAll(n),a=["Europe/Paris","America/Sao_Paulo","America/Los_Angeles","Asia/Tokyo","Asia/Kolkata"];for(let c of r)c.appendChild(t.content.cloneNode(!0));i&&i.appendChild(t.content.cloneNode(!0)),s?.forEach((c,l)=>{c.addEventListener("input",()=>{P(void 0,{world:{index:l,region:c.value}})}),e.worldclocks[l]&&(c.value=e.worldclocks[l].region)}),r?.forEach((c,l)=>{c.addEventListener("change",u=>{let h=u.target.value;P(void 0,{world:{index:l,timezone:h}})}),c.value=e.worldclocks[l]?.timezone??a[l]}),i&&(i.value=e.clock.timezone)}function wu(){let e=[["i_title","Name"],["i_greeting","Name"],["i_greetmorning","Hello, $name!"],["i_greetafternoon","Good afternoon"],["i_greetevening","Good evening"],["i_greetnight","Good night"],["i_tabtitle","New tab"],["i_sbrequest","Search query: %s"],["i_sbplaceholder","Search"],["css-editor-textarea","Type in your custom CSS"],["i_importtext","or paste as text"],["i_addlink-title","Title"],["i_addlink-url","example.com"],["i_qtlist",`Author, Your quote.
-Author, Your second quote.`]];for(let[t,o]of e)document.getElementById(t)?.setAttribute("placeholder",L(o))}function Eu(){for(let e of document.querySelectorAll("[title]")){let t=e.getAttribute("title")??"";e.setAttribute("title",L(t)),e.setAttribute("aria-label",L(t))}}async function Tg(e){await Cr(e),y.sync.set({lang:e}),y.local.remove("quotesCache"),document.documentElement.setAttribute("lang",e);let t=await y.sync.get(),o=await y.local.get(["quotesCache","userQuoteSelection","lastWeather"]);o?.lastWeather&&(o.lastWeather.timestamp=0,o.lastWeather.forecasted_timestamp=0),t.lang=e,P(t),Xo({old:"",new:""},t),se({sync:t,lastWeather:o.lastWeather}),Je({sync:t,local:o}),ct(t.tabtitle),Lt(t.notes),wt(void 0,{lang:!0}),Su(),wu(),Eu(),Mn(void 0,{translate:!0}),lo()}function Lu(e,t){document.getElementById("settings")?.classList.toggle("all",e),t&&y.sync.set({showall:e})}function Su(){let e=document.querySelector("#signature-one"),t=document.querySelector("#signature-two"),o=document.getElementById("version"),n=Math.random()>.5;e&&t&&(e.href=n?"https://victr.me/":"https://tahoe.be/",t.href=n?"https://tahoe.be/":"https://victr.me/",e.textContent=n?"Victor Azevedo":"Tahoe Beetschen",t.textContent=n?"Tahoe Beetschen":"Victor Azevedo"),o&&(o.textContent=H.about.version)}function xg(){let e=Le(()=>{document.getElementById("settings-footer").style.removeProperty("padding"),yu()},600);globalThis.addEventListener("resize",()=>{e(),document.getElementById("settings")?.style.transition||document.getElementById("settings")?.setAttribute("style","transition: none")}),yu()}function yu(){let e=document.getElementById("mobile-drag-zone"),t=document.getElementById("settings"),o=-75,n=0,s=0;e?.addEventListener("touchstart",i,{passive:!1}),e?.addEventListener("pointerdown",i,{passive:!1});function i(c){c.preventDefault(),!t.classList.contains("dragging-mobile-settings")&&(c.type==="pointerdown"&&(s=c.clientY),c.type==="touchstart"&&(s=c.touches[0].clientY),n===0&&(n=s),globalThis.addEventListener("touchmove",r),globalThis.addEventListener("pointermove",r),document.body.addEventListener("touchend",a),document.body.addEventListener("pointerup",a),document.body.classList.add("dragging-mobile-settings"))}function r(c){let l=0;c.type==="pointermove"&&(l=c.clientY),c.type==="touchmove"&&(l=c.touches[0].clientY),l>60&&(o=+(100-(l-25)/globalThis.innerHeight*100).toFixed(2),t.style.transform=`translateY(-${o}dvh)`,t.style.transition="transform .0s")}function a(c){let l=0;c.type==="pointerup"&&(l=c.clientY),c.type==="touchend"&&(l=c.changedTouches[0].clientY),globalThis.removeEventListener("touchmove",r),globalThis.removeEventListener("pointermove",r),document.body.removeEventListener("touchend",a),document.body.removeEventListener("pointerup",a),s=0;let u=document.getElementById("settings-footer");u.style.paddingBottom=`${100-Math.abs(o)}dvh`,t.style.removeProperty("padding"),t.style.removeProperty("width"),t.style.removeProperty("overflow"),t.classList.remove("dragging"),l>globalThis.innerHeight-100&&ku()}}function Ig(){let e=document.querySelector("#b_settings-copy span"),t=document.getElementById("settings-data");try{navigator.clipboard.writeText(t?.textContent??"{}"),e&&(e.textContent=L("Copied!"),setTimeout(()=>{e.textContent=L("Copy")},1e3))}catch{}}async function Mg(){let e=document.getElementById("file-download");if(!e)return;let t=new Date,o=await y.sync.get()??{},n=l=>l.toString().length===1?`0${l}`:l.toString(),s=t.toISOString().slice(0,10),i=`${n(t.getHours())}_${n(t.getMinutes())}_${n(t.getSeconds())}`,r=new TextEncoder().encode(Ln(o)),a=new Blob([r],{type:"application/json;charset=utf-8"}),c=URL.createObjectURL(a);e.setAttribute("href",c),e.setAttribute("tabindex","-1"),e.setAttribute("download",`bonjourr-${o?.about?.version} ${s} ${i}.json`),e.click()}function _g(e){function t(s){let i={};try{i=xe(atob(s))??{}}catch{try{i=xe(s)??{}}catch{i={}}}return i}if(!e.files||e.files&&e.files.length===0)return;let o=e.files[0],n=new FileReader;n.onload=()=>{if(typeof n.result!="string")return!1;let s=t(n.result);Object.keys(H).filter(i=>i in s).length>0&&Tu(s)},n.readAsText(o)}async function Tu(e){try{let t=await y.sync.get();if(e?.font?.system===!1){let o=e?.font?.family,n=e?.lang;await Xc(n,o)===!1&&(e.font.family="")}e?.searchbar?.on&&_t("search"),t=xs("import",t,e),y.sync.clear(),y.sync.set(t),Kt()}catch{}}function fr(e){if(e==="yes"){y.clearall().then(Kt);return}document.getElementById("reset-first")?.classList.toggle("shown",e==="no"),document.getElementById("reset-conf")?.classList.toggle("shown",e==="first")}function xu(e){try{e?t(e):y.sync.get().then(t)}catch(o){console.warn(o)}function t(o){let n=document.getElementById("settings-data");if(n&&o.about){let s=Ln(o);o.about.browser=q,n.textContent=s}}}function Cg(){let e=()=>xu(),t=()=>chrome.storage.onChanged.removeListener(e);q==="online"?globalThis.addEventListener("storage",e):(chrome.storage.onChanged.addListener(e),globalThis.addEventListener("beforeunload",t,{once:!0}))}async function Is(e){let t=f("settings-data"),o=await y.sync.get(),n=!1;if(e==="input"){let s=Ln(o),i="";try{i=Ln(JSON.parse(t.value??"{}"))}catch{}n=i.length>2&&s!==i,n?f("b_settings-apply")?.removeAttribute("disabled"):f("b_settings-apply")?.setAttribute("disabled","")}e==="cancel"&&(t.value=Ln(o),n=!1),e==="focus"&&(f("settings-files-options")?.classList.add("hidden"),f("settings-changes-options")?.classList.remove("hidden")),e==="blur"&&(f("settings-changes-options")?.classList.add("hidden"),f("settings-files-options")?.classList.remove("hidden"))}function f(e){return document.getElementById(e)}function $(e,t){let o=f(e);o.checked=t}function I(e,t){let o=f(e);o.value=typeof t=="string"?t:t?.toString()}function Ms(e,t,o){let n=f(e);o?(n.value=o,n.setAttribute("placeholder",o)):n.setAttribute("placeholder",t)}var Mu=!1;function _u(){document.body.addEventListener("mousedown",Ag),document.getElementById("b_editmove")?.addEventListener("click",qg),document.addEventListener("click",Bg),document.addEventListener("keydown",Iu),document.addEventListener("keyup",Iu)}function Iu(e){let t=document.getElementById("sb-suggestions");if(e.code==="Escape"){if(t?.classList.contains("shown")){t?.classList.remove("shown");return}let o=Cu(),n=e.type==="keyup";o.contextmenu?document.dispatchEvent(new Event("close-edit")):o.settings&&n?document.dispatchEvent(new CustomEvent("toggle-settings")):o.selectall?document.dispatchEvent(new Event("remove-select-all")):o.folder?document.dispatchEvent(new Event("close-folder")):n&&document.documentElement.dataset.supportersModal===void 0&&document.dispatchEvent(new CustomEvent("toggle-settings"));return}if(e.code==="Tab"){document.body.classList.toggle("tabbing",!0);return}}function Bg(e){if(Mu)return;let t=Cu(),n=(e.composedPath()??[document.body]).filter(r=>r?.className?.includes),s=n.map(r=>r.id),i={body:n[0].tagName==="BODY",link:n.some(r=>r.classList.contains("link")),linkfolder:n.some(r=>r.className.includes("folder")),addgroup:n.some(r=>r.className.includes("add-group")),folder:n.some(r=>r.className.includes("in-folder")),button:n.some(r=>r.className.includes("param-btn")),localfiles:n.some(r=>r.id==="local_options"),interface:s.includes("interface"),contextmenu:s.includes("contextmenu"),settings:n.some(r=>r.id==="settings"),showsettings:n.some(r=>r.id==="show-settings"),interactable:n.some(r=>r instanceof HTMLElement&&r.matches('a[href], button, input, select, textarea, label, [tabindex]:not([tabindex="-1"]), [contenteditable="true"]'))};if(document.body.classList.contains("tabbing")&&document.body?.classList.toggle("tabbing",!1),document.querySelectorAll(".thumbnail.selected")&&!i.localfiles&&!i.button)for(let r of document.querySelectorAll(".thumbnail.selected"))r.classList.remove("selected");if(i.showsettings&&document.dispatchEvent(new CustomEvent("toggle-settings")),t.contextmenu&&!i.contextmenu){if(i.addgroup)return;document.dispatchEvent(new Event("close-edit"));return}(i.body||i.interface)!==!1&&(t.settings&&!i.interactable?document.dispatchEvent(new CustomEvent("toggle-settings")):t.selectall&&!i.link?document.dispatchEvent(new Event("remove-select-all")):t.folder&&!i.folder&&!i.linkfolder&&document.dispatchEvent(new Event("close-folder")))}function Cu(){return{settings:!!document.getElementById("settings")?.classList.contains("shown"),folder:!!document.querySelector(".in-folder"),selectall:document.getElementById("linkblocks")?.classList.contains("select-all"),contextmenu:document.querySelector("#contextmenu")?.open}}function Ag(e){let o=e.composedPath()[0]?.tagName??"";Mu=["TEXTAREA","INPUT"].includes(o)}function qg(){setTimeout(()=>{document.getElementById("element-mover")?.classList.contains("hidden")===!1&&document.dispatchEvent(new CustomEvent("toggle-settings"))},20)}try{Pg(),$l(),Ul()}catch{console.warn("Startup failed")}async function Pg(){let{sync:e,local:t}=await y.init(),o=e?.about?.version;(!e||!t)&&(console.warn("Storage failed, loading Bonjourr with default settings"),e=structuredClone(H),t=structuredClone(Ne)),o!==Tt&&(console.info(`Updated Bonjourr, ${o} => ${Tt}`),localStorage.setItem("update-archive",JSON.stringify(e)),e=xs("update",e),t.translations=void 0,y.local.remove("translations"),t={...Ne,...t},await y.sync.clear(),await y.sync.set(e)),await Hs(e.lang,t),_e(void 0,e),Ut(null,e.lang),Y(e.clock.timezone),je(t.lastWeather?.sunrise,t.lastWeather?.sunset),se({sync:e,lastWeather:t.lastWeather}),wt(e.font),ko(e.textShadow),bo(e.favicon),ct(e.tabtitle),P(e),vo(e.dark),Oe(e.searchbar),Je({sync:e,local:t}),Xe(e.pomodoro),Lt(e.notes),te(e.move),ml(e.css),Ot(e.hide),Yn(e,t,!0),F({sync:e,local:t}),ze(t),vu(e,t),In({width:e.pagewidth,gap:e.pagegap}),Wl(t.operaExplained),Gl(),document.documentElement.dataset.system=fe,document.documentElement.dataset.browser=K,document.documentElement.dataset.platform=q,document.getElementById("time")?.classList.toggle("hidden",!e.time),document.getElementById("main")?.classList.toggle("hidden",!e.main),Ra(()=>{document.body.classList.remove("init"),Mn(e),zl(),_u(),ls({announce:e.announcements,review:e.review??0,new:Tt,old:o})})}})();
+  // src/scripts/features/weather/settings.ts
+  var locationForm = networkForm("f_location");
+  var unitForm = networkForm("f_units");
+  var geolForm = networkForm("f_geol");
+  var suggestionsDebounce = debounce(fillLocationSuggestions, 600);
+  async function weatherUpdate(update) {
+    const { weather: weather2, hide } = await storage.sync.get(["weather", "hide"]);
+    let lastWeather = (await storage.local.get("lastWeather")).lastWeather;
+    if (!(weather2 && hide)) {
+      return;
+    }
+    if (isUnits(update.units)) {
+      unitForm.load();
+      weather2.unit = update.units;
+      lastWeather = await requestNewWeather(weather2, lastWeather) ?? lastWeather;
+      unitForm.accept();
+    }
+    if (update.show_unit !== void 0) {
+      weather2.show_unit = update.show_unit;
+      handleShowUnit(update.show_unit);
+    }
+    if (isForecast(update.forecast)) {
+      weather2.forecast = update.forecast;
+    }
+    if (isTemperature(update.temp)) {
+      weather2.temperature = update.temp;
+    }
+    if (isMoreinfo(update.moreinfo)) {
+      toggleSettingsDropdown("weather_provider", update.moreinfo === "custom");
+      weather2.moreinfo = update.moreinfo;
+    }
+    if (update.provider) {
+      weather2.provider = update.provider;
+    }
+    if (update.unhide) {
+      const { weatherdesc, weathericon } = hide || {};
+      if (weatherdesc && weathericon) {
+        weatherCacheControl(weather2);
+      }
+    }
+    if (update.suggestions) {
+      updateSuggestions(update.suggestions);
+      return;
+    }
+    if (update.city) {
+      updateManualLocation(weather2, lastWeather);
+      return;
+    }
+    if (update.geol) {
+      console.log(update.geol);
+      updateGeolocation(update.geol, weather2, lastWeather);
+      return;
+    }
+    storage.sync.set({ weather: weather2 });
+    onSettingsLoad(() => handleGeolOption(weather2));
+    if (lastWeather) {
+      storage.local.set({ lastWeather });
+      displayWeather(weather2, lastWeather);
+    }
+  }
+  async function updateManualLocation(weather2, lastWeather) {
+    const iCity = document.getElementById("i_city");
+    let city = iCity.value;
+    removeLocationSuggestions();
+    if (!navigator.onLine) {
+      locationForm.warn(tradThis("No internet connection"));
+      return;
+    }
+    if (city === weather2.city) {
+      return;
+    }
+    city = stringMaxSize(city, 64);
+    locationForm.load();
+    const currentWeather = { ...weather2, city };
+    let newWeather;
+    try {
+      newWeather = await requestNewWeather(currentWeather, lastWeather);
+    } catch (error) {
+      locationForm.warn(tradThis(error));
+      return;
+    }
+    if (!newWeather) {
+      locationForm.warn(tradThis("Cannot reach weather service"));
+      return;
+    }
+    if (newWeather) {
+      weather2.city = city ?? "Paris";
+      locationForm.accept("i_city", weather2.city);
+      storage.sync.set({ weather: weather2 });
+      storage.local.set({ lastWeather: newWeather });
+      displayWeather(weather2, newWeather);
+    }
+  }
+  async function updateGeolocation(geol, weather2, lastWeather) {
+    geolForm.load();
+    if (!isGeolocation(geol)) {
+      geolForm.warn("bad geolocation type");
+      return;
+    }
+    if (geol === "precise") {
+      if (!await getGeolocation("precise")) {
+        geolForm.warn("Cannot get precise location");
+        return;
+      }
+    }
+    weather2.geolocation = geol;
+    handleGeolOption(weather2);
+    storage.sync.set({ weather: weather2 });
+    if (geol === "off") {
+      geolForm.accept();
+      return;
+    }
+    const newWeather = await requestNewWeather(weather2, lastWeather) ?? lastWeather;
+    if (newWeather) {
+      storage.local.set({ lastWeather });
+      displayWeather(weather2, newWeather);
+    }
+    geolForm.accept();
+  }
+  function handleGeolOption(data) {
+    const iCity = document.querySelector("#i_city");
+    const iGeol = document.querySelector("#i_geol");
+    if (iCity && iGeol) {
+      iGeol.value = data?.geolocation ?? false;
+      iCity.setAttribute("placeholder", data.city ?? "Paris");
+      document.getElementById("location_options")?.classList.toggle("shown", data.geolocation === "off");
+    }
+  }
+  function updateSuggestions(updateEvent) {
+    const fLocation = document.querySelector("#f_location");
+    const iCity = document.querySelector("#i_city");
+    const event = updateEvent;
+    if (!(fLocation && iCity)) {
+      return;
+    }
+    if (event.data !== void 0) {
+      fLocation?.classList.toggle("valid", iCity.value.length > 2);
+      removeLocationSuggestions();
+      suggestionsDebounce();
+    }
+  }
+  function removeLocationSuggestions() {
+    const datalist = document.querySelector("#dl_cityfound");
+    const nodelist = datalist?.children ?? [];
+    for (const node of nodelist) {
+      node.remove();
+    }
+  }
+  async function fillLocationSuggestions() {
+    const dlCityfound = document.querySelector("#dl_cityfound");
+    const iCity = document.getElementById("i_city");
+    const city = iCity.value;
+    if (city === "") {
+      removeLocationSuggestions();
+      return;
+    }
+    const url = new URL("https://weather.bonjourr.fr/");
+    url.searchParams.set("provider", "accuweather");
+    url.searchParams.set("data", "simple");
+    url.searchParams.set("geo", "true");
+    url.searchParams.set("query", encodeURIComponent(city));
+    try {
+      const resp = await fetch(url);
+      removeLocationSuggestions();
+      if (resp.status !== 200) {
+        return;
+      }
+      for (const { detail } of await resp.json()) {
+        const option = document.createElement("option");
+        option.value = detail;
+        option.textContent = detail;
+        dlCityfound?.appendChild(option);
+      }
+    } catch (_error) {
+    }
+  }
+  function isUnits(str = "") {
+    const units = ["metric", "imperial"];
+    return units.includes(str);
+  }
+  function isForecast(str = "") {
+    const forecasts = ["auto", "always", "never"];
+    return forecasts.includes(str);
+  }
+  function isMoreinfo(str = "") {
+    const moreinfos = ["none", "msnw", "yhw", "windy", "accu", "custom"];
+    return moreinfos.includes(str);
+  }
+  function isTemperature(str = "") {
+    const temps = ["actual", "feelslike", "both"];
+    return temps.includes(str);
+  }
+  function isGeolocation(str = "") {
+    const geol = ["precise", "approximate", "off"];
+    return geol.includes(str);
+  }
+
+  // src/scripts/features/weather/request.ts
+  async function weatherCacheControl(data, lastWeather) {
+    handleForecastDisplay(data.forecast);
+    if (!lastWeather) {
+      firstStartWeather(data);
+      return;
+    }
+    const now = Date.now();
+    const last = lastWeather?.timestamp ?? 0;
+    const isAnHourLater = now > last + 36e5;
+    if (navigator.onLine && isAnHourLater) {
+      const newWeather = await requestNewWeather(data, lastWeather);
+      if (newWeather) {
+        storage.local.set({ lastWeather: newWeather });
+        displayWeather(data, newWeather);
+        return;
+      }
+    }
+    displayWeather(data, lastWeather);
+  }
+  async function requestNewWeather(data, lastWeather) {
+    if (!navigator.onLine) {
+      return lastWeather;
+    }
+    const coords2 = await getGeolocation(data.geolocation);
+    const url = new URL("https://weather.bonjourr.fr/");
+    url.searchParams.set("provider", "auto");
+    url.searchParams.set("data", "simple");
+    url.searchParams.set("lang", getLang());
+    url.searchParams.set("unit", data.unit === "metric" ? "C" : "F");
+    if (coords2?.lat && coords2?.lon) {
+      url.searchParams.set("lat", coords2.lat.toString());
+      url.searchParams.set("lon", coords2.lon.toString());
+    }
+    if (data.geolocation === "off" && !coords2) {
+      const city = data.city ?? "Paris";
+      const q = encodeURIComponent(city);
+      url.searchParams.set("query", q);
+    }
+    const response = await fetch(url);
+    if (response.status !== 200) {
+      throw new Error("Cannot get weather");
+    }
+    const json = await response?.json();
+    let [sunset2, sunrise2] = [0, 0];
+    const { temp, feels } = json.now;
+    const { description, icon } = json.now;
+    let forecastedHigh = lastWeather?.forecasted_high ?? -273.15;
+    let forecastedTimestamp = lastWeather?.forecasted_timestamp ?? 0;
+    if (json.daily) {
+      const [today, tomorrow] = json.daily;
+      const date = /* @__PURE__ */ new Date();
+      if (date.getHours() > getSunsetHour()) {
+        forecastedHigh = tomorrow.high;
+        forecastedTimestamp = new Date(tomorrow.time).getTime();
+      } else {
+        forecastedHigh = today.high;
+        forecastedTimestamp = new Date(today.time).getTime();
+      }
+    }
+    if (json.sun) {
+      const [rh, rm] = json.sun.rise;
+      const [sh, sm] = json.sun.set;
+      const date = /* @__PURE__ */ new Date();
+      date.setHours(rh, rm, 0, 0);
+      sunrise2 = date.getTime();
+      date.setHours(sh, sm, 0, 0);
+      sunset2 = date.getTime();
+      suntime(sunrise2, sunset2);
+    }
+    return {
+      timestamp: Date.now(),
+      forecasted_timestamp: forecastedTimestamp,
+      forecasted_high: forecastedHigh,
+      description,
+      feels_like: feels,
+      icon_id: icon,
+      sunrise: sunrise2,
+      sunset: sunset2,
+      temp,
+      link: json.meta.url ?? "",
+      approximation: {
+        ccode: json?.geo?.country,
+        city: json?.geo?.city,
+        lat: json?.geo?.lat,
+        lon: json?.geo?.lon
+      }
+    };
+  }
+  async function firstStartWeather(data) {
+    const currentWeather = await requestNewWeather(data);
+    if (currentWeather) {
+      data.city = currentWeather.approximation?.city ?? tradThis("City");
+      storage.sync.set({ weather: data });
+      storage.local.set({ lastWeather: currentWeather });
+      displayWeather(data, currentWeather);
+      setTimeout(() => handleGeolOption(data), 400);
+    }
+  }
+  async function getGeolocation(type) {
+    const location2 = { lat: 0, lon: 0 };
+    if (type === "precise") {
+      await new Promise(
+        (resolve2) => navigator.geolocation.getCurrentPosition(
+          (geo) => {
+            location2.lat = geo.coords.latitude;
+            location2.lon = geo.coords.longitude;
+            resolve2(true);
+          },
+          () => {
+            resolve2(false);
+          }
+        )
+      );
+    }
+    return location2.lat !== 0 && location2.lon !== 0 ? location2 : void 0;
+  }
+
+  // src/scripts/features/weather/index.ts
+  var pollingInterval;
+  function weather(init2, update) {
+    if (update) {
+      weatherUpdate(update);
+      return;
+    }
+    if (!init2) {
+      console.warn(new Error("No weather data"));
+      return;
+    }
+    const mainHidden = !init2.sync.main;
+    const weatherHidden = init2.sync.hide?.weatherdesc && init2.sync.hide?.weathericon;
+    const canShowWeather = !(weatherHidden || mainHidden);
+    if (canShowWeather) {
+      weatherCacheControl(init2.sync.weather, init2.lastWeather);
+    }
+    onSettingsLoad(() => {
+      handleGeolOption(init2.sync.weather);
+    });
+    queueMicrotask(() => {
+      clearInterval(pollingInterval);
+      pollingInterval = setInterval(async () => {
+        const sync = await storage.sync.get(["weather", "hide", "main"]);
+        const local = await storage.local.get("lastWeather");
+        weatherCacheControl(sync.weather, local.lastWeather);
+      }, 12e5);
+    });
+  }
+  function getSunsetHour() {
+    const d = /* @__PURE__ */ new Date();
+    d.setHours(Math.round(suntime().sunset / 60));
+    return d.getHours();
+  }
+
+  // src/scripts/shared/assert.ts
+  function isEvery(freq = "") {
+    const every = ["tabs", "hour", "day", "period", "pause"];
+    return every.includes(freq);
+  }
+
+  // src/scripts/features/quotes.ts
+  var quotesTypeForm = networkForm("f_qttype");
+  var quotesUrlForm = networkForm("f_qturl");
+  async function quotes(init2, update) {
+    if (update) {
+      updateQuotes(update);
+      return;
+    }
+    if (!init2) {
+      return;
+    }
+    const { lang, quotes: quotes2 } = init2.sync;
+    const needsNewQuote = needsChange(quotes2.frequency, quotes2.last ?? 0);
+    const selection = init2.local?.userQuoteSelection ?? 0;
+    let list = init2.local?.quotesCache ?? [];
+    let quote = list[0];
+    if (quotes2.type === "user") {
+      list = csvUserInputToQuotes(quotes2.userlist);
+      quote = list[selection];
+    } else {
+      const noCache = !list || list?.length === 0;
+      if (noCache) {
+        list = await tryFetchQuotes(lang, quotes2.type, quotes2.url);
+        quote = list[0];
+        storage.local.set({ quotesCache: list });
+      }
+    }
+    if (needsNewQuote) {
+      quotes2.last = userDate().getTime();
+      quote = controlCacheList(list, lang, quotes2.type, quotes2.url);
+      storage.sync.set({ quotes: quotes2 });
+    }
+    insertToDom(quote);
+    toggleAuthorAlwaysOn(quotes2.author);
+    document.getElementById("quotes_container")?.classList.toggle("hidden", !quotes2.on);
+    displayInterface("quotes");
+  }
+  async function updateQuotes({ author, frequency, type, userlist, url, refresh }) {
+    const data = await storage.sync.get(["lang", "quotes"]);
+    const local = await storage.local.get("quotesCache");
+    if (author !== void 0) {
+      data.quotes.author = author;
+      toggleAuthorAlwaysOn(author);
+    }
+    if (userlist) {
+      data.quotes.userlist = handleUserListChange(userlist);
+    }
+    let updateData = false;
+    if (canStoreUrl(url)) {
+      data.quotes.url = url;
+      updateData = true;
+    }
+    if (refresh) {
+      data.quotes.last = userDate().getTime();
+      refreshQuotes(data, local?.quotesCache);
+    }
+    if (isEvery(frequency)) {
+      data.quotes.frequency = frequency;
+    }
+    if (isQuotesType(type)) {
+      data.quotes.type = type;
+      updateData = true;
+    }
+    if (updateData) {
+      updateQuotesData(data);
+    }
+    storage.sync.set({ quotes: data.quotes });
+  }
+  async function updateQuotesData(data) {
+    const isUser = data.quotes.type === "user";
+    let list = [];
+    let selection = 0;
+    if (isUser && data.quotes.userlist) {
+      const local = await storage.local.get("userQuoteSelection");
+      selection = local?.userQuoteSelection ?? 0;
+      list = csvUserInputToQuotes(data.quotes.userlist);
+    }
+    if (!isUser) {
+      const form = data.quotes.type === "url" ? quotesUrlForm : quotesTypeForm;
+      try {
+        form.load();
+        list = await fetchQuotes(data.lang, data.quotes.type, data.quotes.url);
+        form.accept();
+      } catch (_error) {
+        form.warn(tradThis("Fetch failed, please check console for more information"));
+      }
+      storage.local.set({ quotesCache: list });
+    }
+    if (list.length > 0) {
+      insertToDom(list[selection]);
+    }
+    document.getElementById("quotes_userlist")?.classList.toggle("shown", isUser);
+    document.getElementById("quotes_url")?.classList.toggle("shown", data.quotes.type === "url");
+  }
+  function handleUserListChange(input) {
+    let array = [];
+    if (input.length === 0) {
+      return "";
+    }
+    if (input.startsWith("[[")) {
+      array = csvUserInputToQuotes(oldJSONToCSV(parse(input) ?? []));
+    } else {
+      array = csvUserInputToQuotes(input);
+    }
+    if (array.length > 0) {
+      insertToDom({
+        author: array[0].author,
+        content: array[0].content
+      });
+      document.getElementById("i_qtlist")?.blur();
+      storage.local.set({ userQuoteSelection: 0 });
+    }
+    return input;
+  }
+  function refreshQuotes(sync, quoteslist = []) {
+    const { lang, quotes: quotes2 } = sync;
+    const { type, url, userlist } = quotes2;
+    const hasUserQuotes = type === "user" && userlist;
+    const list = hasUserQuotes ? csvUserInputToQuotes(userlist) : quoteslist;
+    insertToDom(controlCacheList(list, lang, type, url));
+  }
+  async function fetchQuotes(lang, type, url) {
+    if (!navigator.onLine || type === "user") {
+      return [];
+    }
+    let response;
+    if (type === "url") {
+      if (!url) {
+        return [];
+      }
+      response = await fetch(url);
+      validateResponse(response);
+      const responseType = determineUrlApiResponseType(response);
+      if (responseType === "json") {
+        return await response.json();
+      }
+      if (responseType === "csv") {
+        return csvToQuotes(await response.text());
+      }
+      return [];
+    }
+    const endpoint = type === "classic" ? `${lang}` : "";
+    const query = `/quotes/${type}/${endpoint}`;
+    response = await apiFetch(query);
+    validateResponse(response);
+    return await response.json();
+  }
+  function validateResponse(response) {
+    if (!response) {
+      throw new Error("No response");
+    }
+    if (!response.ok) {
+      throw new Error(`Response not ok: ${response.status} ${response.statusText}`);
+    }
+  }
+  async function tryFetchQuotes(lang, type, url) {
+    try {
+      return await fetchQuotes(lang, type, url);
+    } catch (_error) {
+      console.info(_error);
+    }
+    return [];
+  }
+  function controlCacheList(list, lang, type, url) {
+    if (type === "user") {
+      const randIndex = Math.round(Math.random() * (list.length - 1));
+      storage.local.set({ userQuoteSelection: randIndex });
+      return list[randIndex];
+    }
+    if (list.length > 1) {
+      const quote = list.shift();
+      storage.local.set({ quotesCache: list });
+      return quote ?? { author: "", content: "" };
+    }
+    tryFetchQuotes(lang, type, url).then((list2) => {
+      storage.local.set({ quotesCache: list2 });
+    });
+    return list[0];
+  }
+  function toggleAuthorAlwaysOn(state) {
+    document.getElementById("author")?.classList.toggle("always-on", state);
+  }
+  function insertToDom(quote) {
+    const quoteDom = document.getElementById("quote");
+    const authorDom = document.getElementById("author");
+    if (!(quote && quoteDom && authorDom)) {
+      return;
+    }
+    quoteDom.textContent = quote.content.replace(/\\n/g, "\n");
+    authorDom.textContent = quote.author;
+  }
+  function csvUserInputToQuotes(csv) {
+    if (!csv) {
+      return [];
+    }
+    if (Array.isArray(csv)) {
+      return csvToQuotes(oldJSONToCSV(csv));
+    }
+    return csvToQuotes(csv);
+  }
+  function oldJSONToCSV(input) {
+    return input.map((val) => val.join(",")).join("\n");
+  }
+  function csvToQuotes(csv) {
+    const rows = csv.split("\n");
+    const quotes2 = [];
+    for (const row of rows) {
+      const [author, ...rest2] = row.split(",");
+      const content = rest2.join(",").trimStart();
+      quotes2.push({ author, content });
+    }
+    return quotes2;
+  }
+  function isQuotesType(type = "") {
+    const types = ["classic", "kaamelott", "inspirobot", "stoic", "hitokoto", "office", "user", "url"];
+    return types.includes(type);
+  }
+  var urlRegEx = /^https?:\/\//i;
+  function canStoreUrl(url) {
+    if (url === void 0) {
+      return false;
+    }
+    return url === "" || urlRegEx.test(url);
+  }
+  function determineUrlApiResponseType(response) {
+    const contentType = response.headers.get("content-type")?.split(";", 2)[0];
+    if (contentType === "application/json") {
+      return "json";
+    }
+    if (contentType === "text/csv") {
+      return "csv";
+    }
+    const url = new URL(response.url);
+    const parts = url.pathname.split(".");
+    const extension = parts[parts.length - 1];
+    if (equalsCaseInsensitive(extension, "json")) {
+      return "json";
+    }
+    return "csv";
+  }
+
+  // node_modules/.deno/pocket-editor@2.6.0/node_modules/pocket-editor/dist/index.js
+  function checkModifs(text, mods) {
+    for (const [name, str] of Object.entries(mods)) {
+      if (text.startsWith(`${str} `)) {
+        return name;
+      }
+    }
+    return "";
+  }
+  function toHTML(self2, markdown) {
+    const fragment = document.createDocumentFragment();
+    markdown = markdown.replaceAll("	", "");
+    for (const line of markdown.split("\n\n")) {
+      if (line.indexOf("\n") === -1) {
+        fragment.appendChild(self2.createLine({ text: line, modif: checkModifs(line, self2.mods) }));
+        continue;
+      }
+      for (const subline of line.split("\n")) {
+        fragment.appendChild(self2.createLine({ text: subline, modif: checkModifs(subline, self2.mods) }));
+      }
+    }
+    return fragment;
+  }
+  function toMarkdown(lines) {
+    function addModif(line) {
+      if (line.dataset.list === "") {
+        return "- ";
+      }
+      if (line.dataset.h1 === "") {
+        return "# ";
+      }
+      if (line.dataset.h2 === "") {
+        return "## ";
+      }
+      if (line.dataset.h3 === "") {
+        return "### ";
+      }
+      if (line.dataset.todoChecked === "") {
+        return "[x] ";
+      }
+      if (line.dataset.todo === "") {
+        return "[ ] ";
+      }
+      return "";
+    }
+    let plaintext = "";
+    let modif = "";
+    const isList = (line) => {
+      return line?.dataset.list || line?.dataset.todo;
+    };
+    lines.forEach((line, i) => {
+      if (line.textContent === "pe-mock-selection") {
+        return;
+      }
+      modif = addModif(line);
+      plaintext += modif + line.textContent;
+      const isWithinList = isList(lines[i + 1]) && isList(line);
+      const isLastLine = lines.length - 1 === i;
+      plaintext += isLastLine ? "" : isWithinList ? "\n" : "\n\n";
+    });
+    return plaintext;
+  }
+  function lastTextNode(line) {
+    let lastNode = line;
+    while (lastNode?.childNodes.length > 0) {
+      const childNodes = Object.values(lastNode.childNodes).reverse();
+      const textNodes = childNodes.filter((child) => child.nodeName === "#text");
+      if (textNodes.length > 0) {
+        return textNodes[0];
+      }
+      lastNode = childNodes[0];
+    }
+    return lastNode;
+  }
+  function setCaret(elem, atStart) {
+    const node = lastTextNode(elem);
+    const sel = window.getSelection();
+    const range = document.createRange();
+    const textlen = node.nodeValue?.length || 0;
+    range.setStart(node, atStart ? 0 : textlen);
+    range.setEnd(node, atStart ? 0 : textlen);
+    sel?.removeAllRanges();
+    sel?.addRange(range);
+    sel?.collapseToEnd();
+  }
+  var history = [];
+  function addUndoHistory(self2, lastline) {
+    const lines = self2.lines;
+    const markdown = toMarkdown(lines);
+    const index = lastline ? lines.indexOf(lastline) : 0;
+    if (markdown === history[0]?.markdown || "") {
+      return;
+    }
+    history.unshift({ markdown, index });
+    if (history.length > 50) {
+      history.pop();
+    }
+  }
+  function initUndo(self2) {
+    let timeout;
+    const observer = new MutationObserver(() => {
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+    });
+    observer.observe(self2.container, {
+      characterData: true,
+      subtree: true
+    });
+    self2.container.addEventListener("keydown", (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === "z") {
+        timeout = window.setTimeout(() => {
+          applyUndo(self2);
+        }, 1);
+      }
+    });
+  }
+  function applyUndo(self2) {
+    const { markdown, index } = history[0] ?? {};
+    if (!markdown) {
+      return;
+    }
+    for (const node of Object.values(self2.container.children)) {
+      node.remove();
+    }
+    self2.container.appendChild(toHTML(self2, markdown));
+    setTimeout(() => {
+      const editable = self2.container.querySelectorAll("[contenteditable]")[index];
+      if (editable) {
+        editable.focus();
+        setCaret(editable, false);
+      }
+    }, 0);
+    history.shift();
+    self2.container.dispatchEvent(
+      new InputEvent("input", {
+        inputType: "insertText",
+        bubbles: true,
+        data: ""
+      })
+    );
+  }
+  function copyEvent(self2, ev) {
+    const selected = self2.getSelectedLines();
+    if (selected.length > 0) {
+      ev.clipboardData?.setData("text/plain", toMarkdown(selected));
+      ev.preventDefault();
+    }
+  }
+  function cutEvent(self2, ev) {
+    const selected = self2.getSelectedLines();
+    if (selected.length > 0) {
+      ev.clipboardData?.setData("text/plain", toMarkdown(selected));
+      ev.preventDefault();
+      self2.removeLines(selected);
+      addUndoHistory(self2, selected[selected.length - 1]);
+    }
+  }
+  function pasteEvent(self2, ev) {
+    ev.preventDefault();
+    const selection = window.getSelection();
+    const range = selection?.getRangeAt(0);
+    const text = ev.clipboardData?.getData("text") || "";
+    if (checkModifs(text, self2.mods) !== "") {
+      const editable = ev.target;
+      const newHtml = toHTML(self2, text);
+      const linesInNew = newHtml.childElementCount - 1;
+      let line = self2.getLineFromEditable(editable);
+      const selected = self2.getSelectedLines();
+      if (selected.length > 0) {
+        line = selected[selected.length - 1];
+      }
+      if (line?.parentElement?.dataset.pocketEditor === void 0) {
+        return;
+      }
+      self2.container.insertBefore(newHtml, self2.getNextLine(line));
+      let lastline = line.nextSibling;
+      for (let ii = 0; ii < linesInNew; ii++) {
+        if (lastline) {
+          lastline = lastline.nextSibling;
+        }
+      }
+      if (lastline) {
+        setCaret(lastline);
+      }
+      if (line && line.textContent === "") {
+        const areSameMods = (mod2) => {
+          const currIsMod = line?.dataset[mod2] === mod2;
+          const nextIsMod = self2.getNextLine(line)?.dataset[mod2] === mod2;
+          return currIsMod === nextIsMod;
+        };
+        if (line || areSameMods("list") || areSameMods("todo") || areSameMods("todo-checked")) {
+          line.remove();
+        }
+      }
+      self2.container.dispatchEvent(
+        new InputEvent("input", {
+          inputType: "insertText",
+          bubbles: true,
+          data: ""
+        })
+      );
+      return;
+    }
+    if (selection?.rangeCount && range) {
+      const offset = selection?.anchorOffset ?? 0;
+      const value = selection.focusNode?.nodeValue ?? "";
+      if (value && selection.focusNode) {
+        selection.focusNode.nodeValue = value.slice(0, offset) + text + value.slice(offset);
+        selection.collapse(selection.focusNode, offset + text.length);
+      } else {
+        range.insertNode(document.createTextNode(text));
+        setCaret(range.endContainer);
+      }
+    }
+    self2.container.dispatchEvent(
+      new InputEvent("input", {
+        inputType: "insertText",
+        bubbles: true,
+        data: ""
+      })
+    );
+  }
+  function removeModifier(editable) {
+    const content = document.createElement("div");
+    const parent = editable.parentElement;
+    if (!parent) {
+      return;
+    }
+    delete parent.dataset.list;
+    delete parent.dataset.todo;
+    delete parent.dataset.h1;
+    delete parent.dataset.h2;
+    delete parent.dataset.h3;
+    delete parent.dataset.todoChecked;
+    content.textContent = parent.textContent;
+    content.setAttribute("contenteditable", "true");
+    for (const node of Object.values(parent.childNodes)) {
+      node.remove();
+    }
+    parent.appendChild(content);
+    content.focus();
+    return content;
+  }
+  function lineTransform(self2, editable, mod2, focus = true) {
+    if (!mod2) {
+      return;
+    }
+    const line = self2.getLineFromEditable(editable);
+    if (!line || line?.dataset[mod2]) {
+      return;
+    }
+    line.querySelector("span[data-list-marker]")?.remove();
+    line.querySelector("span[data-todo-marker]")?.remove();
+    delete line.dataset.h1;
+    delete line.dataset.h2;
+    delete line.dataset.h3;
+    delete line.dataset.list;
+    delete line.dataset.todo;
+    delete line.dataset.todoChecked;
+    switch (mod2) {
+      case "h1":
+      case "h2":
+      case "h3":
+        toHeading(mod2);
+        break;
+      case "list":
+        toList();
+        break;
+      case "todo":
+        toTodolist(false);
+        break;
+      case "todo-checked":
+        toTodolist(true);
+        break;
+      default:
+    }
+    function toHeading(tag) {
+      const heading = document.createElement(tag);
+      const mod22 = tag === "h1" ? "#" : tag === "h2" ? "##" : "###";
+      heading.textContent = editable.textContent?.replace(mod22, "").trimStart() || "";
+      heading.setAttribute("contenteditable", "true");
+      if (line) {
+        line.dataset[tag] = "";
+        editable.replaceWith(heading);
+      }
+      if (focus) {
+        setCaret(heading);
+      }
+    }
+    function toTodolist(checked) {
+      const input = document.createElement("input");
+      const span = document.createElement("span");
+      const p = document.createElement("p");
+      const line2 = self2.getLineFromEditable(editable);
+      let content = (editable.textContent ?? "").replace(self2.ZERO_WIDTH_WHITESPACE, "");
+      if (!line2 || line2.dataset.todo) {
+        return;
+      }
+      if (content.startsWith("[ ]") || content.startsWith("[x]")) {
+        content = content.slice(4, content.length);
+      }
+      input.type = "checkbox";
+      input.name = "checkbox";
+      input.setAttribute("aria-label", "todo list checkbox");
+      input.addEventListener("input", () => {
+        if (input.checked) {
+          line2.setAttribute("data-todo-checked", "");
+          input.setAttribute("checked", "");
+        } else {
+          line2.removeAttribute("data-todo-checked");
+          line2.setAttribute("data-todo", "");
+          input.removeAttribute("checked");
+        }
+      });
+      if (checked) {
+        input.setAttribute("checked", "");
+        line2.dataset.todoChecked = "";
+      }
+      line2.dataset.todo = "";
+      span.dataset.todoMarker = "";
+      p.textContent = content;
+      p.setAttribute("contenteditable", "true");
+      editable.replaceWith(p);
+      span.appendChild(input);
+      line2.prepend(span);
+      if (focus) {
+        setCaret(p);
+      }
+    }
+    function toList() {
+      const span = document.createElement("span");
+      const p = document.createElement("p");
+      let content = (editable.textContent ?? "").replace(self2.ZERO_WIDTH_WHITESPACE, "");
+      if (!line || line.dataset.list === "") {
+        return;
+      }
+      if (content.startsWith("-")) {
+        content = content?.replace("-", "").trimStart();
+      }
+      line.dataset.list = "";
+      span.dataset.content = "\u2022";
+      span.dataset.listMarker = "";
+      p.textContent = content;
+      p.setAttribute("contenteditable", "true");
+      editable.replaceWith(p);
+      line.prepend(span);
+      if (focus) {
+        setCaret(p);
+      }
+    }
+  }
+  function paragraphControl(self2, e) {
+    const container2 = self2.container;
+    const editable = e.target;
+    let range;
+    try {
+      const isContenteditable = editable?.hasAttribute("contenteditable");
+      const isInput = editable?.tagName === "INPUT";
+      range = window.getSelection()?.getRangeAt(0);
+      if (!(range && isContenteditable) || isInput) {
+        throw new Error("?");
+      }
+    } catch (_) {
+      return;
+    }
+    const line = self2.getLineFromEditable(editable);
+    const datasets = Object.keys(line?.dataset ?? {});
+    const insertParagraph = e?.inputType === "insertParagraph";
+    const insertText2 = e?.inputType === "insertText";
+    let modif;
+    if (e.type === "beforeinput" && insertParagraph && line) {
+      e.preventDefault();
+      addUndoHistory(self2, line);
+      const textContent = (editable.textContent ?? "").replace(self2.ZERO_WIDTH_WHITESPACE, "");
+      const cuttext = textContent.slice(0, range.startOffset);
+      const nexttext = textContent.slice(range.startOffset);
+      const isAtStart = range.startOffset === 0 || textContent === "" && range.startOffset === 1;
+      if (isAtStart && datasets.length > 0) {
+        removeModifier(editable);
+        return;
+      }
+      if (line.dataset.todo === "") {
+        modif = "todo";
+      }
+      if (line.dataset.list === "") {
+        modif = "list";
+      }
+      if (line.dataset.todoChecked === "") {
+        modif = "todo";
+      }
+      const nextline = self2.getNextLine(line);
+      const newline = self2.createLine({
+        text: nexttext,
+        modif
+      });
+      if (nextline) {
+        container2.insertBefore(newline, nextline);
+      } else {
+        container2?.appendChild(newline);
+      }
+      ;
+      newline.querySelector("[contenteditable]")?.focus();
+      editable.textContent = cuttext;
+      container2.dispatchEvent(
+        new InputEvent("input", {
+          inputType: "insertText",
+          bubbles: true,
+          data: ""
+        })
+      );
+      return;
+    }
+    if (e.type === "input" && insertText2) {
+      const zeroWidthWhitespace = "\u200B";
+      const content = (editable?.textContent ?? "").replace(zeroWidthWhitespace, "");
+      for (const [mod2, val] of Object.entries(self2.mods)) {
+        const softspace = String.fromCharCode(160);
+        const hardspace = String.fromCharCode(32);
+        if (content.startsWith(val + hardspace) || content.startsWith(val + softspace)) {
+          modif = mod2;
+          lineTransform(self2, editable, modif);
+        }
+      }
+    }
+  }
+  function detectLineJump(self2, ev) {
+    const notArrowKey = !ev.key.includes("Arrow");
+    const notSelection = !window.getSelection()?.anchorNode;
+    if (notArrowKey || notSelection) {
+      return;
+    }
+    const editable = ev.target;
+    const line = self2.getLineFromEditable(editable);
+    const range = window?.getSelection()?.getRangeAt(0);
+    const txtLen = range?.startContainer?.nodeValue?.length ?? 0;
+    if (!(range && line)) {
+      return;
+    }
+    const prevSibling = self2.getPrevLine(line);
+    const nextSibling = self2.getNextLine(line);
+    const isCaretAtZero = Math.min(range?.endOffset, range?.startOffset) === 0;
+    const isCaretAtEnd = Math.max(range?.endOffset, range?.startOffset) === txtLen;
+    const goingLeftToPrevious = ev.key === "ArrowLeft" && isCaretAtZero && prevSibling;
+    const goingRightToNext = ev.key === "ArrowRight" && isCaretAtEnd && nextSibling;
+    if (goingLeftToPrevious) {
+      return { line, dir: "up" };
+    }
+    if (goingRightToNext) {
+      return { line, dir: "down" };
+    }
+    let top = false;
+    let bottom = false;
+    const rr = range?.getBoundingClientRect();
+    const lr = line?.getBoundingClientRect();
+    const noRanges = !(lr && rr) || rr.y === 0;
+    if (noRanges) {
+      top = true;
+      bottom = true;
+    } else {
+      top = lr.top - rr.top + rr.height > 0;
+      bottom = rr.bottom + rr.height - lr.bottom > 0;
+    }
+    const goingUpToPrevious = ev.key === "ArrowUp" && prevSibling && top;
+    const goingDownToNext = ev.key === "ArrowDown" && nextSibling && bottom;
+    if (goingUpToPrevious) {
+      return { line, dir: "up" };
+    }
+    if (goingDownToNext) {
+      return { line, dir: "down" };
+    }
+  }
+  function lineSelection(self2) {
+    let lines = self2.lines;
+    let caretSelTimeout;
+    let lineInterval = [-1, -1];
+    let currentLine = -1;
+    let firstLine = -1;
+    function caretSelectionDebounce(callback) {
+      clearTimeout(caretSelTimeout);
+      caretSelTimeout = window.setTimeout(() => {
+        callback();
+      }, 200);
+    }
+    function createRange(selected) {
+      if (!selected) {
+        selected = self2.getSelectedLines();
+      }
+      if (selected.length === 0) {
+        return;
+      }
+      document.querySelector("#pocket-editor-mock-sel")?.remove();
+      const mockSelection = document.createElement("pre");
+      mockSelection.id = "pocket-editor-mock-sel";
+      mockSelection.textContent = "pe-mock-selection";
+      mockSelection.setAttribute("contenteditable", "true");
+      self2.container.appendChild(mockSelection);
+      const sel = window.getSelection();
+      const range = document.createRange();
+      const textlen = mockSelection.childNodes[0].nodeValue?.length || 0;
+      range.setStart(mockSelection.childNodes[0], 0);
+      range.setEnd(mockSelection.childNodes[0], textlen);
+      sel?.removeAllRanges();
+      sel?.addRange(range);
+    }
+    function getLineIndex(editable) {
+      const line = self2.getLineFromEditable(editable);
+      return line ? lines.indexOf(line) : -1;
+    }
+    function resetLineSelection() {
+      const line = lines[currentLine];
+      const editable = line?.querySelector("[contenteditable]");
+      if (editable) {
+        setCaret(line);
+      }
+      currentLine = -1;
+      firstLine = -1;
+      lineInterval = [-1, -1];
+      document.querySelector("#pocket-editor-mock-sel")?.remove();
+      self2.container.removeEventListener("mousemove", mouseMoveEvent);
+    }
+    function addToLineSelection(index) {
+      if (index > firstLine) {
+        lineInterval[1] = index;
+      }
+      if (index < firstLine) {
+        lineInterval[0] = index;
+      }
+      if (index === firstLine) {
+        lineInterval = [index, index];
+      }
+    }
+    function changeLineSelection(index) {
+      firstLine = index;
+      lineInterval = [index, index];
+    }
+    function applyLineSelection(interval) {
+      lines.forEach((line, i) => {
+        if (i >= interval[0] && i <= interval[1]) {
+          line.setAttribute("data-selected", "");
+        } else {
+          line.removeAttribute("data-selected");
+        }
+      });
+      caretSelectionDebounce(() => createRange());
+    }
+    function initLineSelection(index) {
+      currentLine = firstLine = index;
+      lineInterval = [index, index];
+    }
+    function keyboardEvent(e) {
+      lines = self2.lines;
+      const selected = self2.getSelectedLines();
+      const isClipboardKey = e.key.match(/([x|c|v])/g);
+      const isCtrlKey = e.key === "Control" || e.key === "Meta";
+      const noSelection = selected.length > 0;
+      const ctrl = e.ctrlKey || e.metaKey;
+      if (isCtrlKey || ctrl && isClipboardKey && noSelection) {
+        return;
+      }
+      if (ctrl && e.key === "a") {
+        window.getSelection()?.removeAllRanges();
+        currentLine = firstLine = 0;
+        lineInterval = [0, lines.length - 1];
+        applyLineSelection(lineInterval);
+        e.preventDefault();
+        return;
+      }
+      if (noSelection) {
+        window.getSelection()?.removeAllRanges();
+        if (e.key === "Escape" || e.key === "Tab") {
+          resetLineSelection();
+          applyLineSelection(lineInterval);
+          e.preventDefault();
+          return;
+        }
+        if (e.key.includes("Arrow")) {
+          if (e.key.includes("Down")) {
+            currentLine = Math.min(currentLine + 1, lines.length - 1);
+          }
+          if (e.key.includes("Up")) {
+            currentLine = Math.max(0, currentLine - 1);
+          }
+          if (e.shiftKey) {
+            addToLineSelection(currentLine);
+          }
+          if (!e.shiftKey) {
+            changeLineSelection(currentLine);
+          }
+          applyLineSelection(lineInterval);
+          e.preventDefault();
+          return;
+        }
+        if (!includesAny(e.code, "Shift", "Alt", "Control", "Caps")) {
+          resetLineSelection();
+          addUndoHistory(self2, selected[selected.length - -1]);
+          self2.removeLines(selected);
+          if (e.code === "Enter") {
+            e.preventDefault();
+          }
+        }
+      }
+      if (!e.shiftKey) {
+        return;
+      }
+      const { line } = detectLineJump(self2, e) ?? {};
+      if (line) {
+        const index = lines.indexOf(line);
+        initLineSelection(index);
+        applyLineSelection(lineInterval);
+        window.getSelection()?.removeAllRanges();
+      }
+    }
+    function mouseMoveEvent(e) {
+      const target = e.target;
+      const selected = self2.getSelectedLines();
+      if (selected.length > 0) {
+        window.getSelection()?.removeAllRanges();
+      }
+      const isCheckbox = target.getAttribute("aria-label") === "todo list checkbox";
+      const isListMarker = target.dataset.listMarker;
+      const isEditable = !!target.getAttribute("contenteditable");
+      if (isCheckbox || isListMarker || isEditable) {
+        currentLine = getLineIndex(target);
+        if (currentLine === firstLine && selected.length === 0) {
+          return;
+        }
+        addToLineSelection(currentLine);
+        applyLineSelection(lineInterval);
+      }
+    }
+    function mouseDownEvent(event) {
+      const target = event.target;
+      const rightclick = event.button === 2;
+      const leftclick = event.button === 0;
+      const hasSelection = self2.getSelectedLines().length > 0;
+      lines = self2.lines;
+      if (rightclick) {
+        event.preventDefault();
+      }
+      if (!leftclick) {
+        return;
+      }
+      if (hasSelection) {
+        resetLineSelection();
+        applyLineSelection(lineInterval);
+      }
+      if (target.getAttribute("contenteditable")) {
+        initLineSelection(getLineIndex(target));
+        self2.container.addEventListener("mousemove", mouseMoveEvent);
+      }
+    }
+    function mouseClickEvent(event) {
+      const path = event.composedPath();
+      const hasSelection = self2.getSelectedLines().length > 0;
+      const clicksOutsideContainer = !path.includes(self2.container);
+      if (clicksOutsideContainer && hasSelection) {
+        lines = self2.lines;
+        resetLineSelection();
+        applyLineSelection(lineInterval);
+      }
+      self2.container.removeEventListener("mousemove", mouseMoveEvent);
+    }
+    window.addEventListener("touchend", mouseClickEvent);
+    window.addEventListener("click", mouseClickEvent);
+    self2.container.addEventListener("keydown", keyboardEvent);
+    self2.container.addEventListener("mousedown", mouseDownEvent);
+  }
+  function includesAny(str, ...matches) {
+    for (const match of matches) {
+      if (str.includes(match)) {
+        return true;
+      }
+    }
+    return false;
+  }
+  function removeLineNoText(editable, prevline) {
+    setCaret(prevline);
+    editable.parentElement?.remove();
+  }
+  function removeLineWithText(editable, prevLine) {
+    const node = lastTextNode(prevLine);
+    const isTextNode = node.nodeType === 3;
+    const charAmount = node.nodeValue?.length || 0;
+    const targetText = editable?.textContent || "";
+    node[isTextNode ? "nodeValue" : "textContent"] += targetText;
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.setStart(node, isTextNode ? charAmount : 0);
+    range.setEnd(node, isTextNode ? charAmount : 0);
+    selection?.removeAllRanges();
+    selection?.addRange(range);
+    const parent = editable.parentElement;
+    parent.remove();
+  }
+  function lineDeletion(self2) {
+    const isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+    const userAgent2 = navigator.userAgent.toLowerCase();
+    const sel = window.getSelection();
+    function applyLineRemove(ev) {
+      const editable = ev.target;
+      const line = self2.getLineFromEditable(editable);
+      const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+      const isEditable = !!editable.getAttribute("contenteditable");
+      const isAtStart = sel?.getRangeAt(0)?.endOffset === 0;
+      const isDelEvent = ev.inputType === "deleteContentBackward";
+      const isBeforeinput = ev.type === "beforeinput";
+      if (isBeforeinput && !isDelEvent || !isAtStart || !isEditable) {
+        return;
+      }
+      ev.preventDefault();
+      if (line) {
+        addUndoHistory(self2, line);
+      }
+      if (Object.keys(line?.dataset ?? {}).length > 0) {
+        const newEditable = removeModifier(editable);
+        if (isTouch && newEditable && newEditable.textContent === "") {
+          newEditable.textContent = self2.ZERO_WIDTH_WHITESPACE;
+          setCaret(newEditable);
+        }
+        return;
+      }
+      const prevline = self2.getPrevLine(line);
+      if (prevline) {
+        if (editable.textContent === "") {
+          removeLineNoText(editable, prevline);
+        } else {
+          removeLineWithText(editable, prevline);
+        }
+        self2.container.dispatchEvent(
+          new InputEvent("beforeinput", {
+            inputType: "deleteContentBackward",
+            bubbles: true
+          })
+        );
+      }
+    }
+    self2.container.addEventListener("beforeinput", applyLineRemove);
+    if (userAgent2.includes("safari") && !(userAgent2.includes("chrome") && userAgent2.includes("chromium"))) {
+      self2.container.addEventListener("keydown", (e) => {
+        try {
+          const range = sel?.getRangeAt(0);
+          const isBackspacing = e.key === "Backspace";
+          const isAtContainerStart = range?.startOffset === 0;
+          if (isBackspacing && isAtContainerStart) {
+            applyLineRemove(e);
+          }
+        } catch (_) {
+        }
+      });
+    }
+    if (isTouchDevice) {
+      let triggerDeleteLine = false;
+      self2.container.addEventListener("beforeinput", (ev) => {
+        const editable = ev.target;
+        const deleteContent = ev.inputType === "deleteContentBackward";
+        const whitespaceOnly = editable.textContent === self2.ZERO_WIDTH_WHITESPACE;
+        if (deleteContent && whitespaceOnly) {
+          triggerDeleteLine = true;
+        }
+      });
+      self2.container.addEventListener("keyup", (ev) => {
+        const editable = ev.target;
+        if (triggerDeleteLine) {
+          triggerDeleteLine = false;
+          applyLineRemove(ev);
+          return;
+        }
+        if (editable.textContent === "") {
+          editable.textContent = self2.ZERO_WIDTH_WHITESPACE;
+          setCaret(editable);
+        }
+      });
+    }
+  }
+  function caretControl(self2) {
+    let averageCharWidth = 0;
+    function initAverageCharWidth() {
+      const p = document.createElement("p");
+      const span = document.createElement("span");
+      p.id = "pocket-editor-mock-p";
+      span.textContent = "abcdefghijklmnopqrstuvwxyz0123456789";
+      p?.appendChild(span);
+      self2.container.querySelector(".line [contenteditable]")?.appendChild(p);
+      averageCharWidth = span.offsetWidth / 36 / 2;
+      p.remove();
+    }
+    function rangePosInCharLen(line, str) {
+      const sel = window.getSelection();
+      let charCount = -1;
+      const x = getHorizontalPosition(sel, line);
+      const offset = self2.caret_x ?? x.offset;
+      const editable = line?.querySelector("[contenteditable]");
+      const textnode = lastTextNode(editable);
+      const range = document.createRange();
+      range.setStart(textnode, 0);
+      range.setEnd(textnode, 0);
+      let rangeX = 0;
+      for (let i = 0; i < str.length - 1; i++) {
+        try {
+          range.setStart(textnode, i);
+          range.setEnd(textnode, i);
+        } catch (_) {
+          break;
+        }
+        rangeX = range.getBoundingClientRect().x - x.editable;
+        if (rangeX + averageCharWidth >= offset) {
+          charCount = i;
+          break;
+        }
+      }
+      return charCount;
+    }
+    function getParagraphAsArray(line) {
+      const editable = line?.querySelector("[contenteditable]");
+      if (!editable) {
+        console.warn("Couldn't get string[], no contenteditable found");
+        return [];
+      }
+      let pos = 0;
+      let rangeY = 0;
+      let rangeYlast = 0;
+      const lines = [""];
+      const words = (editable.textContent ?? "").split(" ");
+      const textnode = lastTextNode(editable);
+      const range = document.createRange();
+      range.setStart(textnode, 0);
+      range.setEnd(textnode, 0);
+      const isWebkit = navigator.userAgent.includes("AppleWebKit");
+      rangeYlast = rangeY = range.getBoundingClientRect().y;
+      for (let word of words) {
+        word = `${word} `;
+        pos += word.length;
+        try {
+          range.setStart(textnode, pos);
+          range.setEnd(textnode, pos);
+          rangeY = range.getBoundingClientRect().y;
+        } catch (_) {
+        }
+        if (isWebkit) {
+          lines[0] += word;
+        }
+        if (rangeY > rangeYlast) {
+          if (isWebkit) {
+            lines[0] = lines[0].trimEnd();
+          }
+          lines.unshift("");
+          rangeYlast = rangeY;
+        }
+        if (isWebkit === false) {
+          lines[0] += word;
+        }
+      }
+      lines.reverse();
+      return lines;
+    }
+    self2.container.addEventListener("pointerdown", () => {
+      self2.caret_x = void 0;
+    });
+    self2.container.addEventListener("keydown", (ev) => {
+      if (!ev.key.includes("Arrow")) {
+        return;
+      }
+      const goesRight = ev.key === "ArrowRight";
+      const goesLeft = ev.key === "ArrowLeft";
+      const { line, dir } = detectLineJump(self2, ev) ?? {};
+      const sel = window.getSelection();
+      const range = document.createRange();
+      let node = document.createTextNode("");
+      let offset = 0;
+      if (goesLeft || goesRight) {
+        self2.caret_x = void 0;
+      } else if (self2.caret_x === void 0) {
+        self2.caret_x = getHorizontalPosition(sel, line).offset;
+      }
+      if (!line) {
+        return;
+      }
+      if (averageCharWidth === 0) {
+        initAverageCharWidth();
+      }
+      if (dir === "down") {
+        const nextline = self2.getNextLine(line) ?? line;
+        node = lastTextNode(nextline);
+        const textlen = node.nodeValue?.length || 0;
+        if (!goesRight) {
+          const rows = getParagraphAsArray(nextline);
+          offset = rangePosInCharLen(nextline, rows[0]) ?? -1;
+          if (offset < 0) {
+            offset = textlen;
+          }
+        }
+      }
+      if (dir === "up") {
+        const prevline = self2.getPrevLine(line) ?? line;
+        node = lastTextNode(prevline);
+        const textlen = node.nodeValue?.length || 0;
+        offset = textlen;
+        if (!goesLeft) {
+          const rows = getParagraphAsArray(prevline);
+          const lastrow = rows[rows.length - 1].trimEnd();
+          const lastrowOffset = rangePosInCharLen(prevline, lastrow) ?? textlen;
+          offset = textlen - (lastrow.length - lastrowOffset);
+          if (lastrowOffset < 0) {
+            offset = textlen;
+          }
+        }
+      }
+      try {
+        range.setStart(node, offset);
+        range.setEnd(node, offset);
+        sel?.removeAllRanges();
+        sel?.addRange(range);
+        sel?.collapseToEnd();
+        ev.preventDefault();
+      } catch (_) {
+        console.warn("Cannot set caret");
+      }
+    });
+  }
+  function getHorizontalPosition(selection, line) {
+    const selectionNotValid = !selection?.anchorNode;
+    if (!line || selectionNotValid) {
+      return { editable: 0, range: 0, offset: 0 };
+    }
+    const editable = line.querySelector("[contenteditable]");
+    const editableX = editable?.getBoundingClientRect().x ?? 0;
+    const rangeX = selection?.getRangeAt(0)?.cloneRange()?.getBoundingClientRect().x ?? 0;
+    return {
+      editable: editableX,
+      range: rangeX,
+      offset: rangeX - editableX
+    };
+  }
+  function keybindings(self2, ev) {
+    const editable = ev.target;
+    const ctrl = ev.ctrlKey || ev.metaKey;
+    const isValid = ctrl && ev.shiftKey && ev.code.includes("Digit");
+    const line = self2.getLineFromEditable(editable);
+    if (isValid && editable) {
+      const index = Number.parseInt(ev.code.replace("Digit", "")) - 1;
+      const mods = Object.keys(self2.mods);
+      const targetMod = mods[index];
+      const currentModIsTarget = line?.hasAttribute(`data-${targetMod}`);
+      if (currentModIsTarget || index === 5) {
+        ev.preventDefault();
+        removeModifier(editable);
+        return;
+      }
+      if (targetMod in self2.mods && targetMod !== "todo-checked") {
+        ev.preventDefault();
+        lineTransform(self2, editable, targetMod);
+      }
+    }
+  }
+  var PocketEditor = class {
+    container;
+    lines;
+    wrapper;
+    caret_x;
+    ZERO_WIDTH_WHITESPACE = "\u200B";
+    mods = {
+      h1: "#",
+      h2: "##",
+      h3: "###",
+      list: "-",
+      todo: "[ ]",
+      "todo-checked": "[x]"
+    };
+    /**
+     * This creates an editor.
+     * You might also need to add the basic styling with "style.css"
+     *
+     * @param {string | HTMLElement} parent The wrapper in which to put the editor. Either an element or a CSS selector
+     * @param {Object} [options] Pocket editor options
+     * @param {string} [options.text] Default text to add when initializing pocket editor
+     * @param {string} [options.id] Specify an id for this instance of the editor
+     * @param {true | number} [options.defer] Defer load with a timeout
+     *
+     * @example
+     * import pocketEditor from 'pocket-editor'
+     * import 'pocket-editor/style.css'
+     *
+     * const editor = new pocketEditor("some-selector", { text: "Hello world" })
+     */
+    constructor(parent, options) {
+      const div = document.createElement("div");
+      const { text, defer, id } = options ?? {};
+      this.wrapper = typeof parent === "string" ? document.querySelector(parent) : parent;
+      this.container = div;
+      this.lines = [];
+      if (this.wrapper === null) {
+        throw new Error(`Pocket editor: selector "${parent}" was not found`);
+      }
+      if (id) {
+        div.id = id;
+      }
+      div.dataset.pocketEditor = "";
+      if (typeof defer === "number") {
+        setTimeout(() => this.init(text), defer);
+      } else if (defer === true) {
+        setTimeout(() => this.init(text));
+      } else {
+        this.init(text);
+      }
+    }
+    init(text) {
+      if (text) {
+        this.container.appendChild(toHTML(this, text));
+      } else {
+        this.container.appendChild(this.createLine({ text: "" }));
+      }
+      if (this.wrapper) {
+        this.wrapper.appendChild(this.container);
+      }
+      this.container.addEventListener("beforeinput", (ev) => paragraphControl(this, ev));
+      this.container.addEventListener("input", (ev) => paragraphControl(this, ev));
+      this.container.addEventListener("keydown", (ev) => keybindings(this, ev));
+      this.container.addEventListener("paste", (ev) => pasteEvent(this, ev));
+      this.container.addEventListener("copy", (ev) => copyEvent(this, ev));
+      this.container.addEventListener("cut", (ev) => cutEvent(this, ev));
+      lineSelection(this);
+      caretControl(this);
+      lineDeletion(this);
+      initUndo(this);
+      const lineObserverCallback = () => {
+        this.lines = Object.values(this.container.children);
+      };
+      const observer = new MutationObserver(lineObserverCallback);
+      observer.observe(this.container, { childList: true });
+      this.lines = Object.values(this.container.children);
+    }
+    /**
+     * Gets the editor content as Markdown
+     * @returns A valid markdown string
+     */
+    get value() {
+      return toMarkdown(this.lines);
+    }
+    /**
+     * This replaces the content of the editor with the specified text.
+     * All nodes are removed before adding the new generated HTML.
+     * @param text - Either plain text or Markdown
+     *
+     * @example
+     * // Checks the checkbox every pair seconds
+     * const editor = new pocketEditor("#some-id", { text: "Please wait" })
+     *
+     * setInterval(() => {
+     * 	 const second = new Date().getSeconds()
+     * 	 const checkbox = second % 2 ? "[x]" : "[ ]"
+     * 	 const text = `${checkbox} Second is pair`
+     * 	 editor.value = text
+     * }, 1000)
+     */
+    set value(text) {
+      for (const node of Object.values(this.container.children)) {
+        node.remove();
+      }
+      this.container.appendChild(toHTML(this, text));
+    }
+    /**
+    	 * Listens to beforeinput, input, cut, and paste events inside the editor.
+    	 * Automatically passes the editor content as markdown as an argument.
+    	 *
+    	 * @param listener Get the content as a markdown string
+    	 * @returns An event cleanup function
+    	 *
+    	 * @example
+    	 * // One-liner logger
+    	 * pocketEditor("#some-id", { text: "Hello" }).oninput = console.log
+    	 *
+    	 * @example
+    	 * // Saves editor content to localStorage
+    	 * const editor = new pocketEditor("#some-id", { text: "Hello" })
+    
+    	 * editor.oninput = content => {
+    	 *   localStorage.saved = content
+    	 * })
+     	 */
+    oninput(listener) {
+      const cb = (event) => {
+        const isBeforeInput = event.type === "beforeinput";
+        if (isBeforeInput) {
+          const inputEvent = event;
+          const inputType = inputEvent.inputType;
+          const acceptedTypes = inputType === "deleteContentBackward" || inputType === "insertParagraph";
+          if (acceptedTypes) {
+            queueMicrotask(() => {
+              listener(this.value);
+              console.log(this.value);
+            });
+          }
+          return;
+        }
+        listener(this.value);
+      };
+      this.container.addEventListener("cut", cb);
+      this.container.addEventListener("paste", cb);
+      this.container.addEventListener("input", cb);
+      this.container.addEventListener("beforeinput", cb);
+      return () => {
+        this.container.removeEventListener("cut", cb);
+        this.container.removeEventListener("paste", cb);
+        this.container.removeEventListener("input", cb);
+        this.container.removeEventListener("beforeinput", cb);
+      };
+    }
+    /**
+     * An addEventListener wrapper for esthetic purposes.
+     *
+     * @param type Listens to everything on "input"
+     * @param listener Get the content as a markdown string
+     * @returns An event cleanup function
+     */
+    addEventListener(_, listener) {
+      return this.oninput(listener);
+    }
+    getSelectedLines() {
+      return this.lines.filter((line) => line.dataset.selected !== void 0) ?? [];
+    }
+    getPrevLine(line) {
+      return this.lines[this.lines.indexOf(line) - 1];
+    }
+    getNextLine(line) {
+      return this.lines[this.lines.indexOf(line) + 1];
+    }
+    getLineFromEditable(elem) {
+      while (elem?.parentElement) {
+        const parent = elem.parentElement;
+        const isDiv = parent.tagName === "DIV";
+        if (isDiv) {
+          return parent;
+        }
+        elem = parent;
+      }
+      return null;
+    }
+    removeLines(lines) {
+      const emptyLine = this.createLine();
+      const prevline = this.getPrevLine(lines[0]);
+      for (const line of lines) {
+        line.remove();
+      }
+      if (prevline) {
+        this.insertAfter(emptyLine, prevline);
+      } else {
+        this.container.prepend(emptyLine);
+      }
+      setCaret(emptyLine);
+      this.container.dispatchEvent(
+        new InputEvent("input", {
+          inputType: "deleteContent",
+          bubbles: true,
+          data: ""
+        })
+      );
+    }
+    createLine(props) {
+      const notesline = document.createElement("div");
+      const editable = document.createElement("p");
+      const mod2 = props?.modif ?? "";
+      const mods = this.mods;
+      editable.setAttribute("contenteditable", "true");
+      notesline.appendChild(editable);
+      if (typeof props?.text === "string") {
+        editable.textContent = props.text;
+      }
+      if (mod2 in mods) {
+        lineTransform(this, editable, mod2, false);
+      }
+      return notesline;
+    }
+    insertAfter(newNode, existingNode) {
+      existingNode?.parentNode?.insertBefore(newNode, existingNode.nextSibling);
+    }
+  };
+  var index_default = PocketEditor;
+  globalThis.PocketEditor = PocketEditor;
+
+  // src/scripts/features/notes.ts
+  var container = document.getElementById("notes_container");
+  function notes(init2, event) {
+    if (event) {
+      updateNotes(event);
+      return;
+    }
+    if (init2) {
+      init2.on ? initNotes(init2) : onSettingsLoad(() => initNotes(init2));
+    }
+  }
+  async function updateNotes(event) {
+    const notes2 = (await storage.sync.get("notes"))?.notes;
+    if (!notes2) {
+      return;
+    }
+    if (event?.text !== void 0) {
+      notes2.text = event.text;
+    }
+    if (event?.align !== void 0) {
+      notes2.align = event.align;
+      handleAlign(notes2.align);
+    }
+    if (event?.width !== void 0) {
+      notes2.width = Number.parseInt(event.width);
+      handleWidth(notes2.width);
+    }
+    if (event?.background) {
+      notes2.background = hexColorFromSplitRange("notes-background-range");
+      handleBackground(notes2.background);
+    }
+    eventDebounce({ notes: notes2 });
+  }
+  function initNotes(init2) {
+    document.getElementById("pocket-editor")?.remove();
+    handleAlign(init2.align);
+    handleWidth(init2.width);
+    handleBackground(init2.background);
+    handleToggle(init2.on);
+    init2.text = init2.text ?? translateNotesText();
+    new index_default("#notes_container", { text: init2.text, id: "pocket-editor" }).oninput((content) => {
+      updateNotes({ text: content });
+    });
+  }
+  function handleToggle(state) {
+    container?.classList.toggle("hidden", !state);
+  }
+  function handleAlign(value) {
+    container?.classList.toggle("center-align", value === "center");
+    container?.classList.toggle("right-align", value === "right");
+  }
+  function handleWidth(value) {
+    if (value) {
+      document.documentElement.style.setProperty("--notes-width", `${value.toString()}em`);
+    }
+  }
+  function handleBackground(hex = "#fff2") {
+    if (container) {
+      container?.classList.toggle("opaque", hex.includes("#fff") && opacityFromHex(hex) > 7);
+      document.documentElement.style.setProperty("--notes-background", hex);
+    }
+  }
+  function translateNotesText() {
+    let lang = getLang();
+    if (!(lang && lang in langList)) {
+      lang = "en";
+    }
+    const line1 = tradThis("Edit this note");
+    const line2 = tradThis("With markdown titles, lists, and checkboxes");
+    const line3 = tradThis("Learn more on <url>");
+    return `## ${line1}!
+
+[ ] ${line2}
+
+[ ] ${line3.replace("<url>", "https://bonjourr.fr/docs/overview#notes")}`;
+  }
+
+  // src/scripts/features/pomodoro.ts
+  var currentPomodoroData;
+  var pomodoroContainer = document.getElementById("pomodoro_container");
+  var pomodoroStart = document.getElementById("pmdr_start");
+  var pomodoroPause = document.getElementById("pmdr_pause");
+  var pomodoroReset = document.getElementById("pmdr_reset");
+  var timerDom = document.getElementById("pmdr_timer");
+  var radioButtons = document.querySelectorAll('#pmdr_modes input[type="radio"]');
+  var focusButton = document.getElementById("pmdr-focus");
+  var broadcast = new BroadcastChannel("bonjourr_pomodoro");
+  var countdown;
+  var timeModeTimeout;
+  var tabTitleTimeout;
+  var timeBeforeReset = 1e4;
+  var alarmAudio = new Audio();
+  var setModeButton = (value = "") => {
+    return document.getElementById(`pmdr-${value}`).checked = true;
+  };
+  var getTimeForMode = (mode) => {
+    return currentPomodoroData.timeFor[mode];
+  };
+  function pomodoro(init2, update) {
+    if (update) {
+      updatePomodoro(update);
+      return;
+    }
+    if (init2?.on) {
+      initPomodoro(init2);
+      return;
+    }
+    if (init2) {
+      onSettingsLoad(() => {
+        initPomodoro(init2);
+      });
+    }
+  }
+  function initPomodoro(init2) {
+    currentPomodoroData = init2;
+    togglePomodoroFocus(init2.focus && init2.on);
+    setModeButton(init2.mode);
+    handleToggle2(init2.on);
+    initTimer(init2);
+    displayInterface("pomodoro");
+    listenToBroadcast();
+    handleUserInput2();
+    setPomodoroInfo(init2.history);
+  }
+  function handleUserInput2() {
+    radioButtons.forEach((btn) => {
+      btn.addEventListener("change", (e) => {
+        const newMode = e.target.value;
+        switchMode(newMode, true);
+        broadcast.postMessage({
+          type: "switch-mode",
+          mode: newMode
+        });
+      });
+    });
+    pomodoroStart?.addEventListener("click", () => {
+      if (currentPomodoroData.mode) {
+        storage.sync.get().then((sync) => {
+          startTimer(sync.pomodoro, true);
+        });
+        broadcast.postMessage({
+          type: "start-pomodoro",
+          time: getTimeForMode(currentPomodoroData.mode)
+        });
+      }
+    });
+    pomodoroPause?.addEventListener("click", () => {
+      pauseTimer();
+      broadcast.postMessage({
+        type: "pause-pomodoro"
+      });
+    });
+    pomodoroReset?.addEventListener("pointerdown", (e) => {
+      resetTimer();
+      broadcast.postMessage({
+        type: "reset-pomodoro"
+      });
+      turnRefreshButton(e, true);
+    });
+    focusButton?.addEventListener("change", (e) => {
+      const focusIsChecked = e.target.checked;
+      togglePomodoroFocus(focusIsChecked);
+      updatePomodoro({ focus: focusIsChecked });
+      broadcast.postMessage({
+        type: "toggle-focus",
+        on: focusIsChecked
+      });
+    });
+    document.querySelectorAll(".pomodoro_mode, #focus-toggle").forEach((el) => {
+      el.addEventListener("keydown", (e) => {
+        if (e.code === "Space" || e.code === "Enter") {
+          const input = el.querySelector('input[type="radio"], input[type="checkbox"]');
+          if (!input) return;
+          input.checked = !input.checked;
+          input.dispatchEvent(new Event("change", { bubbles: true }));
+          e.preventDefault();
+        }
+      });
+    });
+  }
+  function listenToBroadcast() {
+    broadcast.addEventListener("message", ({ data = {} }) => {
+      if (data.type === "start-pomodoro") {
+        storage.sync.get().then((sync) => {
+          startTimer(sync.pomodoro, true, data.time);
+        });
+      }
+      if (data.type === "switch-mode") {
+        setModeButton(data.mode);
+        switchMode(data.mode);
+      }
+      if (data.type === "pause-pomodoro") {
+        pauseTimer();
+      }
+      if (data.type === "reset-pomodoro") {
+        resetTimer();
+      }
+      if (data.type === "toggle-focus") {
+        togglePomodoroFocus(data.on);
+      }
+    });
+  }
+  function switchMode(mode, animate, init2) {
+    resetTimeouts();
+    setModeGlider(mode, animate);
+    stopTimer();
+    insertTime(getTimeForMode(mode), false);
+    if (!init2) {
+      updatePomodoro({ mode, end: 0, pause: 0 });
+    }
+  }
+  function resetTimeouts() {
+    clearTimeout(tabTitleTimeout);
+    clearTimeout(timeModeTimeout);
+  }
+  function setModeGlider(mode, animate) {
+    const pomodoroModes = document.querySelector("#pmdr_modes");
+    const allModes = pomodoroModes?.querySelectorAll(".pomodoro_mode");
+    const activeMode = pomodoroModes?.querySelector(".pomodoro_mode.active");
+    const nextMode = pomodoroModes?.querySelector(`#pmdr-${mode}`)?.parentElement;
+    const glider = pomodoroModes?.querySelector("span.glider");
+    allModes?.forEach((div) => {
+      div.classList.remove("active");
+    });
+    if (!animate) {
+      nextMode?.classList.add("active");
+      return;
+    }
+    if (nextMode && glider) {
+      const fromLeft = activeMode?.offsetLeft ?? 0;
+      const fromWidth = activeMode?.offsetWidth ?? 100;
+      const toLeft = nextMode.offsetLeft;
+      const toWidth = nextMode.offsetWidth;
+      glider.style.opacity = "1";
+      glider.style.left = `${fromLeft}px`;
+      glider.style.width = `${fromWidth}px`;
+      setTimeout(() => {
+        glider.style.left = `${toLeft}px`;
+        glider.style.width = `${toWidth}px`;
+        glider.classList.add("gliding");
+      }, 16);
+      setTimeout(() => {
+        glider.removeAttribute("style");
+        glider.classList.remove("gliding");
+        nextMode.classList.add("active");
+      }, 200);
+    }
+  }
+  function initTimer(pomodoro2) {
+    const isTimerRunning = pomodoro2.end && Date.now() < pomodoro2.end;
+    const isTimerDefaultStopped = !pomodoro2.end || Date.now() > pomodoro2.end;
+    if (isTimerRunning) {
+      startTimer(pomodoro2);
+      return;
+    }
+    if (isTimerDefaultStopped && pomodoro2.mode) {
+      switchMode(pomodoro2.mode, false, true);
+    }
+  }
+  function startTimer(pomodoro2, fromButton, time) {
+    fromButton ??= false;
+    stopTimer();
+    resetTimeouts();
+    const mode = pomodoro2.mode ?? "pomodoro";
+    const defaultTime = time ?? getTimeForMode(mode);
+    const wasPaused = pomodoro2.pause !== 0;
+    const now = Date.now();
+    let remaining = 0;
+    if (wasPaused) {
+      remaining = pomodoro2.end - pomodoro2.pause;
+    }
+    if (fromButton) {
+      if (wasPaused) {
+        const newEnd = now + remaining;
+        startCountdown(newEnd);
+        updatePomodoro({
+          end: newEnd,
+          pause: 0
+        });
+      } else {
+        const end = now + defaultTime * 1e3;
+        updatePomodoro({
+          end,
+          pause: 0
+        });
+        startCountdown(end);
+      }
+    } else {
+      setModeGlider(pomodoro2.mode);
+      if (wasPaused) {
+        insertTime(calculateSecondsLeft(now + remaining), false);
+      } else {
+        startCountdown(pomodoro2.end);
+      }
+    }
+  }
+  function startCountdown(endtime) {
+    insertTime(calculateSecondsLeft(endtime));
+    countdown = setInterval(() => {
+      insertTime(calculateSecondsLeft(endtime));
+    }, 100);
+    toggleStartPause(true);
+  }
+  function pauseTimer() {
+    stopTimer();
+    updatePomodoro({
+      pause: Date.now()
+    });
+  }
+  function toggleStartPause(started) {
+    if (!pomodoroContainer) return;
+    pomodoroContainer.classList.toggle("started", started);
+  }
+  function stopTimer() {
+    clearInterval(countdown);
+    toggleStartPause(false);
+  }
+  function resetTimer() {
+    switchMode(currentPomodoroData.mode);
+  }
+  function calculateSecondsLeft(end) {
+    const secondsLeft = Math.round((end - Date.now()) / 1e3);
+    if (secondsLeft <= 0) {
+      stopTimer();
+      ringTheAlarm();
+      timeModeTimeout = setTimeout(() => {
+        switchMode(currentPomodoroData.mode);
+      }, timeBeforeReset);
+      return 0;
+    }
+    return secondsLeft;
+  }
+  function insertTime(seconds, timerIsStarted = true) {
+    if (!timerDom) {
+      return;
+    }
+    const minutes = Math.floor(seconds / 60);
+    const secondsRemaining = seconds % 60;
+    const displayTime = `${minutes}:${secondsRemaining < 10 ? "0" : ""}${secondsRemaining}`;
+    if (timerDom.textContent !== displayTime) {
+      timerDom.textContent = displayTime;
+    }
+    handleTabTitle(displayTime, timerIsStarted);
+  }
+  function handleTabTitle(displayTime, timerIsStarted) {
+    const originalTitle = document.title;
+    const match = originalTitle.match(/\| (.*)/);
+    const afterPipe = match?.[1] ?? originalTitle;
+    let newTitle;
+    if (displayTime !== "0:00") {
+      newTitle = timerIsStarted ? `${displayTime} | ${afterPipe}` : afterPipe;
+    } else {
+      const timesUpString = tradThis("Time's up!");
+      newTitle = `${timesUpString} | ${afterPipe}`;
+      tabTitleTimeout = setTimeout(() => {
+        tabTitle(afterPipe);
+      }, timeBeforeReset);
+    }
+    tabTitle(newTitle);
+  }
+  function handleToggle2(state) {
+    pomodoroContainer?.classList.toggle("hidden", !state);
+  }
+  function togglePomodoroFocus(focus) {
+    const enablingFocus = focus && !currentPomodoroData.focus;
+    const disablingFocus = !focus && currentPomodoroData.focus;
+    const switching = disablingFocus || enablingFocus;
+    focusButton.checked = focus;
+    currentPomodoroData.focus = focus;
+    if (!switching) {
+      pomodoroContainer.classList.toggle("onFocus", focus);
+      pomodoroContainer.classList.toggle("outOfFocus", !focus);
+    }
+    if (switching && document.visibilityState === "visible") {
+      const originalRect = pomodoroContainer.getBoundingClientRect();
+      const clone = pomodoroContainer.cloneNode(true);
+      clone.style.position = "absolute";
+      clone.style.top = originalRect.top + "px";
+      clone.style.left = originalRect.left + "px";
+      clone.style.fontSize = document.documentElement.style.getPropertyValue("--font-size");
+      clone.style.fontFamily = document.documentElement.style.getPropertyValue("--font-family");
+      clone.classList.add("clone");
+      document.body.appendChild(clone);
+      clone.classList.remove("onFocus", "outOfFocus");
+      clone.classList.toggle("onFocus", !enablingFocus);
+      clone.classList.toggle("outOfFocus", enablingFocus);
+      pomodoroContainer.style.visibility = "hidden";
+      document.body.classList.toggle("pomodoro-focus", enablingFocus);
+      pomodoroContainer.classList.toggle("onFocus", focus);
+      pomodoroContainer.classList.toggle("outOfFocus", !focus);
+      const targetRect = pomodoroContainer.getBoundingClientRect();
+      const deltaX = targetRect.left - originalRect.left;
+      const deltaY = targetRect.top - originalRect.top;
+      requestAnimationFrame(() => {
+        clone.classList.remove("onFocus", "outOfFocus");
+        clone.classList.add(enablingFocus ? "onFocus" : "outOfFocus");
+        clone.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+      });
+      clone.addEventListener("transitionend", (e) => {
+        if (e.propertyName !== "transform") return;
+        pomodoroContainer.style.visibility = "visible";
+        clone.remove();
+      });
+    } else {
+      document.body.classList.toggle("pomodoro-focus", focus);
+    }
+  }
+  function ringTheAlarm() {
+    const lastTab = localStorage.getItem("lastActiveTab");
+    const willRingAndSave = lastTab === TAB_ID;
+    if (willRingAndSave) {
+      if (currentPomodoroData.sound) {
+        playSound();
+      }
+      if (currentPomodoroData.mode === "pomodoro") {
+        updatePomodoro({
+          history: {
+            endedAt: Date.now().toString()
+          }
+        });
+      }
+    } else {
+      console.info("Alarm is ringing, but this isn't the active tab.", {
+        lastTab,
+        TAB_ID
+      });
+    }
+  }
+  function playSound() {
+    const filename = currentPomodoroData.alarm || "marimba";
+    const volume = currentPomodoroData.volume ?? 0.7;
+    alarmAudio.src = `src/assets/sounds/${filename}.mp3`;
+    alarmAudio.volume = volume;
+    alarmAudio.play();
+  }
+  function setPomodoroInfo(history2) {
+    const now = /* @__PURE__ */ new Date();
+    let pomsToday = 0;
+    let pomsWeek = 0;
+    let pomsMonth = 0;
+    const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const startOfWeek = new Date(now);
+    const day = (now.getDay() + 6) % 7;
+    startOfWeek.setDate(now.getDate() - day);
+    startOfWeek.setHours(0, 0, 0, 0);
+    const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+    for (const entry of history2) {
+      const endedAt = new Date(Number(entry.endedAt));
+      if (endedAt >= startOfToday) pomsToday++;
+      if (endedAt >= startOfWeek) pomsWeek++;
+      if (endedAt >= startOfMonth) pomsMonth++;
+    }
+    ;
+    document.getElementById("poms-today").textContent = pomsToday.toString();
+    document.getElementById("poms-week").textContent = pomsWeek.toString();
+    document.getElementById("poms-month").textContent = pomsMonth.toString();
+  }
+  async function updatePomodoro(update) {
+    const data = await storage.sync.get(["pomodoro"]);
+    if (update.listen) {
+      playSound();
+      return;
+    }
+    if (update.on !== void 0) {
+      data.pomodoro.on = update.on;
+    }
+    if (update.sound !== void 0) {
+      data.pomodoro.sound = update.sound;
+    }
+    if (update.alarm) {
+      data.pomodoro.alarm = update.alarm;
+    }
+    if (update.volume) {
+      data.pomodoro.volume = update.volume;
+    }
+    if (update.end !== void 0) {
+      data.pomodoro.end = update.end;
+    }
+    if (update.mode) {
+      data.pomodoro.mode = update.mode;
+    }
+    if (update.pause !== void 0) {
+      data.pomodoro.pause = update.pause;
+    }
+    if (update.focus !== void 0) {
+      data.pomodoro.focus = update.focus;
+    }
+    if (update.history !== void 0) {
+      data.pomodoro.history.push({
+        endedAt: update.history.endedAt,
+        duration: data.pomodoro.timeFor["pomodoro"]
+      });
+    }
+    if (update.timeFor) {
+      const { timeFor } = update;
+      for (const mode of Object.keys(timeFor)) {
+        const value = timeFor[mode];
+        if (value !== void 0) {
+          data.pomodoro.timeFor[mode] = value * 60;
+        }
+      }
+    }
+    await storage.sync.set({ pomodoro: data.pomodoro });
+    currentPomodoroData = data.pomodoro;
+    setPomodoroInfo(data.pomodoro.history);
+    if (update.timeFor) {
+      resetTimer();
+    }
+  }
+
+  // src/scripts/settings.ts
+  var import_mod6 = __toESM(require_dist());
+
+  // src/scripts/compatibility/filters.ts
+  function newLinkIcons(data) {
+    const links = [];
+    Object.entries(data).map(([key, val]) => {
+      if (key.length === 11 && key.startsWith("links")) {
+        links.push(val);
+      }
+    });
+    for (const link of links) {
+      if (!isElem(link)) {
+        continue;
+      }
+      if (link.icon && typeof link.icon === "string") {
+        const icon = link.icon;
+        const faviconWasAutomatic = icon.startsWith("https://services.bonjourr.fr") || isNumber(icon);
+        const autoValue = faviconWasAutomatic && isNumber(icon) ? `https://services.bonjourr.fr/favicon/blob/${link.url}?r=${icon}` : void 0;
+        link.icon = {
+          type: faviconWasAutomatic ? "auto" : "url",
+          value: faviconWasAutomatic ? autoValue : icon
+        };
+      }
+      data[link._id] = link;
+    }
+    return data;
+  }
+  function addAlarmsToPomodoro(data) {
+    if (!data.pomodoro) {
+      data.pomodoro = SYNC_DEFAULT.pomodoro;
+    }
+    data.pomodoro.alarm = data.pomodoro.alarm ?? SYNC_DEFAULT.pomodoro.alarm;
+    data.pomodoro.volume = data.pomodoro.volume ?? SYNC_DEFAULT.pomodoro.alarm;
+    return data;
+  }
+  function fixNullBrightness(data) {
+    if (data.backgrounds?.bright === null) {
+      data.backgrounds.bright = SYNC_DEFAULT.backgrounds.bright;
+    }
+    return data;
+  }
+  function addSupporters(data) {
+    if (data.supporters === void 0) {
+      data.supporters = {
+        enabled: true
+      };
+    }
+    return data;
+  }
+  function hideArrayToObject(data) {
+    const newhide = {};
+    if (Array.isArray(data.hide)) {
+      if (data.hide[0]?.[0]) {
+        newhide.clock = true;
+      }
+      if (data.hide[0]?.[1]) {
+        newhide.date = true;
+      }
+      if (data.hide[1]?.[0]) {
+        newhide.greetings = true;
+      }
+      if (data.hide[1]?.[1]) {
+        newhide.weatherdesc = true;
+      }
+      if (data.hide[1]?.[2]) {
+        newhide.weathericon = true;
+      }
+      if (data.hide[3]?.[0]) {
+        newhide.settingsicon = true;
+      }
+      data.hide = newhide;
+      data.time = !(data.hide.clock && data.hide.date);
+      data.main = !(data.hide.weatherdesc && data.hide.weathericon && data.hide.weathericon);
+    }
+    return data;
+  }
+  function booleanSearchbarToObject(data) {
+    if (typeof data.searchbar === "boolean") {
+      data.searchbar = {
+        ...SYNC_DEFAULT.searchbar,
+        on: data.searchbar,
+        newtab: data.searchbar_newtab,
+        engine: data.searchbar_engine?.replace("s_", "") || "google",
+        suggestions: false
+      };
+    }
+    return data;
+  }
+  function linkListToFlatObjects(data) {
+    if (Array.isArray(data.links)) {
+      if (data.links.length > 0 && data.quicklinks === void 0) {
+        data.quicklinks = true;
+      }
+      data.links?.forEach(({ title, url, icon }, i) => {
+        const id = `links${randomString(6)}`;
+        const filteredIcon = icon?.startsWith("alias:") ? data[icon] : icon;
+        data[id] = {
+          _id: id,
+          parent: "default",
+          order: i,
+          title,
+          url,
+          icon: filteredIcon
+        };
+      });
+      const aliasKeyList = Object.keys(data).filter((key) => key.match("alias:"));
+      for (const key of aliasKeyList) {
+        data[key] = void 0;
+      }
+    }
+    return data;
+  }
+  function newFontSystem(data) {
+    if (data.font) {
+      data.font.weightlist = data.font?.availWeights ?? [];
+      data.font.url = void 0;
+      data.font.availWeights = void 0;
+      if (data.font.system === void 0) {
+        data.font.system = false;
+      }
+    }
+    return data;
+  }
+  function newReviewData(data) {
+    if (data.reviewPopup) {
+      data.review = data.reviewPopup === "removed" ? -1 : +data.reviewPopup;
+    }
+    return data;
+  }
+  function quotesJsonToCsv(data) {
+    if (Array.isArray(data?.quotes?.userlist)) {
+      data.quotes.userlist = oldJSONToCSV(data.quotes.userlist);
+    }
+    return data;
+  }
+  function toIsoLanguageCode(data) {
+    data.lang = countryCodeToLanguageCode(data.lang ?? "en");
+    return data;
+  }
+  function clockDateFormat(data) {
+    const old = data;
+    if (old.usdate) {
+      data.dateformat = "us";
+    } else {
+      data.dateformat = "auto";
+    }
+    return data;
+  }
+  function removeWorldClocksDuplicate(current, target) {
+    if (target.worldclocks && current.worldclocks) {
+      current.worldclocks = target.worldclocks;
+    }
+    return current;
+  }
+  function manualTimezonesToIntl(data) {
+    const timezoneMatches = {
+      "-10": "-10:00",
+      "-9": "-09:00",
+      "-8": "-08:00",
+      "-7": "-07:00",
+      "-6": "-06:00",
+      "-5": "-05:00",
+      "-4": "-04:00",
+      "-3": "-03:00",
+      "+0": "+00:00",
+      "+1": "+01:00",
+      "+2": "+02:00",
+      "+3": "+03:00",
+      "+5:30": "+05:30",
+      "+7": "+07:00",
+      "+8": "+08:00",
+      "+9": "+09:00",
+      "+10": "+10:00",
+      "+12": "+12:00"
+    };
+    const oldTimezones = Object.keys(timezoneMatches);
+    if (data.clock && oldTimezones.includes(data.clock.timezone)) {
+      data.clock.timezone = timezoneMatches[data.clock.timezone];
+    }
+    data.worldclocks?.forEach(({ timezone }, i) => {
+      const isOld = oldTimezones.includes(timezone);
+      if (data.worldclocks?.[i] && isOld) {
+        data.worldclocks[i].timezone = timezoneMatches[timezone];
+      }
+    });
+    return data;
+  }
+  function validateLinkGroups(current) {
+    let links = bundleLinks(current);
+    let parents = [...new Set(links.map((link) => link.parent))];
+    let parentGroups = parents.filter((p) => !p?.toString().startsWith("links"));
+    const oldNumberParents = parents.filter((parent) => typeof parent === "number");
+    const oldlinktabs = current.linktabs;
+    if (oldlinktabs && oldNumberParents.length > 0) {
+      current.linkgroups = {
+        on: oldlinktabs.active,
+        selected: oldlinktabs.titles[oldlinktabs.selected],
+        groups: [...oldlinktabs.titles],
+        synced: [],
+        pinned: []
+      };
+      for (const link of links) {
+        if (typeof link?.parent === "number") {
+          link.parent = current.linkgroups.groups[link.parent];
+        }
+        current[link._id] = link;
+      }
+    }
+    if (!current.linkgroups) {
+      current.linkgroups = SYNC_DEFAULT.linkgroups;
+    }
+    const { groups: groups2, pinned, synced, selected } = current.linkgroups;
+    current.linkgroups.selected = selected ? selected : "default";
+    current.linkgroups.groups = groups2.map((val) => val ? val : "default");
+    current.linkgroups.pinned = pinned.map((val) => val ? val : "default");
+    current.linkgroups.synced = synced.map((val) => val ? val : "default");
+    for (const link of links) {
+      if (!link?.parent) {
+        link.parent = current.linkgroups.selected;
+        current[link._id] = link;
+      }
+    }
+    links = bundleLinks(current);
+    parents = [...new Set(links.map((link) => link.parent))];
+    parentGroups = parents.filter((p) => !p?.toString().startsWith("links"));
+    for (const group of parentGroups) {
+      if (group) {
+        current.linkgroups.groups.push(group.toString());
+      }
+    }
+    if (current.linkgroups.groups.length > 1) {
+      current.linkgroups.on = true;
+    }
+    const parentNoDefault = current.linkgroups.groups.filter((group) => group !== "default");
+    const defaultExists = current.linkgroups.groups.includes("default");
+    const defaultIsEmpty = parentGroups.includes("default") === false;
+    const hasUserGroups = parentNoDefault.length > 0;
+    const hasLinks = links.length > 0;
+    if (defaultExists && defaultIsEmpty && hasUserGroups && hasLinks) {
+      current.linkgroups.groups = parentNoDefault;
+      current.linkgroups.selected = parentNoDefault[0];
+    }
+    return current;
+  }
+  function linksDataMigration(data) {
+    if (data?.linktabs || data?.linkgroups) {
+      return data;
+    }
+    const notfoundicon = "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI2MiIgdmlld0JveD0iMC";
+    const list = bundleLinks(data).sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    for (const link of list) {
+      if (!isElem(link)) {
+        continue;
+      }
+      if (typeof link.icon === "string") {
+        const icon = link.icon;
+        const isNotFound = icon.startsWith(notfoundicon);
+        if (isNotFound) {
+          link.icon = { type: "auto" };
+          data[link._id] = link;
+        }
+      }
+    }
+    return data;
+  }
+  function improvedWeather(data) {
+    if (data.weather && data.weather?.geolocation === void 0) {
+      const oldLocation = data.weather?.location ?? [];
+      data.weather.geolocation = "approximate";
+      data.weather.geolocation = oldLocation.length === 0 ? "off" : "precise";
+    }
+    return data;
+  }
+  function newBackgroundsField(data) {
+    const olddata = data;
+    const defaults = structuredClone(SYNC_DEFAULT);
+    if (!data.backgrounds) {
+      data.backgrounds = defaults.backgrounds;
+    }
+    if (olddata.background_blur !== void 0) {
+      data.backgrounds.blur = olddata.background_blur;
+    }
+    if (olddata.background_bright !== void 0) {
+      data.backgrounds.bright = olddata.background_bright;
+    }
+    if (olddata.background_type !== void 0) {
+      data.backgrounds.type = olddata.background_type === "unsplash" ? "images" : "files";
+    }
+    if (olddata.unsplash) {
+      data.backgrounds.frequency = olddata.unsplash?.every ?? "hour";
+    }
+    if (olddata.unsplash?.collection) {
+      data.backgrounds.images = "unsplash-images-collections";
+      data.backgrounds.queries = { "unsplash-images-collections": olddata.unsplash.collection };
+    }
+    return data;
+  }
+  function analogClockOptions(data) {
+    if (data.clock?.style) {
+      data.analogstyle = {
+        background: "#fff2",
+        border: "#ffff",
+        face: data?.clock?.face || "none",
+        shape: "round",
+        hands: "modern"
+      };
+      if (data.clock.style === "round" || data.clock.style === "square") {
+        data.analogstyle.shape = data.clock.style;
+      }
+      if (data.clock.style === "transparent") {
+        data.analogstyle.background = "#fff0";
+        data.analogstyle.border = "#fff0";
+      }
+    }
+    return data;
+  }
+  function removeLinkgroupDuplicates(current) {
+    current.linkgroups.groups = [...new Set(current.linkgroups.groups)];
+    current.linkgroups.pinned = [...new Set(current.linkgroups.pinned)];
+    current.linkgroups.synced = [...new Set(current.linkgroups.synced)];
+    const links = bundleLinks(current);
+    const parents = links.map((l) => l.parent);
+    const defaultGroupAsParent = parents.some((parent) => parent === "default");
+    const multipleGroups = current.linkgroups.groups.length > 1;
+    if (multipleGroups && !defaultGroupAsParent) {
+      current.linkgroups.groups = current.linkgroups.groups.filter((item) => item !== "default");
+      current.linkgroups.pinned = current.linkgroups.pinned.filter((item) => item !== "default");
+      current.linkgroups.synced = current.linkgroups.synced.filter((item) => item !== "default");
+    }
+    return current;
+  }
+  function toggleMoveWidgets(current, imported) {
+    if (imported.move) {
+      current.move = imported.move;
+      const layout = current.move.layouts[current.move.selection];
+      const grid = layout?.grid ?? defaultLayouts[current.move.selection].grid;
+      const area = grid.flat().join(" ");
+      current.time = area.includes("time");
+      current.main = area.includes("main");
+      current.quicklinks = area.includes("quicklinks");
+      if (current.notes) {
+        current.notes.on = area.includes("notes");
+      }
+      if (current.quotes) {
+        current.quotes.on = area.includes("quotes");
+      }
+      if (current.searchbar) {
+        current.searchbar.on = area.includes("searchbar");
+      }
+      return current;
+    }
+    if (!imported.move) {
+      const importStates = {
+        time: imported.time ?? current.time,
+        main: imported.main ?? current.main,
+        notes: imported.notes?.on ?? current.notes?.on,
+        quotes: imported.quotes?.on ?? current.quotes?.on,
+        pomodoro: imported.pomodoro?.on ?? current.pomodoro?.on,
+        searchbar: imported.searchbar?.on ?? current.searchbar?.on,
+        quicklinks: imported.quicklinks ?? current.quicklinks
+      };
+      const diffWidgets = {
+        time: current.time !== importStates.time,
+        main: current.main !== importStates.main,
+        notes: current.notes?.on !== importStates.notes,
+        quotes: current.quotes?.on !== importStates.quotes,
+        searchbar: current.searchbar?.on !== importStates.searchbar,
+        quicklinks: current.quicklinks !== importStates.quicklinks
+      };
+      if (Object.keys(imported).some((key) => key.match(/time|main|notes|quotes|searchbar|quicklinks/g))) {
+        current.move.selection = "single";
+      }
+      const selection = current.move.selection;
+      const layout = structuredClone(current.move.layouts[selection]);
+      const diffEntries = Object.entries(diffWidgets).filter(([_, diff]) => diff === true);
+      if (!layout) {
+        return current;
+      }
+      for (const [key] of diffEntries) {
+        const id = key;
+        const state = importStates[id];
+        const gridToggle = state ? addGridWidget : removeGridWidget;
+        layout.grid = gridParse(gridToggle(gridStringify(layout.grid), id, selection));
+      }
+      current.move.layouts[selection] = layout;
+    }
+    return current;
+  }
+
+  // src/scripts/compatibility/versions.ts
+  function filterByVersion(data, version) {
+    const { major, minor } = version;
+    if (major < 22) {
+      data = newLinkIcons(data);
+      if (minor < 1) {
+        data = addAlarmsToPomodoro(data);
+      }
+    }
+    if (major <= 21) {
+      if (minor < 3) {
+        data = fixNullBrightness(data);
+      }
+    }
+    if (major < 21) {
+      data = newBackgroundsField(data);
+      data = manualTimezonesToIntl(data);
+    }
+    if (major < 20) {
+      data = analogClockOptions(data);
+      data = validateLinkGroups(data);
+      data = addSupporters(data);
+      data = toIsoLanguageCode(data);
+    }
+    if (major < 19) {
+      data = newFontSystem(data);
+      data = newReviewData(data);
+      data = quotesJsonToCsv(data);
+      data = linksDataMigration(data);
+    }
+    if (major < 18) {
+      data = booleanSearchbarToObject(data);
+      data = linkListToFlatObjects(data);
+      data = hideArrayToObject(data);
+      data = improvedWeather(data);
+      data = clockDateFormat(data);
+    }
+    return data;
+  }
+
+  // node_modules/.deno/@victr+deepmerge@1.3.2/node_modules/@victr/deepmerge/index.js
+  var JSON_PROTO = Object.getPrototypeOf({});
+  function fastifyDeepMerge(options) {
+    function isNotPrototypeKey(value) {
+      return value !== "constructor" && value !== "prototype" && value !== "__proto__";
+    }
+    function cloneArray(value) {
+      let i = 0;
+      const il = value.length;
+      const result = new Array(il);
+      for (i = 0; i < il; ++i) {
+        result[i] = clone(value[i]);
+      }
+      return result;
+    }
+    function cloneObject(target) {
+      const result = {};
+      if (cloneProtoObject && Object.getPrototypeOf(target) !== JSON_PROTO) {
+        return cloneProtoObject(target);
+      }
+      const targetKeys = getKeys(target);
+      let i, il, key;
+      for (i = 0, il = targetKeys.length; i < il; ++i) {
+        isNotPrototypeKey(key = targetKeys[i]) && (result[key] = clone(target[key]));
+      }
+      return result;
+    }
+    function concatArrays(target, source) {
+      const tl = target.length;
+      const sl = source.length;
+      let i = 0;
+      const result = new Array(tl + sl);
+      for (i = 0; i < tl; ++i) {
+        result[i] = clone(target[i]);
+      }
+      for (i = 0; i < sl; ++i) {
+        result[i + tl] = clone(source[i]);
+      }
+      return result;
+    }
+    const propertyIsEnumerable = Object.prototype.propertyIsEnumerable;
+    function getSymbolsAndKeys(value) {
+      const result = Object.keys(value);
+      const keys = Object.getOwnPropertySymbols(value);
+      for (let i = 0, il = keys.length; i < il; ++i) {
+        propertyIsEnumerable.call(value, keys[i]) && result.push(keys[i]);
+      }
+      return result;
+    }
+    const getKeys = options && options.symbols ? getSymbolsAndKeys : Object.keys;
+    const cloneProtoObject = typeof options?.cloneProtoObject === "function" ? options.cloneProtoObject : void 0;
+    function isMergeableObject(value) {
+      return typeof value === "object" && value !== null && !(value instanceof RegExp) && !(value instanceof Date);
+    }
+    function isPrimitive(value) {
+      return typeof value !== "object" || value === null;
+    }
+    const isPrimitiveOrBuiltIn = typeof Buffer !== "undefined" ? (value) => typeof value !== "object" || value === null || value instanceof RegExp || value instanceof Date || value instanceof Buffer : (value) => typeof value !== "object" || value === null || value instanceof RegExp || value instanceof Date;
+    const mergeArray = options && typeof options.mergeArray === "function" ? options.mergeArray({
+      clone,
+      deepmerge: _deepmerge,
+      getKeys,
+      isMergeableObject
+    }) : concatArrays;
+    function clone(entry) {
+      return isMergeableObject(entry) ? Array.isArray(entry) ? cloneArray(entry) : cloneObject(entry) : entry;
+    }
+    function mergeObject(target, source) {
+      const result = {};
+      const targetKeys = getKeys(target);
+      const sourceKeys = getKeys(source);
+      let i, il, key;
+      for (i = 0, il = targetKeys.length; i < il; ++i) {
+        isNotPrototypeKey(key = targetKeys[i]) && sourceKeys.indexOf(key) === -1 && (result[key] = clone(target[key]));
+      }
+      for (i = 0, il = sourceKeys.length; i < il; ++i) {
+        isNotPrototypeKey(key = sourceKeys[i]) && (key in target && (targetKeys.indexOf(key) !== -1 && (result[key] = _deepmerge(target[key], source[key])), true) || // eslint-disable-line no-mixed-operators
+        (result[key] = clone(source[key])));
+      }
+      return result;
+    }
+    function _deepmerge(target, source) {
+      const sourceIsArray = Array.isArray(source);
+      const targetIsArray = Array.isArray(target);
+      if (isPrimitive(source)) {
+        return source;
+      } else if (isPrimitiveOrBuiltIn(target)) {
+        return clone(source);
+      } else if (sourceIsArray && targetIsArray) {
+        return mergeArray(target, source);
+      } else if (sourceIsArray !== targetIsArray) {
+        return clone(source);
+      } else {
+        return mergeObject(target, source);
+      }
+    }
+    function _deepmergeAll() {
+      switch (arguments.length) {
+        case 0:
+          return {};
+        case 1:
+          return clone(arguments[0]);
+        case 2:
+          return _deepmerge(arguments[0], arguments[1]);
+      }
+      let result;
+      for (let i = 0, il = arguments.length; i < il; ++i) {
+        result = _deepmerge(result, arguments[i]);
+      }
+      return result;
+    }
+    return options && options.all ? _deepmergeAll : _deepmerge;
+  }
+  var deepmerge = fastifyDeepMerge({ symbols: false });
+  var deepmergeAll = fastifyDeepMerge({ all: true, symbols: false });
+
+  // src/scripts/utils/semver.ts
+  function toSemVer(version = "0.0.0") {
+    const result = {
+      major: 0,
+      minor: 0,
+      patch: 0
+    };
+    if (typeof version === "string") {
+      const arr = version.split(".");
+      const major = parseInt(arr[0] ?? "0");
+      const minor = parseInt(arr[1] ?? "0");
+      const patch = parseInt(arr[2] ?? "0");
+      if (!isNaN(major) && !isNaN(minor) && !isNaN(patch)) {
+        result.major = major;
+        result.minor = minor;
+        result.patch = patch;
+      }
+    }
+    return result;
+  }
+
+  // src/scripts/compatibility/apply.ts
+  function filterData(from, current, target) {
+    let newcurrent = current;
+    let newtarget = target ?? {};
+    if (from === "update") {
+      const user = toSemVer(newcurrent.about.version);
+      newcurrent = filterByVersion(newcurrent, user);
+    }
+    if (from === "import") {
+      newtarget = filterByVersion(newtarget, toSemVer(void 0));
+      const currentKeyAmount = Object.keys(newcurrent).length;
+      const targetKeyAmount = Object.keys(newtarget).length;
+      const needMerging = targetKeyAmount !== currentKeyAmount;
+      if (needMerging) {
+        newcurrent = deepmergeAll(newcurrent, newtarget);
+        newcurrent = removeLinkgroupDuplicates(newcurrent);
+        newcurrent = removeWorldClocksDuplicate(newcurrent, newtarget);
+        newcurrent = toggleMoveWidgets(newcurrent, newtarget);
+      } else {
+        newcurrent = newtarget;
+      }
+    }
+    newcurrent.about = {
+      browser: PLATFORM,
+      version: CURRENT_VERSION
+    };
+    delete newcurrent.syncbookmarks;
+    delete newcurrent.settingssync;
+    delete newcurrent.custom_every;
+    delete newcurrent.custom_time;
+    delete newcurrent.searchbar_newtab;
+    delete newcurrent.searchbar_newtab;
+    delete newcurrent.searchbar_engine;
+    delete newcurrent.cssHeight;
+    delete newcurrent.linktabs;
+    delete newcurrent.links;
+    delete newcurrent.dynamic;
+    delete newcurrent.unsplash;
+    delete newcurrent.background_blur;
+    delete newcurrent.background_bright;
+    delete newcurrent.background_type;
+    delete newcurrent.usdate;
+    delete newcurrent?.weather?.location;
+    delete newcurrent?.weather?.lastState;
+    delete newcurrent?.weather?.lastCall;
+    return newcurrent;
+  }
+
+  // src/scripts/utils/stringify.ts
+  function stringify2(data) {
+    const defaultSyncData = structuredClone(SYNC_DEFAULT);
+    for (const link of bundleLinks(data)) {
+      defaultSyncData[link._id] = link;
+    }
+    for (const [key, value] of Object.entries(data)) {
+      const defaultValue = defaultSyncData[key];
+      if (isObject(value) && isObject(defaultValue)) {
+        defaultSyncData[key] = {
+          ...defaultValue,
+          ...value
+        };
+      } else {
+        defaultSyncData[key] = value;
+      }
+    }
+    const keys = flattenKeys(defaultSyncData);
+    const compare = (a = "", b = "") => keys.indexOf(a) - keys.indexOf(b);
+    const string2 = JSON.stringify(data, keys.sort(compare), 2);
+    return string2;
+  }
+  function flattenKeys(obj) {
+    const result = [];
+    for (const [key, value] of Object.entries(obj)) {
+      result.push(key);
+      if (isObject(value)) {
+        result.push(...flattenKeys(value));
+      }
+    }
+    return result;
+  }
+  function isObject(value) {
+    return !Array.isArray(value) && value !== null && typeof value === "object";
+  }
+
+  // src/scripts/settings.ts
+  var settingsInitSync;
+  var settingsInitLocal;
+  function settingsInit(sync, local) {
+    const showsettings = document.getElementById("show-settings");
+    settingsInitSync = sync;
+    settingsInitLocal = local;
+    document.addEventListener("updateSettingsBeforeInit", (e) => {
+      settingsInitSync = e.detail;
+    });
+    document.body?.addEventListener("keydown", settingsInitEvent);
+    showsettings?.addEventListener("pointerdown", settingsInitEvent);
+    const openSettingsButtonsFromContextMenu = document.body.querySelectorAll(
+      `[data-action="openTheseSettings"]`
+    );
+    openSettingsButtonsFromContextMenu.forEach((btn) => {
+      btn?.addEventListener("pointerdown", settingsInitEvent);
+    });
+  }
+  function settingsInitEvent(event) {
+    const showsettings = document.getElementById("show-settings");
+    const settings = document.getElementById("settings");
+    const settingsAreHidden = settings?.classList.contains("hidden");
+    const isLeftClick = event?.button === 0;
+    const isEscape = event?.code === "Escape";
+    const canOpenSettings = settingsAreHidden && (isEscape || isLeftClick);
+    if (!canOpenSettings) {
+      return;
+    }
+    const local = settingsInitLocal;
+    const sync = settingsInitSync;
+    settings?.removeAttribute("style");
+    settings?.classList.remove("hidden");
+    document.dispatchEvent(new Event("settings"));
+    document.addEventListener(
+      "toggle-settings",
+      ((e) => {
+        settingsToggle(e);
+      })
+    );
+    if (event.pointerType === "touch") {
+      setTimeout(() => {
+        if (event.target.getAttribute("data-attribute")) {
+          openSettingsButtonEvent(event);
+        } else {
+          document.dispatchEvent(new CustomEvent("toggle-settings"));
+        }
+      }, 0);
+    }
+    document.body?.removeEventListener("keydown", settingsInitEvent);
+    showsettings?.removeEventListener("pointerdown", settingsInitEvent);
+    showall(sync.showall, false);
+    traduction(settings, sync.lang);
+    translatePlaceholders();
+    initBackgroundOptions(sync, local);
+    initSupportersSettingsNotif(sync);
+    initOptionsValues(sync, local);
+    initOptionsEvents();
+    settingsFooter();
+    setTimeout(() => {
+      initWorldClocksAndTimezone(sync);
+      updateSettingsJson(sync);
+      updateSettingsEvent();
+      translateAriaLabels();
+      settingsDrawerBar();
+      loadCallbacks();
+      settings?.classList.remove("init");
+    }, 500);
+  }
+  function settingsToggle(event) {
+    const domshowsettings = document.getElementById("show-settings");
+    const dominterface3 = document.getElementById("interface");
+    const domsettings = document.getElementById("settings");
+    const domedit = document.getElementById("editlink");
+    const isClosed = domsettings?.classList.contains("shown") === false;
+    const scrollTo = event?.detail?.scrollTo ?? false;
+    const target = domsettings?.querySelector(scrollTo);
+    if (target && domsettings) {
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 0);
+      });
+    }
+    if (!isClosed && scrollTo) return;
+    domsettings?.classList.toggle("shown", isClosed);
+    domedit?.classList.toggle("pushed", isClosed);
+    dominterface3?.classList.toggle("pushed", isClosed);
+    domshowsettings?.classList.toggle("shown", isClosed);
+    domsettings?.style.removeProperty("transform");
+    domsettings?.style.removeProperty("transition");
+    document.dispatchEvent(new Event("close-edit"));
+  }
+  function initOptionsValues(data, local) {
+    const domsettings = document.getElementById("settings");
+    const userQuotes = data.quotes?.userlist?.[0] ? data.quotes?.userlist : void 0;
+    setInput("i_blur", data.backgrounds.blur ?? 15);
+    setInput("i_bright", data.backgrounds.bright ?? 0.8);
+    setInput("i_fadein", data.backgrounds.fadein ?? 400);
+    setInput("i_row", data.linksrow || 8);
+    setInput("i_icon_radius", data.linkiconradius || 1.1);
+    setInput("i_linkstyle", data.linkstyle || "default");
+    setInput("i_type", data.backgrounds.type || "images");
+    setInput("i_freq", data.backgrounds?.frequency || "hour");
+    setInput("i_dark", data.dark || "system");
+    setInput("i_favicon", data.favicon ?? "");
+    setInput("i_tabtitle", data.tabtitle ?? "");
+    setInput("i_solid-background", data.backgrounds.color ?? "#185A63");
+    setInput("i_texture", data.backgrounds.texture.type ?? "none");
+    setInput("i_texture-size", data.backgrounds.texture.size ?? "220");
+    setInput("i_texture-opacity", data.backgrounds.texture.opacity ?? "0.1");
+    setInput("i_texture-color", data.backgrounds.texture.color ?? "#ffffff");
+    setInput("i_pagewidth", data.pagewidth || 1600);
+    setInput("i_pagegap", data.pagegap ?? 1);
+    setInput("i_dateformat", data.dateformat || "eu");
+    setInput("i_greeting", data.greeting ?? "");
+    setInput("i_greetmorning", data.greetingscustom?.morning ?? "");
+    setInput("i_greetafternoon", data.greetingscustom?.afternoon ?? "");
+    setInput("i_greetevening", data.greetingscustom?.evening ?? "");
+    setInput("i_greetnight", data.greetingscustom?.night ?? "");
+    setInput("i_textshadow", data.textShadow ?? 0.2);
+    setInput("i_noteswidth", data.notes?.width || 50);
+    setInput("i_notes-opacity", opacityFromHex(data.notes?.background ?? "#fff2"));
+    setInput("i_notesalign", data.notes?.align || "left");
+    setInput("i_sbengine", data.searchbar?.engine || "google");
+    setInput("i_sbplaceholder", data.searchbar?.placeholder || "");
+    setInput("i_sb-opacity", opacityFromHex(data.searchbar?.background ?? "#fff2"));
+    setInput("i_sbwidth", data.searchbar?.width ?? 30);
+    setInput("i_sbrequest", data.searchbar?.request || "");
+    setInput("i_qtfreq", data.quotes?.frequency || "day");
+    setInput("i_qttype", data.quotes?.type || "classic");
+    setInput("i_qtlist", userQuotes ?? "");
+    setInput("i_qturl", data.quotes?.url ?? "");
+    setInput("i_clockface", data.analogstyle?.face || "none");
+    setInput("i_clockhands", data.analogstyle?.hands || "none");
+    setInput("i_clockshape", data.analogstyle?.shape || "round");
+    setInput("i_analog-border-opacity", opacityFromHex(data.analogstyle?.border ?? "#ffff"));
+    setInput("i_analog-background-opacity", opacityFromHex(data.analogstyle?.background ?? "#fff2"));
+    setInput("i_ampm_position", data.clock.ampmposition || "top-left");
+    setInput("i_clocksize", data.clock?.size ?? 5);
+    setInput("i_greetsize", data.greetingsize ?? 3);
+    setInput("i_greetmode", data.greetingsmode ?? "auto");
+    setInput("i_timezone", data.clock?.timezone || "auto");
+    setInput("i_geol", data.weather?.geolocation || "approximate");
+    setInput("i_units", data.weather?.unit ?? "metric");
+    setInput("i_forecast", data.weather?.forecast || "auto");
+    setInput("i_temp", data.weather?.temperature || "actual");
+    setInput("i_moreinfo", data.weather?.moreinfo || "none");
+    setInput("i_provider", data.weather?.provider ?? "");
+    setInput("i_weight", data.font?.weight || "300");
+    setInput("i_font-color", data.font.color ?? "#ffffff");
+    setInput("i_size", data.font?.size || (IS_MOBILE ? "11" : "14"));
+    setInput("i_announce", data.announcements ?? "major");
+    setInput("i_synctype", local.syncType ?? (PLATFORM === "online" ? "off" : "browser"));
+    setInput("i_pmdr_volume", data.pomodoro?.volume ?? 0.7);
+    setInput("i_pmdr_alarms", data.pomodoro?.alarm ?? "marimba");
+    setInput("i_pmdr_break", data.pomodoro?.timeFor.break / 60);
+    setInput("i_pmdr_break", data.pomodoro?.timeFor.break / 60);
+    setInput("i_pmdr_pomodoro", data.pomodoro?.timeFor.pomodoro / 60);
+    setInput("i_pmdr_longbreak", data.pomodoro?.timeFor.longbreak / 60);
+    setFormInput("i_city", local.lastWeather?.approximation?.city ?? "Paris", data.weather.city);
+    setFormInput("i_customfont", systemfont.placeholder, data.font?.family);
+    setFormInput("i_gistsync", "github_pat_XX000X00X", local?.gistToken);
+    setFormInput("i_urlsync", "https://pastebin.com/raw/y7XhhiDs", local?.distantUrl);
+    setCheckbox("i_showall", data.showall);
+    setCheckbox("i_settingshide", data.hide?.settingsicon ?? false);
+    setCheckbox("i_background-mute-videos", data.backgrounds.mute ?? true);
+    setCheckbox("i_quicklinks", data.quicklinks);
+    setCheckbox("i_linkgroups", data?.linkgroups?.on);
+    setCheckbox("i_linknewtab", data.linknewtab);
+    setCheckbox("i_time", data.time);
+    setCheckbox("i_analog", data.clock?.analog ?? false);
+    setCheckbox("i_seconds", data.clock?.seconds ?? false);
+    setCheckbox("i_worldclocks", data.clock?.worldclocks ?? false);
+    setCheckbox("i_main", data.main);
+    setCheckbox("i_show_unit", data.weather.show_unit);
+    setCheckbox("i_greethide", !data.hide?.greetings);
+    setCheckbox("i_notes", data.notes?.on ?? false);
+    setCheckbox("i_sb", data.searchbar?.on ?? false);
+    setCheckbox("i_quotes", data.quotes?.on ?? false);
+    setCheckbox("i_pomodoro", data.pomodoro?.on ?? false);
+    setCheckbox("i_pmdr_sound", data.pomodoro?.sound ?? true);
+    setCheckbox("i_ampm", data.clock?.ampm ?? false);
+    setCheckbox("i_ampm-label", data.clock?.ampmlabel ?? false);
+    setCheckbox("i_sbsuggestions", data.searchbar?.suggestions ?? true);
+    setCheckbox("i_sbnewtab", data.searchbar?.newtab ?? false);
+    setCheckbox("i_qtauthor", data.quotes?.author ?? false);
+    setCheckbox("i_supporters_notif", data.supporters?.enabled ?? true);
+    colorInput("solid-background", data.backgrounds.color);
+    colorInput("texture-color", data.backgrounds.texture.color ?? "#ffffff");
+    colorInput("font-color", data.font.color);
+    paramId("i_notes-shade")?.classList.toggle("on", (data.notes?.background ?? "#fff").includes("#000"));
+    paramId("i_sb-shade")?.classList.toggle("on", (data.searchbar?.background ?? "#fff").includes("#000"));
+    paramId("i_analog-border-shade")?.classList.toggle("on", (data.analogstyle?.border ?? "#fff").includes("#000"));
+    paramId("i_analog-background-shade")?.classList.toggle(
+      "on",
+      (data.analogstyle?.background ?? "#fff").includes("#000")
+    );
+    if (IS_MOBILE) {
+      const tooltiptext = domsettings.querySelector(".tooltiptext .instructions");
+      const text = tradThis("Edit your Quick Links by long-pressing the icon.");
+      if (tooltiptext) {
+        tooltiptext.textContent = text;
+      }
+    }
+    const langInput = paramId("i_lang");
+    for (const [code, title] of Object.entries(langList)) {
+      const option = document.createElement("option");
+      option.value = code;
+      option.text = title;
+      langInput.appendChild(option);
+    }
+    setInput("i_lang", data.lang || "en");
+    toggleSettingsDropdown("analog_options", data.clock.analog && data.showall);
+    toggleSettingsDropdown("greetings_options", !data.hide?.greetings);
+    toggleSettingsDropdown("greetingscustom_options", data.greetingsmode === "custom");
+    toggleSettingsDropdown("digital_options", !data.clock.analog);
+    toggleSettingsDropdown("ampm_label", data.clock.ampm);
+    toggleSettingsDropdown("ampm_position", data.clock.ampmlabel && data.clock.ampm);
+    toggleSettingsDropdown("worldclocks_options", data.clock.worldclocks);
+    toggleSettingsDropdown("weather_provider", data.weather?.moreinfo === "custom");
+    toggleSettingsDropdown("searchbar_request", data.searchbar?.engine === "custom");
+    toggleSettingsDropdown("quicklinks_options", data.quicklinks);
+    toggleSettingsDropdown("time_options", data.time);
+    toggleSettingsDropdown("main_options", data.main);
+    toggleSettingsDropdown("pomodoro_options", data.pomodoro.on);
+    toggleSettingsDropdown("notes_options", data.notes?.on ?? false);
+    toggleSettingsDropdown("searchbar_options", data.searchbar?.on);
+    toggleSettingsDropdown("quotes_options", data.quotes?.on);
+    const gridLayoutButtons = domsettings.querySelectorAll("#grid-layout button");
+    const selectedLayout = data.move?.selection || "single";
+    for (const button of gridLayoutButtons) {
+      button?.classList.toggle("selected", button.dataset.layout === selectedLayout);
+    }
+    paramId("b_showtitles").classList.toggle("on", data?.linktitles ?? true);
+    paramId("b_showbackgrounds").classList.toggle("on", data?.linkbackgrounds ?? true);
+    const disableWeather = data.hide?.weatherdesc && data.hide?.weathericon;
+    const descOnly = data.hide?.weatherdesc;
+    const iconOnly = data.hide?.weathericon;
+    const dateOnly = data.hide?.clock;
+    const clockOnly = data.hide?.date;
+    let hideTime = "all";
+    let hideWeather = "all";
+    if (dateOnly) {
+      hideTime = "date";
+    } else if (clockOnly) {
+      hideTime = "clock";
+    }
+    if (disableWeather) {
+      hideWeather = "disabled";
+    } else if (descOnly) {
+      hideWeather = "desc";
+    } else if (iconOnly) {
+      hideWeather = "icon";
+    }
+    setInput("i_timehide", hideTime);
+    setInput("i_weatherhide", hideWeather);
+    paramId("quotes_userlist")?.classList.toggle("shown", data.quotes?.type === "user");
+    paramId("quotes_url")?.classList.toggle("shown", data.quotes?.type === "url");
+    const settingsForms = document.querySelectorAll("#settings form");
+    for (const form of settingsForms) {
+      const inputs = form.querySelectorAll("input");
+      for (const input of inputs) {
+        input.addEventListener("input", () => {
+          form.classList.toggle("valid", form.checkValidity());
+        });
+      }
+    }
+    const browserSyncOption = document.querySelector("#i_synctype option[value='browser']");
+    if (browserSyncOption) {
+      if (PLATFORM === "firefox") {
+        browserSyncOption.textContent = "Firefox Sync";
+      } else if (PLATFORM === "chrome" && BROWSER === "edge") {
+        browserSyncOption.textContent = "Edge Sync";
+      } else if (PLATFORM === "chrome") {
+        browserSyncOption.textContent = "Chrome Sync";
+      } else if (PLATFORM === "safari") {
+        browserSyncOption.textContent = "Safari";
+      } else {
+        browserSyncOption.textContent = tradThis("Automatic");
+      }
+    }
+    for (const input of document.querySelectorAll('input[type="range"]')) {
+      webkitRangeTrackColor(input);
+      input.addEventListener("input", () => {
+        input.style.setProperty("--value", input.value);
+      });
+    }
+  }
+  function initOptionsEvents() {
+    (0, import_mod6.onclickdown)(paramId("b_accept-permissions"), async () => {
+      await getPermissions("topSites", "bookmarks");
+      const sync = await storage.sync.get();
+      const local = await storage.local.get();
+      quickLinks({ sync, local });
+      setTimeout(() => initGroups(sync), 10);
+      settingsNotifications({ "accept-permissions": false });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_showall"), (_, target) => {
+      showall(target.checked, true);
+    });
+    paramId("i_lang").addEventListener("change", function() {
+      switchLangs(this.value);
+    });
+    paramId("i_favicon").addEventListener("input", function() {
+      favicon(this.value, true);
+    });
+    paramId("i_favicon").addEventListener("change", function() {
+      this.blur();
+    });
+    paramId("i_tabtitle").addEventListener("input", function() {
+      tabTitle(this.value, true);
+    });
+    paramId("i_tabtitle").addEventListener("change", function() {
+      this.blur();
+    });
+    paramId("i_dark").addEventListener("change", function() {
+      darkmode(this.value, true);
+    });
+    (0, import_mod6.onclickdown)(paramId("i_settingshide"), (_, target) => {
+      hideElements({ settingsicon: target.checked }, { isEvent: true });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_quicklinks"), (_, target) => {
+      moveElements(void 0, { widget: ["quicklinks", target.checked] });
+    });
+    paramId("f_addlink").addEventListener("submit", function(event) {
+      event.preventDefault();
+      quickLinks(void 0, {
+        addLinks: [
+          {
+            title: paramId("i_addlink-title").value,
+            url: paramId("i_addlink-url").value
+          }
+        ]
+      });
+      paramId("i_addlink-url").value = "";
+      paramId("i_addlink-title").value = "";
+      this.classList.remove("valid");
+    });
+    (0, import_mod6.onclickdown)(paramId("i_linkgroups"), (_, target) => {
+      quickLinks(void 0, { groups: target.checked });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_linknewtab"), (_, target) => {
+      quickLinks(void 0, { newtab: target.checked });
+    });
+    paramId("i_linkstyle").addEventListener("change", function() {
+      quickLinks(void 0, { styles: { style: this.value } });
+    });
+    (0, import_mod6.onclickdown)(paramId("b_showtitles"), (_, target) => {
+      quickLinks(void 0, {
+        styles: { titles: !target.classList.contains("on") }
+      });
+    });
+    (0, import_mod6.onclickdown)(paramId("b_showbackgrounds"), (_, target) => {
+      quickLinks(void 0, {
+        styles: { backgrounds: !target.classList.contains("on") }
+      });
+    });
+    paramId("i_row").addEventListener("input", function() {
+      quickLinks(void 0, { row: this.value });
+    });
+    paramId("i_icon_radius").addEventListener("input", function() {
+      quickLinks(void 0, { iconradius: this.value });
+    });
+    (0, import_mod6.onclickdown)(paramId("b_importbookmarks"), async () => {
+      await getPermissions("topSites", "bookmarks");
+      linksImport();
+    });
+    paramId("i_type").addEventListener("change", function() {
+      backgroundUpdate({ type: this.value });
+    });
+    paramId("b_solid-background").addEventListener("click", function() {
+      paramId("i_solid-background").click();
+    });
+    paramId("i_solid-background").addEventListener("input", function() {
+      backgroundUpdate({ color: this.value });
+    });
+    paramId("i_background-provider").addEventListener("input", function() {
+      backgroundUpdate({ provider: this.value });
+    });
+    paramId("f_background-user-coll").addEventListener("submit", function(event) {
+      backgroundUpdate({ query: event });
+      event.preventDefault();
+    });
+    paramId("f_background-user-search").addEventListener("submit", function(event) {
+      backgroundUpdate({ query: event });
+      event.preventDefault();
+    });
+    paramId("i_freq").addEventListener("change", function() {
+      backgroundUpdate({ freq: this.value });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_refresh"), (event) => {
+      backgroundUpdate({ refresh: event });
+    });
+    paramId("i_background-upload").addEventListener("change", function() {
+      backgroundUpdate({ files: this.files });
+    });
+    (0, import_mod6.onclickdown)(paramId("b_background-urls"), () => {
+      backgroundUpdate({ urlsapply: true });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_background-mute-videos"), (_, target) => {
+      toggleMuteStatus(target.checked);
+      backgroundUpdate({ mute: target.checked });
+    });
+    paramId("i_texture").addEventListener("change", function() {
+      backgroundUpdate({ texture: this.value });
+    });
+    paramId("b_texture-color").addEventListener("click", function() {
+      paramId("i_texture-color").click();
+    });
+    paramId("i_texture-color").addEventListener("input", function() {
+      backgroundUpdate({ texturecolor: this.value });
+    });
+    paramId("i_texture-size").addEventListener("input", function() {
+      backgroundUpdate({ texturesize: this.value });
+    });
+    paramId("i_texture-opacity").addEventListener("input", function() {
+      backgroundUpdate({ textureopacity: this.value });
+    });
+    paramId("i_blur").addEventListener("pointerdown", function() {
+      backgroundUpdate({ blurenter: true });
+    });
+    paramId("i_blur").addEventListener("input", function() {
+      backgroundUpdate({ blur: this.value });
+    });
+    paramId("i_bright").addEventListener("input", function() {
+      backgroundUpdate({ bright: this.value });
+    });
+    paramId("i_fadein").addEventListener("input", function() {
+      backgroundUpdate({ fadein: this.value });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_time"), (_, target) => {
+      moveElements(void 0, { widget: ["time", target.checked] });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_analog"), (_, target) => {
+      clock(void 0, { analog: target.checked });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_seconds"), (_, target) => {
+      clock(void 0, { seconds: target.checked });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_worldclocks"), (_, target) => {
+      toggleSettingsDropdown("worldclocks_options", target.checked);
+      clock(void 0, { worldclocks: target.checked });
+    });
+    paramId("i_clockface").addEventListener("change", function() {
+      clock(void 0, { face: this.value });
+    });
+    paramId("i_clockhands").addEventListener("change", function() {
+      clock(void 0, { hands: this.value });
+    });
+    paramId("i_analog-border-opacity").addEventListener("input", function() {
+      clock(void 0, { border: "opacity" });
+    });
+    paramId("i_analog-background-opacity").addEventListener("input", function() {
+      clock(void 0, { background: "opacity" });
+    });
+    paramId("i_analog-border-shade").addEventListener("click", () => {
+      clock(void 0, { border: "shade" });
+    });
+    paramId("i_analog-background-shade").addEventListener("click", () => {
+      clock(void 0, { background: "shade" });
+    });
+    paramId("i_clockshape").addEventListener("change", function() {
+      clock(void 0, { shape: this.value });
+    });
+    paramId("i_clocksize").addEventListener("input", function() {
+      clock(void 0, { size: Number.parseFloat(this.value) });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_ampm"), (_, target) => {
+      clock(void 0, { ampm: target.checked });
+      toggleSettingsDropdown("ampm_label", target.checked);
+      const ampm_toggle = document.querySelector("#i_ampm-label");
+      toggleSettingsDropdown("ampm_position", target.checked && ampm_toggle.checked);
+    });
+    (0, import_mod6.onclickdown)(paramId("i_ampm-label"), (_, target) => {
+      clock(void 0, { ampmlabel: target.checked });
+      toggleSettingsDropdown("ampm_position", target.checked);
+    });
+    paramId("i_ampm_position").addEventListener("change", function() {
+      clock(void 0, { ampmposition: this.value });
+    });
+    paramId("i_timezone").addEventListener("change", function() {
+      clock(void 0, { timezone: this.value });
+    });
+    paramId("i_dateformat").addEventListener("change", function() {
+      clock(void 0, { dateformat: this.value });
+    });
+    paramId("i_timehide").addEventListener("change", function() {
+      hideElements({ clock: this.value === "clock", date: this.value === "date" }, { isEvent: true });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_main"), (_, target) => {
+      moveElements(void 0, { widget: ["main", target.checked] });
+    });
+    paramId("i_geol").addEventListener("change", function() {
+      weather(void 0, { geol: this?.value });
+    });
+    paramId("i_city").addEventListener("input", function(event) {
+      weather(void 0, { suggestions: event });
+    });
+    paramId("f_location").addEventListener("submit", function(event) {
+      weather(void 0, { city: true });
+      event.preventDefault();
+    });
+    paramId("i_units").addEventListener("change", function() {
+      weather(void 0, { units: this.value });
+    });
+    paramId("i_forecast").addEventListener("change", function() {
+      weather(void 0, { forecast: this.value });
+    });
+    paramId("i_temp").addEventListener("change", function() {
+      weather(void 0, { temp: this.value });
+    });
+    paramId("i_moreinfo").addEventListener("change", function() {
+      weather(void 0, { moreinfo: this.value });
+    });
+    paramId("i_provider").addEventListener("change", function() {
+      weather(void 0, { provider: this.value });
+      this.blur();
+    });
+    paramId("i_weatherhide").addEventListener("change", function() {
+      const weatherdesc = this.value === "disabled" || this.value === "desc";
+      const weathericon = this.value === "disabled" || this.value === "icon";
+      hideElements({ weatherdesc, weathericon }, { isEvent: true });
+      weather(void 0, { unhide: true });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_show_unit"), (_, target) => {
+      weather(void 0, { show_unit: target.checked });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_greethide"), (_, target) => {
+      toggleSettingsDropdown("greetings_options", target.checked);
+      hideElements({ greetings: !target.checked }, { isEvent: true });
+    });
+    paramId("i_greeting").addEventListener("input", function() {
+      clock(void 0, { greeting: this.value });
+    });
+    paramId("i_greeting").addEventListener("change", () => {
+      paramId("i_greeting").blur();
+    });
+    paramId("i_greetsize").addEventListener("input", function() {
+      clock(void 0, { greetingsize: this.value });
+    });
+    paramId("i_greetmode").addEventListener("change", function() {
+      clock(void 0, { greetingsmode: this.value });
+    });
+    paramId(`i_greetmorning`).addEventListener("input", function() {
+      clock(void 0, { greetingscustom: { morning: this.value } });
+    });
+    paramId(`i_greetafternoon`).addEventListener("input", function() {
+      clock(void 0, { greetingscustom: { afternoon: this.value } });
+    });
+    paramId(`i_greetevening`).addEventListener("input", function() {
+      clock(void 0, { greetingscustom: { evening: this.value } });
+    });
+    paramId(`i_greetnight`).addEventListener("input", function() {
+      clock(void 0, { greetingscustom: { night: this.value } });
+    });
+    paramId(`i_greetmorning`).addEventListener("change", () => {
+      paramId(`i_greetmorning`).blur();
+    });
+    paramId(`i_greetafternoon`).addEventListener("change", () => {
+      paramId(`i_greetafternoon`).blur();
+    });
+    paramId(`i_greetevening`).addEventListener("change", () => {
+      paramId(`i_greetevening`).blur();
+    });
+    paramId(`i_greetnight`).addEventListener("change", () => {
+      paramId(`i_greetnight`).blur();
+    });
+    (0, import_mod6.onclickdown)(paramId("i_notes"), (_, target) => {
+      moveElements(void 0, { widget: ["notes", target.checked] });
+    });
+    paramId("i_notesalign").addEventListener("change", function() {
+      notes(void 0, { align: this.value });
+    });
+    paramId("i_noteswidth").addEventListener("input", function() {
+      notes(void 0, { width: this.value });
+    });
+    paramId("i_notes-opacity").addEventListener("input", function() {
+      notes(void 0, { background: true });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_notes-shade"), () => {
+      notes(void 0, { background: true });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_sb"), (_, target) => {
+      moveElements(void 0, { widget: ["searchbar", target.checked] });
+      getPermissions("search");
+    });
+    paramId("i_sbengine").addEventListener("change", function() {
+      searchbar(void 0, { engine: this.value });
+    });
+    paramId("i_sb-opacity").addEventListener("input", function() {
+      searchbar(void 0, { background: true });
+    });
+    paramId("i_sb-shade").addEventListener("click", () => {
+      searchbar(void 0, { background: true });
+    });
+    paramId("i_sbwidth").addEventListener("input", function() {
+      searchbar(void 0, { width: this.value });
+    });
+    paramId("f_sbrequest").addEventListener("submit", function(event) {
+      searchbar(void 0, { request: true });
+      event.preventDefault();
+    });
+    (0, import_mod6.onclickdown)(paramId("i_sbnewtab"), (_, target) => {
+      searchbar(void 0, { newtab: target.checked });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_sbsuggestions"), (_, target) => {
+      searchbar(void 0, { suggestions: target.checked });
+    });
+    paramId("i_sbplaceholder").addEventListener("keyup", function() {
+      searchbar(void 0, { placeholder: this.value });
+    });
+    paramId("i_sbplaceholder").addEventListener("change", () => {
+      paramId("i_sbplaceholder").blur();
+    });
+    (0, import_mod6.onclickdown)(paramId("i_quotes"), (_, target) => {
+      moveElements(void 0, { widget: ["quotes", target.checked] });
+    });
+    paramId("i_qtfreq").addEventListener("change", function() {
+      quotes(void 0, { frequency: this.value });
+    });
+    paramId("i_qttype").addEventListener("change", function() {
+      quotes(void 0, { type: this.value });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_qtrefresh"), (event, target) => {
+      inputThrottle(target);
+      turnRefreshButton(event, true);
+      quotes(void 0, { refresh: true });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_qtauthor"), (_, target) => {
+      quotes(void 0, { author: target.checked });
+    });
+    paramId("i_qtlist").addEventListener("change", function() {
+      quotes(void 0, { userlist: this.value });
+    });
+    paramId("f_qturl").addEventListener("submit", function(event) {
+      event.preventDefault();
+      quotes(void 0, { url: paramId("i_qturl").value });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_pomodoro"), (_, target) => {
+      moveElements(void 0, { widget: ["pomodoro", target.checked] });
+      const glider = document.querySelector("#pomodoro_container .glider");
+      if (glider.style.width === "0px") {
+        setTimeout(() => {
+          setModeGlider();
+        }, 333);
+      }
+    });
+    (0, import_mod6.onclickdown)(paramId("i_pmdr_sound"), (_, target) => {
+      pomodoro(void 0, { sound: target.checked });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_pmdr_listen"), () => {
+      pomodoro(void 0, { listen: true });
+    });
+    paramId("i_pmdr_alarms").addEventListener("change", function() {
+      pomodoro(void 0, { alarm: this.value });
+    });
+    paramId("i_pmdr_volume").addEventListener("input", function() {
+      pomodoro(void 0, { volume: Number(this.value) });
+    });
+    paramId("i_pmdr_pomodoro").addEventListener("input", function() {
+      pomodoro(void 0, { timeFor: { pomodoro: Number(this.value) } });
+    });
+    paramId("i_pmdr_break").addEventListener("input", function() {
+      pomodoro(void 0, { timeFor: { break: Number(this.value) } });
+    });
+    paramId("i_pmdr_longbreak").addEventListener("input", function() {
+      pomodoro(void 0, { timeFor: { longbreak: Number(this.value) } });
+    });
+    paramId("i_customfont").addEventListener("pointerenter", () => {
+      customFont(void 0, { autocomplete: true });
+    });
+    paramId("f_customfont").addEventListener("submit", (event) => {
+      customFont(void 0, { family: paramId("i_customfont").value });
+      event.preventDefault();
+    });
+    paramId("i_weight").addEventListener("input", function() {
+      customFont(void 0, { weight: this.value });
+    });
+    paramId("b_font-color").addEventListener("click", function() {
+      paramId("i_font-color").click();
+    });
+    paramId("i_font-color").addEventListener("input", function() {
+      customFont(void 0, { color: this.value });
+    });
+    paramId("i_size").addEventListener("input", function() {
+      customFont(void 0, { size: this.value });
+    });
+    paramId("i_textshadow").addEventListener("input", function() {
+      textShadow(void 0, Number.parseFloat(this.value));
+    });
+    (0, import_mod6.onclickdown)(paramId("b_editmove"), () => {
+      togglePomodoroFocus(false);
+      moveElements(void 0, {
+        toggle: !document.getElementById("interface")?.classList.contains("move-edit")
+      });
+    });
+    paramId("i_pagecolumns").addEventListener("change", function() {
+      moveElements(void 0, { layout: this.value, toggle: true });
+    });
+    paramId("i_pagewidth").addEventListener("input", function() {
+      pageControl({ width: Number.parseInt(this.value) }, true);
+    });
+    paramId("i_pagegap").addEventListener("input", function() {
+      pageControl({ gap: Number.parseFloat(this.value) }, true);
+    });
+    paramId("i_pagewidth").addEventListener("touchstart", () => moveElements(void 0, { overlay: true }), {
+      passive: true
+    });
+    paramId("i_pagewidth").addEventListener("mousedown", () => moveElements(void 0, { overlay: true }));
+    paramId("i_pagewidth").addEventListener("touchend", () => moveElements(void 0, { overlay: false }));
+    paramId("i_pagewidth").addEventListener("mouseup", () => moveElements(void 0, { overlay: false }));
+    paramId("i_announce").addEventListener("change", function() {
+      interfacePopup(void 0, { announcements: this.checked });
+    });
+    (0, import_mod6.onclickdown)(paramId("i_supporters_notif"), (_, target) => {
+      supportersNotifications(void 0, { enabled: target.checked });
+    });
+    paramId("i_synctype").addEventListener("change", function() {
+      synchronization(void 0, { type: this.value });
+    });
+    paramId("f_gistsync").addEventListener("submit", function(event) {
+      event.preventDefault();
+      synchronization(void 0, { gistToken: paramId("i_gistsync").value });
+    });
+    paramId("f_urlsync").addEventListener("submit", function(event) {
+      event.preventDefault();
+      synchronization(void 0, { url: paramId("i_urlsync").value });
+    });
+    (0, import_mod6.onclickdown)(paramId("b_storage-persist"), async () => {
+      const persists = await navigator.storage.persist();
+      synchronization(void 0, { firefoxPersist: persists });
+    });
+    (0, import_mod6.onclickdown)(paramId("b_gistup"), () => {
+      synchronization(void 0, { up: true });
+    });
+    (0, import_mod6.onclickdown)(paramId("b_gistdown"), () => {
+      synchronization(void 0, { down: true });
+    });
+    (0, import_mod6.onclickdown)(paramId("b_urldown"), () => {
+      synchronization(void 0, { down: true });
+    });
+    paramId("settings-management").addEventListener("dragenter", () => {
+      paramId("settings-management").classList.add("dragging-file");
+    });
+    paramId("file-import").addEventListener("dragleave", () => {
+      paramId("settings-management").classList.remove("dragging-file");
+    });
+    paramId("b_file-load").addEventListener("click", function() {
+      paramId("file-import")?.click();
+    });
+    paramId("b_file-save").addEventListener("click", () => {
+      saveImportFile();
+    });
+    paramId("file-import").addEventListener("change", function() {
+      loadImportFile(this);
+    });
+    paramId("b_settings-copy").addEventListener("click", () => {
+      copySettings();
+    });
+    paramId("settings-data").addEventListener("input", (event) => {
+      toggleSettingsChangesButtons(event.type);
+    });
+    paramId("settings-data").addEventListener("focus", (event) => {
+      toggleSettingsChangesButtons(event.type);
+    });
+    paramId("settings-data").addEventListener("blur", (event) => {
+      toggleSettingsChangesButtons(event.type);
+    });
+    (0, import_mod6.onclickdown)(paramId("b_settings-cancel"), () => {
+      toggleSettingsChangesButtons("cancel");
+    });
+    (0, import_mod6.onclickdown)(paramId("b_settings-apply"), () => {
+      const val = paramId("settings-data").value;
+      importSettings(parse(val) ?? {});
+    });
+    (0, import_mod6.onclickdown)(paramId("b_reset-first"), () => {
+      resetSettings("first");
+    });
+    (0, import_mod6.onclickdown)(paramId("b_reset-apply"), () => {
+      resetSettings("yes");
+    });
+    (0, import_mod6.onclickdown)(paramId("b_reset-cancel"), () => {
+      resetSettings("no");
+    });
+    if (IS_MOBILE) {
+      const rangeInputs = document.querySelectorAll("input[type='range'");
+      const reduceSettingsOpacity = (event) => {
+        document.getElementById("settings")?.classList.toggle("see-through", event.type === "touchstart");
+      };
+      for (const input of rangeInputs) {
+        input.addEventListener("touchstart", reduceSettingsOpacity, { passive: true });
+        input.addEventListener("touchend", reduceSettingsOpacity, { passive: true });
+      }
+    }
+    const fileInputs = document.querySelectorAll('input[type="file"]');
+    for (const input of fileInputs) {
+      const toggleDrag = (_) => {
+        input.classList.toggle("dragover");
+      };
+      input?.addEventListener("dragenter", toggleDrag);
+      input?.addEventListener("dragleave", toggleDrag);
+      input?.addEventListener("drop", toggleDrag);
+    }
+    const tooltips = document.querySelectorAll(".tooltip");
+    for (const tooltip of tooltips) {
+      (0, import_mod6.onclickdown)(tooltip, () => {
+        const classes = [...tooltip.classList];
+        const ttclass = classes.filter((cl) => cl.startsWith("tt"))[0];
+        const tttext = document.querySelector(`.tooltiptext.${ttclass}`);
+        tttext?.classList.toggle("shown");
+      });
+    }
+    const splitRangeButtons = document.querySelectorAll(".split-range button");
+    for (const button of splitRangeButtons) {
+      (0, import_mod6.onclickdown)(button, () => {
+        button.classList.toggle("on");
+      });
+    }
+  }
+  function initWorldClocksAndTimezone(data) {
+    const template = document.getElementById("timezones-select-template");
+    const citiesSelector = 'input[name="worldclock-city"]';
+    const timezonesSelector = ".worldclocks-item select";
+    const cities = document.querySelectorAll(citiesSelector);
+    const timezone = document.querySelector("#i_timezone");
+    const timezones = document.querySelectorAll(timezonesSelector);
+    const zones = ["Europe/Paris", "America/Sao_Paulo", "America/Los_Angeles", "Asia/Tokyo", "Asia/Kolkata"];
+    for (const select of timezones) {
+      select.appendChild(template.content.cloneNode(true));
+    }
+    if (timezone) {
+      timezone.appendChild(template.content.cloneNode(true));
+    }
+    cities?.forEach((input, i) => {
+      input.addEventListener("input", () => {
+        clock(void 0, { world: { index: i, region: input.value } });
+      });
+      if (data.worldclocks[i]) {
+        input.value = data.worldclocks[i].region;
+      }
+    });
+    timezones?.forEach((select, i) => {
+      select.addEventListener("change", (event) => {
+        const select2 = event.target;
+        const timezone2 = select2.value;
+        clock(void 0, { world: { index: i, timezone: timezone2 } });
+      });
+      select.value = data.worldclocks[i]?.timezone ?? zones[i];
+    });
+    if (timezone) {
+      timezone.value = data.clock.timezone;
+    }
+  }
+  function translatePlaceholders() {
+    const cases = [
+      ["i_title", "Name"],
+      ["i_greeting", "Name"],
+      ["i_greetmorning", "Hello, $name!"],
+      ["i_greetafternoon", "Good afternoon"],
+      ["i_greetevening", "Good evening"],
+      ["i_greetnight", "Good night"],
+      ["i_tabtitle", "New tab"],
+      ["i_sbrequest", "Search query: %s"],
+      ["i_sbplaceholder", "Search"],
+      ["css-editor-textarea", "Type in your custom CSS"],
+      ["i_importtext", "or paste as text"],
+      ["i_addlink-title", "Title"],
+      ["i_addlink-url", "example.com"],
+      ["i_qtlist", "Author, Your quote.\nAuthor, Your second quote."]
+    ];
+    for (const [id, text] of cases) {
+      document.getElementById(id)?.setAttribute("placeholder", tradThis(text));
+    }
+  }
+  function translateAriaLabels() {
+    for (const element of document.querySelectorAll("[title]")) {
+      const title = element.getAttribute("title") ?? "";
+      element.setAttribute("title", tradThis(title));
+      element.setAttribute("aria-label", tradThis(title));
+    }
+  }
+  async function switchLangs(nextLang) {
+    await toggleTraduction(nextLang);
+    storage.sync.set({ lang: nextLang });
+    storage.local.remove("quotesCache");
+    document.documentElement.setAttribute("lang", nextLang);
+    const data = await storage.sync.get();
+    const local = await storage.local.get(["quotesCache", "userQuoteSelection", "lastWeather"]);
+    if (local?.lastWeather) {
+      local.lastWeather.timestamp = 0;
+      local.lastWeather.forecasted_timestamp = 0;
+    }
+    data.lang = nextLang;
+    clock(data);
+    changeGroupTitle({ old: "", new: "" }, data);
+    weather({ sync: data, lastWeather: local.lastWeather });
+    quotes({ sync: data, local });
+    tabTitle(data.tabtitle);
+    notes(data.notes);
+    customFont(void 0, { lang: true });
+    settingsFooter();
+    translatePlaceholders();
+    translateAriaLabels();
+    supportersNotifications(void 0, { translate: true });
+    setModeGlider();
+  }
+  function showall(val, event) {
+    document.getElementById("settings")?.classList.toggle("all", val);
+    if (event) {
+      storage.sync.set({ showall: val });
+    }
+  }
+  function settingsFooter() {
+    const one = document.querySelector("#signature-one");
+    const two = document.querySelector("#signature-two");
+    const version = document.getElementById("version");
+    const rand = Math.random() > 0.5;
+    if (one && two) {
+      one.href = rand ? "https://victr.me/" : "https://tahoe.be/";
+      two.href = rand ? "https://tahoe.be/" : "https://victr.me/";
+      one.textContent = rand ? "Victor Azevedo" : "Tahoe Beetschen";
+      two.textContent = rand ? "Tahoe Beetschen" : "Victor Azevedo";
+    }
+    if (version) {
+      version.textContent = SYNC_DEFAULT.about.version;
+    }
+  }
+  function settingsDrawerBar() {
+    const drawerDragDebounce = debounce(() => {
+      ;
+      document.getElementById("settings-footer").style.removeProperty("padding");
+      drawerDragEvents();
+    }, 600);
+    globalThis.addEventListener("resize", () => {
+      drawerDragDebounce();
+      if (!document.getElementById("settings")?.style.transition) {
+        document.getElementById("settings")?.setAttribute("style", "transition: none");
+      }
+    });
+    drawerDragEvents();
+  }
+  function drawerDragEvents() {
+    const mobileDragZone = document.getElementById("mobile-drag-zone");
+    const settingsDom = document.getElementById("settings");
+    let settingsVh = -75;
+    let firstPos2 = 0;
+    let startTouchY = 0;
+    mobileDragZone?.addEventListener("touchstart", dragStart, {
+      passive: false
+    });
+    mobileDragZone?.addEventListener("pointerdown", dragStart, {
+      passive: false
+    });
+    function dragStart(e) {
+      e.preventDefault();
+      if (settingsDom.classList.contains("dragging-mobile-settings")) {
+        return;
+      }
+      if (e.type === "pointerdown") {
+        startTouchY = e.clientY;
+      }
+      if (e.type === "touchstart") {
+        startTouchY = e.touches[0].clientY;
+      }
+      if (firstPos2 === 0) {
+        firstPos2 = startTouchY;
+      }
+      globalThis.addEventListener("touchmove", dragMove);
+      globalThis.addEventListener("pointermove", dragMove);
+      document.body.addEventListener("touchend", dragEnd);
+      document.body.addEventListener("pointerup", dragEnd);
+      document.body.classList.add("dragging-mobile-settings");
+    }
+    function dragMove(e) {
+      let clientY = 0;
+      if (e.type === "pointermove") {
+        clientY = e.clientY;
+      }
+      if (e.type === "touchmove") {
+        clientY = e.touches[0].clientY;
+      }
+      if (clientY > 60) {
+        const touchPosition = clientY - 25;
+        const inverseHeight = 100 - touchPosition / globalThis.innerHeight * 100;
+        settingsVh = +inverseHeight.toFixed(2);
+        settingsDom.style.transform = `translateY(-${settingsVh}dvh)`;
+        settingsDom.style.transition = "transform .0s";
+      }
+    }
+    function dragEnd(e) {
+      let clientY = 0;
+      if (e.type === "pointerup") {
+        clientY = e.clientY;
+      }
+      if (e.type === "touchend") {
+        clientY = e.changedTouches[0].clientY;
+      }
+      globalThis.removeEventListener("touchmove", dragMove);
+      globalThis.removeEventListener("pointermove", dragMove);
+      document.body.removeEventListener("touchend", dragEnd);
+      document.body.removeEventListener("pointerup", dragEnd);
+      startTouchY = 0;
+      const footer = document.getElementById("settings-footer");
+      footer.style.paddingBottom = `${100 - Math.abs(settingsVh)}dvh`;
+      settingsDom.style.removeProperty("padding");
+      settingsDom.style.removeProperty("width");
+      settingsDom.style.removeProperty("overflow");
+      settingsDom.classList.remove("dragging");
+      if (clientY > globalThis.innerHeight - 100) {
+        settingsToggle();
+      }
+    }
+  }
+  function copySettings() {
+    const copybtn = document.querySelector("#b_settings-copy span");
+    const pre = document.getElementById("settings-data");
+    try {
+      navigator.clipboard.writeText(pre?.textContent ?? "{}");
+      if (copybtn) {
+        copybtn.textContent = tradThis("Copied!");
+        setTimeout(() => {
+          copybtn.textContent = tradThis("Copy");
+        }, 1e3);
+      }
+    } catch (_error) {
+    }
+  }
+  async function saveImportFile() {
+    const a = document.getElementById("file-download");
+    if (!a) {
+      return;
+    }
+    const date = /* @__PURE__ */ new Date();
+    const data = await storage.sync.get() ?? {};
+    const zero = (n) => n.toString().length === 1 ? `0${n}` : n.toString();
+    const yyyymmdd = date.toISOString().slice(0, 10);
+    const hhmmss = `${zero(date.getHours())}_${zero(date.getMinutes())}_${zero(date.getSeconds())}`;
+    const bytes = new TextEncoder().encode(stringify2(data));
+    const blob = new Blob([bytes], { type: "application/json;charset=utf-8" });
+    const href = URL.createObjectURL(blob);
+    a.setAttribute("href", href);
+    a.setAttribute("tabindex", "-1");
+    a.setAttribute("download", `bonjourr-${data?.about?.version} ${yyyymmdd} ${hhmmss}.json`);
+    a.click();
+  }
+  function loadImportFile(target) {
+    function decodeExportFile(str) {
+      let result = {};
+      try {
+        result = parse(atob(str)) ?? {};
+      } catch {
+        try {
+          result = parse(str) ?? {};
+        } catch (_) {
+          result = {};
+        }
+      }
+      return result;
+    }
+    if (!target.files || target.files && target.files.length === 0) {
+      return;
+    }
+    const file = target.files[0];
+    const reader = new FileReader();
+    reader.onload = () => {
+      if (typeof reader.result !== "string") {
+        return false;
+      }
+      const importData = decodeExportFile(reader.result);
+      if (Object.keys(SYNC_DEFAULT).filter((key) => key in importData).length > 0) {
+        importSettings(importData);
+      }
+    };
+    reader.readAsText(file);
+  }
+  async function importSettings(imported) {
+    try {
+      let data = await storage.sync.get();
+      if (imported?.font?.system === false) {
+        const family = imported?.font?.family;
+        const lang = imported?.lang;
+        const correctSubset = await fontIsAvailableInSubset(lang, family);
+        if (correctSubset === false) {
+          imported.font.family = "";
+        }
+      }
+      if (imported?.searchbar?.on) {
+        getPermissions("search");
+      }
+      data = filterData("import", data, imported);
+      storage.sync.clear();
+      storage.sync.set(data);
+      if (imported?.backgrounds?.type === "urls") {
+        const urls = parseUrlList(imported.backgrounds.urls ?? "");
+        if (urls.length > 0) {
+          storage.local.set({ backgroundUrls: buildBackgroundUrls(urls) });
+        }
+      }
+      fadeOut();
+    } catch (_) {
+    }
+  }
+  function resetSettings(action) {
+    if (action === "yes") {
+      storage.clearall().then(fadeOut);
+      return;
+    }
+    document.getElementById("reset-first")?.classList.toggle("shown", action === "no");
+    document.getElementById("reset-conf")?.classList.toggle("shown", action === "first");
+  }
+  function updateSettingsJson(data) {
+    try {
+      data ? updateTextArea(data) : storage.sync.get().then(updateTextArea);
+    } catch (err) {
+      console.warn(err);
+    }
+    function updateTextArea(data2) {
+      const pre = document.getElementById("settings-data");
+      if (pre && data2.about) {
+        const orderedJson = stringify2(data2);
+        data2.about.browser = PLATFORM;
+        pre.textContent = orderedJson;
+      }
+    }
+  }
+  function updateSettingsEvent() {
+    const storageUpdate = () => updateSettingsJson();
+    const removeListener = () => chrome.storage.onChanged.removeListener(storageUpdate);
+    if (PLATFORM === "online") {
+      globalThis.addEventListener("storage", storageUpdate);
+    } else {
+      chrome.storage.onChanged.addListener(storageUpdate);
+      globalThis.addEventListener("beforeunload", removeListener, { once: true });
+    }
+  }
+  async function toggleSettingsChangesButtons(action) {
+    const textarea = paramId("settings-data");
+    const data = await storage.sync.get();
+    let hasChanges = false;
+    if (action === "input") {
+      const current = stringify2(data);
+      let user = "";
+      try {
+        user = stringify2(JSON.parse(textarea.value ?? "{}"));
+      } catch (_) {
+      }
+      hasChanges = user.length > 2 && current !== user;
+      if (hasChanges) {
+        paramId("b_settings-apply")?.removeAttribute("disabled");
+      } else {
+        paramId("b_settings-apply")?.setAttribute("disabled", "");
+      }
+    }
+    if (action === "cancel") {
+      textarea.value = stringify2(data);
+      hasChanges = false;
+    }
+    if (action === "focus") {
+      paramId("settings-files-options")?.classList.add("hidden");
+      paramId("settings-changes-options")?.classList.remove("hidden");
+    }
+    if (action === "blur") {
+      paramId("settings-changes-options")?.classList.add("hidden");
+      paramId("settings-files-options")?.classList.remove("hidden");
+    }
+  }
+  function toggleSettingsDropdown(dropdownId, shown) {
+    const dropdown = document.getElementById(dropdownId);
+    if (!dropdown) {
+      console.error(`Couldn't find settings dropdown to toggle: #${dropdownId}`);
+      return;
+    }
+    dropdown.classList.toggle("shown", shown);
+    dropdown.querySelectorAll("input, select").forEach((el) => {
+      if (el instanceof HTMLInputElement || el instanceof HTMLSelectElement) {
+        el.disabled = !shown;
+      }
+    });
+  }
+  function paramId(str) {
+    return document.getElementById(str);
+  }
+  function setCheckbox(id, cat) {
+    const checkbox = paramId(id);
+    checkbox.checked = cat;
+  }
+  function setInput(id, val) {
+    const input = paramId(id);
+    input.value = typeof val === "string" ? val : val?.toString();
+  }
+  function setFormInput(id, defaults, value) {
+    const input = paramId(id);
+    if (value) {
+      input.value = value;
+      input.setAttribute("placeholder", value);
+    } else {
+      input.setAttribute("placeholder", defaults);
+    }
+  }
+
+  // src/scripts/features/move/widgets.ts
+  function toggleWidget(data, widget2) {
+    if (!widget2) {
+      return;
+    }
+    const [id, on] = widget2;
+    const gridToggle = on ? addGridWidget : removeGridWidget;
+    const interfaceTransition = transitioner();
+    const selection = data.move.selection;
+    const layout = getLayout(data);
+    const grid = gridParse(gridToggle(gridStringify(layout.grid), id, selection));
+    data.move.layouts[selection] = { items: layout.items, grid };
+    const newdata = updateWidgetsStorage([widget2], data);
+    storage.sync.set(newdata);
+    interfaceTransition.first(() => {
+      toggleWidgetInSettings([[id, on]]);
+      interfaceFade("out");
+    });
+    interfaceTransition.after(() => {
+      const layout2 = getLayout(newdata);
+      setGridAreas(layout2.grid);
+      setAllAligns(layout2.items);
+      toggleWidgetOnInterface([[id, on]]);
+      removeSelection();
+      if (isEditing()) {
+        on ? addOverlay(id) : removeOverlay(id);
+      }
+      if (id === "main" && on === true) {
+        storage.local.get("lastWeather").then((local) => {
+          weather({ sync: newdata, lastWeather: local.lastWeather });
+        });
+      }
+    });
+    interfaceTransition.finally(() => {
+      interfaceFade("in");
+    });
+    interfaceTransition.transition(200);
+  }
+  function toggleWidgetInSettings(states) {
+    const inputids = {
+      time: "i_time",
+      main: "i_main",
+      quicklinks: "i_quicklinks",
+      notes: "i_notes",
+      quotes: "i_quotes",
+      pomodoro: "i_pomodoro",
+      searchbar: "i_sb"
+    };
+    for (const [widget2, on] of states) {
+      const input = document.getElementById(inputids[widget2]);
+      input.checked = on;
+      toggleSettingsDropdown(`${widget2}_options`, on);
+    }
+  }
+  function toggleWidgetOnInterface(states) {
+    const domids = {
+      time: "time",
+      main: "main",
+      quicklinks: "linkblocks",
+      notes: "notes_container",
+      quotes: "quotes_container",
+      pomodoro: "pomodoro_container",
+      searchbar: "sb_container"
+    };
+    for (const [widget2, on] of states) {
+      const elem = document.getElementById(domids[widget2]);
+      elem?.classList.toggle("hidden", !on);
+    }
+  }
+
+  // src/scripts/features/move/toolbox.ts
+  var import_mod7 = __toESM(require_dist());
+  var moverdom = document.querySelector("#element-mover");
+  var resetTimeout;
+  var firstPos = { x: 0, y: 0 };
+  var moverPos = { x: 0, y: 0 };
+  function toolboxEvents() {
+    const elementEntries = Object.entries(elements);
+    const moverBtns = document.querySelectorAll("#grid-mover button");
+    const boxAlignBtns = document.querySelectorAll("#box-alignment-mover button");
+    const textAlignBtns = document.querySelectorAll("#text-alignment-mover button");
+    const spanColsBtn = document.querySelector("#grid-span-cols");
+    const spanRowsBtn = document.querySelector("#grid-span-rows");
+    const resetBtn = document.querySelector("#b_resetlayout");
+    const closeBtn = document.querySelector("#close-mover");
+    for (const [key, element] of elementEntries) {
+      (0, import_mod7.onclickdown)(element, () => updateMoveElement({ select: key }), { propagate: false });
+    }
+    for (const button of moverBtns) {
+      (0, import_mod7.onclickdown)(button, () => {
+        updateMoveElement({ grid: { x: button.dataset.col, y: button.dataset.row } });
+      });
+    }
+    for (const button of boxAlignBtns) {
+      (0, import_mod7.onclickdown)(button, () => {
+        updateMoveElement({ box: button.dataset.align });
+      });
+    }
+    for (const button of textAlignBtns) {
+      (0, import_mod7.onclickdown)(button, () => {
+        updateMoveElement({ text: button.dataset.align });
+      });
+    }
+    (0, import_mod7.onclickdown)(spanColsBtn, () => updateMoveElement({ span: "col" }));
+    (0, import_mod7.onclickdown)(spanRowsBtn, () => updateMoveElement({ span: "row" }));
+    closeBtn?.addEventListener("click", () => updateMoveElement({ toggle: false }));
+    resetBtn?.addEventListener("click", () => updateMoveElement({ reset: true }));
+    moverdom?.addEventListener("mousedown", startDrag2);
+    moverdom?.addEventListener("mouseup", removeDrag);
+    moverdom?.addEventListener("mouseleave", removeDrag);
+    moverdom?.addEventListener("touchstart", startDrag2, { passive: false });
+    moverdom?.addEventListener("touchend", removeDrag);
+    function startDrag2(event) {
+      const target = event.target;
+      const validTags = target?.tagName === "HR" || target?.tagName === "P";
+      const validIds = target?.id === "element-mover" || target?.id === "close-mover-wrapper";
+      if (validTags || validIds) {
+        moverdom?.addEventListener(event.type.includes("touch") ? "touchmove" : "mousemove", moverDrag);
+      }
+    }
+    function moverDrag(event) {
+      const pos = event.touches ? event.touches[0] : event;
+      const x = pos.clientX;
+      const y = pos.clientY;
+      if (firstPos.x === 0 && firstPos.y === 0) {
+        firstPos = { x: x - moverPos.x, y: y - moverPos.y };
+        return;
+      }
+      moverPos = {
+        x: x - firstPos.x,
+        y: y - firstPos.y
+      };
+      if (moverdom) {
+        document.documentElement.style.overscrollBehavior = "none";
+        moverdom.style.transform = `translate(${moverPos.x}px, ${moverPos.y}px)`;
+      }
+    }
+    function removeDrag() {
+      firstPos = { x: 0, y: 0 };
+      moverdom.style.removeProperty("cursor");
+      document.documentElement.style.removeProperty("overscroll-behavior");
+      moverdom?.removeEventListener("mousemove", moverDrag);
+      moverdom?.removeEventListener("touchmove", moverDrag);
+    }
+  }
+  function layoutButtons(selection) {
+    for (const button of document.querySelectorAll("#grid-layout button")) {
+      button.classList.toggle("selected", button.dataset.layout === selection);
+    }
+  }
+  function gridButtons(id) {
+    const property = document.documentElement?.style.getPropertyValue("--grid") || "";
+    const grid = gridParse(property);
+    if (grid.length === 0) {
+      return;
+    }
+    let top = false;
+    let bottom = false;
+    let left = false;
+    let right = false;
+    const positions = gridFind(grid, id);
+    const widgetBottomLimit = getGridWidgets(gridStringify(grid)).length - 1;
+    const rightLimit = grid[0].length - 1;
+    for (const [col, row] of positions) {
+      if (row === 0) {
+        top = true;
+      }
+      if (col === 0) {
+        left = true;
+      }
+      if (col === rightLimit) {
+        right = true;
+      }
+      if (row === widgetBottomLimit) {
+        bottom = true;
+      }
+      if (row === grid.length - 1) {
+        const idOnlyRow = grid.at(row)?.filter((id2) => id2 !== ".");
+        if (new Set(idOnlyRow).size === 1) {
+          bottom = true;
+        }
+      }
+    }
+    for (const button of document.querySelectorAll("#grid-mover button")) {
+      const c = Number.parseInt(button.dataset.col || "0");
+      const r = Number.parseInt(button.dataset.row || "0");
+      let limit = false;
+      if (r === -1) {
+        limit = top;
+      }
+      if (r === 1) {
+        limit = bottom;
+      }
+      if (c === -1) {
+        limit = left;
+      }
+      if (c === 1) {
+        limit = right;
+      }
+      toggleDisabled(button, limit);
+    }
+  }
+  function spanButtons(id) {
+    const gridstring = document.documentElement?.style.getPropertyValue("--grid") || "";
+    const grid = gridParse(gridstring);
+    if (grid.length === 0) {
+      return;
+    }
+    const applyStates = (dir, state) => {
+      const dirButton = document.querySelector(`#grid-span-${dir}s`);
+      const otherButton = document.querySelector(`#grid-span-${dir === "col" ? "rows" : "cols"}`);
+      toggleDisabled(otherButton, state);
+      dirButton?.classList.toggle("selected", state);
+    };
+    const [posCol, posRow] = gridFind(grid, id)[0];
+    const col = grid.map((g) => g[posCol]);
+    const row = [...grid[posRow]];
+    const hasColumnDuplicates = hasDuplicateInArray(col, id);
+    const hasRowDuplicates = hasDuplicateInArray(row, id);
+    applyStates("col", hasColumnDuplicates);
+    applyStates("row", hasRowDuplicates);
+  }
+  function alignButtons(align) {
+    const { box, text } = align ?? { box: "", text: "" };
+    const boxBtns = document.querySelectorAll("#box-alignment-mover button");
+    const textBtns = document.querySelectorAll("#text-alignment-mover button");
+    for (const b of boxBtns) {
+      b.classList.toggle("selected", b.dataset.align === (box || "center"));
+    }
+    for (const b of textBtns) {
+      b.classList.toggle("selected", b.dataset.align === (text || "center"));
+    }
+  }
+  function resetButton() {
+    const bResetlayout = document.getElementById("b_resetlayout");
+    const confirm = !!bResetlayout.dataset.confirm;
+    clearTimeout(resetTimeout);
+    if (confirm === false) {
+      bResetlayout.textContent = tradThis("Are you sure?");
+      bResetlayout.dataset.confirm = "true";
+      resetTimeout = setTimeout(() => {
+        bResetlayout.textContent = tradThis("Reset layout");
+        bResetlayout.dataset.confirm = "";
+      }, 1e3);
+    } else {
+      bResetlayout.textContent = tradThis("Reset layout");
+      bResetlayout.dataset.confirm = "";
+    }
+    return confirm;
+  }
+  function showSpanButtons(column) {
+    column !== "single" ? document.getElementById("grid-spanner-container")?.classList.add("active") : document.getElementById("grid-spanner-container")?.classList.remove("active");
+  }
+
+  // src/scripts/features/move/index.ts
+  var dominterface2 = document.querySelector("#interface");
+  var widget;
+  function moveElements(init2, events) {
+    if (!(init2 || events)) {
+      updateMoveElement({ reset: true });
+      return;
+    }
+    if (events) {
+      updateMoveElement(events);
+      return;
+    }
+    if (init2) {
+      const { grid, items } = getLayout(init2);
+      setAllAligns(items);
+      setGridAreas(gridStringify(grid));
+      onSettingsLoad(() => {
+        toolboxEvents();
+        showSpanButtons(init2.selection);
+      });
+    }
+  }
+  async function updateMoveElement(event) {
+    const data = await storage.sync.get();
+    if (!data.move) {
+      data.move = structuredClone(SYNC_DEFAULT.move);
+    }
+    if (event.grid) {
+      gridChange(data.move, event.grid);
+    }
+    if (event.span) {
+      toggleGridSpans(data.move, event.span);
+    }
+    if (event.layout) {
+      layoutChange(data, event.layout);
+    }
+    if (event.reset) {
+      layoutReset(data);
+    }
+    if (event.widget) {
+      toggleWidget(data, event.widget);
+    }
+    if (event.select) {
+      elementSelection(data.move, event.select);
+    }
+    if (event.box !== void 0) {
+      alignChange(data.move, event.box, "box");
+    }
+    if (event.text !== void 0) {
+      alignChange(data.move, event.text, "text");
+    }
+    if (event.toggle !== void 0) {
+      toggleMoveStatus(data, event.toggle);
+    }
+    if (event.overlay !== void 0) {
+      pageWidthOverlay(data.move, event.overlay);
+    }
+  }
+  function gridChange(move, gridpos) {
+    if (!widget) {
+      return;
+    }
+    const y = Number.parseInt(gridpos?.y || "0");
+    const x = Number.parseInt(gridpos?.x || "0");
+    const layout = getLayout(move);
+    const positions = gridFind(layout.grid, widget);
+    const affectedIds = [];
+    let grid = layout.grid;
+    const isGridOverflowing = positions.some(([col]) => grid[col + y] === void 0);
+    if (isGridOverflowing) {
+      if (move.selection === "single") {
+        grid.push(["."]);
+      }
+      if (move.selection === "double") {
+        grid.push([".", "."]);
+      }
+      if (move.selection === "triple") {
+        grid.push([".", ".", "."]);
+      }
+    }
+    for (const [col, row] of positions) {
+      const newposition = grid[row + y][col + x];
+      if (newposition !== ".") {
+        affectedIds.push(newposition);
+      }
+    }
+    for (const id of affectedIds) {
+      if (gridFind(grid, id).length > 1) {
+        grid = spansInGridArea(grid, id, { remove: true });
+      }
+    }
+    for (const [col, row] of positions) {
+      const newRow = Math.min(Math.max(row + y, 0), grid.length - 1);
+      const newCol = Math.min(Math.max(col + x, 0), grid[0].length - 1);
+      const tempItem = grid[row][col];
+      grid[row][col] = grid[newRow][newCol];
+      grid[newRow][newCol] = tempItem;
+    }
+    for (let i = 0; i < grid.length; i++) {
+      if (isRowEmpty(grid, i)) {
+        grid.splice(i, 1);
+      }
+    }
+    layout.grid = grid;
+    move.layouts[move.selection] = layout;
+    storage.sync.set({ move });
+    setGridAreas(grid);
+    gridButtons(widget);
+  }
+  function alignChange(move, value, type) {
+    if (!widget) {
+      return;
+    }
+    const layout = getLayout(move);
+    const align = layout.items[widget] ?? { box: "", text: "" };
+    if (type === "box") {
+      align.box = value;
+    }
+    if (type === "text") {
+      align.text = value;
+    }
+    layout.items[widget] = align;
+    move.layouts[move.selection] = layout;
+    storage.sync.set({ move });
+    alignButtons(align);
+    setAlign(widget, align);
+  }
+  function layoutChange(data, column) {
+    if (column === data.move.selection) {
+      return;
+    }
+    if (column === "single" || column === "double" || column === "triple") {
+      data.move.selection = column;
+    }
+    const layout = getLayout(data);
+    const widgetsInGrid = getGridWidgets(gridStringify(layout.grid));
+    const list = [
+      ["time", widgetsInGrid.includes("time")],
+      ["main", widgetsInGrid.includes("main")],
+      ["notes", widgetsInGrid.includes("notes")],
+      ["quotes", widgetsInGrid.includes("quotes")],
+      ["pomodoro", widgetsInGrid.includes("pomodoro")],
+      ["searchbar", widgetsInGrid.includes("searchbar")],
+      ["quicklinks", widgetsInGrid.includes("quicklinks")]
+    ];
+    const newdata = updateWidgetsStorage(list, data);
+    storage.sync.set(newdata);
+    const interfaceTransition = transitioner();
+    interfaceTransition.first(() => {
+      interfaceFade("out");
+    });
+    interfaceTransition.after(() => {
+      const layout2 = getLayout(newdata);
+      setAllAligns(layout2.items);
+      setGridAreas(layout2.grid);
+      layoutButtons(newdata.move.selection);
+      showSpanButtons(newdata.move.selection);
+      removeSelection();
+      toggleWidgetInSettings(list);
+      toggleWidgetOnInterface(list);
+      if (widget) {
+        gridButtons(widget);
+        alignButtons(layout2.items[widget]);
+      }
+    });
+    interfaceTransition.finally(() => {
+      interfaceFade("in");
+    });
+    interfaceTransition.transition(200);
+  }
+  function layoutReset(data) {
+    const enabledWidgets = getWidgetsStorage(data);
+    let grid = "";
+    if (resetButton() === false) {
+      return;
+    }
+    for (const id of enabledWidgets) {
+      grid = addGridWidget(grid, id, data.move.selection);
+    }
+    data.move.layouts[data.move.selection] = {
+      grid: gridParse(grid),
+      items: {}
+    };
+    storage.sync.set(data);
+    removeSelection();
+    setGridAreas(grid);
+    setAllAligns({
+      quicklinks: void 0,
+      main: void 0,
+      time: void 0,
+      notes: void 0,
+      searchbar: void 0,
+      quotes: void 0,
+      pomodoro: void 0
+    });
+  }
+  function elementSelection(move, select) {
+    removeSelection();
+    if (!(isEditing() && select)) {
+      return;
+    }
+    widget = select;
+    alignButtons(getLayout(move).items[widget]);
+    spanButtons(widget);
+    gridButtons(widget);
+    document.getElementById(`ove-overlay-${widget}`)?.classList.add("selected");
+    document.getElementById("element-mover")?.classList.add("active");
+  }
+  function toggleMoveStatus(data, force) {
+    const mover = document.getElementById("element-mover");
+    const bEditmove = document.getElementById("b_editmove");
+    const isEditing2 = dominterface2?.classList.contains("move-edit");
+    const hasOverlay = document.querySelector(".move-overlay") === null;
+    const state = force ?? !isEditing2;
+    if (!state) {
+      bEditmove.textContent = tradThis("Open");
+      dominterface2?.classList.remove("move-edit");
+      mover.classList.add("hidden");
+      removeOverlay();
+    } else if (hasOverlay) {
+      bEditmove.textContent = tradThis("Close");
+      dominterface2?.classList.add("move-edit");
+      mover.classList.remove("hidden");
+      for (const id of getWidgetsStorage(data)) {
+        addOverlay(id);
+      }
+    }
+    mover?.classList.remove("active");
+    removeSelection();
+  }
+  function toggleGridSpans(move, dir) {
+    if (!widget) {
+      return;
+    }
+    const layout = getLayout(move);
+    const gridWithSpan = spansInGridArea(layout.grid, widget, { toggle: dir });
+    move.layouts[move.selection] = {
+      items: layout.items,
+      grid: gridWithSpan
+    };
+    storage.sync.set({ move });
+    setGridAreas(gridWithSpan);
+    gridButtons(widget);
+    spanButtons(widget);
+  }
+  function pageWidthOverlay(move, overlay) {
+    const isEditing2 = document.getElementById("interface")?.classList?.contains("move-edit");
+    const hasOverlays = document.querySelector(".move-overlay");
+    if (!isEditing2 && overlay === false) {
+      removeOverlay();
+      return;
+    }
+    if (!hasOverlays) {
+      const layout = getLayout(move);
+      const grid = gridStringify(layout.grid);
+      const ids2 = getGridWidgets(grid);
+      for (const id of ids2) {
+        addOverlay(id);
+      }
+    }
+  }
+
+  // src/scripts/features/css.ts
+  function customCss(init2, event) {
+    const stylelink = document.getElementById("styles");
+    if (event) {
+      if (event?.styling !== void 0) {
+        const val = stringMaxSize(event.styling, 8080);
+        stylelink.textContent = val;
+        eventDebounce({ css: val });
+      }
+      return;
+    }
+    if (init2) {
+      stylelink.textContent = init2;
+    }
+    onSettingsLoad(async () => {
+      const { createCssEditor: createCssEditor2 } = await Promise.resolve().then(() => (init_csseditor(), csseditor_exports));
+      const options = {
+        language: "css",
+        lineNumbers: false,
+        wordWrap: true,
+        insertSpaces: false,
+        value: init2 || ""
+      };
+      const editor = createCssEditor2(options);
+      const tabCommand = editor.keyCommandMap.Tab;
+      editor.textarea.id = "css-editor-textarea";
+      editor.textarea.maxLength = 8080;
+      editor.textarea.setAttribute("aria-labelledby", "lbl-css");
+      editor.textarea.placeholder = tradThis("Type in your custom CSS");
+      editor.on("update", (value) => {
+        eventDebounce({ css: stringMaxSize(value, 8080) });
+        stylelink.textContent = stringMaxSize(value, 8080);
+      });
+      editor.keyCommandMap.Tab = (e, selection, value) => {
+        if (document.body.matches(".tabbing")) {
+          return false;
+        }
+        return tabCommand?.(e, selection, value);
+      };
+    });
+  }
+
+  // src/scripts/startup/opera.ts
+  function operaExtensionExplainer(explained) {
+    if (explained || BROWSER !== "opera" || PLATFORM !== "chrome") {
+      return;
+    }
+    const template = document.getElementById("opera-explainer-template");
+    const doc2 = template.content.cloneNode(true);
+    const dialog = doc2.getElementById("opera-explainer");
+    const button = doc2.getElementById("b_opera-explained");
+    document.body.classList.add("loading");
+    document.body.appendChild(dialog);
+    dialog.showModal();
+    setTimeout(() => dialog.classList.add("shown"));
+    button?.addEventListener("click", () => {
+      storage.local.set({ operaExplained: true });
+      document.body.classList.remove("loading");
+      dialog.close();
+    });
+  }
+
+  // src/scripts/startup/potato.ts
+  function setPotatoComputerMode() {
+    if (BROWSER === "firefox" || BROWSER === "safari") {
+      return;
+    }
+    const fourHours = 1e3 * 60 * 60 * 4;
+    const isPotato = localStorage.potato === "yes";
+    const expirationTime = Date.now() - Number.parseInt(localStorage.lastPotatoCheck ?? "0");
+    if (expirationTime < fourHours) {
+      document.body.classList.toggle("potato", isPotato);
+      return;
+    }
+    const canvas = document.createElement("canvas");
+    const gl = canvas?.getContext("webgl");
+    const debugInfo = gl?.getExtension("WEBGL_debug_renderer_info");
+    if (BROWSER === "chrome" && !gl) {
+      document.body.classList.add("potato");
+      return;
+    }
+    const vendor = gl?.getParameter(debugInfo?.UNMASKED_VENDOR_WEBGL ?? 0).toString();
+    const renderer = gl?.getParameter(debugInfo?.UNMASKED_RENDERER_WEBGL ?? 0).toString();
+    const detectedPotato = vendor.includes("Google") && renderer.includes("SwiftShader");
+    localStorage.potato = detectedPotato ? "yes" : "no";
+    localStorage.lastPotatoCheck = Date.now();
+    document.body.classList.toggle("potato", detectedPotato);
+  }
+
+  // src/scripts/startup/online.ts
+  function onlineAndMobile() {
+    const dominterface3 = document.getElementById("interface");
+    const onlineFirefoxMobile = PLATFORM === "online" && BROWSER === "firefox" && IS_MOBILE;
+    const onlineSafariIos = PLATFORM === "online" && BROWSER === "safari" && SYSTEM_OS === "ios";
+    let visibilityHasChanged = false;
+    let firefoxRafTimeout;
+    if (IS_MOBILE) {
+      document.addEventListener("visibilitychange", updateOnVisibilityChange);
+    }
+    if (onlineFirefoxMobile) {
+      updateAppHeight();
+      if (SYSTEM_OS === "ios") {
+        globalThis.requestAnimationFrame(triggerAnimationFrame);
+        setTimeout(() => cancelAnimationFrame(firefoxRafTimeout), 500);
+      }
+    }
+    if (onlineSafariIos) {
+      onSettingsLoad(() => {
+        const inputs = document.querySelectorAll('input[type="text"], input[type="url"], textarea');
+        for (const input of inputs) {
+          input.addEventListener("focus", disableTouchAction);
+          input.addEventListener("blur", enableTouchAction);
+        }
+      });
+    }
+    async function updateOnVisibilityChange() {
+      if (visibilityHasChanged === false) {
+        visibilityHasChanged = true;
+        return;
+      }
+      visibilityHasChanged = false;
+      const sync = await storage.sync.get();
+      const local = await storage.local.get();
+      const { backgroundLastChange, lastWeather } = local;
+      if (!sync.clock || !sync.weather) {
+        return;
+      }
+      const time = (backgroundLastChange ? new Date(backgroundLastChange) : /* @__PURE__ */ new Date()).getTime();
+      const needNew = needsChange(sync.backgrounds.frequency, time);
+      const notColor = sync.backgrounds.type !== "color";
+      clock(sync);
+      weather({ sync, lastWeather });
+      if (notColor && needNew) {
+        backgroundsInit(sync, local);
+      }
+    }
+    function triggerAnimationFrame() {
+      updateAppHeight();
+      firefoxRafTimeout = requestAnimationFrame(triggerAnimationFrame);
+    }
+    function updateAppHeight() {
+      document.documentElement.style.setProperty("--app-height", `${globalThis.innerHeight}px`);
+    }
+    function disableTouchAction() {
+      const settingsDom = document.getElementById("settings");
+      if (dominterface3 && settingsDom) {
+        dominterface3.style.touchAction = "none";
+        settingsDom.style.touchAction = "none";
+      }
+    }
+    function enableTouchAction() {
+      const settingsDom = document.getElementById("settings");
+      if (dominterface3 && settingsDom) {
+        dominterface3.style.removeProperty("touch-action");
+        settingsDom.style.removeProperty("touch-action");
+      }
+    }
+  }
+
+  // src/scripts/startup/serviceworker.ts
+  function serviceWorker() {
+    if (ENVIRONNEMENT !== "PROD" || PLATFORM !== "online" || !("serviceWorker" in navigator)) {
+      return;
+    }
+    navigator.serviceWorker.register("service-worker.js");
+    let promptEvent;
+    globalThis.addEventListener("beforeinstallprompt", (e) => {
+      promptEvent = e;
+      return promptEvent;
+    });
+  }
+
+  // src/scripts/startup/tabstracking.ts
+  function tabsTracking() {
+    function updateLastActiveTab() {
+      localStorage.setItem("lastActiveTab", TAB_ID);
+    }
+    if (!document.hidden) {
+      updateLastActiveTab();
+    }
+    globalThis.window.addEventListener("focus", updateLastActiveTab);
+    globalThis.window.addEventListener("visibilitychange", () => {
+      if (!document.hidden) {
+        updateLastActiveTab();
+      }
+    });
+    globalThis.window.addEventListener("beforeunload", () => {
+      tabsBc.postMessage("tabClosed");
+    });
+    tabsBc.onmessage = (event) => {
+      if (event.data === "tabClosed") {
+        updateLastActiveTab();
+      }
+    };
+  }
+
+  // src/scripts/events.ts
+  var isMousingDownOnInput = false;
+  function userActions() {
+    document.body.addEventListener("mousedown", detectTargetAsInputs);
+    document.getElementById("b_editmove")?.addEventListener("click", closeSettingsOnMoveOpen);
+    document.addEventListener("click", clickUserActions);
+    document.addEventListener("keydown", keyboardUserActions);
+    document.addEventListener("keyup", keyboardUserActions);
+  }
+  function keyboardUserActions(event) {
+    const { altKey, ctrlKey, metaKey, code, type } = event;
+    const domsuggestions2 = document.getElementById("sb-suggestions");
+    if (code === "Escape") {
+      if (domsuggestions2?.classList.contains("shown")) {
+        domsuggestions2?.classList.remove("shown");
+        return;
+      }
+      const open = isOpen();
+      const keyup = event.type === "keyup";
+      if (open.contextmenu) {
+        document.dispatchEvent(new Event("close-edit"));
+      } else if (open.settings && keyup) {
+        document.dispatchEvent(new CustomEvent("toggle-settings"));
+      } else if (open.selectall) {
+        document.dispatchEvent(new Event("remove-select-all"));
+      } else if (open.folder) {
+        document.dispatchEvent(new Event("close-folder"));
+      } else if (keyup) {
+        if (document.documentElement.dataset.supportersModal === void 0) {
+          document.dispatchEvent(new CustomEvent("toggle-settings"));
+        }
+      }
+      return;
+    }
+    if (code === "Tab") {
+      document.body.classList.toggle("tabbing", true);
+      return;
+    }
+    if (type === "keydown" && altKey && !ctrlKey && !metaKey && code === "KeyN") {
+      if (isTypingTarget(event.target)) return;
+      const linkList = document.querySelector("#linkblocks:not(.hidden) .link-list");
+      if (!linkList) return;
+      const rect = linkList.getBoundingClientRect();
+      linkList.dispatchEvent(
+        new MouseEvent("contextmenu", {
+          bubbles: true,
+          cancelable: true,
+          clientX: rect.right,
+          clientY: rect.top + 15
+        })
+      );
+    }
+  }
+  function clickUserActions(event) {
+    if (isMousingDownOnInput) {
+      return;
+    }
+    const open = isOpen();
+    const composedPath = event.composedPath() ?? [document.body];
+    const path = composedPath.filter((node) => node?.className?.includes);
+    const pathIds = path.map((el) => el.id);
+    const on = {
+      body: path[0].tagName === "BODY",
+      link: path.some((el) => el.classList.contains("link")),
+      linkfolder: path.some((el) => el.className.includes("folder")),
+      addgroup: path.some((el) => el.className.includes("add-group")),
+      folder: path.some((el) => el.className.includes("in-folder")),
+      button: path.some((el) => el.className.includes("param-btn")),
+      localfiles: path.some((el) => el.id === "local_options"),
+      interface: pathIds.includes("interface"),
+      contextmenu: pathIds.includes("contextmenu"),
+      settings: path.some((el) => el.id === "settings"),
+      showsettings: path.some((el) => el.id === "show-settings"),
+      interactable: path.some(
+        (el) => el instanceof HTMLElement && el.matches(
+          'a[href], button, input, select, textarea, label, [tabindex]:not([tabindex="-1"]), [contenteditable="true"]'
+        )
+      )
+    };
+    if (document.body.classList.contains("tabbing")) {
+      document.body?.classList.toggle("tabbing", false);
+    }
+    if (document.querySelectorAll(".thumbnail.selected") && !on.localfiles && !on.button) {
+      for (const node of document.querySelectorAll(".thumbnail.selected")) {
+        node.classList.remove("selected");
+      }
+    }
+    if (on.showsettings) {
+      document.dispatchEvent(new CustomEvent("toggle-settings"));
+    }
+    if (open.contextmenu && !on.contextmenu) {
+      if (on.addgroup) {
+        return;
+      }
+      document.dispatchEvent(new Event("close-edit"));
+      return;
+    }
+    if ((on.body || on.interface) === false) {
+      return;
+    }
+    if (open.settings && !on.interactable) {
+      document.dispatchEvent(new CustomEvent("toggle-settings"));
+    } else if (open.selectall && !on.link) {
+      document.dispatchEvent(new Event("remove-select-all"));
+    } else if (open.folder && !on.folder && !on.linkfolder) {
+      document.dispatchEvent(new Event("close-folder"));
+    }
+  }
+  function isOpen() {
+    return {
+      settings: !!document.getElementById("settings")?.classList.contains("shown"),
+      folder: !!document.querySelector(".in-folder"),
+      selectall: document.getElementById("linkblocks")?.classList.contains("select-all"),
+      contextmenu: document.querySelector("#contextmenu")?.open
+    };
+  }
+  function detectTargetAsInputs(event) {
+    const path = event.composedPath();
+    const tagName = path[0]?.tagName ?? "";
+    isMousingDownOnInput = ["TEXTAREA", "INPUT"].includes(tagName);
+  }
+  function closeSettingsOnMoveOpen() {
+    setTimeout(() => {
+      const elementmover = document.getElementById("element-mover");
+      const moverHasOpened = elementmover?.classList.contains("hidden") === false;
+      if (moverHasOpened) {
+        document.dispatchEvent(new CustomEvent("toggle-settings"));
+      }
+    }, 20);
+  }
+
+  // src/scripts/index.ts
+  try {
+    startup();
+    serviceWorker();
+    onlineAndMobile();
+  } catch (_) {
+    console.warn("Startup failed");
+  }
+  async function startup() {
+    let { sync, local } = await storage.init();
+    const oldVersion = sync?.about?.version;
+    if (!sync || !local) {
+      console.warn("Storage failed, loading Bonjourr with default settings");
+      sync = structuredClone(SYNC_DEFAULT);
+      local = structuredClone(LOCAL_DEFAULT);
+    }
+    if (oldVersion !== CURRENT_VERSION) {
+      console.info(`Updated Bonjourr, ${oldVersion} => ${CURRENT_VERSION}`);
+      localStorage.setItem("update-archive", JSON.stringify(sync));
+      sync = filterData("update", sync);
+      local.translations = void 0;
+      storage.local.remove("translations");
+      local = { ...LOCAL_DEFAULT, ...local };
+      await storage.sync.clear();
+      await storage.sync.set(sync);
+    }
+    await setTranslationCache(sync.lang, local);
+    displayInterface(void 0, sync);
+    traduction(null, sync.lang);
+    userDate(sync.clock.timezone);
+    suntime(local.lastWeather?.sunrise, local.lastWeather?.sunset);
+    weather({ sync, lastWeather: local.lastWeather });
+    customFont(sync.font);
+    textShadow(sync.textShadow);
+    favicon(sync.favicon);
+    tabTitle(sync.tabtitle);
+    clock(sync);
+    darkmode(sync.dark);
+    searchbar(sync.searchbar);
+    quotes({ sync, local });
+    pomodoro(sync.pomodoro);
+    notes(sync.notes);
+    moveElements(sync.move);
+    customCss(sync.css);
+    hideElements(sync.hide);
+    backgroundsInit(sync, local, true);
+    quickLinks({ sync, local });
+    synchronization(local);
+    settingsInit(sync, local);
+    pageControl({ width: sync.pagewidth, gap: sync.pagegap });
+    operaExtensionExplainer(local.operaExplained);
+    tabsTracking();
+    altMode();
+    document.documentElement.dataset.system = SYSTEM_OS;
+    document.documentElement.dataset.browser = BROWSER;
+    document.documentElement.dataset.platform = PLATFORM;
+    document.getElementById("time")?.classList.toggle("hidden", !sync.time);
+    document.getElementById("main")?.classList.toggle("hidden", !sync.main);
+    onInterfaceDisplay(() => {
+      document.body.classList.remove("init");
+      supportersNotifications(sync);
+      setPotatoComputerMode();
+      userActions();
+      interfacePopup({
+        announce: sync.announcements,
+        review: sync.review ?? 0,
+        new: CURRENT_VERSION,
+        old: oldVersion
+      });
+    });
+  }
+})();

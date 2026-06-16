@@ -1277,7 +1277,7 @@
   var navigator2 = globalThis.navigator;
   var iosUA = "iPad Simulator|iPhone Simulator|iPod Simulator|iPad|iPhone|iPod".split("|");
   var mobileUA = "Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini".split("|");
-  var CURRENT_VERSION = "22.2.0";
+  var CURRENT_VERSION = "22.2.1";
   var API_DOMAIN = "https://services.bonjourr.fr";
   var ENVIRONNEMENT = globalThis.ENV ?? "TEST";
   var TAB_ID = crypto.randomUUID();
@@ -5747,7 +5747,8 @@
   var eventLocation;
   function openContextMenu(event) {
     const selection = globalThis.getSelection();
-    if (selection && !selection.isCollapsed) {
+    const notesAreSelected = document.querySelector("#notes_container div[data-selected]");
+    if (selection?.toString() || notesAreSelected) {
       return;
     }
     const target = event.target;
@@ -9269,7 +9270,7 @@
     }
     return;
   }
-  function displayFont({ family, size, weight, system, color }) {
+  function displayFont({ family, size, weight, system, color = "#ffffff" }) {
     const clockWeight = Number.parseInt(weight) > 100 ? systemfont.weights[systemfont.weights.indexOf(weight) - 1] : weight;
     const subset = getRequiredSubset();
     const id = family.toLocaleLowerCase().replaceAll(" ", "-");
@@ -12202,6 +12203,20 @@
   var import_mod6 = __toESM(require_dist());
 
   // src/scripts/compatibility/filters.ts
+  function addShowUnitToWeather(data) {
+    if (!data.weather) {
+      data.weather = SYNC_DEFAULT.weather;
+    }
+    data.weather.show_unit = data.weather.show_unit ?? SYNC_DEFAULT.weather.show_unit;
+    return data;
+  }
+  function addColorToFont(data) {
+    if (!data.font) {
+      data.font = SYNC_DEFAULT.font;
+    }
+    data.font.color = data.font.color ?? SYNC_DEFAULT.font.color;
+    return data;
+  }
   function newLinkIcons(data) {
     const links = [];
     Object.entries(data).map(([key, val]) => {
@@ -12595,6 +12610,10 @@
       data = newLinkIcons(data);
       if (minor < 1) {
         data = addAlarmsToPomodoro(data);
+      }
+      if (minor < 2) {
+        data = addColorToFont(data);
+        data = addShowUnitToWeather(data);
       }
     }
     if (major <= 21) {
@@ -13024,7 +13043,7 @@
     setCheckbox("i_seconds", data.clock?.seconds ?? false);
     setCheckbox("i_worldclocks", data.clock?.worldclocks ?? false);
     setCheckbox("i_main", data.main);
-    setCheckbox("i_show_unit", data.weather.show_unit);
+    setCheckbox("i_show_unit", data.weather.show_unit ?? false);
     setCheckbox("i_greethide", !data.hide?.greetings);
     setCheckbox("i_notes", data.notes?.on ?? false);
     setCheckbox("i_sb", data.searchbar?.on ?? false);

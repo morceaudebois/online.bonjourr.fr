@@ -1276,7 +1276,7 @@ aside.change-theme #settings-management {
   max-height: 120px;
 }
 #quicklinks_options.shown {
-  max-height: 423px;
+  max-height: 430px;
 }
 #notes_options.shown {
   max-height: 200px;
@@ -1297,7 +1297,7 @@ aside.change-theme #settings-management {
   max-height: 450px;
 }
 #pomodoro_options.shown {
-  max-height: 363px;
+  max-height: 370px;
 }
 #disabled-sync.shown {
   max-height: 105px;
@@ -1367,7 +1367,7 @@ aside.change-theme #settings-management {
   max-height: 280px;
 }
 .all .as_pomodoro {
-  max-height: 303px;
+  max-height: 310px;
 }
 .all .as_greetings {
   max-height: 365px;
@@ -4120,7 +4120,6 @@ body.pomodoro-focus:has(#pomodoro_container:not(.hidden)) #interface {
   -webkit-backdrop-filter: blur(2em);
   outline: 0.4em solid transparent;
   transition: background-color 0.05s var(--out-cubic);
-  z-index: -1;
 }
 .move-overlay:hover {
   background-color: #fff3;
